@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development & Design</title>
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+    <div>
+        <div class="header">
+            <div class="logo">
+                <a href="https://kopernikusdesign.com">
+                    <img src="imagenes/logo.jpg" alt="logo Kopernikus Design" id="logo-bild">
+                </a>
+            </div>
+        </div>
+
+        <div class="hamburger-menu">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="menu-overlay" id="menuOverlay">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="video_container">
+            <video id="background-video" autoplay loop muted playsinline>
+                <source src="video/intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img id="fallback-gif" src="intro.gif" >
+            <img src="arrow.gif" alt="arrow" class="overlay-image">
+        </div>    
+
+
+        <div class="container-manifiesto">
+            <div  id="manifiesto">
+                <img id="manifiesto-bild" src="imagenes/manifiesto.png">
+            </div>
+        </div>
+
+        <div class="container-manifiesto">
+            <div id="statement-manifiesto">
+                <h3>WE SPECIALIZE IN WEB DEVELOPMENT AND DESIGN. AT THE CORE OF OUR AGENCY LIES A PASSION FOR ART, INNOVATION, AND TECHNOLOGY. OUR MISSION IS TO DELIVER HIGH-PERFORMING, UNIQUE, EFFICIENT AND EFFECTIVE SOLUTIONS TO OUR CLIENTS.</h3>
+            </div>
+        </div>
+
+        <div class="container">
+
+        <div class="container">
+            <div  id="manifiesto">
+                <img id="manifiesto-bild" src="imagenes/contact.png">
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="statement-content">
+                <form name="contact" method="POST" netlify id="contact-form">
+                    <p> Let's make something amazing together. Reach out today!</p>
+                    <p><input type="text" name="name" placeholder="Your name" required></p>
+                    <p><input type="email" name="email" placeholder="Your email" required></p>
+                    <p><textarea name="message" placeholder="Your message" required></textarea></p>
+                    <p><button type="submit">Send</button></p>
+                </form>
+                <div id="thank-you-message" style="display:none;">
+                    Thank you for your message!
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            
+                <h3>IMPRESSUM:</h3><br>
+                <p>Kopernikus Design</p><br>
+                <p>Am Stumpenhof 14, 73207 Plochingen</p><br>
+                <p>Geschäftsführer: Wilmer Aderbert Florez Lopez</p><br>
+                <p>(+49) 1771 827 690 (+86) 185 2006 0442</p><br>
+                <p>hello@kopernikusdesign.de</p>
+     <br><br><br><br>
+        </div>
+
+        <div class="container" >
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+  
+</body>
+</html>
+
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development & Design</title>
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+    <div>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imagenes/logo.jpg" alt="logo Wilmer Aderbert Florez Lopez" id="logo-bild">
+                </a>
+            </div>
+        </div>
+
+        <div class="hamburger-menu">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="menu-overlay" id="menuOverlay">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Curriculum Vitae</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div class="video_container">
+            <video id="background-video" class="video-animate" autoplay loop muted playsinline>
+                <source src="video/intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img id="fallback-gif" class="gif-animate" src="intro.gif" >
+            <img src="arrow.gif" alt="arrow" class="overlay-image">
+        </div>    
+
+
+        <div class="container-manifiesto">
+            <div  id="passbild-container">
+                <img id="passbild" class="image-animate" src="imagenes/Passbild.jpg">
+            </div>
+        </div>
+        
+        
+        <div class="container-manifiesto">
+            <div  id="manifiesto">
+                <img id="manifiesto-bild" class="image-animate" src="imagenes/manifiest-de.png">
+            </div>
+        </div>
+
+        <div class="container-manifiesto">
+            <div id="statement-manifiesto" class="text-animate">
+                <h2>Ich spezialisiere mich auf Webentwicklung und -design. Im Kern meiner Arbeit liegt eine Leidenschaft 
+                    für Kunst, Innovation und Technologie. Mein Ziel ist es, leistungsstarke, einzigartige, 
+                    effiziente und effektive Lösungen zu gestalten.</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div  id="manifiesto">
+                <img id="manifiesto-bild" class="image-animate" src="imagenes/projekte.png">
+            </div>
+        </div>
+        <div class="container">
+            <a href="https://joblab.cc" target="_blank">
+                <img class="projekte-bilder image-animate"  src="imagenes/projects/Logo-JobLab.jpg"/>
+            </a>
+        </div>
+
+        <div class="container-dienste">
+            <div  id="manifiesto">
+                <img id="manifiesto-bild" class="image-animate" src="imagenes/skills.png">
+            </div>
+        </div>
+
+        <div class="container-dienste">
+            <div id="dienste">
+                <div class="image-grid">
+                    <div class="image-container">
+                        <img src="imagenes/skill/HTML5_logo-sw.png" alt="HTML 5" class="image-default">
+                        <img src="imagenes/skill/HTML5_logo-color.png" alt="HTML 5" class="image-hover">
+                        <span class="tooltip">Die Hypertext Markup Language ist eine Auszeichnungssprache zur 
+                            Strukturierung elektronischer Dokumente wie Texte mit Hyperlinks, Bildern und 
+                            anderen Inhalten. HTML-Dokumente sind die Grundlage des World Wide Web und 
+                            werden von Webbrowsern dargestellt.</span>
+                    </div>
+                    <div class="image-container">
+                        <img src="imagenes/skill/CSS3_logo-sw.png" alt="Image 2">
+                        <img src="imagenes/skill/CSS3_logo-color.png" alt="CSS" class="image-hover">
+                        <span class="tooltip">Cascading Style Sheets ist eine Stylesheet-Sprache für 
+                            elektronische Dokumente und zusammen mit HTML und JavaScript eine der 
+                            Kernsprachen des World Wide Webs.</span>
+                    </div>
+                    
+                    <img src="imagenes/skill/JavaScript_logo-sw.png" alt="Image 3">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div  id="manifiesto">
+                <img id="manifiesto-bild" src="imagenes/contact.png">
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="statement-content">
+                <form name="contact" method="POST" netlify id="contact-form">
+                    <p> Lass uns gemeinsam etwas Großartiges erschaffen. Melde dich noch heute!</p>
+                    <p><input type="text" name="name" placeholder="Ihr Name" required></p>
+                    <p><input type="email" name="email" placeholder="Ihr Name" required></p>
+                    <p><textarea name="message" placeholder="Ihre Nachricht" required></textarea></p>
+                    <p><button type="submit">Absenden</button></p>
+                </form>
+                <div id="thank-you-message" style="display:none;">
+                    Thank you for your message!
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container" >
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+  
+</body>
+</html>
+
+
+

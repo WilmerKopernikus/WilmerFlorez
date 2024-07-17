@@ -1,0 +1,712 @@
+/*--------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------
+ -------------------------------------- Kopernikus  -Design-----------------------------------
+ ---------------------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------------------*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding-top:0px;
+
+}
+
+/*--------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------
+ -------------------------------------- Hamburger-Menu ---------------------------------------
+ ---------------------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------------------*/
+
+.hamburger-menu {
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    z-index: 1000;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px;
+    height: 30px;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(0, 106, 255), rgb(200, 0, 255));
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    flex-direction: column;
+}
+
+.menu-overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-overlay li {
+    margin: 20px 0;
+}
+
+.menu-overlay a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.menu-overlay a:hover {
+    color: #000000;
+    font-weight: 800;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(9px, 9px);
+    background-color: white;
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    background-color: white;
+}
+
+.menu-overlay.show {
+    display: flex;
+}
+
+
+/*--------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------
+ ----------------------------------------- Header --------------------------------------------
+ ---------------------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------------------*/
+.header {
+    background-color: #000000;
+    color: #000000;
+    width: 100%;
+    display: flex; 
+    justify-content: left;
+    align-items: center;
+    height: 50px;
+    z-index: 1000; /* Increase the z-index value */
+    left: 0; 
+    position: fixed;
+    top: 0;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 400;
+    font-family: Jersey20, Arial;
+}
+
+h2 {
+    font-size: 47px;
+    font-weight: 500;
+    font-family:  Anton, Tahoma, sans-serif;
+    color: #ffffff;
+
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: 500;
+    font-family:  Anton, Tahoma, sans-serif;
+    color: #000000;
+    line-height: 2;
+
+}
+
+p {
+    font-size: 17px;
+    font-family: Tahoma, sans-serif;
+    font-weight: 300;
+}
+
+.logo {
+    margin-left: 5%;
+}
+
+#logo-bild {
+    width: 400px;
+    margin-top: 10px;
+}
+
+@font-face {
+    font-family: 'Jersey20'; 
+    src: url('fonts/Jersey_20/Jersey20-Regular.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Anton'; 
+    src: url('fonts/Anton/Anton-Regular.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+/*--------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------
+ ------------------------------------------ Animations-------------------------------------
+ ---------------------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------------------*/
+
+ .image-animate {
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transform: translateY(20px);
+}
+
+.image-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.text-animate {
+    opacity: 0;
+    transform: skewX(-20deg);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.text-animate.visible {
+    opacity: 1;
+    transform: skewX(0deg);
+}
+
+.text-animate2 {
+    opacity: 0;
+    transform: skewX(-20deg);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.text-animate2.visible {
+    opacity: 1;
+    transform: skewX(0deg);
+}
+
+.video-animate {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.video-animate.visible {
+    opacity: 1;
+}
+
+.text-animate, .gif-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-in-out, transform 1s ease-in-out;
+}
+
+.text-animate.visible, .gif-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*--------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------
+ ------------------------------------------ Video --------------------------------------------
+ ---------------------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------------------*/
+
+.video_container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 20px;
+    overflow: hidden; 
+    position: relative;
+}
+
+#background-video {
+    width: 80%; 
+    z-index: 0;
+}
+
+#fallback-gif {
+    display: none;
+    width: 93%;
+    height: 85vh;
+    height: auto;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 0; 
+    right: 25%; 
+    width: auto; 
+    height: 70px; 
+    transform: translateY(50%); 
+}
+ 
+/*--------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------
+ ------------------------------------------ Containers----------------------------------------
+ ---------------------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------------------*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color:rgb(255, 255, 255);
+}
+.container-manifiesto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(36, 0, 180));
+}
+
+.container-dienste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to right, rgb(255, 204, 0), rgb(255, 102, 0));
+}
+
+#manifiesto {
+    height: 130px;
+    width: 90%;
+    border-radius: 15px; 
+    text-align: center; 
+    z-index: 10; 
+    color: rgb(0, 0, 0); 
+    padding: 20px; 
+    font-weight: 500;
+    display: flex;             
+    align-items: center;       
+    justify-content: center;   
+    margin-top: 30px;
+}
+
+#passbild-container {
+    height: 500px;
+    text-align: center; 
+    z-index: 10; 
+    color: rgb(0, 0, 0); 
+    padding: 20px; 
+    font-weight: 500;
+    display: flex;             
+    align-items: center;       
+    justify-content: center;   
+    margin-top: 30px;
+}
+
+#manifiesto-bild {
+    height: 100px;             
+    width: auto;              
+}
+
+#passbild {
+    height: 400px;             
+    width: auto;    
+    border-radius: 20px;          
+}
+
+
+
+#statement-content {
+    height: 500px;
+    width: 70%;
+    text-align: center; 
+    z-index: 10; 
+    background-color:rgb(255, 255, 255);
+    padding: 20px; 
+    z-index: 10; 
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;          
+    align-items: center;      
+    justify-content: center; 
+
+}
+
+
+
+#statement-manifiesto {
+    height: 500px;
+    width: 70%;
+    text-align: center; 
+    z-index: 10; 
+    padding: 20px; 
+    z-index: 10; 
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;          
+    align-items: center;      
+    justify-content: center; 
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+ 
+#dienste {
+    height: 400px;
+    width: 70%;
+    text-align: center; 
+    z-index: 10; 
+    padding: 20px; 
+    z-index: 10; 
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;          
+    align-items: center;      
+    justify-content: center; 
+}
+
+
+#projects {
+
+    height: 100px;
+    text-align: center; 
+    z-index: 10; 
+    color: rgb(255, 255, 255); 
+    background-color:rgb(0, 0, 0);
+    padding: 20px; 
+    font-weight: 600;
+}
+
+
+
+#call-to-action {
+    top: 10px;
+    bottom: 20px; 
+    width: 400px;
+    text-align: center; 
+    z-index: 10; 
+    background-color: rgb(31, 0, 155);
+    padding: 20px; 
+    font-weight: 600;
+    border-radius: 15px;
+    color: rgb(199, 199, 199);
+}
+
+a {
+    color: white;
+}
+
+/*--------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------
+ -------------------------------------- Projekte-Bilder---------------------------------------
+ ---------------------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------------------*/
+
+.projekte-bilder {
+width: 60%;
+margin: 100px auto;
+margin-bottom: 100px;
+border-radius: 20px;
+display: block; 
+
+}
+
+/*--------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------
+ -------------------------------------- Skills-Bilder---------------------------------------
+ ---------------------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------------------*/
+
+ .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.image-grid img {
+    width: auto;
+    height: 180px;
+    padding: 50px;
+    display: block;
+    object-fit: cover;
+}
+
+.container-dienste {
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    text-align: left;
+}
+
+.image-default, .image-hover {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease; 
+}
+
+.image-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+}
+
+.image-container:hover .image-hover,
+.image-container.clicked .image-hover {
+    opacity: 1;
+}
+
+.image-container:hover .image-default,
+.image-container.clicked .image-default {
+    opacity: 0;
+}
+
+.tooltip {
+    position: absolute;
+    width: 200px;
+    bottom: 10px;
+    left: 90%;
+    transform: translateX(-35%);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 15px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Prevent interaction with the tooltip */
+    z-index: 10;
+}
+
+.image-container:hover .tooltip,
+.image-container.clicked .tooltip {
+    opacity: 1;
+}
+
+/*@media (min-width: 600px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (min-width: 900px) {
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #dienste {
+        height: 400px;
+    }
+    .image-grid img {
+        width: auto;
+        height: 150px;
+    }
+}*/
+
+/*--------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------
+ -------------------------------------- Form --------------------------------------------------
+ ----------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------*/
+
+
+ form {
+    background: linear-gradient(to right, rgb(0, 255, 153), rgb(0, 132, 255));
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+textarea {
+    width: 100%;     
+    height: 200px;  
+    margin-top: 8px; 
+    padding: 10px;   
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+label {
+    
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 750px) {
+
+    .projekte-bilder {
+        width: 90%;
+        margin: 150px auto;
+        margin-bottom: 250px;
+        border-radius: 20px;
+        display: block; 
+        
+        }
+
+
+    #background-video {
+        display: none;  /* Hide the video */
+    }
+
+    #fallback-gif {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+
+    }
+
+    #logo-bild {
+        width: 250px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    .overlay-image {
+        bottom: 100px; 
+    }
+
+    #manifiesto-bild {
+        height: 80px; 
+    } 
+
+    #manifiesto {
+        width: 80%
+    }
+
+    p {
+        font-size: 13px;;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .image-grid img {
+        height: 120px;
+        padding: 30px;
+    
+    }
+
+    #dienste {
+        height: 500px;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1000px) {
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 33px;
+    }
+
+    p {
+        font-size: 15px;;
+    }
+
+    .overlay-image {
+        bottom: 50px; 
+    }
+
+    #manifiesto-bild {
+        height: 90px; 
+    }
+
+    #manifiesto {
+        width: 85%
+    }
+
+    #background-video {
+        width: 95%; 
+        z-index: 0;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image-grid img {
+        height: 150px;
+        padding: 40px;
+    
+    }
+
+    #dienste {
+        height: 500px;
+    }
+
+
+}
