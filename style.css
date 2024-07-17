@@ -320,7 +320,7 @@ p {
 }
 
 #passbild-container {
-    height: 500px;
+    height: 400px;
     text-align: center; 
     z-index: 10; 
     color: rgb(0, 0, 0); 
@@ -338,7 +338,7 @@ p {
 }
 
 #passbild {
-    height: 400px;             
+    height: 300px;             
     width: auto;    
     border-radius: 20px;          
 }
@@ -630,7 +630,7 @@ button:hover {
     }
 
     h3 {
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .overlay-image {
@@ -662,6 +662,17 @@ button:hover {
     #dienste {
         height: 500px;
     }
+
+    #passbild {
+        height: 250px;                
+    }
+
+    #passbild-container {
+        height: 350px;
+    }
+
+
+
 }
 
 @media (min-width: 750px) and (max-width: 1000px) {
@@ -670,7 +681,7 @@ button:hover {
     }
 
     h3 {
-        font-size: 33px;
+        font-size: 25px;
     }
 
     p {
@@ -706,6 +717,14 @@ button:hover {
 
     #dienste {
         height: 500px;
+    }
+
+    #passbild {
+        height: 280px;                
+    }
+
+    #passbild-container {
+        height: 380px;
     }
 
 
