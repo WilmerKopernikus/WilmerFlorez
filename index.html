@@ -42,6 +42,23 @@
             <img src="arrow.gif" alt="arrow" class="overlay-image">
         </div>    
 
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let videoElement = document.querySelector('.video-animate');
+    
+                let observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+    
+                observer.observe(videoElement);
+            });
+        </script>
+
 
         <div class="container-manifiesto">
             <div  id="passbild-container">
