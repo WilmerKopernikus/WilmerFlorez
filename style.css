@@ -129,7 +129,7 @@ body, h1, h2, h3, p {
 h1 {
     font-size: 35px;
     font-weight: 400;
-    font-family: Jersey20, Arial;
+    font-family: Anton, Tahoma, sans-serif;
 }
 
 h2 {
@@ -141,7 +141,7 @@ h2 {
 }
 
 h3 {
-
+    font-size: 50px;
     font-weight: 500;
     font-family:  Anton, Tahoma, sans-serif;
     color: #000000;
@@ -164,12 +164,6 @@ p {
     margin-top: 10px;
 }
 
-@font-face {
-    font-family: 'Jersey20'; 
-    src: url('fonts/Jersey_20/Jersey20-Regular.ttf') format('truetype'); 
-    font-weight: normal; 
-    font-style: normal; 
-}
 
 @font-face {
     font-family: 'Anton'; 
@@ -293,7 +287,7 @@ p {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(36, 0, 180));
+    background: linear-gradient(to right, rgb(255, 204, 0), rgb(255, 102, 0));
 }
 
 .container-dienste {
@@ -324,12 +318,28 @@ p {
     text-align: center; 
     z-index: 10; 
     color: rgb(0, 0, 0); 
-    padding: 20px; 
     font-weight: 500;
     display: flex;             
     align-items: center;       
     justify-content: center;   
-    margin-top: 30px;
+    margin-top: 150px;
+}
+
+#text-passbild-container {
+    height: 200px;
+    text-align: center;
+    z-index: 10;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    justify-content: flex-start; 
+    margin-bottom: 140px;
+}
+
+.text-block {
+    margin-bottom: 20px;
 }
 
 #manifiesto-bild {
@@ -545,10 +555,10 @@ display: block;
 
 
  form {
-    background: linear-gradient(to right, rgb(0, 255, 153), rgb(0, 132, 255));
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background: linear-gradient(to right, rgb(255, 204, 0), rgb(255, 102, 0));
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.4);
     font-family: 'Arial', sans-serif;
     color: #333;
 }
@@ -557,7 +567,7 @@ display: block;
 input {
     width: 100%;
     padding: 10px;
-    margin-top: 8px;
+    margin-top: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box; 
@@ -566,7 +576,7 @@ input {
 textarea {
     width: 100%;     
     height: 200px;  
-    margin-top: 8px; 
+    margin-top: 15px; 
     padding: 10px;   
     border: 1px solid #ccc; 
     border-radius: 4px; 
@@ -581,9 +591,10 @@ label {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #000000;
     color: white;
     padding: 10px 15px;
+    margin-top: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -591,7 +602,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #002fff;
 }
 
 @media (max-width: 750px) {
