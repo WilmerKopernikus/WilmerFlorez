@@ -388,20 +388,6 @@ p {
     letter-spacing: 2px;
     word-spacing: 5px;
 }
- 
-#dienste {
-    height: 400px;
-    width: 70%;
-    text-align: center; 
-    z-index: 10; 
-    padding: 20px; 
-    z-index: 10; 
-    margin-top: 10px;
-    margin-bottom: 50px;
-    display: flex;          
-    align-items: center;      
-    justify-content: center; 
-}
 
 
 #projects {
@@ -455,6 +441,20 @@ display: block;
  ---------------------------------------------------------------------------------------------
  -------------------------------------------------------------------------------------------*/
 
+ #dienste {
+    height: 1100px;
+    width: 70%;
+    text-align: center; 
+    z-index: 10; 
+    padding: 20px; 
+    z-index: 10; 
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;          
+    align-items: center;      
+    justify-content: center; 
+}
+
  .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -464,7 +464,7 @@ display: block;
 
 .image-grid img {
     width: auto;
-    height: 180px;
+    height: 120px;
     padding: 50px;
     display: block;
     object-fit: cover;
@@ -472,11 +472,14 @@ display: block;
 
 .container-dienste {
     padding: 20px;
+
+
 }
 
 .image-container {
     position: relative;
     text-align: left;
+
 }
 
 .image-default, .image-hover {
@@ -493,6 +496,8 @@ display: block;
     width: 100%;
     height: auto;
     opacity: 0;
+    background-color: #ffffff;
+    border-radius: 20px;
 }
 
 .image-container:hover .image-hover,
@@ -507,7 +512,7 @@ display: block;
 
 .tooltip {
     position: absolute;
-    width: 200px;
+    width: auto;
     bottom: 10px;
     left: 90%;
     transform: translateX(-35%);
@@ -605,6 +610,58 @@ button:hover {
     background-color: #002fff;
 }
 
+@media (min-width: 750px) and (max-width: 1000px) {
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;;
+    }
+
+    .overlay-image {
+        bottom: 50px; 
+    }
+
+    #manifiesto-bild {
+        height: 90px; 
+    }
+
+    #manifiesto {
+        width: 85%
+    }
+
+    #background-video {
+        width: 95%; 
+        z-index: 0;
+    }
+
+    #passbild {
+        height: 280px;                
+    }
+
+    #passbild-container {
+        height: 380px;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .image-grid img {
+        height: 90px;
+        padding: 50px;
+    }
+
+    #dienste {
+        height: 900px;
+    }
+}
+
 @media (max-width: 750px) {
 
     .projekte-bilder {
@@ -660,20 +717,6 @@ button:hover {
         font-size: 13px;;
     }
 
-    .image-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .image-grid img {
-        height: 120px;
-        padding: 30px;
-    
-    }
-
-    #dienste {
-        height: 500px;
-    }
-
     #passbild {
         height: 250px;                
     }
@@ -682,61 +725,18 @@ button:hover {
         height: 350px;
     }
 
-
-
-}
-
-@media (min-width: 750px) and (max-width: 1000px) {
-    h2 {
-        font-size: 25px;
-    }
-
-    h3 {
-        font-size: 18px;
-    }
-
-    p {
-        font-size: 15px;;
-    }
-
-    .overlay-image {
-        bottom: 50px; 
-    }
-
-    #manifiesto-bild {
-        height: 90px; 
-    }
-
-    #manifiesto {
-        width: 85%
-    }
-
-    #background-video {
-        width: 95%; 
-        z-index: 0;
-    }
-
     .image-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .image-grid img {
-        height: 150px;
-        padding: 40px;
+        height: 60px;
+        padding: 30px;
     
     }
 
     #dienste {
-        height: 500px;
+        height: 800px;
     }
-
-    #passbild {
-        height: 280px;                
-    }
-
-    #passbild-container {
-        height: 380px;
-    }
-
 
 }
