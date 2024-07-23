@@ -623,6 +623,14 @@ button:hover {
         font-size: 15px;;
     }
 
+    .hamburger-menu {
+        right: 30px;
+    }
+
+    .hamburger {
+        width: 35px;
+    }
+
     .overlay-image {
         bottom: 50px; 
     }
@@ -699,6 +707,14 @@ button:hover {
 
     h3 {
         font-size: 15px;
+    }
+
+    .hamburger-menu {
+        right: 20px;
+    }
+
+    .hamburger {
+        width: 30px;
     }
 
     .overlay-image {
