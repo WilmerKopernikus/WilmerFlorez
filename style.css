@@ -179,9 +179,32 @@ body, h1, h2, h3, p {
  -------------------------------------------------------------------------------------------*/
 
 h1 {
-    font-size: 35px;
+    font-size: 37px;
     font-weight: 400;
     font-family: Anton, Tahoma, sans-serif;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: 400;
+    font-family: Anton, Tahoma, sans-serif;
+}
+
+h3 {
+    font-size: 23px;
+    font-weight: 300;
+    font-family: Anton, Tahoma, sans-serif;
+    color: #001a8e;
+}
+
+h3 a {
+    text-decoration: none;
+    color: inherit; /* This will ensure the link takes the color of the h3 */
+}
+
+h3 a:hover {
+    color: #002fff; /* Change to your desired hover color */
+    font-size: 24px; /* Change to your desired hover size */
 }
 
 @font-face {
@@ -311,29 +334,29 @@ h1 {
 #titel-bild {
     height: 100px;             
     width: auto;
-    margin-top: 200px;          
+    margin-top: 200px;  
+    margin-bottom: 100px;        
 }
 
 #titel-bild-contact {
     height: 100px;             
     width: auto;
-    margin-top: 110px;          
+    margin-top: 110px; 
+    margin-bottom: 50px;         
 }
 
 #statement-text {
-    height: 600px;
+    height: 400px;
     width: 70%;
     text-align: center; 
     z-index: 10; 
-    padding: 20px; 
-    margin-top: 10px;
     margin-bottom: 200px;
     display: flex;          
-    align-items: center;      
+    align-items: flex-start;      
     justify-content: center; 
     letter-spacing: 2px;
     word-spacing: 5px;
-    font-size: 40px;
+    font-size: 37px;
     font-weight: 400;
     font-family:  Anton, Tahoma, sans-serif;
     color: #000000;
@@ -357,12 +380,10 @@ h1 {
     text-align: center; 
     z-index: 10; 
     background-color:rgb(255, 255, 255);
-    padding: 20px; 
     z-index: 10; 
-    margin-top: 10px;
     margin-bottom: 50px;
     display: flex;          
-    align-items: center;      
+    align-items: flex-start;      
     justify-content: center; 
 }
 
@@ -370,18 +391,63 @@ h1 {
 
 /*--------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------
- -------------------------------------- Projekte-Bilder---------------------------------------
+ --------------------------------------------- Projects---------------------------------------
  ---------------------------------------------------------------------------------------------
  -------------------------------------------------------------------------------------------*/
 
-.projekte-bilder {
-width: 60%;
-margin: 100px auto;
-margin-bottom: 100px;
-border-radius: 20px;
-display: block; 
+ .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+    row-gap: 100px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 300px;
+}
+.projects-container > div {
+    display: flex;
+    align-items: center;
+}
+.image-left {
+    grid-column: 1;
+    grid-row: 1;
+}
+.text-right {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+    text-align: left;
 
 }
+.text-left {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.image-right {
+    grid-column: 2;
+    grid-row: 2;
+}
+.projects-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.projects-container-small {
+    display: none;
+}
+
+
+
+
 
 /*--------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------
@@ -394,12 +460,9 @@ display: block;
     width: 70%;
     text-align: center; 
     z-index: 10; 
-    padding: 20px; 
-    z-index: 10; 
-    margin-top: 10px;
     margin-bottom: 50px;
     display: flex;          
-    align-items: center;      
+    align-items: flex-start;      
     justify-content: center; 
 }
 
@@ -556,7 +619,7 @@ button:hover {
     /*--------------------------------- Containers-----------------------------------------*/
     
     #statement-text {
-        font-size: 33px;
+        font-size: 32px;
     }
 
     #titel-bild {
@@ -598,7 +661,30 @@ button:hover {
     #dienste {
         height: 1100px;
     }
+
+/*--------------------------------- Projects-----------------------------------------*/
+
+.projects-container {
+    display: none;
 }
+
+.projects-container-small {
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 300px;
+}
+
+.text-right {
+    margin-top: 50px;
+    margin-bottom: 150px;
+    text-align: left;
+}
+
+}
+
+
+
 
 /*---------------------------------------------------------------------------------------------
  ----------------------------------------------------------------------------------------------
@@ -658,10 +744,29 @@ button:hover {
     } 
     
     #statement-text {
-        font-size: 20px;
+        font-size: 24px;
+        width: 80%;
     }
 
     /*--------------------------------- Projekte ----------------------------------------*/
+
+    .projects-container {
+        display: none;
+    }
+
+    .projects-container-small {
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 300px;
+
+    }
+    
+    .text-right {
+        margin-top: 50px;
+        margin-bottom: 150px;
+        text-align: left;
+    }
 
     .image-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -669,19 +774,11 @@ button:hover {
 
     .image-grid img {
         height: 60px;
-        padding: 30px;
+        padding: 40px;
     }
 
     #dienste {
-        height: 1000px;
+        height: 1200px;
     }
-
-    .projekte-bilder {
-        width: 90%;
-        margin: 150px auto;
-        margin-bottom: 250px;
-        border-radius: 20px;
-        display: block; 
-        }
 
 }
