@@ -1,7 +1,8 @@
 /*--------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------
- -------------------------------------- Kopernikus  -Design-----------------------------------
+ --------------------------------  Wilmer Aderbert Florez Lopez-------------------------------
  ---------------------------------------------------------------------------------------------
+  ------------------------------Frontend Entwickler & Web Designer----------------------------
  -------------------------------------------------------------------------------------------*/
 
 html, body {
@@ -12,11 +13,9 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-
 body, h1, h2, h3, p {
     margin: 0;
     padding-top:0px;
-
 }
 
 /*--------------------------------------------------------------------------------------------
@@ -164,7 +163,7 @@ body, h1, h2, h3, p {
     height: auto;
 }
 
-.overlay-image {
+.arrow {
     position: absolute;
     bottom: 0; 
     right: 25%; 
@@ -184,23 +183,6 @@ h1 {
     font-weight: 400;
     font-family: Anton, Tahoma, sans-serif;
 }
-
-h2 {
-    font-size: 47px;
-    font-weight: 500;
-    font-family:  Anton, Tahoma, sans-serif;
-    color: #000000;
-
-}
-
-/*h3 {
-    font-size: 50px;
-    font-weight: 400;
-    font-family:  Anton, Tahoma, sans-serif;
-    color: #000000;
-    line-height: 2;
-}*/
-
 
 @font-face {
     font-family: 'Anton'; 
@@ -260,7 +242,7 @@ h2 {
 .text-animate, .gif-animate {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 2s ease-in-out, transform 1s ease-in-out;
+    transition: opacity 4s ease-in-out, transform 1s ease-in-out;
 }
 
 .text-animate.visible, .gif-animate.visible {
@@ -272,44 +254,11 @@ h2 {
  
 /*--------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------
- ------------------------------------------ Containers----------------------------------------
+ ------------------------------------------ Passbild----------------------------------------
  ---------------------------------------------------------------------------------------------
  -------------------------------------------------------------------------------------------*/
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color:rgb(255, 255, 255);
-}
-.container-manifiesto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background: linear-gradient(to right, rgb(255, 204, 0), rgb(255, 102, 0));
-}
-
-.container-dienste {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background: linear-gradient(to right, rgb(255, 204, 0), rgb(255, 102, 0));
-}
-
-#manifiesto {
-    height: 130px;
-    z-index: 10; 
-    padding: 20px; 
-    display: flex;             
-    align-items: center;       
-    justify-content: center;   
-    margin-top: 200px;
-}
-
-#passbild-container {
+ #passbild-container {
     height: 400px;
     text-align: center; 
     z-index: 10; 
@@ -341,36 +290,48 @@ h2 {
     font-weight: 300;
 }
 
-#manifiesto-bild {
-    height: 100px;             
-    width: auto;              
-}
-
 #passbild {
     height: 300px;             
     width: auto;    
     border-radius: 20px;          
 }
 
+/*--------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------
+ ------------------------------------------ Containers----------------------------------------
+ ---------------------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------------------*/
 
 
-#statement-content {
-    height: 500px;
-    width: 70%;
-    text-align: center; 
-    z-index: 10; 
+.container-weiss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     background-color:rgb(255, 255, 255);
-    padding: 20px; 
-    z-index: 10; 
-    margin-top: 10px;
-    margin-bottom: 50px;
-    display: flex;          
-    align-items: center;      
-    justify-content: center; 
-
 }
 
-#statement-manifiesto {
+.container-gelb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to right, rgb(255, 204, 0), rgb(255, 102, 0));
+}
+
+#titel-bild {
+    height: 100px;             
+    width: auto;
+    margin-top: 200px;          
+}
+
+#titel-bild-contact {
+    height: 100px;             
+    width: auto;
+    margin-top: 110px;          
+}
+
+#statement-text {
     height: 600px;
     width: 70%;
     text-align: center; 
@@ -387,10 +348,8 @@ h2 {
     font-weight: 400;
     font-family:  Anton, Tahoma, sans-serif;
     color: #000000;
-    line-height: 2;
-    
+    line-height: 2; 
 }
-
 
 #projects {
 
@@ -403,24 +362,22 @@ h2 {
     font-weight: 600;
 }
 
-
-
-#call-to-action {
-    top: 10px;
-    bottom: 20px; 
-    width: 400px;
+#kontakt{
+    height: 500px;
+    width: 100%;
     text-align: center; 
     z-index: 10; 
-    background-color: rgb(31, 0, 155);
+    background-color:rgb(255, 255, 255);
     padding: 20px; 
-    font-weight: 600;
-    border-radius: 15px;
-    color: rgb(199, 199, 199);
+    z-index: 10; 
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;          
+    align-items: center;      
+    justify-content: center; 
 }
 
-a {
-    color: white;
-}
+
 
 /*--------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------
@@ -444,7 +401,7 @@ display: block;
  -------------------------------------------------------------------------------------------*/
 
  #dienste {
-    height: 1100px;
+    height: 1200px;
     width: 70%;
     text-align: center; 
     z-index: 10; 
@@ -474,14 +431,11 @@ display: block;
 
 .container-dienste {
     padding: 20px;
-
-
 }
 
 .image-container {
     position: relative;
     text-align: left;
-
 }
 
 .image-default, .image-hover {
@@ -533,26 +487,6 @@ display: block;
 .image-container.clicked .tooltip {
     opacity: 1;
 }
-
-/*@media (min-width: 600px) {
-    .image-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-@media (min-width: 900px) {
-    .image-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    #dienste {
-        height: 400px;
-    }
-    .image-grid img {
-        width: auto;
-        height: 150px;
-    }
-}*/
 
 /*--------------------------------------------------------------------------------------------
  ----------------------------------------------------------------------------------------------
@@ -612,14 +546,15 @@ button:hover {
     background-color: #002fff;
 }
 
-@media (min-width: 750px) and (max-width: 1000px) {
-    h2 {
-        font-size: 25px;
-    }
 
-    #statement-manifiesto {
-        font-size: 35px;
-    }
+/*---------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------
+ -------------------------------------- Tablets------------------------------------------------
+ ----------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------*/
+@media (min-width: 750px) and (max-width: 1000px) {
+    
+    /*--------------------------------- Menu-----------------------------------------*/
 
     .hamburger-menu {
         right: 30px;
@@ -628,23 +563,29 @@ button:hover {
     .hamburger {
         width: 35px;
     }
-
-    .overlay-image {
-        bottom: 50px; 
+    
+    /*--------------------------------- Containers-----------------------------------------*/
+    
+    #statement-text {
+        font-size: 33px;
     }
 
-    #manifiesto-bild {
+    #titel-bild {
         height: 90px; 
     }
 
-    #manifiesto {
-        width: 85%
-    }
-
+    /*--------------------------------- Video-----------------------------------------*/
+   
     #background-video {
         width: 95%; 
         z-index: 0;
     }
+
+    .arrow {
+        bottom: 50px; 
+    }
+
+    /*--------------------------------- Passbild-----------------------------------------*/
 
     #passbild {
         height: 280px;                
@@ -653,6 +594,8 @@ button:hover {
     #passbild-container {
         height: 380px;
     }
+
+    /*--------------------------------- Skills-----------------------------------------*/
 
     .image-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -664,24 +607,35 @@ button:hover {
     }
 
     #dienste {
-        height: 900px;
+        height: 1100px;
     }
 }
 
+/*---------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------
+ -------------------------------------- Handy--------------------------------------------------
+ ----------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------*/
 @media (max-width: 750px) {
 
-    .projekte-bilder {
-        width: 90%;
-        margin: 150px auto;
-        margin-bottom: 250px;
-        border-radius: 20px;
-        display: block; 
-        
-        }
+    /*--------------------------------- Menu-----------------------------------------*/
 
+    #logo-bild {
+        width: 240px;
+    }
+    
+    .hamburger-menu {
+        right: 20px;
+    }
+    
+    .hamburger {
+        width: 30px;
+    }
+    
+    /*--------------------------------- Video-----------------------------------------*/
 
     #background-video {
-        display: none;  /* Hide the video */
+        display: none;  
     }
 
     #fallback-gif {
@@ -692,43 +646,13 @@ button:hover {
     transform: translate(-50%, -50%);
     width: 90%;
     height: auto;
-
     }
 
-    #logo-bild {
-        width: 250px;
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-    #statement-manifiesto {
-
-        font-size: 26px;
-
-    }
-
-    .hamburger-menu {
-        right: 20px;
-    }
-
-    .hamburger {
-        width: 30px;
-    }
-
-    .overlay-image {
+    .arrow {
         bottom: 100px; 
     }
 
-    #manifiesto-bild {
-        height: 80px; 
-    } 
-
-    #manifiesto {
-        width: 80%
-    }
-
+    /*--------------------------------- Passbild-----------------------------------------*/
 
     #passbild {
         height: 250px;                
@@ -738,6 +662,18 @@ button:hover {
         height: 350px;
     }
 
+    /*--------------------------------- Containers-----------------------------------------*/
+
+    #titel-bild {
+        height: 80px; 
+    } 
+    
+    #statement-text {
+        font-size: 24px;
+    }
+
+    /*--------------------------------- Projekte ----------------------------------------*/
+
     .image-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -745,11 +681,18 @@ button:hover {
     .image-grid img {
         height: 60px;
         padding: 30px;
-    
     }
 
     #dienste {
-        height: 800px;
+        height: 1000px;
     }
+
+    .projekte-bilder {
+        width: 90%;
+        margin: 150px auto;
+        margin-bottom: 250px;
+        border-radius: 20px;
+        display: block; 
+        }
 
 }
