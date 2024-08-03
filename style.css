@@ -476,7 +476,7 @@ h3 a:hover {
  -------------------------------------------------------------------------------------------*/
 
  #dienste {
-    height: 1400px;
+    height: 1600px;
     width: 70%;
     text-align: center; 
     z-index: 10; 
@@ -798,7 +798,7 @@ button:hover {
     }
 
     #dienste {
-        height: 1300px;
+        height: 1500px;
     }
 
 }

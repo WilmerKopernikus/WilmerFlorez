@@ -47,7 +47,7 @@ function draw() {
 		background("#1a0633");
 		noStroke();
 		fill(255);
-		textSize(25);
+		textSize(23);
 		text("Drücken, um Partikel auszusenden", centerX, centerY);
 		return;
 	}
