@@ -125,12 +125,10 @@ body, h1, h2, h3, p {
     left: 0; 
     position: fixed;
     top: 0;
-    padding-left: 50px;
+    padding-left: 5%;
 }
 
-.logo {
-    margin-left: 5%;
-}
+
 
 #logo-bild {
     width: 400px;
