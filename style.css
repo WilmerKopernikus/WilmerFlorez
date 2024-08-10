@@ -483,7 +483,7 @@ a {
  -------------------------------------------------------------------------------------------*/
 
  #dienste {
-    height: 1600px;
+    height: 600px;
     width: 70%;
     text-align: center; 
     z-index: 10; 
@@ -495,15 +495,15 @@ a {
 
  .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 10px;
     padding: 10px;
 }
 
 .image-grid img {
     width: auto;
-    height: 120px;
-    padding: 50px;
+    height: 70px;
+    padding: 30px;
     display: block;
     object-fit: cover;
 }
