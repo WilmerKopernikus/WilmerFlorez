@@ -302,6 +302,7 @@ h3 a:hover {
     font-size: 17px;
     font-family: Tahoma, sans-serif;
     font-weight: 300;
+    line-height: 2.5;
 }
 
 a {
@@ -342,6 +343,20 @@ a {
     height: 100px;             
     width: auto;
     margin-top: 200px;  
+    margin-bottom: 100px;        
+}
+
+#titel-bild-joblab {
+    height: 60px;             
+    width: auto;
+    margin-top: 150px;  
+    margin-bottom: 50px;        
+}
+
+#titel-bild-single-pages {
+    height: 100px;             
+    width: auto;
+    margin-top: 100px;  
     margin-bottom: 100px;        
 }
 
@@ -413,21 +428,31 @@ a {
     margin-bottom: 100px;
 }
 
-.bottom {
+.container-joblab {
+margin-top: 150px;
+margin-bottom: 200px;
+}
 
+.bottom {
     margin-bottom: 300px;
 }
+
 .projects-container > div {
     display: flex;
     align-items: center;
+    justify-content:space-around;
+
+
 }
 .image-left {
     grid-column: 1;
     grid-row: 1;
+
 }
 .image-left2 {
     grid-column: 1;
     grid-row: 3;
+    
 }
 
 .text-right2 {
@@ -464,7 +489,16 @@ a {
 }
 .projects-img {
     max-width: 100%;
-    height: auto;
+    border-radius: 15px;
+    max-height: 500px;
+}
+.gif-img-joblab {
+    max-height: 500px;
+    border-radius: 15px;
+}
+
+.plakate-img-joblab {
+    max-height: 600px;
     border-radius: 15px;
 }
 
@@ -714,7 +748,8 @@ button:hover {
     display: block;
     width: 70%;
     margin: auto;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
+    margin-top: 100px;
 }
 
 .text-right {
@@ -815,7 +850,8 @@ button:hover {
         display: block;
         width: 80%;
         margin: auto;
-        margin-bottom: 300px;
+        margin-bottom: 200px;
+        margin-top: 100px;
 
     }
     
