@@ -43,12 +43,19 @@ function draw() {
 	}
 	
 	var length = blobs.length;
-	if(length == 0){
+	if (length == 0) {
 		background("#1a0633");
 		noStroke();
 		fill(255);
 		textSize(23);
-		text("Drücken, um Partikel auszusenden", centerX, centerY);
+		textAlign(CENTER, TOP); 
+		let textContent = "Willkommen in meinem Webentwickler und -designer Portfolio. Das 'Partikellabor' ist ein interaktives Animationsprojekt. Klicken oder tippen Sie auf verschiedenen Teilen des Bildschirms auf Ihrem mobilen Gerät, um es zu aktivieren.";
+
+		textWrap(WORD); 
+		let textWidth = width * 0.5; 
+		let textHeight = height * 0.5; 
+		let startY = (height - textHeight) / 1.3; 
+		text(textContent, centerX - textWidth / 2, startY, textWidth, textHeight);
 		return;
 	}
 	
