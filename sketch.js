@@ -47,14 +47,14 @@ function draw() {
 		background("#1a0633");
 		noStroke();
 		fill(255);
-		textSize(23);
+		textSize(20);
 		textAlign(CENTER, TOP); 
 		let textContent = "Willkommen in meinem Webentwickler und -designer Portfolio. Das 'Partikellabor' ist ein interaktives Animationsprojekt. Klicken oder tippen Sie auf verschiedenen Teilen des Bildschirms auf Ihrem mobilen Gerät, um es zu aktivieren.";
 
 		textWrap(WORD); 
 		let textWidth = width * 0.5; 
 		let textHeight = height * 0.5; 
-		let startY = (height - textHeight) / 1.3; 
+		let startY = (height - textHeight) / 1.7; 
 		text(textContent, centerX - textWidth / 2, startY, textWidth, textHeight);
 		return;
 	}
