@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dienstleistungen - Kopernikus Design</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/cards-services.css">
+    <link rel="stylesheet" href="styles/images.css">
+    <link rel="stylesheet" href="styles/global-text.css">
+    <link rel="stylesheet" href="styles/contact-form.css">
+    <script src="p5.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div>
+        <a href="index.html">
+          <img src="imagenes/KopernikusLogo.png" alt="Kopernikus Design Logo" class='header-logo'>
+        </a>
+      </div>
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="menu-overlay" id="menuOverlay">
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="projekte.html">Projekte</a></li>
+        <li class="cards-mobile"><a href="services_de_mobile.html">Services</a></li>
+        <li class="cards-screens"><a href="services_de.html">Services</a></li>
+        <li class="cards-mobile-landscape"><a href="services_de_mobile_landscape.html">Services</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="services.html">English</a></li>
+      </ul>
+    </div>  
+
+
+    <div class="video-container">
+      <div class="video-background">
+        <video autoplay muted loop>
+          <source src="imagenes/servicios/services.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="video-background-cube" id="cube-video">
+        <video autoplay muted loop>
+          <source src="imagenes/servicios/cube.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <div class="intro-div"></div>
+
+    <div id='services-cards-container' class="cards-screens">
+      <div id="cards" class="container">
+
+        <div id="card1-services" class="card">
+          <div class="card-body" id="services">
+              <div class="left" id="center-services">
+                <h2 class="title">Webentwicklung</h2>
+                <p class="text justify">
+                  Wir gehen über reine Ästhetik hinaus und entwickeln leistungsstarke Websites, die einwandfrei funktionieren. 
+                  Unsere Entwicklungskompetenz umfasst sowohl Front-End- als auch Back-End-Lösungen, von einfachen Informationsseiten 
+                  bis hin zu komplexen Webanwendungen.
+                </p>
+              </div>
+              <div class="right" id="responsive-sketch">
+                <video id="services-animation" autoplay loop muted>
+                  <source src="imagenes//servicios/cube.mp4" type="video/mp4" />
+                  Your browser doesn't support video reproductions.
+                </video>
+            </div>
+          </div>
+        </div>
+
+        <div id="card2-services" class="card">
+          <div class="card-body" id="services">
+            <div class="left" id="center-services">
+              <h2 class="title">Webdesign & Redesign</h2>
+              <p class="text justify">
+                Unser Team ist spezialisiert auf die Erstellung visuell beeindruckender und benutzerfreundlicher Websites. 
+                Ob Sie eine neue Website benötigen oder ein modernes Redesign für Ihre bestehende Seite wünschen - wir sorgen dafür, 
+                dass sie auf allen Geräten optimal aussieht und reibungslos funktioniert.
+              </p>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <div id="sketch-big">
+                <div id="sketch7"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="card3-services" class="card">
+          <div class="card-body" id="services">
+            <div class="left" id="center-services">
+              <h2 class="title">Branding & Kreativdienstleistungen</h2>
+              <p class="text justify">
+                Bauen Sie eine starke Markenidentität mit unseren kreativen Dienstleistungen auf. Dazu gehören Logodesign, 
+                Visitenkarten und Werbematerialien, die Ihre Zielgruppe ansprechen und Ihre Marke wirkungsvoll präsentieren.
+              </p>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <div id="sketch-big">
+                <div id="sketch3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="card4-services" class="card">
+          <div class="card-body" id="services">
+            <div class="left" id="center-services">
+              <h2 class="title">E-Commerce-Lösungen</h2>
+              <p class="text justify">
+                Starten und erweitern Sie Ihren Online-Shop mit unseren E-Commerce-Dienstleistungen. Wir kümmern uns um Produktdarstellung, 
+                Warenkorb, Checkout-Prozesse und die sichere Zahlungsintegration, unter anderem mit Plattformen wie Shopify.
+              </p>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <div id="sketch-big">
+                <div id="sketch4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="card5-services" class="card">
+          <div class="card-body" id="services">
+            <div class="left" id="center-services">
+              <h2 class="title">Suchmaschinenoptimierung (SEO)</h2>
+              <p class="text justify">
+                Steigern Sie Ihre Sichtbarkeit in Suchmaschinen und gewinnen Sie mehr Besucher mit unseren SEO-Dienstleistungen. 
+                Wir optimieren die Struktur und den Inhalt Ihrer Website, um Ihre Rankings zu verbessern und den Traffic zu steigern.
+              </p>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <div id="sketch-big">
+                <div id="sketch5"></div>
+              </div>
+                <!--<video id="services-animation" autoplay loop muted>
+                  <source src="imagenes//servicios/02.mp4" type="video/mp4" />
+                  Your browser doesn't support video reproductions.
+                </video>-->
+            </div>
+          </div>
+        </div>
+
+        <div id="card6-services" class="card">
+          <div class="card-body" id="services">
+            <div class="left" id="center-services">
+              <h2 class="title">Webhosting & Domain-Dienstleistungen</h2>
+              <p class="text justify">
+                Profitieren Sie von zuverlässigem Webhosting und professionellem Domain-Management, damit Ihre Website sicher und rund 
+                um die Uhr erreichbar bleibt.
+              </p>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <div id="sketch-big">
+                <div id="sketch6"></div>
+              </div>
+                <!--<video id="services-animation" autoplay loop muted>
+                  <source src="imagenes//servicios/02.mp4" type="video/mp4" />
+                  Your browser doesn't support video reproductions.
+                </video>-->
+            </div>
+          </div>
+        </div>
+
+        <div id="card7-services" class="card">
+          <div class="card-body" id="services">
+            <div class="left" id="center-services">
+              <h2 class="title">Wartung & Support</h2>
+              <p class="text justify">
+                Unsere kontinuierlichen Support- und Wartungsdienste sorgen dafür, dass Ihre Website stets aktuell und optimal 
+                funktionsfähig bleibt. Wir übernehmen Sicherheitsupdates, Fehlerbehebungen und Leistungsoptimierung, um Ausfälle 
+                zu vermeiden.
+              </p>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <div id="sketch-big">
+                <div id="sketch2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div id="card8-services" class="card">
+          <div class="card-body" id="services">
+            <div class="left" id="center-services">
+              <h2 class="title">Arbeiten Sie mit uns!</h2>
+              <p class="text justify">Bereit, Ihr Unternehmen auf das nächste Level zu bringen? 
+                Eine Website zu haben bedeutet nicht nur, online zu sein - es bedeutet, neue Chancen 
+                zu eröffnen. Eine gut gestaltete Website hilft Ihnen, Kunden zu gewinnen, Vertrauen 
+                aufzubauen und Ihre Dienstleistungen rund um die Uhr zu präsentieren.
+              <br><br>
+              <p class="text justify">
+                Wir unterstützen Sie dabei, eine Website zu erstellen, die nicht nur visuell ansprechend, 
+                      sondern auch benutzerfreundlich und suchmaschinenoptimiert ist. Gemeinsam mit Ihnen erarbeiten 
+                      wir eine Lösung, die Ihre Unternehmensziele bestmöglich unterstützt.
+              <br><br>
+              <p class="text justify">
+                Bereit loszulegen? Füllen Sie das Formular aus, und wir melden uns innerhalb von 24 Stunden bei Ihnen.
+              </p>  
+              <h2 class="title impressum">Impressum:</h2>
+              <p class="text">
+                Gesetzliche Vertretung: Katharina Eberle <br>  Am Stumpenhof 14 <br> 73207 Plochingen, Deutschland  <br>  info@kopernikusdesign.com  <br> 
+                Kleinunternehmen nach §19 UStG - keine Umsatzsteuer ausgewiesen
+            </div>
+            <div class="right" id="center-services">
+              <h2 class="title">Kontaktieren Sie uns</h2>
+              <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
+                <p style="display:none;">
+                  <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                </p>
+                <div class="form-group">
+                  <label for="name">Ihr Name:</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Ihre E-Mail:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="message">Ihre Nachricht:</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="send-button">Senden</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+                 
+        
+  </div>
+  <script src="script.js"></script>
+  <script src="geometric_figures/sketch7.js"></script>
+  <script src="geometric_figures/sketch3.js"></script>
+  <script src="geometric_figures/sketch4.js"></script>
+  <script src="geometric_figures/sketch5.js"></script>
+  <script src="geometric_figures/sketch6.js"></script>
+  <script src="geometric_figures/sketch2.js"></script>
+</body>
+</html>

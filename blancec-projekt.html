@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blancec - Kopernikus Design</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/images.css">
+    <link rel="stylesheet" href="styles/global-text.css">
+    <link rel="stylesheet" href="styles/contact-form.css">
+    <script src="p5.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div>
+        <a href="index.html">
+          <img src="imagenes/KopernikusLogo.png" alt="Kopernikus Design Logo" class='header-logo'>
+        </a>
+      </div>
+    </div>
+        <div class="hamburger-menu">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="menu-overlay" id="menuOverlay">
+            <ul>
+              <li><a href="index.html">Startseite</a></li>
+              <li><a href="projekte.html">Projekte</a></li>
+              <li class="cards-mobile"><a href="services_de_mobile.html">Services</a></li>
+              <li class="cards-screens"><a href="services_de.html">Services</a></li>
+              <li class="cards-mobile-landscape"><a href="services_de_mobile_landscape.html">Services</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="blancec-case.html">English</a></li>
+            </ul>
+        </div>  
+
+
+        <div class="video-container">
+            <div class="video-background">
+                <video autoplay muted loop>
+                    <source src="imagenes/videos/blancec.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-background-cube" id="cube-video">
+                <video autoplay muted loop>
+                    <source src="imagenes/servicios/cube.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <div class="intro-div"></div>
+
+        <div id='blancec-cards-container' class="cards-screens">
+          <div id="cards" class="container">
+
+              <div id="card1-blancec" class="card">
+                <div class="card-body" id="blancec-services">
+                    <div class="left" id="center-services">
+                      <h2 class="title">Ihre Online-Präsenz transformieren</h2>
+                      <p class="text justify">
+                        Modernisierung von BLANCEC S.A.S.:<br><br>
+                        BLANCEC S.A.S, ein führendes kolumbianisches Labor für Produkttests, benötigte ein digitales Upgrade, 
+                        um seine Kunden besser zu bedienen. Wir haben ihre Website neu gestaltet, um schnelleren Zugriff, eine 
+                        intuitive Navigation und eine fließende Nutzererfahrung zu ermöglichen - damit Kunden die benötigten Tests 
+                        leichter finden und anfordern können.
+                      </p>
+                    </div>
+                    <div class="right" id="responsive-sketch">
+                      <div class="image-container-joblab">
+                        <img src="imagenes/projects/blancec/blancec-05.jpg" alt="Job Lab Logo Design">
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div id="card2-blancec" class="card">
+                  <div class="card-body" id="blancec-services">
+                    <div class="left" id="center-services">
+                      <h2 class="title">Blitzschnelle Leistung</h2>
+                      <p class="text justify"> Beschleunigung der Nutzererfahrung: <br><br>
+                        Durch den Neuaufbau der Website mit React haben wir die Ladezeiten drastisch verkürzt. 
+                        Kunden können nun effizient durch die Seiten navigieren, was Wartezeiten reduziert und die 
+                        allgemeine Zufriedenheit steigert. Eine schnellere Website hält Besucher engagiert und motiviert 
+                        sie, weitere Dienstleistungen zu erkunden..
+                      </p>
+                    </div>
+                    <div class="right" id="responsive-sketch">
+                      <div class="blancec_video">
+                        <video autoplay muted loop>
+                          <source src="imagenes/videos/blancec_video_01.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div id="card3-blancec" class="card">
+                  <div class="card-body" id="blancec-services">
+                    <div class="left" id="center-services">
+                      <h2 class="title">Robustes Backend & Datenmanagement</h2>
+                      <p class="text justify">
+                        Sichere & skalierbare Datenlösungen:<br><br>
+                        Wir haben ein maßgeschneidertes Backend mit einer gut strukturierten Datenbank implementiert, 
+                        die komplexe Testdaten mühelos verarbeitet. Diese skalierbare und sichere Grundlage gewährleistet 
+                        eine zuverlässige Leistung, einfache Aktualisierungen und eine reibungslose Integration - 
+                        während BLANCEC S.A.S wächst und sich weiterentwickelt.
+                      </p>
+                    </div>
+                    <div class="right" id="responsive-sketch">
+                      <div class="image-container-joblab">
+                        <img src="imagenes/projects/blancec/blancec-02.jpg" alt="Job Lab Logo Design">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div id="card4-blancec" class="card">
+                <div class="card-body" id="blancec-services">
+                  <div class="left" id="center-services">
+                    <h2 class="title">Automatisiertes Angebotssystem</h2>
+                    <p class="text justify">
+                      Sofortige Angebote auf Knopfdruck:<br><br>
+                      Kunden können jetzt die benötigten Tests auswählen, sie in einen virtuellen Warenkorb legen und 
+                      sofort ein professionelles, automatisch erstelltes PDF-Angebot erhalten. Dieser optimierte Prozess reduziert 
+                      den manuellen Aufwand und liefert Ergebnisse in Sekundenschnelle - so einfach war es noch nie, die benötigten 
+                      Informationen zu erhalten.
+                    </p>
+                  </div>
+                  <div class="right" id="responsive-sketch">
+                    <div class="blancec_video">
+                      <video autoplay muted loop>
+                        <source src="imagenes/videos/blancec_video_02.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="card5-blancec" class="card">
+                <div class="card-body" id="blancec-services">
+                  <div class="left" id="center-services">
+                    <h2 class="title">Zeit sparen & Kosten senken</h2>
+                    <p class="text justify">
+                      Effizienz, die Rentabilität steigert:<br><br>
+                      Durch die Automatisierung der Angebotsanfragen und die Vereinfachung der Nutzerführung haben wir den 
+                      administrativen Aufwand erheblich reduziert. Weniger manuelle Aufgaben bedeuten mehr Zeit für wertvolle Arbeit 
+                      und geringere Betriebskosten - eine langfristige Verbesserung Ihrer Geschäftsergebnisse.
+                    </p>
+                  </div>
+                  <div class="right" id="responsive-sketch">
+                    <div class="image-container-joblab">
+                      <img src="imagenes/projects/blancec/blancec-03.jpg" alt="Job Lab Logo Design">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div id="card6-blancec" class="card">
+                <div class="card-body" id="blancec-services">
+                  <div class="left" id="center-services">
+                    <h2 class="title">Verbessertes visuelles Design & Branding</h2>
+                    <p class="text justify">
+                      Ein eleganter, professioneller Auftritt:<br><br>
+                      Mit Design-Tools wie Photoshop und Illustrator haben wir das visuelle Erscheinungsbild der Marke verfeinert. 
+                      Ein klareres Logo, dynamische Header-Bilder und ein stimmiges Farbschema schaffen eine moderne und vertrauenswürdige 
+                      Markenidentität - und stärken somit Glaubwürdigkeit und Kundenvertrauen.
+                    </p>
+                  </div>
+                  <div class="right" id="responsive-sketch">
+                    <div class="blancec_video">
+                      <video autoplay muted loop>
+                        <source src="imagenes/videos/blancec_video_03.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="card7-blancec" class="card">
+                <div class="card-body" id="blancec-services">
+                  <div class="left" id="center-services">
+                    <h2 class="title">Vorher & Nachher: Ein deutlicher Fortschritt</h2>
+                    <p class="text justify">
+                      Ursprünglich beeinträchtigten lange Ladezeiten und eine unausgereifte Benutzeroberfläche die Kundenerfahrung. 
+                      Heute ist die neue Website schnell, intuitiv und visuell ansprechend. Das Ergebnis? Eine einladende digitale 
+                      Präsenz, die die Expertise von BLANCEC S.A.S. hervorhebt und Besucher dazu motiviert, aktiv zu werden.
+                    </p><br>
+                    <p class="text justify">Live-Website ansehen: <a href="https://elaborate-zabaione-ac4928.netlify.app/" 
+                      target="_blank" rel="noopener noreferrer">blancec.com</a></p>
+                  </div>
+                  <div class="right" id="responsive-sketch">
+                    <div class="image-container-joblab">
+                      <img src="imagenes/projects/Blancec-color.png" alt="Job Lab Logo Design">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div id="card8-blancec" class="card">
+                <div class="card-body" id="cases">
+                  <div class="left" id="center-services">
+                    <h2 class="title">Arbeiten Sie mit uns!</h2>
+                    <p class="text justify">Bereit, Ihr Unternehmen auf das nächste Level zu bringen? 
+                      Eine Website zu haben bedeutet nicht nur, online zu sein - es bedeutet, neue Chancen 
+                      zu eröffnen. Eine gut gestaltete Website hilft Ihnen, Kunden zu gewinnen, Vertrauen 
+                      aufzubauen und Ihre Dienstleistungen rund um die Uhr zu präsentieren.
+                    <br><br>
+                    <p class="text justify">
+                      Wir unterstützen Sie dabei, eine Website zu erstellen, die nicht nur visuell ansprechend, 
+                      sondern auch benutzerfreundlich und suchmaschinenoptimiert ist. Gemeinsam mit Ihnen erarbeiten 
+                      wir eine Lösung, die Ihre Unternehmensziele bestmöglich unterstützt.
+                    <br><br>
+                    <p class="text justify">
+                      Bereit loszulegen? Füllen Sie das Formular aus, und wir melden uns innerhalb von 24 Stunden bei Ihnen.
+                    </p>  
+                    <h2 class="title impressum">Impressum:</h2>
+                        <p class="text">
+                          Gesetzliche Vertretung: Katharina Eberle <br>  Am Stumpenhof 14 <br> 73207 Plochingen, Deutschland  <br>  
+                          info@kopernikusdesign.com  <br> Kleinunternehmen nach §19 UStG - keine Umsatzsteuer ausgewiesen
+                        </p>
+                  </div>
+                  <div class="right" id="center-services">
+                    <h2 class="title">Kontaktieren Sie uns</h2>
+                    <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                      <input type="hidden" name="form-name" value="contact">
+                      <p style="display:none;">
+                        <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                      </p>
+                      <div class="form-group">
+                        <label for="name">Ihr Name:</label>
+                        <input type="text" id="name" name="name" required />
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Ihre E-Mail:</label>
+                        <input type="email" id="email" name="email" required/>
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Ihre Nachricht:</label>
+                        <textarea id="message" name="message" required></textarea>
+                      </div>
+                      <button type="submit" class="send-button">Senden</button>
+                    </form>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+      </div>
+   
+          
+
+
+
+
+
+      <div id='blancec-cards-container' class="cards-mobile">
+        <div id="cards" class="container">
+            <div id="card1-blancec" class="card">
+              <div class="card-body" id="blancec-services">
+                  <div class="left" id="responsive-sketch">
+                    <div class="image-container-joblab">
+                      <img src="imagenes/projects/blancec/blancec-05.jpg" alt="Job Lab Logo Design">
+                    </div>
+                  </div>
+                  <div class="right" id="center-services-mobile">
+                    <h2 class="title">Ihre Online-Präsenz transformieren</h2>
+                      <p class="text justify">
+                        Modernisierung von BLANCEC S.A.S.:<br><br>
+                        BLANCEC S.A.S, ein führendes kolumbianisches Labor für Produkttests, benötigte ein digitales Upgrade, 
+                        um seine Kunden besser zu bedienen. Wir haben ihre Website neu gestaltet, um schnelleren Zugriff, eine 
+                        intuitive Navigation und eine fließende Nutzererfahrung zu ermöglichen - damit Kunden die benötigten Tests 
+                        leichter finden und anfordern können.
+                      </p>
+                  </div>
+              </div>
+            </div>
+
+            <div id="card2-blancec" class="card">
+                <div class="card-body" >
+                  <div class="left" id="responsive-sketch">
+                    <div class="blancec_video">
+                      <video autoplay muted loop>
+                        <source src="imagenes/videos/blancec_video_01.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+                  <div class="right" id="center-services-mobile">
+                    <h2 class="title">Blitzschnelle Leistung</h2>
+                    <p class="text justify"> Beschleunigung der Nutzererfahrung: <br><br>
+                      Durch den Neuaufbau der Website mit React haben wir die Ladezeiten drastisch verkürzt. 
+                      Kunden können nun effizient durch die Seiten navigieren, was Wartezeiten reduziert und die 
+                      allgemeine Zufriedenheit steigert. Eine schnellere Website hält Besucher engagiert und motiviert 
+                      sie, weitere Dienstleistungen zu erkunden..
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            <div id="card3-blancec" class="card">
+                <div class="card-body" id="blancec-services">
+                  <div class="left" id="responsive-sketch">
+                    <div class="image-container-joblab">
+                      <img src="imagenes/projects/blancec/blancec-02.jpg" alt="Job Lab Logo Design">
+                    </div>
+                  </div>
+                  <div class="right" id="center-services-mobile">
+                    <h2 class="title">Robustes Backend & Datenmanagement</h2>
+                      <p class="text justify">
+                        Sichere & skalierbare Datenlösungen:<br><br>
+                        Wir haben ein maßgeschneidertes Backend mit einer gut strukturierten Datenbank implementiert, 
+                        die komplexe Testdaten mühelos verarbeitet. Diese skalierbare und sichere Grundlage gewährleistet 
+                        eine zuverlässige Leistung, einfache Aktualisierungen und eine reibungslose Integration - 
+                        während BLANCEC S.A.S wächst und sich weiterentwickelt.
+                      </p>
+                  </div>
+                </div>
+            </div>
+
+            <div id="card4-blancec" class="card">
+              <div class="card-body" id="blancec-services">
+                <div class="left" id="responsive-sketch">
+                  <div class="blancec_video">
+                    <video autoplay muted loop>
+                      <source src="imagenes/videos/blancec_video_02.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <div class="right" id="center-services-mobile">
+                  <h2 class="title">Automatisiertes Angebotssystem</h2>
+                    <p class="text justify">
+                      Sofortige Angebote auf Knopfdruck:<br><br>
+                      Kunden können jetzt die benötigten Tests auswählen, sie in einen virtuellen Warenkorb legen und 
+                      sofort ein professionelles, automatisch erstelltes PDF-Angebot erhalten. Dieser optimierte Prozess reduziert 
+                      den manuellen Aufwand und liefert Ergebnisse in Sekundenschnelle - so einfach war es noch nie, die benötigten 
+                      Informationen zu erhalten.
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="card5-blancec" class="card">
+              <div class="card-body" id="blancec-services">
+                <div class="left" id="responsive-sketch">
+                  <div class="image-container-joblab">
+                    <img src="imagenes/projects/blancec/blancec-03.jpg" alt="Job Lab Logo Design">
+                  </div>
+                </div>
+                <div class="right" id="center-services-mobile">
+                  <h2 class="title">Zeit sparen & Kosten senken</h2>
+                    <p class="text justify">
+                      Effizienz, die Rentabilität steigert:<br><br>
+                      Durch die Automatisierung der Angebotsanfragen und die Vereinfachung der Nutzerführung haben wir den 
+                      administrativen Aufwand erheblich reduziert. Weniger manuelle Aufgaben bedeuten mehr Zeit für wertvolle Arbeit 
+                      und geringere Betriebskosten - eine langfristige Verbesserung Ihrer Geschäftsergebnisse.
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="card6-blancec" class="card">
+              <div class="card-body" id="blancec-services">
+                <div class="left" id="responsive-sketch">
+                  <div class="blancec_video">
+                    <video autoplay muted loop>
+                      <source src="imagenes/videos/blancec_video_03.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <div class="right" id="center-services-mobile">
+                  <h2 class="title">Verbessertes visuelles Design & Branding</h2>
+                    <p class="text justify">
+                      Ein eleganter, professioneller Auftritt:<br><br>
+                      Mit Design-Tools wie Photoshop und Illustrator haben wir das visuelle Erscheinungsbild der Marke verfeinert. 
+                      Ein klareres Logo, dynamische Header-Bilder und ein stimmiges Farbschema schaffen eine moderne und vertrauenswürdige 
+                      Markenidentität - und stärken somit Glaubwürdigkeit und Kundenvertrauen.
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="card7-blancec" class="card">
+              <div class="card-body" id="blancec-services">
+                <div class="left" id="responsive-sketch">
+                  <div class="image-container-joblab">
+                    <img src="imagenes/projects/Blancec-color.png" alt="Job Lab Logo Design">
+                  </div>
+                </div>
+                <div class="right" id="center-services-mobile">
+                  <h2 class="title">Vorher & Nachher: Ein deutlicher Fortschritt</h2>
+                  <p class="text justify">
+                    Ursprünglich beeinträchtigten lange Ladezeiten und eine unausgereifte Benutzeroberfläche die Kundenerfahrung. 
+                    Heute ist die neue Website schnell, intuitiv und visuell ansprechend. Das Ergebnis? Eine einladende digitale 
+                    Präsenz, die die Expertise von BLANCEC S.A.S. hervorhebt und Besucher dazu motiviert, aktiv zu werden.
+                  </p><br>
+                  <p class="text justify">Live-Website ansehen: <a href="https://elaborate-zabaione-ac4928.netlify.app/" target="_blank" rel="noopener noreferrer">blancec.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div id="card8-blancec" class="card">
+              <div class="card-body" id="contact-proportion">
+                <div class="left" id="center-services">
+                  <h2 class="title">Arbeiten Sie mit uns!</h2>
+                  <p class="text justify">Bereit, Ihr Unternehmen auf das nächste Level zu bringen? 
+                    Eine Website zu haben bedeutet nicht nur, online zu sein - es bedeutet, neue Chancen 
+                    zu eröffnen. Eine gut gestaltete Website hilft Ihnen, Kunden zu gewinnen, Vertrauen 
+                    aufzubauen und Ihre Dienstleistungen rund um die Uhr zu präsentieren.
+                  <br><br>
+                  <p class="text justify">
+                    Wir unterstützen Sie dabei, eine Website zu erstellen, die nicht nur visuell ansprechend, 
+                    sondern auch benutzerfreundlich und suchmaschinenoptimiert ist. Gemeinsam mit Ihnen erarbeiten 
+                    wir eine Lösung, die Ihre Unternehmensziele bestmöglich unterstützt.
+                  <br><br>
+                  <p class="text justify">
+                    Bereit loszulegen? Füllen Sie das Formular aus, und wir melden uns innerhalb von 24 Stunden bei Ihnen.
+                  </p>  
+                  <h2 class="title impressum">Impressum:</h2>
+                  <p class="text">
+                    Gesetzliche Vertretung: Katharina Eberle <br>  Am Stumpenhof 14 <br> 73207 Plochingen, Deutschland  <br>  info@kopernikusdesign.com  <br> Kleinunternehmen nach §19 UStG - keine Umsatzsteuer ausgewiesen
+                  </p>
+                </div>
+                <div class="right" id="center-services">
+                </div>
+              </div>
+          </div>
+
+          <div id="card9-blancec-mobile" class="card">
+            <div class="card-body" id="contact-proportion">
+              <div class="left" id="center-services">
+                <h2 class="title">Kontaktieren Sie uns</h2>
+                <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                  <input type="hidden" name="form-name" value="contact">
+                  <p style="display:none;">
+                    <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+                  </p>
+                  <div class="form-group">
+                    <label for="name">Ihr Name:</label>
+                    <input type="text" id="name" name="name" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Ihre E-Mail:</label>
+                    <input type="email" id="email" name="email" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Ihre Nachricht:</label>
+                    <textarea id="message" name="message" required></textarea>
+                  </div>
+                  <button type="submit" class="send-button">Senden</button>
+                </form>
+              </div>
+              <div class="right" id="center-services">
+              </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id='blancec-cards-container' class="cards-mobile-landscape">
+      <div id="cards" class="container">
+        
+        <div id="card1-blancec" class="card">
+          <div class="card-body" id="contact-proportion">
+            <div class="left" id="center-services">
+              <h2 class="title">Ihre Online-Präsenz transformieren</h2>
+              <p class="text justify">
+                Modernisierung von BLANCEC S.A.S.:<br><br>
+                BLANCEC S.A.S, ein führendes kolumbianisches Labor für Produkttests, benötigte ein digitales Upgrade, 
+                um seine Kunden besser zu bedienen. Wir haben ihre Website neu gestaltet, um schnelleren Zugriff, eine 
+                intuitive Navigation und eine fließende Nutzererfahrung zu ermöglichen - damit Kunden die benötigten Tests 
+                leichter finden und anfordern können.
+                </p>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <div class="image-container-joblab">
+                <img src="imagenes/projects/blancec/blancec-05.jpg" alt="Job Lab Logo Design">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="card2-blancec" class="card">
+          <div class="card-body" id="contact-proportion">
+            <div class="left" id="center-services">
+              <h2 class="title">Blitzschnelle Leistung</h2>
+                      <p class="text justify"> Beschleunigung der Nutzererfahrung: <br><br>
+                        Durch den Neuaufbau der Website mit React haben wir die Ladezeiten drastisch verkürzt. 
+                        Kunden können nun effizient durch die Seiten navigieren, was Wartezeiten reduziert und die 
+                        allgemeine Zufriedenheit steigert. Eine schnellere Website hält Besucher engagiert und motiviert 
+                        sie, weitere Dienstleistungen zu erkunden..
+                      </p>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <div class="blancec_video">
+                <video autoplay muted loop>
+                  <source src="imagenes/videos/blancec_video_01.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div id="card3-blancec" class="card">
+          <div class="card-body" id="contact-proportion">
+            <div class="left" id="center-services">
+              <h2 class="title">Robustes Backend & Datenmanagement</h2>
+                      <p class="text justify">
+                        Sichere & skalierbare Datenlösungen:<br><br>
+                        Wir haben ein maßgeschneidertes Backend mit einer gut strukturierten Datenbank implementiert, 
+                        die komplexe Testdaten mühelos verarbeitet. Diese skalierbare und sichere Grundlage gewährleistet 
+                        eine zuverlässige Leistung, einfache Aktualisierungen und eine reibungslose Integration - 
+                        während BLANCEC S.A.S wächst und sich weiterentwickelt.
+                      </p>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <div class="image-container-joblab">
+                <img src="imagenes/projects/blancec/blancec-02.jpg" alt="Job Lab Logo Design">
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div id="card4-blancec" class="card">
+        <div class="card-body" id="contact-proportion">
+          <div class="left" id="center-services">
+            <h2 class="title">Automatisiertes Angebotssystem</h2>
+            <p class="text justify">
+            Sofortige Angebote auf Knopfdruck:<br><br>
+            Kunden können jetzt die benötigten Tests auswählen, sie in einen virtuellen Warenkorb legen und 
+            sofort ein professionelles, automatisch erstelltes PDF-Angebot erhalten. Dieser optimierte Prozess reduziert 
+            den manuellen Aufwand und liefert Ergebnisse in Sekundenschnelle - so einfach war es noch nie, die benötigten 
+            Informationen zu erhalten.
+            </p>
+          </div>
+          <div class="right" id="responsive-sketch">
+            <div class="blancec_video">
+              <video autoplay muted loop>
+                <source src="imagenes/videos/blancec_video_02.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="card5-blancec" class="card">
+        <div class="card-body" id="contact-proportion">
+          <div class="left" id="center-services">
+            <h2 class="title">Zeit sparen & Kosten senken</h2>
+            <p class="text justify">
+            Effizienz, die Rentabilität steigert:<br><br>
+            Durch die Automatisierung der Angebotsanfragen und die Vereinfachung der Nutzerführung haben wir den 
+            administrativen Aufwand erheblich reduziert. Weniger manuelle Aufgaben bedeuten mehr Zeit für wertvolle Arbeit 
+            und geringere Betriebskosten - eine langfristige Verbesserung Ihrer Geschäftsergebnisse.
+            </p>
+          </div>
+          <div class="right" id="responsive-sketch">
+            <div class="image-container-joblab">
+              <img src="imagenes/projects/blancec/blancec-03.jpg" alt="Job Lab Logo Design">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="card6-blancec" class="card">
+        <div class="card-body" id="contact-proportion">
+          <div class="left" id="center-services">
+            <h2 class="title">Verbessertes visuelles Design & Branding</h2>
+            <p class="text justify">
+            Ein eleganter, professioneller Auftritt:<br><br>
+            Mit Design-Tools wie Photoshop und Illustrator haben wir das visuelle Erscheinungsbild der Marke verfeinert. 
+            Ein klareres Logo, dynamische Header-Bilder und ein stimmiges Farbschema schaffen eine moderne und vertrauenswürdige 
+            Markenidentität - und stärken somit Glaubwürdigkeit und Kundenvertrauen.
+            </p>
+          </div>
+          <div class="right" id="responsive-sketch">
+            <div class="blancec_video">
+              <video autoplay muted loop>
+                <source src="imagenes/videos/blancec_video_03.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="card7-blancec" class="card">
+        <div class="card-body" id="contact-proportion">
+          <div class="left" id="center-services">
+            <h2 class="title">Vorher & Nachher: Ein deutlicher Fortschritt</h2>
+            <p class="text justify">
+              Ursprünglich beeinträchtigten lange Ladezeiten und eine unausgereifte Benutzeroberfläche die Kundenerfahrung. 
+              Heute ist die neue Website schnell, intuitiv und visuell ansprechend. Das Ergebnis? Eine einladende digitale 
+              Präsenz, die die Expertise von BLANCEC S.A.S. hervorhebt und Besucher dazu motiviert, aktiv zu werden.
+            </p><br>
+            <p class="text justify">Live-Website ansehen: <a href="https://elaborate-zabaione-ac4928.netlify.app/" target="_blank" rel="noopener noreferrer">blancec.com</a></p>
+          </div>
+          <div class="right" id="responsive-sketch">
+            <div class="image-container-joblab">
+              <img src="imagenes/projects/Blancec-color.png" alt="Job Lab Logo Design">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div id="card8-blancec" class="card">
+        <div class="card-body" id="contact-proportion">
+          <div class="left" id="center-services">
+            <h2 class="title">Arbeiten Sie mit uns!</h2>
+            <p class="text justify">Bereit, Ihr Unternehmen auf das nächste Level zu bringen? 
+              Eine Website zu haben bedeutet nicht nur, online zu sein - es bedeutet, neue Chancen 
+              zu eröffnen. Eine gut gestaltete Website hilft Ihnen, Kunden zu gewinnen, Vertrauen 
+              aufzubauen und Ihre Dienstleistungen rund um die Uhr zu präsentieren.
+            <br><br>
+            <p class="text justify">
+              Wir unterstützen Sie dabei, eine Website zu erstellen, die nicht nur visuell ansprechend, 
+                      sondern auch benutzerfreundlich und suchmaschinenoptimiert ist. Gemeinsam mit Ihnen erarbeiten 
+                      wir eine Lösung, die Ihre Unternehmensziele bestmöglich unterstützt.
+            <br><br>
+            <p class="text justify">
+              Bereit loszulegen? Füllen Sie das Formular aus, und wir melden uns innerhalb von 24 Stunden bei Ihnen.
+            </p> 
+            <h2 class="title impressum">Impressum:</h2>
+            <p class="text">
+              Gesetzliche Vertretung:<br>Katharina Eberle - info@kopernikusdesign.com<br>  Am Stumpenhof 14 - 73207 Plochingen, Deutschland  <br> Kleinunternehmen nach §19 UStG - keine Umsatzsteuer ausgewiesen
+            </p>
+          </div>
+          <div class="right" id="center-services">
+            <h2 class="title">Kontaktieren Sie uns</h2>
+            <form class="contact-form" name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact">
+              <p style="display:none;">
+                <label>Don't fill this out if you're human: <input name="bot-field"></label>
+              </p>
+              <div class="form-group">
+                <label for="name">Ihr Name:</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Ihre E-Mail:</label>
+                <input type="email" id="email" name="email" required/>
+              </div>
+              <div class="form-group">
+                <label for="message">Ihre Nachricht:</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="send-button">Senden</button>
+            </form>
+          </div>
+        </div>
+    </div>
+
+      </div>
+    </div>
+
+
+        
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

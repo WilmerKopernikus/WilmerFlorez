@@ -1,0 +1,701 @@
+.cards-mobile {
+  display: none;
+}
+
+.cards-screens {
+  display: block;
+}
+
+.cards-mobile-landscape {
+  display: none;
+}	
+
+:root {
+  --cards: 1;
+  --cardHeight: calc(100vh - 66px);
+  --cardTopPadding: 0px;
+  --cardMargin: 4vw;
+}
+
+#intro-cards-container {
+  --cards: 1;
+}
+
+#cases-cards-container {
+  --cards: 3;
+}
+
+#cases-cards-container-mobile {
+  --cards: 4;
+}
+
+#cases-cards-container-mobile-landscape {
+  --cards: 3;
+}
+
+#services-cards-container {
+  --cards: 8;
+}
+
+#services-cards-container-mobile {
+  --cards: 9;
+}
+
+#services-cards-container-mobile-landscape {
+  --cards: 8;
+}
+
+#contact-cards-container {
+  --cards: 1;
+}
+
+#contact-cards-container-mobile {
+  --cards: 2;
+}
+
+#joblab-cards-container {
+  --cards: 7;
+}
+
+#blancec-cards-container {
+  --cards: 8;
+}
+
+#card1 {
+  --index: 1;
+  margin-top: 66px;
+}
+
+#card1-cases {
+  --index: 1;
+  margin-top: 66px;
+}
+
+#card2-cases {
+  --index: 2;
+  margin-top: 66px;
+}
+
+#card3-cases {
+  --index: 3;
+  margin-top: 66px;
+}
+
+#card1-cases-mobile {
+  --index: 1;
+  margin-top: 53px;
+}
+
+#card2-cases-mobile {
+  --index: 2;
+  margin-top: 66px;
+}
+
+#card3-cases-mobile {
+  --index: 3;
+  margin-top: 66px;
+}
+
+#card4-cases-mobile {
+  --index: 4;
+  margin-top: 66px;
+}
+
+#card1-cases-mobile-landscape {
+  --index: 1;
+  margin-top: 40px;
+}
+
+#card2-cases-mobile-landscape {
+  --index: 2;
+  margin-top: 40px;
+}
+
+#card3-cases-mobile-landscape {
+  --index: 3;
+  margin-top: 40px;
+}
+
+#card1-services {
+  --index: 1;
+  margin-top: 66px;
+}
+
+#card2-services {
+  --index: 2;
+  margin-top: 66px;
+}
+
+#card3-services {
+  --index: 3;
+  margin-top: 66px;
+}
+
+#card4-services {
+  --index: 4;
+  margin-top: 66px;
+}
+
+#card5-services {
+  --index: 5;
+  margin-top: 66px;
+}
+
+#card6-services {
+  --index: 6;
+  margin-top: 66px;
+}
+
+#card7-services {
+  --index: 7;
+  margin-top: 66px;
+}
+
+#card8-services {
+  --index: 8;
+  margin-top: 66px;
+}
+
+#card1-services-mobile {
+  --index: 1;
+  margin-top: 66px;
+}
+
+#card2-services-mobile {
+  --index: 2;
+  margin-top: 66px;
+}
+
+#card3-services-mobile {
+  --index: 3;
+  margin-top: 66px;
+}
+
+#card4-services-mobile {
+  --index: 4;
+  margin-top: 66px;
+}
+
+#card5-services-mobile {
+  --index: 5;
+  margin-top: 66px;
+}
+
+#card6-services-mobile {
+  --index: 6;
+  margin-top: 66px;
+}
+
+#card7-services-mobile {
+  --index: 7;
+  margin-top: 66px;
+}
+
+#card8-services-mobile {
+  --index: 8;
+  margin-top: 66px;
+}
+
+#card9-services-mobile {
+  --index: 9;
+  margin-top: 66px;
+}
+
+#card1-services-mobile-landscape {
+  --index: 1;
+  margin-top: 40px;
+}
+
+#card2-services-mobile-landscape {
+  --index: 2;
+  margin-top: 40px;
+}
+
+#card3-services-mobile-landscape {
+  --index: 3;
+  margin-top: 40px;
+}
+#card4-services-mobile-landscape {
+  --index: 4;
+  margin-top: 40px;
+}
+
+#card5-services-mobile-landscape {
+  --index: 5;
+  margin-top: 40px;
+}
+
+#card6-services-mobile-landscape {
+  --index: 6;
+  margin-top: 40px;
+}
+
+#card7-services-mobile-landscape {
+  --index: 7;
+  margin-top: 40px;
+}
+
+#card8-services-mobile-landscape {
+  --index: 8;
+  margin-top: 40px;
+}
+
+#card1-contact {
+  --index: 1;
+  margin-top: 66px;
+}
+
+#card1-contact-mobile {
+  --index: 1;
+  margin-top: 66px;
+}
+
+#card2-contact-mobile {
+  --index: 2;
+  margin-top: 66px;
+}
+
+#card1-joblab {
+  --index: 1;
+  margin-top: 66px;
+}
+
+#card2-joblab {
+  --index: 2;
+  margin-top: 66px;
+}
+
+#card3-joblab {
+  --index: 3;
+  margin-top: 66px;
+}
+
+#card4-joblab {
+  --index: 4;
+  margin-top: 66px;
+}
+
+#card5-joblab {
+  --index: 5;
+  margin-top: 66px;
+}
+
+#card6-joblab {
+  --index: 6;
+  margin-top: 66px;
+}
+
+#card7-joblab {
+  --index: 7;
+  margin-top: 66px;
+}
+
+#card8-joblab-mobile {
+  --index: 8;
+  margin-top: 66px;
+}
+
+#card1-blancec {
+  --index: 1;
+  margin-top: 66px;
+}
+
+#card2-blancec {
+  --index: 2;
+  margin-top: 66px;
+}
+
+#card3-blancec {
+  --index: 3;
+  margin-top: 66px;
+}
+
+#card4-blancec {
+  --index: 4;
+  margin-top: 66px;
+}
+
+#card5-blancec {
+  --index: 5;
+  margin-top: 66px;
+}
+
+#card6-blancec {
+  --index: 6;
+  margin-top: 66px;
+}
+
+#card7-blancec {
+  --index: 7;
+  margin-top: 66px;
+}
+
+#card8-blancec {
+  --index: 8;
+  margin-top: 66px;
+}
+
+#card9-blancec-mobile {
+  --index: 9;
+  margin-top: 66px;
+}
+
+#card1-contact-mobile {
+  --index: 1;
+  margin-top: 66px;
+}
+
+#card2-contact-mobile {
+  --index: 2;
+  margin-top: 66px;
+}
+
+#card1 .card-body-intro {
+  background-color: #00000060;
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--cards), var(--cardHeight));
+  gap: var(--cardMargin);
+  padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+  margin-bottom: var(--cardMargin);   
+}
+
+.card {
+  position: sticky;
+  top: 66px;
+  padding-top: calc(var(--index) * var(--cardTopPadding));
+  scroll-margin-top: 66px; 
+}
+
+.card-body {
+  display: grid; 
+  grid-template-areas: 
+    "left right"; 
+  grid-template-columns: 50% 50%; 
+  height: var(--cardHeight); 
+  color: #ffffff; 
+  border-top: 1px solid white; 
+  box-sizing: border-box;
+}
+
+.card-body-intro {
+  box-sizing: border-box;
+  height: calc(100vh - 66px);
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  color: #ffffff;
+  border-top: 1px solid white;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.left {
+  grid-area: left; 
+  background-color: #232323;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 0;
+  border-top: 1px solid white; 
+}
+
+.left-intro {
+  grid-area: left; 
+  background-color: #23232300;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-top: 1px solid white; 
+}
+
+
+  
+.right {
+  grid-area: right; 
+  background-color: #000000;
+  padding: 50px;
+  border-top: 1px solid white; 
+}
+
+.right-intro {
+  grid-area: right; 
+  background-color: #00000000;
+  padding: 50px;
+  border-top: 1px solid white; 
+}
+
+.right-gif {
+  grid-area: right; 
+  background-color: #000000;
+  padding: 2vh;
+  border-top: 1px solid white; 
+}
+
+.send-button {
+  width: 200px; 
+  padding: 15px;
+  background-color: #ffcc00;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+  
+.send-button:hover {
+  background-color: #ff7300;
+}
+
+@media screen and (min-width: 2560px) and (orientation: landscape) {
+  .right {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+
+  .left {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+
+  #card1-contact {
+    margin-top: 100px;
+  }
+
+  .card {
+    top: 100px;
+    scroll-margin-top: 100px; 
+  }
+
+  #contact-cards-container {
+    --cardHeight: calc(100vh - 100px);
+  }
+}
+
+@media (max-width: 830px) and (orientation: portrait) {
+
+  .card-body {
+    grid-template-areas: 
+      "left"
+      "right"; /* Stack sections vertically */
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-rows: 50% 50%; /* Equal height for both rows */
+  }
+
+  .left {
+    background-color: #000000;
+    padding: 30px;
+  } 
+
+  .right {
+    padding: 20px;
+    padding-top: 0px;
+    border-top: 1px solid rgb(0, 0, 0); 
+  }
+  
+  .cards-mobile {
+    display: block;
+  }
+  
+  .cards-screens {
+    display: none;
+  }
+
+  #contact-proportion{
+    grid-template-rows: 100% 0%;
+  }
+
+
+}
+
+@media (max-width: 750px) {
+
+  #intro-cards-container{
+    --cardHeight: calc(100vh - 50px);
+
+  }
+
+  :root {
+    --cardHeight: calc(100vh - 55px);
+  }
+
+  #cases-cards-container {
+    --cardHeight: calc(100vh - 50px);
+  }
+
+  #services-cards-container {
+    --cardHeight: calc(100vh - 50px);
+  }
+
+  #card1 {
+    margin-top: 50px;
+  }
+
+  .card {
+    top: 50px;
+  }
+
+  #services {
+    grid-template-rows: 40% 60%;
+  }
+
+  #joblab-services {
+    grid-template-rows: 50% 50%;
+  }
+
+  #blancec-services {
+    grid-template-rows: 50% 50%;
+  }
+
+  #gif-services {
+    grid-template-rows: 25% 70%;
+  }
+
+  .send-button{
+    width: 150px;
+  }
+
+  .right-gif {
+    padding: 20px;
+    border-top: 1px solid rgb(0, 0, 0); 
+  }
+}
+
+
+
+@media screen and (max-width: 821px) and (min-width: 431px) and (orientation: portrait) {
+  .left {
+    padding: 70px;
+  } 
+}
+
+@media screen and (max-width: 431px) and (orientation: portrait) {
+  .left {
+    padding: 30px;
+    padding-right: 40px;
+  } 
+}
+
+@media screen and (max-height: 415px) and (orientation: landscape) {
+
+  #intro-cards-container-mobile-landscape{
+    --cardHeight: calc(100vh - 40px);
+  }
+
+  #cases-cards-container-mobile-landscape{
+    --cardHeight: calc(100vh - 40px);
+  }
+
+  #services-cards-container {
+    --cardHeight: calc(100vh - 40px);
+  }
+
+  #blancec-cards-container {
+    --cardHeight: calc(100vh - 39px);
+  }
+
+  #joblab-cards-container {
+    --cardHeight: calc(100vh - 39px);
+  }
+
+  #card1 {
+    margin-top: 39px;
+  }
+
+  #services-cards-container-mobile-landscape{
+    --cardHeight: calc(100vh - 39px);
+  }
+
+  .cards-mobile {
+    display: none;
+  }
+  
+  .cards-screens {
+    display: none;
+  }
+
+  .cards-mobile-landscape {
+    display: block;
+  }
+
+  .card-body {
+    display: grid; 
+    grid-template-areas: 
+      "left right"; 
+    grid-template-columns: 50% 50%; 
+    height: var(--cardHeight); 
+    color: #ffffff; 
+    border-top: 1px solid white; 
+    box-sizing: border-box;
+  }
+
+
+
+
+  .left {
+    background-color: #232323;
+    padding: 20px;
+  }
+
+  .right {
+    background-color: #000000;
+    padding: 30px; 
+  }
+
+  #contact-cards-container-mobile {
+    --cards: 2;
+  }
+
+  #card1-contact-mobile {
+    --index: 1;
+    margin-top: 40px;
+  }
+
+  #card1 {
+    margin-top: 40px;
+    --cardHeight: calc(100vh - 40px);
+  }
+
+  #card2-contact-mobile {
+    --index: 2;
+    margin-top: 40px;
+  }
+
+  .card {
+    position: sticky;
+    top: 40px;
+    padding-top: calc(var(--index) * var(--cardTopPadding));
+    scroll-margin-top: 40px; 
+  }
+
+}
+
+@media (max-width: 415px) and (orientation: portrait){
+  #cases{
+    grid-template-rows: 35% 65%;
+  }
+
+  #intro {
+    grid-template-rows: 100% 0%;
+  }
+}
+
+@media (max-width: 380px) {
+  #blancec-services {
+    grid-template-rows: 50% 50%;
+  }
+
+  #cases{
+    grid-template-rows: 30% 70%;
+  }
+
+}
+

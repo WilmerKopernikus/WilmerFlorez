@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Lab - Kopernikus Design</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/images.css">
+    <link rel="stylesheet" href="styles/global-text.css">
+    <link rel="stylesheet" href="styles/contact-form.css">
+    <script src="p5.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+              <a href="index_en.html">
+                    <img src="imagenes/KopernikusLogo.png" alt="Kopernikus Design Logo" class='header-logo'>
+                </a>
+            </div>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="menu-overlay" id="menuOverlay">
+            <ul>
+              <li><a href="index_en.html">Home</a></li>
+              <li><a href="cases.html">Cases</a></li>
+              <li class="cards-mobile"><a href="services-mobile.html">Services</a></li>
+              <li class="cards-screens"><a href="services.html">Services</a></li>
+              <li class="cards-mobile-landscape"><a href="services-mobile-landscape.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="joblab-projekt.html">Deutsch</a></li>
+              
+            </ul>
+        </div>  
+        <div class="video-container">
+            <div class="video-background cards-screens">
+                <video autoplay muted loop>
+                    <source src="imagenes/videos/joblab.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-background cards-mobile-landscape">
+              <video autoplay muted loop>
+                  <source src="imagenes/videos/joblab-small.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+          </div>
+          <div class="video-background cards-mobile">
+            <video autoplay muted loop>
+                <source src="imagenes/videos/joblab-small.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+            <div class="video-background-cube" id="cube-video">
+                <video autoplay muted loop>
+                    <source src="imagenes/servicios/cube.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="intro-div"></div>
+        
+        <div id='joblab-cards-container' class="cards-screens">
+            <div id="cards" class="container">
+                <div id="card1-joblab" class="card">
+                  <div class="card-body" id="joblab-services">
+                      <div class="left" id="center-services">
+                        <h2 class="title">Project Overview & Purpose</h2>
+                        <p class="text justify">
+                          <strong>Introducing the Job Lab:</strong><br><br>
+                          Job Lab is a project commissioned by the DAAD (German Academic Exchange Service), 
+                          China, and developed in close collaboration with the German Embassy in Beijing and 
+                          the German Consulates in Shanghai and Guangzhou. Its core mission: to inform Chinese 
+                          students of the German language about job market opportunities in Germany, offering 
+                          them practical guidance and resources through a dedicated digital platform and on-site events.
+                        </p>
+                      </div>
+                      <div class="right" id="responsive-sketch">
+                        <div class="image-container-joblab">
+                          <img src="imagenes/projects/job-lab/Logo-JobLab.jpg" alt="Job Lab Logo Design">
+                        </div>
+                      </div>
+                  </div>
+                </div>
+
+                <div id="card2-joblab" class="card">
+                    <div class="card-body" id="joblab-services">
+                      <div class="left" id="center-services">
+                        <h2 class="title">Key Stakeholders & Collaborations</h2>
+                        <p class="text justify">
+                          <strong>A Network of International Partners:</strong><br><br>
+                          The Job Lab brought together key players in international education and cultural exchange. 
+                          Working alongside the DAAD, German foreign representations in Guangzhou, Shanghai, and Beijing, 
+                          the German Centre Shanghai, the German Centre Beijing, the AHK Greater China, Advantage Austria, 
+                          the OeAD, and the Goethe-Institut Beijing, we created a truly collaborative environment. DAAD 
+                          lecturers from across China supported workshops, ensuring a comprehensive and expert-led program.
+                        </p>
+                      </div>
+                      <div class="right" id="responsive-sketch">
+                        <div class="blancec_video">
+                          <video autoplay muted loop>
+                            <source src="imagenes/videos/joblab_video_01.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div id="card3-joblab" class="card">
+                    <div class="card-body" id="joblab-services">
+                      <div class="left" id="center-services">
+                        <h2 class="title">Web Development & Multilingual Focus</h2>
+                        <p class="text justify">
+                          <strong>A Network of International Partners:</strong><br><br>
+                          We designed and developed a fully bilingual website in German and Chinese. This platform served as an 
+                          information hub, hosting job market details, event updates, and relevant resources. From managing web 
+                          hosting and domains to continuously updating site content, we ensured the platform remained current 
+                          and valuable to its diverse audience.
+                        </p>
+                      </div>
+                      <div class="right" id="responsive-sketch">
+                        <div class="blancec_video">
+                          <video autoplay muted loop>
+                            <source src="imagenes/videos/joblab_video_02.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div id="card4-joblab" class="card">
+                  <div class="card-body" id="joblab-services">
+                    <div class="left" id="center-services">
+                      <h2 class="title">Mobile & WeChat Optimization</h2>
+                      <p class="text justify">
+                        <strong>A Network of International Partners:</strong><br><br>
+                        Our target audience relied heavily on mobile devices and WeChat. We built the site to perform 
+                        seamlessly on mobile browsers, including special JavaScript detection for WeChat. This focus ensured 
+                        that users could conveniently access the information right where they spend most of their time, 
+                        resulting in a tailored and engaging user experience.
+                      </p>
+                    </div>
+                    <div class="right" id="responsive-sketch">
+                      <div class="image-container-joblab">
+                        <img src="imagenes/projects/job-lab/joblab-foto-03.jpg" alt="Job Lab Logo Design">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="card5-joblab" class="card">
+                  <div class="card-body" id="joblab-services">
+                    <div class="left" id="center-services">
+                      <h2 class="title">Branding & Print Materials</h2>
+                      <p class="text justify">
+                        <strong>A Cohesive Visual Identity:</strong><br><br>
+                        Beyond the digital sphere, we developed a strong brand identity. This included designing the project's logo, 
+                        creating eye-catching web graphics, and producing over 20 informative posters for exhibition events. These posters, 
+                        displayed at the Job Lab events, provided visitors with clear, structured information about job markets, ultimately 
+                        enhancing the educational impact of the project.
+                      </p>
+                    </div>
+                    <div class="right" id="responsive-sketch">
+                      <div class="image-container-joblab">
+                        <div class="carousel-container">
+                          <img src="imagenes/joblab/carrousel_01/image-01.jpg" alt="Job Lab Logo Design">
+                          <img src="imagenes/joblab/carrousel_01/image-02.jpg" alt="Job Lab Logo Design">
+                          <img src="imagenes/joblab/carrousel_01/image-03.jpeg" alt="Job Lab Logo Design">
+                          <img src="imagenes/joblab/carrousel_01/image-04.jpeg" alt="Job Lab Logo Design">
+                          <img src="imagenes/joblab/carrousel_01/image-05.jpeg" alt="Job Lab Logo Design">
+                          <img src="imagenes/joblab/carrousel_01/image-06.jpg" alt="Job Lab Logo Design">
+                          <img src="imagenes/joblab/carrousel_01/image-07.jpeg" alt="Job Lab Logo Design">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="card6-joblab" class="card">
+                  <div class="card-body" id="joblab-services">
+                    <div class="left" id="center-services">
+                      <h2 class="title">Event Success & Reception</h2>
+                      <p class="text justify">
+                        <strong>High Engagement & Positive Feedback:</strong><br><br>
+                        The Job Lab events in Guangzhou, Shanghai, and Beijing attracted around 300 visitors. 
+                        Attendees engaged in lively discussions, asked thoughtful questions, and remained present 
+                        throughout the day's program. This enthusiastic reception underscored the project's 
+                        value and set a strong precedent for annual repetition, turning the Job Lab into a 
+                        potential ongoing tradition.
+                      </p><br>
+                      <p class="text justify">See the live website: <a href="https://joblab.cc" target="_blank" rel="noopener noreferrer">joblab.cc</a></p>
+                    </div>
+                    <div class="right" id="responsive-sketch">
+                      <div class="image-container-joblab">
+                        <div class="carousel-container">
+                          <img src="imagenes/joblab/carrousel_02/image-01.jpeg" alt="Job Lab Logo Design">
+                          <img src="imagenes/joblab/carrousel_02/image-02.jpeg" alt="Job Lab Logo Design">
+                          <img src="imagenes/joblab/carrousel_02/image-03.jpeg" alt="Job Lab Logo Design">
+                          <img src="imagenes/joblab/carrousel_02/image-04.jpeg" alt="Job Lab Logo Design">
+                          <img src="imagenes/joblab/carrousel_02/image-05.jpeg" alt="Job Lab Logo Design">
+                          <img src="imagenes/joblab/carrousel_02/image-06.jpg" alt="Job Lab Logo Design">
+                          <img src="imagenes/joblab/carrousel_02/image-07.jpg" alt="Job Lab Logo Design">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div id="card7-joblab" class="card">
+                  <div class="card-body" id="cases">
+                    <div class="left" id="center-services">
+                      <h2 class="title">Work With Us</h2>
+                      <p class="text justify">Ready to take your business to the next level?
+                        Having a website isn't just about being online; it's about opening doors to new opportunities. 
+                        A well-designed website helps you attract customers, build trust, and showcase your services 24/7.
+                      <br><br>
+                      <p class="text justify">
+                        We're here to help you create a website that's not only visually appealing but also 
+                        user-friendly and optimized for search engines. We'll work with you to understand your business 
+                        goals and create a website that helps you achieve them.
+                      <br><br>
+                      <p class="text justify">
+                        Ready to get started? Fill out the form, and we'll get back to you within 24 hours.
+                      </p>  
+                      <h2 class="title impressum">Impressum:</h2>
+                      <p class="text">
+                        Legal representation: Katharina Eberle <br>  Am Stumpenhof 14 <br> 73207 Plochingen, Germany  <br>  info@kopernikusdesign.com  <br> Small business under §19 UStG – no VAT shown
+                      </p>
+                    </div>
+                    <div class="right" id="center-services">
+                      <h2 class="title">Contact Us</h2>
+                      <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p style="display:none;">
+                          <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                        </p>
+                        <div class="form-group">
+                          <label for="name">Your Name:</label>
+                          <input type="text" id="name" name="name" required />
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Your Email:</label>
+                          <input type="email" id="email" name="email" required/>
+                        </div>
+                        <div class="form-group">
+                          <label for="message">Your Message:</label>
+                          <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="send-button">Send</button>
+                      </form>
+                    </div>
+                  </div>
+              </div>
+
+            </div>
+        </div>
+   
+          
+
+
+
+
+
+        <div id='joblab-cards-container' class="cards-mobile">
+          <div id="cards" class="container">
+
+              <div id="card1-joblab" class="card">
+                <div class="card-body" id="joblab-services">
+                    <div class="left" id="responsive-sketch" >
+                      <div class="image-container-joblab">
+                        <img src="imagenes/projects/job-lab/Logo-JobLab.jpg" alt="Job Lab Logo Design">
+                      </div>
+                    </div>
+                    <div class="right" id="center-services-mobile">
+                      <h2 class="title">Project Overview & Purpose</h2>
+                      <p class="text justify">
+                        <strong>Introducing the Job Lab:</strong><br><br>
+                        Job Lab is a project commissioned by the DAAD (German Academic Exchange Service), 
+                        China, and developed in close collaboration with the German Embassy in Beijing and 
+                        the German Consulates in Shanghai and Guangzhou. Its core mission: to inform Chinese 
+                        students of the German language about job market opportunities in Germany, offering 
+                        them practical guidance and resources through a dedicated digital platform and on-site events.
+                      </p>
+                    </div>
+                </div>
+              </div>
+
+              <div id="card2-joblab" class="card">
+                  <div class="card-body" id="joblab-services">
+                    <div class="left" id="responsive-sketch">
+                      <div class="blancec_video">
+                        <video autoplay muted loop>
+                          <source src="imagenes/videos/joblab_video_01-mobile.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
+                    <div class="right" id="center-services-mobile">
+                      <h2 class="title">Key Stakeholders & Collaborations</h2>
+                      <p class="text justify">
+                        <strong>A Network of International Partners:</strong><br><br>
+                        The Job Lab brought together key players in international education and cultural exchange. 
+                        Working alongside the DAAD, German foreign representations in Guangzhou, Shanghai, and Beijing, 
+                        the German Centre Shanghai, the German Centre Beijing, the AHK Greater China, Advantage Austria, 
+                        the OeAD, and the Goethe-Institut Beijing, we created a truly collaborative environment. DAAD 
+                        lecturers from across China supported workshops, ensuring a comprehensive and expert-led program.
+                      </p>
+                    </div>
+                  </div>
+              </div>
+
+              <div id="card3-joblab" class="card">
+                  <div class="card-body" id="joblab-services">
+                    <div class="left"  id="responsive-sketch">
+                      <div class="blancec_video">
+                        <video autoplay muted loop playsinline preload="metadata">
+                          <source src="imagenes/videos/joblab_video_02-mobile.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
+                    <div class="right" id="center-services-mobile">
+                      <h2 class="title">Web Development & Multilingual Focus</h2>
+                      <p class="text justify">
+                        <strong>A Network of International Partners:</strong><br><br>
+                        We designed and developed a fully bilingual website in German and Chinese. This platform served as an 
+                        information hub, hosting job market details, event updates, and relevant resources. From managing web 
+                        hosting and domains to continuously updating site content, we ensured the platform remained current 
+                        and valuable to its diverse audience.
+                      </p>
+                    </div>
+                  </div>
+              </div>
+
+              <div id="card4-joblab" class="card">
+                <div class="card-body" id="joblab-services">
+                  <div class="left" id="responsive-sketch">
+                    <div class="image-container-joblab">
+                      <img src="imagenes/projects/job-lab/joblab-foto-03.jpg" alt="Job Lab Logo Design">
+                    </div>
+                  </div>
+                  <div class="right" id="center-services-mobile">
+                    <h2 class="title">Mobile & WeChat Optimization</h2>
+                    <p class="text justify">
+                      <strong>A Network of International Partners:</strong><br><br>
+                      Our target audience relied heavily on mobile devices and WeChat. We built the site to perform 
+                      seamlessly on mobile browsers, including special JavaScript detection for WeChat. This focus ensured 
+                      that users could conveniently access the information right where they spend most of their time, 
+                      resulting in a tailored and engaging user experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="card5-joblab" class="card">
+                <div class="card-body" id="joblab-services">
+                  <div class="left" id="responsive-sketch">
+                    <div class="image-container-joblab">
+                      <div class="carousel-container">
+                        <img src="imagenes/joblab/carrousel_01/image-01.jpg" alt="Job Lab Logo Design">
+                        <img src="imagenes/joblab/carrousel_01/image-02.jpg" alt="Job Lab Logo Design">
+                        <img src="imagenes/joblab/carrousel_01/image-03.jpeg" alt="Job Lab Logo Design">
+                        <img src="imagenes/joblab/carrousel_01/image-04.jpeg" alt="Job Lab Logo Design">
+                        <img src="imagenes/joblab/carrousel_01/image-05.jpeg" alt="Job Lab Logo Design">
+                        <img src="imagenes/joblab/carrousel_01/image-06.jpg" alt="Job Lab Logo Design">
+                        <img src="imagenes/joblab/carrousel_01/image-07.jpeg" alt="Job Lab Logo Design">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right" id="center-services-mobile">
+                    <h2 class="title">Branding & Print Materials</h2>
+                    <p class="text justify">
+                      <strong>A Cohesive Visual Identity:</strong><br><br>
+                      Beyond the digital sphere, we developed a strong brand identity. This included designing the project's logo, 
+                      creating eye-catching web graphics, and producing over 20 informative posters for exhibition events. These posters, 
+                      displayed at the Job Lab events, provided visitors with clear, structured information about job markets, ultimately 
+                      enhancing the educational impact of the project.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="card6-joblab" class="card">
+                <div class="card-body" id="joblab-services">
+                  <div class="left" id="responsive-sketch">
+                    <div class="image-container-joblab">
+                      <div class="carousel-container">
+                        <img src="imagenes/joblab/carrousel_02/image-01.jpeg" alt="Job Lab Logo Design">
+                        <img src="imagenes/joblab/carrousel_02/image-02.jpeg" alt="Job Lab Logo Design">
+                        <img src="imagenes/joblab/carrousel_02/image-03.jpeg" alt="Job Lab Logo Design">
+                        <img src="imagenes/joblab/carrousel_02/image-04.jpeg" alt="Job Lab Logo Design">
+                        <img src="imagenes/joblab/carrousel_02/image-05.jpeg" alt="Job Lab Logo Design">
+                        <img src="imagenes/joblab/carrousel_02/image-06.jpg" alt="Job Lab Logo Design">
+                        <img src="imagenes/joblab/carrousel_02/image-07.jpg" alt="Job Lab Logo Design">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right" id="center-services-mobile">
+                    <h2 class="title">Event Success & Reception</h2>
+                    <p class="text justify">
+                      <strong>High Engagement & Positive Feedback:</strong><br><br>
+                      The Job Lab events in Guangzhou, Shanghai, and Beijing attracted around 300 visitors. 
+                      Attendees engaged in lively discussions, asked thoughtful questions, and remained present 
+                      throughout the day's program. This enthusiastic reception underscored the project's 
+                      value and set a strong precedent for annual repetition, turning the Job Lab into a 
+                      potential ongoing tradition.
+                    </p><br>
+                    <p class="text justify">See the live website: <a href="https://joblab.cc" target="_blank" rel="noopener noreferrer">joblab.cc</a></p>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div id="card7-joblab" class="card">
+                <div class="card-body" id="contact-proportion">
+                  <div class="left" id="center-services">
+                    <h2 class="title">Work With Us</h2>
+                    <p class="text justify">Ready to take your business to the next level?
+                      Having a website isn't just about being online; it's about opening doors to new opportunities. 
+                      A well-designed website helps you attract customers, build trust, and showcase your services 24/7.
+                    <br><br>
+                    <p class="text justify">
+                      We're here to help you create a website that's not only visually appealing but also 
+                      user-friendly and optimized for search engines. We'll work with you to understand your business 
+                      goals and create a website that helps you achieve them.
+                    <br><br>
+                    <p class="text justify">
+                      Ready to get started? Fill out the form below, and we'll get back to you within 24 hours.
+                    </p>
+                    <h2 class="title impressum">Impressum:</h2>
+                    <p class="text">
+                      Legal representation: Katharina Eberle <br>  Am Stumpenhof 14 <br> 73207 Plochingen, Germany  <br>  info@kopernikusdesign.com  <br> 
+                      Small business under §19 UStG - no VAT shown
+                    </p> 
+                  </div>
+                  <div class="right" id="center-services">
+                  </div>
+                </div>
+            </div>
+
+            <div id="card8-joblab-mobile" class="card">
+              <div class="card-body" id="contact-proportion">
+                <div class="left" id="center-services">
+                  <h2 class="title">Contact Us</h2>
+                  <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p style="display:none;">
+                      <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                    </p>
+                    <div class="form-group">
+                      <label for="name">Your Name:</label>
+                      <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Your Email:</label>
+                      <input type="email" id="email" name="email" required/>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Your Message:</label>
+                      <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="send-button">Send</button>
+                  </form>
+                </div>
+                <div class="right" id="center-services">
+                </div>
+              </div>
+          </div>
+              
+          </div>
+      </div>
+
+
+
+      <div id='joblab-cards-container' class="cards-mobile-landscape">
+        <div id="cards" class="container">
+          <div id="card1-joblab" class="card">
+            <div class="card-body" id="contact-proportion">
+              <div class="left" id="center-services">
+                <h2 class="title">Project Overview & Purpose</h2>
+                <p class="text justify">
+                  <strong>Introducing the Job Lab:</strong><br><br>
+                  Job Lab is a project commissioned by the DAAD (German Academic Exchange Service), 
+                  China, and developed in close collaboration with the German Embassy in Beijing and 
+                  the German Consulates in Shanghai and Guangzhou. Its core mission: to inform Chinese 
+                  students of the German language about job market opportunities in Germany, offering 
+                  them practical guidance and resources through a dedicated digital platform and on-site events.
+                </p>
+              </div>
+              <div class="right" id="responsive-sketch">
+                <div class="image-container-joblab">
+                  <img src="imagenes/projects/job-lab/Logo-JobLab.jpg" alt="Job Lab Logo Design">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="card2-joblab" class="card">
+            <div class="card-body" id="contact-proportion">
+              <div class="left" id="center-services">
+                <h2 class="title">Key Stakeholders & Collaborations</h2>
+                <p class="text justify">
+                  <strong>A Network of International Partners:</strong><br><br>
+                  The Job Lab brought together key players in international education and cultural exchange. 
+                  Working alongside the DAAD, German foreign representations in Guangzhou, Shanghai, and Beijing, 
+                  the German Centre Shanghai, the German Centre Beijing, the AHK Greater China, Advantage Austria, 
+                  the OeAD, and the Goethe-Institut Beijing, we created a truly collaborative environment. DAAD 
+                  lecturers from across China supported workshops, ensuring a comprehensive and expert-led program.
+                </p>
+              </div>
+              <div class="right" id="responsive-sketch">
+                <div class="blancec_video">
+                  <video autoplay muted loop>
+                    <source src="imagenes/videos/joblab_video_01.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+        <div id="card3-joblab" class="card">
+          <div class="card-body" id="contact-proportion">
+            <div class="left" id="center-services">
+              <h2 class="title">Web Development & Multilingual Focus</h2>
+              <p class="text justify">
+                <strong>A Network of International Partners:</strong><br><br>
+                We designed and developed a fully bilingual website in German and Chinese. This platform served as an 
+                information hub, hosting job market details, event updates, and relevant resources. From managing web 
+                hosting and domains to continuously updating site content, we ensured the platform remained current 
+                and valuable to its diverse audience.
+              </p>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <div class="blancec_video">
+                <video autoplay muted loop>
+                  <source src="imagenes/videos/joblab_video_02.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div id="card4-joblab" class="card">
+        <div class="card-body" id="contact-proportion">
+          <div class="left" id="center-services">
+            <h2 class="title">Mobile & WeChat Optimization</h2>
+            <p class="text justify">
+              <strong>A Network of International Partners:</strong><br><br>
+              Our target audience relied heavily on mobile devices and WeChat. We built the site to perform 
+              seamlessly on mobile browsers, including special JavaScript detection for WeChat. This focus ensured 
+              that users could conveniently access the information right where they spend most of their time, 
+              resulting in a tailored and engaging user experience.
+            </p>
+          </div>
+          <div class="right" id="responsive-sketch">
+            <div class="image-container-joblab">
+              <img src="imagenes/projects/job-lab/joblab-foto-03.jpg" alt="Job Lab Logo Design">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="card5-joblab" class="card">
+        <div class="card-body" id="contact-proportion">
+          <div class="left" id="center-services">
+            <h2 class="title">Branding & Print Materials</h2>
+            <p class="text justify">
+              <strong>A Cohesive Visual Identity:</strong><br><br>
+              Beyond the digital sphere, we developed a strong brand identity. This included designing the project's logo, 
+              creating eye-catching web graphics, and producing over 20 informative posters for exhibition events. These posters, 
+              displayed at the Job Lab events, provided visitors with clear, structured information about job markets, ultimately 
+              enhancing the educational impact of the project.
+            </p>
+          </div>
+          <div class="right" id="responsive-sketch">
+            <div class="image-container-joblab">
+              <div class="carousel-container">
+                <img src="imagenes/joblab/carrousel_01/image-01.jpg" alt="Job Lab Logo Design">
+                <img src="imagenes/joblab/carrousel_01/image-02.jpg" alt="Job Lab Logo Design">
+                <img src="imagenes/joblab/carrousel_01/image-03.jpeg" alt="Job Lab Logo Design">
+                <img src="imagenes/joblab/carrousel_01/image-04.jpeg" alt="Job Lab Logo Design">
+                <img src="imagenes/joblab/carrousel_01/image-05.jpeg" alt="Job Lab Logo Design">
+                <img src="imagenes/joblab/carrousel_01/image-06.jpg" alt="Job Lab Logo Design">
+                <img src="imagenes/joblab/carrousel_01/image-07.jpeg" alt="Job Lab Logo Design">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="card6-joblab" class="card">
+        <div class="card-body" id="contact-proportion">
+          <div class="left" id="center-services">
+            <h2 class="title">Event Success & Reception</h2>
+            <p class="text justify">
+              <strong>High Engagement & Positive Feedback:</strong><br><br>
+              The Job Lab events in Guangzhou, Shanghai, and Beijing attracted around 300 visitors. 
+              Attendees engaged in lively discussions, asked thoughtful questions, and remained present 
+              throughout the day's program. This enthusiastic reception underscored the project's 
+              value and set a strong precedent for annual repetition, turning the Job Lab into a 
+              potential ongoing tradition.
+            </p><br>
+            <p class="text justify">See the live website: <a href="https://joblab.cc" target="_blank" rel="noopener noreferrer">joblab.cc</a></p>
+          </div>
+          <div class="right" id="responsive-sketch">
+            <div class="image-container-joblab">
+              <div class="carousel-container">
+                <img src="imagenes/joblab/carrousel_02/image-01.jpeg" alt="Job Lab Logo Design">
+                <img src="imagenes/joblab/carrousel_02/image-02.jpeg" alt="Job Lab Logo Design">
+                <img src="imagenes/joblab/carrousel_02/image-03.jpeg" alt="Job Lab Logo Design">
+                <img src="imagenes/joblab/carrousel_02/image-04.jpeg" alt="Job Lab Logo Design">
+                <img src="imagenes/joblab/carrousel_02/image-05.jpeg" alt="Job Lab Logo Design">
+                <img src="imagenes/joblab/carrousel_02/image-06.jpg" alt="Job Lab Logo Design">
+                <img src="imagenes/joblab/carrousel_02/image-07.jpg" alt="Job Lab Logo Design">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="card7-joblab" class="card">
+        <div class="card-body" id="contact-proportion">
+          <div class="left" id="center-services">
+            <h2 class="title">Work With Us</h2>
+            <p class="text justify">Ready to take your business to the next level?
+              Having a website isn't just about being online; it's about opening doors to new opportunities. 
+              A well-designed website helps you attract customers, build trust, and showcase your services 24/7.
+            <br><br>
+            <p class="text justify">
+              We're here to help you create a website that's not only visually appealing but also 
+              user-friendly and optimized for search engines. We'll work with you to understand your business 
+              goals and create a website that helps you achieve them.
+            <br><br>
+            <p class="text justify">
+              Ready to get started? Fill out the form below, and we'll get back to you within 24 hours.
+            </p> 
+            <h2 class="title impressum">Impressum:</h2>
+            <p class="text">
+              Legal representation: <br>Katharina Eberle - info@kopernikusdesign.com<br>  Am Stumpenhof 14 - 73207 Plochingen, Germany  <br>
+               Small business under §19 UStG - no VAT shown
+            </p>
+          </div>
+          <div class="right" id="center-services">
+            <h2 class="title">Contact Us</h2>
+            <form class="contact-form" name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact">
+              <p style="display:none;">
+                <label>Don't fill this out if you're human: <input name="bot-field"></label>
+              </p>
+              <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required/>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="send-button">Send</button>
+            </form>
+          </div>
+        </div>
+    </div>
+
+
+        </div>
+      </div>
+
+        
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

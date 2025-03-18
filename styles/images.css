@@ -1,0 +1,343 @@
+.intro-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 700px;
+  height: auto;
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 2s ease, transform 2s ease; 
+}
+
+.passbild-image {
+  border-radius: 20px;
+}
+  
+.intro-image.visible {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+.image-wrapper {
+  position: relative; 
+  width: 100%; 
+  height: 100%; 
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column; 
+  position: fixed;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 66px);
+  z-index: -1; 
+}
+
+.video-background {
+  flex: 1; 
+  width: 100%;
+  overflow: hidden; 
+}
+  
+.video-background video {
+  width: 100%;
+  height: 100%;
+}
+
+.video-background-cube {
+display: none;
+}
+  
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+  
+.image-container img {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  border-radius: 15px;
+}  
+  
+.image-container-joblab {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.image-container-joblab img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#gif-container img {
+  width: auto; 
+  height: 83vh; 
+  object-fit: cover; 
+}
+
+.image-transition {
+  transition: opacity 0.5s ease-in-out; 
+}
+  
+#color,
+#black-and-white {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  opacity: 0; 
+  transition: opacity 0.5s ease-in-out; 
+}
+  
+#black-and-white {
+  opacity: 1; 
+}
+
+#color {
+  opacity: 0; 
+}
+  
+.image-transition.in-view #black-and-white {
+  opacity: 0; 
+}
+  
+.image-transition.in-view #color {
+  opacity: 1; 
+}
+  
+.image-container-mobile {
+  display: none;
+}
+
+#responsive-sketch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#services-animation{
+  display: block;
+  width: 70%;
+}
+
+#sketch-small{
+  display: none;
+}
+
+.blancec_video {
+  width: 100%;
+  height: auto;
+}
+
+.blancec_video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-container {
+  width: 100%; /* Makes it fill its parent */
+  aspect-ratio: 5 / 4;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1);
+  animation: fadeZoom 35s infinite;
+}
+
+
+/* Assign different animation delays to each image */
+.carousel-container img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.carousel-container img:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.carousel-container img:nth-child(3) {
+  animation-delay: 10s;
+}
+
+.carousel-container img:nth-child(4) {
+  animation-delay: 15s;
+}
+
+.carousel-container img:nth-child(5) {
+  animation-delay: 20s;
+}
+
+.carousel-container img:nth-child(6) {
+  animation-delay: 25s;
+}
+
+.carousel-container img:nth-child(7) {
+  animation-delay: 30s;
+}
+
+/* Keyframes for fading and zoom-out effect */
+@keyframes fadeZoom {
+  0% { opacity: 0; transform: scale(2); }
+  10% { opacity: 1; transform: scale(1); }
+  30% { opacity: 1; transform: scale(1); }
+  40% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 0; transform: scale(1.1); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 750px) and (orientation: portrait) {
+
+  .video-container {
+    height: calc(100vh - 50px);
+    top: 55px;
+  }
+
+  .video-background-cube {
+    flex: 1; 
+    width: 100%;
+    overflow: hidden; 
+    display: block;
+  }
+    
+  .video-background-cube video {
+    width: 100%;
+    height: 80%;
+  }
+
+  .image-container-mobile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  .image-container-mobile img {
+    max-width: 100%;
+    max-height: 100%; 
+    height: auto; 
+    border-radius: 15px; 
+  }
+
+  #gif-container img {
+    height: 65vh;
+  }
+    
+  .image-container {
+    display: none;
+  }
+
+  #sketch-big{
+    display: none;
+  }
+
+  #sketch-small{
+    display: block;
+  }
+
+  .image-container-mobile-intro {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-container-mobile-intro img {
+    max-width: 85%;
+    max-height: 85%; 
+    height: auto; 
+    border-radius: 15px; 
+  }
+
+}
+
+@media screen and (max-height: 415px) and (orientation: landscape) {
+  .video-background-cube {
+    display: none !important;
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+    
+  .image-container img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    border-radius: 15px;
+  } 
+
+  #sketch-small{
+    display: block;
+  }
+
+  #responsive-sketch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}

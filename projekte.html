@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development & Design</title>
-    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <title>Projekte - Kopernikus Design</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/images.css">
+    <link rel="stylesheet" href="styles/global-text.css">
+    <link rel="stylesheet" href="styles/contact-form.css">
+    <script src="p5.js"></script>
 </head>
-    
 <body>
-    <div>
+    <div class="container">
         <div class="header">
-            <div class="logo">
-                <a href="home.html">
-                    <img src="imagenes/logo.jpg" alt="logo Wilmer Aderbert Florez Lopez" id="logo-bild">
+            <div>
+                <a href="index.html">
+                    <img src="imagenes/KopernikusLogo.png" alt="Kopernikus Design Logo" class='header-logo'>
                 </a>
             </div>
         </div>
@@ -26,175 +28,447 @@
                 <span></span>
             </div>
         </div>
+
         <div class="menu-overlay" id="menuOverlay">
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="PDF/CV.pdf" target="_blank">Curriculum Vitae</a></li>
-                <li><a href="projekte.html">Projekte</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="index.html">Startseite</a></li>
+              <li><a href="projekte.html">Projekte</a></li>
+              <li class="cards-mobile"><a href="services_de_mobile.html">Services</a></li>
+              <li class="cards-screens"><a href="services_de.html">Services</a></li>
+              <li class="cards-mobile-landscape"><a href="services_de_mobile_landscape.html">Services</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="cases.html">English</a></li>
             </ul>
+        </div>  
+
+        <div class="video-container">
+            <div class="video-background">
+                <video autoplay muted loop>
+                    <source src="imagenes/videos/Projekte.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-background-cube">
+                <video autoplay muted loop>
+                    <source src="imagenes/servicios/cube.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
 
-       
-       
+        <div class="intro-div"></div>
+
+        <div id='cases-cards-container' class="cards-screens">
+            <div id="cards" class="container">
+                <div class="card" id="card1-cases">
+                    <div class="card-body" id="cases">
+                        <div class="left" id="center-services">
+                            <h2 class="title">Job Lab</h2>
+                            <p class="text">
+                              <strong>Kunde:</strong>
+                              <br /> Deutscher Akademischer Austauschdienst (DAAD)
+                            </p><br />
+                            <p class="text">
+                              <strong>Unsere Leistungen:</strong>
+                              <br /> Markenentwicklung <br /> Plakatgestaltung <br /> Webentwicklung <br /> Webdesign
+                            </p><br />
+                            <p class="text justify">
+                              <strong>Übersicht:</strong>
+                              <br />
+                              Im Mai und Juni 2024 organisierte der DAAD in China das Projekt Job Lab in Zusammenarbeit 
+                              mit der Deutschen Botschaft, dem Goethe-Institut und weiteren renommierten Institutionen. 
+                              Unter dem Motto „Mit Deutsch in die Zukunft“ bot die Messe Karriereperspektiven für 
+                              chinesische Germanistik-Studierende, um sie auf ihrem Weg in die Arbeitswelt zu unterstützen.
+                            </p><br />
+                            <!-- Button -->
+                            <a href="joblab-projekt.html">
+                              <button class="send-button">Mehr Informationen</button>
+                            </a>
+                        </div>
+                        <div class="right">
+                            <!-- Image containers -->
+                            <a href="joblab-projekt.html">
+                                <div class="image-container image-transition">
+                                    <img src="imagenes/projects/JobLab-grey.png" alt="JobLab Logo" id="black-and-white" />
+                                    <img src="imagenes/projects/JobLab-color.png" alt="JobLab Logo" id="color" />
+                                </div>
+                            </a>
+                            <a href="joblab-case.html">
+                                <div class="image-container-mobile image-transition">
+                                    <img src="imagenes/projects/JobLab-grey-mobile2.png" alt="JobLab Logo" id="black-and-white" />
+                                    <img src="imagenes/projects/JobLab-color-mobile2.png" alt="JobLab Logo" id="color" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="card2-cases">
+                    <div class="card-body" id="cases">
+                        <div class="left" id="center-services">
+                            <h2 class="title">Blancec S.A.S.</h2>
+                            <p class="text">
+                              <strong>Kunde:</strong>
+                              <br /> Laboratorios Blancec S.A.S.
+                            </p><br />
+                            <p class="text">
+                              <strong>Unsere Leistungen:</strong>
+                              <br /> Webentwicklung & Design <br /> Markenentwicklung <br /> Datenbank <br /> Prozessautomatisierung
+                            </p><br />
+                            <p class="text justify">
+                              <strong>Übersicht:</strong>
+                              <br />
+                              BLANCEC S.A.S. ist ein Labor aus Kolumbien, das sich auf Produkttests spezialisiert hat. Es bewertet 
+                              Produkte aus verschiedenen Branchen, um sicherzustellen, dass sie die erforderlichen Vorschriften für 
+                              die Vermarktung auf globalen Märkten erfüllen - und damit höchste Qualität, Sicherheit und Zuverlässigkeit 
+                              gewährleisten.
+                            </p><br />
+                            <a href="blancec-projekt.html">
+                              <button class="send-button">Mehr Informationen</button>
+                            </a>
+                        </div>
+                        <div class="right">
+                            <!-- Image containers -->
+                            <a href="blancec-projekt.html">
+                                <div class="image-container image-transition">
+                                    <img src="imagenes/projects/Blancec-grey.png" alt="JobLab Logo" id="black-and-white" />
+                                    <img src="imagenes/projects/Blancec-color.png" alt="JobLab Logo" id="color" />
+                                </div>
+                            </a>
+                            <a href="blancec-case.html">
+                                <div class="image-container-mobile image-transition">
+                                    <img src="imagenes/projects/Blancec-grey-mobile2.png" alt="JobLab Logo" id="black-and-white" />
+                                    <img src="imagenes/projects/Blancec-color-mobile2.png" alt="JobLab Logo" id="color" />
+                                </div>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+
+                <div id="card3-cases" class="card">
+                    <div class="card-body" id="cases">
+                      <div class="left" id="center-services">
+                        <h2 class="title">Arbeiten Sie mit uns!</h2>
+                        <p class="text justify">Bereit, Ihr Unternehmen auf das nächste Level zu bringen? 
+                          Eine Website zu haben bedeutet nicht nur, online zu sein - es bedeutet, neue Chancen 
+                          zu eröffnen. Eine gut gestaltete Website hilft Ihnen, Kunden zu gewinnen, Vertrauen 
+                          aufzubauen und Ihre Dienstleistungen rund um die Uhr zu präsentieren.
+                        <br><br>
+                        <p class="text justify">
+                          Wir unterstützen Sie dabei, eine Website zu erstellen, die nicht nur visuell ansprechend, 
+                          sondern auch benutzerfreundlich und suchmaschinenoptimiert ist. Gemeinsam mit Ihnen erarbeiten 
+                          wir eine Lösung, die Ihre Unternehmensziele bestmöglich unterstützt.
+                        <br><br>
+                        <p class="text justify">
+                          Bereit loszulegen? Füllen Sie das Formular aus, und wir melden uns innerhalb von 24 Stunden bei Ihnen.
+                        </p>  
+                        <h2 class="title impressum">Impressum:</h2>
+                        <p class="text">
+                          Gesetzliche Vertretung: Katharina Eberle <br>  Am Stumpenhof 14 <br> 73207 Plochingen, Deutschland  <br>  info@kopernikusdesign.com  <br> Kleinunternehmen nach §19 UStG - keine Umsatzsteuer ausgewiesen
+                        </p>
+                      </div>
+                      <div class="right" id="center-services">
+                        <h2 class="title">Kontaktieren Sie uns</h2>
+                        <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                          <input type="hidden" name="form-name" value="contact">
+                          <p style="display:none;">
+                            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                          </p>
+                          <div class="form-group">
+                            <label for="name">Ihr Name:</label>
+                            <input type="text" id="name" name="name" required />
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Ihre E-Mail:</label>
+                            <input type="email" id="email" name="email" required/>
+                          </div>
+                          <div class="form-group">
+                            <label for="message">Ihre Nachricht:</label>
+                            <textarea id="message" name="message" required></textarea>
+                          </div>
+                          <button type="submit" class="send-button">Senden</button>
+                        </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id='cases-cards-container-mobile' class="cards-mobile">
+            <div id="cards" class="container">
+                <div class="card" id="card1-cases-mobile">
+                    <div class="card-body" id="cases">
+                        <div class="left">
+                            <a href="joblab-projekt.html">
+                                <div class="image-container-mobile image-transition">
+                                    <img src="imagenes/projects/JobLab-grey-mobile2.png" alt="JobLab Logo" id="black-and-white" />
+                                    <img src="imagenes/projects/JobLab-color-mobile2.png" alt="JobLab Logo" id="color" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="right" id="center-services-mobile">
+                          <h2 class="title">Job Lab</h2>
+                          <p class="text">
+                            <strong>Kunde:</strong>
+                            <br /> Deutscher Akademischer Austauschdienst (DAAD)
+                          </p><br />
+                          <p class="text">
+                            <strong>Unsere Leistungen:</strong>
+                            <br /> Markenentwicklung <br /> Plakatgestaltung <br /> Webentwicklung <br /> Webdesign
+                          </p><br />
+                          <p class="text justify">
+                            <strong>Übersicht:</strong>
+                            <br />
+                            Im Mai und Juni 2024 organisierte der DAAD in China das Projekt Job Lab in Zusammenarbeit 
+                            mit der Deutschen Botschaft, dem Goethe-Institut und weiteren renommierten Institutionen. 
+                            Unter dem Motto „Mit Deutsch in die Zukunft“ bot die Messe Karriereperspektiven für 
+                            chinesische Germanistik-Studierende, um sie auf ihrem Weg in die Arbeitswelt zu unterstützen.
+                          </p><br />
+                          <!-- Button -->
+                          <a href="joblab-projekt.html">
+                            <button class="send-button">Mehr Informationen</button>
+                          </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="card2-cases-mobile">
+                    <div class="card-body" id="cases">
+                        <div class="left">
+                            <a href="blancec-projekt.html">
+                                <div class="image-container-mobile image-transition">
+                                    <img src="imagenes/projects/Blancec-grey-mobile2.png" alt="JobLab Logo" id="black-and-white" />
+                                    <img src="imagenes/projects/Blancec-color-mobile2.png" alt="JobLab Logo" id="color" />
+                                </div>
+                            </a> 
+                        </div>
+                        <div class="right" id="center-services-mobile">
+                          <h2 class="title">Blancec S.A.S.</h2>
+                          <p class="text">
+                            <strong>Kunde:</strong>
+                            <br /> Laboratorios Blancec S.A.S.
+                          </p><br />
+                          <p class="text">
+                            <strong>Unsere Leistungen:</strong>
+                            <br /> Webentwicklung & Design <br /> Markenentwicklung <br /> Datenbank <br /> Prozessautomatisierung
+                          </p><br />
+                          <p class="text justify">
+                            <strong>Übersicht:</strong>
+                            <br />
+                            BLANCEC S.A.S. ist ein Labor aus Kolumbien, das sich auf Produkttests spezialisiert hat. Es bewertet 
+                            Produkte aus verschiedenen Branchen, um sicherzustellen, dass sie die erforderlichen Vorschriften für 
+                            die Vermarktung auf globalen Märkten erfüllen - und damit höchste Qualität, Sicherheit und Zuverlässigkeit 
+                            gewährleisten.
+                          </p><br />
+                          <a href="blancec-projekt.html">
+                            <button class="send-button">Mehr Informationen</button>
+                          </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="card3-cases-mobile" class="card">
+                    <div class="card-body" id="contact-proportion">
+                      <div class="left" id="center-services">
+                        <h2 class="title">Arbeiten Sie mit uns!</h2>
+                        <p class="text justify">Bereit, Ihr Unternehmen auf das nächste Level zu bringen? 
+                          Eine Website zu haben bedeutet nicht nur, online zu sein - es bedeutet, neue Chancen 
+                          zu eröffnen. Eine gut gestaltete Website hilft Ihnen, Kunden zu gewinnen, Vertrauen 
+                          aufzubauen und Ihre Dienstleistungen rund um die Uhr zu präsentieren.
+                        <br><br>
+                        <p class="text justify">
+                          Wir unterstützen Sie dabei, eine Website zu erstellen, die nicht nur visuell ansprechend, 
+                          sondern auch benutzerfreundlich und suchmaschinenoptimiert ist. Gemeinsam mit Ihnen erarbeiten 
+                          wir eine Lösung, die Ihre Unternehmensziele bestmöglich unterstützt.
+                        <br><br>
+                        <p class="text justify">
+                          Bereit loszulegen? Füllen Sie das Formular aus, und wir melden uns innerhalb von 24 Stunden bei Ihnen.
+                        </p>  
+                        <h2 class="title impressum">Impressum:</h2>
+                        <p class="text">
+                          Gesetzliche Vertretung: Katharina Eberle <br>  Am Stumpenhof 14 <br> 73207 Plochingen, Deutschland  <br>  info@kopernikusdesign.com  <br> Kleinunternehmen nach §19 UStG - keine Umsatzsteuer ausgewiesen
+                        </p>
+                      </div>
+                      <div class="right" id="center-services">
+                      </div>
+                    </div>
+                </div>
+                <div id="card4-cases-mobile" class="card">
+                    <div class="card-body" id="contact-proportion">
+                      <div class="left" id="center-services">
+                        <h2 class="title">Kontaktieren Sie uns</h2>
+                        <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                          <input type="hidden" name="form-name" value="contact">
+                          <p style="display:none;">
+                            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                          </p>
+                          <div class="form-group">
+                            <label for="name">Ihr Name:</label>
+                            <input type="text" id="name" name="name" required />
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Ihre E-Mail:</label>
+                            <input type="email" id="email" name="email" required/>
+                          </div>
+                          <div class="form-group">
+                            <label for="message">Ihre Nachricht:</label>
+                            <textarea id="message" name="message" required></textarea>
+                          </div>
+                          <button type="submit" class="send-button">Senden</button>
+                        </form>
+                      </div>
+                      <div class="right" id="center-services">
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         
-        
 
-        
+        <div id='cases-cards-container-mobile-landscape' class="cards-mobile-landscape">
+            <div id="cards" class="container">
+                
 
-        <div class="container-weiss">
-            <div>
-                <img id="titel-bild" class="image-animate" alt="Projekte" src="imagenes/Titeln/projekte.png">
+                <div class="card" id="card1-cases-mobile-landscape">
+                  <div class="card-body" id="contact-proportion">
+
+                  <div class="left" id="center-services">
+                    <h2 class="title">Job Lab</h2>
+                    <p class="text">
+                      <strong>Kunde:</strong>
+                      <br /> Deutscher Akademischer Austauschdienst (DAAD)
+                    </p><br />
+                    <p class="text">
+                      <strong>Unsere Leistungen:</strong>
+                      <br /> Markenentwicklung <br /> Plakatgestaltung <br /> Webentwicklung <br /> Webdesign
+                    </p><br />
+                    <p class="text justify">
+                      <strong>Übersicht:</strong>
+                      <br />
+                      Im Mai und Juni 2024 organisierte der DAAD in China das Projekt Job Lab in Zusammenarbeit 
+                      mit der Deutschen Botschaft, dem Goethe-Institut und weiteren renommierten Institutionen. 
+                      Unter dem Motto „Mit Deutsch in die Zukunft“ bot die Messe Karriereperspektiven für 
+                      chinesische Germanistik-Studierende, um sie auf ihrem Weg in die Arbeitswelt zu unterstützen.
+                    </p><br />
+                    <!-- Button -->
+                    <a href="joblab-projekt.html">
+                      <button class="send-button">Mehr Informationen</button>
+                    </a>
+                  </div>
+                  <div class="right" >
+                    <a href="joblab-projekt.html">
+                      <div class="image-container image-transition">
+                          <img src="imagenes/projects/JobLab-grey.png" alt="JobLab Logo" id="black-and-white" />
+                          <img src="imagenes/projects/JobLab-color.png" alt="JobLab Logo" id="color" />
+                      </div>
+                    </a>
+                  </div>
+                  </div>
+                </div>  
+
+
+
+
+                <div class="card" id="card2-cases-mobile-landscape">
+                  <div class="card-body" id="contact-proportion">
+                      <div class="left" id="center-services">
+                        <h2 class="title">Blancec S.A.S.</h2>
+                        <p class="text">
+                          <strong>Kunde:</strong>
+                          <br /> Laboratorios Blancec S.A.S.
+                        </p><br />
+                        <p class="text">
+                          <strong>Unsere Leistungen:</strong>
+                          <br /> Webentwicklung & Design <br /> Markenentwicklung <br /> Datenbank <br /> Prozessautomatisierung
+                        </p><br />
+                        <p class="text justify">
+                          <strong>Übersicht:</strong>
+                          <br />
+                          BLANCEC S.A.S. ist ein Labor aus Kolumbien, das sich auf Produkttests spezialisiert hat. Es bewertet 
+                          Produkte aus verschiedenen Branchen, um sicherzustellen, dass sie die erforderlichen Vorschriften für 
+                          die Vermarktung auf globalen Märkten erfüllen - und damit höchste Qualität, Sicherheit und Zuverlässigkeit 
+                          gewährleisten.
+                        </p><br />
+                        <a href="blancec-projekt.html">
+                          <button class="send-button">Mehr Informationen</button>
+                        </a>
+                      </div>
+                      <div class="right" >
+                        <a href="blancec-projekt.html">
+                          <div class="image-container image-transition">
+                              <img src="imagenes/projects/Blancec-grey.png" alt="JobLab Logo" id="black-and-white" />
+                              <img src="imagenes/projects/Blancec-color.png" alt="JobLab Logo" id="color" />
+                          </div>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+
+
+
+
+                <div id="card3-cases-mobile-landscape" class="card">
+                    <div class="card-body" id="contact-proportion">
+                      <div class="left" id="center-services">
+                        <h2 class="title">Arbeiten Sie mit uns!</h2>
+                        <p class="text justify">Bereit, Ihr Unternehmen auf das nächste Level zu bringen? 
+                          Eine Website zu haben bedeutet nicht nur, online zu sein - es bedeutet, neue Chancen 
+                          zu eröffnen. Eine gut gestaltete Website hilft Ihnen, Kunden zu gewinnen, Vertrauen 
+                          aufzubauen und Ihre Dienstleistungen rund um die Uhr zu präsentieren. 
+                        <br><br>
+                        <p class="text justify">
+                          Wir unterstützen Sie dabei, eine Website zu erstellen, die nicht nur visuell ansprechend, 
+                          sondern auch benutzerfreundlich und suchmaschinenoptimiert ist. Gemeinsam mit Ihnen erarbeiten 
+                          wir eine Lösung, die Ihre Unternehmensziele bestmöglich unterstützt.
+                        <br><br>
+                        <p class="text justify">
+                          Bereit loszulegen? Füllen Sie das Formular aus, und wir melden uns innerhalb von 24 Stunden bei Ihnen.
+                        </p>  
+                        <h2 class="title impressum">Impressum:</h2>
+                        <p class="text">
+                          Gesetzliche Vertretung: <br>Katharina Eberle - info@kopernikusdesign.com <br> 73207 Plochingen, Deutschland - Am Stumpenhof 14 <br> Kleinunternehmen nach §19 UStG - keine Umsatzsteuer ausgewiesen
+                        </p>
+                      </div>
+                      <div class="right" id="center-services">
+                        <h2 class="title">Contact Us</h2>
+                        <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                          <input type="hidden" name="form-name" value="contact">
+                          <p style="display:none;">
+                            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                          </p>
+                          <div class="form-group">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required />
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required/>
+                          </div>
+                          <div class="form-group">
+                            <label for="message">Your Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                          </div>
+                          <button type="submit" class="send-button">Send</button>
+                        </form>
+                      </div>
+                    </div>
+                </div>
+                
+
+            
             </div>
         </div>
 
 
-        <div class="projects-container">
-            <div class="image-left" >
-                <a href="job-lab.html">
-                    <img src="imagenes/Projects/job-lab/thumbnail.jpg" class="projects-img image-animate" alt="Job Lab Image">
-                </a>
-            </div>
-            <div class="text-right">
-                <div >
-                    <div class="text-block image-animate">
-                        <a href="job-lab.html">
-                            <h2>Job Lab</h2>
-                        </a>
-                    </div>
-                    <div class="text-block image-animate">
-                        <p>Design und Entwicklung einer informativen Webseite für ein 
-                            Projekt in China. Im Auftrag für den DAAD 
-                            (Deutscher Akademischer Austauschdienst)</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="text-left">
-                <div>
-                    <div class="text-block image-animate">
-                        <a href="https://wilmerkopernikus.com" target="_blank">
-                            <h2>Wilmer Kopernikus</h2>
-                        </a>
-                    </div>
-
-                    <div class="text-block image-animate">
-                        <p>Meine Webseite als bildender Künstler, auf der ich eine Auswahl meiner besten Gemälde präsentiere</p>
-                    </div>
-                </div>
-            </div>
-            <div class="image-right">
-                <a href="https://wilmerkopernikus.com "  target="_blank">
-                    <img src="imagenes/Projects/Wilmer-Kopernikus.jpg" class="projects-img image-animate" alt="Painting - Wilmer Kopernikus">
-                </a>
-            </div>
-        </div>
-
-        <div class="projects-container bottom">
-            <div class="image-left" >
-                <a href="partikel.html">
-                    <img src="imagenes/Projects/Particles.jpg" class="projects-img image-animate" alt="Imagen 1">
-                </a>
-            </div>
-            <div class="text-right">
-                <div >
-                    <div class="text-block image-animate">
-                        <a href="partikel.html">
-                            <h2>Partikel Labor</h2>
-                        </a>
-                    </div>
-                    <div class="text-block image-animate">
-                        <p>Visuelles Projekt, erstellt mit der p5.js-library. 
-                            Die Open-Source-library p5.js ist ein Open-Source-Projekt, das von Processing erstellt wurde. 
-                            Eine Programmiersprache im Kontext der bildenden Künste</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container" >
-
-            </div>
-        </div>      
-   
- 
-
-        
-
-
-
-
-
-
-
-        <div class="projects-container-small">
-            <div class="image-left" >
-                <a href="https://joblab.cc " target="_blank">
-                    <img src="imagenes/Projects/Logo-JobLab.jpg" class="projects-img image-animate" alt="Imagen 1">
-                </a>
-            </div>
-            <div class="text-right">
-                <div >
-                    <div class="text-block image-animate">
-                        <a href="https://joblab.cc " target="_blank">
-                            <h2>Job Lab</h2>
-                        </a>
-                    </div>
-                    <div class="text-block image-animate">
-                        <p>Design und Entwicklung einer informativen Webseite für eine 
-                            Veranstaltung in China, die Germanistik-Studenten über 
-                            Jobangebote informiert. Im Auftrag für den DAAD 
-                            (Deutscher Akademischer Austauschdienst)</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="image-left">
-                <a href="https://wilmerkopernikus.com" target="_blank">
-                    <img src="imagenes/Projects/Wilmer-Kopernikus.jpg" class="projects-img image-animate" alt="Imagen 2">
-                </a>
-            </div>
-            <div class="text-right">
-                <div>
-                    <div class="text-block image-animate">
-                        <a href="https://wilmerkopernikus.com" target="_blank">
-                            <h1>Wilmer Kopernikus</h1>
-                        </a>
-                    </div>
-                    <div class="text-block image-animate">
-                        <p>Meine Webseite als bildender Künstler, auf der ich eine Auswahl meiner besten Gemälde präsentiere</p>
-                    </div>
-                </div>
-            </div>   
-
-            <div class="image-left">
-                <a href="partikel.html">
-                    <img src="imagenes/Projects/Particles.jpg" class="projects-img image-animate" alt="Projekt Partikel Bild">
-                </a>
-            </div>
-            <div class="text-right">
-                <div>
-                    <div class="text-block image-animate">
-                        <a href="partikel.html">
-                            <h1>Partikel Labor</h1>
-                        </a>
-                    </div>
-                    <div class="text-block image-animate">
-                        <p>Visuelles Projekt, erstellt mit der p5.js-library. 
-                            Die Open-Source-library p5.js ist ein Open-Source-Projekt, das von Processing erstellt wurde. 
-                            Eine Programmiersprache im Kontext der bildenden Künste</p>
-                    </div>
-                </div>
-            </div>         
-        </div>
-        <div class="container" >
-
-        </div>
 
     </div>
     <script src="script.js"></script>
 </body>
 </html>
-
-
-

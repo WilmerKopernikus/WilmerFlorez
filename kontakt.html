@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development & Design</title>
-    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <title>Kontakt - Kopernikus Design</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/images.css">
+    <link rel="stylesheet" href="styles/global-text.css">
+    <link rel="stylesheet" href="styles/contact-form.css">
+    <script src="p5.js"></script>
 </head>
-    
 <body>
-    <div>
+    <div class="container">
         <div class="header">
-            <div class="logo">
-                <a href="home.html">
-                    <img src="imagenes/logo.jpg" alt="logo Wilmer Aderbert Florez Lopez" id="logo-bild">
+            <div>
+                <a href="index.html">
+                    <img src="imagenes/KopernikusLogo.png" alt="Kopernikus Design Logo" class='header-logo'>
                 </a>
             </div>
         </div>
@@ -25,47 +28,206 @@
                 <span></span>
             </div>
         </div>
+
         <div class="menu-overlay" id="menuOverlay">
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="PDF/CV.pdf" target="_blank">Curriculum Vitae</a></li>
-                <li><a href="projekte.html">Projekte</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="index.html">Startseite</a></li>
+              <li><a href="projekte.html">Projekte</a></li>
+              <li class="cards-mobile"><a href="services_de_mobile.html">Services</a></li>
+              <li class="cards-screens"><a href="services_de.html">Services</a></li>
+              <li class="cards-mobile-landscape"><a href="services_de_mobile_landscape.html">Services</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="contact.html">English</a></li>
             </ul>
-        </div>
+        </div>  
 
-        <div class="container-weiss">
-            <div>
-                <img id="titel-bild-contact" src="imagenes/Titeln/kontakt.jpg">
+        <div class="video-container">
+            <div class="video-background">
+                <video autoplay muted loop>
+                    <source src="imagenes/videos/contact.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-background-cube" id="cube-video">
+                <video autoplay muted loop>
+                    <source src="imagenes/servicios/cube.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
 
-        <div class="container-weiss">
-            <div id="kontakt">
-                <form name="contact" method="POST" netlify id="contact-form">
-                    <p> Lass uns gemeinsam etwas Großartiges erschaffen. Melde dich noch heute!</p>
-                    <p><input type="text" name="name" placeholder="Ihr Name" required></p>
-                    <p><input type="email" name="email" placeholder="Ihr Name" required></p>
-                    <p><textarea name="message" placeholder="Ihre Nachricht" required></textarea></p>
-                    <p><button type="submit">Absenden</button></p>
-                </form>
-                <div id="thank-you-message" style="display:none;">
-                    Thank you for your message!
+        <div class="intro-div"></div>
+
+        <div id='contact-cards-container' class="cards-screens">
+            <div id="cards" class="container">
+                <div id="card1-contact" class="card">
+                    <div class="card-body" id="cases">
+                      <div class="left" id="center-services">
+                        <h2 class="title">Arbeiten Sie mit uns!</h2>
+                        <p class="text justify">Bereit, Ihr Unternehmen auf das nächste Level zu bringen? 
+                          Eine Website zu haben bedeutet nicht nur, online zu sein - es bedeutet, neue Chancen 
+                          zu eröffnen. Eine gut gestaltete Website hilft Ihnen, Kunden zu gewinnen, Vertrauen 
+                          aufzubauen und Ihre Dienstleistungen rund um die Uhr zu präsentieren.
+                        <br><br>
+                        <p class="text justify">
+                          Wir unterstützen Sie dabei, eine Website zu erstellen, die nicht nur visuell ansprechend, 
+                      sondern auch benutzerfreundlich und suchmaschinenoptimiert ist. Gemeinsam mit Ihnen erarbeiten 
+                      wir eine Lösung, die Ihre Unternehmensziele bestmöglich unterstützt.
+                        <br><br>
+                        <p class="text justify">
+                          Bereit loszulegen? Füllen Sie das Formular aus, und wir melden uns innerhalb von 24 Stunden bei Ihnen.
+                        </p>  
+                        <h2 class="impressum title">Impressum:</h2>
+                        <p class="text">
+                          Gesetzliche Vertretung: Katharina Eberle <br>  Am Stumpenhof 14 - 73207 Plochingen, Deutschland  <br>info@kopernikusdesign.com <br>Kleinunternehmen nach §19 UStG - keine Umsatzsteuer ausgewiesen
+                        </p>
+                      </div>
+                      <div class="right" id="center-services">
+                        <h2 class="title">Kontaktieren Sie uns</h2>
+                        <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                          <input type="hidden" name="form-name" value="contact">
+                          <p style="display:none;">
+                            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                          </p>
+                          <div class="form-group">
+                            <label for="name">Ihr Name:</label>
+                            <input type="text" id="name" name="name" required />
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Ihre E-Mail:</label>
+                            <input type="email" id="email" name="email" required/>
+                          </div>
+                          <div class="form-group">
+                            <label for="message">Ihre Nachricht:</label>
+                            <textarea id="message" name="message" required></textarea>
+                          </div>
+                          <button type="submit" class="send-button">Senden</button>
+                        </form>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
 
 
 
-        <div class="container" >
 
+
+        <div id='contact-cards-container-mobile' class="cards-mobile">
+          <div id="cards" class="container">
+              <div id="card1-contact-mobile" class="card">
+                  <div class="card-body" id="contact-proportion">
+                    <div class="left" id="center-services">
+                      <h2 class="title">Arbeiten Sie mit uns!</h2>
+                      <p class="text justify">Bereit, Ihr Unternehmen auf das nächste Level zu bringen? 
+                        Eine Website zu haben bedeutet nicht nur, online zu sein - es bedeutet, neue Chancen 
+                        zu eröffnen. Eine gut gestaltete Website hilft Ihnen, Kunden zu gewinnen, Vertrauen 
+                        aufzubauen und Ihre Dienstleistungen rund um die Uhr zu präsentieren.
+                      <br><br>
+                      <p class="text justify">
+                        Wir unterstützen Sie dabei, eine Website zu erstellen, die nicht nur visuell ansprechend, 
+                      sondern auch benutzerfreundlich und suchmaschinenoptimiert ist. Gemeinsam mit Ihnen erarbeiten 
+                      wir eine Lösung, die Ihre Unternehmensziele bestmöglich unterstützt.
+                      <br><br>
+                      <p class="text justify">
+                        Bereit loszulegen? Füllen Sie das Formular aus, und wir melden uns innerhalb von 24 Stunden bei Ihnen.
+                      </p>
+                      <h2 class="title impressum">Impressum:</h2>
+                      <p class="text">
+                        Gesetzliche Vertretung: Katharina Eberle <br>  Am Stumpenhof 14 - 73207 Plochingen, Deutschland  <br>info@kopernikusdesign.com <br>Kleinunternehmen nach §19 UStG - keine Umsatzsteuer ausgewiesen
+                      </p> 
+                    </div>
+                    <div class="right" id="center-services">
+                    </div>
+                  </div>
+              </div>
+              <div id="card2-contact-mobile" class="card">
+                <div class="card-body" id="contact-proportion">
+                  <div class="left" id="center-services">
+                    <h2 class="title">Kontaktieren Sie uns</h2>
+                    <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                      <input type="hidden" name="form-name" value="contact">
+                      <p style="display:none;">
+                        <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                      </p>
+                      <div class="form-group">
+                        <label for="name">Ihr Name:</label>
+                        <input type="text" id="name" name="name" required />
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Ihre E-Mail:</label>
+                        <input type="email" id="email" name="email" required/>
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Ihre Nachricht:</label>
+                        <textarea id="message" name="message" required></textarea>
+                      </div>
+                      <button type="submit" class="send-button">Senden</button>
+                    </form>
+                  </div>
+
+                </div>
+            </div>
+          </div>
+      </div>
+
+
+      <div id='contact-cards-container' class="cards-mobile-landscape">
+        <div id="cards" class="container">
+          <div class="card" id="card1-contact">
+            <div class="card-body" id="contact-proportion">
+              
+              <div class="left" id="center-services">
+                <h2 class="title">Arbeiten Sie mit uns!</h2>
+                <p class="text justify">Bereit, Ihr Unternehmen auf das nächste Level zu bringen? 
+                  Eine Website zu haben bedeutet nicht nur, online zu sein - es bedeutet, neue Chancen 
+                  zu eröffnen. Eine gut gestaltete Website hilft Ihnen, Kunden zu gewinnen, Vertrauen 
+                  aufzubauen und Ihre Dienstleistungen rund um die Uhr zu präsentieren.
+                <br><br>
+                <p class="text justify">
+                  Wir unterstützen Sie dabei, eine Website zu erstellen, die nicht nur visuell ansprechend, 
+                      sondern auch benutzerfreundlich und suchmaschinenoptimiert ist. Gemeinsam mit Ihnen erarbeiten 
+                      wir eine Lösung, die Ihre Unternehmensziele bestmöglich unterstützt.
+                <br><br>
+                <p class="text justify">
+                  Bereit loszulegen? Füllen Sie das Formular aus, und wir melden uns innerhalb von 24 Stunden bei Ihnen.
+                </p> 
+                <h2 class="impressum title">Impressum:</h2>
+                <p class="text ">
+                  Gesetzliche Vertretung: <br>Katharina Eberle - info@kopernikusdesign.com<br>  Am Stumpenhof 14 - 73207 Plochingen, Deutschland  <br> Kleinunternehmen nach §19 UStG - keine Umsatzsteuer ausgewiesen
+                </p>
+              </div>
+              <div class="right" id="center-services">
+                <h2 class="title">Kontaktieren Sie uns</h2>
+                <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                  <input type="hidden" name="form-name" value="contact">
+                  <p style="display:none;">
+                    <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+                  </p>
+                  <div class="form-group">
+                    <label for="name">Ihr Name:</label>
+                    <input type="text" id="name" name="name" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Ihre E-Mail:</label>
+                    <input type="email" id="email" name="email" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Ihre Nachricht:</label>
+                    <textarea id="message" name="message" required></textarea>
+                  </div>
+                  <button type="submit" class="send-button">Senden</button>
+                </form>
+              </div>
+
+            </div>
+          </div>
         </div>
+      </div>
+
+
 
     </div>
     <script src="script.js"></script>
-  
 </body>
 </html>
-
-
-

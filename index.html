@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development & Design</title>
-    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <title>Wilmer Aderbert Florez Lopez</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/images.css">
+    <link rel="stylesheet" href="styles/global-text.css">
+    <script src="p5.js"></script>
 </head>
-    
 <body>
-    <div>
+    <div class="container">
         <div class="header">
-            <div class="logo">
-                <a href="home.html">
-                    <img src="imagenes/logo.jpg" alt="logo Wilmer Aderbert Florez Lopez" id="logo-bild">
+            <div>
+                <a href="index.html">
+                    <img src="imagenes/logo.jpg" alt="Wilmer Aderbert Florez Lopez" class='header-logo'>
                 </a>
             </div>
         </div>
@@ -27,17 +28,57 @@
         </div>
         <div class="menu-overlay" id="menuOverlay">
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="PDF/CV.pdf" target="_blank">Curriculum Vitae</a></li>
+                <!--<li><a href="index.html">Startseite</a></li>
                 <li><a href="projekte.html">Projekte</a></li>
+                <li class="cards-mobile"><a href="services_de_mobile.html">Services</a></li>
+                <li class="cards-screens"><a href="services_de.html">Services</a></li>
+                <li class="cards-mobile-landscape"><a href="services_de_mobile_landscape.html">Services</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="index_en.html">English</a></li>-->
             </ul>
+        </div>  
+
+
+            <div class="cards-screens">
+                <div id="cards" class="container">
+                    <div class="card" id="card1-cases">
+                        <div class="card-body" id="cases">
+                            <div class="left-intro" id="center-intro">
+                                <h1 class="title-intro">WILLKOMMEN IN EINEM NEUEN DIGITALEN KOSMOS!</h1><br>
+                                <h1 class="intro-text">Wilmer Aderbert Florez Lopez</h1>
+                                <h1 class="intro-text">Web Entwickler & Designer</h1>
+                            </div>
+                            <div class="right-intro">
+                                <div class="image-container">
+                                    <img src="imagenes/Passbild.jpg" alt="Wilmer Aderbert Florez Lopez" class="passbild-image"/>  
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+
+            <div class="cards-mobile">
+                <div id="cards" class="container">
+                    <div class="card" id="card1-cases-mobile">
+                        <div class="card-body" id="intro">
+                            <div class="left-intro" id="center-intro">
+                                <br><h1 class="title-intro">WILLKOMMEN IN EINEM NEUEN DIGITALEN KOSMOS!</h1><br>
+                                <h1 class="intro-text">Wilmer Aderbert Florez Lopez</h1>
+                                <h1 class="intro-text">Web Entwickler & Designer</h1>
+                                <div class="image-container-mobile-intro">
+                                    <img src="imagenes/Passbild.jpg" alt="Wilmer Aderbert Florez Lopez" class="passbild-image"/>  
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>   
     </div>
+    <script src="scripts/sketch_12.js"></script>
     <script src="script.js"></script>
-    <script src="sketch.js"></script>
 </body>
 </html>
-
-
-

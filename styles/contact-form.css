@@ -1,0 +1,206 @@
+/* contact-form.css */
+ 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #444;
+    color: #ffffff;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #777;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 50px;
+  }
+  
+  .send-button {
+    width: 200px; 
+    padding: 15px;
+    background-color: #ffcc00;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  }
+  
+  .send-button:hover {
+    background-color: #ff7300;
+  }
+
+  #message {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  @media (max-width: 768px) {
+
+
+    .contact-form {
+      gap: 30px;
+    }
+
+    #message {
+      resize: vertical;
+      min-height: 80px;
+    }
+  }
+
+@media screen and (max-width: 1025px) and (min-width: 822px) and (orientation: portrait) {
+  .form-group label {
+    font-size: 1.7rem
+  }
+
+  #message {
+    min-height: 300px;
+  }
+
+  .send-button{
+    font-size: 1.5rem
+  }
+}
+
+@media screen and (max-width: 821px) and (min-width: 431px) and (orientation: portrait) {
+  .form-group label {
+    font-size: 1.6rem
+  }
+
+  #message {
+    min-height: 200px;
+  }
+
+  .send-button{
+    font-size: 1.4rem
+  }
+
+}
+
+@media screen and (max-width: 431px) and (orientation: portrait) {
+  .form-group label {
+    font-size: 1.1rem
+  }
+
+  #message {
+    min-height: 150px;
+  }
+
+  .contact-form {
+    gap: 15px;
+  } 
+
+
+}
+
+@media screen and (max-width: 376px) and (orientation: portrait) {
+  .form-group label {
+    font-size: 1rem
+  }
+
+  #message {
+    min-height: 150px;
+  }
+
+  .contact-form {
+    gap: 15px;
+  } 
+}
+
+@media screen and (max-height: 415px) and (orientation: landscape) {
+  .contact-form {
+    gap: 5px;
+  } 
+
+  .form-group input,
+  .form-group textarea {
+    padding: 3px;
+  }
+
+  #message {
+    min-height: 50px;
+  }
+
+  .send-button {
+    width: 150px; 
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  #message {
+    min-height: 100px;
+  }
+}
+
+@media screen and (width: 540px) and (height: 720px) and (orientation: portrait) {
+  .contact-form {
+    gap: 10px;
+  } 
+
+  .form-group input,
+  .form-group textarea {
+    padding: 8px;
+  }
+
+  #message {
+    min-height: 150px;
+  }
+
+  .send-button {
+    width: 150px; 
+    padding: 5px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (width: 1024px) and (height: 600px) and (orientation: landscape) {
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 7px;
+  }
+  #message {
+    min-height: 80px;
+  }
+}
+
+@media screen and (min-width: 2560px) and (orientation: landscape) {
+
+  #message {
+    min-height: 250px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 20px;
+    font-size: 2rem;
+  }
+
+  .send-button{
+    font-size: 2rem;
+  }
+}
