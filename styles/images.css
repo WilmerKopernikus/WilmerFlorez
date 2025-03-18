@@ -11,6 +11,10 @@
 
 .passbild-image {
   border-radius: 20px;
+  width: 50vw;
+  height: auto;
+  max-height: 50%; 
+  object-fit: contain; 
 }
   
 .intro-image.visible {

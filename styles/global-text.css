@@ -95,9 +95,10 @@ a {
 #center-intro {
   display: flex;
   justify-content: center;
-  height: 100%;
+  align-items: center;
   flex-direction: column;
   text-align: center;
+  height: 100%;
 }
 
 #center-services-mobile {
@@ -314,11 +315,11 @@ a {
   }
 
   .title-intro {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .intro-text {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -368,8 +369,6 @@ a {
   .title{
     font-size: 1.2rem;
   }
-
-
 
   .impressum {
     margin-top: 20px;
