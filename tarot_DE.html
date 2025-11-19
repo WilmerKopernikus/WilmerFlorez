@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preload" as="image" href="tarot/reverse.webp">
+
+  <title >Interaktives Tarot</title>
+  <link rel="preload" as="image" href="reverse.webp" fetchpriority="high">
+
+  <link rel="stylesheet" href="style-tarot.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/cards_services.css">
+  <link rel="stylesheet" href="styles/header_test.css">
+
+  <link rel="stylesheet" href="styles/global-text.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="nav-container">
+        <a href="index.html">
+          <img src="imagenes/KopernikusLogo.png" alt="Kopernikus Design Logo" class="header-logo">
+        </a>
+      </div>
+    </div>
+
+    <div class="hamburger-menu">
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="language-selector">
+      <input type="checkbox" id="langToggle" hidden />
+      <label for="langToggle" class="current-lang">DE ▼</label>
+      <ul class="language-options">
+        <li><a href="tarot_EN.html" class="lang-button">EN</a></li>
+      </ul>
+    </div>
+
+    <div class="menu-overlay" id="menuOverlay">
+      <ul>
+        <li><a href="index.html"><img class="menu-icon" src="imagenes/svg/cubo.svg" alt="Startseite Icon">Startseite</a></li>
+        <li><a href="projekte.html"><img class="menu-icon" src="imagenes/svg/cases.svg" alt="Projekte Icon">Projekte</a></li>
+        <li class="cards-mobile"><a href="services_de_mobile.html"><img class="menu-icon" src="imagenes/svg/services.svg" alt="Services Icon">Services</a></li>
+        <li class="cards-screens"><a href="services_de.html"><img class="menu-icon" src="imagenes/svg/services.svg" alt="Services Icon">Services</a></li>
+        <li class="cards-mobile-landscape"><a href="services_de_mobile_landscape.html"><img class="menu-icon" src="imagenes/svg/services.svg" alt="Services Icon">Services</a></li>
+        <li><a href="kontakt.html"><img class="menu-icon" src="imagenes/svg/contact.svg" alt="Kontakt Icon">Kontakt</a></li>
+      </ul>
+    </div>  
+
+  <h2 class="title">INTERAKTIVES TAROT</h2>
+  <button id="una-carta">Ziehe eine Karte</button>
+  <button id="triada">Ziehe eine Triade</button>
+
+  <div id="resultado"></div>
+
+  <script src="script-tarot.js"></script>
+  <script src="script.js"></script>
+</body>

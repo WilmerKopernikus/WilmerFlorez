@@ -1,0 +1,95 @@
+body {
+
+
+    color: #f0f0f0;
+    text-align: center;
+    padding: 1.5rem;
+    padding-top: 90px;
+  }
+  
+  button {
+
+    padding: 20px 30px;
+    margin: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #780f0f;
+    color: white;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ff2600;
+  }
+  
+  #resultado {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+ /* --- CARTAS TAROT --- */
+.tarot-card {
+  perspective: 1000px;
+  display: inline-block;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: 340px;
+  height: 600px;
+  aspect-ratio: 9 / 16;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  transform: rotateY(180deg);
+}
+
+.tarot-card.flipped .card-inner {
+  transform: rotateY(0deg);
+}
+
+.card-side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Sin fondo blanco */
+.card-front,
+.card-back {
+  background: transparent;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- RESPONSIVE --- */
+@media screen and (max-width: 750px) {
+  .card-inner {
+    width: 60vw;        /* más pequeña que antes */
+    height: auto;
+    aspect-ratio: 2 / 3;
+  }
+
+  .tarot-card {
+    margin: 0.5rem;
+  }
+
+  .card-side img {
+    object-fit: contain;
+  }
+}

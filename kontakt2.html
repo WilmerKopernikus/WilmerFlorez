@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopernikus Design</title>
+    <link rel="preload" href="p5.js" as="script">
+    <link rel="preload" href="scripts/sketch_12.js" as="script">
+    <script defer src="p5.js"></script>
+    <script defer src="scripts/sketch_12.js"></script>
+    <link rel="stylesheet" href="styles/header_test.css">
+    <link rel="stylesheet" href="styles/contact-i18n.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/images.css">
+    <link rel="stylesheet" href="styles/global-text.css">
+    <link rel="stylesheet" href="styles/contact-form.css">
+    <link rel="stylesheet" href="styles/cards_intro.css">
+    <script src="p5.js"></script>
+    <script src="scripts/contact-i18n.js"></script>
+  </head>
+  <body>
+    <div 
+    id="loadingScreen"
+    style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      z-index: 3000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      font-size: 20px;
+    ">
+    <img src="imagenes/videos/cubo.gif" alt="Loading..." style="width: 250px; height: auto; margin-bottom: 20px;">
+    <img src="imagenes/loading.webp" style="width: 250px; height: auto; margin-bottom: 20px;">
+  </div>
+    <div class="container">
+      <div class="header">
+        <div class="nav-container">
+          <a href="index.html">
+            <img src="imagenes/KopernikusLogo.png" alt="Kopernikus Design Logo" class='header-logo'>
+          </a>
+        </div>
+      </div>
+
+      <div class="hamburger-menu">
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="language-selector">
+        <input type="checkbox" id="langToggle" hidden />
+        <label for="langToggle" class="current-lang">DE ▼</label>        
+        <ul class="language-options">
+          <li><button class="lang-button" data-lang="de">DE</button></li>
+          <li><button class="lang-button" data-lang="en">EN</button></li>
+          <!-- para agregar más idiomas en el futuro -->
+          <!--<li><button class="lang-button" data-lang="es">ES</button></li>-->
+        </ul>
+
+      </div>
+
+      <div class="menu-overlay" id="menuOverlay">
+        <ul>
+          <li><a href="index.html"><img class="menu-icon" src="imagenes/svg/cubo.svg" alt="Startseite Icon">Startseite</a></li>
+          <li><a href="projekte.html"><img class="menu-icon" src="imagenes/svg/cases.svg" alt="Projekte Icon">Projekte</a></li>
+          <li class="cards-mobile"><a href="services_de_mobile.html"><img class="menu-icon" src="imagenes/svg/services.svg" alt="Services Icon">Services</a></li>
+          <li class="cards-screens"><a href="services_de.html"><img class="menu-icon" src="imagenes/svg/services.svg" alt="Services Icon">Services</a></li>
+          <li class="cards-mobile-landscape"><a href="services_de_mobile_landscape.html"><img class="menu-icon" src="imagenes/svg/services.svg" alt="Services Icon">Services</a></li>
+          <li><a href="kontakt.html"><img class="menu-icon" src="imagenes/svg/contact.svg" alt="Kontakt Icon">Kontakt</a></li>
+        </ul>
+      </div>  
+
+      <div  class="card" id="card1">
+        <div class="card-body-intro with-arrow font-loading">
+          <div class="intro-card">
+            <h1 class="fade-in-text" data-i18n="heroTitle">KONTAKT</h1><br>
+          </div>
+          <div class="arrow">
+            <h1 class="text-shadow fade-in-text">↓</h1>
+          </div>                        
+        </div>
+      </div>
+
+      <div id='contact-cards-container' class="cards-screens">
+        <div id="cards" class="container">
+          <div id="card1-contact" class="card">
+            <div class="card-body" id="cases">
+              <div class="left" id="center-services">
+                <h2 class="title" id="title-small" data-i18n="chooseUsTitle">WÄHLEN SIE UNS!</h2>
+                <p class="text justify" data-i18n="chooseUsText">Bereit Ihr Unternehmen auf das nächste Level zu bringen? 
+                  Eine Website zu haben bedeutet nicht nur, online zu sein - es bedeutet, neue Chancen 
+                  zu eröffnen. Eine gut gestaltete Website hilft Ihnen, Kunden zu gewinnen, Vertrauen 
+                  aufzubauen und Ihre Dienstleistungen rund um die Uhr zu präsentieren.
+                  <br><br>                     
+                  Wir unterstützen Sie dabei, eine Website zu erstellen, die nicht nur visuell ansprechend, 
+                  sondern auch benutzerfreundlich und suchmaschinenoptimiert ist. Gemeinsam mit Ihnen erarbeiten 
+                  wir eine Lösung, die Ihre Unternehmensziele bestmöglich unterstützt.
+                  <br><br>
+                </p>
+                <h2 class="impressum title" id="title-small" data-i18n="impressumTitle">IMPRESSUM</h2>
+                <p class="text justify" data-i18n="impressumText">
+                  Gesetzliche Vertretung: Wilmer Aderbert Florez Lopez <br>  
+                  Calle 75 # 58-51 - 111211 Bogota, Kolumbien  <br>wilmerkopernikus@gmail.com <br>
+                  Registriert und rechtlich vertreten in Bogotá, Kolumbien. <br>
+                  Umsatzsteuer (MwSt) ist auf internationale Transaktionen nicht anwendbar.
+                </p>
+              </div>
+
+              <div class="right" id="center-services">
+                <h2 class="title" id="title-small" data-i18n="formTitle">KONTAK</h2>
+                <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                  <input type="hidden" name="form-name" value="contact">
+                  <p style="display:none;">
+                    <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                  </p>
+                  <div class="form-group">
+                    <label for="name" data-i18n="formNameLabel">Ihr Name:</label>
+                    <input type="text" id="name" name="name" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="email" data-i18n="formEmailLabel">Ihre E-Mail:</label>
+                    <input type="email" id="email" name="email" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="message" data-i18n="formMessageLabel">Ihre Nachricht:</label>
+                    <textarea id="message" name="message" required></textarea>
+                  </div>                     
+                  <button type="submit" class="send-button" data-i18n="formSubmit">Senden</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id='contact-cards-container-mobile' class="cards-mobile">
+        <div id="cards" class="container">
+          <div id="card1-contact-mobile" class="card">
+            <div class="card-body" id="contact-proportion-text">
+              <div class="left" id="center-services"></div>
+              <div class="right" id="center-services">
+                <h2 class="title" data-i18n="chooseUsTitle">WÄHLEN SIE UNS!</h2>
+                <p class="text" data-i18n="chooseUsText">Bereit Ihr Unternehmen auf das nächste Level zu bringen? 
+                  Eine Website zu haben bedeutet nicht nur, online zu sein - es bedeutet, neue Chancen 
+                  zu eröffnen. Eine gut gestaltete Website hilft Ihnen, Kunden zu gewinnen, Vertrauen 
+                  aufzubauen und Ihre Dienstleistungen rund um die Uhr zu präsentieren.
+                  <br><br>
+                  Wir unterstützen Sie dabei, eine Website zu erstellen, die nicht nur visuell ansprechend, 
+                  sondern auch benutzerfreundlich und suchmaschinenoptimiert ist. Gemeinsam mit Ihnen erarbeiten 
+                  wir eine Lösung, die Ihre Unternehmensziele bestmöglich unterstützt.
+                  <br><br>
+                </p>
+                <h2 class="title impressum" data-i18n="impressumTitle">IMPRESSUM</h2>
+                <p class="text" data-i18n="impressumText">
+                  Gesetzliche Vertretung: Wilmer Aderbert Florez Lopez <br>  
+                  Calle 75 # 58-51 - 111211 Bogota, Kolumbien  <br>
+                  wilmerkopernikus@gmail.com <br>Registriert und rechtlich vertreten in Bogotá, Kolumbien. <br>
+                  Umsatzsteuer (MwSt) ist auf internationale Transaktionen nicht anwendbar.
+                </p> 
+              </div>
+            </div>
+          </div>
+          <div id="card2-contact-mobile" class="card">
+            <div class="card-body" id="contact-proportion">
+              <div class="left" id="center-services">
+                <h2 class="title" data-i18n="formTitle">KONTAKT</h2>
+                <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                  <input type="hidden" name="form-name" value="contact">
+                  <p style="display:none;">
+                    <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                  </p>
+                  <div class="form-group">
+                    <label for="name" data-i18n="formNameLabel">Ihr Name:</label>
+                    <input type="text" id="name" name="name" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="email" data-i18n="formEmailLabel">Ihre E-Mail:</label>
+                    <input type="email" id="email" name="email" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="message" data-i18n="formMessageLabel">Ihre Nachricht:</label>
+                    <textarea id="message" name="message" required></textarea>
+                  </div>
+                  <button type="submit" class="send-button" data-i18n="formSubmit">Senden</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="rotate-warning" class="cards-mobile-landscape">
+        <div class="rotate-box">
+          <img src="imagenes/svg/rotate.svg" alt="rotate" class="rotate-icon">
+          <h2 data-i18n="rotateTitle">Bitte drehen Sie Ihr Handy</h2>
+          <p data-i18n="rotateTextLeft">
+            Diese Seite ist für die Nutzung im Hochformat optimiert.<br><br>
+            Bitte drehen Sie Ihr Smartphone ins Hochformat, um den Inhalt zu sehen.
+          </p>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
