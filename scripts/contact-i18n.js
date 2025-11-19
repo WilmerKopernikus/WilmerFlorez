@@ -1,6 +1,5 @@
-// scripts/contact-i18n.js
+// scripts/index-i18n.js
 
-// 1) Diccionario de textos
 const contactContent = {
   de: {
     heroTitle: 'KONTAKT',

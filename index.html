@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/cards.css">
     <link rel="stylesheet" href="styles/images.css">
     <link rel="stylesheet" href="styles/global-text.css">
+    <script src="scripts/index-i18n.js"></script>
 
 </head>
 <body>
@@ -54,25 +55,63 @@
                 <span></span>
             </div>
         </div>
-        <div class="language-selector">
-            <input type="checkbox" id="langToggle" hidden />
-            <label for="langToggle" class="current-lang">DE ▼</label>
-          
-            <ul class="language-options">
-              <li><a href="index_en.html" class="lang-button">EN</a></li>
-            </ul>
-        </div>
+      <div class="language-selector">
+        <input type="checkbox" id="langToggle" hidden />
+        <label for="langToggle" class="current-lang">DE ▼</label>        
+        <ul class="language-options">
+          <li><button class="lang-button" data-lang="de">DE</button></li>
+          <li><button class="lang-button" data-lang="en">EN</button></li>
+          <!-- para agregar más idiomas en el futuro -->
+          <!--<li><button class="lang-button" data-lang="es">ES</button></li>-->
+        </ul>
+
+      </div>
           
         <div class="menu-overlay" id="menuOverlay">
-            <ul>
-                <li><a href="index.html"><img class="menu-icon" src="imagenes/svg/cubo.svg" alt="Startseite Icon">Startseite</a></li>
-                <li><a href="projekte.html"><img class="menu-icon" src="imagenes/svg/cases.svg" alt="Projekte Icon">Projekte</a></li>
-                <li class="cards-mobile"><a href="services_de_mobile.html"><img class="menu-icon" src="imagenes/svg/services.svg" alt="Services Icon">Services</a></li>
-                <li class="cards-screens"><a href="services_de.html"><img class="menu-icon" src="imagenes/svg/services.svg" alt="Services Icon">Lebenslauf</a></li>
-                <li class="cards-mobile-landscape"><a href="services_de_mobile_landscape.html"><img class="menu-icon" src="imagenes/svg/services.svg" alt="Services Icon">Services</a></li>
-                <li><a href="kontakt.html"><img class="menu-icon" src="imagenes/svg/contact.svg" alt="Kontakt Icon">Kontakt</a></li>
-            </ul>
-        </div>  
+        <ul>
+            <li>
+            <a href="index.html">
+                <img class="menu-icon" src="imagenes/svg/cubo.svg" alt="Startseite Icon">
+                <span data-i18n="menuIndex">Startseite</span>
+            </a>
+            </li>
+
+            <li>
+            <a href="projekte.html">
+                <img class="menu-icon" src="imagenes/svg/cases.svg" alt="Projekte Icon">
+                <span data-i18n="menuProjekte">Projekte</span>
+            </a>
+            </li>
+
+            <li class="cards-mobile">
+            <a href="services_de_mobile.html">
+                <img class="menu-icon" src="imagenes/svg/services.svg" alt="Services Icon">
+                <span data-i18n="menuServices">Services</span>
+            </a>
+            </li>
+
+            <li class="cards-screens">
+            <a href="services_de.html">
+                <img class="menu-icon" src="imagenes/svg/services.svg" alt="Lebenslauf Icon">
+                <span data-i18n="menuCV">Lebenslauf</span>
+            </a>
+            </li>
+
+            <li class="cards-mobile-landscape">
+            <a href="services_de_mobile_landscape.html">
+                <img class="menu-icon" src="imagenes/svg/services.svg" alt="Services Icon">
+                <span data-i18n="menuServices">Services</span>
+            </a>
+            </li>
+
+            <li>
+            <a href="kontakt.html">
+                <img class="menu-icon" src="imagenes/svg/contact.svg" alt="Kontakt Icon">
+                <span data-i18n="menuKontakt">Kontakt</span>
+            </a>
+            </li>
+        </ul>
+        </div>
 
         <div id='intro-cards-container' class="cards-screens">    
             <div id="cards" class="container">
@@ -80,7 +119,7 @@
                 <div class="card" id="card1">
                     <div class="card-body-intro with-arrow font-loading">
                         <div class="intro-card">
-                            <h1 class="fade-in-text">WILLKOMMEN IN EINEM <br> NEUEN DIGITALEN KOSMOS!</h1><br>
+                            <h1 class="fade-in-text" data-i18n="indexTitle">WILLKOMMEN IN EINEM <br> NEUEN DIGITALEN KOSMOS!</h1><br>
                             <!--<p>Where imagination meets digital innovation.</p><br>
                             <p>We create. We code. We deliver</p><br><br>-->
                         </div>
@@ -94,7 +133,7 @@
                     <div class="card-body">
                         <div class="left" id="center-services">
                           <h2 class="title">WILMER FLOREZ</h2>
-                          <p class="text justify">
+                          <p class="text justify" data-i18n="wilmerIntroduction">
                             Ich bin Webentwickler, Grafikdesigner und bildender Künstler mit internationaler Erfahrung 
                             in Deutschland, China und Kolumbien. In diesem Portfolio präsentiere ich sowohl berufliche als auch persönliche 
                             Projekte, die meinen Ansatz widerspiegeln: Design, Technologie und Kreativität zu verbinden, 
@@ -118,14 +157,14 @@
                                   </video>
                         </div>
                         <div class="right2" id="center-services">
-                            <h2 class="title">PROJEKTE</h2>
-                            <p class="text justify">
+                            <h2 class="title" data-i18n="projectTitle">PROJEKTE</h2>
+                            <p class="text justify" data-i18n="projectContent">
                                 Erfahren Sie in verschiedenen Projektbeispielen, wie ich Kunden mit wirkungsvollem Webdesign und 
                                 -entwicklung unterstützt habe.
                             </p>
                             <br><br>
                             <a href="projekte.html">
-                                <button class="send-button">⯈ Zu meinen Projekten</button>
+                                <button class="send-button" data-i18n="projectButton">⯈ Zu meinen Projekten</button>
                             </a>
                         </div>
                     </div>
@@ -133,14 +172,14 @@
                   <div id="card4" class="card">
                     <div class="card-body">
                         <div class="left" id="center-services">
-                          <h2 class="title">LEBENSLAUF</h2>
-                          <p class="text justify">
+                          <h2 class="title" data-i18n="curriculumTitle">LEBENSLAUF</h2>
+                          <p class="text justify" data-i18n="curriculmContent">
                             Entdecken Sie meinen Lebenslauf in digitaler Form und erfahren Sie mehr über meine berufliche Erfahrung, 
                             meine technischen Fähigkeiten und meinen internationalen Werdegang.
                           </p>
                           <br><br>
                           <a href="services_de.html">
-                              <button class="send-button">⯈ Zu meinem Lebenslauf</button>
+                              <button class="send-button" data-i18n="curriculumButton">⯈ Zu meinem Lebenslauf</button>
                           </a>
                         </div>
                         <div class="right" id="responsive-sketch">
@@ -160,15 +199,15 @@
                               </video>
                         </div>
                         <div class="right2" id="center-services">
-                            <h2 class="title">KONTAKT</h2>
-                            <p class="text justify">
+                            <h2 class="title" data-i18n="contactTitle">KONTAKT</h2>
+                            <p class="text justify" data-i18n="contactContent">
                                 Möchten Sie mit mir zusammenarbeiten?
                                 Haben Sie bereits konkrete Vorstellungen oder möchten Sie gemeinsam erste Ideen entwickeln?
                                 Kontaktieren Sie mich gerne – und lassen Sie uns Ihre digitale Zukunft in Bewegung setzen.
                             </p>
                             <br><br>
                             <a href="kontakt.html">
-                                <button class="send-button" id="index-button">⯈ Zum Kontakt</button>
+                                <button class="send-button" id="index-button" data-i18n="contactButton">⯈ Zum Kontakt</button>
                             </a>
                         </div>
                     </div>
