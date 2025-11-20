@@ -15,12 +15,11 @@ const languagesContent = {
     zu verbinden, um digitale Lösungen auf höchstem Niveau zu entwickeln.`,
 
     projectTitle: `PROJEKTE`,
-    projectContent: `Erfahren Sie in verschiedenen Projektbeispielen, wie ich Kunden mit wirkungsvollem 
-    Webdesign und -entwicklung unterstützt habe.`,
+    projectContent: `Erfahren Sie in verschiedenen Projektbeispielen, wie ich Kunden mit wirkungsvollem Webdesign und -entwicklung unterstützt habe.`,
     projectButton: `Zu meinen Projekten`,
 
     curriculumTitle: `LEBENSLAUF`,
-    curriculmContent: `Entdecken Sie meinen Lebenslauf in digitaler Form und erfahren Sie mehr über meine 
+    cVContent: `Entdecken Sie meinen Lebenslauf in digitaler Form und erfahren Sie mehr über meine 
     berufliche Erfahrung, meine technischen Fähigkeiten und meinen internationalen Werdegang.`,
     curriculumButton: `Zu meinem Lebenslauf`,
 
@@ -97,14 +96,13 @@ const languagesContent = {
     high-quality digital solutions.`,
 
     projectTitle: `PROJECTS`,
-    projectContent: `Discover a selection of project examples that show how I have supported clients 
-    through impactful web design and development.`,
+    projectContent: `Discover a selection of project examples that show how I have supported clients through impactful web design and development.`,
     projectButton: `View my projects`,
 
-    curriculumTitle: `RESUME`,
-    curriculmContent: `Explore my resume in digital form and learn more about my professional experience, 
+    curriculumTitle: `CURRICULUM VITAE`,
+    cvContent: `Explore my resume in digital form and learn more about my professional experience, 
     technical skills, and international background.`,
-    curriculumButton: `View my resume`,
+    curriculumButton: `View my CV`,
 
     contactTitle: `CONTACT`,
     contactContent: `Would you like to work with me? Whether you already have a clear vision or want to develop initial ideas together, feel free to get in touch — and let’s set your digital future in motion.`,
