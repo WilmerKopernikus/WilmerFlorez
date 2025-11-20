@@ -60,25 +60,56 @@
     <div class="language-selector">
       <input type="checkbox" id="langToggle" hidden />
       <label for="langToggle" class="current-lang">DE ▼</label>
-
       <ul class="language-options">
-        <li><a href="joblab-case.html" class="lang-button">EN</a></li>
+        <li><button class="lang-button" data-lang="de">DE</button></li>
+        <li><button class="lang-button" data-lang="en">EN</button></li>
+        <!-- para agregar más idiomas en el futuro -->
+        <!--<li><button class="lang-button" data-lang="es">ES</button></li>-->
       </ul>
     </div>
 
     <div class="menu-overlay" id="menuOverlay">
       <ul>
-        <li><a href="index.html"><img class="menu-icon" src="imagenes/svg/cubo.svg" alt="Startseite Icon">Startseite</a>
+        <li>
+          <a href="index.html">
+            <img class="menu-icon" src="imagenes/svg/cubo.svg" alt="Startseite Icon">
+            <span data-i18n="menuIndex">Startseite</span>
+          </a>
         </li>
-        <li><a href="projekte.html"><img class="menu-icon" src="imagenes/svg/cases.svg" alt="Projekte Icon">Projekte</a>
+
+        <li>
+          <a href="projekte.html">
+            <img class="menu-icon" src="imagenes/svg/cases.svg" alt="Projekte Icon">
+            <span data-i18n="menuProjekte">Projekte</span>
+          </a>
         </li>
-        <li class="cards-mobile"><a href="services_de_mobile.html"><img class="menu-icon"
-              src="imagenes/svg/services.svg" alt="Services Icon">Services</a></li>
-        <li class="cards-screens"><a href="services_de.html"><img class="menu-icon" src="imagenes/svg/services.svg"
-              alt="Services Icon">Services</a></li>
-        <li class="cards-mobile-landscape"><a href="services_de_mobile_landscape.html"><img class="menu-icon"
-              src="imagenes/svg/services.svg" alt="Services Icon">Services</a></li>
-        <li><a href="kontakt.html"><img class="menu-icon" src="imagenes/svg/contact.svg" alt="Kontakt Icon">Kontakt</a>
+
+        <li class="cards-mobile">
+          <a href="services_de_mobile.html">
+            <img class="menu-icon" src="imagenes/svg/services.svg" alt="Services Icon">
+            <span data-i18n="menuServices">Services</span>
+          </a>
+        </li>
+
+        <li class="cards-screens">
+          <a href="services_de.html">
+            <img class="menu-icon" src="imagenes/svg/services.svg" alt="Lebenslauf Icon">
+            <span data-i18n="menuCV">Lebenslauf</span>
+          </a>
+        </li>
+
+        <li class="cards-mobile-landscape">
+          <a href="services_de_mobile_landscape.html">
+            <img class="menu-icon" src="imagenes/svg/services.svg" alt="Services Icon">
+            <span data-i18n="menuServices">Services</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="kontakt.html">
+            <img class="menu-icon" src="imagenes/svg/contact.svg" alt="Kontakt Icon">
+            <span data-i18n="menuKontakt">Kontakt</span>
+          </a>
         </li>
       </ul>
     </div>
