@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dienstleistungen - Kopernikus Design</title>
-    <link rel="preload" href="p5.js" as="script">
-    <link rel="preload" href="scripts/sketch_12.js" as="script">
-    <script defer src="p5.js"></script>
-    <script defer src="scripts/sketch_12.js"></script>
-    <link rel="stylesheet" href="styles/header_test.css">
-    <link rel="stylesheet" href="styles/cards.css">
-    <link rel="stylesheet" href="styles/cards_services.css">
-    <link rel="stylesheet" href="styles/images.css">
-    <link rel="stylesheet" href="styles/global-text.css">
-    <link rel="stylesheet" href="styles/contact-form.css">
-    <link rel="stylesheet" href="styles/cards_intro.css">
-    <link rel="stylesheet" href="styles/languages_content.css">
-    <script src="scripts/languages_content.js"></script>
 
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dienstleistungen - Kopernikus Design</title>
+  <link rel="preload" href="p5.js" as="script">
+  <link rel="preload" href="scripts/sketch_12.js" as="script">
+  <script defer src="p5.js"></script>
+  <script defer src="scripts/sketch_12.js"></script>
+  <link rel="stylesheet" href="styles/header_test.css">
+  <link rel="stylesheet" href="styles/cards.css">
+  <link rel="stylesheet" href="styles/cards_services.css">
+  <link rel="stylesheet" href="styles/images.css">
+  <link rel="stylesheet" href="styles/global-text.css">
+  <link rel="stylesheet" href="styles/contact-form.css">
+  <link rel="stylesheet" href="styles/cards_intro.css">
+  <link rel="stylesheet" href="styles/languages_content.css">
+  <script src="scripts/languages_content.js"></script>
+
+
 </head>
+
 <body>
 
-  <div 
-  id="loadingScreen"
-  style="
+  <div id="loadingScreen" style="
       position: fixed;
       top: 0;
       left: 0;
@@ -40,9 +40,9 @@
       color: #fff;
       font-size: 20px;
   ">
-  <img src="imagenes/videos/cubo.gif" alt="Loading..." style="width: 250px; height: auto; margin-bottom: 20px;">
-  <img src="imagenes/loading.webp" style="width: 250px; height: auto; margin-bottom: 20px;">
-</div>
+    <img src="imagenes/videos/cubo.gif" alt="Loading..." style="width: 250px; height: auto; margin-bottom: 20px;">
+    <img src="imagenes/loading.webp" style="width: 250px; height: auto; margin-bottom: 20px;">
+  </div>
 
   <div class="container">
     <div class="header">
@@ -62,58 +62,69 @@
     <div class="language-selector">
       <input type="checkbox" id="langToggle" hidden />
       <label for="langToggle" class="current-lang">DE ▼</label>
-    
+
       <ul class="language-options">
         <li><a href="services.html" class="lang-button">EN</a></li>
       </ul>
     </div>
     <div class="menu-overlay" id="menuOverlay">
       <ul>
-          <li><a href="index.html"><img class="menu-icon" src="imagenes/svg/cubo.svg" alt="Startseite Icon">Startseite</a></li>
-          <li><a href="projekte.html"><img class="menu-icon" src="imagenes/svg/cases.svg" alt="Projekte Icon">Projekte</a></li>
-          <li class="cards-mobile"><a href="services_de_mobile.html"><img class="menu-icon" src="imagenes/svg/services.svg" alt="Services Icon">Services</a></li>
-          <li class="cards-screens"><a href="services_de.html"><img class="menu-icon" src="imagenes/svg/services.svg" alt="Services Icon">Services</a></li>
-          <li class="cards-mobile-landscape"><a href="services_de_mobile_landscape.html"><img class="menu-icon" src="imagenes/svg/services.svg" alt="Services Icon">Services</a></li>
-          <li><a href="kontakt.html"><img class="menu-icon" src="imagenes/svg/contact.svg" alt="Kontakt Icon">Kontakt</a></li>
+        <li><a href="index.html"><img class="menu-icon" src="imagenes/svg/cubo.svg" alt="Startseite Icon">Startseite</a>
+        </li>
+        <li><a href="projekte.html"><img class="menu-icon" src="imagenes/svg/cases.svg" alt="Projekte Icon">Projekte</a>
+        </li>
+        <li class="cards-mobile"><a href="services_de_mobile.html"><img class="menu-icon"
+              src="imagenes/svg/services.svg" alt="Services Icon">Services</a></li>
+        <li class="cards-screens"><a href="services_de.html"><img class="menu-icon" src="imagenes/svg/services.svg"
+              alt="Services Icon">Services</a></li>
+        <li class="cards-mobile-landscape"><a href="services_de_mobile_landscape.html"><img class="menu-icon"
+              src="imagenes/svg/services.svg" alt="Services Icon">Services</a></li>
+        <li><a href="kontakt.html"><img class="menu-icon" src="imagenes/svg/contact.svg" alt="Kontakt Icon">Kontakt</a>
+        </li>
       </ul>
-    </div>   
+    </div>
 
 
-      <div  class="card" id="card1">
-        <div class="card-body-intro with-arrow font-loading">
-          <div class="intro-card">
-            <h1 class="fade-in-text">DIENSTLEISTUNGEN</h1><br>
-          </div>
-          <div class="arrow">
-            <h1 class="text-shadow fade-in-text">↓</h1>
-          </div>                        
+    <div class="card" id="card1">
+      <div class="card-body-intro with-arrow font-loading">
+        <div class="intro-card">
+          <h1 class="fade-in-text">DIENSTLEISTUNGEN</h1><br>
+        </div>
+        <div class="arrow">
+          <h1 class="text-shadow fade-in-text">↓</h1>
         </div>
       </div>
+    </div>
 
     <div id='services-cards-container' class="cards-screens">
       <div id="cards" class="container">
 
         <div id="card1-services" class="card">
           <div class="card-body" id="services">
-              <div class="left" id="center-services">
-                <h2 class="title" id="title-small">WEBENTWICKLUNG</h2>
-                <p class="text justify">
-                  Wir gehen über reine Ästhetik hinaus und entwickeln leistungsstarke Websites, die einwandfrei funktionieren. 
-                  Unsere Entwicklungskompetenz umfasst sowohl Front-End- als auch Back-End-Lösungen, von einfachen Informationsseiten 
-                  bis hin zu komplexen Webanwendungen.
-                </p><br><br>
-                <h2 class="title" id="title-small">WEBDESIGN & REDESIGN</h2>
-                <p class="text justify">
-                  Unser Team ist spezialisiert auf die Erstellung visuell beeindruckender und benutzerfreundlicher Websites. 
-                  Ob Sie eine neue Website benötigen oder ein modernes Redesign für Ihre bestehende Seite wünschen - wir sorgen dafür, 
-                  dass sie auf allen Geräten optimal aussieht und reibungslos funktioniert.
-                </p>
-              </div>
-              <div class="right" id="responsive-sketch">
-                <video id="services-animation" autoplay loop muted playsinline preload="auto" poster="imagenes/videos/services_01.jpg">
-                  <source src="imagenes/videos/services_01_compressed.mp4" type="video/mp4" />
-                  Your browser doesn't support video reproductions.
-                </video>
+            <div class="left" id="center-services">
+              <h2 class="title" id="title-small">WEBENTWICKLUNG</h2>
+              <p class="text justify">
+                Wir gehen über reine Ästhetik hinaus und entwickeln leistungsstarke Websites, die einwandfrei
+                funktionieren.
+                Unsere Entwicklungskompetenz umfasst sowohl Front-End- als auch Back-End-Lösungen, von einfachen
+                Informationsseiten
+                bis hin zu komplexen Webanwendungen.
+              </p><br><br>
+              <h2 class="title" id="title-small">WEBDESIGN & REDESIGN</h2>
+              <p class="text justify">
+                Unser Team ist spezialisiert auf die Erstellung visuell beeindruckender und benutzerfreundlicher
+                Websites.
+                Ob Sie eine neue Website benötigen oder ein modernes Redesign für Ihre bestehende Seite wünschen - wir
+                sorgen dafür,
+                dass sie auf allen Geräten optimal aussieht und reibungslos funktioniert.
+              </p>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <video id="services-animation" autoplay loop muted playsinline preload="auto"
+                poster="imagenes/videos/services_01.jpg">
+                <source src="imagenes/videos/services_01_compressed.mp4" type="video/mp4" />
+                Your browser doesn't support video reproductions.
+              </video>
             </div>
           </div>
         </div>
@@ -121,7 +132,8 @@
         <div id="card2-services" class="card">
           <div class="card-body" id="services">
             <div class="left" id="responsive-sketch">
-              <video id="services-animation" autoplay loop muted playsinline preload="auto" poster="imagenes/videos/services_06.jpg">
+              <video id="services-animation" autoplay loop muted playsinline preload="auto"
+                poster="imagenes/videos/services_06.jpg">
                 <source src="imagenes/videos/services_06_compressed.mp4" type="video/mp4" />
                 Your browser doesn't support video reproductions.
               </video>
@@ -129,13 +141,17 @@
             <div class="right" id="center-services">
               <h2 class="title" id="title-small">BRANDING & KREATIVDIENSTLEISTUNGEN</h2>
               <p class="text justify">
-                Bauen Sie eine starke Markenidentität mit unseren kreativen Dienstleistungen auf. Dazu gehören Logodesign, 
-                Visitenkarten und Werbematerialien, die Ihre Zielgruppe ansprechen und Ihre Marke wirkungsvoll präsentieren.
+                Bauen Sie eine starke Markenidentität mit unseren kreativen Dienstleistungen auf. Dazu gehören
+                Logodesign,
+                Visitenkarten und Werbematerialien, die Ihre Zielgruppe ansprechen und Ihre Marke wirkungsvoll
+                präsentieren.
               </p><br><br>
               <h2 class="title" id="title-small">E-COMMERCE-LÖSUNGEN</h2>
               <p class="text justify">
-                Starten und erweitern Sie Ihren Online-Shop mit unseren E-Commerce-Dienstleistungen. Wir kümmern uns um Produktdarstellung, 
-                Warenkorb, Checkout-Prozesse und die sichere Zahlungsintegration, unter anderem mit Plattformen wie Shopify.
+                Starten und erweitern Sie Ihren Online-Shop mit unseren E-Commerce-Dienstleistungen. Wir kümmern uns um
+                Produktdarstellung,
+                Warenkorb, Checkout-Prozesse und die sichere Zahlungsintegration, unter anderem mit Plattformen wie
+                Shopify.
               </p>
             </div>
           </div>
@@ -146,17 +162,21 @@
             <div class="left" id="center-services">
               <h2 class="title" id="title-small">SUCHMASCHINENOPTIMIERUNG (SEO)</h2>
               <p class="text justify">
-                Steigern Sie Ihre Sichtbarkeit in Suchmaschinen und gewinnen Sie mehr Besucher mit unseren SEO-Dienstleistungen. 
-                Wir optimieren die Struktur und den Inhalt Ihrer Website, um Ihre Rankings zu verbessern und den Traffic zu steigern.
+                Steigern Sie Ihre Sichtbarkeit in Suchmaschinen und gewinnen Sie mehr Besucher mit unseren
+                SEO-Dienstleistungen.
+                Wir optimieren die Struktur und den Inhalt Ihrer Website, um Ihre Rankings zu verbessern und den Traffic
+                zu steigern.
               </p><br><br>
               <h2 class="title" id="title-small">WEBHOSTING & DOMAIN-DIENSTLEISTUNGEN</h2>
               <p class="text justify">
-                Profitieren Sie von zuverlässigem Webhosting und professionellem Domain-Management, damit Ihre Website sicher und rund 
+                Profitieren Sie von zuverlässigem Webhosting und professionellem Domain-Management, damit Ihre Website
+                sicher und rund
                 um die Uhr erreichbar bleibt.
               </p>
             </div>
             <div class="right" id="responsive-sketch">
-              <video id="services-animation" autoplay loop muted playsinline preload="auto" poster="imagenes/videos/services_07.jpg">
+              <video id="services-animation" autoplay loop muted playsinline preload="auto"
+                poster="imagenes/videos/services_07.jpg">
                 <source src="imagenes/videos/services_07_compressed.mp4" type="video/mp4" />
                 Your browser doesn't support video reproductions.
               </video>
@@ -167,7 +187,8 @@
         <div id="card4-services" class="card">
           <div class="card-body" id="services">
             <div class="left" id="responsive-sketch">
-              <video id="services-animation" autoplay loop muted playsinline preload="auto" poster="imagenes/videos/services_04.jpg">
+              <video id="services-animation" autoplay loop muted playsinline preload="auto"
+                poster="imagenes/videos/services_04.jpg">
                 <source src="imagenes/videos/services_04_compressed.mp4" type="video/mp4" />
                 Your browser doesn't support video reproductions.
               </video>
@@ -175,14 +196,17 @@
             <div class="right" id="center-services">
               <h2 class="title" id="title-small">IMPLEMENTIERUNG VON KÜNSTLICHER INTELLIGENZ</h2>
               <p class="text justify">
-                Nutzen Sie das Potenzial von KI, um Ihre digitalen Prozesse zu optimieren. Wir integrieren intelligente 
-                Funktionen wie Chatbots, Automatisierungen oder personalisierte Inhalte direkt in Ihre Website, um Effizienz 
+                Nutzen Sie das Potenzial von KI, um Ihre digitalen Prozesse zu optimieren. Wir integrieren intelligente
+                Funktionen wie Chatbots, Automatisierungen oder personalisierte Inhalte direkt in Ihre Website, um
+                Effizienz
                 und Nutzererlebnis zu verbessern.
               </p><br><br>
               <h2 class="title" id="title-small">WARTUNG & SUPPORT</h2>
               <p class="text justify">
-                Unsere kontinuierlichen Support- und Wartungsdienste sorgen dafür, dass Ihre Website stets aktuell und optimal 
-                funktionsfähig bleibt. Wir übernehmen Sicherheitsupdates, Fehlerbehebungen und Leistungsoptimierung, um Ausfälle 
+                Unsere kontinuierlichen Support- und Wartungsdienste sorgen dafür, dass Ihre Website stets aktuell und
+                optimal
+                funktionsfähig bleibt. Wir übernehmen Sicherheitsupdates, Fehlerbehebungen und Leistungsoptimierung, um
+                Ausfälle
                 zu vermeiden.
               </p>
             </div>
@@ -194,7 +218,8 @@
             <div class="left" id="center-services">
               <h2 class="title" id="title-small">CREATIVE CODING</h2>
               <p class="text justify">
-                Verleihen Sie Ihrer Website einen kreativen und interaktiven Charakter. Mit Creative Coding schaffen wir visuelle Präsenz 
+                Verleihen Sie Ihrer Website einen kreativen und interaktiven Charakter. Mit Creative Coding schaffen wir
+                visuelle Präsenz
                 und einzigartige digitale Erlebnisse, die Ihre Marke hervorheben.
               </p><br><br>
               <h2 class="title" id="title-small">ANIMATIONEN</h2>
@@ -203,7 +228,8 @@
               </p>
             </div>
             <div class="right" id="responsive-sketch">
-              <video id="services-animation" autoplay loop muted playsinline preload="auto" poster="imagenes/videos/services_08.jpg">
+              <video id="services-animation" autoplay loop muted playsinline preload="auto"
+                poster="imagenes/videos/services_08.jpg">
                 <source src="imagenes/videos/services_08_compressed.mp4" type="video/mp4" />
                 Your browser doesn't support video reproductions.
               </video>
@@ -220,20 +246,20 @@
           <div class="card-body" id="services">
             <div class="left" id="center-services">
               <h2 class="title" id="title-small">WÄHLEN SIE UNS!</h2>
-              <p class="text justify">Bereit Ihr Unternehmen auf das nächste Level zu heben? 
-                Eine Website zu haben bedeutet nicht nur online zu sein - es bedeutet neue Chancen 
-                zu eröffnen. Eine gut gestaltete Website hilft Ihnen, Kunden zu gewinnen, Vertrauen 
+              <p class="text justify">Bereit Ihr Unternehmen auf das nächste Level zu heben?
+                Eine Website zu haben bedeutet nicht nur online zu sein - es bedeutet neue Chancen
+                zu eröffnen. Eine gut gestaltete Website hilft Ihnen, Kunden zu gewinnen, Vertrauen
                 aufzubauen und Ihre Dienstleistungen und Produkte rund um die Uhr zu präsentieren.
-              <br><br>
+                <br><br>
               <p class="text justify">
-                Wir unterstützen Sie dabei, eine Website zu erstellen, die nicht nur visuell ansprechend, 
-                sondern auch benutzerfreundlich und suchmaschinenoptimiert ist. Gemeinsam mit Ihnen erarbeiten 
+                Wir unterstützen Sie dabei, eine Website zu erstellen, die nicht nur visuell ansprechend,
+                sondern auch benutzerfreundlich und suchmaschinenoptimiert ist. Gemeinsam mit Ihnen erarbeiten
                 wir eine Lösung, die Ihre Unternehmensziele bestmöglich unterstützt.
-              <br><br>
+                <br><br>
               <h2 class="title impressum" id="title-small">IMPRESSUM</h2>
               <p class="text">
-                Gesetzliche Vertretung: Wilmer Aderbert Florez Lopez <br>  
-                Calle 75 # 58-51 - 111211 Bogota, Kolumbien  <br>wilmerkopernikus@gmail.com <br>
+                Gesetzliche Vertretung: Wilmer Aderbert Florez Lopez <br>
+                Calle 75 # 58-51 - 111211 Bogota, Kolumbien <br>wilmerkopernikus@gmail.com <br>
                 Registriert und rechtlich vertreten in Bogotá, Kolumbien. <br>
                 Umsatzsteuer (MwSt) ist auf internationale Transaktionen nicht anwendbar.
             </div>
@@ -263,10 +289,11 @@
         </div>
       </div>
     </div>
-   
-                 
-        
+
+
+
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>
