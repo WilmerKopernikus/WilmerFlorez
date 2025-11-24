@@ -50,6 +50,15 @@ const languagesContent = {
     joblabContent6:"<strong>Hohe Beteiligung & positives Feedback:</strong><br><br>Die Job Lab-Veranstaltungen in Guangzhou, Shanghai und Peking zogen rund 300 Besucher an. Die Teilnehmenden beteiligten sich an lebhaften Diskussionen, stellten durchdachte Fragen und blieben während des gesamten Tagesprogramms aktiv dabei. Diese begeisterte Resonanz unterstreicht den Wert des Projekts und schafft eine starke Grundlage für eine jährliche Wiederholung, wodurch sich das Job Lab zu einer potenziell fortlaufenden Tradition entwickeln könnte.",
 
     //Blancec
+    blancecTitle1:"IHRE ONLINE-PRÄSENZ TRANSFORMIEREN",
+    blancecContent1:"Modernisierung von BLANCEC S.A.S.:<br><br>BLANCEC S.A.S, ein führendes kolumbianisches Labor für Produkttests, benötigte ein digitales Upgrade, um seine Kunden besser zu bedienen. Wir haben ihre Website neu gestaltet, um schnelleren Zugriff, eine intuitive Navigation und eine fließende Nutzererfahrung zu ermöglichen - damit Kunden die benötigten Tests leichter finden und anfordern können.",
+    blancecTitle2:"BLITZSCHNELLE LEISTUNG",
+    blancecContent2:"Beschleunigung der Nutzererfahrung: <br><br>Durch den Neuaufbau der Website haben wir die Ladezeiten drastisch verkürzt. Kunden können nun effizient durch die Seiten navigieren, was Wartezeiten reduziert und die allgemeine Zufriedenheit steigert. Eine schnellere Website hält Besucher engagiert und motiviert sie, weitere Dienstleistungen zu erkunden.",
+    blancecTitle3:"VERBESSERTES VISUELLES DESIGN & BRANDING",
+    blancecContent3:"Ein eleganter, professioneller Auftritt:<br><br>Mit Design-Tools wie Photoshop und Illustrator haben wir das visuelle Erscheinungsbild der Marke verfeinert. Ein klareres Logo, dynamische Header-Bilder und ein stimmiges Farbschema schaffen eine moderne und vertrauenswürdige Markenidentität - und stärken somit Glaubwürdigkeit und Kundenvertrauen.",
+    blancecTitle4:"VORHER & NACHHER: EIN DEUTLICHER FORTSCHRITT",
+    blancecContent4:"Ursprünglich beeinträchtigten lange Ladezeiten und eine unausgereifte Benutzeroberfläche die Kundenerfahrung. Heute ist die neue Website schnell, intuitiv und visuell ansprechend. Das Ergebnis? Eine einladende digitale Präsenz, die die Expertise von BLANCEC S.A.S. hervorhebt und Besucher dazu motiviert, aktiv zu werden.",
+
     //Lebenslauf
 
     //Kontakt
@@ -122,8 +131,17 @@ const languagesContent = {
     joblabContent6:"<strong>High Engagement & Positive Feedback:</strong><br><br>The Job Lab events in Guangzhou, Shanghai, and Beijing attracted around 300 visitors. Attendees engaged in lively discussions, asked thoughtful questions, and remained present throughout the day's program. This enthusiastic reception underscored the project's value and set a strong precedent for annual repetition, turning the Job Lab into a potential ongoing tradition.",
 
     //Blancec
-    //Lebenslauf
 
+    blancecTitle1:"TRANSFORMING YOUR ONLINE PRESENCE",
+    blancecContent1:"Modernizing BLANCEC S.A.S:<br><br>BLANCEC S.A.S, a leading Colombian laboratory in product testing, needed a digital upgrade to serve clients better. We redesigned their website for faster access, intuitive navigation, and a seamless experience—helping customers easily find and request the tests they need.",
+    blancecTitle2:"LIGHTNING-FAST PERFORMANCE",
+    blancecContent2:"By rebuilding the site, we drastically improved loading times. Clients now move through pages instantly, reducing wait times and enhancing overall satisfaction. A faster site keeps visitors engaged and encourages them to explore more services.",
+    blancecTitle3:"ENHACED VISUAL DESIGN & BRANDING",
+    blancecContent3:"A Polished, Professional Look:<br><br>Using design tools like Photoshop and Illustrator, we refined the brand's visuals. A cleaner logo, dynamic header images, and a cohesive color scheme establish a modern, trusted brand identity, improving credibility and client confidence.",
+    blancecTitle4:"BEFORE & AFTER: A CLEAR UPGRADE",
+    blancecContent4:"Originally, slow loading times and an unrefined interface hampered the client experience. Today, the new website is fast, intuitive, and visually engaging. The result? A welcoming digital presence that highlights BLANCEC S.A.S's expertise and inspires visitors to take action.",
+
+    //Lebenslauf
 
     //Kontakt
     heroTitle: 'CONTACT',

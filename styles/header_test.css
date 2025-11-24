@@ -102,12 +102,12 @@
 
     li a {
       display: flex;
-      flex-direction: column;     /* Pone imagen encima del texto */
-      align-items: center;        /* Centra horizontalmente */
-      justify-content: center;    /* Centra verticalmente */
+      flex-direction: column;     
+      align-items: center;        
+      justify-content: center;    
       text-decoration: none;
       color: inherit;
-      height: 100%;               /* Asegura que ocupe toda la altura disponible si es necesario */
+      height: 100%;               
     }
 
 
@@ -173,12 +173,10 @@
   
   /* Language options dropdown */
   .language-options {
-    padding: 6px 10px;
     display: none;
     position: absolute;
     right: 0;
     background: #000000;
-    border: 2px solid #ffffff;
     border-radius: 4px;
     list-style: none;
     z-index: 999;
