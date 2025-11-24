@@ -177,35 +177,55 @@ function applyLanguage(lang) {
     el.innerHTML = value;
   });
 
-  // 2) Guardar idioma actual
+  // 2) Guardar idioma actual en la variable
   currentLang = lang;
 
-  // 3) Actualizar el texto del label "DE ▼"
+  // 3) Guardar idioma en localStorage para futuras páginas
+  try {
+    localStorage.setItem('preferredLang', lang);
+  } catch (e) {
+    // Si localStorage no está disponible, simplemente lo ignoramos
+  }
+
+  // 4) Actualizar el texto del label "DE ▼"
   const currentLangLabel = document.querySelector('.language-selector .current-lang');
   if (currentLangLabel) {
     currentLangLabel.textContent = lang.toUpperCase() + ' ▼';
   }
 
-  // 4) Ocultar el idioma actual de la lista de opciones
+  // 5) Ocultar el idioma actual de la lista de opciones
   document.querySelectorAll('.language-selector .lang-button[data-lang]').forEach((btn) => {
     const btnLang = btn.dataset.lang;
     if (btnLang === lang) {
-      // este es el idioma actual → esconderlo
       btn.style.display = 'none';
     } else {
-      // otros idiomas → mostrarlos
       btn.style.display = 'block';
     }
   });
 }
 
 
-// 3) Eventos al cargar la página
+// Al cargar cada página
 document.addEventListener('DOMContentLoaded', () => {
-  // Idioma por defecto
+  // 1) Intentar leer el idioma guardado
+  let savedLang = null;
+  try {
+    savedLang = localStorage.getItem('preferredLang');
+  } catch (e) {
+    savedLang = null;
+  }
+
+  // 2) Si hay un idioma guardado y existe en languagesContent, úsalo
+  if (savedLang && languagesContent[savedLang]) {
+    currentLang = savedLang;
+  } else {
+    currentLang = 'de'; // fallback
+  }
+
+  // 3) Aplicar idioma al cargar
   applyLanguage(currentLang);
 
-  // Listeners para los botones de idioma
+  // 4) Listeners para los botones de idioma
   document.querySelectorAll('.lang-button[data-lang]').forEach((btn) => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
@@ -214,4 +234,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
 
