@@ -36,6 +36,19 @@ const languagesContent = {
     mehrInformation: "Mehr Information",
     
     //Joblab
+    joblabTitle1:"PROJEKTÜBERSICHT & ZIELSETZUNG",
+    joblabContent1:"<strong>Einführung des Job Labs:</strong><br><br>Das Job Lab ist ein Projekt, das vom DAAD (Deutscher Akademischer Austauschdienst) China in Auftrag gegeben und in enger Zusammenarbeit mit der Deutschen Botschaft in Peking sowie den Deutschen Generalkonsulaten in Shanghai und Guangzhou entwickelt wurde. Sein zentrales Ziel: Chinesische Studierende der deutschen Sprache über Karrierechancen auf dem deutschen Arbeitsmarkt zu informieren - durch eine speziell entwickelte digitale Plattform sowie praxisorientierte Vor-Ort-Veranstaltungen.",
+    joblabTitle2:"WICHTIGE AKTEURE & KOOPERATIONEN",
+    joblabContent2:"<strong>Ein Netzwerk internationaler Partner:</strong><br><br>Das Job Lab vereinte zentrale Akteure aus den Bereichen internationale Bildung und Kulturaustausch. Gemeinsam mit dem DAAD, den deutschen Auslandsvertretungen in Guangzhou, Shanghai und Peking, dem German Centre Shanghai, dem German Centre Beijing, der AHK Greater China, Advantage Austria, dem OeAD und dem Goethe-Institut Peking haben wir eine kooperative Plattform geschaffen. DAAD-Lektoren aus ganz China unterstützten die Workshops und sorgten für ein fundiertes und fachkundig geleitetes Programm.",
+    joblabTitle3:"WEBENTWICKLUNG & MEHRSPRACHIGER FOKUS",
+    joblabContent3:"<strong>Eine Plattform für internationale Partner:</strong><br><br>Wir haben eine vollständig zweisprachige Website in Deutsch und Chinesisch entwickelt. Diese Plattform diente als Informationszentrale und bot Details zum Arbeitsmarkt, aktuelle Veranstaltungsupdates und relevante Ressourcen. Von der Verwaltung des Webhostings und der Domains bis hin zur kontinuierlichen Aktualisierung der Inhalte sorgten wir dafür, dass die Plattform stets aktuell und wertvoll für ihr vielfältiges Publikum blieb.",
+    joblabTitle4:"MOBILE- & WECHAT-OPTIMIERUNG",
+    joblabContent4:"<strong>Perfekte Performance für mobile Nutzer:</strong><br><br>Unsere Zielgruppe nutzt überwiegend mobile Geräte und WeChat. Daher haben wir die Website so entwickelt, dass sie auf mobilen Browsern nahtlos funktioniert - inklusive spezieller JavaScript-Erkennung für WeChat. Dieser Ansatz stellte sicher, dass die Nutzer die benötigten Informationen genau dort abrufen konnten, wo sie sich am meisten aufhalten - für eine maßgeschneiderte und ansprechende Benutzererfahrung.",
+    joblabTitle5:"BRANDING & PRINTMATERIALIEN",
+    joblabContent5:"<strong>Eine einheitliche visuelle Identität:</strong><br><br>Über den digitalen Bereich hinaus haben wir eine starke Markenidentität entwickelt. Dazu gehörte die Gestaltung des Projektlogos, die Erstellung auffälliger Webgrafiken sowie die Produktion von über 20 informativen Postern für die Ausstellungsevents. Diese Poster, die bei den Job Lab-Veranstaltungen präsentiert wurden, vermittelten den Besuchern klare und strukturierte Informationen über den Arbeitsmarkt und verstärkten so die bildungsfördernde Wirkung des Projekts.",
+    joblabTitle6:"ERFOLG & RESONANZ DER VERANSTALTUNGEN",
+    joblabContent6:"<strong>Hohe Beteiligung & positives Feedback:</strong><br><br>Die Job Lab-Veranstaltungen in Guangzhou, Shanghai und Peking zogen rund 300 Besucher an. Die Teilnehmenden beteiligten sich an lebhaften Diskussionen, stellten durchdachte Fragen und blieben während des gesamten Tagesprogramms aktiv dabei. Diese begeisterte Resonanz unterstreicht den Wert des Projekts und schafft eine starke Grundlage für eine jährliche Wiederholung, wodurch sich das Job Lab zu einer potenziell fortlaufenden Tradition entwickeln könnte.",
+
     //Blancec
     //Lebenslauf
 
@@ -95,6 +108,19 @@ const languagesContent = {
     mehrInformation: "More Information",
     
     //Joblab
+    joblabTitle1:"PROJECT OVERVIEW & PURPOSE",
+    joblabContent1:"<strong>Introducing the Job Lab:</strong><br><br>Job Lab is a project commissioned by the DAAD (German Academic Exchange Service), China, and developed in close collaboration with the German Embassy in Beijing and the German Consulates in Shanghai and Guangzhou. Its core mission: to inform Chinese students of the German language about job market opportunities in Germany, offering them practical guidance and resources through a dedicated digital platform and on-site events.",
+    joblabTitle2:"KEY STAKEHOLDERS & COLLABORATIONS",
+    joblabContent2:"<strong>A Network of International Partners:</strong><br><br>The Job Lab brought together key players in international education and cultural exchange. Working alongside the DAAD, German foreign representations in Guangzhou, Shanghai, and Beijing, the German Centre Shanghai, the German Centre Beijing, the AHK Greater China, Advantage Austria, the OeAD, and the Goethe-Institut Beijing, we created a truly collaborative environment. DAAD lecturers from across China supported workshops, ensuring a comprehensive and expert-led program.",
+    joblabTitle3:"WEB DEVELOPMENT & MULTILINGUAL FOCUS",
+    joblabContent3:"<strong>A Network of International Partners:</strong><br><br>We designed and developed a fully bilingual website in German and Chinese. This platform served as an information hub, hosting job market details, event updates, and relevant resources. From managing web hosting and domains to continuously updating site content, we ensured the platform remained current and valuable to its diverse audience.",
+    joblabTitle4:"MOBILE & WECHAT OPTIMIZATION",
+    joblabContent4:"<strong>Perfect performance for mobile users::</strong><br><br>Our target audience relied heavily on mobile devices and WeChat. We built the site to perform seamlessly on mobile browsers, including special JavaScript detection for WeChat. This focus ensured that users could conveniently access the information right where they spend most of their time, resulting in a tailored and engaging user experience.",
+    joblabTitle5:"BRANDING & PRINT MATERIALS",
+    joblabContent5:"<strong>A Cohesive Visual Identity:</strong><br><br>Beyond the digital sphere, we developed a strong brand identity. This included designing the project's logo, creating eye-catching web graphics, and producing over 20 informative posters for exhibition events. These posters, displayed at the Job Lab events, provided visitors with clear, structured information about job markets, ultimately enhancing the educational impact of the project.",
+    joblabTitle6:"EVENT SUCCESS & RECEPTION",
+    joblabContent6:"<strong>High Engagement & Positive Feedback:</strong><br><br>The Job Lab events in Guangzhou, Shanghai, and Beijing attracted around 300 visitors. Attendees engaged in lively discussions, asked thoughtful questions, and remained present throughout the day's program. This enthusiastic reception underscored the project's value and set a strong precedent for annual repetition, turning the Job Lab into a potential ongoing tradition.",
+
     //Blancec
     //Lebenslauf
 
