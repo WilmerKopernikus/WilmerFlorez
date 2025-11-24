@@ -85,7 +85,7 @@ const languagesContent = {
     //menu
     menuIndex: `Home`,
     menuProjekte: `Projects`,
-    menuCV: `Services`,
+    menuCV: `Curriculum Vitae`,
     menuKontakt: `Contact`,
 
     //index
