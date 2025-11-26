@@ -67,7 +67,7 @@ const languagesContent = {
     chooseUsText: "Sind Sie auf der Suche nach einem engagierten Webentwickler für Ihr Team oder Ihr nächstes Projekt?<br><br>Wenn Sie Unterstützung für Ihr Projekt benötigen oder jemanden suchen, der sich engagiert in neue Aufgaben einarbeitet, freue ich mich über eine Kontaktaufnahme. Gerne bespreche ich mit Ihnen, wie ich Ihr Team und Ihre Ziele bestmöglich unterstützen kann.",
     impressumTitle: 'IMPRESSUM',
     impressumText: "Gesetzliche Vertretung: Wilmer Aderbert Florez Lopez <br>Calle 75 # 58-51 – 111211 Bogotá, Kolumbien<br>wilmerkopernikus@gmail.com<br>Registriert und rechtlich vertreten in Bogotá, Kolumbien.<br>Umsatzsteuer (MwSt) ist auf internationale Transaktionen nicht anwendbar.",
-    formTitle: 'KONTAKT',
+    formTitle: 'KONTAKTIEREN SIE MICH!',
     formNameLabel: 'Ihr Name:',
     formEmailLabel: 'Ihre E-Mail:',
     formMessageLabel: 'Ihre Nachricht:',
