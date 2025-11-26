@@ -63,8 +63,8 @@ const languagesContent = {
 
     //Kontakt
     heroTitle: 'KONTAKT',
-    chooseUsTitle: 'WÄHLEN SIE UNS!',
-    chooseUsText: "Bereit Ihr Unternehmen auf das nächste Level zu bringen? Eine Website zu haben bedeutet nicht nur, online zu sein – es bedeutet, neue Chancen zu eröffnen. Eine gut gestaltete Website hilft Ihnen, Kunden zu gewinnen, Vertrauen aufzubauen und Ihre Dienstleistungen rund um die Uhr zu präsentieren. <br><br>Wir unterstützen Sie dabei, eine Website zu erstellen, die nicht nur visuell ansprechend, sondern auch benutzerfreundlich und suchmaschinenoptimiert ist. Gemeinsam mit Ihnen erarbeiten wir eine Lösung, die Ihre Unternehmensziele bestmöglich unterstützt. <br><br> ", 
+    chooseUsTitle: "ARBEITEN WIR ZUSAMMEN?",
+    chooseUsText: "Sind Sie auf der Suche nach einem engagierten Webentwickler für Ihr Team oder Ihr nächstes Projekt?<br><br>Wenn Sie Unterstützung für Ihr Projekt benötigen oder jemanden suchen, der sich engagiert in neue Aufgaben einarbeitet, freue ich mich über eine Kontaktaufnahme. Gerne bespreche ich mit Ihnen, wie ich Ihr Team und Ihre Ziele bestmöglich unterstützen kann.",
     impressumTitle: 'IMPRESSUM',
     impressumText: "Gesetzliche Vertretung: Wilmer Aderbert Florez Lopez <br>Calle 75 # 58-51 – 111211 Bogotá, Kolumbien<br>wilmerkopernikus@gmail.com<br>Registriert und rechtlich vertreten in Bogotá, Kolumbien.<br>Umsatzsteuer (MwSt) ist auf internationale Transaktionen nicht anwendbar.",
     formTitle: 'KONTAKT',
@@ -145,8 +145,8 @@ const languagesContent = {
 
     //Kontakt
     heroTitle: 'CONTACT',
-    chooseUsTitle: 'MAKE US YOUR CHOICE!',
-    chooseUsText: "Ready to take your business to the next level? Having a website is not just about being online – it’s about opening new opportunities. A well-designed website helps you gain customers, build trust, and present your services 24/7. <br><br> We help you create a website that is not only visually appealing, but also user-friendly and search-engine optimized. Together with you, we develop a solution that supports your business goals in the best possible way. <br><br> ",
+    chooseUsTitle: "LET'S WORK TOGETHER!",
+    chooseUsText: "Are you looking for a dedicated web developer for your team or your next project?<br><br>If you need support for your project or are looking for someone who quickly and proactively takes on new tasks, I would be happy to hear from you, and would gladly discuss how I can best support your team and help you achieve your goals.",
     impressumTitle: 'LEGAL NOTICE',
     impressumText: "Legal representative: Wilmer Aderbert Florez Lopez <br>Calle 75 # 58-51 – 111211 Bogotá, Colombia<br>wilmerkopernikus@gmail.com<br>Registered and legally represented in Bogotá, Colombia.<br>VAT is not applicable to international transactions.",
     formTitle: 'CONTACT ME',
