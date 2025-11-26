@@ -6,20 +6,21 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="preload" as="image" href="tarot/reverse.webp">
+  <link rel="preload" as="image" href="tarot2/reverso.jpg">
 
   <title>Wilmer Florez - Web Developer</title>
-  <link rel="preload" as="image" href="reverse.webp" fetchpriority="high">
-
+  <link rel="preload" as="image" href="tarot2/reverso.jpg" fetchpriority="high">
   <link rel="stylesheet" href="styles/style-tarot.css">
-  <link rel="stylesheet" href="styles/cards.css">
-  <link rel="stylesheet" href="styles/cards_services.css">
-  <link rel="stylesheet" href="styles/header_test.css">
 
+  <link rel="stylesheet" href="styles/cards_intro.css">
+  <link rel="stylesheet" href="styles/header_test.css">
+  <link rel="stylesheet" href="styles/cards.css">
+  <link rel="stylesheet" href="styles/images.css">
   <link rel="stylesheet" href="styles/global-text.css">
 
   <link rel="stylesheet" href="styles/languages_content.css">
-  <script src="scripts/languages_content.js"></script>
+  <script src="scripts/languages_content.js" defer></script>
+
 
 </head>
 
@@ -43,33 +44,55 @@
       <input type="checkbox" id="langToggle" hidden />
       <label for="langToggle" class="current-lang">DE ▼</label>
       <ul class="language-options">
-        <li><a href="tarot_EN.html" class="lang-button">EN</a></li>
+        <li><button class="lang-button" data-lang="de">DE</button></li>
+        <li><button class="lang-button" data-lang="en">EN</button></li>
+        <!-- para agregar más idiomas en el futuro -->
+        <!--<li><button class="lang-button" data-lang="es">ES</button></li>-->
       </ul>
     </div>
 
     <div class="menu-overlay" id="menuOverlay">
       <ul>
-        <li><a href="index.html"><img class="menu-icon" src="imagenes/svg/cubo.svg" alt="Startseite Icon">Startseite</a>
+        <li>
+          <a href="index.html">
+            <img class="menu-icon" src="imagenes/svg/cubo.svg" alt="Startseite Icon">
+            <span data-i18n="menuIndex">Startseite</span>
+          </a>
         </li>
-        <li><a href="projekte.html"><img class="menu-icon" src="imagenes/svg/cases.svg" alt="Projekte Icon">Projekte</a>
+
+        <li>
+          <a href="projekte.html">
+            <img class="menu-icon" src="imagenes/svg/cases.svg" alt="Projekte Icon">
+            <span data-i18n="menuProjekte">Projekte</span>
+          </a>
         </li>
-        <li class="cards-mobile"><a href="services_de_mobile.html"><img class="menu-icon"
-              src="imagenes/svg/services.svg" alt="Services Icon">Services</a></li>
-        <li class="cards-screens"><a href="services_de.html"><img class="menu-icon" src="imagenes/svg/services.svg"
-              alt="Services Icon">Services</a></li>
-        <li class="cards-mobile-landscape"><a href="services_de_mobile_landscape.html"><img class="menu-icon"
-              src="imagenes/svg/services.svg" alt="Services Icon">Services</a></li>
-        <li><a href="kontakt.html"><img class="menu-icon" src="imagenes/svg/contact.svg" alt="Kontakt Icon">Kontakt</a>
+
+        <li>
+          <a href="docs/Lebenslauf.pdf" target="_blank">
+            <img class="menu-icon" src="imagenes/svg/lebenslauf.svg" alt="Lebenslauf Icon">
+            <span data-i18n="menuCV">Lebenslauf</span>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="kontakt.html">
+            <img class="menu-icon" src="imagenes/svg/contact.svg" alt="Kontakt Icon">
+            <span data-i18n="menuKontakt">Kontakt</span>
+          </a>
         </li>
       </ul>
     </div>
 
-    <h2 class="title">INTERAKTIVES TAROT</h2>
-    <button id="una-carta">Ziehe eine Karte</button>
-    <button id="triada">Ziehe eine Triade</button>
+    <h2 class="title" data-i18n="tarotTitle">INTERAKTIVES TAROT</h2>
+    <button class="tarot-button" id="una-carta" data-i18n="eineKarte">Ziehe eine Karte</button>
+    <button class="tarot-button" id="triada" data-i18n="eineTriade">Ziehe eine Triade</button>
 
     <div id="resultado"></div>
+  </div>
 
-    <script src="scripts/script-tarot.js"></script>
-    <script src="scripts/script.js"></script>
+  <script src="scripts/script-tarot.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
+
+</html>

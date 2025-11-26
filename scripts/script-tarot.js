@@ -1,10 +1,11 @@
 // === Generar la baraja ===
-const arcanosMayores = ["El Loco", "El Mago", "La Sacerdotisa", "La Emperatriz", "El Emperador", 
+const arcanosMayores = [
+  "El Loco", "El Mago", "La Sacerdotisa", "La Emperatriz", "El Emperador",
   "El Sumo Sacerdote", "Los Enamorados", "El Carro", "La Fuerza", "El Ermitaño",
-  "La Rueda de la Fortuna",  "La Justicia", "El Colgado", "La Muerte", "La Templanza", "El Diablo", 
-  "La Torre", "La Estrella", "La Luna", "El Sol", "El Juicio", "El Mundo"];
+  "La Rueda de la Fortuna", "La Justicia", "El Colgado", "La Muerte", "La Templanza", "El Diablo",
+  "La Torre", "La Estrella", "La Luna", "El Sol", "El Juicio", "El Mundo"
+];
 
-// Relacionar cartas con nombres de archivo (en minúsculas y con guiones)
 const imagenesCartas = {
   "El Loco": "00.jpg",
   "El Mago": "01.jpg",
@@ -16,10 +17,10 @@ const imagenesCartas = {
   "El Carro": "07.jpg",
   "La Fuerza": "08.jpg",
   "El Ermitaño": "09.jpg",
-  "La Rueda de la Fortuna": "10.jpg",  
+  "La Rueda de la Fortuna": "10.jpg",
   "La Justicia": "11.jpg",
   "El Colgado": "12.jpg",
-  "La Muerte": "13..jpg",
+  "La Muerte": "13.jpg",
   "La Templanza": "14.jpg",
   "El Diablo": "15.jpg",
   "La Torre": "16.jpg",
@@ -29,25 +30,6 @@ const imagenesCartas = {
   "El Juicio": "20.jpg",
   "El Mundo": "21.jpg",
 };
-
-  /*
-const palos = ["Oros", "Copas", "Espadas", "Bastos"];
-const figuras = ["Sota", "Caballo", "Reina", "Rey"];
-const arcanosMenores = [];
-
-palos.forEach(palo => {
-  for (let i = 1; i <= 10; i++) {
-    arcanosMenores.push(`${i} de ${palo}`);
-  }
-  figuras.forEach(figura => {
-    arcanosMenores.push(`${figura} de ${palo}`);
-  });
-});
-
-*/
-
-
-//const tarot = [...arcanosMayores, ...arcanosMenores];
 
 // === Funciones de sorteo ===
 function sacarUnaCarta() {
@@ -70,37 +52,51 @@ function sacarTriada() {
 // === DOM Interacción ===
 const resultado = document.getElementById("resultado");
 
+// Idioma actual del tarot (por defecto alemán)
+let currentTarotLang = "de";
+
+// Carpeta de cartas por idioma (AJUSTA ESTO A TUS RUTAS REALES)
+const tarotFolders = {
+  de: "tarot_deutsch",
+  en: "tarot_english",
+};
+
+// Para recordar la última tirada
+let lastDrawType = null;  // "one" | "triad" | null
+let lastCards = null;     // string | string[]
+
 // Función para crear carta volteada
 function crearCartaHTML(nombreCarta) {
-    const nombreArchivo = imagenesCartas[nombreCarta] || "reverse.webp"; // fallback
-    const cartaId = `carta-${Math.random().toString(36).substr(2, 9)}`;
-  
-    return `
-      <div class="tarot-card" id="${cartaId}">
-        <div class="card-inner">
-          <div class="card-side card-front">
-            <img src="tarot_deutsch/${nombreArchivo}" alt="${nombreCarta}">
-          </div>
-          <div class="card-side card-back">
-            <img src="tarot2/reverso.jpg" alt="Reverso">
-          </div>
+  const nombreArchivo = imagenesCartas[nombreCarta] || "reverse.webp";
+  const cartaId = `carta-${Math.random().toString(36).substr(2, 9)}`;
+  const folder = tarotFolders[currentTarotLang] || tarotFolders.de;
+
+  // Debug: ver en consola qué carpeta está usando
+  console.log("Usando carpeta:", folder, "para carta:", nombreCarta);
+
+  return `
+    <div class="tarot-card" id="${cartaId}">
+      <div class="card-inner">
+        <div class="card-side card-front">
+          <img src="${folder}/${nombreArchivo}" alt="${nombreCarta}">
+        </div>
+        <div class="card-side card-back">
+          <img src="tarot2/reverso.jpg" alt="Reverso">
         </div>
       </div>
-    `;
-  }
-  
+    </div>
+  `;
+}
 
-document.getElementById("una-carta").addEventListener("click", () => {
-  const carta = sacarUnaCarta();
+function renderUnaCarta(carta) {
   resultado.innerHTML = crearCartaHTML(carta);
   agregarVolteo();
-});
+}
 
-document.getElementById("triada").addEventListener("click", () => {
-  const cartas = sacarTriada();
+function renderTriada(cartas) {
   resultado.innerHTML = cartas.map(c => crearCartaHTML(c)).join("");
   agregarVolteo();
-});
+}
 
 // Activar volteo una sola vez por carta
 function agregarVolteo() {
@@ -113,6 +109,45 @@ function agregarVolteo() {
     carta.addEventListener("click", flip);
   });
 }
+
+// Botones de tarot
+document.getElementById("una-carta").addEventListener("click", () => {
+  const carta = sacarUnaCarta();
+  lastDrawType = "one";
+  lastCards = carta;
+  renderUnaCarta(carta);
+});
+
+document.getElementById("triada").addEventListener("click", () => {
+  const cartas = sacarTriada();
+  lastDrawType = "triad";
+  lastCards = cartas;
+  renderTriada(cartas);
+});
+
+// Conectar cambios de idioma al tarot (delegación por si se recrean botones)
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest(".lang-button");
+  if (!btn) return;
+
+  const lang = btn.dataset.lang;
+
+  if (lang === "de" || lang === "en") {
+    currentTarotLang = lang;
+    console.log("Idioma del tarot ahora:", currentTarotLang);
+
+    // Redibujar la última tirada (si existe) en el nuevo idioma
+    if (lastDrawType === "one" && lastCards) {
+      renderUnaCarta(lastCards);
+    } else if (lastDrawType === "triad" && Array.isArray(lastCards)) {
+      renderTriada(lastCards);
+    } else {
+      // Si no había tirada previa, simplemente limpiamos
+      resultado.innerHTML = "";
+    }
+  }
+});
+
 
 
 

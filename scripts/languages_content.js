@@ -59,6 +59,10 @@ const languagesContent = {
     blancecTitle4:"VORHER & NACHHER: EIN DEUTLICHER FORTSCHRITT",
     blancecContent4:"Ursprünglich beeinträchtigten lange Ladezeiten und eine unausgereifte Benutzeroberfläche die Kundenerfahrung. Heute ist die neue Website schnell, intuitiv und visuell ansprechend. Das Ergebnis? Eine einladende digitale Präsenz, die die Expertise von BLANCEC S.A.S. hervorhebt und Besucher dazu motiviert, aktiv zu werden.",
 
+    //Interaktives Tarot
+    eineKarte:"Ziehe eine Karte",
+    eineTriade:"Ziehe eine Triade",
+
     //Lebenslauf
 
     //Kontakt
@@ -140,6 +144,10 @@ const languagesContent = {
     blancecContent3:"A Polished, Professional Look:<br><br>Using design tools like Photoshop and Illustrator, we refined the brand's visuals. A cleaner logo, dynamic header images, and a cohesive color scheme establish a modern, trusted brand identity, improving credibility and client confidence.",
     blancecTitle4:"BEFORE & AFTER: A CLEAR UPGRADE",
     blancecContent4:"Originally, slow loading times and an unrefined interface hampered the client experience. Today, the new website is fast, intuitive, and visually engaging. The result? A welcoming digital presence that highlights BLANCEC S.A.S's expertise and inspires visitors to take action.",
+
+    //Interaktives Tarot
+    eineKarte:"Pull a card",
+    eineTriade:"Pull a triad",
 
     //Lebenslauf
 

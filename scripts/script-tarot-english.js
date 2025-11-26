@@ -19,7 +19,7 @@ const imagenesCartas = {
   "La Rueda de la Fortuna": "10.jpg",  
   "La Justicia": "11.jpg",
   "El Colgado": "12.jpg",
-  "La Muerte": "13..jpg",
+  "La Muerte": "13.jpg",
   "La Templanza": "14.jpg",
   "El Diablo": "15.jpg",
   "La Torre": "16.jpg",
@@ -69,25 +69,37 @@ function sacarTriada() {
 
 // === DOM Interacción ===
 const resultado = document.getElementById("resultado");
+// Idioma actual del tarot (por defecto alemán)
+let currentTarotLang = "de";
+
+// Carpeta de cartas por idioma:
+const tarotFolders = {
+  de: "tarot_deutsch",
+  en: "tarot_english",
+};
 
 // Función para crear carta volteada
 function crearCartaHTML(nombreCarta) {
-    const nombreArchivo = imagenesCartas[nombreCarta] || "reverse.webp"; // fallback
-    const cartaId = `carta-${Math.random().toString(36).substr(2, 9)}`;
-  
-    return `
-      <div class="tarot-card" id="${cartaId}">
-        <div class="card-inner">
-          <div class="card-side card-front">
-            <img src="tarot_english/${nombreArchivo}" alt="${nombreCarta}">
-          </div>
-          <div class="card-side card-back">
-            <img src="tarot2/reverso.jpg" alt="Reverso">
-          </div>
+  const nombreArchivo = imagenesCartas[nombreCarta] || "reverse.webp"; // fallback
+  const cartaId = `carta-${Math.random().toString(36).substr(2, 9)}`;
+
+  // Elegir carpeta según idioma actual
+  const folder = tarotFolders[currentTarotLang] || tarotFolders.de;
+
+  return `
+    <div class="tarot-card" id="${cartaId}">
+      <div class="card-inner">
+        <div class="card-side card-front">
+          <img src="${folder}/${nombreArchivo}" alt="${nombreCarta}">
+        </div>
+        <div class="card-side card-back">
+          <img src="tarot2/reverso.jpg" alt="Reverso">
         </div>
       </div>
-    `;
-  }
+    </div>
+  `;
+}
+
   
 
 document.getElementById("una-carta").addEventListener("click", () => {
@@ -113,3 +125,20 @@ function agregarVolteo() {
     carta.addEventListener("click", flip);
   });
 }
+
+// Conectar cambios de idioma al tarot
+const langButtons = document.querySelectorAll(".lang-button");
+
+langButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const lang = btn.dataset.lang;
+
+    // Actualizar idioma del tarot
+    if (lang === "de" || lang === "en") {
+      currentTarotLang = lang;
+
+      // Opcional: limpiar el resultado cuando cambia el idioma
+      resultado.innerHTML = "";
+    }
+  });
+});

@@ -7,7 +7,7 @@ body {
     padding-top: 90px;
   }
   
-  button {
+  .tarot-button {
 
     padding: 20px 30px;
     margin: 30px;
@@ -20,7 +20,7 @@ body {
     transition: background 0.3s;
   }
   
-  button:hover {
+  .tarot-button:hover {
     background-color: #ff2600;
   }
   
