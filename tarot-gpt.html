@@ -46,8 +46,7 @@
       <ul class="language-options">
         <li><button class="lang-button" data-lang="de">DE</button></li>
         <li><button class="lang-button" data-lang="en">EN</button></li>
-        <!-- para agregar más idiomas en el futuro -->
-        <!--<li><button class="lang-button" data-lang="es">ES</button></li>-->
+        <li><button class="lang-button" data-lang="es">ES</button></li>
       </ul>
     </div>
 
@@ -87,8 +86,8 @@
     <h2 class="title" data-i18n="tarotTitle">TAROT INTERACTIVO</h2>
 
     <div id="tarot-section">
-      <h3>Instrucciones</h3>
-      <p class="oraculo-texto">
+      <h3 data-i18n="tarotInstrucciones">Instrucciones:</h3>
+      <p class="oraculo-texto" data-i18n="tarotInstrucciones2">
         1. Formula una pregunta <br>
         2. Saca una carta o una triada<br>
         3. Voltea las cartas dandoles click<br>
@@ -97,7 +96,7 @@
       </p>
 
       <!-- 1. La pregunta, ARRIBA -->
-      <textarea id="tarot-question" rows="3" placeholder="Escribe aquí tu pregunta al oráculo..."></textarea>
+      <textarea id="tarot-question" rows="3" data-i18n="paceHolder" placeholder="Escribe aquí tu pregunta al oráculo..."></textarea>
 
       <!-- 2. Los dos botones de tirada -->
       <div class="tarot-draw-buttons">
@@ -113,7 +112,7 @@
       <div id="resultado"></div>
 
       <!-- 4. Botón de preguntar al oráculo, ABAJO -->
-      <button class="tarot-button" id="ask-oracle-btn">
+      <button class="tarot-button" id="ask-oracle-btn" data-i18n="preguntarOraculo">
         Preguntar al oráculo
       </button>
 

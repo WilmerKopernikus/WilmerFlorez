@@ -101,8 +101,8 @@ Tipo de tirada: ${drawType || "desconocida"}
 Cartas extraídas: ${cardsDescription || "ninguna"}
 Pregunta de la persona: "${question || ""}"
 
-Responde en español, en 2–4 párrafos, claros y poéticos.
-Termina con un consejo práctico concreto.
+Detecta automáticamente el idioma de la pregunta y responde en ese mismo idioma.
+Escribe 2–4 párrafos y termina con un consejo práctico concreto.
     `.trim();
 
     const openaiRes = await fetch("https://api.openai.com/v1/responses", {

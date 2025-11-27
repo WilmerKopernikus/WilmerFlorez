@@ -225,9 +225,6 @@ async function preguntarAlOraculo() {
   }
 }
 
-
-
-
 // Listener para el botón del oráculo
 const askOracleBtn = document.getElementById("ask-oracle-btn");
 if (askOracleBtn) {
