@@ -31,8 +31,8 @@ const languagesContent = {
     blancecUebersicht: "<strong>Übersicht:</strong><br />BLANCEC S.A.S. ist ein kolumbianisches Prüflabor, das sich auf die Zertifizierung von Produkten für die nationale Verteidigungsindustrie spezialisiert hat. Das Labor prüft Ausrüstung und Materialien, damit sie die vom kolumbianischen Verteidigungsministerium geforderten technischen Normen und Sicherheitsvorschriften (u. a. NTS- und MINDEN-Standards) erfüllen.",
     tarotTitle: "INTERACTIVES TAROT",
     tarotKunde: "<strong>Kunde:</strong><br /> Nichtkommerzielles Projekt",
-    tarotLeistungen: "<strong>Unsere Leistungen:</strong><br /> Webentwicklung & Design",
-    tarotUebersicht: "<strong>Übersicht:</strong><br />Kooperationsprojekt mit Professor Dioscórides Pérez, Professor für Bildende Kunst an der Nationalen Universität von Kolumbien, zur Entwicklung eines interaktiven Tarotspiels. Auf Grundlage seiner Originalzeichnungen wurde das digitale Programm entwickelt, das seine künstlerische und symbolische Vision in ein interaktives Erlebnis verwandelt.",
+    tarotLeistungen: "<strong>Technologien:</strong><br /> Frontend, Backend, Künstliche Intelligenz, Hosting und Deployment, Medien und Assets",
+    tarotUebersicht: "<strong>Übersicht:</strong><br />Ein interaktives Tarot-Modul, das modernes Webdesign mit einem leistungsfähigen Backend auf Vercel und der OpenAI-API verbindet. Es ermöglicht sprachadaptive, dynamisch generierte Karteninterpretationen und demonstriert eine präzise Kombination aus Frontend-Interaktion, serverloser Architektur und KI-gestützter Textanalyse.",
     mehrInformation: "Mehr Information",
 
     //Joblab
@@ -123,9 +123,9 @@ const languagesContent = {
     blancecLeistungen: "<strong>What we did</strong><br /> Web Development & Design - Brand Design - Website maintenance",
     blancecUebersicht: "<strong>Overview</strong><br />BLANCEC S.A.S. is a Colombian testing laboratory specialized in the certification of products for the national defense industry. The laboratory tests equipment and materials to ensure they comply with the technical standards and safety regulations required by the Colombian Ministry of Defense (including NTS and MINDEN standards).",
     tarotTitle: "INTERACTIVE TAROT",
-    tarotKunde: "<strong>Client</strong><br /> Non-profit project",
-    tarotLeistungen: "<strong>What we did</strong><br /> Web Development & Design",
-    tarotUebersicht: "<strong>Overview</strong><br />Collaborative project with Professor Dioscórides Pérez, visual arts professor at the National University of Colombia, to develop an interactive tarot game. Using his original drawings, I am creating the digital program that translates his artistic and symbolic vision into an interactive experience.</p><br />",
+    tarotKunde: "<strong>Client:</strong><br /> Non-profit project",
+    tarotLeistungen: "<strong>Technologies:</strong><br /> Frontend, Backend, Artificial Intelligence, Hosting and Deployment, Media and Assets",
+    tarotUebersicht: "<strong>Overview:</strong><br />An interactive tarot module that combines modern web design with a powerful backend on Vercel and the OpenAI API. It enables language-adaptive, dynamically generated card interpretations and showcases a precise combination of frontend interaction, serverless architecture, and AI-driven text analysis.<br />",
     mehrInformation: "More Information",
 
     //Joblab
