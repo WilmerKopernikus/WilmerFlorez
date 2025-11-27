@@ -180,7 +180,6 @@ async function preguntarAlOraculo() {
     return;
   }
 
-  // Convertir las cartas a formato para la API
   const cards = cardsArray.map((name) => ({
     name,
     position: "upright",
@@ -203,7 +202,6 @@ async function preguntarAlOraculo() {
 
     if (!response.ok) {
       console.error("Error desde /api/tarot:", data);
-      // Mostrar también los detalles para que tú los veas en la página
       answerEl.textContent =
         "Error del servidor: " +
         (data.error || "El oráculo encontró un problema.") +
@@ -223,6 +221,7 @@ async function preguntarAlOraculo() {
     answerEl.textContent = "Hubo un error al hablar con el oráculo.";
   }
 }
+
 
 
 
