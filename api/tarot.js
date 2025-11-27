@@ -1,15 +1,83 @@
 // api/tarot.js
-// Versión con OpenAI usando /v1/responses
+// Versión PROTEGIDA: solo acepta peticiones desde tus dominios
+// y aplica un rate limit muy simple por IP.
+
+const allowedOrigins = [
+  "https://wilmerflorez.com",
+  "https://www.wilmerflorez.com",
+  "https://wilmer-florez.vercel.app", // para pruebas directas en Vercel
+];
+
+// Rate limit muy sencillo en memoria:
+// máximo 20 peticiones por IP cada 10 minutos
+const rateLimitWindowMs = 10 * 60 * 1000;
+const rateLimitMaxRequests = 20;
+const ipHits = new Map();
 
 export default async function handler(req, res) {
+  // ----- CORS + ORIGEN -----
+  const origin = req.headers.origin || "";
+  const referer = req.headers.referer || "";
+
+  const isAllowedOrigin =
+    allowedOrigins.includes(origin) ||
+    allowedOrigins.some((o) => referer.startsWith(o));
+
+  // Cabeceras CORS
+  if (origin && allowedOrigins.includes(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  } else if (!origin && referer.startsWith("https://wilmer-florez.vercel.app")) {
+    // caso: pruebas directas en vercel.app sin Origin
+    res.setHeader("Access-Control-Allow-Origin", "https://wilmer-florez.vercel.app");
+  }
+
+  res.setHeader("Vary", "Origin");
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+  // Preflight CORS
+  if (req.method === "OPTIONS") {
+    return res.status(200).end();
+  }
+
+  // Bloquear orígenes no permitidos
+  if (!isAllowedOrigin) {
+    return res
+      .status(403)
+      .json({ error: "Forbidden: origen no autorizado para usar este oráculo." });
+  }
+
+  // ----- RATE LIMIT POR IP -----
   try {
-    // Solo aceptamos POST
+    const ip =
+      (req.headers["x-forwarded-for"] || "")
+        .toString()
+        .split(",")[0]
+        .trim() || req.socket.remoteAddress || "unknown";
+
+    const now = Date.now();
+    const hits = ipHits.get(ip) || [];
+    const recentHits = hits.filter((ts) => now - ts < rateLimitWindowMs);
+    recentHits.push(now);
+    ipHits.set(ip, recentHits);
+
+    if (recentHits.length > rateLimitMaxRequests) {
+      return res
+        .status(429)
+        .json({ error: "Demasiadas consultas desde esta IP. Intenta más tarde." });
+    }
+  } catch (e) {
+    console.error("Error en rate limit:", e);
+    // si falla el rate limit, no bloqueamos, pero queda logeado
+  }
+
+  // ----- LÓGICA DEL ORÁCULO (OpenAI) -----
+  try {
     if (req.method !== "POST") {
       res.setHeader("Allow", "POST");
       return res.status(405).json({ error: "Método no permitido" });
     }
 
-    // 1. Comprobar API key
     const apiKey = process.env.OPENAI_API_KEY;
     if (!apiKey) {
       return res.status(500).json({
@@ -17,7 +85,6 @@ export default async function handler(req, res) {
       });
     }
 
-    // 2. Leer datos del body
     const { question, cards, drawType } = req.body || {};
 
     const cardsDescription = (cards || [])
@@ -38,7 +105,6 @@ Responde en español, en 2–4 párrafos, claros y poéticos.
 Termina con un consejo práctico concreto.
     `.trim();
 
-    // 3. Llamar a OpenAI /v1/responses
     const openaiRes = await fetch("https://api.openai.com/v1/responses", {
       method: "POST",
       headers: {
@@ -51,7 +117,6 @@ Termina con un consejo práctico concreto.
       }),
     });
 
-    // 4. Si OpenAI devuelve error, enviamos detalles
     if (!openaiRes.ok) {
       const errorText = await openaiRes.text();
       console.error("Error de OpenAI:", errorText);

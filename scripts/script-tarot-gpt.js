@@ -188,7 +188,10 @@ async function preguntarAlOraculo() {
   answerEl.textContent = "Consultando al oráculo...";
 
   try {
-    const response = await fetch("/api/tarot", {
+
+    const API_URL = "https://wilmer-florez.vercel.app/api/tarot"; // BACKEND EN VERCEL
+
+    const response = await fetch(API_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
