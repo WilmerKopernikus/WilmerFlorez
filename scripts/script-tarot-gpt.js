@@ -183,7 +183,7 @@ async function preguntarAlOraculo() {
   // Convertir las cartas a formato para la API
   const cards = cardsArray.map((name) => ({
     name,
-    position: "upright", // si luego quieres manejar invertidas, lo puedes cambiar
+    position: "upright",
   }));
 
   answerEl.textContent = "Consultando al oráculo...";
@@ -201,16 +201,16 @@ async function preguntarAlOraculo() {
 
     const data = await response.json();
 
-    // Si el servidor respondió con error (status 4xx / 5xx)
     if (!response.ok) {
       console.error("Error desde /api/tarot:", data);
+      // Mostrar también los detalles para que tú los veas en la página
       answerEl.textContent =
         "Error del servidor: " +
-        (data.error || "El oráculo encontró un problema.");
+        (data.error || "El oráculo encontró un problema.") +
+        (data.details ? "\nDetalles: " + data.details : "");
       return;
     }
 
-    // Si todo fue bien, mostramos la respuesta del oráculo
     if (data.answer) {
       answerEl.textContent = data.answer;
     } else {
@@ -223,6 +223,7 @@ async function preguntarAlOraculo() {
     answerEl.textContent = "Hubo un error al hablar con el oráculo.";
   }
 }
+
 
 
 // Listener para el botón del oráculo
