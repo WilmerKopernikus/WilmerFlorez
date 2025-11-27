@@ -44,11 +44,14 @@ Termina con un consejo práctico concreto.
       }),
     });
 
-    if (!openaiRes.ok) {
-      const errorText = await openaiRes.text();
-      console.error("Error de OpenAI:", errorText);
-      return res.status(500).json({ error: "Error al consultar OpenAI" });
-    }
+if (!openaiRes.ok) {
+  const errorText = await openaiRes.text();
+  console.error("Error de OpenAI:", errorText);
+  return res.status(500).json({
+    error: "Error al consultar OpenAI",
+    details: errorText,
+  });
+}
 
     const json = await openaiRes.json();
 

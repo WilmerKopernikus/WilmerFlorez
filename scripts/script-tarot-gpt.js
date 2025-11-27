@@ -199,17 +199,31 @@ async function preguntarAlOraculo() {
       }),
     });
 
+    const data = await response.json();
+
+    // Si el servidor respondió con error (status 4xx / 5xx)
     if (!response.ok) {
-      throw new Error("Respuesta no válida del servidor");
+      console.error("Error desde /api/tarot:", data);
+      answerEl.textContent =
+        "Error del servidor: " +
+        (data.error || "El oráculo encontró un problema.");
+      return;
     }
 
-    const data = await response.json();
-    answerEl.textContent = data.answer || "El oráculo guarda silencio por ahora.";
+    // Si todo fue bien, mostramos la respuesta del oráculo
+    if (data.answer) {
+      answerEl.textContent = data.answer;
+    } else {
+      console.error("Respuesta inesperada desde /api/tarot:", data);
+      answerEl.textContent =
+        "El oráculo guarda silencio por ahora (respuesta inesperada).";
+    }
   } catch (err) {
-    console.error(err);
+    console.error("Error en fetch /api/tarot:", err);
     answerEl.textContent = "Hubo un error al hablar con el oráculo.";
   }
 }
+
 
 // Listener para el botón del oráculo
 const askOracleBtn = document.getElementById("ask-oracle-btn");
