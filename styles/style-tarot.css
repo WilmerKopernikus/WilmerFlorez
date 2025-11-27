@@ -9,9 +9,9 @@ body {
   
   .tarot-button {
 
-    padding: 20px 30px;
-    margin: 30px;
-    font-size: 1rem;
+    padding: 15px 20px;
+    margin: 10px;
+    font-size: 0.8rem;
     cursor: pointer;
     border: none;
     border-radius: 5px;
@@ -91,5 +91,68 @@ body {
 
   .card-side img {
     object-fit: contain;
+  }
+}
+
+/* Contenedor general del tarot */
+#tarot-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Texto de introducción */
+.oraculo-texto {
+  max-width: 700px;
+  margin: 0 auto 0.5rem;
+}
+
+/* Textarea: ancho y alto */
+#tarot-question {
+  width: 80%;          /* ancho relativo */
+  max-width: 700px;    /* ancho máximo en pixeles */
+  min-height: 120px;   /* "alto" mínimo */
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;    /* permite al usuario estirar hacia abajo */
+  box-sizing: border-box;
+}
+
+/* Contenedor de los botones de tirada (una carta / triada) */
+.tarot-draw-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Botón de "Preguntar al oráculo" en una línea aparte */
+#ask-oracle-btn {
+  display: block;      /* rompe la línea y ocupa fila propia */
+  margin: 1.5rem auto 0;
+}
+
+/* Ancho base del texto de respuesta */
+#oracle-answer {
+  margin: 1.5rem auto 0;
+  text-align: left;
+  line-height: 1.5;
+  width: 50%;        /* 50% en pantallas grandes */
+}
+
+/* Tablets (ej: hasta 1024px) */
+@media screen and (max-width: 1024px) {
+  #oracle-answer {
+    width: 70%;
+  }
+}
+
+/* Móviles (ej: hasta 750px, mismo breakpoint que tus cartas) */
+@media screen and (max-width: 750px) {
+  #oracle-answer {
+    width: 90%;
   }
 }

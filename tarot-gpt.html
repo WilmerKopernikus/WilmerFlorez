@@ -84,29 +84,46 @@
       </ul>
     </div>
 
-       <h2 class="title" data-i18n="tarotTitle">INTERAKTIVES TAROT</h2>
-    <button class="tarot-button" id="una-carta" data-i18n="eineKarte">Ziehe eine Karte</button>
-    <button class="tarot-button" id="triada" data-i18n="eineTriade">Ziehe eine Triade</button>
+    <h2 class="title" data-i18n="tarotTitle">INTERAKTIVES TAROT</h2>
 
-    <div id="resultado"></div>
-
-    <div id="tarot-oraculo">
-      <h3>Pregunta al oráculo</h3>
+    <div id="tarot-section">
+      <h3>Instrucciones</h3>
       <p class="oraculo-texto">
-        Formula una pregunta y después de hacer tu tirada, consulta al oráculo.
+        1. Formula una pregunta <br>
+        2. Saca una carta o una triada<br>
+        3. Voltea las cartas dandoles click<br>
+        4. Presiona el botón consultar al oráculo.
+
       </p>
-      <textarea id="tarot-question" rows="3" 
-        placeholder="Escribe aquí tu pregunta al oráculo..."></textarea>
+
+      <!-- 1. La pregunta, ARRIBA -->
+      <textarea id="tarot-question" rows="3" placeholder="Escribe aquí tu pregunta al oráculo..."></textarea>
+
+      <!-- 2. Los dos botones de tirada -->
+      <div class="tarot-draw-buttons">
+        <button class="tarot-button" id="una-carta" data-i18n="eineKarte">
+          Ziehe eine Karte
+        </button>
+        <button class="tarot-button" id="triada" data-i18n="eineTriade">
+          Ziehe eine Triade
+        </button>
+      </div>
+
+      <!-- 3. Resultado de las cartas -->
+      <div id="resultado"></div>
+
+      <!-- 4. Botón de preguntar al oráculo, ABAJO -->
       <button class="tarot-button" id="ask-oracle-btn">
         Preguntar al oráculo
       </button>
 
+      <!-- 5. Respuesta del oráculo -->
       <div id="oracle-answer"></div>
     </div>
 
-  </div>
 
-  <script src="scripts/script-tarot-gpt.js"></script>
-  <script src="scripts/script.js"></script>
+    <script src="scripts/script-tarot-gpt.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
+
 </html>
