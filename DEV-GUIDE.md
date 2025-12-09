@@ -4,15 +4,15 @@
 
 Este portfolio utiliza HTML, CSS y JavaScript vanilla con optimizaciones de rendimiento.
 
-## Archivos CSS
+## Archivos CSS y JavaScript
 
-### ⚠️ IMPORTANTE: Edición de Estilos
+### ⚠️ IMPORTANTE: Edición de Estilos y Scripts
 
-**NUNCA edites archivos `.min.css` directamente**
+**NUNCA edites archivos `.min.css` o `.min.js` directamente**
 
-- **Archivos fuente (editables):** `styles/*.css`
-- **Archivos minificados (generados):** `styles/*.min.css`
-- **Las páginas HTML cargan:** `.min.css`
+- **Archivos fuente (editables):** `styles/*.css` y `scripts/*.js`
+- **Archivos minificados (generados):** `styles/*.min.css` y `scripts/*.min.js`
+- **Las páginas HTML cargan:** `.min.css` y `.min.js`
 
 ### Workflow para editar CSS:
 
@@ -38,6 +38,30 @@ Este portfolio utiliza HTML, CSS y JavaScript vanilla con optimizaciones de rend
 
 3. **Prueba los cambios en el navegador**
 
+### Workflow para editar JavaScript:
+
+1. **Edita el archivo JavaScript original:**
+   ```bash
+   # Ejemplo: edita scripts/script.js
+   ```
+
+2. **Regenera el archivo minificado:**
+   ```powershell
+   # Opción A: Regenerar UN archivo específico
+   cd scripts
+   terser script.js -c -m -o script.min.js
+   
+   # Opción B: Regenerar TODOS los archivos JavaScript
+   cd scripts
+   Get-ChildItem -Filter "*.js" | Where-Object { $_.Name -notlike "*.min.js" -and $_.Name -notlike "p5*.js" } | ForEach-Object { 
+       $output = $_.Name -replace '\.js$', '.min.js'
+       terser $_.Name -c -m -o $output
+       Write-Host "✓ $($_.Name) -> $output"
+   }
+   ```
+
+3. **Prueba los cambios en el navegador**
+
 ## Optimizaciones Implementadas
 
 ### 1. Videos con Lazy Loading
@@ -51,9 +75,14 @@ Este portfolio utiliza HTML, CSS y JavaScript vanilla con optimizaciones de rend
 - Reducción del 80% en tamaño
 
 ### 3. CSS Minificado
-- Reducción del 34.7% en tamaño total
+- Reducción del 34.7% en tamaño total (43 KB → 28 KB)
 - Archivos originales preservados para desarrollo
 - Headers de caché optimizados
+
+### 4. JavaScript Minificado
+- Reducción del 20.6% en tamaño total (50 KB → 40 KB)
+- 5 archivos minificados: `languages_content.js`, `script.js`, `script-tarot.js`, `script-tarot-gpt.js`, `sketch_12.js`
+- Archivos originales preservados para desarrollo
 
 ## Herramientas Necesarias
 
@@ -66,6 +95,11 @@ npm --version
 ### Clean-CSS CLI (para minificar CSS)
 ```powershell
 npm install -g clean-css-cli
+```
+
+### Terser (para minificar JavaScript)
+```powershell
+npm install -g terser
 ```
 
 ## Comandos Útiles
@@ -88,19 +122,30 @@ Get-ChildItem -Filter "*.css" | Where-Object { $_.Name -notlike "*.min.css" } | 
 cd ..
 ```
 
+### Regenerar todos los JavaScript minificados
+```powershell
+cd scripts
+Get-ChildItem -Filter "*.js" | Where-Object { $_.Name -notlike "*.min.js" -and $_.Name -notlike "p5*.js" } | ForEach-Object { 
+    terser $_.Name -c -m -o ($_.Name -replace '\.js$', '.min.js')
+}
+cd ..
+```
+
 ## Métricas de Rendimiento
 
 ### Antes de optimización:
 - Videos: ~6 MB carga inmediata
 - p5.js: 5 MB
 - CSS: 43 KB
+- JavaScript: 50 KB
 - **Total inicial: ~11 MB**
 
 ### Después de optimización:
 - Videos: ~50 KB (solo metadata)
 - p5.min.js: 1 MB
 - CSS minificado: 28 KB
-- **Total inicial: ~1 MB**
+- JavaScript minificado: 40 KB
+- **Total inicial: ~1.1 MB**
 
 **Mejora: ~90% más rápido** 🚀
 
@@ -117,8 +162,9 @@ La preferencia del usuario se guarda en `localStorage`.
 
 Al subir a producción, asegúrate de incluir:
 - ✅ Todos los archivos `.min.css` en `/styles/`
+- ✅ Todos los archivos `.min.js` en `/scripts/`
 - ✅ `p5.min.js` en `/scripts/`
-- ✅ Archivos HTML actualizados con referencias a `.min.css`
+- ✅ Archivos HTML actualizados con referencias a `.min.css` y `.min.js`
 
 ## Futuras Mejoras
 
