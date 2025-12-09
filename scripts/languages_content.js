@@ -59,9 +59,6 @@ const languagesContent = {
     blancecTitle4: "VORHER & NACHHER: EIN DEUTLICHER FORTSCHRITT",
     blancecContent4: "Ursprünglich beeinträchtigten lange Ladezeiten und eine unausgereifte Benutzeroberfläche die Kundenerfahrung. Heute ist die neue Website schnell, intuitiv und visuell ansprechend. Das Ergebnis? Eine einladende digitale Präsenz, die die Expertise von BLANCEC S.A.S. hervorhebt und Besucher dazu motiviert, aktiv zu werden.",
 
-    //Interaktives Tarot
-    eineKarte: "Ziehe eine Karte",
-    eineTriade: "Ziehe eine Triade",
     // Interaktives Tarot
     eineKarte: "Eine Karte ziehen",
     eineTriade: "Eine Triade ziehen",
@@ -69,9 +66,6 @@ const languagesContent = {
     tarotInstrucciones2: "1. Formuliere eine Frage <br>2. Ziehe eine Karte oder eine Triade<br>3. Drehe die Karten durch Anklicken um<br>4. Drücke den Button, um das Orakel zu befragen.",
     paceHolder: "Schreibe hier deine Frage an das Orakel...",
     preguntarOraculo: "Das Orakel befragen",
-
-
-    //Lebenslauf
 
     //Kontakt
     heroTitle: 'KONTAKT',
@@ -85,12 +79,6 @@ const languagesContent = {
     formMessageLabel: 'Ihre Nachricht:',
     formSubmit: 'Senden',
   },
-
-
-
-
-
-
 
   en: {
 
@@ -112,7 +100,6 @@ const languagesContent = {
     contactTitle: `CONTACT`,
     contactContent: `Would you like to work with me? Whether you already have a clear vision or want to develop initial ideas together, feel free to get in touch — and let’s set your digital future in motion.`,
     contactButton: `Go to contact`,
-
 
     //Projekte
     projekteTitle: "PROJECTS",
@@ -143,7 +130,6 @@ const languagesContent = {
     joblabContent6: "<strong>High Engagement & Positive Feedback:</strong><br><br>The Job Lab events in Guangzhou, Shanghai, and Beijing attracted around 300 visitors. Attendees engaged in lively discussions, asked thoughtful questions, and remained present throughout the day's program. This enthusiastic reception underscored the project's value and set a strong precedent for annual repetition, turning the Job Lab into a potential ongoing tradition.",
 
     //Blancec
-
     blancecTitle1: "TRANSFORMING YOUR ONLINE PRESENCE",
     blancecContent1: "Modernizing BLANCEC S.A.S:<br><br>BLANCEC S.A.S, a leading Colombian laboratory in product testing, needed a digital upgrade to serve clients better. We redesigned their website for faster access, intuitive navigation, and a seamless experience—helping customers easily find and request the tests they need.",
     blancecTitle2: "LIGHTNING-FAST PERFORMANCE",
@@ -153,9 +139,6 @@ const languagesContent = {
     blancecTitle4: "BEFORE & AFTER: A CLEAR UPGRADE",
     blancecContent4: "Originally, slow loading times and an unrefined interface hampered the client experience. Today, the new website is fast, intuitive, and visually engaging. The result? A welcoming digital presence that highlights BLANCEC S.A.S's expertise and inspires visitors to take action.",
 
-    //Interaktives Tarot
-    eineKarte: "Pull a card",
-    eineTriade: "Pull a triad",
     // Interactive Tarot
     eineKarte: "Draw one card",
     eineTriade: "Draw a triad",
@@ -163,9 +146,6 @@ const languagesContent = {
     tarotInstrucciones2: "1. Formulate a question <br>2. Draw one card or a triad<br>3. Flip the cards by clicking on them<br>4. Press the button to consult the oracle.",
     paceHolder: "Write your question to the oracle here...",
     preguntarOraculo: "Ask the oracle",
-
-
-    //Lebenslauf
 
     //Kontakt
     heroTitle: 'CONTACT',
@@ -181,9 +161,62 @@ const languagesContent = {
   },
 
   es: {
-    indexTitle: 'CONTACTO',
+    //Menu
+    menuIndex: 'Inicio',
+    menuProjekte: 'Proyectos',
+    menuCV: 'Currículum Vitae',
+    menuKontakt: 'Contacto',
+
+    //Index
+    indexTitle: '¡BIENVENIDO A UN NUEVO <br> COSMOS DIGITAL!',
+    wilmerIntroduction: "Soy desarrollador web, diseñador gráfico y artista visual con experiencia internacional en Alemania, China y Colombia. En este portafolio presento tanto proyectos profesionales como personales que reflejan mi enfoque: combinar diseño, tecnología y creatividad para desarrollar soluciones digitales de alta calidad.",
+    projectTitle: 'PROYECTOS',
+    projectContent: 'Descubre una selección de ejemplos de proyectos que muestran cómo he apoyado a los clientes a través de un diseño y desarrollo web impactantes.',
+    projectButton: 'Ver mis proyectos',
+    curriculumTitle: 'CURRÍCULUM VITAE',
+    cvContent: 'Explora mi currículum y conoce más sobre mi experiencia profesional, habilidades técnicas y trayectoria internacional.',
+    curriculumButton: 'Ver mi CV',
+    contactTitle: 'CONTACTO',
+    contactContent: '¿Te gustaría trabajar conmigo? Ya sea que ya tengas una visión clara o quieras desarrollar ideas iniciales juntos, no dudes en ponerte en contacto conmigo y pongamos en marcha tu futuro digital.',
+    contactButton: 'Ir al contacto',
+ 
     //Projekte
+    projekteTitle: 'PROYECTOS',
+    joblabKunde: '<strong>Cliente:</strong><br/>Servicio Alemán de Intercambio Académico (DAAD)',
+    joblabLeistungen: '<strong>Qué hicimos:</strong><br/>Diseño de marca - Diseño de carteles - Desarrollo web - Diseño de sitios web',
+    joblabUebersicht: '<strong>Resumen:</strong><br/>En mayo y junio de 2024, el DAAD en China, junto con la Embajada de Alemania, el Goethe-Institut y otros socios, llevó a cabo el proyecto Job Lab. Bajo el lema "Hacia el futuro con alemán", la feria ofreció oportunidades profesionales para estudiantes chinos de estudios alemanes.',
+    blancecKunde: '<strong>Cliente:</strong><br/>Laboratorios Blancec S.A.S.',
+    blancecLeistungen: '<strong>Qué hicimos:</strong><br/>Desarrollo y diseño web - Diseño de marca - Mantenimiento del sitio web',
+    blancecUebersicht: '<strong>Resumen:</strong><br/>BLANCEC S.A.S. es un laboratorio de pruebas colombiano especializado en la certificación de productos para la industria de defensa nacional. El laboratorio prueba equipos y materiales para garantizar que cumplan con las normas técnicas y regulaciones de seguridad requeridas por el Ministerio de Defensa de Colombia (incluidas las normas NTS y MINDEN).',
     tarotTitle: "TAROT INTERACTIVO",
+    tarotKunde: '<strong>Cliente:</strong><br/>Proyecto sin fines de lucro',
+    tarotLeistungen: '<strong>Tecnologías:</strong><br/>Frontend, Backend, Inteligencia Artificial, Hosting y Despliegue, Medios y Recursos',
+    tarotUebersicht: '<strong>Resumen:</strong><br/>Un módulo de tarot interactivo que combina un diseño web moderno con un backend potente en Vercel y la API de OpenAI. Permite interpretaciones de cartas generadas dinámicamente y adaptadas al idioma, y muestra una combinación precisa de interacción frontend, arquitectura sin servidor y análisis de texto impulsado por IA.',
+    mehrInformation: 'Más información',
+
+    //Joblab
+    joblabTitle1: 'RESUMEN Y PROPÓSITO DEL PROYECTO',
+    joblabContent1: '<strong>Presentando el Job Lab:</strong><br><br>Job Lab es un proyecto encargado por el DAAD (Servicio Alemán de Intercambio Académico), China, y desarrollado en estrecha colaboración con la Embajada de Alemania en Pekín y los Consulados Alemanes en Shanghái y Cantón. Su misión principal: informar a los estudiantes chinos del idioma alemán sobre las oportunidades del mercado laboral en Alemania, ofreciéndoles orientación práctica y recursos a través de una plataforma digital dedicada y eventos presenciales.',
+    joblabTitle2: 'PARTES INTERESADAS CLAVE Y COLABORACIONES',
+    joblabContent2: '<strong>Una red de socios internacionales:</strong><br><br>El Job Lab reunió a actores clave en educación internacional e intercambio cultural. Trabajando junto al DAAD, las representaciones extranjeras alemanas en Cantón, Shanghái y Pekín, el German Centre Shanghai, el German Centre Beijing, la AHK Greater China, Advantage Austria, el OeAD y el Goethe-Institut Beijing, creamos un entorno verdaderamente colaborativo. Los profesores del DAAD de toda China apoyaron los talleres, asegurando un programa integral y dirigido por expertos.',
+    joblabTitle3: 'DESARROLLO WEB Y ENFOQUE MULTILINGÜE',
+    joblabContent3: '<strong>Una red de socios internacionales:</strong><br><br>Diseñamos y desarrollamos un sitio web completamente bilingüe en alemán y chino. Esta plataforma sirvió como un centro de información, alojando detalles del mercado laboral, actualizaciones de eventos y recursos relevantes. Desde la gestión del alojamiento web y los dominios hasta la actualización continua del contenido del sitio, nos aseguramos de que la plataforma se mantuviera actualizada y valiosa para su diversa audiencia.',
+    joblabTitle4: 'OPTIMIZACIÓN MÓVIL Y WECHAT',
+    joblabContent4: '<strong>Rendimiento perfecto para usuarios móviles:</strong><br><br>Nuestra audiencia objetivo dependía en gran medida de los dispositivos móviles y WeChat. Construimos el sitio para que funcionara sin problemas en navegadores móviles, incluida una detección especial de JavaScript para WeChat. Este enfoque aseguró que los usuarios pudieran acceder cómodamente a la información justo donde pasan la mayor parte de su tiempo, lo que resulta en una experiencia de usuario personalizada y atractiva.',
+    joblabTitle5: 'BRANDING Y MATERIALES IMPRESOS',
+    joblabContent5: '<strong>Una identidad visual cohesiva:</strong><br><br>Más allá del ámbito digital, desarrollamos una fuerte identidad de marca. Esto incluyó el diseño del logotipo del proyecto, la creación de gráficos web llamativos y la producción de más de 20 carteles informativos para eventos de exhibición. Estos carteles, exhibidos en los eventos de Job Lab, proporcionaron a los visitantes información clara y estructurada sobre los mercados laborales, mejorando en última instancia el impacto educativo del proyecto.',
+    joblabTitle6: 'ÉXITO Y RECEPCIÓN DEL EVENTO',
+    joblabContent6: '<strong>Alta participación y comentarios positivos:</strong><br><br>Los eventos de Job Lab en Cantón, Shanghái y Pekín atrajeron a alrededor de 300 visitantes. Los asistentes participaron en discusiones animadas, hicieron preguntas reflexivas y permanecieron presentes durante todo el programa del día. Esta recepción entusiasta subrayó el valor del proyecto y sentó un fuerte precedente para la repetición anual, convirtiendo a Job Lab en una posible tradición continua.',
+
+    //Blancec
+    blancecTitle1: 'TRANSFORMANDO TU PRESENCIA EN LÍNEA',
+    blancecContent1: 'Modernizando BLANCEC S.A.S:<br><br>BLANCEC S.A.S, un laboratorio colombiano líder en pruebas de productos, necesitaba una actualización digital para servir mejor a los clientes. Rediseñamos su sitio web para un acceso más rápido, navegación intuitiva y una experiencia fluida, ayudando a los clientes a encontrar y solicitar fácilmente las pruebas que necesitan.',
+    blancecTitle2: 'RENDIMIENTO RÁPIDO COMO EL RAYO',
+    blancecContent2: 'Al reconstruir el sitio, mejoramos drásticamente los tiempos de carga. Los clientes ahora se mueven por las páginas al instante, reduciendo los tiempos de espera y mejorando la satisfacción general. Un sitio más rápido mantiene a los visitantes comprometidos y los anima a explorar más servicios.',
+    blancecTitle3: 'DISEÑO VISUAL Y BRANDING MEJORADOS',
+    blancecContent3: 'Un aspecto pulido y profesional:<br><br>Utilizando herramientas de diseño como Photoshop e Illustrator, refinamos los elementos visuales de la marca. Un logotipo más limpio, imágenes de encabezado dinámicas y un esquema de color cohesivo establecen una identidad de marca moderna y confiable, mejorando la credibilidad y la confianza del cliente.',
+    blancecTitle4: 'ANTES Y DESPUÉS: UNA MEJORA CLARA',
+    blancecContent4: 'Originalmente, los tiempos de carga lentos y una interfaz poco refinada obstaculizaban la experiencia del cliente. Hoy, el nuevo sitio web es rápido, intuitivo y visualmente atractivo. ¿El resultado? Una presencia digital acogedora que destaca la experiencia de BLANCEC S.A.S e inspira a los visitantes a actuar.',
 
     //Interaktives Tarot
     eineKarte: "Saca una carta",
@@ -191,7 +224,19 @@ const languagesContent = {
     tarotInstrucciones: "Instrucciones:",
     tarotInstrucciones2: "1. Formula una pregunta <br>2. Saca una carta o una triada<br>3. Voltea las cartas dandoles click<br>4. Presiona el botón consultar al oráculo.",
     paceHolder: "Escribe aquí tu pregunta al oráculo...",
-    preguntarOraculo: "Preguntar al oráculo"
+    preguntarOraculo: "Preguntar al oráculo",
+    
+    //Kontakt
+    heroTitle: "Contacto",
+    chooseUsTitle: "¡TRABAJEMOS JUNTOS!",
+    chooseUsText: "¿Buscas un desarrollador web dedicado para tu equipo o tu próximo proyecto?<br><br>Si necesitas apoyo para tu proyecto o estás buscando a alguien que asuma nuevas tareas de manera rápida y proactiva, estaré encantado de saber de ti y discutir cómo puedo apoyar mejor a tu equipo y ayudarte a alcanzar tus objetivos.",
+    impressumTitle: "AVISO LEGAL",
+    impressumText: "Representante legal: Wilmer Aderbert Florez Lopez <br>Calle 75 # 58-51 – 111211 Bogotá, Colombia<br>wilmerkopernikus@gmail.com<br>Registrado y legalmente representado en Bogotá, Colombia.<br>El IVA no es aplicable a las transacciones internacionales.",
+    formTitle: "CONTÁCTAME",
+    formNameLabel: "Tu nombre:",
+    formEmailLabel: "Tu correo electrónico:",
+    formMessageLabel: "Tu mensaje:",
+    formSubmit: "Enviar",
   }
 };
 
@@ -238,6 +283,27 @@ function applyLanguage(lang) {
 }
 
 
+// Función para detectar el idioma del navegador
+function detectBrowserLanguage() {
+  try {
+    // navigator.language devuelve códigos como "de-DE", "en-US", "es-ES"
+    const browserLang = navigator.language || navigator.userLanguage;
+    // Extraer solo el código principal (ej: "de" de "de-DE")
+    const langCode = browserLang.split('-')[0].toLowerCase();
+    
+    // Verificar si tenemos ese idioma disponible
+    if (languagesContent[langCode]) {
+      return langCode;
+    }
+    
+    // Si no tenemos el idioma, usar inglés como fallback
+    return 'en';
+  } catch (e) {
+    // En caso de error, devolver inglés
+    return 'en';
+  }
+}
+
 // Al cargar cada página
 document.addEventListener('DOMContentLoaded', () => {
   // 1) Intentar leer el idioma guardado
@@ -252,7 +318,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (savedLang && languagesContent[savedLang]) {
     currentLang = savedLang;
   } else {
-    currentLang = 'de'; // fallback
+    // Si no hay idioma guardado, detectar el idioma del navegador
+    currentLang = detectBrowserLanguage();
   }
 
   // 3) Aplicar idioma al cargar

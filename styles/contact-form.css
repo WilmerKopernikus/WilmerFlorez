@@ -8,6 +8,7 @@
 
   }
   
+  
   .form-group {
     display: flex;
     flex-direction: column;
@@ -41,8 +42,6 @@
     min-height: 50px;
   }
   
-  
-
   #button-cases {
     margin-left: 30px;
   }
@@ -62,6 +61,8 @@
     .contact-form {
       gap: 30px;
     }
+
+
 
     #message {
       resize: vertical;
