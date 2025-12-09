@@ -1,0 +1,29 @@
+{
+  "name": "Wilmer Florez Portfolio",
+  "short_name": "WF Portfolio",
+  "description": "Portfolio de Wilmer Florez - Desarrollador Web, Diseñador Gráfico y Artista Visual",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a0633",
+  "theme_color": "#581845",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/imagenes/Logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/imagenes/Logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "design", "development"],
+  "lang": "de",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}
