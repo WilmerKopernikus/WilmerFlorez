@@ -1,5 +1,17 @@
 # Guía de Desarrollo - Wilmer Florez Portfolio
 
+---
+
+## 📖 Idiomas / Languages / Sprachen
+
+- [Español](#español) (Línea 9)
+- [Deutsch](#deutsch) (Zeile 320)
+
+---
+
+<a name="español"></a>
+## ESPAÑOL
+
 ## Estructura del Proyecto
 
 Este portfolio utiliza HTML, CSS y JavaScript vanilla con optimizaciones de rendimiento.
@@ -311,3 +323,320 @@ sharp -i imagenes/logo.png -o imagenes/logo.webp -f webp -q 85
 - [ ] Implementar Critical CSS inline
 - [ ] CDN para assets estáticos
 - [ ] Considerar migración a Astro o Next.js
+
+---
+
+<a name="deutsch"></a>
+## DEUTSCH
+
+## Projektstruktur
+
+Dieses Portfolio verwendet HTML, CSS und Vanilla JavaScript mit Leistungsoptimierungen.
+
+## CSS- und JavaScript-Dateien
+
+### ⚠️ WICHTIG: Bearbeitung von Styles und Scripts
+
+**Bearbeiten Sie NIEMALS `.min.css`- oder `.min.js`-Dateien direkt**
+
+- **Quelldateien (editierbar):** `styles/*.css` und `scripts/*.js`
+- **Minifizierte Dateien (generiert):** `styles/*.min.css` und `scripts/*.min.js`
+- **HTML-Seiten laden:** `.min.css` und `.min.js`
+
+### Workflow für CSS-Bearbeitung:
+
+1. **Bearbeiten Sie die Original-CSS-Datei:**
+   ```bash
+   # Beispiel: styles/cards.css bearbeiten
+   ```
+
+2. **Regenerieren Sie die minifizierte Datei:**
+   ```powershell
+   # Option A: EINE spezifische Datei regenerieren
+   cd styles
+   cleancss -o cards.min.css cards.css
+   
+   # Option B: ALLE CSS-Dateien regenerieren
+   cd styles
+   Get-ChildItem -Filter "*.css" | Where-Object { $_.Name -notlike "*.min.css" } | ForEach-Object { 
+       $output = $_.Name -replace '\.css$', '.min.css'
+       cleancss -o $output $_.Name
+       Write-Host "✓ $($_.Name) -> $output"
+   }
+   ```
+
+3. **Testen Sie die Änderungen im Browser**
+
+### Workflow für JavaScript-Bearbeitung:
+
+1. **Bearbeiten Sie die Original-JavaScript-Datei:**
+   ```bash
+   # Beispiel: scripts/script.js bearbeiten
+   ```
+
+2. **Regenerieren Sie die minifizierte Datei:**
+   ```powershell
+   # Option A: EINE spezifische Datei regenerieren
+   cd scripts
+   terser script.js -c -m -o script.min.js
+   
+   # Option B: ALLE JavaScript-Dateien regenerieren
+   cd scripts
+   Get-ChildItem -Filter "*.js" | Where-Object { $_.Name -notlike "*.min.js" -and $_.Name -notlike "p5*.js" } | ForEach-Object { 
+       $output = $_.Name -replace '\.js$', '.min.js'
+       terser $_.Name -c -m -o $output
+       Write-Host "✓ $($_.Name) -> $output"
+   }
+   ```
+
+3. **Testen Sie die Änderungen im Browser**
+
+## Implementierte Optimierungen
+
+### 1. Videos mit Lazy Loading
+- Alle Videos verwenden `preload="metadata"` und `loading="lazy"`
+- Nur initiale Metadaten werden geladen (~50KB pro Video)
+- Vollständiges Video wird geladen, wenn der Benutzer scrollt
+
+### 2. Minifiziertes p5.js
+- `p5.min.js` (1 MB) statt `p5.js` (5 MB)
+- Geladen mit `defer` um Rendering nicht zu blockieren
+- 80% Größenreduzierung
+
+### 3. Minifiziertes CSS
+- 34,7% Größenreduzierung (43 KB → 28 KB)
+- Originaldateien für Entwicklung erhalten
+- Optimierte Cache-Header
+
+### 4. Minifiziertes JavaScript
+- 20,6% Größenreduzierung (50 KB → 40 KB)
+- 5 minifizierte Dateien: `languages_content.js`, `script.js`, `script-tarot.js`, `script-tarot-gpt.js`, `sketch_12.js`
+- Originaldateien für Entwicklung erhalten
+
+### 5. Service Worker und PWA
+- Intelligentes Caching statischer Ressourcen
+- Offline-Funktionalität
+- Differenzierte Cache-Strategien nach Ressourcentyp
+- Progressive Web App (installierbar auf Geräten)
+- Automatische Updates im Hintergrund
+
+## Benötigte Werkzeuge
+
+### Node.js und NPM
+```powershell
+node --version  # Sollte v14 oder höher sein
+npm --version
+```
+
+### Clean-CSS CLI (für CSS-Minifizierung)
+```powershell
+npm install -g clean-css-cli
+```
+
+### Terser (für JavaScript-Minifizierung)
+```powershell
+npm install -g terser
+```
+
+## Nützliche Befehle
+
+### Dateigrößen überprüfen
+```powershell
+# Videogröße anzeigen
+Get-ChildItem "imagenes/videos" -Filter *.mp4 | Select-Object Name, @{Name="MB";Expression={[math]::Round($_.Length/1MB,2)}}
+
+# Original vs. minifiziertes CSS vergleichen
+Get-ChildItem "styles" -Filter "*.css" | Select-Object Name, @{Name="KB";Expression={[math]::Round($_.Length/1KB,2)}}
+```
+
+### Alle minifizierten CSS-Dateien regenerieren
+```powershell
+cd styles
+Get-ChildItem -Filter "*.css" | Where-Object { $_.Name -notlike "*.min.css" } | ForEach-Object { 
+    cleancss -o ($_.Name -replace '\.css$', '.min.css') $_.Name
+}
+cd ..
+```
+
+### Alle minifizierten JavaScript-Dateien regenerieren
+```powershell
+cd scripts
+Get-ChildItem -Filter "*.js" | Where-Object { $_.Name -notlike "*.min.js" -and $_.Name -notlike "p5*.js" } | ForEach-Object { 
+    terser $_.Name -c -m -o ($_.Name -replace '\.js$', '.min.js')
+}
+cd ..
+```
+
+## Leistungsmetriken
+
+### Vor der Optimierung:
+- Videos: ~6 MB sofortige Ladung
+- p5.js: 5 MB
+- CSS: 43 KB
+- JavaScript: 50 KB
+- **Gesamt initial: ~11 MB**
+
+### Nach der Optimierung:
+- Videos: ~50 KB (nur Metadaten)
+- p5.min.js: 1 MB
+- Minifiziertes CSS: 28 KB
+- Minifiziertes JavaScript: 40 KB
+- **Gesamt initial: ~1,1 MB**
+
+**Verbesserung: ~90% schneller** 🚀
+
+## Automatische Spracherkennung
+
+Die Website erkennt automatisch die Browsersprache mit `navigator.language`:
+- Deutsch (de) → zeigt deutsche Inhalte
+- Englisch (en) → zeigt englische Inhalte
+- Andere Sprachen → Fallback auf Englisch
+
+Die Benutzereinstellung wird in `localStorage` gespeichert.
+
+## Deployment
+
+Beim Hochladen in die Produktion stellen Sie sicher, dass Sie Folgendes einschließen:
+- ✅ Alle `.min.css`-Dateien in `/styles/`
+- ✅ Alle `.min.js`-Dateien in `/scripts/`
+- ✅ `p5.min.js` in `/scripts/`
+- ✅ Aktualisierte HTML-Dateien mit Verweisen auf `.min.css` und `.min.js`
+
+## Service Worker und Cache
+
+### Was macht der Service Worker?
+
+Der Service Worker (`service-worker.js`) fängt Netzwerkanfragen ab und verwaltet den Cache intelligent:
+
+**Cache-Strategien nach Ressourcentyp:**
+
+1. **Cache First** (CSS, JS, Schriftarten):
+   - Sucht zuerst im Cache
+   - Wenn nicht vorhanden, lädt von Netzwerk und cached
+   - **Ergebnis:** Sofortiges Laden nach dem ersten Besuch
+
+2. **Network First** (HTML):
+   - Versucht zuerst Netzwerk
+   - Bei Fehler verwendet es Cache
+   - **Ergebnis:** Immer aktueller Inhalt, mit Offline-Fallback
+
+3. **Stale While Revalidate** (Bilder):
+   - Liefert sofort aus dem Cache
+   - Aktualisiert im Hintergrund
+   - **Ergebnis:** Sofortiges Laden + unsichtbare Aktualisierung
+
+4. **Network Only** (Videos):
+   - Kein Caching (zu groß)
+   - Immer vom Netzwerk
+
+### Service Worker-Verwaltung
+
+**Status in DevTools anzeigen:**
+```
+Chrome/Edge: F12 → Application → Service Workers
+Firefox: F12 → Application → Service Workers
+```
+
+**Cache manuell löschen (in Browser-Konsole):**
+```javascript
+clearSiteCache()
+```
+
+**Service Worker-Version aktualisieren:**
+1. Bearbeiten Sie `service-worker.js`
+2. Ändern Sie `CACHE_VERSION` (z.B.: `'wilmer-portfolio-v2'`)
+3. Der Browser erkennt die Änderung automatisch
+
+### Progressive Web App (PWA)
+
+Die Website ist jetzt eine installierbare PWA:
+
+- ✅ **Symbol auf dem Startbildschirm** (Mobil)
+- ✅ **Offline-Funktionalität**
+- ✅ **Splash-Screen** beim Öffnen
+- ✅ **Standalone-Modus** (ohne Browserleiste)
+
+**Zum Installieren:**
+- **Mobil:** "Zum Startbildschirm hinzufügen"
+- **Desktop:** Installationssymbol in der Adressleiste
+
+## Bildoptimierung (WebP)
+
+### Warum WebP?
+
+- **71% kleiner** als JPG/PNG (gleichwertige Qualität)
+- Unterstützt Transparenz wie PNG
+- Von allen modernen Browsern unterstützt
+- Automatisierte Konvertierung
+
+### Bilder in WebP konvertieren
+
+Sie haben bereits **57 konvertierte Bilder** (27 MB → 7,7 MB).
+
+**Um neue Bilder zu konvertieren:**
+
+```powershell
+# Automatische Konvertierung aller Bilder
+.\convert-to-webp.ps1
+
+# Das Skript:
+# - Findet alle JPG/PNG/JPEG in /imagenes/
+# - Erstellt .webp-Versionen (Qualität 85%)
+# - Behält Originale als Fallback
+# - Zeigt Speicherersparnis
+```
+
+### WebP in HTML verwenden
+
+**Muster mit automatischem Fallback:**
+
+```html
+<!-- Einfache Version -->
+<picture>
+  <source srcset="imagenes/logo.webp" type="image/webp">
+  <img src="imagenes/logo.png" alt="Logo" loading="lazy">
+</picture>
+
+<!-- Responsive Version -->
+<picture>
+  <source 
+    srcset="bild-klein.webp 480w, bild-groß.webp 1200w"
+    sizes="(max-width: 480px) 100vw, 800px"
+    type="image/webp">
+  <img src="bild-groß.jpg" alt="Beschreibung" loading="lazy">
+</picture>
+```
+
+**Wie es funktioniert:**
+1. Browser versucht zuerst WebP zu laden
+2. Wenn WebP nicht unterstützt wird, verwendet es Original JPG/PNG
+3. `loading="lazy"` wendet automatisches Lazy Loading an
+
+### Prioritäre Bilder zum Aktualisieren
+
+Die am häufigsten verwendeten auf der Website:
+- `imagenes/Logo.png` → Hauptlogo
+- `imagenes/joblab/Logo-JobLab.jpg` → 1,7 MB → 214 KB (87% Einsparung)
+- `imagenes/projects/*/` → Projektbilder
+- `imagenes/videos/*.jpg` → Video-Poster
+
+### WebP nach Bearbeitung regenerieren
+
+Wenn Sie ein Originalbild (JPG/PNG) bearbeiten, regenerieren Sie seine WebP-Version:
+
+```powershell
+# Alle regenerieren
+.\convert-to-webp.ps1
+
+# Oder manuell eine einzelne:
+sharp -i imagenes/logo.png -o imagenes/logo.webp -f webp -q 85
+```
+
+## Zukünftige Verbesserungen
+
+- [x] Service Worker für Offline-Cache ✅
+- [x] JPG/PNG-Bilder in WebP konvertieren ✅
+- [ ] HTML aktualisieren, um `<picture>`-Tags zu verwenden
+- [ ] Critical CSS inline implementieren
+- [ ] CDN für statische Assets
+- [ ] Migration zu Astro oder Next.js erwägen
