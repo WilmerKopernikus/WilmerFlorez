@@ -231,5 +231,22 @@ if (askOracleBtn) {
   askOracleBtn.addEventListener("click", preguntarAlOraculo);
 }
 
+// Asegurar que el textarea tenga un placeholder correcto y no valor inicial
+const tarotQuestionTextarea = document.getElementById("tarot-question");
+if (tarotQuestionTextarea) {
+  // Si hay texto que parece un placeholder en el value, moverlo al placeholder
+  if (tarotQuestionTextarea.value.trim() && !tarotQuestionTextarea.placeholder) {
+    tarotQuestionTextarea.placeholder = tarotQuestionTextarea.value;
+    tarotQuestionTextarea.value = "";
+  }
+  
+  // Limpiar el campo si contiene el texto del placeholder cuando recibe focus
+  tarotQuestionTextarea.addEventListener("focus", function() {
+    if (this.value === this.placeholder) {
+      this.value = "";
+    }
+  });
+}
+
 
 

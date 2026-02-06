@@ -64,7 +64,7 @@ const languagesContent = {
     eineTriade: "Eine Triade ziehen",
     tarotInstrucciones: "Anweisungen:",
     tarotInstrucciones2: "1. Formuliere eine Frage <br>2. Ziehe eine Karte oder eine Triade<br>3. Drehe die Karten durch Anklicken um<br>4. Drücke den Button, um das Orakel zu befragen.",
-    paceHolder: "Schreibe hier deine Frage an das Orakel...",
+    placeholder: "Schreibe hier deine Frage an das Orakel...",
     preguntarOraculo: "Das Orakel befragen",
 
     //Kontakt
@@ -144,7 +144,7 @@ const languagesContent = {
     eineTriade: "Draw a triad",
     tarotInstrucciones: "Instructions:",
     tarotInstrucciones2: "1. Formulate a question <br>2. Draw one card or a triad<br>3. Flip the cards by clicking on them<br>4. Press the button to consult the oracle.",
-    paceHolder: "Write your question to the oracle here...",
+    placeholder: "Write your question to the oracle here...",
     preguntarOraculo: "Ask the oracle",
 
     //Kontakt
@@ -223,7 +223,7 @@ const languagesContent = {
     eineTriade: "Saca una triada",
     tarotInstrucciones: "Instrucciones:",
     tarotInstrucciones2: "1. Formula una pregunta <br>2. Saca una carta o una triada<br>3. Voltea las cartas dandoles click<br>4. Presiona el botón consultar al oráculo.",
-    paceHolder: "Escribe aquí tu pregunta al oráculo...",
+    placeholder: "Escribe aquí tu pregunta al oráculo...",
     preguntarOraculo: "Preguntar al oráculo",
     
     //Kontakt
@@ -252,7 +252,13 @@ function applyLanguage(lang) {
     const value = dict[key];
     if (!value) return;
 
-    el.innerHTML = value;
+    // Si el elemento es input o textarea y el key sugiere placeholder, usar el atributo placeholder
+    if ((el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') && 
+        key.toLowerCase().includes('placeholder')) {
+      el.placeholder = value;
+    } else {
+      el.innerHTML = value;
+    }
   });
 
   // 2) Guardar idioma actual en la variable
