@@ -150,6 +150,12 @@ document.addEventListener("click", (e) => {
 
 // === Funciones para el oráculo con ChatGPT ===
 
+// Función helper para obtener textos traducidos del oráculo
+function getOracleText(key) {
+  const lang = window.currentLang || 'de';
+  return (languagesContent && languagesContent[lang] && languagesContent[lang][key]) || '';
+}
+
 // Pasar la última tirada a un array uniforme
 function getCardsArray() {
   if (lastDrawType === "one" && lastCards) {
@@ -171,12 +177,12 @@ async function preguntarAlOraculo() {
   const cardsArray = getCardsArray();
 
   if (!cardsArray.length) {
-    answerEl.textContent = "Primero realiza una tirada (una carta o triada).";
+    answerEl.textContent = getOracleText('oraculo_primero_tirada');
     return;
   }
 
   if (!question) {
-    answerEl.textContent = "Por favor escribe una pregunta para el oráculo.";
+    answerEl.textContent = getOracleText('oraculo_escribe_pregunta');
     return;
   }
 
@@ -185,7 +191,7 @@ async function preguntarAlOraculo() {
     position: "upright",
   }));
 
-  answerEl.textContent = "Consultando al oráculo...";
+  answerEl.textContent = getOracleText('oraculo_consultando');
 
   try {
 
@@ -206,9 +212,9 @@ async function preguntarAlOraculo() {
     if (!response.ok) {
       console.error("Error desde /api/tarot:", data);
       answerEl.textContent =
-        "Error del servidor: " +
-        (data.error || "El oráculo encontró un problema.") +
-        (data.details ? "\nDetalles: " + data.details : "");
+        getOracleText('oraculo_error_servidor') +
+        (data.error || getOracleText('oraculo_problema')) +
+        (data.details ? getOracleText('oraculo_detalles') + data.details : "");
       return;
     }
 
@@ -216,12 +222,11 @@ async function preguntarAlOraculo() {
       answerEl.textContent = data.answer;
     } else {
       console.error("Respuesta inesperada desde /api/tarot:", data);
-      answerEl.textContent =
-        "El oráculo guarda silencio por ahora (respuesta inesperada).";
+      answerEl.textContent = getOracleText('oraculo_silencio');
     }
   } catch (err) {
     console.error("Error en fetch /api/tarot:", err);
-    answerEl.textContent = "Hubo un error al hablar con el oráculo.";
+    answerEl.textContent = getOracleText('oraculo_error_hablar');
   }
 }
 

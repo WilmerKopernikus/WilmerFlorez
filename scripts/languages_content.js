@@ -66,6 +66,14 @@ const languagesContent = {
     tarotInstrucciones2: "1. Formuliere eine Frage <br>2. Ziehe eine Karte oder eine Triade<br>3. Drehe die Karten durch Anklicken um<br>4. Drücke den Button, um das Orakel zu befragen.",
     placeholder: "Schreibe hier deine Frage an das Orakel...",
     preguntarOraculo: "Das Orakel befragen",
+    oraculo_primero_tirada: "Ziehe zuerst eine Karte oder eine Triade.",
+    oraculo_escribe_pregunta: "Bitte schreibe eine Frage für das Orakel.",
+    oraculo_consultando: "Das Orakel wird befragt...",
+    oraculo_error_servidor: "Serverfehler: ",
+    oraculo_problema: "Das Orakel hat ein Problem gefunden.",
+    oraculo_detalles: "\nDetails: ",
+    oraculo_silencio: "Das Orakel schweigt im Moment (unerwartete Antwort).",
+    oraculo_error_hablar: "Es gab einen Fehler beim Sprechen mit dem Orakel.",
 
     //Kontakt
     heroTitle: 'KONTAKT',
@@ -146,6 +154,14 @@ const languagesContent = {
     tarotInstrucciones2: "1. Formulate a question <br>2. Draw one card or a triad<br>3. Flip the cards by clicking on them<br>4. Press the button to consult the oracle.",
     placeholder: "Write your question to the oracle here...",
     preguntarOraculo: "Ask the oracle",
+    oraculo_primero_tirada: "First perform a draw (one card or triad).",
+    oraculo_escribe_pregunta: "Please write a question for the oracle.",
+    oraculo_consultando: "Consulting the oracle...",
+    oraculo_error_servidor: "Server error: ",
+    oraculo_problema: "The oracle encountered a problem.",
+    oraculo_detalles: "\nDetails: ",
+    oraculo_silencio: "The oracle remains silent for now (unexpected response).",
+    oraculo_error_hablar: "There was an error communicating with the oracle.",
 
     //Kontakt
     heroTitle: 'CONTACT',
@@ -225,6 +241,14 @@ const languagesContent = {
     tarotInstrucciones2: "1. Formula una pregunta <br>2. Saca una carta o una triada<br>3. Voltea las cartas dandoles click<br>4. Presiona el botón consultar al oráculo.",
     placeholder: "Escribe aquí tu pregunta al oráculo...",
     preguntarOraculo: "Preguntar al oráculo",
+    oraculo_primero_tirada: "Primero realiza una tirada (una carta o triada).",
+    oraculo_escribe_pregunta: "Por favor escribe una pregunta para el oráculo.",
+    oraculo_consultando: "Consultando al oráculo...",
+    oraculo_error_servidor: "Error del servidor: ",
+    oraculo_problema: "El oráculo encontró un problema.",
+    oraculo_detalles: "\nDetalles: ",
+    oraculo_silencio: "El oráculo guarda silencio por ahora (respuesta inesperada).",
+    oraculo_error_hablar: "Hubo un error al hablar con el oráculo.",
     
     //Kontakt
     heroTitle: "Contacto",
