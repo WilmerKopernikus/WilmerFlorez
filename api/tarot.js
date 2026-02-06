@@ -85,13 +85,28 @@ export default async function handler(req, res) {
       });
     }
 
-    const { question, cards, drawType } = req.body || {};
+const { question, cards, drawType, language } = req.body || {};
+
+    const supportedLanguages = new Set(["de", "en", "es"]);
+    const normalizeLanguage = (value) => {
+      if (!value || typeof value !== "string") {
+        return null;
+      }
+      const code = value.split(",")[0].trim().split("-")[0].toLowerCase();
+      return supportedLanguages.has(code) ? code : null;
+    };
+
+    const userLang =
+      normalizeLanguage(language) ||
+      normalizeLanguage(req.headers["accept-language"]) ||
+      "en";
 
     const cardsDescription = (cards || [])
       .map((c) => `${c.name}${c.position ? " (" + c.position + ")" : ""}`)
       .join(", ");
 
-    const prompt = `
+    const promptTemplates = {
+      es: `
 Eres un oráculo de tarot sabio y empático.
 Responde basándote en las cartas y en la pregunta de la persona.
 No hagas predicciones absolutas ni promesas sobre salud, dinero o muerte.
@@ -101,9 +116,38 @@ Tipo de tirada: ${drawType || "desconocida"}
 Cartas extraídas: ${cardsDescription || "ninguna"}
 Pregunta de la persona: "${question || ""}"
 
-Detecta automáticamente el idioma de la pregunta y responde en ese mismo idioma.
+Responde estrictamente en español.
 Escribe 2–4 párrafos y termina con un consejo práctico concreto.
-    `.trim();
+ `.trim(),
+      en: `
+You are a wise and empathetic tarot oracle.
+Answer based on the cards and the person's question.
+Do not make absolute predictions or promises about health, money, or death.
+Offer symbolic, reflective guidance.
+
+Spread type: ${drawType || "unknown"}
+Cards drawn: ${cardsDescription || "none"}
+Person's question: "${question || ""}"
+
+Respond strictly in English.
+Write 2–4 paragraphs and end with one concrete, practical piece of advice.
+      `.trim(),
+      de: `
+Du bist ein weises und einfühlsames Tarot-Orakel.
+Antworte basierend auf den Karten und der Frage der Person.
+Gib keine absoluten Vorhersagen oder Versprechen zu Gesundheit, Geld oder Tod.
+Gib symbolische, reflektierende Orientierung.
+
+Legetyp: ${drawType || "unbekannt"}
+Gezogene Karten: ${cardsDescription || "keine"}
+Frage der Person: "${question || ""}"
+
+Antworte ausschließlich auf Deutsch.
+Schreibe 2–4 Absätze und ende mit einem konkreten, praktischen Rat.
+      `.trim(),
+    };
+
+    const prompt = promptTemplates[userLang];
 
     const openaiRes = await fetch("https://api.openai.com/v1/responses", {
       method: "POST",

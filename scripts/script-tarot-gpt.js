@@ -150,9 +150,18 @@ document.addEventListener("click", (e) => {
 
 // === Funciones para el oráculo con ChatGPT ===
 
+function getCurrentLang() {
+  if (typeof window !== "undefined" && window.currentLang) {
+    return window.currentLang;
+  }
+  if (typeof currentLang !== "undefined" && currentLang) {
+    return currentLang;
+  }
+  return "de";
+}
 // Función helper para obtener textos traducidos del oráculo
 function getOracleText(key) {
-  const lang = window.currentLang || 'de';
+  const lang = getCurrentLang();
   return (languagesContent && languagesContent[lang] && languagesContent[lang][key]) || '';
 }
 
@@ -204,6 +213,7 @@ async function preguntarAlOraculo() {
         question,
         cards,
         drawType: lastDrawType,
+        language: getCurrentLang(),
       }),
     });
 
@@ -244,9 +254,9 @@ if (tarotQuestionTextarea) {
     tarotQuestionTextarea.placeholder = tarotQuestionTextarea.value;
     tarotQuestionTextarea.value = "";
   }
-  
+
   // Limpiar el campo si contiene el texto del placeholder cuando recibe focus
-  tarotQuestionTextarea.addEventListener("focus", function() {
+  tarotQuestionTextarea.addEventListener("focus", function () {
     if (this.value === this.placeholder) {
       this.value = "";
     }

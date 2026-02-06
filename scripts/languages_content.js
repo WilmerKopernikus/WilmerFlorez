@@ -287,6 +287,9 @@ function applyLanguage(lang) {
 
   // 2) Guardar idioma actual en la variable
   currentLang = lang;
+    if (typeof window !== "undefined") {
+    window.currentLang = lang;
+  }
 
   // 3) Guardar idioma en localStorage para futuras páginas
   try {
