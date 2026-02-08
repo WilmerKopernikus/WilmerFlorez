@@ -1,34 +1,32 @@
 // === Generar la baraja ===
 const arcanosMayores = [
-  "El Loco", "El Mago", "La Sacerdotisa", "La Emperatriz", "El Emperador",
-  "El Sumo Sacerdote", "Los Enamorados", "El Carro", "La Fuerza", "El Ermitaño",
-  "La Rueda de la Fortuna", "La Justicia", "El Colgado", "La Muerte", "La Templanza", "El Diablo",
-  "La Torre", "La Estrella", "La Luna", "El Sol", "El Juicio", "El Mundo"
+  "0", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX",
+  "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXI"
 ];
 
 const imagenesCartas = {
-  "El Loco": "00.jpg",
-  "El Mago": "01.jpg",
-  "La Sacerdotisa": "02.jpg",
-  "La Emperatriz": "03.jpg",
-  "El Emperador": "04.jpg",
-  "El Sumo Sacerdote": "05.jpg",
-  "Los Enamorados": "06.jpg",
-  "El Carro": "07.jpg",
-  "La Fuerza": "08.jpg",
-  "El Ermitaño": "09.jpg",
-  "La Rueda de la Fortuna": "10.jpg",
-  "La Justicia": "11.jpg",
-  "El Colgado": "12.jpg",
-  "La Muerte": "13.jpg",
-  "La Templanza": "14.jpg",
-  "El Diablo": "15.jpg",
-  "La Torre": "16.jpg",
-  "La Estrella": "17.jpg",
-  "La Luna": "18.jpg",
-  "El Sol": "19.jpg",
-  "El Juicio": "20.jpg",
-  "El Mundo": "21.jpg",
+  "0": "00.png",
+  "I": "01.png",
+  "II": "02.png",
+  "III": "03.png",
+  "IV": "04.png",
+  "V": "05.png",
+  "VI": "06.png",
+  "VII": "07.png",
+  "VIII": "08.png",
+  "IX": "09.png",
+  "X": "10.png",
+  "XI": "11.png",
+  "XII": "12.png",
+  "XIII": "13.png",
+  "XIV": "14.png",
+  "XV": "15.png",
+  "XVI": "16.png",
+  "XVII": "17.png",
+  "XVIII": "18.png",
+  "XIX": "19.png",
+  "XX": "20.png",
+  "XXI": "21.png",
 };
 
 // === Funciones de sorteo ===
@@ -55,10 +53,16 @@ const resultado = document.getElementById("resultado");
 // Idioma actual del tarot (por defecto alemán)
 let currentTarotLang = "de";
 
-// Carpeta de cartas por idioma (AJUSTA ESTO A TUS RUTAS REALES)
+// Leer deck de la URL (?deck=tarot_surrealista)
+const urlParams = new URLSearchParams(window.location.search);
+const selectedDeck = urlParams.get("deck");
+
+// Carpeta de cartas — si viene por URL usa esa, si no usa el default
+const defaultFolder = "tarot_caravaggio";
 const tarotFolders = {
-  de: "tarot_deutsch",
-  en: "tarot_english",
+  de: selectedDeck || defaultFolder,
+  en: selectedDeck || defaultFolder,
+  es: selectedDeck || defaultFolder,
 };
 
 // Para recordar la última tirada

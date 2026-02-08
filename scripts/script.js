@@ -1,4 +1,4 @@
-window.onload = function() {
+﻿window.onload = function() {
     try {
         preloadAndSwapImage();
     } catch (error) {
@@ -154,4 +154,69 @@ document.fonts.ready.then(() => {
     });
   });
 
+// Efecto fade global - funciona con cualquier elemento que tenga clase .deck-fade
+document.addEventListener("DOMContentLoaded", function() {
+  var isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
 
+  function initDeckFade(deck) {
+    var images = deck.querySelectorAll('.deck-image');
+    var currentIndex = 0;
+    var intervalId = null;
+    var isActive = false;
+
+    function changeImage() {
+      images[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].classList.add('active');
+    }
+
+    function startFade() {
+      if (!intervalId) {
+        intervalId = setInterval(changeImage, 1500);
+      }
+    }
+
+    function stopFade() {
+      if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = null;
+        images[currentIndex].classList.remove('active');
+        currentIndex = 0;
+        images[currentIndex].classList.add('active');
+        isActive = false;
+      }
+    }
+
+    if (isTouchDevice) {
+      deck.addEventListener('click', function(ev) {
+        ev.stopPropagation();
+        isActive = !isActive;
+        isActive ? startFade() : stopFade();
+      });
+    } else {
+      deck.addEventListener('mouseenter', startFade);
+      deck.addEventListener('mouseleave', stopFade);
+    }
+
+    // Expose stopFade so the global click handler can call it
+    deck._stopFade = function() {
+      if (isActive) { stopFade(); }
+    };
+  }
+
+  var decks = document.querySelectorAll('.deck-fade');
+  for (var i = 0; i < decks.length; i++) {
+    initDeckFade(decks[i]);
+  }
+
+  // Single global listener to stop all fades when tapping outside
+  if (isTouchDevice) {
+    document.addEventListener('click', function(ev) {
+      for (var i = 0; i < decks.length; i++) {
+        if (!decks[i].contains(ev.target)) {
+          decks[i]._stopFade();
+        }
+      }
+    });
+  }
+});

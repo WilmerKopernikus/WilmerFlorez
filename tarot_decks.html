@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Tarot Interactivo con IA - Proyecto de Wilmer Florez">
+  <meta name="theme-color" content="#581845">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preload" as="image" href="tarot2/reverso.jpg">
+
+  <title>Wilmer Florez - Web Developer</title>
+  <link rel="preload" as="image" href="tarot2/reverso.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="styles/style-tarot.min.css">
+  <link rel="stylesheet" href="styles/tarot-decks.css">
+
+  <link rel="stylesheet" href="styles/cards_intro.min.css">
+  <link rel="stylesheet" href="styles/header_test.min.css">
+  <link rel="stylesheet" href="styles/cards.min.css">
+  <link rel="stylesheet" href="styles/images.min.css">
+  <link rel="stylesheet" href="styles/global-text.min.css">
+
+  <link rel="stylesheet" href="styles/languages_content.min.css">
+  <script src="scripts/languages_content.min.js" defer></script>
+  <script src="scripts/sw-register.js" defer></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="nav-container">
+        <a href="index.html">
+          <img src="imagenes/Logo.png" alt="Kopernikus Design Logo" class="header-logo">
+        </a>
+      </div>
+    </div>
+
+    <div class="hamburger-menu">
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="language-selector">
+      <input type="checkbox" id="langToggle" hidden />
+      <label for="langToggle" class="current-lang">DE ▼</label>
+      <ul class="language-options">
+        <li><button class="lang-button" data-lang="de">DE</button></li>
+        <li><button class="lang-button" data-lang="en">EN</button></li>
+        <li><button class="lang-button" data-lang="es">ES</button></li>
+      </ul>
+    </div>
+
+    <div class="menu-overlay" id="menuOverlay">
+      <ul>
+        <li>
+          <a href="index.html">
+            <img class="menu-icon" src="imagenes/svg/cubo.svg" alt="Startseite Icon">
+            <span data-i18n="menuIndex">Startseite</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="projekte.html">
+            <img class="menu-icon" src="imagenes/svg/cases.svg" alt="Projekte Icon">
+            <span data-i18n="menuProjekte">Projekte</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="docs/Lebenslauf.pdf" target="_blank">
+            <img class="menu-icon" src="imagenes/svg/lebenslauf.svg" alt="Lebenslauf Icon">
+            <span data-i18n="menuCV">Lebenslauf</span>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="kontakt.html">
+            <img class="menu-icon" src="imagenes/svg/contact.svg" alt="Kontakt Icon">
+            <span data-i18n="menuKontakt">Kontakt</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <h2 class="title" data-i18n="tarotTitle">TAROT INTERACTIVO</h2>
+
+    <div id="tarot-section">
+      <h3 data-i18n="tarotInstrucciones">Instrucciones:</h3>
+      <p class="oraculo-texto" data-i18n="seleccionaBaraja">
+        Escoge una baraja <br>
+      </p>
+
+      <div class="tarot-decks-grid">
+        <div class="deck-card deck-fade" data-deck="deck1">
+          <div class="fade-container">
+            <div class="deck-image active" style="background-image: url('tarot_surrealista/00.png')"></div>
+            <div class="deck-image" style="background-image: url('tarot_surrealista/01.png')"></div>
+            <div class="deck-image" style="background-image: url('tarot_surrealista/02.png')"></div>
+            <div class="deck-image" style="background-image: url('tarot_surrealista/03.png')"></div>
+            <div class="deck-image" style="background-image: url('tarot_surrealista/04.png')"></div>
+            <div class="deck-image" style="background-image: url('tarot_surrealista/05.png')"></div>
+          </div>
+        </div>
+        <div class="deck-card deck-fade" data-deck="deck2">
+          <div class="fade-container">
+            <div class="deck-image active" style="background-image: url('tarot_caravaggio/00.png')"></div>
+            <div class="deck-image" style="background-image: url('tarot_caravaggio/01.png')"></div>
+            <div class="deck-image" style="background-image: url('tarot_caravaggio/02.png')"></div>
+            <div class="deck-image" style="background-image: url('tarot_caravaggio/03.png')"></div>
+            <div class="deck-image" style="background-image: url('tarot_caravaggio/04.png')"></div>
+            <div class="deck-image" style="background-image: url('tarot_caravaggio/05.png')"></div>
+          </div>
+        </div>
+        <div class="deck-card deck-fade" data-deck="deck3">
+          <div class="fade-container">
+            <div class="deck-image active" style="background-image: url('tarot_dada/00.png')"></div>
+            <div class="deck-image" style="background-image: url('tarot_dada/01.png')"></div>
+            <div class="deck-image" style="background-image: url('tarot_dada/02.png')"></div>
+            <div class="deck-image" style="background-image: url('tarot_dada/03.png')"></div>
+            <div class="deck-image" style="background-image: url('tarot_dada/04.png')"></div>
+            <div class="deck-image" style="background-image: url('tarot_dada/05.png')"></div>
+          </div>
+        </div>
+        <div class="deck-card deck-fade" data-deck="deck4">
+          <div class="fade-container">
+            <div class="deck-image active" style="background-image: url('tarot_munch/00.webp')"></div>
+            <div class="deck-image" style="background-image: url('tarot_munch/01.webp')"></div>
+            <div class="deck-image" style="background-image: url('tarot_munch/02.webp')"></div>
+            <div class="deck-image" style="background-image: url('tarot_munch/03.webp')"></div>
+            <div class="deck-image" style="background-image: url('tarot_munch/04.webp')"></div>
+            <div class="deck-image" style="background-image: url('tarot_munch/05.webp')"></div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <script src="scripts/script-tarot-gpt.min.js"></script>
+    <script src="scripts/script.min.js"></script>
+    <script>
+      // Mapear cada data-deck a su carpeta real
+      const deckFolderMap = {
+        deck1: "tarot_surrealista",
+        deck2: "tarot_caravaggio",
+        deck3: "tarot_dada",
+        deck4: "tarot_munch",
+      };
+
+      document.querySelectorAll(".deck-card").forEach(card => {
+        card.addEventListener("click", () => {
+          const deckKey = card.getAttribute("data-deck");
+          const folder = deckFolderMap[deckKey];
+          if (folder) {
+            window.location.href = `tarot.html?deck=${folder}`;
+          }
+        });
+      });
+    </script>
+</body>
+</html>

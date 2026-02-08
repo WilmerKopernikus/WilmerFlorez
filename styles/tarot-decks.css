@@ -1,0 +1,82 @@
+﻿/* Tarot Decks Grid Styles */
+
+.tarot-decks-grid {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.deck-card {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.deck-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.deck-image {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  background-color: #3a3a3a;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+/* Mobile: 1 imagen por fila */
+@media (max-width: 767px) {
+  .tarot-decks-grid {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Tablet: 2 imágenes por fila */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tarot-decks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop: 3 imágenes por fila */
+@media (min-width: 1024px) {
+  .tarot-decks-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* Efecto fade para deck1 */
+.deck-fade {
+  position: relative;
+}
+
+.fade-container {
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+}
+
+.deck-fade .deck-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.deck-fade .deck-image:first-child {
+  position: relative;
+}
+
+.deck-fade .deck-image.active {
+  opacity: 1;
+  z-index: 1;
+}
