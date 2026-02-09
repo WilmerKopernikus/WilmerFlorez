@@ -38,7 +38,7 @@ body {
 }
 
 .card-inner {
-  width: 340px;
+  width: 500px;
   height: auto;
   aspect-ratio: 2 / 3;
   position: relative;

@@ -85,7 +85,7 @@ function crearCartaHTML(nombreCarta) {
           <img src="${folder}/${nombreArchivo}" alt="${nombreCarta}">
         </div>
         <div class="card-side card-back">
-          <img src="imagenes/reverso.jpg" alt="Reverso">
+          <img src="${folder}/reverso.png" alt="Reverso">
         </div>
       </div>
     </div>
