@@ -16,6 +16,15 @@
   overflow: hidden;
 }
 
+.deck-label {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: #f0f0f0;
+  letter-spacing: 0.05em;
+}
+
 .deck-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
