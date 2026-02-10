@@ -115,19 +115,25 @@ function agregarVolteo() {
 }
 
 // Botones de tarot
-document.getElementById("una-carta").addEventListener("click", () => {
-  const carta = sacarUnaCarta();
-  lastDrawType = "one";
-  lastCards = carta;
-  renderUnaCarta(carta);
-});
+const unaCartaBtn = document.getElementById("una-carta");
+if (unaCartaBtn) {
+  unaCartaBtn.addEventListener("click", () => {
+    const carta = sacarUnaCarta();
+    lastDrawType = "one";
+    lastCards = carta;
+    renderUnaCarta(carta);
+  });
+}
 
-document.getElementById("triada").addEventListener("click", () => {
-  const cartas = sacarTriada();
-  lastDrawType = "triad";
-  lastCards = cartas;
-  renderTriada(cartas);
-});
+const triadaBtn = document.getElementById("triada");
+if (triadaBtn) {
+  triadaBtn.addEventListener("click", () => {
+    const cartas = sacarTriada();
+    lastDrawType = "triad";
+    lastCards = cartas;
+    renderTriada(cartas);
+  });
+}
 
 // Conectar cambios de idioma al tarot (delegación por si se recrean botones)
 document.addEventListener("click", (e) => {
