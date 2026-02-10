@@ -12,6 +12,8 @@
   <link rel="preload" as="image" href="tarot2/reverso.jpg">
 
   <title>Wilmer Florez - Web Developer</title>
+  <script defer src="scripts/p5.min.js"></script>
+  <script defer src="sketch.js"></script>
   <link rel="preload" as="image" href="tarot2/reverso.jpg" fetchpriority="high">
   <link rel="stylesheet" href="styles/style-tarot.min.css">
   <link rel="stylesheet" href="styles/tarot-decks.css">
@@ -29,6 +31,7 @@
 </head>
 
 <body>
+  <div id="sketch-container"></div>
   <div class="container">
     <div class="header">
       <div class="nav-container">
@@ -90,10 +93,12 @@
     <h2 class="title" data-i18n="tarotTitle">TAROT INTERACTIVO</h2>
 
     <div id="tarot-section">
-      <h3 data-i18n="tarotInstrucciones">Instrucciones:</h3>
-      <p class="oraculo-texto" data-i18n="seleccionaBaraja">
-        Escoge una baraja <br>
-      </p>
+      <div class="tarot-instructions-box">
+        <h3 data-i18n="tarotInstrucciones">Instrucciones:</h3>
+        <p class="oraculo-texto" data-i18n="seleccionaBaraja">
+          Escoge una baraja <br>
+        </p>
+      </div>
 
       <div class="tarot-decks-grid">
         <div class="deck-card deck-fade" data-deck="deck1">

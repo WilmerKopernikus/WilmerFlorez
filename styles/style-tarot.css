@@ -1,32 +1,56 @@
 body {
-
-
     color: #f0f0f0;
     text-align: center;
     padding: 1.5rem;
     padding-top: 90px;
   }
   
-  .tarot-button {
+  .tarot-instructions-box {
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    backdrop-filter: blur(4px);
+  }
 
-    padding: 15px 20px;
+  .tarot-instructions-box h3 {
+    font-size: 1.5rem;
+  }
+
+  .tarot-button {
+    width: 200px;
+    padding: 15px;
     margin: 10px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
-    background-color: #780f0f;
-    color: white;
-    transition: background 0.3s;
+    border-radius: 30px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    box-shadow: 
+      0 0 8px rgba(255, 255, 0, 0.8),
+      0 0 15px rgba(255, 165, 0, 0.7),
+      0 0 20px rgba(255, 0, 0, 0.6);
+    transition: box-shadow 0.3s ease;
   }
   
   .tarot-button:hover {
-    background-color: #ff2600;
+    box-shadow: 
+      0 0 12px rgba(255, 255, 0, 1),
+      0 0 20px rgba(255, 165, 0, 0.9),
+      0 0 25px rgba(255, 0, 0, 0.8);
   }
   
   #resultado {
     margin-top: 1rem;
     font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
   }
   
  /* --- CARTAS TAROT --- */
@@ -38,7 +62,7 @@ body {
 }
 
 .card-inner {
-  width: 500px;
+  width: 350px;
   height: auto;
   aspect-ratio: 2 / 3;
   position: relative;
@@ -78,11 +102,24 @@ body {
 }
 
 /* --- RESPONSIVE --- */
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .card-inner {
+    width: 280px;
+  }
+}
+
+/* Móviles */
 @media screen and (max-width: 750px) {
   .card-inner {
-    width: 60vw;        /* más pequeña que antes */
+    width: 70vw;
     height: auto;
     aspect-ratio: 2 / 3;
+  }
+
+  #resultado {
+    flex-direction: column;
+    align-items: center;
   }
 
   .tarot-card {
@@ -106,6 +143,8 @@ body {
 .oraculo-texto {
   max-width: 700px;
   margin: 0 auto 0.5rem;
+  font-size: 1.15rem;
+  line-height: 1.6;
 }
 
 /* Textarea: ancho y alto */
@@ -114,7 +153,9 @@ body {
   max-width: 700px;    /* ancho máximo en pixeles */
   min-height: 120px;   /* "alto" mínimo */
   padding: 0.75rem;
-  font-size: 0.9rem;
+  font-size: 1.15rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   border-radius: 8px;
   border: 1px solid #ccc;
   resize: vertical;    /* permite al usuario estirar hacia abajo */
@@ -139,7 +180,8 @@ body {
 #oracle-answer {
   margin: 1.5rem auto 0;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.7;
+  font-size: 1.15rem;
   width: 50%;        /* 50% en pantallas grandes */
 }
 
@@ -147,6 +189,16 @@ body {
 @media screen and (max-width: 1024px) {
   #oracle-answer {
     width: 70%;
+    font-size: 1.1rem;
+  }
+  .oraculo-texto {
+    font-size: 1.1rem;
+  }
+  .tarot-instructions-box h3 {
+    font-size: 1.35rem;
+  }
+  .tarot-button {
+    font-size: 0.95rem;
   }
 }
 
@@ -154,5 +206,18 @@ body {
 @media screen and (max-width: 750px) {
   #oracle-answer {
     width: 90%;
+    font-size: 1rem;
+  }
+  .oraculo-texto {
+    font-size: 1rem;
+  }
+  .tarot-instructions-box h3 {
+    font-size: 1.2rem;
+  }
+  .tarot-button {
+    font-size: 0.9rem;
+  }
+  #tarot-question {
+    font-size: 0.95rem;
   }
 }

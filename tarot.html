@@ -12,6 +12,8 @@
   <link rel="preload" as="image" href="tarot2/reverso.jpg">
 
   <title>Wilmer Florez - Web Developer</title>
+  <script defer src="scripts/p5.min.js"></script>
+  <script defer src="sketch.js"></script>
   <link rel="preload" as="image" href="tarot2/reverso.jpg" fetchpriority="high">
   <link rel="stylesheet" href="styles/style-tarot.min.css">
 
@@ -28,6 +30,7 @@
 </head>
 
 <body>
+  <div id="sketch-container"></div>
   <div class="container">
     <div class="header">
       <div class="nav-container">
@@ -89,14 +92,16 @@
     <h2 class="title" data-i18n="tarotTitle">TAROT INTERACTIVO</h2>
 
     <div id="tarot-section">
-      <h3 data-i18n="tarotInstrucciones">Instrucciones:</h3>
-      <p class="oraculo-texto" data-i18n="tarotInstrucciones2">
-        1. Formula una pregunta <br>
-        2. Saca una carta o una triada<br>
-        3. Voltea las cartas dandoles click<br>
-        4. Presiona el botón consultar al oráculo.
+      <div class="tarot-instructions-box">
+        <h3 data-i18n="tarotInstrucciones">Instrucciones:</h3>
+        <p class="oraculo-texto" data-i18n="tarotInstrucciones2">
+          1. Formula una pregunta <br>
+          2. Saca una carta o una triada<br>
+          3. Voltea las cartas dandoles click<br>
+          4. Presiona el botón consultar al oráculo.
 
-      </p>
+        </p>
+      </div>
 
       <!-- 1. La pregunta, ARRIBA -->
       <textarea id="tarot-question" rows="3" data-i18n="placeholder" placeholder="Escribe aquí tu pregunta al oráculo..."></textarea>

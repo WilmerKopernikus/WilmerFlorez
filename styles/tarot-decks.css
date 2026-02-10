@@ -1,5 +1,12 @@
 ﻿/* Tarot Decks Grid Styles */
 
+.deck-label {
+  background: rgba(0, 0, 0, 0.753);
+  border-radius: 8px;
+  padding: 0.3rem 0.6rem;
+  display: inline-block;
+}
+
 .tarot-decks-grid {
   display: grid;
   gap: 2rem;
@@ -23,11 +30,12 @@
   margin: 0 0 0.5rem;
   color: #f0f0f0;
   letter-spacing: 0.05em;
+  width: 100%;
 }
 
 .deck-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 20px rgb(0, 0, 0);
 }
 
 .deck-image {
