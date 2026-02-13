@@ -69,6 +69,7 @@ const languagesContent = {
     deckBarroca: "Barockes Deck",
     deckDadaista: "Dadaistisches Deck",
     deckBacon: "Expressionistisches Deck",
+    deckGiger: "Postapokalyptisches Deck",
     placeholder: "Schreibe hier deine Frage an das Orakel...",
     preguntarOraculo: "Das Orakel befragen",
     oraculo_primero_tirada: "Ziehe zuerst eine Karte oder eine Triade.",
@@ -162,6 +163,7 @@ const languagesContent = {
     deckBarroca: "Baroque Deck",
     deckDadaista: "Dadaist Deck",
     deckBacon: "Expressionist Deck",
+    deckGiger: "Postapocalyptic Deck",
     placeholder: "Write your question to the oracle here...",
     preguntarOraculo: "Ask the oracle",
     oraculo_primero_tirada: "First perform a draw (one card or triad).",
@@ -254,6 +256,7 @@ const languagesContent = {
     deckBarroca: "Baraja Barroca",
     deckDadaista: "Baraja Dada\u00edsta",
     deckBacon: "Baraja Expresionista",
+    deckGiger: "Baraja postapocalíptica",
     placeholder: "Escribe aquí tu pregunta al oráculo...",
     preguntarOraculo: "Preguntar al oráculo",
     oraculo_primero_tirada: "Primero realiza una tirada (una carta o triada).",
@@ -379,6 +382,9 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const lang = btn.dataset.lang;
       applyLanguage(lang);
+      // Ocultar el menú de idiomas tras seleccionar
+      const langToggle = document.getElementById('langToggle');
+      if (langToggle) langToggle.checked = false;
     });
   });
 });

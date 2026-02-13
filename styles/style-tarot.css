@@ -140,6 +140,13 @@ body[data-deck="tarot_bacon"] .card-numeral {
   padding-top: 0.5rem;
   text-shadow: #000000 0.1em 0.1em 0.2em, #000000 0.15em 0.15em 0.3em;
 }
+body[data-deck="tarot_giger"] .card-numeral {
+color:#302e26;
+}
+body[data-deck="tarot_giger"] .card-title {
+color:#20211b;
+bottom: 0.7rem;
+}
 
 .card-inner {
   width: 350px;
