@@ -54,11 +54,91 @@ body {
   }
   
  /* --- CARTAS TAROT --- */
+
 .tarot-card {
   perspective: 1000px;
   display: inline-block;
   margin: 1rem;
   cursor: pointer;
+}
+
+/* Nombre de la carta sobre la imagen (parte inferior) */
+.card-name {
+  display: none;
+}
+
+.card-numeral {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0.6rem 0.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 0.1em;
+  opacity: 0;
+  transition: opacity 0.5s ease 0.4s;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0.6rem 0.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0;
+  transition: opacity 0.5s ease 0.4s;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.tarot-card.flipped .card-numeral,
+.tarot-card.flipped .card-title {
+  opacity: 1;
+}
+
+
+body[data-deck="tarot_surrealista"] .card-title {
+  bottom: 0.35rem;
+}
+
+body[data-deck="tarot_surrealista"] .card-numeral {
+    font-size: 0.9rem;
+    padding-top: 0.2rem;
+}
+
+body[data-deck="tarot_dada"] .card-title {
+  font-size: 1.2rem;
+  bottom: 1.2rem;
+}
+
+body[data-deck="tarot_dada"] .card-numeral {
+  font-size: 1.7rem;
+}
+
+body[data-deck="tarot_bacon"] .card-title {
+  font-size: 1.5rem;
+  bottom: 0.55rem;
+  color: #e1cdb5;
+  text-shadow: #000000 0.1em 0.1em 0.2em, #000000 0.15em 0.15em 0.3em;
+}
+body[data-deck="tarot_bacon"] .card-numeral {
+  font-size: 2rem;
+  color: #ecd8c3;
+  padding-top: 0.5rem;
+  text-shadow: #000000 0.1em 0.1em 0.2em, #000000 0.15em 0.15em 0.3em;
 }
 
 .card-inner {
@@ -102,19 +182,11 @@ body {
 }
 
 /* --- RESPONSIVE --- */
-/* Tablets */
-@media screen and (max-width: 1024px) {
-  .card-inner {
-    width: 280px;
-  }
-}
 
 /* Móviles */
 @media screen and (max-width: 750px) {
   .card-inner {
-    width: 96vw;
-    height: auto;
-    aspect-ratio: 2 / 3;
+    width: min(350px, 96vw);
   }
 
   #resultado {
@@ -127,8 +199,9 @@ body {
   }
 
   .tarot-card {
-    margin: 0.5rem 0;
-    display: block;
+    margin: 0.5rem auto;
+    display: flex;
+    justify-content: center;
     width: 100%;
   }
 

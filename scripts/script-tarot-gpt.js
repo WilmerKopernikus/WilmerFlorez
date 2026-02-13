@@ -29,6 +29,89 @@ const imagenesCartas = {
   "XXI": "21.png",
 };
 
+// === Nombres de los Arcanos Mayores en cada idioma ===
+const tarotCardNames = {
+  de: {
+    "0": "Der Narr",
+    "I": "Der Magier",
+    "II": "Die Hohepriesterin",
+    "III": "Die Herrscherin",
+    "IV": "Der Herrscher",
+    "V": "Der Hierophant",
+    "VI": "Die Liebenden",
+    "VII": "Der Wagen",
+    "VIII": "Die Kraft",
+    "IX": "Der Eremit",
+    "X": "Rad des Schicksals",
+    "XI": "Die Gerechtigkeit",
+    "XII": "Der Gehängte",
+    "XIII": "Der Tod",
+    "XIV": "Die Mäßigkeit",
+    "XV": "Der Teufel",
+    "XVI": "Der Turm",
+    "XVII": "Der Stern",
+    "XVIII": "Der Mond",
+    "XIX": "Die Sonne",
+    "XX": "Das Gericht",
+    "XXI": "Die Welt"
+  },
+  en: {
+    "0": "The Fool",
+    "I": "The Magician",
+    "II": "The High Priestess",
+    "III": "The Empress",
+    "IV": "The Emperor",
+    "V": "The Hierophant",
+    "VI": "The Lovers",
+    "VII": "The Chariot",
+    "VIII": "Strength",
+    "IX": "The Hermit",
+    "X": "Wheel of Fortune",
+    "XI": "Justice",
+    "XII": "The Hanged Man",
+    "XIII": "Death",
+    "XIV": "Temperance",
+    "XV": "The Devil",
+    "XVI": "The Tower",
+    "XVII": "The Star",
+    "XVIII": "The Moon",
+    "XIX": "The Sun",
+    "XX": "Judgement",
+    "XXI": "The World"
+  },
+  es: {
+    "0": "El Loco",
+    "I": "El Mago",
+    "II": "La Sacerdotisa",
+    "III": "La Emperatriz",
+    "IV": "El Emperador",
+    "V": "El Hierofante",
+    "VI": "Los Enamorados",
+    "VII": "El Carro",
+    "VIII": "La Fuerza",
+    "IX": "El Ermitaño",
+    "X": "La Rueda de la Fortuna",
+    "XI": "La Justicia",
+    "XII": "El Colgado",
+    "XIII": "La Muerte",
+    "XIV": "La Templanza",
+    "XV": "El Diablo",
+    "XVI": "La Torre",
+    "XVII": "La Estrella",
+    "XVIII": "La Luna",
+    "XIX": "El Sol",
+    "XX": "El Juicio",
+    "XXI": "El Mundo"
+  }
+};
+
+// Obtener el nombre de la carta en el idioma actual
+function getCardName(cardKey) {
+  const lang = getCurrentLang();
+  const names = tarotCardNames[lang] || tarotCardNames.de;
+  return names[cardKey] || cardKey;
+}
+
 // === Funciones de sorteo ===
 function sacarUnaCarta() {
   const indice = Math.floor(Math.random() * arcanosMayores.length);
@@ -65,6 +148,9 @@ const tarotFolders = {
   es: selectedDeck || defaultFolder,
 };
 
+// Set data-deck attribute on body for deck-specific CSS
+document.body.dataset.deck = selectedDeck || defaultFolder;
+
 // Para recordar la última tirada
 let lastDrawType = null;  // "one" | "triad" | null
 let lastCards = null;     // string | string[]
@@ -74,6 +160,8 @@ function crearCartaHTML(nombreCarta) {
   const nombreArchivo = imagenesCartas[nombreCarta] || "reverse.webp";
   const cartaId = `carta-${Math.random().toString(36).substr(2, 9)}`;
   const folder = tarotFolders[currentTarotLang] || tarotFolders.de;
+  const cardName = getCardName(nombreCarta);
+  const romanNumeral = nombreCarta;
 
   // Debug: ver en consola qué carpeta está usando
   console.log("Usando carpeta:", folder, "para carta:", nombreCarta);
@@ -83,6 +171,8 @@ function crearCartaHTML(nombreCarta) {
       <div class="card-inner">
         <div class="card-side card-front">
           <img src="${folder}/${nombreArchivo}" alt="${nombreCarta}">
+          <span class="card-numeral">${romanNumeral}</span>
+          <span class="card-title">${cardName}</span>
         </div>
         <div class="card-side card-back">
           <img src="${folder}/reverso.png" alt="Reverso">
