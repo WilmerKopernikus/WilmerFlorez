@@ -147,6 +147,11 @@ body[data-deck="tarot_giger"] .card-title {
 color:#20211b;
 bottom: 0.7rem;
 }
+body[data-deck="tarot_bosch"] .card-numeral {
+color:#1e1a0f;
+    font-size: 1.3rem;
+    padding-top: 0.3rem;
+}
 
 .card-inner {
   width: 350px;
