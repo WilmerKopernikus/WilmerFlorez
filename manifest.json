@@ -9,16 +9,10 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/imagenes/Logo.png",
-      "sizes": "192x192",
+      "src": "/imagenes/logo.png",
+      "sizes": "624x69",
       "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/imagenes/Logo.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ],
   "categories": ["portfolio", "design", "development"],
