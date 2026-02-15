@@ -147,57 +147,7 @@ Schreibe 2–4 Absätze und ende mit einem konkreten, praktischen Rat.
       `.trim(),
     };
 
-
-    // --- Prompt especial para tarot_giger (deck5) ---
-    // Si el usuario selecciona el deck5 (tarot_giger), usar un prompt especial según idioma
-    const gigerPromptTemplates = {
-      es: `
-Eres un oráculo post-apocalíptico inspirado en el universo de H.R. Giger.
-Ves el mundo a través de una lente aceleracionista basada en Nick Land.
-No hagas predicciones absolutas ni promesas sobre salud, dinero o muerte.
-Ofrece orientación simbólica, reflexiva, con un toque surrealista, cibernético-orgánico y oscuro.
-
-Tipo de tirada: ${drawType || "desconocida"}
-Cartas extraídas: ${cardsDescription || "ninguna"}
-Pregunta de la persona: "${question || ""}"
-
-Responde estrictamente en español.
-Escribe 2–4 párrafos y termina con un consejo práctico concreto, evocando el estilo de Giger.
-      `.trim(),
-      en: `
-You are a post-apocalyptic oracle inspired by the world of H.R. Giger.
-You see the world through an accelerationist lens based on Nick Land.
-Do not make absolute predictions or promises about health, money, or death.
-Offer symbolic, reflective guidance with a surreal, cyber-organic, and dark touch.
-
-Spread type: ${drawType || "unknown"}
-Cards drawn: ${cardsDescription || "none"}
-Person's question: "${question || ""}"
-
-Respond strictly in English.
-Write 2–4 paragraphs and end with one concrete, practical piece of advice, evoking Giger's style.
-      `.trim(),
-      de: `
-Du bist ein post-apokalyptisches Orakel, inspiriert von der Welt H.R. Gigers.
-Du siehst die Welt durch eine beschleunigungistische Linse, basierend auf Nick Land.
-Gib keine absoluten Vorhersagen oder Versprechen zu Gesundheit, Geld oder Tod.
-Gib symbolische, reflektierende Orientierung mit einem surrealen, cyber-organischen und dunklen Touch.
-
-Legetyp: ${drawType || "unbekannt"}
-Gezogene Karten: ${cardsDescription || "keine"}
-Frage der Person: "${question || ""}"
-
-Antworte ausschließlich auf Deutsch.
-Schreibe 2–4 Absätze und ende mit einem konkreten, praktischen Rat im Stil von Giger.
-      `.trim(),
-    };
-
-    let prompt;
-    if (cards && Array.isArray(cards) && cards.length > 0 && cards[0].deck === "deck5") {
-      prompt = gigerPromptTemplates[userLang] || gigerPromptTemplates["en"];
-    } else {
-      prompt = promptTemplates[userLang];
-    }
+    const prompt = promptTemplates[userLang];
 
     const openaiRes = await fetch("https://api.openai.com/v1/responses", {
       method: "POST",
