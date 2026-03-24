@@ -504,7 +504,7 @@
   }
 
   #cases{
-    grid-template-rows: 60% 40%;
+    grid-template-rows: 50% 50%;
   }
 
 }
