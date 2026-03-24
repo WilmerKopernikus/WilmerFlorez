@@ -337,7 +337,7 @@ a {
     font-size: 1.5rem;
     margin-left: 50px;
     padding: 20px;
-    min-width: 300px;
+    min-width: 160px;
   }
 }
 
@@ -372,7 +372,7 @@ a {
   .send-button{
     font-size: 1.4rem;
     margin-left: 30px;
-    min-width: 280px;
+    min-width: 100px;
   }
 }
 
@@ -416,7 +416,7 @@ a {
     font-size: 1rem;
     margin-left: 20px;
     padding: 10px;
-    min-width: 200px;
+    min-width: 140px;
     
   }
 
@@ -458,9 +458,10 @@ a {
 
   
   .send-button {
-    font-size: 0.8rem;
-    padding: 10px;
-    min-width: 150px;
+    font-size: 0.7rem;
+    padding: 5px;
+    width: auto;
+    height: auto;
     
   }
 
