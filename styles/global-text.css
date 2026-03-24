@@ -357,10 +357,10 @@ a {
   }
 
   .text-new {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     line-height: 1.3;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   
   #title-small {
@@ -405,10 +405,10 @@ a {
   }
 
   .text-new {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     line-height: 1.1;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   
@@ -514,8 +514,10 @@ a {
   }
 
   .text-new {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     line-height: 1.2;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .form-group label {
