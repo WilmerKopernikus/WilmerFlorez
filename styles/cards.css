@@ -333,7 +333,7 @@
   }
 
   #cases {
-    grid-template-rows: 70% 30%;
+    grid-template-rows: 30% 70%;
   }
 
 
@@ -392,14 +392,14 @@
 
 @media screen and (max-width: 821px) and (min-width: 431px) and (orientation: portrait) {
   .left {
-    padding: 20px;
+    padding: 70px;
   } 
 }
 
 @media screen and (max-width: 431px) and (orientation: portrait) {
   .left {
-    padding: 10px;
-    padding-right: 10px;
+    padding: 30px;
+    padding-right: 40px;
   } 
 
 }
@@ -494,7 +494,7 @@
 
 @media (max-width: 415px) and (orientation: portrait){
   #cases{
-    grid-template-rows: 70% 30%;
+    grid-template-rows: 35% 65%;
   }
 }
 
@@ -504,7 +504,7 @@
   }
 
   #cases{
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 30% 70%;
   }
 
 }
