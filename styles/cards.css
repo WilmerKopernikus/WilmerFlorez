@@ -38,43 +38,8 @@
   --cards: 5;
 }
 
-#card1-services-mobile-landscape {
-  --index: 1;
-  margin-top: 40px;
-}
-
-#card2-services-mobile-landscape {
-  --index: 2;
-  margin-top: 40px;
-}
-
-#card3-services-mobile-landscape {
-  --index: 3;
-  margin-top: 40px;
-}
-#card4-services-mobile-landscape {
-  --index: 4;
-  margin-top: 40px;
-}
-
-#card5-services-mobile-landscape {
-  --index: 5;
-  margin-top: 40px;
-}
-
-#card6-services-mobile-landscape {
-  --index: 6;
-  margin-top: 40px;
-}
-
-#card7-services-mobile-landscape {
-  --index: 7;
-  margin-top: 40px;
-}
-
-#card8-services-mobile-landscape {
-  --index: 8;
-  margin-top: 40px;
+#banderas-cards-container {
+  --cards: 6;
 }
 
 #card1-contact {
@@ -158,6 +123,36 @@
 }
 
 #card6-blancec-mobile {
+  --index: 6;
+  margin-top: 66px;
+}
+
+#card1-banderas {
+  --index: 1;
+  margin-top: 66px;
+}
+
+#card2-banderas {
+  --index: 2;
+  margin-top: 66px;
+}
+
+#card3-banderas {
+  --index: 3;
+  margin-top: 66px;
+}
+
+#card4-banderas {
+  --index: 4;
+  margin-top: 66px;
+}
+
+#card5-banderas {
+  --index: 5;
+  margin-top: 66px;
+}
+
+#card6-banderas {
   --index: 6;
   margin-top: 66px;
 }
@@ -397,14 +392,14 @@
 
 @media screen and (max-width: 821px) and (min-width: 431px) and (orientation: portrait) {
   .left {
-    padding: 70px;
+    padding: 20px;
   } 
 }
 
 @media screen and (max-width: 431px) and (orientation: portrait) {
   .left {
-    padding: 30px;
-    padding-right: 40px;
+    padding: 10px;
+    padding-right: 10px;
   } 
 
 }

@@ -4,20 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio de Wilmer Florez - Desarrollador Web, Diseñador Gráfico y Artista Visual con experiencia internacional">
+  <meta name="description"
+    content="Portfolio de Wilmer Florez - Desarrollador Web, Diseñador Gráfico y Artista Visual con experiencia internacional">
   <meta name="theme-color" content="#581845">
   <link rel="manifest" href="/manifest.json">
   <title>Wilmer Florez - Web Developer</title>
   <script defer src="scripts/p5.min.js"></script>
-  <script defer src="scripts/sketch_12.min.js"></script>
-  <link rel="stylesheet" href="styles/cards_intro.min.css">
+  <script defer src="scripts/sketch_12.js"></script>
+  <link rel="stylesheet" href="styles/cards_intro.css">
   <link rel="stylesheet" href="styles/header_test.min.css">
   <link rel="stylesheet" href="styles/cards.min.css">
   <link rel="stylesheet" href="styles/images.min.css">
-  <link rel="stylesheet" href="styles/global-text.min.css">
-  
+  <link rel="stylesheet" href="styles/global-text.css">
   <link rel="stylesheet" href="styles/languages_content.min.css">
-  <script src="scripts/languages_content.min.js" defer></script>
+  <link rel="stylesheet" href="styles/rotatingtext.css">
+
+  <script src="scripts/languages_content.js" defer></script>
   <script src="scripts/sw-register.js" defer></script>
 
 </head>
@@ -108,10 +110,20 @@
         <div class="card" id="card1">
           <div class="card-body-intro with-arrow font-loading">
             <div class="intro-card">
-              <h1 class="fade-in-text" data-i18n="indexTitle">WILLKOMMEN IN EINEM <br> NEUEN DIGITALEN
-                KOSMOS!</h1><br>
-              <!--<p>Where imagination meets digital innovation.</p><br>
-                            <p>We create. We code. We deliver</p><br><br>-->
+              <h1 class="rotating-text">
+                <span data-i18n="digitalStrategy" data-i18n-mobile="digitalStrategyMobile">DIGITAL STRATEGY</span>
+                <span data-i18n="webTechnologies" data-i18n-mobile="webTechnologiesMobile">WEB TECHNOLOGIES</span>
+                <span data-i18n="coolAnimations" data-i18n-mobile="coolAnimationsMobile">COOL ANIMATIONS</span>
+                <span data-i18n="graphicDesign" data-i18n-mobile="graphicDesignMobile">GRAPHIC DESIGN</span>
+                <span data-i18n="seoReach" data-i18n-mobile="seoReachMobile">SEO REACH</span>
+                <span data-i18n="aiImplementation" data-i18n-mobile="aiImplementationMobile">AI IMPLEMENTATION</span>
+                <span data-i18n="onlineShops" data-i18n-mobile="onlineShopsMobile">ONLINE SHOPS</span>
+              </h1>
+              <h2 class="subtitle" data-i18n="indexSubtitle"> WILLKOMMEN ZU MEINEM PORTFOLIO ALS WEBENTWICKLER UND
+                DESIGNER</h2><br>
+              <a href="kontakt.html#cases">
+                <button class="send-button" data-i18n="homeButton">Start a Project</button>
+              </a>
             </div>
             <div class="arrow">
               <h1 class="text-shadow fade-in-text">↓</h1>
@@ -123,7 +135,7 @@
           <div class="card-body">
             <div class="left" id="center-services">
               <h2 class="title">WILMER FLOREZ</h2>
-              <p class="text justify" data-i18n="wilmerIntroduction">
+              <p class="text-new " data-i18n="wilmerIntroduction">
                 Ich bin Webentwickler, Grafikdesigner und bildender Künstler mit internationaler
                 Erfahrung
                 in Deutschland, China und Kolumbien. In diesem Portfolio präsentiere ich sowohl
@@ -134,37 +146,135 @@
               </p>
             </div>
             <div class="right" id="responsive-sketch">
-              <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
+              <div class="image-container image-transition">
+                <img src="imagenes/Wilmer Florez - bw.jpg" alt="Wilmer Florez Portrait" id="black-and-white" />
+                <img src="imagenes/Wilmer Florez.jpg" alt="Wilmer Florez Portrait" id="color" />
+              </div>
+              <!--<video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
                 poster="imagenes/videos/services_01.jpg">
                 <source src="imagenes/videos/services_01_compressed.mp4" type="video/mp4" />
                 Your browser doesn't support video reproductions.
-              </video>
+              </video>-->
             </div>
           </div>
         </div>
-        <div id="card3" class="card">
-          <div class="card-body">
-            <div class="left2" id="responsive-sketch">
-              <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
-                poster="imagenes/videos/services_06.jpg">
-                <source src="imagenes/videos/services_06_compressed.mp4" type="video/mp4" />
-                Your browser doesn't support video reproductions.
-              </video>
+
+        <div class="card" id="card3">
+          <div class="card-body" id="cases">
+            <div class="left" id="center-services">
+              <h2 class="title">JOB LAB</h2>
+              <p class="text" data-i18n="joblabKunde">
+                <strong>Kunde:</strong>
+                <br /> Deutscher Akademischer Austauschdienst (DAAD)
+              </p><br />
+              <p class="text" data-i18n="joblabLeistungen">
+                <strong>Leistungen:</strong>
+                <br /> Markenentwicklung <br /> Plakatgestaltung <br /> Webentwicklung <br /> Webdesign
+              </p><br />
+              <p class="text justify" data-i18n="joblabUebersicht">
+                <strong>Übersicht:</strong>
+                <br />
+                Im Mai und Juni 2024 führte der DAAD in China gemeinsam mit der Deutschen Botschaft, dem Goethe-Institut
+                und weiteren Partnern das Projekt Job Lab durch. Die Messe bot unter dem Motto „Mit Deutsch in die
+                Zukunft“
+                Karriereperspektiven für chinesische Germanistik-Studierende.
+              </p><br />
+              <!-- Button -->
+              <a href="joblab-projekt.html">
+                <button class="send-button" data-i18n="mehrInformation">Mehr Informationen</button>
+              </a>
             </div>
-            <div class="right2" id="center-services">
-              <h2 class="title" data-i18n="projectTitle">PROJEKTE</h2>
-              <p class="text justify" data-i18n="projectContent">
-                Erfahren Sie in verschiedenen Projektbeispielen, wie ich Kunden mit wirkungsvollem
-                Webdesign und -entwicklung unterstützt habe.
-              </p>
-              <br><br>
-              <a href="projekte.html">
-                <button class="send-button" data-i18n="projectButton">⯈ Zu meinen Projekten</button>
+            <div class="right">
+              <!-- Image containers -->
+              <a href="joblab-projekt.html">
+                <div class="image-container image-transition">
+                  <img src="imagenes/projects/JobLab-grey-2.png" alt="JobLab Logo" id="black-and-white" />
+                  <img src="imagenes/projects/JobLab-color-2.png" alt="JobLab Logo" id="color" />
+                </div>
+              </a>
+              <a href="joblab-case.html">
+                <div class="image-container-mobile image-transition">
+                  <img src="imagenes/projects/JobLab-grey-mobile2.png" alt="JobLab Logo" id="black-and-white" />
+                  <img src="imagenes/projects/JobLab-color-mobile2.png" alt="JobLab Logo" id="color" />
+                </div>
               </a>
             </div>
           </div>
         </div>
-        <div id="card4" class="card">
+
+        <div class="card" id="card4">
+          <div class="card-body" id="cases">
+            <div class="left" id="center-services">
+              <h2 class="title">BLANCEC S.A.S.</h2>
+              <p class="text" data-i18n="blancecKunde">
+                <strong>Kunde:</strong>
+                <br /> Laboratorios Blancec S.A.S.
+              </p><br />
+              <p class="text" data-i18n="blancecLeistungen">
+                <strong>Leistungen:</strong>
+                <br /> Webentwicklung & Design - Markenentwicklung - Datenbank - Prozessautomatisierung
+              </p><br />
+              <p class="text justify" data-i18n="blancecUebersicht">
+                <strong>Übersicht:</strong>
+                <br />
+                BLANCEC S.A.S. ist ein kolumbianisches Prüflabor, das sich auf die Zertifizierung von Produkten für die
+                nationale
+                Verteidigungsindustrie spezialisiert hat. Das Labor prüft Ausrüstung und Materialien, damit sie die vom
+                kolumbianischen Verteidigungsministerium geforderten technischen Normen und Sicherheitsvorschriften
+                (u. a. NTS- und MINDEN-Standards) erfüllen.
+              </p><br />
+              <a href="blancec-projekt.html">
+                <button class="send-button" data-i18n="mehrInformation">Mehr Informationen</button>
+              </a>
+            </div>
+            <div class="right">
+              <!-- Image containers -->
+              <a href="blancec-projekt.html">
+                <div class="image-container image-transition">
+                  <img src="imagenes/projects/Blancec-grey-2.png" alt="JobLab Logo" id="black-and-white" />
+                  <img src="imagenes/projects/Blancec-color-2.png" alt="JobLab Logo" id="color" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="card5-cases">
+          <div class="card-body" id="cases">
+            <div class="left" id="center-services">
+              <h2 class="title" data-i18n="banderasTitle">BANDERAS NILA LOPEZ</h2>
+              <p class="text" data-i18n="banderasKunde">
+                <strong>Kunde:</strong>
+                <br /> Banderas Nila Lopez
+              </p><br />
+              <p class="text" data-i18n="banderasLeistungen">
+                <strong>Leistungen:</strong>
+                <br /> Webentwicklung & Design - Markenentwicklung - WebsiteBetreuung
+              </p><br />
+              <p class="text justify" data-i18n="banderasUebersicht">
+                <strong>Übersicht:</strong>
+                <br />
+                Banderas Nila Lopez ist ein kolumbianisches Unternehmen, das sich auf die Herstellung und den Vertrieb
+                von hochwertigen Textilprodukten spezialisiert hat. Das Projekt umfasst die Entwicklung einer modernen
+                Website, die das Markenimage stärkt und die Online-Präsenz des Unternehmens verbessert.
+              </p><br />
+              <a href="banderas-nila-lopez.html">
+                <button class="send-button" data-i18n="mehrInformation">Mehr Informationen</button>
+              </a>
+            </div>
+            <div class="right">
+              <!-- Image containers -->
+              <a href="banderas-nila-lopez.html">
+                <div class="image-container image-transition">
+                  <img src="imagenes/projects/banderas-nila-grey.png" alt="Banderas Nila Logo" id="black-and-white" />
+                  <img src="imagenes/projects/banderas-nila-color.png" alt="Banderas Nila Logo" id="color" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="card6" class="card">
           <div class="card-body">
             <div class="left" id="center-services">
               <h2 class="title" data-i18n="curriculumTitle">LEBENSLAUF</h2>
@@ -186,7 +296,7 @@
             </div>
           </div>
         </div>
-        <div id="card5" class="card">
+        <div id="card7" class="card">
           <div class="card-body">
             <div class="left2" id="responsive-sketch">
               <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
@@ -352,6 +462,98 @@
   </div>
 
   <script src="scripts/script.min.js"></script>
+  <script>
+    (function () {
+      const MOBILE_BREAKPOINT = 1024;
+
+      const body = document.body;
+      const overlay = document.getElementById('clickToStartOverlay');
+
+      function isMobileOrTablet() {
+        return window.innerWidth <= MOBILE_BREAKPOINT;
+      }
+
+      function getRefs() {
+        // En móvil queremos el #card1 que está dentro de .cards-mobile
+        // En desktop queremos el #card1 que está dentro de .cards-screens
+        const root = isMobileOrTablet()
+          ? document.querySelector('.cards-mobile')
+          : document.querySelector('.cards-screens');
+
+        const card = root?.querySelector('#card1 .intro-card') || null;
+
+        return {
+          root,
+          card,
+          h1: card?.querySelector('h1') || null,
+          h2: card?.querySelector('h2') || null,
+          button: card?.querySelector('.send-button') || null,
+          // Si quieres mostrar SOLO el selector dentro del mismo bloque/cabecera,
+          // podrías buscarlo en root. Si lo quieres global (uno solo), deja document.
+          languageSelector: document.querySelector('.language-selector') || null,
+        };
+      }
+
+      function lockScroll() {
+        body.classList.add('scroll-locked');
+      }
+
+      function unlockScroll() {
+        body.classList.remove('scroll-locked');
+      }
+
+      function showIntroContent() {
+        const { h1, h2, button, languageSelector } = getRefs();
+
+        h1?.classList.add('show-content');
+        h2?.classList.add('show-content');
+        button?.classList.add('show-content');
+        languageSelector?.classList.add('show-content');
+
+        // reinicia animación del h1 si aplica
+        if (h1) {
+          h1.style.animation = 'none';
+          requestAnimationFrame(() => {
+            h1.style.animation = '';
+          });
+        }
+      }
+
+      function showOverlay() {
+        if (!overlay) return;
+        lockScroll();
+        overlay.style.display = 'flex';
+      }
+
+      function hideOverlay() {
+        if (!overlay) return;
+        overlay.style.display = 'none';
+        unlockScroll();
+        showIntroContent();
+      }
+
+      window.addEventListener('load', () => {
+        if (!overlay) return;
+
+        if (isMobileOrTablet()) {
+          setTimeout(showOverlay, 100);
+        } else {
+          showIntroContent();
+        }
+      });
+
+      overlay?.addEventListener('click', hideOverlay);
+
+      window.addEventListener('resize', () => {
+        if (!overlay) return;
+
+        // Si ya no es móvil, quitamos overlay y mostramos contenido
+        if (!isMobileOrTablet()) {
+          hideOverlay();
+        }
+      });
+    })();
+  </script>
 </body>
 
 </html>

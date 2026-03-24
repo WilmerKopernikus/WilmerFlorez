@@ -21,7 +21,13 @@ function setup() {
 	centerX = width/2;
 	centerY = height/2;
 	
-	colors = [color("#581845"), color("#900C3F"), color("#C70039"), color("#FF5733"), color("#FFC300")];
+	colors = [
+  color("#010027"),  // azul marino profundo
+  color("#000dff"),  // azul océano
+  color("#0091ff"),  // azul medio
+  color("#00124c"),  // agua marina
+  color("#001e95")   // turquesa claro
+];
 }
 
 function draw() {
@@ -46,7 +52,7 @@ function draw() {
 	
 	var length = blobs.length;
 	if(length == 0){
-		background("#1a0633");
+		background("#000000");
 		noStroke();
 		fill(255);
 		textSize(30);
@@ -54,7 +60,7 @@ function draw() {
 	}
 	
 	noStroke();
-	fill(26, 6, 51, 10);
+	fill(0, 0, 0, 12);
 	rect(0, 0, width, height);
 	
 	//auto change

@@ -9,7 +9,25 @@ const languagesContent = {
     menuKontakt: `Kontakt`,
 
     //Index
-    indexTitle: `WILLKOMMEN IN EINEM <br> NEUEN DIGITALEN KOSMOS!`,
+    digitalStrategy: "DIGITALSTRATEGIE",
+    digitalStrategyMobile: "DIGITAL<br>STRATEGIE",
+    webTechnologies: "WEBTECHNOLOGIEN",
+    webTechnologiesMobile: "WEB<br>TECHNOLOGIEN",
+    coolAnimations: "COOLE ANIMATIONEN",
+    coolAnimationsMobile: "COOLE<br>ANIMATIONEN",
+    graphicDesign: "GRAFIKDESIGN",
+    graphicDesignMobile: "GRAFIKDESIGN",
+    seoReach: "SEO-REICHWEITE",
+    seoReachMobile: "SEO<br>REICHWEITE",
+    aiImplementation: "KI-IMPLEMENTIERUNG",
+    aiImplementationMobile: "KI<br>UMSETZUNG",
+    onlineShops: "ONLINE-SHOPS",
+    onlineShopsMobile: "ONLINE<br>SHOPS",
+
+    indexSubtitle: `Willkommen zu meinem Portfolio <br>als Webentwickler und Designer`,
+    clickToStart: `Klicken, um zu starten`,
+    homeButton: `Projekt starten`,
+
     wilmerIntroduction: "Ich bin Webentwickler, Grafikdesigner und bildender Künstler mit internationaler Erfahrung in Deutschland, China und Kolumbien. In diesem Portfolio präsentiere ich sowohl berufliche als auch persönliche Projekte, die meinen Ansatz widerspiegeln: Design, Technologie und Kreativität zu verbinden, um digitale Lösungen auf höchstem Niveau zu entwickeln.",
     projectTitle: "PROJEKTE",
     projectContent: "Erfahren Sie in verschiedenen Projektbeispielen, wie ich Kunden mit wirkungsvollem Webdesign und -entwicklung unterstützt habe.",
@@ -29,6 +47,10 @@ const languagesContent = {
     blancecKunde: "<strong>Kunde:</strong><br/> Laboratorios Blancec S.A.S.",
     blancecLeistungen: "<strong>Leistungen:</strong><br /> Webentwicklung & Design - Markenentwicklung - WebsiteBetreuung",
     blancecUebersicht: "<strong>Übersicht:</strong><br />BLANCEC S.A.S. ist ein kolumbianisches Prüflabor, das sich auf die Zertifizierung von Produkten für die nationale Verteidigungsindustrie spezialisiert hat. Das Labor prüft Ausrüstung und Materialien, damit sie die vom kolumbianischen Verteidigungsministerium geforderten technischen Normen und Sicherheitsvorschriften (u. a. NTS- und MINDEN-Standards) erfüllen.",
+    banderasTitle: "BANDERAS NILA LOPEZ",
+    banderasKunde: "<strong>Kunde:</strong><br /> Banderas Nila Lopez",
+    banderasLeistungen: "<strong>Leistungen:</strong><br /> Webentwicklung & Design - Markenentwicklung - WebsiteBetreuung",
+    banderasUebersicht: "<strong>Übersicht:</strong><br />Banderas Nila Lopez ist ein kolumbianisches Unternehmen, das sich auf die Herstellung und den Vertrieb von hochwertigen Textilprodukten spezialisiert hat. Das Projekt umfasst die Entwicklung einer modernen Website, die das Markenimage stärkt und die Online-Präsenz des Unternehmens verbessert.",
     tarotTitle: "INTERACTIVES TAROT",
     tarotKunde: "<strong>Kunde:</strong><br /> Nichtkommerzielles Projekt",
     tarotLeistungen: "<strong>Technologien:</strong><br /> Frontend, Backend, Künstliche Intelligenz, Hosting und Deployment, Medien und Assets",
@@ -58,6 +80,35 @@ const languagesContent = {
     blancecContent3: "Ein eleganter, professioneller Auftritt:<br><br>Mit Design-Tools wie Photoshop und Illustrator haben wir das visuelle Erscheinungsbild der Marke verfeinert. Ein klareres Logo, dynamische Header-Bilder und ein stimmiges Farbschema schaffen eine moderne und vertrauenswürdige Markenidentität - und stärken somit Glaubwürdigkeit und Kundenvertrauen.",
     blancecTitle4: "VORHER & NACHHER: EIN DEUTLICHER FORTSCHRITT",
     blancecContent4: "Ursprünglich beeinträchtigten lange Ladezeiten und eine unausgereifte Benutzeroberfläche die Kundenerfahrung. Heute ist die neue Website schnell, intuitiv und visuell ansprechend. Das Ergebnis? Eine einladende digitale Präsenz, die die Expertise von BLANCEC S.A.S. hervorhebt und Besucher dazu motiviert, aktiv zu werden.",
+
+    // Banderas Nila López
+    banderasSubtitle: "Unternehmenswebsite <br>Live-Projekt (in Entwicklung) <br>Einzelentwickler & Designer",
+    banderasTitle1: "PROJEKTÜBERSICHT",
+    banderasContent1: "Entwicklung einer modernen, leistungsoptimierten Website für ein kolumbianisches Flaggenunternehmen, das sich auf die Produktion von nationalen, Firmen-, internationalen und institutionellen Flaggen spezialisiert hat. Die Plattform dient sowohl als digitaler Showroom als auch als Kanal zur Kundengewinnung.",
+    banderasTitle2: "TECHNISCHE UMSETZUNG",
+    banderasContentBullet1: "Entwicklung einer Vue.js 3-Website mit komponentenbasierter Architektur, Lazy Loading und Performance-Optimierung.",
+    banderasContentBullet2: "Implementierung einer dynamischen Produktgalerie mit über 450 Bildern mithilfe von Masonry.js-Layout, Intersection Observer API und Batch-Rendering für optimale Performance.",
+    banderasContentBullet3: "Design und Entwicklung von 8 modularen Komponenten mit responsivem Mobile-First-Design für eine reibungslose Benutzererfahrung auf allen Geräten.",
+    banderasContentBullet4: "Entwicklung eines progressiven Ladesystems zur Reduzierung der Ladezeit durch gestaffeltes Einbinden von Komponenten und asynchrones Laden von Bildern.",
+    banderasTitle3: "MEINE ROLLE",
+    banderasContent3: "Full-Stack-Entwickler & UI/UX-Designer – Alleinige Verantwortung für:",
+    banderasContentBullet5: "Komplette Frontend-Entwicklung und -Architektur",
+    banderasContentBullet6: "UI/UX-Design und responsive Layouts",
+    banderasContentBullet7: "Strategien zur Performance-Optimierung",
+    banderasContentBullet8: "Komponentenarchitektur und Zustandsverwaltung",
+    banderasContentBullet9: "Bildmanagement und -optimierung",
+    banderasTitle4: "VERWENDETE TECHNOLOGIEN",
+    banderasContent4: "Vue.js 3 (Composition API) • JavaScript (ES6+) • HTML5 • CSS3 • Masonry.js • Intersection Observer API • LocalStorage API • Responsive Web Design",
+    liveWebsite: "Live-Website ansehen",
+
+
+
+
+
+
+
+
+
 
     // Interaktives Tarot
     eineKarte: "Eine Karte ziehen",
@@ -104,7 +155,25 @@ const languagesContent = {
     menuKontakt: `Contact`,
 
     //index
-    indexTitle: `WELCOME TO A NEW <br> DIGITAL COSMOS!`,
+    digitalStrategy: "DIGITAL STRATEGY",
+    digitalStrategyMobile: "DIGITAL<br>STRATEGY",
+    webTechnologies: "WEB TECHNOLOGIES",
+    webTechnologiesMobile: "WEB<br>TECHNOLOGIES",
+    coolAnimations: "COOL ANIMATIONS",
+    coolAnimationsMobile: "COOL<br>ANIMATIONS",
+    graphicDesign: "GRAPHIC DESIGN",
+    graphicDesignMobile: "GRAPHIC<br>DESIGN",
+    seoReach: "SEO REACH",
+    seoReachMobile: "SEO<br>REACH",
+    aiImplementation: "AI IMPLEMENTATION",
+    aiImplementationMobile: "AI<br>IMPLEMENTATION",
+    onlineShops: "ONLINE SHOPS",
+    onlineShopsMobile: "ONLINE<br>SHOPS",
+
+    indexSubtitle: `Welcome to my portfolio <br> as a web developer and designer`,
+    clickToStart: `Click me to start`,
+    homeButton: `Start a Project`,
+
     wilmerIntroduction: "I am a web developer, graphic designer, and visual artist with international experience in Germany, China, and Colombia. In this portfolio, I present both professional and personal projects that reflect my approach: combining design, technology, and creativity to develop high-quality digital solutions.",
     projectTitle: `PROJECTS`,
     projectContent: `Discover a selection of project examples that show how I have supported clients through impactful web design and development.`,
@@ -119,14 +188,18 @@ const languagesContent = {
     //Projekte
     projekteTitle: "PROJECTS",
     joblabKunde: "<strong>Client</strong><br/>German Academic Exchange Service (DAAD)",
-    joblabLeistungen: "<strong>What we did</strong><br/>Brand Design - Poster Design - Web Development - Website Design",
+    joblabLeistungen: "<strong>My responsibilities:</strong><br/>Brand Design - Poster Design - Web Development - Website Design",
     joblabUebersicht: `<strong>Overview</strong><br/>In May and June 2024, the DAAD in China, together with the German Embassy, the Goethe-Institut, and other partners, carried out the Job Lab project. Under the motto “Into the Future with German,” the fair offered career opportunities for Chinese students of German studies.`,
     blancecKunde: "<strong>Client</strong><br /> Blancec Laboratories S.A.S.",
-    blancecLeistungen: "<strong>What we did</strong><br /> Web Development & Design - Brand Design - Website maintenance",
+    blancecLeistungen: "<strong>My responsibilities:</strong><br /> Web Development & Design - Brand Design - Website maintenance",
     blancecUebersicht: "<strong>Overview</strong><br />BLANCEC S.A.S. is a Colombian testing laboratory specialized in the certification of products for the national defense industry. The laboratory tests equipment and materials to ensure they comply with the technical standards and safety regulations required by the Colombian Ministry of Defense (including NTS and MINDEN standards).",
+    banderasTitle: "BANDERAS NILA LOPEZ",
+    banderasKunde: "<strong>Client:</strong><br /> Banderas Nila Lopez",
+    banderasLeistungen: "<strong>My responsibilities:</strong><br /> Web Development & Design - Brand Development - Website Maintenance",
+    banderasUebersicht: "<strong>Overview:</strong><br />Banderas Nila Lopez is a Colombian company specializing in the production and distribution of high-quality textile products. The project involves developing a modern website that strengthens the brand image and improves the company's online presence.",
     tarotTitle: "INTERACTIVE TAROT",
     tarotKunde: "<strong>Client:</strong><br /> Non-profit project",
-    tarotLeistungen: "<strong>Technologies:</strong><br /> Frontend, Backend, Artificial Intelligence, Hosting and Deployment, Media and Assets",
+    tarotLeistungen: "<strong>My responsibilities:</strong><br /> Frontend, Backend, Artificial Intelligence, Hosting and Deployment, Media and Assets",
     tarotUebersicht: "<strong>Overview:</strong><br />An interactive tarot module that combines modern web design with a powerful backend on Vercel and the OpenAI API. It enables language-adaptive, dynamically generated card interpretations and showcases a precise combination of frontend interaction, serverless architecture, and AI-driven text analysis.<br />",
     mehrInformation: "More Information",
 
@@ -153,6 +226,27 @@ const languagesContent = {
     blancecContent3: "A Polished, Professional Look:<br><br>Using design tools like Photoshop and Illustrator, we refined the brand's visuals. A cleaner logo, dynamic header images, and a cohesive color scheme establish a modern, trusted brand identity, improving credibility and client confidence.",
     blancecTitle4: "BEFORE & AFTER: A CLEAR UPGRADE",
     blancecContent4: "Originally, slow loading times and an unrefined interface hampered the client experience. Today, the new website is fast, intuitive, and visually engaging. The result? A welcoming digital presence that highlights BLANCEC S.A.S's expertise and inspires visitors to take action.",
+
+
+    // Banderas Nila López
+    banderasSubtitle: "Company Website <br>Live Project (in Development) <br>Solo Developer & Designer",
+    banderasTitle1: "PROJECT OVERVIEW",
+    banderasContent1: "Development of a modern, high-performance website for a Colombian flag company specializing in the production of national, corporate, international, and institutional flags. The platform serves as both a digital showroom and a customer acquisition channel.",
+    banderasTitle2: "TECHNICAL IMPLEMENTATION",
+    banderasContentBullet1: "Development of a Vue.js 3 website with component-based architecture, lazy loading, and performance optimization.",
+    banderasContentBullet2: "Implementation of a dynamic product gallery with more than 450 images using a Masonry.js layout, the Intersection Observer API, and batch rendering for optimal performance.",
+    banderasContentBullet3: "Design and development of 8 modular components with responsive mobile-first design for a seamless user experience across all devices.",
+    banderasContentBullet4: "Development of a progressive loading system to reduce loading time through staggered component loading and asynchronous image loading.",
+    banderasTitle3: "MY ROLE",
+    banderasContent3: "Full-stack developer & UI/UX designer – Sole responsibility for:",
+    banderasContentBullet5: "Complete frontend development and architecture",
+    banderasContentBullet6: "UI/UX design and responsive layouts",
+    banderasContentBullet7: "Performance optimization strategies",
+    banderasContentBullet8: "Component architecture and state management",
+    banderasContentBullet9: "Image management and optimization",
+    banderasTitle4: "TECHNOLOGIES USED",
+    banderasContent4: "Vue.js 3 (Composition API) • JavaScript (ES6+) • HTML5 • CSS3 • Masonry.js • Intersection Observer API • LocalStorage API • Responsive Web Design",
+    liveWebsite: "Visit the Website",
 
     // Interactive Tarot
     eineKarte: "Draw one card",
@@ -198,7 +292,24 @@ const languagesContent = {
     menuKontakt: 'Contacto',
 
     //Index
-    indexTitle: '¡BIENVENIDO A UN NUEVO <br> COSMOS DIGITAL!',
+    digitalStrategy: "ESTRATEGIA DIGITAL",
+    digitalStrategyMobile: "ESTRATEGIA<br>DIGITAL",
+    webTechnologies: "TECNOLOGÍAS WEB",
+    webTechnologiesMobile: "TECNOLOGÍAS<br>WEB",
+    coolAnimations: "ANIMACIONES GENIALES",
+    coolAnimationsMobile: "ANIMACIONES<br>GENIALES",
+    graphicDesign: "DISEÑO GRÁFICO",
+    graphicDesignMobile: "DISEÑO<br>GRÁFICO",
+    seoReach: "ALCANCE SEO",
+    seoReachMobile: "ALCANCE<br>SEO",
+    aiImplementation: "IMPLEMENTACIÓN DE IA",
+    aiImplementationMobile: "APLICACIÓN<br> DE IA",
+    onlineShops: "TIENDAS ONLINE",
+    onlineShopsMobile: "TIENDAS<br>ONLINE",
+
+    indexSubtitle: 'Bienvenido a mi portafolio <br> como desarrollador web y diseñador',
+    clickToStart: `Toca para comenzar`,
+    homeButton: `Iniciar un proyecto`,
     wilmerIntroduction: "Soy desarrollador web, diseñador gráfico y artista visual con experiencia internacional en Alemania, China y Colombia. En este portafolio presento tanto proyectos profesionales como personales que reflejan mi enfoque: combinar diseño, tecnología y creatividad para desarrollar soluciones digitales de alta calidad.",
     projectTitle: 'PROYECTOS',
     projectContent: 'Descubre una selección de ejemplos de proyectos que muestran cómo he apoyado a los clientes a través de un diseño y desarrollo web impactantes.',
@@ -209,7 +320,7 @@ const languagesContent = {
     contactTitle: 'CONTACTO',
     contactContent: '¿Te gustaría trabajar conmigo? Ya sea que ya tengas una visión clara o quieras desarrollar ideas iniciales juntos, no dudes en ponerte en contacto conmigo y pongamos en marcha tu futuro digital.',
     contactButton: 'Ir al contacto',
- 
+
     //Projekte
     projekteTitle: 'PROYECTOS',
     joblabKunde: '<strong>Cliente:</strong><br/>Servicio Alemán de Intercambio Académico (DAAD)',
@@ -218,6 +329,10 @@ const languagesContent = {
     blancecKunde: '<strong>Cliente:</strong><br/>Laboratorios Blancec S.A.S.',
     blancecLeistungen: '<strong>Qué hicimos:</strong><br/>Desarrollo y diseño web - Diseño de marca - Mantenimiento del sitio web',
     blancecUebersicht: '<strong>Resumen:</strong><br/>BLANCEC S.A.S. es un laboratorio de pruebas colombiano especializado en la certificación de productos para la industria de defensa nacional. El laboratorio prueba equipos y materiales para garantizar que cumplan con las normas técnicas y regulaciones de seguridad requeridas por el Ministerio de Defensa de Colombia (incluidas las normas NTS y MINDEN).',
+    banderasTitle: "BANDERAS NILA LOPEZ",
+    banderasKunde: "<strong>Cliente:</strong><br /> Banderas Nila Lopez",
+    banderasLeistungen: "<strong>Mis Responsabilidades:</strong><br /> Desarrollo & Diseño web - Desarrollo de marca - Mantenimiento del sitio web",
+    banderasUebersicht: "<strong>Resumen:</strong><br />Banderas Nila López es una empresa colombiana especializada en la producción y distribución de productos textiles de alta calidad. El proyecto consiste en desarrollar un sitio web moderno que fortalezca la imagen de marca y mejore la presencia online de la empresa.",
     tarotTitle: "TAROT INTERACTIVO",
     tarotKunde: '<strong>Cliente:</strong><br/>Proyecto sin fines de lucro',
     tarotLeistungen: '<strong>Tecnologías:</strong><br/>Frontend, Backend, Inteligencia Artificial, Hosting y Despliegue, Medios y Recursos',
@@ -248,6 +363,26 @@ const languagesContent = {
     blancecTitle4: 'ANTES Y DESPUÉS: UNA MEJORA CLARA',
     blancecContent4: 'Originalmente, los tiempos de carga lentos y una interfaz poco refinada obstaculizaban la experiencia del cliente. Hoy, el nuevo sitio web es rápido, intuitivo y visualmente atractivo. ¿El resultado? Una presencia digital acogedora que destaca la experiencia de BLANCEC S.A.S e inspira a los visitantes a actuar.',
 
+    // Banderas Nila López
+    banderasSubtitle: "Sitio Web Empresarial <br>Proyecto en Vivo (en Desarrollo) <br>Desarrollador y Diseñador Único",
+    banderasTitle1: "DESCRIPCIÓN DEL PROYECTO",
+    banderasContent1: "Desarrollo de un sitio web moderno y de alto rendimiento para una empresa colombiana de banderas especializada en la producción de banderas nacionales, corporativas, internacionales e institucionales. La plataforma funciona tanto como catálogo digital como canal de adquisición de clientes.",
+    banderasTitle2: "IMPLEMENTACIÓN TÉCNICA",
+    banderasContentBullet1: "Desarrollo de un sitio web en Vue.js 3 con arquitectura basada en componentes, lazy loading y optimización del rendimiento.",
+    banderasContentBullet2: "Implementación de una galería dinámica de productos con más de 450 imágenes mediante un diseño con Masonry.js, la API Intersection Observer y renderizado por lotes para un rendimiento óptimo.",
+    banderasContentBullet3: "Diseño y desarrollo de 8 componentes modulares con diseño responsive mobile-first para una experiencia de usuario fluida en todos los dispositivos.",
+    banderasContentBullet4: "Desarrollo de un sistema de carga progresiva para reducir el tiempo de carga mediante la incorporación escalonada de componentes y la carga asíncrona de imágenes.",
+    banderasTitle3: "MI ROL",
+    banderasContent3: "Desarrollador full-stack y diseñador UI/UX – Responsabilidad total sobre:",
+    banderasContentBullet5: "Desarrollo y arquitectura completa del frontend",
+    banderasContentBullet6: "Diseño UI/UX y layouts responsive",
+    banderasContentBullet7: "Estrategias de optimización del rendimiento",
+    banderasContentBullet8: "Arquitectura de componentes y gestión del estado",
+    banderasContentBullet9: "Gestión y optimización de imágenes",
+    banderasTitle4: "TECNOLOGÍAS UTILIZADAS",
+    banderasContent4: "Vue.js 3 (Composition API) • JavaScript (ES6+) • HTML5 • CSS3 • Masonry.js • API Intersection Observer • API LocalStorage • Diseño web responsive",
+    liveWebsite: "Sitio web en vivo",
+
     //Interaktives Tarot
     eineKarte: "Saca una carta",
     eineTriade: "Saca una triada",
@@ -270,7 +405,7 @@ const languagesContent = {
     oraculo_detalles: "\nDetalles: ",
     oraculo_silencio: "El oráculo guarda silencio por ahora (respuesta inesperada).",
     oraculo_error_hablar: "Hubo un error al hablar con el oráculo.",
-    
+
     //Kontakt
     heroTitle: "Contacto",
     chooseUsTitle: "¡TRABAJEMOS JUNTOS!",
@@ -298,8 +433,8 @@ function applyLanguage(lang) {
     if (!value) return;
 
     // Si el elemento es input o textarea y el key sugiere placeholder, usar el atributo placeholder
-    if ((el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') && 
-        key.toLowerCase().includes('placeholder')) {
+    if ((el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') &&
+      key.toLowerCase().includes('placeholder')) {
       el.placeholder = value;
     } else {
       el.innerHTML = value;
@@ -308,7 +443,7 @@ function applyLanguage(lang) {
 
   // 2) Guardar idioma actual en la variable
   currentLang = lang;
-    if (typeof window !== "undefined") {
+  if (typeof window !== "undefined") {
     window.currentLang = lang;
   }
 
@@ -344,12 +479,12 @@ function detectBrowserLanguage() {
     const browserLang = navigator.language || navigator.userLanguage;
     // Extraer solo el código principal (ej: "de" de "de-DE")
     const langCode = browserLang.split('-')[0].toLowerCase();
-    
+
     // Verificar si tenemos ese idioma disponible
     if (languagesContent[langCode]) {
       return langCode;
     }
-    
+
     // Si no tenemos el idioma, usar inglés como fallback
     return 'en';
   } catch (e) {
