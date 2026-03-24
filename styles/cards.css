@@ -333,7 +333,7 @@
   }
 
   #cases {
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 70% 30%;
   }
 
 
@@ -494,7 +494,7 @@
 
 @media (max-width: 415px) and (orientation: portrait){
   #cases{
-    grid-template-rows: 35% 65%;
+    grid-template-rows: 70% 30%;
   }
 }
 
@@ -504,7 +504,7 @@
   }
 
   #cases{
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 60% 40%;
   }
 
 }
