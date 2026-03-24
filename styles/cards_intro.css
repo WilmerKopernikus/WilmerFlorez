@@ -1,5 +1,5 @@
 #intro-cards-container {
-    --cards: 5;
+    --cards: 6;
   }
 #card1 {
     --index: 1;
@@ -24,10 +24,7 @@
   --index: 6;
   margin-top: 66px;
 }
-#card7 {
-  --index: 7;
-  margin-top: 66px;
-}
+
 .text-shadow{
   font-size: 120px;
   font-family: 'Handjet';
