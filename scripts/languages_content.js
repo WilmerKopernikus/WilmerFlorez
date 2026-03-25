@@ -425,7 +425,7 @@ const languagesContent = {
     oraculo_error_hablar: "Hubo un error al hablar con el oráculo.",
 
     //Kontakt
-    heroTitle: "Contacto",
+    heroTitle: "CONTACTO",
     chooseUsTitle: "¡TRABAJEMOS JUNTOS!",
     chooseUsText: "¿Buscas un desarrollador web dedicado para tu equipo o tu próximo proyecto?<br><br>Si necesitas apoyo para tu proyecto o estás buscando a alguien que asuma nuevas tareas de manera rápida y proactiva, estaré encantado de saber de ti y discutir cómo puedo apoyar mejor a tu equipo y ayudarte a alcanzar tus objetivos.",
     impressumTitle: "AVISO LEGAL",

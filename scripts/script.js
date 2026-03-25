@@ -45,6 +45,15 @@ document.addEventListener("DOMContentLoaded", function() {
         this.classList.toggle("open");
         menuOverlay.classList.toggle("show");
     });
+
+    // Cerrar el menú al hacer click en cualquier enlace
+    const menuLinks = menuOverlay.querySelectorAll("a");
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function() {
+            hamburger.classList.remove("open");
+            menuOverlay.classList.remove("show");
+        });
+    });
 });
 
 document.addEventListener("DOMContentLoaded", function() {
