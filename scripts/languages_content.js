@@ -59,6 +59,7 @@ const languagesContent = {
     stopdesertKunde: "<strong>Projekt:</strong><br /> Ehrenamtliches Projekt",
     stopdesertLeistungen: "<strong>Tech Stack:</strong><br /> WordPress · Kadence · HTML/CSS · JavaScript · Spendensystem",
     stopdesertUebersicht: "<strong>Übersicht:</strong><br />Stop the Desert ist eine NGO, die die Wüstenbildung weltweit bekämpft. Das Projekt umfasst die Verwaltung der WordPress-Website mit Kadence und die Implementierung eines Spendensystems, das Landwirte direkt unterstützt.",
+    mehrInformation: "Mehr Informationen",
     vollstaendigeFallstudie: "Vollständige Fallstudie ansehen",
 
     //Joblab
@@ -204,6 +205,7 @@ const languagesContent = {
     stopdesertKunde: "<strong>Project:</strong><br /> Volunteer Work",
     stopdesertLeistungen: "<strong>Tech Stack:</strong><br /> WordPress · Kadence · HTML/CSS · JavaScript · Donation System",
     stopdesertUebersicht: "<strong>Overview:</strong><br />Stop the Desert is an NGO fighting desertification worldwide. The project involves managing the WordPress website with Kadence and implementing a donation system that directly supports farmers.",
+    mehrInformation: "More Information",
     vollstaendigeFallstudie: "View Full Case Study",
 
     //Joblab
@@ -348,6 +350,7 @@ const languagesContent = {
     stopdesertKunde: '<strong>Proyecto:</strong><br/>Trabajo Voluntario',
     stopdesertLeistungen: '<strong>Tech Stack:</strong><br/>WordPress · Kadence · HTML/CSS · JavaScript · Sistema de Donaciones',
     stopdesertUebersicht: '<strong>Resumen:</strong><br/>Stop the Desert es una ONG que combate la desertificación a nivel mundial. El proyecto incluye la gestión del sitio web WordPress con Kadence y la implementación de un sistema de donaciones que apoya directamente a los agricultores.',
+    mehrInformation: 'Más Información',
     vollstaendigeFallstudie: 'Ver Caso de Estudio Completo',
 
     //Joblab
