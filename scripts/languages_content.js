@@ -72,14 +72,18 @@ const languagesContent = {
     joblabContent6: "<strong>Hohe Beteiligung & positives Feedback:</strong><br><br>Die Job Lab-Veranstaltungen in Guangzhou, Shanghai und Peking zogen rund 300 Besucher an. Die Teilnehmenden beteiligten sich an lebhaften Diskussionen, stellten durchdachte Fragen und blieben während des gesamten Tagesprogramms aktiv dabei. Diese begeisterte Resonanz unterstreicht den Wert des Projekts und schafft eine starke Grundlage für eine jährliche Wiederholung, wodurch sich das Job Lab zu einer potenziell fortlaufenden Tradition entwickeln könnte.",
 
     //Blancec
-    blancecTitle1: "IHRE ONLINE-PRÄSENZ TRANSFORMIEREN",
-    blancecContent1: "Modernisierung von BLANCEC S.A.S.:<br><br>BLANCEC S.A.S, ein führendes kolumbianisches Labor für Produkttests, benötigte ein digitales Upgrade, um seine Kunden besser zu bedienen. Wir haben ihre Website neu gestaltet, um schnelleren Zugriff, eine intuitive Navigation und eine fließende Nutzererfahrung zu ermöglichen - damit Kunden die benötigten Tests leichter finden und anfordern können.",
-    blancecTitle2: "BLITZSCHNELLE LEISTUNG",
-    blancecContent2: "Beschleunigung der Nutzererfahrung: <br><br>Durch den Neuaufbau der Website haben wir die Ladezeiten drastisch verkürzt. Kunden können nun effizient durch die Seiten navigieren, was Wartezeiten reduziert und die allgemeine Zufriedenheit steigert. Eine schnellere Website hält Besucher engagiert und motiviert sie, weitere Dienstleistungen zu erkunden.",
-    blancecTitle3: "VERBESSERTES VISUELLES DESIGN & BRANDING",
-    blancecContent3: "Ein eleganter, professioneller Auftritt:<br><br>Mit Design-Tools wie Photoshop und Illustrator haben wir das visuelle Erscheinungsbild der Marke verfeinert. Ein klareres Logo, dynamische Header-Bilder und ein stimmiges Farbschema schaffen eine moderne und vertrauenswürdige Markenidentität - und stärken somit Glaubwürdigkeit und Kundenvertrauen.",
-    blancecTitle4: "VORHER & NACHHER: EIN DEUTLICHER FORTSCHRITT",
-    blancecContent4: "Ursprünglich beeinträchtigten lange Ladezeiten und eine unausgereifte Benutzeroberfläche die Kundenerfahrung. Heute ist die neue Website schnell, intuitiv und visuell ansprechend. Das Ergebnis? Eine einladende digitale Präsenz, die die Expertise von BLANCEC S.A.S. hervorhebt und Besucher dazu motiviert, aktiv zu werden.",
+    blancecTitle1: "PROJEKTÜBERBLICK",
+    blancecContent1: "Vollständige Neugestaltung und Neuentwicklung der offiziellen Website für Laboratorio Blancec, ein von ONAC akkreditiertes Industrielabor für Prüfungen in Bogotá, Kolumbien. Die vorherige Website wies strukturelle Fehler und ein schwaches Design auf. Ich habe sie von Grund auf neu aufgebaut und eine klare, funktionale und professionelle digitale Präsenz geschaffen, die den Standards des Unternehmens entspricht.",
+    blancecTitle2: "TECH-STACK",
+    blancecContent2: "Entwickelt mit CodeIgniter 4 (PHP), einer MySQL-Datenbank und explizitem MVC-Routing. Das Frontend nutzt Bootstrap 4, AOS-Scroll-Animationen, CountUp.js und jQuery-Plugins. Benutzerdefiniertes CSS deckt Typografie (Raleway), responsive Tabellen und Layout ab. Alte URLs geben den Status 410 Gone zurück, um die SEO-Integrität der vorherigen Website zu bewahren.",
+    blancecTitle3: "SEO & STRUKTURIERTE DATEN",
+    blancecContent3: "Jede Seite erzeugt dynamische Meta-Tags: Canonical-URLs, Open-Graph-Tags für das Teilen in sozialen Netzwerken, Twitter Cards und strukturierte JSON-LD-Daten (Schemas für Organization und WebPage). Das sorgt für eine korrekte Indexierung, erweiterte Suchergebnisse und konsistente Vorschaubilder in sozialen Medien in allen Bereichen der Website.",
+    blancecTitle4: "FUNKTIONEN & MERKMALE",
+    blancecContent4: "Die Website präsentiert die fünf Dienstleistungsbereiche des Labors, Qualitätspolitiken, Akkreditierungsinformationen und ein Beschwerdeverfahren. Ein Kontaktformular verarbeitet verschiedene Anfragearten mit serverseitiger Validierung, CSRF-Schutz und E-Mail-Versand über SMTP. Eine eingebettete Google Map und direkte Kontaktdaten vervollständigen den Kommunikationsbereich.",
+    blancecTitle5: "DESIGN & UX",
+    blancecContent5: "Jedes UI-Element wurde von Grund auf gestaltet: Sticky-Navigation, Hero-Bereiche pro Seite, mobiles Hamburger-Menü, Smooth-Scroll-Anker und eine Preloader-Animation. Alle Layouts sind vollständig responsiv. Die visuelle Identität nutzt eine konsistente Typografie, strukturierte Kartenraster und eine professionelle Farbpalette, die zu einem industriellen Prüflabor passt.",
+    blancecTitle6: "ROLLE & WARTUNG",
+    blancecContent6: "Ich war der alleinige Entwickler und Designer und verantwortlich für Architektur, UI/UX, Backend-Logik, SEO-Metadaten (Open Graph, strukturierte JSON-LD-Daten) und Deployment. Das Projekt ist live und abgeschlossen. Ich übernehme weiterhin laufende Wartung, Inhaltsaktualisierungen und technischen Support im Rahmen eines Servicevertrags mit dem Kunden.",
 
     // Banderas Nila López
     banderasSubtitle: "Unternehmenswebsite <br>Live-Projekt (in Entwicklung) <br>Einzelentwickler & Designer",
@@ -218,14 +222,18 @@ const languagesContent = {
     joblabContent6: "<strong>High Engagement & Positive Feedback:</strong><br><br>The Job Lab events in Guangzhou, Shanghai, and Beijing attracted around 300 visitors. Attendees engaged in lively discussions, asked thoughtful questions, and remained present throughout the day's program. This enthusiastic reception underscored the project's value and set a strong precedent for annual repetition, turning the Job Lab into a potential ongoing tradition.",
 
     //Blancec
-    blancecTitle1: "TRANSFORMING YOUR ONLINE PRESENCE",
-    blancecContent1: "Modernizing BLANCEC S.A.S:<br><br>BLANCEC S.A.S, a leading Colombian laboratory in product testing, needed a digital upgrade to serve clients better. We redesigned their website for faster access, intuitive navigation, and a seamless experience—helping customers easily find and request the tests they need.",
-    blancecTitle2: "LIGHTNING-FAST PERFORMANCE",
-    blancecContent2: "By rebuilding the site, we drastically improved loading times. Clients now move through pages instantly, reducing wait times and enhancing overall satisfaction. A faster site keeps visitors engaged and encourages them to explore more services.",
-    blancecTitle3: "ENHACED VISUAL DESIGN & BRANDING",
-    blancecContent3: "A Polished, Professional Look:<br><br>Using design tools like Photoshop and Illustrator, we refined the brand's visuals. A cleaner logo, dynamic header images, and a cohesive color scheme establish a modern, trusted brand identity, improving credibility and client confidence.",
-    blancecTitle4: "BEFORE & AFTER: A CLEAR UPGRADE",
-    blancecContent4: "Originally, slow loading times and an unrefined interface hampered the client experience. Today, the new website is fast, intuitive, and visually engaging. The result? A welcoming digital presence that highlights BLANCEC S.A.S's expertise and inspires visitors to take action.",
+    blancecTitle1: "PROJECT OVERVIEW",
+    blancecContent1: "Full redesign and redevelopment of the official website for Laboratorio Blancec, an ONAC-accredited industrial testing laboratory in Bogotá, Colombia. The previous site had structural errors and poor design. I rebuilt it from scratch, delivering a clean, functional, and professional digital presence aligned with the company's standards.",
+    blancecTitle2: "TECH STACK",
+    blancecContent2: "Built on CodeIgniter 4 (PHP) with a MySQL database and explicit MVC routing. Frontend uses Bootstrap 4, AOS scroll animations, CountUp.js, and jQuery plugins. Custom CSS covers typography (Raleway), responsive tables, and layout. Legacy URLs return 410 Gone to preserve SEO integrity from the old site.",
+    blancecTitle3: "SEO & STRUCTURED DATA",
+    blancecContent3: "Each page generates dynamic meta tags: canonical URLs, Open Graph tags for social sharing, Twitter Cards, and JSON-LD structured data (Organization + WebPage schemas). This ensures proper indexing, rich search results, and consistent social media previews across all sections of the site.",
+    blancecTitle4: "FEATURES & FUNCTIONALITY",
+    blancecContent4: "The site presents the company's five laboratory service areas, quality policies, accreditation information, and a complaints process. A contact form handles multiple request types with server-side validation, CSRF protection, and SMTP email delivery. An embedded Google Map and direct contact details complete the communication section.",
+    blancecTitle5: "DESIGN & UX",
+    blancecContent5: "Designed every UI element from scratch: sticky navigation, hero sections per page, mobile hamburger menu, smooth-scroll anchors, and a preloader animation. All layouts are fully responsive. The visual identity uses consistent typography, structured card grids, and a professional color palette appropriate for an industrial laboratory.",
+    blancecTitle6: "ROLE & MAINTENANCE",
+    blancecContent6: "I was the sole developer and designer — responsible for architecture, UI/UX, backend logic, SEO metadata (Open Graph, JSON-LD structured data), and deployment. The project is live and complete. I continue providing ongoing maintenance, content updates, and technical support under a service agreement with the client.",
 
 
     // Banderas Nila López
@@ -354,15 +362,19 @@ const languagesContent = {
     joblabContent6: '<strong>Alta participación y comentarios positivos:</strong><br><br>Los eventos de Job Lab en Cantón, Shanghái y Pekín atrajeron a alrededor de 300 visitantes. Los asistentes participaron en discusiones animadas, hicieron preguntas reflexivas y permanecieron presentes durante todo el programa del día. Esta recepción entusiasta subrayó el valor del proyecto y sentó un fuerte precedente para la repetición anual, convirtiendo a Job Lab en una posible tradición continua.',
 
     //Blancec
-    blancecTitle1: 'TRANSFORMANDO TU PRESENCIA EN LÍNEA',
-    blancecContent1: 'Modernizando BLANCEC S.A.S:<br><br>BLANCEC S.A.S, un laboratorio colombiano líder en pruebas de productos, necesitaba una actualización digital para servir mejor a los clientes. Rediseñamos su sitio web para un acceso más rápido, navegación intuitiva y una experiencia fluida, ayudando a los clientes a encontrar y solicitar fácilmente las pruebas que necesitan.',
-    blancecTitle2: 'RENDIMIENTO RÁPIDO COMO EL RAYO',
-    blancecContent2: 'Al reconstruir el sitio, mejoramos drásticamente los tiempos de carga. Los clientes ahora se mueven por las páginas al instante, reduciendo los tiempos de espera y mejorando la satisfacción general. Un sitio más rápido mantiene a los visitantes comprometidos y los anima a explorar más servicios.',
-    blancecTitle3: 'DISEÑO VISUAL Y BRANDING MEJORADOS',
-    blancecContent3: 'Un aspecto pulido y profesional:<br><br>Utilizando herramientas de diseño como Photoshop e Illustrator, refinamos los elementos visuales de la marca. Un logotipo más limpio, imágenes de encabezado dinámicas y un esquema de color cohesivo establecen una identidad de marca moderna y confiable, mejorando la credibilidad y la confianza del cliente.',
-    blancecTitle4: 'ANTES Y DESPUÉS: UNA MEJORA CLARA',
-    blancecContent4: 'Originalmente, los tiempos de carga lentos y una interfaz poco refinada obstaculizaban la experiencia del cliente. Hoy, el nuevo sitio web es rápido, intuitivo y visualmente atractivo. ¿El resultado? Una presencia digital acogedora que destaca la experiencia de BLANCEC S.A.S e inspira a los visitantes a actuar.',
-
+    // Spanish
+    blancecTitle1: "DESCRIPCIÓN DEL PROYECTO",
+    blancecContent1: "Rediseño y redearrollo completo del sitio web oficial de Laboratorio Blancec, un laboratorio industrial de ensayos acreditado por ONAC en Bogotá, Colombia. El sitio anterior tenía errores estructurales y un diseño deficiente. Lo reconstruí desde cero, entregando una presencia digital limpia, funcional y profesional, alineada con los estándares de la empresa.",
+    blancecTitle2: "STACK TECNOLÓGICO",
+    blancecContent2: "Desarrollado con CodeIgniter 4 (PHP), una base de datos MySQL y enrutamiento MVC explícito. El frontend utiliza Bootstrap 4, animaciones de scroll con AOS, CountUp.js y plugins de jQuery. El CSS personalizado cubre la tipografía (Raleway), tablas responsivas y el layout. Las URLs antiguas devuelven un estado 410 Gone para preservar la integridad SEO del sitio anterior.",
+    blancecTitle3: "SEO Y DATOS ESTRUCTURADOS",
+    blancecContent3: "Cada página genera metaetiquetas dinámicas: URLs canónicas, etiquetas Open Graph para compartir en redes sociales, Twitter Cards y datos estructurados en JSON-LD (esquemas de Organization y WebPage). Esto asegura una indexación correcta, resultados enriquecidos en buscadores y vistas previas consistentes en redes sociales en todas las secciones del sitio.",
+    blancecTitle4: "CARACTERÍSTICAS Y FUNCIONALIDAD",
+    blancecContent4: "El sitio presenta las cinco áreas de servicio del laboratorio, las políticas de calidad, la información de acreditación y el proceso de quejas. Un formulario de contacto gestiona múltiples tipos de solicitudes con validación del lado del servidor, protección CSRF y envío de correos mediante SMTP. Un mapa de Google incrustado y los datos de contacto directos completan la sección de comunicación.",
+    blancecTitle5: "DISEÑO Y UX",
+    blancecContent5: "Diseñé cada elemento de la interfaz desde cero: navegación sticky, secciones hero por página, menú hamburguesa para móvil, anclas con smooth scroll y una animación de precarga. Todos los layouts son completamente responsivos. La identidad visual utiliza una tipografía consistente, rejillas de tarjetas estructuradas y una paleta de colores profesional apropiada para un laboratorio industrial.",
+    blancecTitle6: "ROL Y MANTENIMIENTO",
+    blancecContent6: "Fui el único desarrollador y diseñador, responsable de la arquitectura, UI/UX, lógica backend, metadatos SEO (Open Graph, datos estructurados JSON-LD) y despliegue. El proyecto está en línea y terminado. Continúo ofreciendo mantenimiento continuo, actualizaciones de contenido y soporte técnico bajo un acuerdo de servicio con el cliente.",
     // Banderas Nila López
     banderasSubtitle: "Sitio Web Empresarial <br>Proyecto en Vivo (en Desarrollo) <br>Desarrollador y Diseñador Único",
     banderasTitle1: "DESCRIPCIÓN DEL PROYECTO",

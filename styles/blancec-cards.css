@@ -1,0 +1,47 @@
+#blancec-cards-container {
+  --cards: 7;
+}
+
+#blancec-cards-container-mobile {
+  --cards: 8;
+}
+
+#card1-blancec {
+  --index: 1;
+  margin-top: 66px;
+}
+
+#card2-blancec {
+  --index: 2;
+  margin-top: 66px;
+}
+
+#card3-blancec {
+  --index: 3;
+  margin-top: 66px;
+}
+
+#card4-blancec {
+  --index: 4;
+  margin-top: 66px;
+}
+
+#card5-blancec {
+  --index: 5;
+  margin-top: 66px;
+}
+
+#card6-blancec {
+  --index: 6;
+  margin-top: 66px;
+}
+
+#card7-blancec {
+  --index: 7;
+  margin-top: 66px;
+}
+
+#card8-blancec-mobile {
+  --index: 8;
+  margin-top: 66px;
+}

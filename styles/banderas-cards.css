@@ -1,0 +1,42 @@
+#banderas-cards-container {
+  --cards: 6;
+}
+
+#banderas-cards-container-mobile {
+  --cards: 7;
+}
+
+#card1-test {
+  --index: 1;
+  margin-top: 66px;
+}
+
+#card2-test {
+  --index: 2;
+  margin-top: 66px;
+}
+
+#card3-test {
+  --index: 3;
+  margin-top: 66px;
+}
+
+#card4-test {
+  --index: 4;
+  margin-top: 66px;
+}
+
+#card5-test {
+  --index: 5;
+  margin-top: 66px;
+}
+
+#card6-test {
+  --index: 6;
+  margin-top: 66px;
+}
+
+#card7-test {
+  --index: 7;
+  margin-top: 66px;
+}

@@ -9,15 +9,16 @@
   <link rel="manifest" href="/manifest.json">
   <title>Wilmer Florez - Web Developer</title>
   <script defer src="scripts/p5.min.js"></script>
-  <script defer src="scripts/sketch_12.min.js"></script>
+  <script defer src="scripts/sketch_12.js"></script>
   <link rel="stylesheet" href="styles/header_test.min.css">
-  <link rel="stylesheet" href="styles/cards.min.css">
+  <link rel="stylesheet" href="styles/cards.css">
+  <link rel="stylesheet" href="styles/blancec-cards.css">
   <link rel="stylesheet" href="styles/images.min.css">
-  <link rel="stylesheet" href="styles/global-text.min.css">
+  <link rel="stylesheet" href="styles/global-text.css">
   <link rel="stylesheet" href="styles/contact-form.min.css">
   <link rel="stylesheet" href="styles/cards_intro.min.css">
   <link rel="stylesheet" href="styles/languages_content.min.css">
-  <script src="scripts/languages_content.min.js" defer></script>
+  <script src="scripts/languages_content.js" defer></script>
   <script src="scripts/sw-register.js" defer></script>
 
 </head>
@@ -106,6 +107,8 @@
       <div class="card-body-intro with-arrow font-loading">
         <div class="intro-card">
           <h1 class="fade-in-text">BLANCEC S.A.S.</h1><br>
+          <h2 class="subtitle" data-i18n="blancecSubtitle">Unternehmenswebsite<br>Einzelentwickler & Designer
+          </h2>
         </div>
         <div class="arrow">
           <h1 class="text-shadow fade-in-text">↓</h1>
@@ -119,19 +122,18 @@
         <div id="card1-blancec" class="card">
           <div class="card-body" id="blancec-services">
             <div class="left" id="center-services">
-              <h2 class="title" id="title-small" data-i18n="blancecTitle1">IHRE ONLINE-PRÄSENZ TRANSFORMIEREN</h2>
-              <p class="text justify" data-i18n="blancecContent1">
-                Modernisierung von BLANCEC S.A.S.:<br><br>
-                BLANCEC S.A.S, ein führendes kolumbianisches Labor für Produkttests, benötigte ein digitales Upgrade,
-                um seine Kunden besser zu bedienen. Wir haben ihre Website neu gestaltet, um schnelleren Zugriff, eine
-                intuitive Navigation und eine fließende Nutzererfahrung zu ermöglichen - damit Kunden die benötigten
-                Tests
-                leichter finden und anfordern können.
+              <h2 class="title" id="title-medium" data-i18n="blancecTitle1">PROJEKTÜBERBLICK</h2>
+              <p class="text-new" data-i18n="blancecContent1">
+                Vollständige Neugestaltung und Neuentwicklung der offiziellen Website für Laboratorio Blancec, ein von
+                ONAC akkreditiertes Industrielabor für Prüfungen in Bogotá, Kolumbien. Die vorherige Website wies
+                strukturelle Fehler und ein schwaches Design auf. Ich habe sie von Grund auf neu aufgebaut und eine
+                klare, funktionale und professionelle digitale Präsenz geschaffen, die den Standards des Unternehmens
+                entspricht.
               </p>
             </div>
             <div class="right" id="responsive-sketch">
-              <div class="image-container-joblab">
-                <img src="imagenes/projects/blancec/blancec-05.jpg" alt="Job Lab Logo Design">
+              <div class="image-container">
+                <img src="imagenes/projects/Blancec-color.png" alt="Blancec Logo">
               </div>
             </div>
           </div>
@@ -140,20 +142,16 @@
         <div id="card2-blancec" class="card">
           <div class="card-body" id="blancec-services">
             <div class="left" id="center-services">
-              <h2 class="title" id="title-small" data-i18n="blancecTitle2">BLITZSCHNELLE LEISTUNG</h2>
-              <p class="text justify" data-i18n="blancecContent2"> Beschleunigung der Nutzererfahrung: <br><br>
-                Durch den Neuaufbau der Website haben wir die Ladezeiten drastisch verkürzt.
-                Kunden können nun effizient durch die Seiten navigieren, was Wartezeiten reduziert und die
-                allgemeine Zufriedenheit steigert. Eine schnellere Website hält Besucher engagiert und motiviert
-                sie, weitere Dienstleistungen zu erkunden.
+              <h2 class="title" id="title-medium" data-i18n="blancecTitle2">TECH STACK</h2>
+              <p class="text-new" data-i18n="blancecContent2">Entwickelt mit CodeIgniter 4 (PHP), einer MySQL-Datenbank
+                und explizitem MVC-Routing. Das Frontend nutzt Bootstrap 4, AOS-Scroll-Animationen, CountUp.js und
+                jQuery-Plugins. Benutzerdefiniertes CSS deckt Typografie (Raleway), responsive Tabellen und Layout ab.
+                Alte URLs geben den Status 410 Gone zurück, um die SEO-Integrität der vorherigen Website zu bewahren.
               </p>
             </div>
             <div class="right" id="responsive-sketch">
-              <div class="blancec_video">
-                <video autoplay loop muted playsinline preload="metadata" loading="lazy" poster="imagenes/videos/blancec_video_01.jpg">
-                  <source src="imagenes/videos/blancec_video_01_compressed.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
+              <div class="image-container">
+                <img src="imagenes/projects/blancec/blancec-07.jpg" alt="Blancec">
               </div>
             </div>
           </div>
@@ -162,22 +160,17 @@
         <div id="card3-blancec" class="card">
           <div class="card-body" id="blancec-services">
             <div class="left" id="center-services">
-              <h2 class="title" id="title-small" data-i18n="blancecTitle3">VERBESSERTES VISUELLES DESIGN & BRANDING</h2>
-              <p class="text justify" data-i18n="blancecContent3">
-                Ein eleganter, professioneller Auftritt:<br><br>
-                Mit Design-Tools wie Photoshop und Illustrator haben wir das visuelle Erscheinungsbild der Marke
-                verfeinert.
-                Ein klareres Logo, dynamische Header-Bilder und ein stimmiges Farbschema schaffen eine moderne und
-                vertrauenswürdige
-                Markenidentität - und stärken somit Glaubwürdigkeit und Kundenvertrauen.
+              <h2 class="title" id="title-medium" data-i18n="blancecTitle3">SEO & STRUKTURIERTE DATEN</h2>
+              <p class="text-new" data-i18n="blancecContent3">
+                Jede Seite erzeugt dynamische Meta-Tags: Canonical-URLs, Open-Graph-Tags für das Teilen in sozialen
+                Netzwerken, Twitter Cards und strukturierte JSON-LD-Daten (Schemas für Organization und WebPage). Das
+                sorgt für eine korrekte Indexierung, erweiterte Suchergebnisse und konsistente Vorschaubilder in
+                sozialen Medien in allen Bereichen der Website.
               </p>
             </div>
             <div class="right" id="responsive-sketch">
-              <div class="blancec_video">
-                <video autoplay loop muted playsinline preload="metadata" loading="lazy" poster="imagenes/videos/blancec_video_03.jpg">
-                  <source src="imagenes/videos/blancec_video_03_compressed.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
+              <div class="image-container">
+                <img src="imagenes/projects/blancec/blancec-09.jpg" alt="Blancec">
               </div>
             </div>
           </div>
@@ -186,30 +179,72 @@
         <div id="card4-blancec" class="card">
           <div class="card-body" id="blancec-services">
             <div class="left" id="center-services">
-              <h2 class="title" id="title-small" data-i18n="blancecTitle4">VORHER & NACHHER: EIN DEUTLICHER FORTSCHRITT
+              <h2 class="title" id="title-medium" data-i18n="blancecTitle4">FUNKTIONEN & MERKMALE
               </h2>
-              <p class="text justify" data-i18n="blancecContent4">
-                Ursprünglich beeinträchtigten lange Ladezeiten und eine unausgereifte Benutzeroberfläche die
-                Kundenerfahrung.
-                Heute ist die neue Website schnell, intuitiv und visuell ansprechend. Das Ergebnis? Eine einladende
-                digitale
-                Präsenz, die die Expertise von BLANCEC S.A.S. hervorhebt und Besucher dazu motiviert, aktiv zu werden.
+              <p class="text-new" data-i18n="blancecContent4">
+                Die Website präsentiert die fünf Dienstleistungsbereiche des Labors, Qualitätspolitiken,
+                Akkreditierungsinformationen und ein Beschwerdeverfahren. Ein Kontaktformular verarbeitet verschiedene
+                Anfragearten mit serverseitiger Validierung, CSRF-Schutz und E-Mail-Versand über SMTP. Eine eingebettete
+                Google Map und direkte Kontaktdaten vervollständigen den Kommunikationsbereich.
+              </p>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <div class="blancec_video">
+                <video autoplay loop muted playsinline preload="metadata" loading="lazy"
+                  poster="imagenes/videos/blancec_video_03.jpg">
+                  <source src="imagenes/videos/blancec_video_03_compressed.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="card5-blancec" class="card">
+          <div class="card-body" id="blancec-services">
+            <div class="left" id="center-services">
+              <h2 class="title" id="title-medium" data-i18n="blancecTitle5">DESIGN & UX
+              </h2>
+              <p class="text-new" data-i18n="blancecContent5">
+                Jedes UI-Element wurde von Grund auf gestaltet: Sticky-Navigation, Hero-Bereiche pro Seite, mobiles
+                Hamburger-Menü, Smooth-Scroll-Anker und eine Preloader-Animation. Alle Layouts sind vollständig
+                responsiv. Die visuelle Identität nutzt eine konsistente Typografie, strukturierte Kartenraster und eine
+                professionelle Farbpalette, die zu einem industriellen Prüflabor passt.
+              </p>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <div class="image-container">
+                <img src="imagenes/projects/blancec/blancec-08.jpg" alt="Blancec">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="card6-blancec" class="card">
+          <div class="card-body" id="blancec-services">
+            <div class="left" id="center-services">
+              <h2 class="title" id="title-medium" data-i18n="blancecTitle6">ROLLE & WARTUNG
+              </h2>
+              <p class="text-new" data-i18n="blancecContent6">
+                Ich war der alleinige Entwickler und Designer und verantwortlich für Architektur, UI/UX, Backend-Logik,
+                SEO-Metadaten (Open Graph, strukturierte JSON-LD-Daten) und Deployment. Das Projekt ist live und
+                abgeschlossen. Ich übernehme weiterhin laufende Wartung, Inhaltsaktualisierungen und technischen Support
+                im Rahmen eines Servicevertrags mit dem Kunden.
               </p><br>
               <a href="https://www.laboratorioblancec.com/" target="_blank" rel="noopener noreferrer">
                 <button class="send-button">Live-Website ansehen </button>
               </a>
             </div>
             <div class="right" id="responsive-sketch">
-              <div class="image-container-joblab">
-                <img src="imagenes/projects/Blancec-color.png" alt="Job Lab Logo Design">
+              <div class="image-container">
+                <img src="imagenes/projects/Blancec-color-2.png" alt="Blancec">
               </div>
-
             </div>
           </div>
         </div>
 
 
-        <div id="card5-blancec" class="card">
+        <div id="card7-blancec" class="card">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
               <h2 class="title" id="title-small" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?</h2>
@@ -222,13 +257,6 @@
                 Kontaktaufnahme.
                 Gerne bespreche ich mit Ihnen, wie ich Ihr Team und Ihre Ziele bestmöglich unterstützen kann.
                 <br><br>
-              </p>
-              <h2 class="title impressum" id="title-small" data-i18n="impressumTitle">IMPRESSUM</h2>
-              <p class="text" data-i18n="impressumText">
-                Gesetzliche Vertretung: Wilmer Aderbert Florez Lopez <br>
-                Calle 75 # 58-51 - 111211 Bogota, Kolumbien <br>wilmerkopernikus@gmail.com <br>
-                Registriert und rechtlich vertreten in Bogotá, Kolumbien. <br>
-                Umsatzsteuer (MwSt) ist auf internationale Transaktionen nicht anwendbar.
               </p>
             </div>
             <div class="right" id="center-services">
@@ -267,104 +295,138 @@
 
     <div id='blancec-cards-container' class="cards-mobile">
       <div id="cards" class="container">
+
         <div id="card1-blancec" class="card">
           <div class="card-body" id="blancec-services">
-            <div class="left" id="responsive-sketch">
-              <div class="image-container-joblab">
-                <img id="services-animation-cases" src="imagenes/projects/blancec/blancec-05.jpg"
-                  alt="Job Lab Logo Design">
-              </div>
-            </div>
-            <div class="right" id="center-services-mobile">
-              <h2 class="title" id="title-small" data-i18n="blancecTitle1">IHRE ONLINE-PRÄSENZ TRANSFORMIEREN</h2>
+
+            <div class="left" id="center-services-mobile">
+              <h2 class="title" id="title-small" data-i18n="blancecTitle1">PROJEKTÜBERBLICK</h2>
               <p class="text justify" data-i18n="blancecContent1">
-                Modernisierung von BLANCEC S.A.S.:<br><br>
-                BLANCEC S.A.S, ein führendes kolumbianisches Labor für Produkttests, benötigte ein digitales Upgrade,
-                um seine Kunden besser zu bedienen. Wir haben ihre Website neu gestaltet, um schnelleren Zugriff, eine
-                intuitive Navigation und eine fließende Nutzererfahrung zu ermöglichen - damit Kunden die benötigten
-                Tests
-                leichter finden und anfordern können.
+                Vollständige Neugestaltung und Neuentwicklung der offiziellen Website für Laboratorio Blancec, ein von
+                ONAC akkreditiertes Industrielabor für Prüfungen in Bogotá, Kolumbien. Die vorherige Website wies
+                strukturelle Fehler und ein schwaches Design auf. Ich habe sie von Grund auf neu aufgebaut und eine
+                klare, funktionale und professionelle digitale Präsenz geschaffen, die den Standards des Unternehmens
+                entspricht.
               </p>
             </div>
+
+            <div class="right" id="responsive-sketch">
+              <div class="image-container-joblab">
+                <img src="imagenes/projects/Blancec-color.png" alt="Blancec Logo">
+              </div>
+            </div>
+
           </div>
         </div>
 
         <div id="card2-blancec" class="card">
           <div class="card-body" id="blancec-services">
-            <div class="left" id="responsive-sketch">
-              <div class="blancec_video">
-                <video id="services-animation-cases" autoplay loop muted playsinline preload="metadata" loading="lazy"
-                  poster="imagenes/videos/blancec_video_01.jpg">
-                  <source src="imagenes/videos/blancec_video_01_compressed.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-            <div class="right" id="center-services-mobile">
-              <h2 class="title" id="title-small" data-i18n="blancecTitle2">BLITZSCHNELLE LEISTUNG</h2>
-              <p class="text justify" data-i18n="blancecContent2"> Beschleunigung der Nutzererfahrung: <br><br>
-                Durch den Neuaufbau der Website mit React haben wir die Ladezeiten drastisch verkürzt.
-                Kunden können nun effizient durch die Seiten navigieren, was Wartezeiten reduziert und die
-                allgemeine Zufriedenheit steigert. Eine schnellere Website hält Besucher engagiert und motiviert
-                sie, weitere Dienstleistungen zu erkunden..
+            <div class="left" id="center-services-mobile">
+              <h2 class="title" id="title-small" data-i18n="blancecTitle2">TECH-STACK</h2>
+              <p class="text justify" data-i18n="blancecContent2"> Entwickelt mit CodeIgniter 4 (PHP), einer
+                MySQL-Datenbank und explizitem MVC-Routing. Das Frontend nutzt Bootstrap 4, AOS-Scroll-Animationen,
+                CountUp.js und jQuery-Plugins. Benutzerdefiniertes CSS deckt Typografie (Raleway), responsive Tabellen
+                und Layout ab. Alte URLs geben den Status 410 Gone zurück, um die SEO-Integrität der vorherigen Website
+                zu bewahren.
               </p>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <div class="image-container-joblab">
+                <img src="imagenes/projects/blancec/blancec-07.jpg" alt="Blancec Website Image">
+              </div>
             </div>
           </div>
         </div>
 
         <div id="card3-blancec" class="card">
           <div class="card-body" id="blancec-services">
-            <div class="left" id="responsive-sketch">
-              <div class="blancec_video">
-                <video id="services-animation-cases" autoplay loop muted playsinline preload="metadata" loading="lazy"
-                  poster="imagenes/videos/blancec_video_03.jpg">
-                  <source src="imagenes/videos/blancec_video_03_compressed.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-            <div class="right" id="center-services-mobile">
-              <h2 class="title" id="title-small" data-i18n="blancecTitle3">VERBESSERTES VISUELLES DESIGN & BRANDING</h2>
+            <div class="left" id="center-services-mobile">
+              <h2 class="title" id="title-small" data-i18n="blancecTitle3">SEO & STRUKTURIERTE DATEN</h2>
               <p class="text justify" data-i18n="blancecContent3">
-                Ein eleganter, professioneller Auftritt:<br><br>
-                Mit Design-Tools wie Photoshop und Illustrator haben wir das visuelle Erscheinungsbild der Marke
-                verfeinert.
-                Ein klareres Logo, dynamische Header-Bilder und ein stimmiges Farbschema schaffen eine moderne und
-                vertrauenswürdige
-                Markenidentität - und stärken somit Glaubwürdigkeit und Kundenvertrauen.
+                Jede Seite erzeugt dynamische Meta-Tags: Canonical-URLs, Open-Graph-Tags für das Teilen in sozialen
+                Netzwerken, Twitter Cards und strukturierte JSON-LD-Daten (Schemas für Organization und WebPage). Das
+                sorgt für eine korrekte Indexierung, erweiterte Suchergebnisse und konsistente Vorschaubilder in
+                sozialen Medien in allen Bereichen der Website.
               </p>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <div class="image-container-joblab">
+                <img src="imagenes/projects/blancec/blancec-09.jpg" alt="Blancec Website Image">
+              </div>
             </div>
           </div>
         </div>
 
         <div id="card4-blancec" class="card">
           <div class="card-body" id="blancec-services">
-            <div class="left" id="responsive-sketch">
-              <div class="image-container-joblab">
-                <img id="services-animation-cases" src="imagenes/projects/Blancec-color.png" alt="Job Lab Logo Design">
-              </div>
-            </div>
-            <div class="right" id="center-services-mobile">
-              <h2 class="title" id="title-small" data-i18n="blancecTitle4">VORHER & NACHHER: EIN DEUTLICHER FORTSCHRITT
+            <div class="left" id="center-services-mobile">
+              <h2 class="title" id="title-small" data-i18n="blancecTitle4">FUNKTIONEN & MERKMALE
               </h2>
               <p class="text justify" data-i18n="blancecContent4">
-                Ursprünglich beeinträchtigten lange Ladezeiten und eine unausgereifte Benutzeroberfläche die
-                Kundenerfahrung.
-                Heute ist die neue Website schnell, intuitiv und visuell ansprechend. Das Ergebnis? Eine einladende
-                digitale
-                Präsenz, die die Expertise von BLANCEC S.A.S. hervorhebt und Besucher dazu motiviert, aktiv zu werden.
+                Die Website präsentiert die fünf Dienstleistungsbereiche des Labors, Qualitätspolitiken,
+                Akkreditierungsinformationen und ein Beschwerdeverfahren. Ein Kontaktformular verarbeitet verschiedene
+                Anfragearten mit serverseitiger Validierung, CSRF-Schutz und E-Mail-Versand über SMTP. Eine eingebettete
+                Google Map und direkte Kontaktdaten vervollständigen den Kommunikationsbereich.
               </p><br>
-              <a href="https://www.laboratorioblancec.com/" target="_blank" rel="noopener noreferrer">
-                <button class="send-button">Live-Website ansehen </button>
-              </a>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <div class="blancec_video">
+                <video autoplay loop muted playsinline preload="metadata" loading="lazy"
+                  poster="imagenes/videos/blancec_video_03.jpg">
+                  <source src="imagenes/videos/blancec_video_03_compressed.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
           </div>
         </div>
 
         <div id="card5-blancec" class="card">
+          <div class="card-body" id="blancec-services">
+            <div class="left" id="center-services-mobile">
+              <h2 class="title" id="title-small" data-i18n="blancecTitle5">DESIGN & UX
+              </h2>
+              <p class="text justify" data-i18n="blancecContent5">
+                Jedes UI-Element wurde von Grund auf gestaltet: Sticky-Navigation, Hero-Bereiche pro Seite, mobiles
+                Hamburger-Menü, Smooth-Scroll-Anker und eine Preloader-Animation. Alle Layouts sind vollständig
+                responsiv. Die visuelle Identität nutzt eine konsistente Typografie, strukturierte Kartenraster und eine
+                professionelle Farbpalette, die zu einem industriellen Prüflabor passt.
+              </p><br>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <div class="image-container-joblab">
+                <img src="imagenes/projects/blancec/blancec-08.jpg" alt="Blancec Website Image">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="card6-blancec" class="card">
+          <div class="card-body" id="blancec-services">
+            <div class="left" id="center-services-mobile">
+              <h2 class="title" id="title-small" data-i18n="blancecTitle6">ROLLE & WARTUNG
+              </h2>
+              <p class="text justify" data-i18n="blancecContent6">
+                Ich war der alleinige Entwickler und Designer und verantwortlich für Architektur, UI/UX, Backend-Logik,
+                SEO-Metadaten (Open Graph, strukturierte JSON-LD-Daten) und Deployment. Das Projekt ist live und
+                abgeschlossen. Ich übernehme weiterhin laufende Wartung, Inhaltsaktualisierungen und technischen Support
+                im Rahmen eines Servicevertrags mit dem Kunden.
+              </p><br>
+              <a href="https://www.laboratorioblancec.com/" target="_blank" rel="noopener noreferrer">
+                <button class="send-button">Live-Website ansehen </button>
+              </a>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <div class="image-container-joblab">
+                <img src="imagenes/projects/Blancec-color-2.png" alt="Blancec">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="card7-blancec" class="card">
           <div class="card-body" id="contact-proportion-text">
             <div class="left" id="center-services">
-
             </div>
             <div class="right" id="center-services">
               <h2 class="title" id="title-small" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?</h2>
@@ -378,18 +440,11 @@
                 Gerne bespreche ich mit Ihnen, wie ich Ihr Team und Ihre Ziele bestmöglich unterstützen kann.
                 <br><br>
               </p>
-              <h2 class="title impressum" id="title-small" data-i18n="impressumTitle">IMPRESSUM</h2>
-              <p class="text" data-i18n="impressumText">
-                Gesetzliche Vertretung: Wilmer Aderbert Florez Lopez <br>
-                Calle 75 # 58-51 - 111211 Bogota, Kolumbien <br>
-                wilmerkopernikus@gmail.com <br>Registriert und rechtlich vertreten in Bogotá, Kolumbien. <br>
-                Umsatzsteuer (MwSt) ist auf internationale Transaktionen nicht anwendbar.
-              </p>
             </div>
           </div>
         </div>
 
-        <div id="card6-blancec-mobile" class="card">
+        <div id="card8-blancec-mobile" class="card">
           <div class="card-body" id="contact-proportion">
             <div class="left" id="center-services">
               <h2 class="title" id="title-small" data-i18n="formTitle">KONTAKTIEREN SIE MICH!</h2>
@@ -423,5 +478,4 @@
   </div>
   <script src="scripts/script.min.js"></script>
 </body>
-
 </html>
