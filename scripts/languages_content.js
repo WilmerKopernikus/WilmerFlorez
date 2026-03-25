@@ -52,10 +52,14 @@ const languagesContent = {
     banderasLeistungen: "<strong>Leistungen:</strong><br /> Webentwicklung & Design - Markenentwicklung - WebsiteBetreuung",
     banderasUebersicht: "<strong>Übersicht:</strong><br />Banderas Nila Lopez ist ein kolumbianisches Unternehmen, das sich auf die Herstellung und den Vertrieb von hochwertigen Textilprodukten spezialisiert hat. Das Projekt umfasst die Entwicklung einer modernen Website, die das Markenimage stärkt und die Online-Präsenz des Unternehmens verbessert.",
     tarotTitle: "INTERACTIVES TAROT",
-    tarotKunde: "<strong>Kunde:</strong><br /> Nichtkommerzielles Projekt",
-    tarotLeistungen: "<strong>Technologien:</strong><br /> Frontend, Backend, Künstliche Intelligenz, Hosting und Deployment, Medien und Assets",
-    tarotUebersicht: "<strong>Übersicht:</strong><br />Ein interaktives Tarot-Modul, das modernes Webdesign mit einem leistungsfähigen Backend auf Vercel und der OpenAI-API verbindet. Es ermöglicht sprachadaptive, dynamisch generierte Karteninterpretationen und demonstriert eine präzise Kombination aus Frontend-Interaktion, serverloser Architektur und KI-gestützter Textanalyse.",
-    mehrInformation: "Mehr Information",
+    tarotKunde: "<strong>Projekt:</strong><br /> Persönliches Projekt in Entwicklung",
+    tarotLeistungen: "<strong>Tech Stack:</strong><br /> JavaScript · OpenAI API · HTML/CSS · Vercel · Node.js",
+    tarotUebersicht: "<strong>Übersicht:</strong><br />Ein persönliches Projekt in Entwicklung: Eine interaktive Tarot-Webanwendung, die die ChatGPT-API nutzt, um personalisierte Karteninterpretationen zu generieren. Das Projekt kombiniert modernes Frontend-Design mit serverloser Backend-Architektur und demonstriert den Einsatz von KI zur Erstellung dynamischer, mehrsprachiger Inhalte.",
+    stopdesertTitle: "STOP THE DESERT",
+    stopdesertKunde: "<strong>Projekt:</strong><br /> Ehrenamtliches Projekt",
+    stopdesertLeistungen: "<strong>Tech Stack:</strong><br /> WordPress · Kadence · HTML/CSS · JavaScript · Spendensystem",
+    stopdesertUebersicht: "<strong>Übersicht:</strong><br />Stop the Desert ist eine NGO, die die Wüstenbildung weltweit bekämpft. Das Projekt umfasst die Verwaltung der WordPress-Website mit Kadence und die Implementierung eines Spendensystems, das Landwirte direkt unterstützt.",
+    vollstaendigeFallstudie: "Vollständige Fallstudie ansehen",
 
     //Joblab
     joblabTitle1: "PROJEKTÜBERSICHT & ZIELSETZUNG",
@@ -104,15 +108,6 @@ const languagesContent = {
     banderasTitle4: "VERWENDETE TECHNOLOGIEN",
     banderasContent4: "Vue.js 3 (Composition API) • JavaScript (ES6+) • HTML5 • CSS3 • Masonry.js • Intersection Observer API • LocalStorage API • Responsive Web Design",
     liveWebsite: "Live-Website ansehen",
-
-
-
-
-
-
-
-
-
 
     // Interaktives Tarot
     eineKarte: "Eine Karte ziehen",
@@ -202,10 +197,14 @@ const languagesContent = {
     banderasLeistungen: "<strong>My responsibilities:</strong><br /> Web Development & Design - Brand Development - Website Maintenance",
     banderasUebersicht: "<strong>Overview:</strong><br />Banderas Nila Lopez is a Colombian company specializing in the production and distribution of high-quality textile products. The project involves developing a modern website that strengthens the brand image and improves the company's online presence.",
     tarotTitle: "INTERACTIVE TAROT",
-    tarotKunde: "<strong>Client:</strong><br /> Non-profit project",
-    tarotLeistungen: "<strong>My responsibilities:</strong><br /> Frontend, Backend, Artificial Intelligence, Hosting and Deployment, Media and Assets",
-    tarotUebersicht: "<strong>Overview:</strong><br />An interactive tarot module that combines modern web design with a powerful backend on Vercel and the OpenAI API. It enables language-adaptive, dynamically generated card interpretations and showcases a precise combination of frontend interaction, serverless architecture, and AI-driven text analysis.<br />",
-    mehrInformation: "More Information",
+    tarotKunde: "<strong>Project:</strong><br /> Personal Project in Development",
+    tarotLeistungen: "<strong>Tech Stack:</strong><br /> JavaScript · OpenAI API · HTML/CSS · Vercel · Node.js",
+    tarotUebersicht: "<strong>Overview:</strong><br />A personal project in development: an interactive tarot web application that uses the ChatGPT API to generate personalized card interpretations. The project combines modern frontend design with serverless backend architecture, demonstrating the use of AI for creating dynamic, multilingual content.",
+    stopdesertTitle: "STOP THE DESERT",
+    stopdesertKunde: "<strong>Project:</strong><br /> Volunteer Work",
+    stopdesertLeistungen: "<strong>Tech Stack:</strong><br /> WordPress · Kadence · HTML/CSS · JavaScript · Donation System",
+    stopdesertUebersicht: "<strong>Overview:</strong><br />Stop the Desert is an NGO fighting desertification worldwide. The project involves managing the WordPress website with Kadence and implementing a donation system that directly supports farmers.",
+    vollstaendigeFallstudie: "View Full Case Study",
 
     //Joblab
     joblabTitle1: "PROJECT OVERVIEW & PURPOSE",
@@ -342,10 +341,14 @@ const languagesContent = {
     banderasLeistungen: "<strong>Mis Responsabilidades:</strong><br /> Desarrollo & Diseño web - Desarrollo de marca - Mantenimiento del sitio web",
     banderasUebersicht: "<strong>Resumen:</strong><br />Banderas Nila López es una empresa colombiana especializada en la producción y distribución de productos textiles de alta calidad. El proyecto consiste en desarrollar un sitio web moderno que fortalezca la imagen de marca y mejore la presencia online de la empresa.",
     tarotTitle: "TAROT INTERACTIVO",
-    tarotKunde: '<strong>Cliente:</strong><br/>Proyecto sin fines de lucro',
-    tarotLeistungen: '<strong>Tecnologías:</strong><br/>Frontend, Backend, Inteligencia Artificial, Hosting y Despliegue, Medios y Recursos',
-    tarotUebersicht: '<strong>Resumen:</strong><br/>Un módulo de tarot interactivo que combina un diseño web moderno con un backend potente en Vercel y la API de OpenAI. Permite interpretaciones de cartas generadas dinámicamente y adaptadas al idioma, y muestra una combinación precisa de interacción frontend, arquitectura sin servidor y análisis de texto impulsado por IA.',
-    mehrInformation: 'Más información',
+    tarotKunde: '<strong>Proyecto:</strong><br/>Proyecto Personal en Desarrollo',
+    tarotLeistungen: '<strong>Tech Stack:</strong><br/>JavaScript · OpenAI API · HTML/CSS · Vercel · Node.js',
+    tarotUebersicht: '<strong>Resumen:</strong><br/>Un proyecto personal en desarrollo: una aplicación web interactiva de tarot que utiliza la API de ChatGPT para generar interpretaciones personalizadas de cartas. El proyecto combina diseño frontend moderno con arquitectura backend sin servidor, demostrando el uso de IA para crear contenido dinámico y multilingüe.',
+    stopdesertTitle: "STOP THE DESERT",
+    stopdesertKunde: '<strong>Proyecto:</strong><br/>Trabajo Voluntario',
+    stopdesertLeistungen: '<strong>Tech Stack:</strong><br/>WordPress · Kadence · HTML/CSS · JavaScript · Sistema de Donaciones',
+    stopdesertUebersicht: '<strong>Resumen:</strong><br/>Stop the Desert es una ONG que combate la desertificación a nivel mundial. El proyecto incluye la gestión del sitio web WordPress con Kadence y la implementación de un sistema de donaciones que apoya directamente a los agricultores.',
+    vollstaendigeFallstudie: 'Ver Caso de Estudio Completo',
 
     //Joblab
     joblabTitle1: 'RESUMEN Y PROPÓSITO DEL PROYECTO',

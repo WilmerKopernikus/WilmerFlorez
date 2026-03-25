@@ -109,7 +109,7 @@ a {
 
 
 .send-button {
-  width: 200px; 
+  width: 290px; 
   padding: 15px;
   background-color: #000000;
   color: #ffffff;
@@ -250,7 +250,11 @@ a {
   }
 
   .send-button {
-    margin-left: 20px;
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    max-width: 300px;
+    padding: 12px 8px;
   }
 
 }
@@ -286,9 +290,11 @@ a {
   
   .send-button {
     font-size: 1.7rem;
-    margin-left: 90px;
-    padding: 20px;
-    min-width: 350px;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 350px;
+    padding: 18px 10px;
   }
 
 
@@ -335,9 +341,11 @@ a {
   
   .send-button {
     font-size: 1.5rem;
-    margin-left: 50px;
-    padding: 20px;
-    min-width: 160px;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 350px;
+    padding: 18px 10px;
   }
 }
 
@@ -371,8 +379,11 @@ a {
 
   .send-button{
     font-size: 1.4rem;
-    margin-left: 30px;
-    min-width: 100px;
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    max-width: 300px;
+    padding: 12px 8px;
   }
 }
 
@@ -414,10 +425,11 @@ a {
   
   .send-button {
     font-size: 1rem;
-    margin-left: 20px;
-    padding: 10px;
-    min-width: 140px;
-    
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+    max-width: 350px;
+    padding: 15px 10px;
   }
 
   .form-group input,
@@ -458,11 +470,12 @@ a {
 
   
   .send-button {
-    font-size: 0.7rem;
-    padding: 5px;
-    width: auto;
-    height: auto;
-    
+    font-size: 0.9rem;
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    max-width: 300px;
+    padding: 12px 8px;
   }
 
   .form-group input,
@@ -492,7 +505,11 @@ a {
   
   .send-button {
     font-size: 1rem;
-    margin-left: 20px;
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    max-width: 300px;
+    padding: 12px 8px;
   }
 
   
@@ -527,6 +544,11 @@ a {
   
   .send-button {
     font-size: 0.8rem;
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    max-width: 280px;
+    padding: 10px 6px;
   }
 
   .form-group input,
@@ -571,6 +593,11 @@ a {
   
   .send-button {
     font-size: 0.7rem;
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    max-width: 260px;
+    padding: 10px 6px;
   }
 
   .form-group input,
