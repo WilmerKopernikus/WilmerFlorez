@@ -55,12 +55,12 @@ const languagesContent = {
     tarotKunde: "<strong>Projekt:</strong><br /> Persönliches Projekt in Entwicklung",
     tarotLeistungen: "<strong>Tech Stack:</strong><br /> JavaScript · OpenAI API · HTML/CSS · Vercel · Node.js",
     tarotUebersicht: "<strong>Übersicht:</strong><br />Ein persönliches Projekt in Entwicklung: Eine interaktive Tarot-Webanwendung, die die ChatGPT-API nutzt, um personalisierte Karteninterpretationen zu generieren. Das Projekt kombiniert modernes Frontend-Design mit serverloser Backend-Architektur und demonstriert den Einsatz von KI zur Erstellung dynamischer, mehrsprachiger Inhalte.",
+    
     stopdesertTitle: "STOP THE DESERT",
     stopdesertKunde: "<strong>Projekt:</strong><br /> Ehrenamtliches Projekt",
     stopdesertLeistungen: "<strong>Tech Stack:</strong><br /> WordPress · Kadence · HTML/CSS · JavaScript · Spendensystem",
     stopdesertUebersicht: "<strong>Übersicht:</strong><br />Stop the Desert ist eine NGO, die die Wüstenbildung weltweit bekämpft. Das Projekt umfasst die Verwaltung der WordPress-Website mit Kadence und die Implementierung eines Spendensystems, das Landwirte direkt unterstützt.",
     mehrInformation: "Mehr Informationen",
-    vollstaendigeFallstudie: "Vollständige Fallstudie ansehen",
 
     //Joblab
     joblabTitle1: "PROJEKTÜBERSICHT & ZIELSETZUNG",
