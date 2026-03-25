@@ -30,7 +30,7 @@ const languagesContent = {
 
     wilmerIntroduction: "Ich bin Webentwickler, Grafikdesigner und bildender Künstler mit internationaler Erfahrung in Deutschland, China und Kolumbien. In diesem Portfolio präsentiere ich sowohl berufliche als auch persönliche Projekte, die meinen Ansatz widerspiegeln: Design, Technologie und Kreativität zu verbinden, um digitale Lösungen auf höchstem Niveau zu entwickeln.",
     projectTitle: "PROJEKTE",
-    projectContent: "Erfahren Sie in verschiedenen Projektbeispielen, wie ich Kunden mit wirkungsvollem Webdesign und -entwicklung unterstützt habe.",
+    projectContent: "Im Folgenden präsentiere ich die Projekte und Fallstudien, an denen ich als Webentwickler gearbeitet habe, wobei ich Strategie, Design und Technologie kombiniere, um konkrete Ergebnisse zu erzielen.",
     projectButton: "Zu meinen Projekten",
     curriculumTitle: `LEBENSLAUF`,
     cvContent: "Entdecken Sie meinen Lebenslauf und erfahren Sie mehr über meine berufliche Erfahrung, meine technischen Fähigkeiten und meinen internationalen Werdegang.",
@@ -176,7 +176,7 @@ const languagesContent = {
 
     wilmerIntroduction: "I am a web developer, graphic designer, and visual artist with international experience in Germany, China, and Colombia. In this portfolio, I present both professional and personal projects that reflect my approach: combining design, technology, and creativity to develop high-quality digital solutions.",
     projectTitle: `PROJECTS`,
-    projectContent: `Discover a selection of project examples that show how I have supported clients through impactful web design and development.`,
+    projectContent: `Below, I present the projects and case studies I have worked on as a web developer, where I combine strategy, design, and technology to achieve real results.`,
     projectButton: `View my projects`,
     curriculumTitle: `CURRICULUM VITAE`,
     cvContent: "Explore my resume and learn more about my professional experience, technical skills, and international background.",
@@ -321,7 +321,7 @@ const languagesContent = {
     homeButton: `Iniciar un proyecto`,
     wilmerIntroduction: "Soy desarrollador web, diseñador gráfico y artista visual con experiencia internacional en Alemania, China y Colombia. En este portafolio presento tanto proyectos profesionales como personales que reflejan mi enfoque: combinar diseño, tecnología y creatividad para desarrollar soluciones digitales de alta calidad.",
     projectTitle: 'PROYECTOS',
-    projectContent: 'Descubre una selección de ejemplos de proyectos que muestran cómo he apoyado a los clientes a través de un diseño y desarrollo web impactantes.',
+    projectContent: 'A continuación, presento los proyectos y casos de estudio en los que he trabajado como desarrollador web, donde combino estrategia, diseño y tecnología para lograr resultados reales.',
     projectButton: 'Ver mis proyectos',
     curriculumTitle: 'CURRÍCULUM VITAE',
     cvContent: 'Explora mi currículum y conoce más sobre mi experiencia profesional, habilidades técnicas y trayectoria internacional.',

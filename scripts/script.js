@@ -49,9 +49,35 @@ document.addEventListener("DOMContentLoaded", function() {
     // Cerrar el menú al hacer click en cualquier enlace
     const menuLinks = menuOverlay.querySelectorAll("a");
     menuLinks.forEach(link => {
-        link.addEventListener("click", function() {
-            hamburger.classList.remove("open");
-            menuOverlay.classList.remove("show");
+        link.addEventListener("click", function(e) {
+            // Manejar el enlace de Projekte especialmente
+            if (this.getAttribute("href") === "#card3") {
+                e.preventDefault();
+                
+                // Cerrar el menú
+                hamburger.classList.remove("open");
+                menuOverlay.classList.remove("show");
+                
+                // Detectar si estamos en mobile o desktop (1024px es el breakpoint)
+                const isMobile = window.innerWidth <= 1024;
+                
+                // Seleccionar el contenedor correcto
+                const container = isMobile ? 
+                    document.querySelector('.cards-mobile') : 
+                    document.querySelector('.cards-screens');
+                
+                // Encontrar card3 dentro del contenedor visible
+                const card3 = container.querySelector('#card3');
+                
+                // Scroll suave a la card
+                if (card3) {
+                    card3.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            } else {
+                // Para otros enlaces, solo cerrar el menú
+                hamburger.classList.remove("open");
+                menuOverlay.classList.remove("show");
+            }
         });
     });
 });
