@@ -49,25 +49,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Cerrar el menú al hacer click en cualquier enlace
     const menuLinks = menuOverlay.querySelectorAll("a");
     menuLinks.forEach(link => {
-        link.addEventListener("click", function(e) {
-            // Cerrar el menú primero
+        link.addEventListener("click", function() {
             hamburger.classList.remove("open");
             menuOverlay.classList.remove("show");
-
-            if (this.getAttribute("href") === "#card3") {
-                e.preventDefault();
-                // Esperar a que termine la animación de cierre del menú (200ms)
-                setTimeout(() => {
-                    const isMobile = window.innerWidth <= 1024;
-                    const container = isMobile
-                        ? document.querySelector('.cards-mobile')
-                        : document.querySelector('.cards-screens');
-                    const card3 = container && container.querySelector('#card3');
-                    if (card3) {
-                        card3.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                }, 250);
-            }
         });
     });
 });

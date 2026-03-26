@@ -1,0 +1,72 @@
+#cases-cards-container {
+    --cards: 6;
+  }
+
+#cases-cards-container-mobile {
+    --cards: 7;
+  }
+
+#card1-cases {
+    --index: 1;
+    margin-top: 66px;
+  }
+
+#card2-cases {
+    --index: 2;
+    margin-top: 66px;
+  }
+
+#card3-cases {
+    --index: 3;
+    margin-top: 66px;
+  }
+
+#card4-cases {
+    --index: 4;
+    margin-top: 66px;
+  }
+
+#card5-cases {
+    --index: 5;
+    margin-top: 66px;
+  }
+
+#card6-cases {
+    --index: 6;
+    margin-top: 66px;
+  }
+
+#card1-cases-mobile {
+    --index: 1;
+    margin-top: 66px;
+  }
+
+#card2-cases-mobile {
+    --index: 2;
+    margin-top: 66px;
+  }
+
+#card3-cases-mobile {
+    --index: 3;
+    margin-top: 66px;
+  }
+  
+#card4-cases-mobile {
+    --index: 4;
+    margin-top: 66px;
+  }
+
+#card5-cases-mobile {
+    --index: 5;
+    margin-top: 66px;
+  }
+
+#card6-cases-mobile {
+    --index: 6;
+    margin-top: 66px;
+  }
+
+#card7-cases-mobile {
+    --index: 7;
+    margin-top: 66px;
+  }

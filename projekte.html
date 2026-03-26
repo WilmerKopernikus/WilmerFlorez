@@ -4,22 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Portfolio de Wilmer Florez - Desarrollador Web, Diseñador Gráfico y Artista Visual con experiencia internacional">
+  <meta name="description" content="Proyectos de Wilmer Florez - Job Lab, BLANCEC, Tarot Interactivo">
   <meta name="theme-color" content="#581845">
   <link rel="manifest" href="/manifest.json">
   <title>Wilmer Florez - Web Developer</title>
+
   <script defer src="scripts/p5.min.js"></script>
   <script defer src="scripts/sketch_12.min.js"></script>
-  <link rel="stylesheet" href="styles/cards_intro.css">
-  <link rel="stylesheet" href="styles/header_test.min.css">
-  <link rel="stylesheet" href="styles/cards.css">
-  <link rel="stylesheet" href="styles/images.min.css">
-  <link rel="stylesheet" href="styles/global-text.css">
-  <link rel="stylesheet" href="styles/languages_content.min.css">
-  <link rel="stylesheet" href="styles/rotatingtext.css">
 
-  <script src="scripts/languages_content.js" defer></script>
+  <link rel="stylesheet" href="styles/header_test.min.css">
+  <link rel="stylesheet" href="styles/cards.min.css">
+  <link rel="stylesheet" href="styles/cases-cards.css">
+  <link rel="stylesheet" href="styles/images.min.css">
+  <link rel="stylesheet" href="styles/global-text.min.css">
+  <link rel="stylesheet" href="styles/contact-form.min.css">
+  <link rel="stylesheet" href="styles/cards_intro.min.css">
+
+  <link rel="stylesheet" href="styles/languages_content.min.css">
+  <script src="scripts/languages_content.min.js" defer></script>
   <script src="scripts/sw-register.js" defer></script>
 
 </head>
@@ -27,21 +29,21 @@
 <body>
 
   <div id="loadingScreen" style="
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #000;
-            z-index: 3000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            font-family: Arial, Helvetica, sans-serif;
-            color: #fff;
-            font-size: 20px;
-        ">
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      z-index: 3000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      font-size: 20px;
+  ">
     <img src="imagenes/videos/cubo.gif" alt="Loading..." style="width: 250px; height: auto; margin-bottom: 20px;">
     <img src="imagenes/loading.webp" style="width: 250px; height: auto; margin-bottom: 20px;">
   </div>
@@ -50,7 +52,7 @@
     <div class="header">
       <div class="nav-container">
         <a href="index.html">
-          <img src="imagenes/Logo.png" alt="Wilmer Florez Logo" class='header-logo'>
+          <img src="imagenes/Logo.png" alt="Kopernikus Design Logo" class='header-logo'>
         </a>
       </div>
     </div>
@@ -69,8 +71,8 @@
         <li><button class="lang-button" data-lang="en">EN</button></li>
         <li><button class="lang-button" data-lang="es">ES</button></li>
       </ul>
-    </div>
 
+    </div>
     <div class="menu-overlay" id="menuOverlay">
       <ul>
         <li>
@@ -104,82 +106,21 @@
       </ul>
     </div>
 
-    <div id='intro-cards-container' class="cards-screens">
+
+
+    <div class="card" id="card1">
+      <div class="card-body-intro with-arrow font-loading">
+        <div class="intro-card">
+          <h1 class="fade-in-text" data-i18n="projekteTitle">PROJEKTE</h1><br>
+        </div>
+        <div class="arrow">
+          <h1 class="text-shadow fade-in-text">↓</h1>
+        </div>
+      </div>
+    </div>
+    <div id='cases-cards-container' class="cards-screens">
       <div id="cards" class="container">
-
-        <div class="card" id="card1">
-          <div class="card-body-intro with-arrow font-loading">
-            <div class="intro-card">
-              <h1 class="rotating-text">
-                <span data-i18n="digitalStrategy" data-i18n-mobile="digitalStrategyMobile">DIGITAL STRATEGY</span>
-                <span data-i18n="webTechnologies" data-i18n-mobile="webTechnologiesMobile">WEB TECHNOLOGIES</span>
-                <span data-i18n="coolAnimations" data-i18n-mobile="coolAnimationsMobile">COOL ANIMATIONS</span>
-                <span data-i18n="graphicDesign" data-i18n-mobile="graphicDesignMobile">GRAPHIC DESIGN</span>
-                <span data-i18n="seoReach" data-i18n-mobile="seoReachMobile">SEO REACH</span>
-                <span data-i18n="aiImplementation" data-i18n-mobile="aiImplementationMobile">AI IMPLEMENTATION</span>
-                <span data-i18n="onlineShops" data-i18n-mobile="onlineShopsMobile">ONLINE SHOPS</span>
-              </h1>
-              <h2 class="subtitle" data-i18n="indexSubtitle"> WILLKOMMEN ZU MEINEM PORTFOLIO ALS WEBENTWICKLER UND
-                DESIGNER</h2><br>
-              <a href="kontakt.html#cases">
-                <button class="send-button" data-i18n="homeButton">Start a Project</button>
-              </a>
-            </div>
-            <div class="arrow">
-              <h1 class="text-shadow fade-in-text">↓</h1>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" id="card2">
-          <div class="card-body">
-            <div class="left" id="center-services">
-              <h2 class="title">WILMER FLOREZ</h2>
-              <p class="text-new " data-i18n="wilmerIntroduction">
-                Ich bin Webentwickler, Grafikdesigner und bildender Künstler mit internationaler
-                Erfahrung
-                in Deutschland, China und Kolumbien. In diesem Portfolio präsentiere ich sowohl
-                berufliche als auch persönliche
-                Projekte, die meinen Ansatz widerspiegeln: Design, Technologie und Kreativität zu
-                verbinden,
-                um digitale Lösungen auf höchstem Niveau zu entwickeln.
-              </p>
-            </div>
-            <div class="right" id="responsive-sketch">
-              <div class="image-container image-transition">
-                <img src="imagenes/Wilmer Florez - bw.jpg" alt="Wilmer Florez Portrait" id="black-and-white" />
-                <img src="imagenes/Wilmer Florez.jpg" alt="Wilmer Florez Portrait" id="color" />
-              </div>
-              <!--<video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
-                poster="imagenes/videos/services_01.jpg">
-                <source src="imagenes/videos/services_01_compressed.mp4" type="video/mp4" />
-                Your browser doesn't support video reproductions.
-              </video>-->
-            </div>
-          </div>
-        </div>
-
-        <div id="card3" class="card">
-          <div class="card-body">
-            <div class="left" id="center-services">
-              <h2 class="title" data-i18n="projectTitle">PROJEKTE</h2>
-              <p class="text-new" data-i18n="projectContent">
-                Im Folgenden präsentiere ich die Projekte und Fallstudien, an denen ich als Webentwickler gearbeitet
-                habe, wobei ich Strategie, Design und Technologie kombiniere, um konkrete Ergebnisse zu erzielen.
-              </p>
-              <br><br>
-            </div>
-            <div class="right" id="responsive-sketch">
-              <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
-                poster="imagenes/videos/services_07.jpg">
-                <source src="imagenes/videos/services_01_compressed.mp4" type="video/mp4" />
-                Your browser doesn't support video reproductions.
-              </video>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" id="card4">
+        <div class="card" id="card1-cases">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
               <h2 class="title">JOB LAB</h2>
@@ -212,11 +153,16 @@
                   <img src="imagenes/projects/JobLab-color-2.png" alt="JobLab Logo" id="color" />
                 </div>
               </a>
+              <a href="joblab-case.html">
+                <div class="image-container-mobile image-transition">
+                  <img src="imagenes/projects/JobLab-grey-mobile2.png" alt="JobLab Logo" id="black-and-white" />
+                  <img src="imagenes/projects/JobLab-color-mobile2.png" alt="JobLab Logo" id="color" />
+                </div>
+              </a>
             </div>
           </div>
         </div>
-
-        <div class="card" id="card5">
+        <div class="card" id="card2-cases">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
               <h2 class="title">BLANCEC S.A.S.</h2>
@@ -252,43 +198,45 @@
             </div>
           </div>
         </div>
-
-        <div class="card" id="card6">
+        <div class="card" id="card3-cases">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
-              <h2 class="title" data-i18n="banderasTitle">BANDERAS NILA LOPEZ</h2>
-              <p class="text" data-i18n="banderasKunde">
+              <h2 class="title" data-i18n="tarotTitle">BANDERAS NILA LOPEZ</h2>
+              <p class="text" data-i18n="tarotKunde">
                 <strong>Kunde:</strong>
-                <br /> Banderas Nila Lopez
+                <br /> Nichtkommerzielles Projekt
               </p><br />
-              <p class="text" data-i18n="banderasLeistungen">
-                <strong>Leistungen:</strong>
-                <br /> Webentwicklung & Design - Markenentwicklung - WebsiteBetreuung
+              <p class="text" data-i18n="tarotLeistungen">
+                <strong>Unsere Leistungen:</strong>
+                <br /> Webentwicklung & Design
               </p><br />
-              <p class="text justify" data-i18n="banderasUebersicht">
+              <p class="text justify" data-i18n="tarotUebersicht">
                 <strong>Übersicht:</strong>
                 <br />
-                Banderas Nila Lopez ist ein kolumbianisches Unternehmen, das sich auf die Herstellung und den Vertrieb
-                von hochwertigen Textilprodukten spezialisiert hat. Das Projekt umfasst die Entwicklung einer modernen
-                Website, die das Markenimage stärkt und die Online-Präsenz des Unternehmens verbessert.
+                Kooperationsprojekt mit Professor Dioscórides Pérez, Professor für Bildende Kunst an der Nationalen
+                Universität
+                von Kolumbien, zur Entwicklung eines interaktiven Tarotspiels. Auf Grundlage seiner Originalzeichnungen
+                wurde
+                das digitale Programm entwickelt, das seine künstlerische und symbolische Vision in ein interaktives
+                Erlebnis verwandelt.
               </p><br />
-              <a href="banderas-nila-lopez.html">
+              <a href="tarot_decks.html">
                 <button class="send-button" data-i18n="mehrInformation">Mehr Informationen</button>
               </a>
             </div>
             <div class="right">
               <!-- Image containers -->
-              <a href="banderas-nila-lopez.html">
+              <a href="tarot_decks.html">
                 <div class="image-container image-transition">
-                  <img src="imagenes/projects/banderas-nila-grey.png" alt="Banderas Nila Logo" id="black-and-white" />
-                  <img src="imagenes/projects/banderas-nila-color.png" alt="Banderas Nila Logo" id="color" />
+                  <img src="imagenes/projects/banderas-nila-grey.png" alt="JobLab Logo" id="black-and-white" />
+                  <img src="imagenes/projects/banderas-nila-color.png" alt="JobLab Logo" id="color" />
                 </div>
               </a>
             </div>
           </div>
         </div>
 
-        <div class="card" id="card7">
+        <div class="card" id="card4-cases">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
               <h2 class="title" data-i18n="tarotTitle">INTERAKTIVES TAROT</h2>
@@ -323,7 +271,7 @@
           </div>
         </div>
 
-        <div class="card" id="card8">
+        <div class="card" id="card5">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
               <h2 class="title" data-i18n="stopdesertTitle">STOP THE DESERT</h2>
@@ -360,135 +308,66 @@
             </div>
           </div>
         </div>
-        <!--
-        <div id="card6" class="card">
-          <div class="card-body">
+
+
+
+        <div id="card5-cases" class="card">
+          <div class="card-body" id="cases">
             <div class="left" id="center-services">
-              <h2 class="title" data-i18n="curriculumTitle">LEBENSLAUF</h2>
-              <p class="text justify" data-i18n="cvContent">
-                Entdecken Sie meinen Lebenslauf und erfahren Sie mehr über meine
-                berufliche Erfahrung, meine technischen Fähigkeiten und meinen internationalen Werdegang.
+              <h2 class="title" id="title-small" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?</h2>
+              <p class="text" data-i18n="chooseUsText">
+                Sind Sie auf der Suche nach einem engagierten Webentwickler für
+                Ihr Team oder Ihr nächstes Projekt?<br><br>
+
+                Wenn Sie Unterstützung für Ihr Projekt benötigen oder
+                jemanden suchen, der sich engagiert in neue Aufgaben einarbeitet, freue ich mich über eine
+                Kontaktaufnahme.
+                Gerne bespreche ich mit Ihnen, wie ich Ihr Team und Ihre Ziele bestmöglich unterstützen kann.
+                <br><br>
               </p>
-              <br><br>
-              <a href="docs/Lebenslauf.pdf" target="_blank">
-                <button class="send-button" data-i18n="curriculumButton">⯈ Zu meinem Lebenslauf</button>
-              </a>
+              <h2 class="title impressum" id="title-small" data-i18n="">IMPRESSUM</h2>
+              <p class="text" data-i18n="">
+                Gesetzliche Vertretung: Wilmer Aderbert Florez Lopez <br>
+                Calle 75 # 58-51 - 111211 Bogota, Kolumbien <br>wilmerkopernikus@gmail.com <br>
+                Registriert und rechtlich vertreten in Bogotá, Kolumbien. <br>
+                Umsatzsteuer (MwSt) ist auf internationale Transaktionen nicht anwendbar.
+              </p>
             </div>
-            <div class="right" id="responsive-sketch">
-              <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
-                poster="imagenes/videos/services_07.jpg">
-                <source src="imagenes/videos/services_07_compressed.mp4" type="video/mp4" />
-                Your browser doesn't support video reproductions.
-              </video>
+            <div class="right" id="center-services">
+              <h2 class="title" id="title-small" data-i18n="formTitle">KONTAKTIEREN SIE MICH!</h2>
+              <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
+                <p style="display:none;">
+                  <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                </p>
+                <div class="form-group">
+                  <label for="name" data-i18n="formNameLabel">Ihr Name:</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email" data-i18n="formEmailLabel">Ihre E-Mail:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="message" data-i18n="formMessageLabel">Ihre Nachricht:</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="send-button" data-i18n="formSubmit">Senden</button>
+              </form>
             </div>
           </div>
         </div>
-        <div id="card6" class="card">
-          <div class="card-body">
-            <div class="left2" id="responsive-sketch">
-              <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
-                poster="imagenes/videos/services_08.jpg">
-                <source src="imagenes/videos/services_08_compressed.mp4" type="video/mp4" />
-                Your browser doesn't support video reproductions.
-              </video>
-            </div>
-            <div class="right2" id="center-services">
-              <h2 class="title" data-i18n="contactTitle">KONTAKT</h2>
-              <p class="text-new justify" data-i18n="contactContent">
-                Möchten Sie mit mir zusammenarbeiten?
-                Haben Sie bereits konkrete Vorstellungen oder möchten Sie gemeinsam erste Ideen
-                entwickeln?
-                Kontaktieren Sie mich gerne – und lassen Sie uns Ihre digitale Zukunft in Bewegung
-                setzen.
-              </p>
-              <br><br>
-              <a href="kontakt.html">
-                <button class="send-button" id="index-button" data-i18n="contactButton">⯈ Zum
-                  Kontakt</button>
-              </a>
-            </div>
-          </div>
-        </div>-->
+
       </div>
     </div>
 
 
 
 
-
-
-
-
-
-    <div id='intro-cards-container' class="cards-mobile">
+    <div id='cases-cards-container-mobile' class="cards-mobile">
       <div id="cards" class="container">
-        <div class="card" id="card1">
-          <div class="card-body-intro with-arrow font-loading">
-            <div class="intro-card">
-              <h1 class="rotating-text">
-                <span data-i18n="digitalStrategy" data-i18n-mobile="digitalStrategyMobile">DIGITAL STRATEGY</span>
-                <span data-i18n="webTechnologies" data-i18n-mobile="webTechnologiesMobile">WEB TECHNOLOGIES</span>
-                <span data-i18n="coolAnimations" data-i18n-mobile="coolAnimationsMobile">COOL ANIMATIONS</span>
-                <span data-i18n="graphicDesign" data-i18n-mobile="graphicDesignMobile">GRAPHIC DESIGN</span>
-                <span data-i18n="seoReach" data-i18n-mobile="seoReachMobile">SEO REACH</span>
-                <span data-i18n="aiImplementation" data-i18n-mobile="aiImplementationMobile">AI IMPLEMENTATION</span>
-                <span data-i18n="onlineShops" data-i18n-mobile="onlineShopsMobile">ONLINE SHOPS</span>
-              </h1>
-              <h2 class="subtitle" data-i18n="indexSubtitle"> WILLKOMMEN ZU MEINEM PORTFOLIO ALS WEBENTWICKLER UND
-                DESIGNER</h2>
-            </div>
-            <div class="arrow">
-              <h1 class="text-shadow fade-in-text">↓</h1>
-            </div>
 
-          </div>
-        </div>
-
-        <div id="card2" class="card">
-          <div class="card-body" id="intro-mobile">
-            <div class="left" id="center-services-mobile">
-              <h2 class="title">WILMER FLOREZ</h2>
-              <p class="text" data-i18n="wilmerIntroduction">
-                Ich bin Webentwickler, Grafikdesigner und bildender Künstler mit internationaler
-                Erfahrung
-                in Deutschland, China und Kolumbien. In diesem Portfolio präsentiere ich sowohl
-                berufliche als auch persönliche
-                Projekte, die meinen Ansatz widerspiegeln: Design, Technologie und Kreativität zu
-                verbinden,
-                um digitale Lösungen auf höchstem Niveau zu entwickeln.
-              </p>
-            </div>
-            <div class="right" id="responsive-sketch">
-              <div class="image-container-joblab">
-                <img src="imagenes/Wilmer Florez_2.jpg" alt="Wilmer Florez Portrait">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="card3" class="card">
-          <div class="card-body" id="contact-proportion-text">
-
-            <div class="left" id="center-services-mobile"></div>
-
-            <div class="right" id="center-services">
-              <h2 class="title" data-i18n="projectTitle">PROJEKTE</h2>
-              <p class="text-new" data-i18n="projectContent">
-                Im Folgenden präsentiere ich die Projekte und Fallstudien, an denen ich als Webentwickler gearbeitet
-                habe, wobei ich Strategie, Design und Technologie kombiniere, um konkrete Ergebnisse zu erzielen.
-              </p>
-              <br><br>
-              <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
-                poster="imagenes/videos/services_07.jpg">
-                <source src="imagenes/videos/services_01_compressed.mp4" type="video/mp4" />
-                Your browser doesn't support video reproductions.
-              </video>
-            </div>
-
-          </div>
-        </div>
-
-        <div id="card4" class="card">
+        <div class="card" id="card1-cases-mobile">
           <div class="card-body" id="contact-proportion-text">
 
             <div class="left" id="center-services-mobile"></div>
@@ -516,16 +395,13 @@
                 </a>
               </div>
             </div>
-
           </div>
         </div>
 
-        <div id="card5" class="card">
+        <div class="card" id="card2-cases-mobile">
           <div class="card-body" id="contact-proportion-text">
 
-            <div class="left" id="center-services-mobile">
-
-            </div>
+            <div class="left" id="center-services-mobile"></div>
 
             <div class="right" id="center-services">
               <h2 class="title">BLANCEC S.A.S.</h2>
@@ -555,10 +431,9 @@
           </div>
         </div>
 
-        <div id="card6" class="card">
+        <div class="card" id="card3-cases-mobile">
           <div class="card-body" id="contact-proportion-text">
             <div class="left" id="center-services-mobile">
-
             </div>
             <div class="right" id="center-services">
               <h2 class="title" data-i18n="banderasTitle">BANDERAS NILA LOPEZ</h2>
@@ -585,7 +460,7 @@
           </div>
         </div>
 
-        <div id="card7" class="card">
+        <div id="card4-cases-mobile" class="card">
           <div class="card-body" id="contact-proportion-text">
             <div class="left" id="center-services-mobile">
 
@@ -620,7 +495,7 @@
           </div>
         </div>
 
-        <div id="card8" class="card">
+        <div id="card5-cases-mobile" class="card">
           <div class="card-body" id="contact-proportion-text">
             <div class="left" id="center-services-mobile">
 
@@ -649,133 +524,62 @@
           </div>
         </div>
 
-        <!--
-        <div id="card6" class="card">
-          <div class="card-body" id="intro-mobile">
-            <div class="left" id="responsive-sketch">
-              <div class="wechat-video-wrapper" data-gif="imagenes/videos/services_08.gif">
-                <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
-                  poster="imagenes/videos/services_08.jpg">
-                  <source src="imagenes/videos/services_08_compressed.mp4" type="video/mp4" />
-                  Your browser doesn't support video reproductions.
-                </video>
-              </div>
+
+        <div id="card6-cases-mobile" class="card">
+          <div class="card-body" id="contact-proportion-text">
+            <div class="left" id="center-services">
             </div>
-            <div class="right" id="center-services-mobile">
-              <h2 class="title" data-i18n="contactTitle">KONTAKT</h2>
-              <p class="text" data-i18n="contactContent">
-                Möchten Sie mit mir zusammenarbeiten?
-                Haben Sie bereits konkrete Vorstellungen oder möchten Sie gemeinsam erste Ideen
-                entwickeln?
-                Kontaktieren Sie mich gerne – und lassen Sie uns Ihre digitale Zukunft in Bewegung
-                setzen.
+            <div class="right" id="center-services">
+              <h2 class="title" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?</h2>
+              <p class="text" data-i18n="chooseUsText">
+                Sind Sie auf der Suche nach einem engagierten Webentwickler für
+                Ihr Team oder Ihr nächstes Projekt?<br><br>
+
+                Wenn Sie Unterstützung für Ihr Projekt benötigen oder
+                jemanden suchen, der sich engagiert in neue Aufgaben einarbeitet, freue ich mich über eine
+                Kontaktaufnahme.
+                Gerne bespreche ich mit Ihnen, wie ich Ihr Team und Ihre Ziele bestmöglich unterstützen kann.
+                <br><br>
               </p>
-              <br><br>
-              <a href="kontakt.html">
-                <button class="send-button" data-i18n="contactButton">Zum Kontakt</button>
-              </a>
+
             </div>
           </div>
         </div>
-      -->
+
+        <div id="card7-cases-mobile" class="card">
+          <div class="card-body" id="contact-proportion">
+            <div class="left" id="center-services">
+              <h2 class="title" data-i18n="formTitle">KONTAKTIEREN SIE MICH!</h2>
+              <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
+                <p style="display:none;">
+                  <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                </p>
+                <div class="form-group">
+                  <label for="name" data-i18n="formNameLabel">Ihr Name:</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email" data-i18n="formEmailLabel">Ihre E-Mail:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="message" data-i18n="formMessageLabel">Ihre Nachricht:</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="send-button" data-i18n="formSubmit">Senden</button>
+              </form>
+            </div>
+            <div class="right" id="center-services">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
 
+
+  </div>
   <script src="scripts/script.min.js"></script>
-  <script>
-    (function () {
-      const MOBILE_BREAKPOINT = 1024;
-
-      const body = document.body;
-      const overlay = document.getElementById('clickToStartOverlay');
-
-      function isMobileOrTablet() {
-        return window.innerWidth <= MOBILE_BREAKPOINT;
-      }
-
-      function getRefs() {
-        // En móvil queremos el #card1 que está dentro de .cards-mobile
-        // En desktop queremos el #card1 que está dentro de .cards-screens
-        const root = isMobileOrTablet()
-          ? document.querySelector('.cards-mobile')
-          : document.querySelector('.cards-screens');
-
-        const card = root?.querySelector('#card1 .intro-card') || null;
-
-        return {
-          root,
-          card,
-          h1: card?.querySelector('h1') || null,
-          h2: card?.querySelector('h2') || null,
-          button: card?.querySelector('.send-button') || null,
-          // Si quieres mostrar SOLO el selector dentro del mismo bloque/cabecera,
-          // podrías buscarlo en root. Si lo quieres global (uno solo), deja document.
-          languageSelector: document.querySelector('.language-selector') || null,
-        };
-      }
-
-      function lockScroll() {
-        body.classList.add('scroll-locked');
-      }
-
-      function unlockScroll() {
-        body.classList.remove('scroll-locked');
-      }
-
-      function showIntroContent() {
-        const { h1, h2, button, languageSelector } = getRefs();
-
-        h1?.classList.add('show-content');
-        h2?.classList.add('show-content');
-        button?.classList.add('show-content');
-        languageSelector?.classList.add('show-content');
-
-        // reinicia animación del h1 si aplica
-        if (h1) {
-          h1.style.animation = 'none';
-          requestAnimationFrame(() => {
-            h1.style.animation = '';
-          });
-        }
-      }
-
-      function showOverlay() {
-        if (!overlay) return;
-        lockScroll();
-        overlay.style.display = 'flex';
-      }
-
-      function hideOverlay() {
-        if (!overlay) return;
-        overlay.style.display = 'none';
-        unlockScroll();
-        showIntroContent();
-      }
-
-      window.addEventListener('load', () => {
-        if (!overlay) return;
-
-        if (isMobileOrTablet()) {
-          setTimeout(showOverlay, 100);
-        } else {
-          showIntroContent();
-        }
-      });
-
-      overlay?.addEventListener('click', hideOverlay);
-
-      window.addEventListener('resize', () => {
-        if (!overlay) return;
-
-        // Si ya no es móvil, quitamos overlay y mostramos contenido
-        if (!isMobileOrTablet()) {
-          hideOverlay();
-        }
-      });
-    })();
-  </script>
 </body>
 
 </html>
