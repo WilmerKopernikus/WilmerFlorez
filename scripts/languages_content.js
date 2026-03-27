@@ -55,7 +55,7 @@ const languagesContent = {
     tarotKunde: "<strong>Projekt:</strong><br /> Persönliches Projekt in Entwicklung",
     tarotLeistungen: "<strong>Tech Stack:</strong><br /> JavaScript · OpenAI API · HTML/CSS · Vercel · Node.js",
     tarotUebersicht: "<strong>Übersicht:</strong><br />Ein persönliches Projekt in Entwicklung: Eine interaktive Tarot-Webanwendung, die die ChatGPT-API nutzt, um personalisierte Karteninterpretationen zu generieren. Das Projekt kombiniert modernes Frontend-Design mit serverloser Backend-Architektur und demonstriert den Einsatz von KI zur Erstellung dynamischer, mehrsprachiger Inhalte.",
-    
+
     stopdesertTitle: "STOP THE DESERT",
     stopdesertKunde: "<strong>Projekt:</strong><br /> Ehrenamtliches Projekt",
     stopdesertLeistungen: "<strong>Tech Stack:</strong><br /> WordPress · Kadence · HTML/CSS · JavaScript · Spendensystem",
@@ -110,6 +110,21 @@ const languagesContent = {
     banderasContent4: "Vue.js 3 (Composition API) • JavaScript (ES6+) • HTML5 • CSS3 • Masonry.js • Intersection Observer API • LocalStorage API • Responsive Web Design",
     liveWebsite: "Live-Website ansehen",
 
+    // Tarot Presentation
+    tarotSubtitle: "Interaktive Tarot-Erfahrung<br>Einzelentwickler & Designer",
+    tarotTitle1: "ÜBERBLICK",
+    tarotContent1: "Eine vollständig individuell entwickelte interaktive Tarot-Web-App, die ich allein umgesetzt habe — vom Konzept bis zum Deployment. Nutzer wählen aus sechs einzigartigen Decks mit jeweils eigener visueller Identität, ziehen entweder eine einzelne Karte oder ein Dreier-Spread und konsultieren ein KI-Orakel, das die Legung in drei Sprachen interpretiert: Spanisch, Englisch und Deutsch.",
+    tarotTitle2: "TECH-STACK & ARCHITEKTUR",
+    tarotContent2: "Ich habe jede Ebene eigenständig konzipiert und entwickelt: das Frontend in reinem HTML, CSS und JavaScript, mit einem serverlosen Backend, das auf Vercel deployt ist. Die Internationalisierung wird über ein eigens entwickeltes Übersetzungssystem umgesetzt, und die App ist als Progressive Web App installierbar, inklusive Offline-Unterstützung über einen registrierten Service Worker.",
+    tarotTitle3: "KI-INTEGRATION & SICHERHEIT",
+    tarotContent3: "Die KI-Integration verbindet sich über eine geschützte serverlose Funktion mit OpenAIs GPT-4.1-mini. Zu den Sicherheitsmaßnahmen gehören eine Allowlist für zulässige Origins, Rate Limiting pro IP sowie das serverseitige Management des API-Schlüssels — der Schlüssel wird niemals an den Client weitergegeben. Das Orakel antwortet mit einfühlsamen und sprachlich passenden Deutungen.",
+    tarotTitle4: "ART DIRECTION & KARTENDESIGN",
+    tarotContent4: "Jedes der acht thematischen Decks — darunter Barock, Surrealismus, Dadaismus, Expressionismus, biomechanischer Stil, Mittelalter und weitere — umfasst 22 KI-generierte Karten der Großen Arkana, die mithilfe stilgesteuerter Prompts erstellt wurden. Ich habe die visuelle Richtung jedes Decks ausgewählt und gezielt gesteuert und mich dabei auf Künstler wie Caravaggio, Francis Bacon, H.R. Giger und Hieronymus Bosch bezogen.",
+    tarotTitle5: "UI- & INTERAKTIONSDESIGN",
+    tarotContent5: "Die Karteninteraktion nutzt eine CSS-3D-Flip-Animation, die mit perspective und transform-style: preserve-3d umgesetzt wurde. Die Deck-Galerie enthält bildbasierte Karussells, die mit JavaScript gesteuert werden. Jedes Deck besitzt ein eigenes CSS-Theme mit deckspezifischen Overrides, die Typografie und Layout an seine jeweilige visuelle Identität anpassen.",
+    tarotTitle6: "ROADMAP & PRODUKTVISION",
+    tarotContent6: "Das Projekt ist live, wird aktiv weiterentwickelt und ist aktuell auf Monetarisierung, Nutzerkonten und eine eigene Domain ausgerichtet. Es zeigt Full-Stack-Verantwortung, UX-Gespür, KI-Integration und die Fähigkeit, ein persönliches kreatives Konzept bis zu einem produktionsreifen und skalierbaren Produkt umzusetzen.",
+
     // Interaktives Tarot
     eineKarte: "Eine Karte ziehen",
     eineTriade: "Eine Triade ziehen",
@@ -132,6 +147,17 @@ const languagesContent = {
     oraculo_detalles: "\nDetails: ",
     oraculo_silencio: "Das Orakel schweigt im Moment (unerwartete Antwort).",
     oraculo_error_hablar: "Es gab einen Fehler beim Sprechen mit dem Orakel.",
+
+    //Stop the Desert
+    stopSubtitle:"NGO-Website <br>Laufendes ehrenamtliches Projekt <br>Eigenständige Entwicklung & Design",
+    stopTitle1: "PROJEKTÜBERBLICK",
+    stopContent1: "Stop the Desert ist ein laufendes ehrenamtliches Projekt für eine NGO, die weltweit gegen Wüstenbildung arbeitet. Die Website dient als Informations- und Unterstützungsplattform, vermittelt die Mission der Organisation klar und leitet Besucher zu konkreten Möglichkeiten an, einen Beitrag zu leisten.",
+    stopTitle2: "MEINE ROLLE",
+    stopContent2: "Ich betreue und verbessere die WordPress-Website ehrenamtlich und unbezahlt und bringe dabei sowohl Design- als auch Entwicklungsarbeit ein. Mein Fokus liegt darauf, die Website klarer, konsistenter und einfacher zu navigieren zu machen und zugleich die Darstellung der Mission und Aktivitäten der NGO zu stärken.",
+    stopTitle3: "TECHNISCHE UMSETZUNG",
+    stopContent3: "Das Projekt nutzt WordPress und Kadence sowie HTML, CSS und JavaScript für individuelle Anpassungen, wo sie nötig sind. Diese Kombination ermöglicht eine flexible Inhaltsverwaltung und praktische Frontend-Verbesserungen, darunter Layout-Optimierung, Navigation, responsives Design und eine bessere Darstellung von Seiten und Blogbeiträgen.",
+    stopTitle4: "SPENDENSYSTEM UND WIRKUNG",
+    stopContent4: "Ein wichtiger Bestandteil des Projekts ist das Spendensystem, das Unterstützung für Besucher zugänglicher und verständlicher macht. Die Website hilft zu verdeutlichen, wie Beiträge mit realer Wirkung verbunden sind, insbesondere im Hinblick auf Landwirte und Gemeinschaften, die von Wüstenbildung betroffen sind.",
 
     //Kontakt
     heroTitle: 'KONTAKT',
@@ -257,6 +283,21 @@ const languagesContent = {
     banderasContent4: "Vue.js 3 (Composition API) • JavaScript (ES6+) • HTML5 • CSS3 • Masonry.js • Intersection Observer API • LocalStorage API • Responsive Web Design",
     liveWebsite: "Visit the Website",
 
+    // Tarot Presentation
+    tarotSubtitle: "Interactive Tarot Experience<br>Solo Developer & Designer",
+    tarotTitle1: "OVERVIEW",
+    tarotContent1: "A fully custom interactive tarot web app built solo — from concept to deployment. Users pick from six unique decks, each visually distinct, draw a single card or a three-card spread, and consult an AI oracle that interprets the reading in three languages: Spanish, English, and German.",
+    tarotTitle2: "TECH STACK & ARCHITECTURE",
+    tarotContent2: "I designed and developed every layer independently: frontend in vanilla HTML, CSS, and JavaScript, with a serverless backend deployed on Vercel. Internationalization is handled through a custom-built translation system, and the app is installable as a Progressive Web App with offline support via a registered service worker.",
+    tarotTitle3: "AI INTEGRATION & SECURITY",
+    tarotContent3: "The AI integration connects to OpenAI's GPT-4.1-mini through a protected serverless function. Security includes origin allowlisting, rate limiting per IP, and server-side API key management — the key is never exposed to the client. The oracle responds with empathetic, language-appropriate readings.",
+    tarotTitle4: "ART DIRECTION & CARD DESIGN",
+    tarotContent4: "Each of the six thematic decks — Baroque, Surrealist, Dadaist, Expressionist, Biomechanical, Medieval, and others — features 22 AI-generated Major Arcana cards created using style-directed prompting. I selected and directed the visual style for each deck, referencing artists like Caravaggio, Francis Bacon, H.R. Giger, and Hieronymus Bosch.",
+    tarotTitle5: "UI & INTERACTION DESIGN",
+    tarotContent5: "Card interaction uses a CSS 3D flip animation built with perspective and transform-style: preserve-3d. The deck gallery features JavaScript-driven image carousels. Each deck has its own CSS theme, applying per-deck overrides that adjust typography and layout to match its distinct visual identity.",
+    tarotTitle6: "ROADMAP & PRODUCT VISION",
+    tarotContent6: "The project is live, actively expanded, and currently scoped for monetization, user accounts, and a dedicated domain. It demonstrates full-stack ownership, UX sensibility, AI integration, and the ability to see a personal creative concept through to a production-ready, scalable product.",
+
     // Interactive Tarot
     eineKarte: "Draw one card",
     eineTriade: "Draw a triad",
@@ -279,6 +320,18 @@ const languagesContent = {
     oraculo_detalles: "\nDetails: ",
     oraculo_silencio: "The oracle remains silent for now (unexpected response).",
     oraculo_error_hablar: "There was an error communicating with the oracle.",
+
+    //Stop the Desert
+
+    stopSubtitle:"NGO Website <br>Ongoing Volunteer Project <br>Independent Development & Design",
+    stopTitle1: "PROJECT OVERVIEW",
+    stopContent1: "Stop the Desert is an ongoing volunteer project for an NGO that works against desertification worldwide. The website serves as an informational and support platform, clearly communicating the organization’s mission and guiding visitors toward concrete ways to contribute.",
+    stopTitle2: "MY ROLE",
+    stopContent2: "I manage and improve the WordPress website on a voluntary, unpaid basis, contributing both design and development work. My focus is on making the site clearer, more consistent, and easier to navigate while strengthening how the NGO presents its mission and activities.",
+    stopTitle3: "TECHNICAL IMPLEMENTATION",
+    stopContent3: "The project uses WordPress and Kadence, with HTML, CSS, and JavaScript for custom adjustments where needed. This combination allows flexible content management and practical front-end improvements, including layout refinement, navigation, responsive design, and better presentation of pages and blog posts.",
+    stopTitle4: "DONATION SYSTEM AND IMPACT",
+    stopContent4: "An important part of the project is the donation system, designed to make support more accessible and understandable for visitors. The website helps explain how contributions connect to real-world impact, especially for farmers and communities affected by desertification.",
 
     //Kontakt
     heroTitle: 'CONTACT',
@@ -368,7 +421,6 @@ const languagesContent = {
     joblabContent6: '<strong>Alta participación y comentarios positivos:</strong><br><br>Los eventos de Job Lab en Cantón, Shanghái y Pekín atrajeron a alrededor de 300 visitantes. Los asistentes participaron en discusiones animadas, hicieron preguntas reflexivas y permanecieron presentes durante todo el programa del día. Esta recepción entusiasta subrayó el valor del proyecto y sentó un fuerte precedente para la repetición anual, convirtiendo a Job Lab en una posible tradición continua.',
 
     //Blancec
-    // Spanish
     blancecTitle1: "DESCRIPCIÓN DEL PROYECTO",
     blancecContent1: "Rediseño y redearrollo completo del sitio web oficial de Laboratorio Blancec, un laboratorio industrial de ensayos acreditado por ONAC en Bogotá, Colombia. El sitio anterior tenía errores estructurales y un diseño deficiente. Lo reconstruí desde cero, entregando una presencia digital limpia, funcional y profesional, alineada con los estándares de la empresa.",
     blancecTitle2: "STACK TECNOLÓGICO",
@@ -381,6 +433,7 @@ const languagesContent = {
     blancecContent5: "Diseñé cada elemento de la interfaz desde cero: navegación sticky, secciones hero por página, menú hamburguesa para móvil, anclas con smooth scroll y una animación de precarga. Todos los layouts son completamente responsivos. La identidad visual utiliza una tipografía consistente, rejillas de tarjetas estructuradas y una paleta de colores profesional apropiada para un laboratorio industrial.",
     blancecTitle6: "ROL Y MANTENIMIENTO",
     blancecContent6: "Fui el único desarrollador y diseñador, responsable de la arquitectura, UI/UX, lógica backend, metadatos SEO (Open Graph, datos estructurados JSON-LD) y despliegue. El proyecto está en línea y terminado. Continúo ofreciendo mantenimiento continuo, actualizaciones de contenido y soporte técnico bajo un acuerdo de servicio con el cliente.",
+
     // Banderas Nila López
     banderasSubtitle: "Sitio Web Empresarial <br>Proyecto en Vivo (en Desarrollo) <br>Desarrollador y Diseñador Único",
     banderasTitle1: "DESCRIPCIÓN DEL PROYECTO",
@@ -400,6 +453,21 @@ const languagesContent = {
     banderasTitle4: "TECNOLOGÍAS UTILIZADAS",
     banderasContent4: "Vue.js 3 (Composition API) • JavaScript (ES6+) • HTML5 • CSS3 • Masonry.js • API Intersection Observer • API LocalStorage • Diseño web responsive",
     liveWebsite: "Sitio web en vivo",
+
+    // Tarot Presentation
+    tarotSubtitle: "Experiencia de Tarot Interactiva<br>Desarrollador y Diseñador en Solitario",
+    tarotTitle1: "VISIÓN GENERAL",
+    tarotContent1: "Una aplicación web interactiva de tarot completamente personalizada, desarrollada en solitario de principio a fin: desde el concepto hasta el despliegue. Los usuarios pueden elegir entre seis barajas únicas, cada una con una identidad visual distinta, sacar una sola carta o una tirada de tres cartas y consultar un oráculo de IA que interpreta la lectura en tres idiomas: español, inglés y alemán.",
+    tarotTitle2: "STACK TECNOLÓGICO Y ARQUITECTURA",
+    tarotContent2: "Diseñé y desarrollé de manera independiente cada capa del proyecto: frontend en HTML, CSS y JavaScript puros, con un backend serverless desplegado en Vercel. La internacionalización se gestiona mediante un sistema de traducción creado a medida, y la aplicación puede instalarse como Progressive Web App, con soporte offline mediante un service worker registrado.",
+    tarotTitle3: "INTEGRACIÓN DE IA Y SEGURIDAD",
+    tarotContent3: "La integración de IA se conecta con GPT-4.1-mini de OpenAI a través de una función serverless protegida. La seguridad incluye una lista de orígenes permitidos, limitación de peticiones por IP y gestión de la clave API en el servidor; la clave nunca se expone al cliente. El oráculo responde con interpretaciones empáticas y apropiadas para cada idioma.",
+    tarotTitle4: "DIRECCIÓN DE ARTE Y DISEÑO DE CARTAS",
+    tarotContent4: "Cada uno de los seis mazos temáticos — barroco, surrealista, dadaísta, expresionista, biomecánico, medieval y otros — incluye 22 cartas de los Arcanos Mayores generadas con IA mediante prompts dirigidos por estilo. Seleccioné y dirigí el estilo visual de cada mazo, tomando como referencia a artistas como Caravaggio, Francis Bacon, H.R. Giger y Hieronymus Bosch.",
+    tarotTitle5: "DISEÑO DE UI E INTERACCIÓN",
+    tarotContent5: "La interacción de las cartas utiliza una animación 3D de volteo en CSS construida con perspective y transform-style: preserve-3d. La galería de mazos incluye carruseles de imágenes controlados con JavaScript. Cada mazo tiene su propio tema CSS, con ajustes específicos por mazo que modifican la tipografía y el diseño para ajustarse a su identidad visual particular.",
+    tarotTitle6: "HOJA DE RUTA Y VISIÓN DEL PRODUCTO",
+    tarotContent6: "El proyecto está en línea, en expansión activa y actualmente enfocado hacia la monetización, las cuentas de usuario y un dominio propio. Demuestra dominio full-stack, sensibilidad UX, integración de IA y la capacidad de llevar un concepto creativo personal hasta un producto escalable y listo para producción.",
 
     //Interaktives Tarot
     eineKarte: "Saca una carta",
@@ -423,6 +491,18 @@ const languagesContent = {
     oraculo_detalles: "\nDetalles: ",
     oraculo_silencio: "El oráculo guarda silencio por ahora (respuesta inesperada).",
     oraculo_error_hablar: "Hubo un error al hablar con el oráculo.",
+
+    //Stop the Desert
+
+    stopSubtitle:"Sitio web para una ONG <br>Proyecto voluntario en curso <br>Desarrollo y diseño independiente",
+    stopTitle1: "VISIÓN GENERAL",
+    stopContent1: "Stop the Desert es un proyecto voluntario en curso para una ONG que trabaja contra la desertificación a nivel mundial. El sitio web funciona como una plataforma informativa y de apoyo, ayudando a comunicar claramente la misión de la organización y guiando a los visitantes hacia formas concretas de contribuir.",
+    stopTitle2: "MI ROL",
+    stopContent2: "Gestiono y mejoro el sitio web en WordPress de forma voluntaria y no remunerada, aportando tanto trabajo de diseño como de desarrollo. Mi enfoque está en hacer el sitio más claro, coherente y fácil de navegar, fortaleciendo al mismo tiempo la manera en que la ONG presenta su misión y actividades.",
+    stopTitle3: "IMPLEMENTACIÓN TÉCNICA",
+    stopContent3: "El proyecto utiliza WordPress y Kadence, con HTML, CSS y JavaScript para ajustes personalizados cuando es necesario. Esta combinación permite una gestión flexible del contenido y mejoras prácticas en el frontend, incluyendo refinamiento del layout, navegación, diseño responsive y una mejor presentación de páginas y entradas del blog.",
+    stopTitle4: "SISTEMA DE DONACIONES E IMPACTO",
+    stopContent4: "Una parte importante del proyecto es el sistema de donaciones, pensado para hacer el apoyo más accesible y comprensible para los visitantes. El sitio ayuda a explicar cómo las contribuciones se conectan con un impacto real, especialmente en relación con agricultores y comunidades afectadas por la desertificación.",
 
     //Kontakt
     heroTitle: "CONTACTO",

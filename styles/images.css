@@ -213,8 +213,7 @@ display: none;
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transform: scale(1);
-  animation: fadeZoom 35s infinite;
+  animation: fadeZoom 25s infinite;
 }
 
 
@@ -239,15 +238,8 @@ display: none;
   animation-delay: 20s;
 }
 
-.carousel-container img:nth-child(6) {
-  animation-delay: 25s;
-}
 
-.carousel-container img:nth-child(7) {
-  animation-delay: 30s;
-}
-
-/* Keyframes for fading and zoom-out effect */
+/* Keyframes for fading effect */
 @keyframes fadeZoom {
   0% { opacity: 0; transform: scale(2); }
   10% { opacity: 1; transform: scale(1); }
