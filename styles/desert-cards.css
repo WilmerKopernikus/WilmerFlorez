@@ -1,0 +1,62 @@
+#desert-cards-container {
+  --cards: 5;
+}
+
+#desert-cards-container-mobile {
+  --cards: 6;
+}
+
+#card1-desert {
+  --index: 1;
+  margin-top: 66px;
+}
+
+#card2-desert {
+  --index: 2;
+  margin-top: 66px;
+}
+
+#card3-desert {
+  --index: 3;
+  margin-top: 66px;
+}
+
+#card4-desert {
+  --index: 4;
+  margin-top: 66px;
+}
+
+#card5-desert {
+  --index: 5;
+  margin-top: 66px;
+}
+
+#card1-desert-mobile {
+  --index: 1;
+  margin-top: 66px;
+}
+
+#card2-desert-mobile {
+  --index: 2;
+  margin-top: 66px;
+}
+
+#card3-desert-mobile {
+  --index: 3;
+  margin-top: 66px;
+}
+
+#card4-desert-mobile {
+  --index: 4;
+  margin-top: 66px;
+}
+
+#card5-desert-mobile {
+  --index: 5;
+  margin-top: 66px;
+}
+
+#card6-desert-mobile {
+  --index: 6;
+  margin-top: 66px;
+}
