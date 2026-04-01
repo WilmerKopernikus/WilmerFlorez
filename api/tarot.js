@@ -9,9 +9,9 @@ const allowedOrigins = [
 ];
 
 // Rate limit muy sencillo en memoria:
-// máximo 20 peticiones por IP cada 10 minutos
-const rateLimitWindowMs = 10 * 60 * 1000;
-const rateLimitMaxRequests = 20;
+// máximo 3 peticiones por IP cada 24 horas
+const rateLimitWindowMs = 24 * 60 * 60 * 1000;
+const rateLimitMaxRequests = 3;
 const ipHits = new Map();
 
 export default async function handler(req, res) {
