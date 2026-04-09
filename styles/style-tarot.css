@@ -270,7 +270,8 @@ color:#1e1a0f;
 
 /* Ancho base del texto de respuesta */
 #oracle-answer {
-  margin: 1.5rem auto 0;
+  margin: 2rem auto 0;
+  min-height: 140px;
   text-align: left;
   line-height: 1.7;
   font-size: 1.15rem;

@@ -265,6 +265,19 @@ function getOracleText(key) {
   return (languagesContent && languagesContent[lang] && languagesContent[lang][key]) || '';
 }
 
+function scrollToOracleAnswer() {
+  const answerEl = document.getElementById("oracle-answer");
+  if (!answerEl) return;
+
+  const offset = 120;
+  const targetY = answerEl.getBoundingClientRect().top + window.pageYOffset - offset;
+
+  window.scrollTo({
+    top: Math.max(targetY, 0),
+    behavior: "smooth",
+  });
+}
+
 // Pasar la última tirada a un array uniforme
 function getCardsArray() {
   if (lastDrawType === "one" && lastCards) {
@@ -301,6 +314,7 @@ async function preguntarAlOraculo() {
   }));
 
   answerEl.textContent = getOracleText('oraculo_consultando');
+  scrollToOracleAnswer();
 
   try {
 
