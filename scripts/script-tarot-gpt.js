@@ -295,6 +295,9 @@ async function preguntarAlOraculo() {
 
   if (!questionEl || !answerEl) return;
 
+  // Pull inmediato hacia la zona de respuesta, incluso si faltan datos
+  scrollToOracleAnswer();
+
   const question = questionEl.value.trim();
   const cardsArray = getCardsArray();
 
@@ -357,7 +360,15 @@ async function preguntarAlOraculo() {
 // Listener para el botón del oráculo
 const askOracleBtn = document.getElementById("ask-oracle-btn");
 if (askOracleBtn) {
-  askOracleBtn.addEventListener("click", preguntarAlOraculo);
+  askOracleBtn.addEventListener("click", () => {
+    // Primer tirón inmediato al hacer click
+    scrollToOracleAnswer();
+
+    // Segundo ajuste breve para navegadores móviles / barras dinámicas
+    requestAnimationFrame(() => scrollToOracleAnswer());
+
+    preguntarAlOraculo();
+  });
 }
 
 // Asegurar que el textarea tenga un placeholder correcto y no valor inicial
