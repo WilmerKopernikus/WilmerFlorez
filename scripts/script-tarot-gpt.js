@@ -1,9 +1,14 @@
-// === Generar la baraja ===
+// === SCHRITT 1: Das Kartendeck definieren ===
+// Die 22 Hauptarkana werden als römische Ziffern gespeichert.
+// Diese Schlüssel verbinden Übersetzungen, Bilder und HTML miteinander.
 const arcanosMayores = [
   "0", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX",
   "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXI"
 ];
 
+// === SCHRITT 2: Jeder Karte eine Bilddatei zuordnen ===
+// Die Bilder enthalten KEINEN Text — sie sind neutrale Illustrationen.
+// Der Name der Karte wird später via JavaScript als Overlay eingefügt.
 const imagenesCartas = {
   "0": "00.png",
   "I": "01.png",
@@ -29,7 +34,10 @@ const imagenesCartas = {
   "XXI": "21.png",
 };
 
-// === Nombres de los Arcanos Mayores en cada idioma ===
+// === SCHRITT 3: Übersetzungswörterbuch für alle 3 Sprachen ===
+// Pro Sprache (de / en / es) gibt es ein Objekt mit allen 22 Namen.
+// Derselbe Schlüssel ("I", "II" ...) zeigt je nach Sprache
+// einen anderen Namen an — ohne das Bild zu verändern.
 const tarotCardNames = {
   de: {
     "0": "Der Narr",
@@ -105,14 +113,19 @@ const tarotCardNames = {
   }
 };
 
-// Obtener el nombre de la carta en el idioma actual
+// === SCHRITT 4: Den richtigen Namen zur Laufzeit auflösen ===
+// getCardName() liest die aktive Sprache und gibt den
+// passenden Namen aus dem Wörterbuch zurück.
+// Fallback: Deutsch, falls die Sprache nicht erkannt wird.
 function getCardName(cardKey) {
-  const lang = getCurrentLang();
-  const names = tarotCardNames[lang] || tarotCardNames.de;
-  return names[cardKey] || cardKey;
+  const lang = getCurrentLang();                           // aktive Sprache lesen
+  const names = tarotCardNames[lang] || tarotCardNames.de; // Fallback: Deutsch
+  return names[cardKey] || cardKey;                        // Name oder Schlüssel selbst
 }
 
-// === Funciones de sorteo ===
+// === SCHRITT 5: Zufällige Karten ziehen ===
+// sacarUnaCarta()  → zieht 1 zufällige Karte aus dem Deck
+// sacarTriada()    → zieht 3 verschiedene Karten (ohne Wiederholung)
 function sacarUnaCarta() {
   const indice = Math.floor(Math.random() * arcanosMayores.length);
   return arcanosMayores[indice];
@@ -130,17 +143,18 @@ function sacarTriada() {
   return triada;
 }
 
-// === DOM Interacción ===
+// === SCHRITT 6: DOM-Referenz und Ausgabecontainer ===
 const resultado = document.getElementById("resultado");
 
-// Idioma actual del tarot (por defecto alemán)
+// Aktive Sprache des Tarots (Standard: Deutsch)
 let currentTarotLang = "de";
 
-// Leer deck de la URL (?deck=tarot_surrealista)
+// === SCHRITT 7: Kartenordner per URL-Parameter wählen ===
+// Der Benutzer kann über ?deck=tarot_bosch ein Deck auswählen.
+// Fehlt der Parameter, wird das Standarddeck geladen.
 const urlParams = new URLSearchParams(window.location.search);
 const selectedDeck = urlParams.get("deck");
 
-// Carpeta de cartas — si viene por URL usa esa, si no usa el default
 const defaultFolder = "tarot_caravaggio";
 const tarotFolders = {
   de: selectedDeck || defaultFolder,
@@ -148,14 +162,18 @@ const tarotFolders = {
   es: selectedDeck || defaultFolder,
 };
 
-// Set data-deck attribute on body for deck-specific CSS
+// data-deck am <body> setzen, damit CSS deckspezifische Stile anwenden kann
 document.body.dataset.deck = selectedDeck || defaultFolder;
 
-// Para recordar la última tirada
+// Letzte Tirada speichern, um sie beim Sprachwechsel neu zu rendern
 let lastDrawType = null;  // "one" | "triad" | null
 let lastCards = null;     // string | string[]
 
-// Función para crear carta volteada
+// === SCHRITT 8: HTML für eine Karte erzeugen (Vorder- & Rückseite) ===
+// crearCartaHTML() baut eine umklappbare Karte:
+//   – Rückseite: sieht man zuerst (Karte ist verdeckt)
+//   – Vorderseite: Bild + römische Ziffer + lokalisierter Name
+// Der Name kommt aus getCardName(), NICHT aus dem Bild.
 function crearCartaHTML(nombreCarta) {
   const nombreArchivo = imagenesCartas[nombreCarta] || "reverse.webp";
   const cartaId = `carta-${Math.random().toString(36).substr(2, 9)}`;
@@ -163,7 +181,7 @@ function crearCartaHTML(nombreCarta) {
   const cardName = getCardName(nombreCarta);
   const romanNumeral = nombreCarta;
 
-  // Debug: ver en consola qué carpeta está usando
+  // Debug: aktiven Kartenordner in der Konsole ausgeben
   console.log("Usando carpeta:", folder, "para carta:", nombreCarta);
 
   return `
@@ -192,7 +210,11 @@ function renderTriada(cartas) {
   agregarVolteo();
 }
 
-// Activar volteo una sola vez por carta
+// === SCHRITT 9: Karte umklappen beim Klick (einmalig) ===
+// agregarVolteo() fügt jedem Karten-Element einen Click-Listener hinzu.
+// Nach dem ersten Klick wird die Klasse "flipped" gesetzt →
+// CSS dreht die Karte mit einer 3D-Transformation um.
+// Der Listener entfernt sich danach selbst (einmaliges Ereignis).
 function agregarVolteo() {
   const cartas = document.querySelectorAll(".tarot-card");
   cartas.forEach(carta => {
@@ -204,7 +226,7 @@ function agregarVolteo() {
   });
 }
 
-// Botones de tarot
+// Schaltflächen mit den Zieh-Aktionen verbinden
 const unaCartaBtn = document.getElementById("una-carta");
 if (unaCartaBtn) {
   unaCartaBtn.addEventListener("click", () => {
@@ -225,7 +247,11 @@ if (triadaBtn) {
   });
 }
 
-// Conectar cambios de idioma al tarot (delegación por si se recrean botones)
+// === SCHRITT 10: Sprachenwechsel — Tirada live neu rendern ===
+// Klickt der Benutzer auf einen Sprachbutton (.lang-button),
+// wird currentTarotLang aktualisiert und die letzte Tirada
+// sofort neu gezeichnet — mit den Namen in der neuen Sprache.
+// Kein Seiten-Reload, keine neuen Bilder: nur neues HTML.
 document.addEventListener("click", (e) => {
   const btn = e.target.closest(".lang-button");
   if (!btn) return;
@@ -236,20 +262,21 @@ document.addEventListener("click", (e) => {
     currentTarotLang = lang;
     console.log("Idioma del tarot ahora:", currentTarotLang);
 
-    // Redibujar la última tirada (si existe) en el nuevo idioma
+    // Letzte Tirada im neuen Idiom neu rendern (falls vorhanden)
     if (lastDrawType === "one" && lastCards) {
       renderUnaCarta(lastCards);
     } else if (lastDrawType === "triad" && Array.isArray(lastCards)) {
       renderTriada(lastCards);
     } else {
-      // Si no había tirada previa, simplemente limpiamos
+      // Keine vorherige Tirada — Ausgabebereich leeren
       resultado.innerHTML = "";
     }
   }
 });
 
-// === Funciones para el oráculo con ChatGPT ===
+// === SCHRITT 11: Hilfsfunktionen für das KI-Orakel ===
 
+// Aktive Sprache aus dem globalen window-Objekt lesen (gesetzt von languages_content.js)
 function getCurrentLang() {
   if (typeof window !== "undefined" && window.currentLang) {
     return window.currentLang;
@@ -259,7 +286,7 @@ function getCurrentLang() {
   }
   return "de";
 }
-// Función helper para obtener textos traducidos del oráculo
+// Übersetzten UI-Text für das Orakel aus dem globalen Sprachdict abrufen
 function getOracleText(key) {
   const lang = getCurrentLang();
   return (languagesContent && languagesContent[lang] && languagesContent[lang][key]) || '';
@@ -278,13 +305,13 @@ function scrollToOracleAnswer() {
   });
 }
 
-// Pasar la última tirada a un array uniforme
+// Letzte Tirada als einheitliches Array zurückgeben (1 oder 3 Karten)
 function getCardsArray() {
   if (lastDrawType === "one" && lastCards) {
-    return [lastCards]; // una sola carta
+    return [lastCards]; // eine Karte
   }
   if (lastDrawType === "triad" && Array.isArray(lastCards)) {
-    return lastCards;   // triada
+    return lastCards;   // drei Karten
   }
   return [];
 }
@@ -295,7 +322,7 @@ async function preguntarAlOraculo() {
 
   if (!questionEl || !answerEl) return;
 
-  // Pull inmediato hacia la zona de respuesta, incluso si faltan datos
+  // Sofort zur Antwortzone scrollen, auch wenn noch Daten fehlen
   scrollToOracleAnswer();
 
   const question = questionEl.value.trim();
@@ -321,7 +348,7 @@ async function preguntarAlOraculo() {
 
   try {
 
-    const API_URL = "https://wilmer-florez.vercel.app/api/tarot"; // BACKEND EN VERCEL
+    const API_URL = "https://wilmer-florez.vercel.app/api/tarot"; // Geschützter Backend-Endpoint auf Vercel
 
     const response = await fetch(API_URL, {
       method: "POST",
@@ -357,30 +384,30 @@ async function preguntarAlOraculo() {
   }
 }
 
-// Listener para el botón del oráculo
+// === SCHRITT 12: Orakel-Button und Textarea initialisieren ===
 const askOracleBtn = document.getElementById("ask-oracle-btn");
 if (askOracleBtn) {
   askOracleBtn.addEventListener("click", () => {
-    // Primer tirón inmediato al hacer click
+    // Sofortiger Scroll beim Klick
     scrollToOracleAnswer();
 
-    // Segundo ajuste breve para navegadores móviles / barras dinámicas
+    // Zweiter Scroll-Versuch für mobile Browser mit dynamischer Adressleiste
     requestAnimationFrame(() => scrollToOracleAnswer());
 
     preguntarAlOraculo();
   });
 }
 
-// Asegurar que el textarea tenga un placeholder correcto y no valor inicial
+// Textarea bereinigen: fälschlich eingetragener Value wird als Placeholder behandelt
 const tarotQuestionTextarea = document.getElementById("tarot-question");
 if (tarotQuestionTextarea) {
-  // Si hay texto que parece un placeholder en el value, moverlo al placeholder
+  // Falls Value wie ein Placeholder aussieht, korrekt umwandeln
   if (tarotQuestionTextarea.value.trim() && !tarotQuestionTextarea.placeholder) {
     tarotQuestionTextarea.placeholder = tarotQuestionTextarea.value;
     tarotQuestionTextarea.value = "";
   }
 
-  // Limpiar el campo si contiene el texto del placeholder cuando recibe focus
+  // Feld leeren wenn es den Placeholder-Text als Value enthält (beim Fokus)
   tarotQuestionTextarea.addEventListener("focus", function () {
     if (this.value === this.placeholder) {
       this.value = "";
