@@ -24,7 +24,7 @@ const languagesContent = {
     onlineShops: "ONLINE-SHOPS",
     onlineShopsMobile: "ONLINE<br>SHOPS",
 
-    indexSubtitle: `Willkommen zu meinem Portfolio <br>als Webentwickler und Designer`,
+    indexSubtitle: `Willkommen zu meinem Portfolio`,
     clickToStart: `Klicken, um zu starten`,
     homeButton: `Projekt starten`,
 
@@ -197,7 +197,7 @@ const languagesContent = {
     onlineShops: "ONLINE SHOPS",
     onlineShopsMobile: "ONLINE<br>SHOPS",
 
-    indexSubtitle: `Welcome to my portfolio <br> as a web developer and designer`,
+    indexSubtitle: `Welcome to my portfolio`,
     clickToStart: `Click me to start`,
     homeButton: `Start a Project`,
 
@@ -371,7 +371,7 @@ const languagesContent = {
     onlineShops: "TIENDAS ONLINE",
     onlineShopsMobile: "TIENDAS<br>ONLINE",
 
-    indexSubtitle: 'Bienvenido a mi portafolio <br> como desarrollador web y diseñador',
+    indexSubtitle: 'Bienvenido a mi portafolio',
     clickToStart: `Toca para comenzar`,
     homeButton: `Iniciar un proyecto`,
     wilmerProfile: "PERFIL PROFESIONAL",
@@ -522,6 +522,75 @@ const languagesContent = {
 };
 
 let currentLang = 'de';
+let typewriterTimer = null;
+
+function animateIndexSubtitleTypewriter() {
+  const subtitleNodes = Array.from(document.querySelectorAll('[data-i18n="indexSubtitle"]'));
+  if (!subtitleNodes.length) return;
+
+  if (typewriterTimer) {
+    clearTimeout(typewriterTimer);
+    typewriterTimer = null;
+  }
+
+  const prefersReducedMotion = window.matchMedia
+    && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const targetHtml = languagesContent[currentLang]?.indexSubtitle || '';
+
+  if (prefersReducedMotion) {
+    subtitleNodes.forEach((node) => {
+      node.innerHTML = targetHtml;
+    });
+    return;
+  }
+
+  const tokens = targetHtml.split(/(<br\s*\/?>)/i).filter(Boolean);
+  const hasText = tokens.some((token) => !/^<br\s*\/?>$/i.test(token));
+  if (!hasText) {
+    subtitleNodes.forEach((node) => {
+      node.innerHTML = targetHtml;
+    });
+    return;
+  }
+
+  subtitleNodes.forEach((node) => {
+    node.innerHTML = '';
+  });
+
+  let tokenIndex = 0;
+  let charIndex = 0;
+  let rendered = '';
+  const stepDelay = 90;
+
+  const tick = () => {
+    if (tokenIndex >= tokens.length) {
+      typewriterTimer = null;
+      return;
+    }
+
+    const currentToken = tokens[tokenIndex];
+    if (/^<br\s*\/?>$/i.test(currentToken)) {
+      rendered += '<br>';
+      tokenIndex += 1;
+      charIndex = 0;
+    } else {
+      rendered += currentToken.charAt(charIndex);
+      charIndex += 1;
+      if (charIndex >= currentToken.length) {
+        tokenIndex += 1;
+        charIndex = 0;
+      }
+    }
+
+    subtitleNodes.forEach((node) => {
+      node.innerHTML = rendered;
+    });
+
+    typewriterTimer = setTimeout(tick, stepDelay);
+  };
+
+  tick();
+}
 
 function applyLanguage(lang) {
   const dict = languagesContent[lang];
@@ -570,8 +639,8 @@ function applyLanguage(lang) {
       btn.style.display = 'block';
     }
   });
+    animateIndexSubtitleTypewriter();
 }
-
 
 // Función para detectar el idioma del navegador
 function detectBrowserLanguage() {
@@ -627,5 +696,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
-

@@ -37,12 +37,12 @@
 
 #card6 {
   --index: 6;
-  background: linear-gradient(to bottom, rgb(0, 76, 169), black);
+  background: linear-gradient(to bottom, rgb(66, 103, 149), black);
 }
 
 #card7 {
   --index: 7;
-  background: linear-gradient(to bottom, rgb(124, 41, 0), black);
+  background: linear-gradient(to bottom, rgb(255, 153, 0), black);
 }
 
 #card8 {
