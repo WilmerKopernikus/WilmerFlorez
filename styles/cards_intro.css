@@ -1,54 +1,106 @@
 #intro-cards-container {
-    --cards: 8;
-  }
-#card1 {
-    --index: 1;
-  }
-#card2 {
-    --index: 2;
-    margin-top: 66px;
+  --cards: 8;
 }
+
+#card1 {
+  --index: 1;
+}
+
+#card2 {
+  --index: 2;
+  margin-top: 66px;
+  background: linear-gradient(to bottom, rgb(0, 43, 137), rgb(0, 128, 135));
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
 #card3 {
   --index: 3;
   margin-top: 66px;
+  background-color: #000;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
+
 #card4 {
   --index: 4;
   margin-top: 66px;
+  background: linear-gradient(to bottom, rgb(73, 33, 53), black);
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
+
 #card5 {
   --index: 5;
   margin-top: 66px;
+  background: linear-gradient(to bottom, rgb(0, 127, 159), black);
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
+
 #card6 {
   --index: 6;
   margin-top: 66px;
+  background: linear-gradient(to bottom, rgb(0, 76, 169), black);
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
+
 #card7 {
   --index: 7;
   margin-top: 66px;
+  background: linear-gradient(to bottom, rgb(124, 41, 0), black);
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
+
 #card8 {
   --index: 8;
   margin-top: 66px;
+  background: linear-gradient(to bottom, rgb(0, 86, 79), black);
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
 
-.text-shadow{
+.text-shadow {
   font-size: 120px;
   font-family: 'Handjet';
   text-shadow:
-  -7px -7px 7px #000,  
-   7px -7px 7px #000,
-  -7px  7px 7px #000,
-   7px  7px 7px #000;
+    -7px -7px 7px #000,
+    7px -7px 7px #000,
+    -7px 7px 7px #000,
+    7px 7px 7px #000;
 }
+
 .with-arrow .arrow {
   position: absolute;
-  bottom: 0;      
-  right: 20px;      
-  margin: 0;    
-  animation: bounce 1.5s ease-in-out infinite;     
+  bottom: 0;
+  right: 20px;
+  margin: 0;
+  animation: bounce 1.5s ease-in-out infinite;
 }
+
 @keyframes bounce {
   0% {
     transform: translateY(0);
@@ -67,12 +119,13 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
 }
+
 @media (max-width: 750px) {
-    #intro-mobile{
-        grid-template-rows: 50% 50%;
-    }
+  #intro-mobile {
+    grid-template-rows: 50% 50%;
+  }
 
 }

@@ -145,7 +145,7 @@
 
 .left {
   grid-area: left; 
-  background-color: #000000;
+  /*background-color: #000000;*/
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 0;
@@ -159,7 +159,7 @@
 }
 .right {
   grid-area: right; 
-  background-color: #000000;
+  /*background-color: #000000;*/
   padding: 50px;
   border-top: 1px solid white; 
 }
