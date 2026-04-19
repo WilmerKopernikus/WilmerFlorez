@@ -3,6 +3,8 @@ var colors;
 let variation = 0;
 let xScale, yScale, centerX, centerY;
 let canvas;
+let sketchReady = false;
+let pauseRequestedByCard2 = false;
 
 //auto change
 let changeDuration = 3000;
@@ -21,6 +23,8 @@ function setup() {
 	centerX = width/2;
 	centerY = height/2;
 	
+  sketchReady = true;
+
 	colors = [
   color("#010027"),  // azul marino profundo
   color("#000dff"),  // azul océano
@@ -28,6 +32,62 @@ function setup() {
   color("#00124c"),  // agua marina
   color("#001e95")   // turquesa claro
 ];
+	if (pauseRequestedByCard2) {
+		noLoop();
+	}
+}
+
+function setSketchPausedByCard2(shouldPause) {
+	pauseRequestedByCard2 = shouldPause;
+
+	if (!sketchReady || typeof isLooping !== "function") {
+		return;
+	}
+
+	if (shouldPause) {
+		if (isLooping()) {
+			noLoop();
+		}
+		return;
+	}
+
+	if (!isLooping()) {
+		loop();
+	}
+}
+
+function initCard2SketchObserver() {
+	if (typeof IntersectionObserver !== "function") {
+		return;
+	}
+
+	const card2Elements = document.querySelectorAll("#card2");
+
+	if (!card2Elements.length) {
+		return;
+	}
+
+	const visibleCard2 = new Set();
+
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting && entry.intersectionRatio >= 0.35) {
+				visibleCard2.add(entry.target);
+			} else {
+				visibleCard2.delete(entry.target);
+			}
+		});
+
+		setSketchPausedByCard2(visibleCard2.size > 0);
+	}, { threshold: [0, 0.35, 0.6] });
+
+	card2Elements.forEach((card) => observer.observe(card));
+}
+
+if (document.readyState === "loading") {
+	document.addEventListener("DOMContentLoaded", initCard2SketchObserver);
+} else {
+	initCard2SketchObserver();
 }
 
 function draw() {
