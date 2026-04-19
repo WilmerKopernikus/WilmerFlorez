@@ -6,81 +6,48 @@
   --index: 1;
 }
 
-#card2 {
-  --index: 2;
+.card-shared {
   margin-top: 66px;
-  background: linear-gradient(to bottom, rgb(0, 43, 137), rgb(0, 128, 135));
   min-height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+}
+
+#card2 {
+  --index: 2;
+  background: linear-gradient(to bottom, rgb(0, 43, 137), rgb(0, 94, 135));
 }
 
 #card3 {
   --index: 3;
-  margin-top: 66px;
   background-color: #000;
-  min-height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
 }
 
 #card4 {
   --index: 4;
-  margin-top: 66px;
   background: linear-gradient(to bottom, rgb(73, 33, 53), black);
-  min-height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
 }
 
 #card5 {
   --index: 5;
-  margin-top: 66px;
   background: linear-gradient(to bottom, rgb(0, 127, 159), black);
-  min-height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
 }
 
 #card6 {
   --index: 6;
-  margin-top: 66px;
   background: linear-gradient(to bottom, rgb(0, 76, 169), black);
-  min-height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
 }
 
 #card7 {
   --index: 7;
-  margin-top: 66px;
   background: linear-gradient(to bottom, rgb(124, 41, 0), black);
-  min-height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
 }
 
 #card8 {
   --index: 8;
-  margin-top: 66px;
   background: linear-gradient(to bottom, rgb(0, 86, 79), black);
-  min-height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
 }
 
 .text-shadow {
@@ -127,5 +94,4 @@
   #intro-mobile {
     grid-template-rows: 50% 50%;
   }
-
 }
