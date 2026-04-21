@@ -4,12 +4,20 @@
   object-fit: contain;
 }
 
+#services-animation-mobile {
+  width: 65%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 .image-mobile {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 90%;
-   margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .image-mobile img {
@@ -79,7 +87,8 @@
 
 .white-shadow {
   box-shadow: 0 0 32px 0 rgba(255, 209, 250, 0.7), 0 1.5px 8px 0 rgba(250, 209, 255, 0.5);
-  border-radius: 18px; /* Ajusta si tu imagen tiene bordes redondeados */
+  border-radius: 18px;
+  /* Ajusta si tu imagen tiene bordes redondeados */
   background: transparent;
 }
 
@@ -153,7 +162,7 @@
 }
 
 .image-transition.in-view #color {
-    opacity: 1;
+  opacity: 1;
 }
 
 .image-transition.is-visible {

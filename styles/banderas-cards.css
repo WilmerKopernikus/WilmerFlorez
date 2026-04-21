@@ -45,3 +45,8 @@
   background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }
 
+#card7-test-mobile {
+  --index: 7;
+  background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
+}
+

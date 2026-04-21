@@ -48,12 +48,12 @@
 
 #card7-blancec {
   --index: 7;
-  margin-top: 66px;
+
   background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }
 
 #card8-blancec-mobile {
   --index: 8;
-  margin-top: 66px;
+
   background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }
