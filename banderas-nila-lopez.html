@@ -26,25 +26,23 @@
   <link rel="manifest" href="/manifest.json">
   <title>Banderas Nila Lopez | Wilmer Florez - Web Designer</title>
 
-  <script defer src="scripts/p5.min.js"></script>
-  <script defer src="scripts/sketch_12.min.js"></script>
-  <link rel="stylesheet" href="styles/global-text.min.css">
+  <link rel="stylesheet" href="styles/global-text.css"> <!--Actualizar .min-->
   <link rel="stylesheet" href="styles/header_test.min.css">
-  
-  <link rel="stylesheet" href="styles/cards.css">
-  <link rel="stylesheet" href="styles/banderas-cards.css">
-
-
-  <link rel="stylesheet" href="styles/images.min.css">
-  <link rel="stylesheet" href="styles/contact-form.min.css">
+  <link rel="stylesheet" href="styles/cards.css"> <!--Actualizar .min-->
+  <link rel="stylesheet" href="styles/banderas-cards.css"> <!--Actualizar .min-->
+  <link rel="stylesheet" href="styles/images.css"> <!--Actualizar .min-->
+  <link rel="stylesheet" href="styles/contact-form.min.css"> 
   <link rel="stylesheet" href="styles/cards_intro.min.css">
   <link rel="stylesheet" href="styles/languages_content.min.css">
-  <script src="scripts/languages_content.js" defer></script>
-  <script src="scripts/sw-register.js" defer></script>
+
+  <script defer src="scripts/p5.min.js"></script>
+  <script defer src="scripts/sketch_12.js"></script> <!--Actualizar .min-->
+  <script src="scripts/languages_content.js" defer></script> <!--Actualizar .min-->
+  <script src="scripts/sw-register.js" defer></script> <!--Actualizar .min-->
 
 </head>
 
-<body>
+<body data-sketch-colors="#FFB000, #FFD000, #004CFF, #FF0000, #FFFFFF">
 
   <div id="loadingScreen" style="
       position: fixed;
@@ -133,7 +131,7 @@
     <div id='banderas-cards-container' class="cards-screens">
       <div id="cards" class="container">
 
-        <div id="card1-test" class="card">
+        <div class="card card-shared" id="card1-test">
           <div class="card-body" id="blancec-services">
             <div class="left" id="center-services">
               <h2 class="title" id="title-medium" data-i18n="banderasTitle1">PROJEKTÜBERSICHT</h2><br>
@@ -143,16 +141,19 @@
                 spezialisiert hat. Die Plattform dient sowohl als digitaler Showroom als auch als Kanal zur
                 Kundengewinnung.
               </p><br><br>
+              <a href="https://www.banderasnilalopez.com/" target="_blank" rel="noopener noreferrer">
+                <button class="send-button" data-i18n="liveWebsite">Live-Website ansehen </button>
+              </a>
             </div>
             <div class="right" id="responsive-sketch">
               <div class="image-container">
-                <img src="imagenes/projects/banderas/banderas_01.jpg" alt="Banderas Nila Lopez Website">
+                <img src="imagenes/projects/banderas/banderas_01.jpg" alt="Banderas Nila Lopez Website" class="white-shadow">
               </div>
             </div>
           </div>
         </div>
 
-        <div id="card2-test" class="card">
+        <div id="card2-test" class="card card-shared">
           <div class="card-body" id="blancec-services">
             <div class="left" id="center-services">
               <h2 class="title" id="title-medium" data-i18n="banderasTitle2">TECHNISCHE UMSETZUNG</h2><br>
@@ -167,13 +168,13 @@
             </div>
             <div class="right" id="responsive-sketch">
               <div class="image-container">
-                <img src="imagenes/projects/banderas/banderas_02.jpg" alt="Banderas Nila Lopez Website">
+                <img src="imagenes/projects/banderas/banderas_02.jpg" alt="Banderas Nila Lopez Website" class="white-shadow">
               </div>
             </div>
           </div>
         </div>
 
-        <div id="card3-test" class="card">
+        <div id="card3-test" class="card card-shared">
           <div class="card-body" id="blancec-services">
             <div class="left" id="center-services">
               <h2 class="title" id="title-medium" data-i18n="banderasTitle2">TECHNISCHE UMSETZUNG</h2><br>
@@ -189,13 +190,13 @@
             </div>
             <div class="right" id="responsive-sketch">
               <div class="image-container">
-                <img src="imagenes/projects/banderas/banderas_03.jpg" alt="Banderas Nila Lopez Website">
+                <img src="imagenes/projects/banderas/banderas_03.jpg" alt="Banderas Nila Lopez Website" class="white-shadow">
               </div>
             </div>
           </div>
         </div>
 
-        <div id="card4-test" class="card">
+        <div id="card4-test" class="card card-shared">
           <div class="card-body" id="blancec-services">
             <div class="left" id="center-services">
               <h2 class="title" id="title-medium" data-i18n="banderasTitle3">MEINE ROLLE</h2><br>
@@ -211,33 +212,30 @@
             </div>
             <div class="right" id="responsive-sketch">
               <div class="image-container">
-                <img src="imagenes/projects/banderas/banderas_04.jpg" alt="Banderas Nila Lopez Website">
+                <img src="imagenes/projects/banderas/banderas_04.jpg" alt="Banderas Nila Lopez Website" class="white-shadow">
               </div>
             </div>
           </div>
         </div>
 
-        <div id="card5-test" class="card">
+        <div id="card5-test" class="card card-shared">
           <div class="card-body" id="blancec-services">
             <div class="left" id="center-services">
               <h2 class="title" id="title-medium" data-i18n="banderasTitle4">VERWENDETE TECHNOLOGIEN</h2><br>
               <p class="text-new" data-i18n="banderasContent4">
                 Vue.js 3 (Composition API) • JavaScript (ES6+) • HTML5 • CSS3 • Masonry.js • Intersection Observer API •
                 LocalStorage API • Responsive Web Design
-              </p><br><br>
-              <a href="https://www.banderasnilalopez.com/" target="_blank" rel="noopener noreferrer">
-                <button class="send-button" data-i18n="liveWebsite">Live-Website ansehen </button>
-              </a>
+              </p>
             </div>
             <div class="right" id="responsive-sketch">
               <div class="image-container">
-                <img src="imagenes/projects/banderas/banderas_05.jpg" alt="Banderas Nila Lopez Website">
+                <img src="imagenes/projects/banderas/banderas_05.jpg" alt="Banderas Nila Lopez Website" class="white-shadow">
               </div>
             </div>
           </div>
         </div>
 
-        <div id="card6-test" class="card">
+        <div id="card6-test" class="card card-shared">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
               <h2 class="title" id="title-medium" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?</h2>
@@ -279,7 +277,6 @@
 
       </div>
     </div>
-
 
 
     <div id='banderas-cards-container-mobile' class="cards-mobile">

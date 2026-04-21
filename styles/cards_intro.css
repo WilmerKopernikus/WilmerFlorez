@@ -17,32 +17,32 @@
 
 #card2 {
   --index: 2;
-  background: linear-gradient(to bottom, rgb(0, 43, 137), rgb(0, 94, 135));
+  background: linear-gradient(to bottom, rgb(0, 183, 255), rgb(9, 16, 79));
 }
 
 #card3 {
   --index: 3;
-  background-color: #000;
+  background: linear-gradient(to bottom, rgb(255, 106, 0), rgb(70, 10, 10));
 }
 
 #card4 {
   --index: 4;
-  background: linear-gradient(to bottom, rgb(73, 33, 53), black);
+  background: linear-gradient(to bottom, rgb(88, 27, 51), rgb(0, 0, 0));
 }
 
 #card5 {
   --index: 5;
-  background: linear-gradient(to bottom, rgb(0, 127, 159), black);
+  background: linear-gradient(to bottom, rgb(0, 120, 206), rgb(3, 13, 27));
 }
 
 #card6 {
   --index: 6;
-  background: linear-gradient(to bottom, rgb(66, 103, 149), black);
+  background: linear-gradient(to bottom, rgb(0, 120, 206), rgb(3, 13, 27));
 }
 
 #card7 {
   --index: 7;
-  background: linear-gradient(to bottom, rgb(255, 153, 0), black);
+  background: linear-gradient(to bottom, rgb(255, 111, 0), black);
 }
 
 #card8 {

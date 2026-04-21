@@ -76,8 +76,9 @@
 
 @media (max-width: 1024px) and (orientation: portrait) {
   .rotating-text {
-    height: 3.6em;
+    height: 3.5em;
     overflow: visible;
+    margin-bottom: 0.5em;
   }
 
   .rotating-text span {

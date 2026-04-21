@@ -6,37 +6,42 @@
   --cards: 7;
 }
 
+.card-shared {
+  margin-top: 66px;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
 #card1-test {
   --index: 1;
-  margin-top: 66px;
+  background: linear-gradient(to bottom, rgb(27, 121, 161), rgb(0, 34, 108));
 }
 
 #card2-test {
   --index: 2;
-  margin-top: 66px;
+  background: linear-gradient(to bottom, rgb(27, 121, 161), rgb(0, 34, 108));
 }
 
 #card3-test {
   --index: 3;
-  margin-top: 66px;
+  background: linear-gradient(to bottom, rgb(27, 121, 161), rgb(0, 34, 108));
 }
 
 #card4-test {
   --index: 4;
-  margin-top: 66px;
+  background: linear-gradient(to bottom, rgb(27, 121, 161), rgb(0, 34, 108));
 }
 
 #card5-test {
   --index: 5;
-  margin-top: 66px;
+  background: linear-gradient(to bottom, rgb(27, 121, 161), rgb(0, 34, 108));
 }
 
 #card6-test {
   --index: 6;
-  margin-top: 66px;
+  background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }
 
-#card7-test {
-  --index: 7;
-  margin-top: 66px;
-}

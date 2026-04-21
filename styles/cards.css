@@ -5,9 +5,20 @@
   --cardMargin: 4vw;
 }
 
+.card-content-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%; /* O ajusta según el alto de la tarjeta */
+  padding: 1.5rem 0;
+}
+
+
 .cards-mobile {
   display: none;
 }
+
+
 
 .cards-screens {
   display: block;
@@ -25,9 +36,7 @@
   --cards: 2;
 }
 
-#joblab-cards-container {
-  --cards: 7;
-}
+
 
 #card1-contact {
   --index: 1;
@@ -41,46 +50,6 @@
 
 #card2-contact-mobile {
   --index: 2;
-  margin-top: 66px;
-}
-
-#card1-joblab {
-  --index: 1;
-  margin-top: 66px;
-}
-
-#card2-joblab {
-  --index: 2;
-  margin-top: 66px;
-}
-
-#card3-joblab {
-  --index: 3;
-  margin-top: 66px;
-}
-
-#card4-joblab {
-  --index: 4;
-  margin-top: 66px;
-}
-
-#card5-joblab {
-  --index: 5;
-  margin-top: 66px;
-}
-
-#card6-joblab {
-  --index: 6;
-  margin-top: 66px;
-}
-
-#card7-joblab {
-  --index: 7;
-  margin-top: 66px;
-}
-
-#card8-joblab-mobile {
-  --index: 8;
   margin-top: 66px;
 }
 
@@ -231,7 +200,6 @@
   }
 
   .left {
-    background-color: #000000;
     padding: 0;
     padding-left: 0;
     padding-right: 0;
@@ -383,12 +351,12 @@
   }
 
   .left {
-    background-color: #232323;
+
     padding: 20px;
   }
 
   .right {
-    background-color: #000000;
+
     padding: 30px; 
   }
 

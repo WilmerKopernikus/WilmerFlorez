@@ -1,0 +1,57 @@
+#joblab-cards-container {
+  --cards: 7;
+}
+
+#joblab-cards-container-mobile {
+  --cards: 8;
+}
+
+.card-shared {
+  margin-top: 66px;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+#card1-joblab {
+  --index: 1;
+  background: linear-gradient(to bottom, rgb(0, 120, 206), rgb(3, 13, 27));
+}
+
+#card2-joblab {
+  --index: 2;
+  background: linear-gradient(to bottom, rgb(0, 120, 206), rgb(3, 13, 27));
+}
+
+#card3-joblab {
+  --index: 3;
+  background: linear-gradient(to bottom, rgb(0, 120, 206), rgb(3, 13, 27));
+}
+
+#card4-joblab {
+  --index: 4;
+  background: linear-gradient(to bottom, rgb(0, 120, 206), rgb(3, 13, 27));
+}
+
+#card5-joblab {
+  --index: 5;
+  background: linear-gradient(to bottom, rgb(0, 120, 206), rgb(3, 13, 27));
+}
+
+#card6-joblab {
+  --index: 6;
+  background: linear-gradient(to bottom, rgb(0, 120, 206), rgb(3, 13, 27));
+}
+
+#card7-joblab {
+  --index: 7;
+  background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
+}
+
+#card8-joblab-mobile {
+  --index: 8;
+  background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
+}
+

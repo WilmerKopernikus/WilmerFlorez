@@ -5,10 +5,26 @@ let xScale, yScale, centerX, centerY;
 let canvas;
 let sketchReady = false;
 let pauseRequestedByCard2 = false;
+const defaultSketchColors = ["#010027", "#000dff", "#0091ff", "#00124c", "#001e95"];
 
 //auto change
 let changeDuration = 3000;
 let lastChange = 0;
+
+function getConfiguredPalette() {
+	const configuredColors = document.body?.dataset?.sketchColors;
+	if (!configuredColors) {
+		return defaultSketchColors;
+	}
+
+	const validHexColor = /^#([0-9a-fA-F]{6})$/;
+	const palette = configuredColors
+		.split(",")
+		.map((value) => value.trim())
+		.filter((value) => validHexColor.test(value));
+
+	return palette.length ? palette : defaultSketchColors;
+}
 
 function setup() {
 	canvas = createCanvas(window.visualViewport.width, window.visualViewport.height);
@@ -25,13 +41,7 @@ function setup() {
 	
   sketchReady = true;
 
-	colors = [
-  color("#010027"),  // azul marino profundo
-  color("#000dff"),  // azul océano
-  color("#0091ff"),  // azul medio
-  color("#00124c"),  // agua marina
-  color("#001e95")   // turquesa claro
-];
+colors = getConfiguredPalette().map((hexColor) => color(hexColor));
 	if (pauseRequestedByCard2) {
 		noLoop();
 	}
