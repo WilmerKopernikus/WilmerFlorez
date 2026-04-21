@@ -237,6 +237,14 @@
   overflow: hidden;
 }
 
+#mobile-size-tarot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .carousel-container img {
   position: absolute;
   width: 100%;

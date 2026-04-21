@@ -1,0 +1,58 @@
+#tarot-cards-container {
+  --cards: 7;
+}
+
+#tarot-cards-container-mobile {
+  --cards: 8;
+}
+
+.card-shared {
+  margin-top: 66px;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+#card1-tarot {
+  --index: 1;
+  margin-top: 66px;
+  background: linear-gradient(to bottom, rgb(192, 168, 98), rgb(25, 20, 12));
+}
+
+#card2-tarot {
+  --index: 2;
+  background: linear-gradient(to bottom, rgb(192, 168, 98), rgb(25, 20, 12));
+}
+
+#card3-tarot {
+  --index: 3;
+  background: linear-gradient(to bottom, rgb(192, 168, 98), rgb(25, 20, 12));
+}
+
+#card4-tarot {
+  --index: 4;
+  background: linear-gradient(to bottom, rgb(192, 168, 98), rgb(25, 20, 12));
+}
+
+#card5-tarot {
+  --index: 5;
+  background: linear-gradient(to bottom, rgb(192, 168, 98), rgb(25, 20, 12));
+}
+
+#card6-tarot {
+  --index: 6;
+  background: linear-gradient(to bottom, rgb(192, 168, 98), rgb(25, 20, 12));
+}
+
+#card7-tarot {
+  --index: 7;
+  background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
+}
+
+#card8-tarot-mobile {
+  --index: 8;
+
+  background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
+}
