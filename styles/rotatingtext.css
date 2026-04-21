@@ -50,6 +50,16 @@
   animation-delay: 18s;
 }
 
+.intro-card .rotating-text {
+  margin: 0;
+}
+
+.intro-card .subtitle {
+  margin-top: 0.35em;
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
 @keyframes rotateWords {
   0% {
     opacity: 0;
@@ -76,7 +86,7 @@
 
 @media (max-width: 1024px) and (orientation: portrait) {
   .rotating-text {
-    height: 3.5em;
+    height: 2.45em;
     overflow: visible;
     margin-bottom: 0.5em;
   }
@@ -111,4 +121,10 @@
     opacity: 0;
   }
 }
+}
+
+@media (max-width: 431px) and (orientation: portrait) {
+  .rotating-text {
+    height: 2.25em;
+  }
 }
