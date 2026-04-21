@@ -1,15 +1,23 @@
 :root {
   --cards: 1;
-  --cardHeight: calc(100vh - 66px);
+  --viewportHeight: 100vh;
+  --cardHeight: calc(var(--viewportHeight) - 66px);
   --cardTopPadding: 0px;
   --cardMargin: 4vw;
+}
+
+@supports (height: 100dvh) {
+  :root {
+    --viewportHeight: 100dvh;
+  }
 }
 
 .card-content-flex {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100%; /* O ajusta según el alto de la tarjeta */
+  height: 100%;
+  /* O ajusta según el alto de la tarjeta */
   padding: 1.5rem 0;
 }
 
@@ -79,72 +87,78 @@
   grid-template-rows: repeat(var(--cards), var(--cardHeight));
   gap: var(--cardMargin);
   padding-bottom: calc(var(--cards) * var(--cardTopPadding));
-  margin-bottom: var(--cardMargin);   
+  margin-bottom: var(--cardMargin);
 }
+
 .card {
   position: sticky;
   top: 66px;
   padding-top: calc(var(--index) * var(--cardTopPadding));
-  scroll-margin-top: 66px; 
+  scroll-margin-top: 66px;
 }
 
 .card-body {
-  display: grid; 
-  grid-template-areas: 
-    "left right"; 
-  grid-template-columns: 50% 50%; 
-  height: var(--cardHeight); 
-  color: #ffffff; 
-  border-top: 1px solid white; 
+  display: grid;
+  grid-template-areas:
+    "left right";
+  grid-template-columns: 50% 50%;
+  height: var(--cardHeight);
+  color: #ffffff;
+  border-top: 1px solid white;
   box-sizing: border-box;
 }
 
 .card-body-intro {
   box-sizing: border-box;
-  height: calc(100vh - 66px);
+  height: calc(var(--viewportHeight) - 66px);
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   color: #ffffff;
   border-top: 1px solid white;
   margin-bottom: 20px;
 }
+
 .with-arrow {
   position: relative;
 }
 
 .left {
-  grid-area: left; 
+  grid-area: left;
   /*background-color: #000000;*/
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 0;
-  border-top: 1px solid white; 
+  border-top: 1px solid white;
 }
-.left2{
-  grid-area: left; 
+
+.left2 {
+  grid-area: left;
   background-color: #000000;
   padding: 50px;
-  border-top: 1px solid white; 
+  border-top: 1px solid white;
 }
+
 .right {
-  grid-area: right; 
+  grid-area: right;
   /*background-color: #000000;*/
   padding: 50px;
-  border-top: 1px solid white; 
+  border-top: 1px solid white;
 }
+
 .right2 {
-  grid-area: right; 
+  grid-area: right;
   background-color: #000000;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 0;
-  border-top: 1px solid white; 
+  border-top: 1px solid white;
 }
+
 .right-gif {
-  grid-area: right; 
+  grid-area: right;
   background-color: #000000;
   padding: 2vh;
-  border-top: 1px solid white; 
+  border-top: 1px solid white;
 }
 
 .font-loading .fade-in-text {
@@ -181,49 +195,53 @@
 
   .card {
     top: 100px;
-    scroll-margin-top: 100px; 
+    scroll-margin-top: 100px;
   }
 
   #contact-cards-container {
-    --cardHeight: calc(100vh - 100px);
+--cardHeight: calc(var(--viewportHeight) - 100px);
   }
 }
+
 /* -------------------------Tablets Portrait------------------------------ */
 @media (max-width: 1024px) and (orientation: portrait) {
 
   .card-body {
-    grid-template-areas: 
+    grid-template-areas:
       "left"
-      "right"; /* Stack sections vertically */
-    grid-template-columns: 1fr; /* Single column layout */
-    grid-template-rows: 50% 50%; /* Equal height for both rows */
+      "right";
+    /* Stack sections vertically */
+    grid-template-columns: 1fr;
+    /* Single column layout */
+    grid-template-rows: 50% 50%;
+    /* Equal height for both rows */
   }
 
   .left {
     padding: 0;
     padding-left: 0;
     padding-right: 0;
-  } 
+  }
 
   .right {
     padding: 0;
     padding-top: 0px;
-    border-top: 1px solid rgb(0, 0, 0); 
+    border-top: 1px solid rgb(0, 0, 0);
   }
-  
+
   .cards-mobile {
     display: block;
   }
-  
+
   .cards-screens {
     display: none;
   }
 
-  #contact-proportion{
+  #contact-proportion {
     grid-template-rows: 100% 0%;
   }
 
-  #contact-proportion-text{
+  #contact-proportion-text {
     grid-template-rows: 0% 100%;
   }
 
@@ -236,20 +254,20 @@
 
 @media (max-width: 750px) {
 
-  #intro-cards-container-mobile{
-    --cardHeight: calc(100vh - 55px);
+  #intro-cards-container-mobile {
+    --cardHeight: calc(var(--viewportHeight) - 55px);
   }
 
   :root {
-    --cardHeight: calc(100vh - 55px);
+    --cardHeight: calc(var(--viewportHeight) - 55px);
   }
 
   #cases-cards-container {
-    --cardHeight: calc(100vh - 50px);
+    --cardHeight: calc(var(--viewportHeight) - 50px);
   }
 
   #services-cards-container {
-    --cardHeight: calc(100vh - 50px);
+    --cardHeight: calc(var(--viewportHeight) - 50px);
   }
 
 
@@ -279,7 +297,7 @@
 
   .right-gif {
     padding: 20px;
-    border-top: 1px solid rgb(0, 0, 0); 
+    border-top: 1px solid rgb(0, 0, 0);
   }
 }
 
@@ -288,107 +306,19 @@
 @media screen and (max-width: 821px) and (min-width: 431px) and (orientation: portrait) {
   .left {
     padding: 70px;
-  } 
+  }
 }
 
 @media screen and (max-width: 431px) and (orientation: portrait) {
   .left {
     padding: 30px;
     padding-right: 30px;
-  } 
-
-}
-
-@media screen and (max-height: 415px) and (orientation: landscape) {
-
-  #intro-cards-container-mobile-landscape{
-    --cardHeight: calc(100vh - 40px);
-  }
-
-  #cases-cards-container-mobile-landscape{
-    --cardHeight: calc(100vh - 40px);
-  }
-
-  #services-cards-container {
-    --cardHeight: calc(100vh - 40px);
-  }
-
-  #blancec-cards-container {
-    --cardHeight: calc(100vh - 39px);
-  }
-
-  #joblab-cards-container {
-    --cardHeight: calc(100vh - 39px);
-  }
-
-
-
-  #services-cards-container-mobile-landscape{
-    --cardHeight: calc(100vh - 39px);
-  }
-
-  .cards-mobile {
-    display: none;
-  }
-  
-  .cards-screens {
-    display: none;
-  }
-
-  .cards-mobile-landscape {
-    display: block;
-  }
-
-  .card-body {
-    display: grid; 
-    grid-template-areas: 
-      "left right"; 
-    grid-template-columns: 50% 50%; 
-    height: var(--cardHeight); 
-    color: #ffffff; 
-    border-top: 1px solid white; 
-    box-sizing: border-box;
-  }
-
-  .left {
-
-    padding: 20px;
-  }
-
-  .right {
-
-    padding: 30px; 
-  }
-
-  #contact-cards-container-mobile {
-    --cards: 2;
-  }
-
-  #card1-contact-mobile {
-    --index: 1;
-    margin-top: 40px;
-  }
-
-  #card1 {
-    --cardHeight: calc(100vh - 40px);
-  }
-
-  #card2-contact-mobile {
-    --index: 2;
-    margin-top: 40px;
-  }
-
-  .card {
-    position: sticky;
-    top: 40px;
-    padding-top: calc(var(--index) * var(--cardTopPadding));
-    scroll-margin-top: 40px; 
   }
 
 }
 
-@media (max-width: 415px) and (orientation: portrait){
-  #cases{
+@media (max-width: 415px) and (orientation: portrait) {
+  #cases {
     grid-template-rows: 35% 65%;
   }
 }
@@ -398,7 +328,7 @@
     grid-template-rows: 50% 50%;
   }
 
-  #cases{
+  #cases {
     grid-template-rows: 30% 70%;
   }
 
