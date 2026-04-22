@@ -6,67 +6,76 @@
     --cards: 7;
   }
 
+.card-shared {
+  margin-top: 66px;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
 #card1-cases {
     --index: 1;
-    margin-top: 66px;
+    background: linear-gradient(to bottom, rgb(0, 120, 206), rgb(3, 13, 27));
   }
 
 #card2-cases {
     --index: 2;
-    margin-top: 66px;
+    background: linear-gradient(to bottom, rgb(88, 27, 51), rgb(0, 0, 0));
   }
 
 #card3-cases {
     --index: 3;
-    margin-top: 66px;
+    background: linear-gradient(to bottom, rgb(0, 120, 206), rgb(3, 13, 27));
   }
 
 #card4-cases {
     --index: 4;
-    margin-top: 66px;
+    background: linear-gradient(to bottom, rgb(192, 168, 98), rgb(25, 20, 12));
   }
 
 #card5-cases {
     --index: 5;
-    margin-top: 66px;
+    background: linear-gradient(to bottom, rgb(0, 129, 75), rgb(0, 0, 0));
   }
 
 #card6-cases {
     --index: 6;
-    margin-top: 66px;
+    background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
   }
 
 #card1-cases-mobile {
     --index: 1;
-    margin-top: 66px;
+    background: linear-gradient(to bottom, rgb(0, 120, 206), rgb(3, 13, 27));
   }
 
 #card2-cases-mobile {
     --index: 2;
-    margin-top: 66px;
+    background: linear-gradient(to bottom, rgb(88, 27, 51), rgb(0, 0, 0));
   }
 
 #card3-cases-mobile {
     --index: 3;
-    margin-top: 66px;
+    background: linear-gradient(to bottom, rgb(0, 120, 206), rgb(3, 13, 27));
   }
   
 #card4-cases-mobile {
     --index: 4;
-    margin-top: 66px;
+    background: linear-gradient(to bottom, rgb(192, 168, 98), rgb(25, 20, 12));
   }
 
 #card5-cases-mobile {
     --index: 5;
-    margin-top: 66px;
+    background: linear-gradient(to bottom, rgb(0, 129, 75), rgb(0, 0, 0));
   }
 
 #card6-cases-mobile {
     --index: 6;
-    margin-top: 66px;
+    background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
   }
 
 #card7-cases-mobile {
     --index: 7;
-    margin-top: 66px;
+    background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
   }
