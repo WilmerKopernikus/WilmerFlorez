@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="styles/desert-cards.css">
 
 
-  <link rel="stylesheet" href="styles/images.min.css">
+  <link rel="stylesheet" href="styles/images.css">
   <link rel="stylesheet" href="styles/contact-form.min.css">
   <link rel="stylesheet" href="styles/cards_intro.min.css">
   <link rel="stylesheet" href="styles/languages_content.min.css">
@@ -44,7 +44,7 @@
 
 </head>
 
-<body>
+<body data-sketch-colors="#00FF08, #3B783F, #00FF93, #004D2C, #335449">
 
   <div id="loadingScreen" style="
       position: fixed;
@@ -134,7 +134,7 @@
     <div id='desert-cards-container' class="cards-screens">
       <div id="cards" class="container">
 
-        <div id="card1-desert" class="card">
+        <div id="card1-desert" class="card card-shared">
           <div class="card-body" id="blancec-services">
             <div class="left" id="center-services">
               <h2 class="title" id="title-medium" data-i18n="stopTitle1">PROJEKTÜBERBLICK</h2><br>
@@ -142,17 +142,21 @@
                 Stop the Desert ist ein laufendes ehrenamtliches Projekt für eine NGO, die weltweit gegen Wüstenbildung
                 arbeitet. Die Website dient als Informations- und Unterstützungsplattform, vermittelt die Mission der
                 Organisation klar und leitet Besucher zu konkreten Möglichkeiten an, einen Beitrag zu leisten.
-              </p>
+              </p><br>
+              <a href="https://www.stopthedesert.com/new" target="_blank" rel="noopener noreferrer">
+                <button class="send-button" data-i18n="liveWebsite">Live-Website ansehen </button>
+              </a>
             </div>
             <div class="right" id="responsive-sketch">
               <div class="image-container">
-                <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_02.jpg" alt="Stop The Desert Website">
+                <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_02.jpg" alt="Stop The Desert Website"
+                  class="white-shadow">
               </div>
             </div>
           </div>
         </div>
 
-        <div id="card2-desert" class="card">
+        <div id="card2-desert" class="card card-shared">
           <div class="card-body" id="blancec-services">
             <div class="left" id="center-services">
               <h2 class="title" id="title-medium" data-i18n="stopTitle2">MEINE ROLLE</h2><br>
@@ -165,13 +169,14 @@
             </div>
             <div class="right" id="responsive-sketch">
               <div class="image-container">
-                <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_03.jpg" alt="Stop The Desert Website">
+                <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_03.jpg" alt="Stop The Desert Website"
+                  class="white-shadow">
               </div>
             </div>
           </div>
         </div>
 
-        <div id="card3-desert" class="card">
+        <div id="card3-desert" class="card card-shared">
           <div class="card-body" id="blancec-services">
             <div class="left" id="center-services">
               <h2 class="title" id="title-medium" data-i18n="stopTitle3">TECHNISCHE UMSETZUNG</h2><br>
@@ -184,13 +189,14 @@
             </div>
             <div class="right" id="responsive-sketch">
               <div class="image-container">
-                <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_04.jpg" alt="Stop The Desert Website">
+                <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_04.jpg" alt="Stop The Desert Website"
+                  class="white-shadow">
               </div>
             </div>
           </div>
         </div>
 
-        <div id="card4-desert" class="card">
+        <div id="card4-desert" class="card card-shared">
           <div class="card-body" id="blancec-services">
             <div class="left" id="center-services">
               <h2 class="title" id="title-medium" data-i18n="stopTitle4">SPENDENSYSTEM UND WIRKUNG</h2><br>
@@ -200,19 +206,17 @@
                 Wirkung verbunden sind, insbesondere im Hinblick auf Landwirte und Gemeinschaften, die von Wüstenbildung
                 betroffen sind.
               </p><br>
-              <a href="https://www.stopthedesert.com/new" target="_blank" rel="noopener noreferrer">
-                <button class="send-button" data-i18n="liveWebsite">Live-Website ansehen </button>
-              </a>
             </div>
             <div class="right" id="responsive-sketch">
               <div class="image-container">
-                <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_01.jpg" alt="Stop The Desert Website">
+                <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_01.jpg" alt="Stop The Desert Website"
+                  class="white-shadow">
               </div>
             </div>
           </div>
         </div>
 
-        <div id="card5-desert" class="card">
+        <div id="card5-desert" class="card card-shared">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
               <h2 class="title" id="title-medium" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?</h2>
@@ -260,114 +264,126 @@
     <div id='desert-cards-container-mobile' class="cards-mobile">
       <div id="cards" class="container">
 
-        <div id="card1-desert-mobile" class="card">
+        <div id="card1-desert-mobile" class="card card-shared ">
           <div class="card-body" id="contact-proportion-text">
 
             <div class="left"></div>
 
             <div class="right" id="center-services">
-              <h2 class="title" data-i18n="stopTitle1">PROJEKTÜBERBLICK</h2>
-              <p class="text" data-i18n="stopContent1">
-                Stop the Desert ist ein laufendes ehrenamtliches Projekt für eine NGO, die weltweit gegen Wüstenbildung
-                arbeitet. Die Website dient als Informations- und Unterstützungsplattform, vermittelt die Mission der
-                Organisation klar und leitet Besucher zu konkreten Möglichkeiten an, einen Beitrag zu leisten.
-              </p><br>
-              <div class="image-container-joblab">
-                <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_02.jpg" alt="Stop The Desert Website">
+              <div class="card-content-flex">
+                <h2 class="title" data-i18n="stopTitle1">PROJEKTÜBERBLICK</h2>
+                <p class="text-new" data-i18n="stopContent1">
+                  Stop the Desert ist ein laufendes ehrenamtliches Projekt für eine NGO, die weltweit gegen
+                  Wüstenbildung
+                  arbeitet. Die Website dient als Informations- und Unterstützungsplattform, vermittelt die Mission der
+                  Organisation klar und leitet Besucher zu konkreten Möglichkeiten an, einen Beitrag zu leisten.
+                </p><br>
+                <a href="https://www.stopthedesert.com/new" target="_blank" rel="noopener noreferrer">
+                  <button class="send-button" data-i18n="liveWebsite">Live-Website ansehen </button>
+                </a>
+                <div class="image-mobile">
+                  <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_02.jpg" alt="Stop The Desert Website" class="white-shadow">
+                </div>
               </div>
             </div>
 
           </div>
         </div>
 
-        <div id="card2-desert-mobile" class="card">
+        <div id="card2-desert-mobile" class="card card-shared">
           <div class="card-body" id="contact-proportion-text">
 
             <div class="left"></div>
 
             <div class="right" id="center-services">
-              <h2 class="title" data-i18n="stopTitle2">MEINE ROLLE</h2>
-              <p class="text" data-i18n="stopContent2">
-                Ich betreue und verbessere die WordPress-Website ehrenamtlich und unbezahlt und bringe dabei sowohl
-                Design- als auch Entwicklungsarbeit ein. Mein Fokus liegt darauf, die Website klarer, konsistenter und
-                einfacher zu navigieren zu machen und zugleich die Darstellung der Mission und Aktivitäten der NGO zu
-                stärken.
-              </p><br>
-              <div class="image-container-joblab">
-                <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_03.jpg" alt="Stop The Desert Website">
+              <div class="card-content-flex">
+                <h2 class="title" data-i18n="stopTitle2">MEINE ROLLE</h2>
+                <p class="text-new" data-i18n="stopContent2">
+                  Ich betreue und verbessere die WordPress-Website ehrenamtlich und unbezahlt und bringe dabei sowohl
+                  Design- als auch Entwicklungsarbeit ein. Mein Fokus liegt darauf, die Website klarer, konsistenter und
+                  einfacher zu navigieren zu machen und zugleich die Darstellung der Mission und Aktivitäten der NGO zu
+                  stärken.
+                </p><br>
+                <div class="image-mobile">
+                  <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_03.jpg" alt="Stop The Desert Website" class="white-shadow">
+                </div>
               </div>
             </div>
 
           </div>
         </div>
 
-        <div id="card3-desert-mobile" class="card">
+        <div id="card3-desert-mobile" class="card card-shared">
           <div class="card-body" id="contact-proportion-text">
 
             <div class="left"></div>
 
             <div class="right" id="center-services">
-              <h2 class="title" data-i18n="stopTitle3">TECHNISCHE UMSETZUNG</h2>
-              <p class="text" data-i18n="stopContent3">
-                Das Projekt nutzt WordPress und Kadence sowie HTML, CSS und JavaScript für individuelle Anpassungen, wo
-                sie nötig sind. Diese Kombination ermöglicht eine flexible Inhaltsverwaltung und praktische
-                Frontend-Verbesserungen, darunter Layout-Optimierung, Navigation, responsives Design und eine bessere
-                Darstellung von Seiten und Blogbeiträgen.
-              </p><br>
-              <div class="image-container-joblab">
-                <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_04.jpg" alt="Stop The Desert Website">
+              <div class="card-content-flex">
+                <h2 class="title" data-i18n="stopTitle3">TECHNISCHE UMSETZUNG</h2>
+                <p class="text-new" data-i18n="stopContent3">
+                  Das Projekt nutzt WordPress und Kadence sowie HTML, CSS und JavaScript für individuelle Anpassungen,
+                  wo
+                  sie nötig sind. Diese Kombination ermöglicht eine flexible Inhaltsverwaltung und praktische
+                  Frontend-Verbesserungen, darunter Layout-Optimierung, Navigation, responsives Design und eine bessere
+                  Darstellung von Seiten und Blogbeiträgen.
+                </p><br>
+                <div class="image-mobile">
+                  <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_04.jpg" alt="Stop The Desert Website" class="white-shadow">
+                </div>
               </div>
             </div>
 
           </div>
         </div>
 
-        <div id="card4-desert-mobile" class="card">
+        <div id="card4-desert-mobile" class="card card-shared">
           <div class="card-body" id="contact-proportion-text">
 
             <div class="left"></div>
 
             <div class="right" id="center-services">
-              <h2 class="title" data-i18n="stopTitle4">SPENDENSYSTEM UND WIRKUNG</h2>
-              <p class="text" data-i18n="stopContent4">
-                Ein wichtiger Bestandteil des Projekts ist das Spendensystem, das Unterstützung für Besucher
-                zugänglicher und verständlicher macht. Die Website hilft zu verdeutlichen, wie Beiträge mit realer
-                Wirkung verbunden sind, insbesondere im Hinblick auf Landwirte und Gemeinschaften, die von Wüstenbildung
-                betroffen sind.
-              </p><br>
-              <a href="https://www.stopthedesert.com/new" target="_blank" rel="noopener noreferrer">
-                <button class="send-button" data-i18n="liveWebsite">Live-Website ansehen </button>
-              </a><br>
-              <div class="image-container-joblab">
-                <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_01.jpg" alt="Stop The Desert Website">
+              <div class="card-content-flex">
+                <h2 class="title" data-i18n="stopTitle4">SPENDENSYSTEM UND WIRKUNG</h2>
+                <p class="text-new" data-i18n="stopContent4">
+                  Ein wichtiger Bestandteil des Projekts ist das Spendensystem, das Unterstützung für Besucher
+                  zugänglicher und verständlicher macht. Die Website hilft zu verdeutlichen, wie Beiträge mit realer
+                  Wirkung verbunden sind, insbesondere im Hinblick auf Landwirte und Gemeinschaften, die von
+                  Wüstenbildung
+                  betroffen sind.
+                </p><br>
+                <div class="image-mobile">
+                  <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_01.jpg" alt="Stop The Desert Website" class="white-shadow">
+                </div>
               </div>
+
             </div>
 
           </div>
         </div>
 
-        <div id="card5-desert-mobile" class="card">
+        <div id="card5-desert-mobile" class="card card-shared">
           <div class="card-body" id="contact-proportion-text">
-            <div class="left" id="center-services">
+            <div class="left"></div>
 
-            </div>
             <div class="right" id="center-services">
-              <h2 class="title" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?</h2>
-              <p class="text" data-i18n="chooseUsText">
-                Sind Sie auf der Suche nach einem engagierten Webentwickler für
-                Ihr Team oder Ihr nächstes Projekt?<br><br>
+              <div class="card-content-flex">
+                <h2 class="title" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?</h2>
+                <p class="text-new" data-i18n="chooseUsText">
+                  Sind Sie auf der Suche nach einem engagierten Webentwickler für
+                  Ihr Team oder Ihr nächstes Projekt?<br><br>
 
-                Wenn Sie Unterstützung für Ihr Projekt benötigen oder
-                jemanden suchen, der sich engagiert in neue Aufgaben einarbeitet, freue ich mich über eine
-                Kontaktaufnahme.
-                Gerne bespreche ich mit Ihnen, wie ich Ihr Team und Ihre Ziele bestmöglich unterstützen kann.
-
-              </p><br>
-              <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
-                poster="imagenes/videos/services_06.jpg">
-                <source src="imagenes/videos/services_06_compressed.mp4" type="video/mp4" />
-                Your browser doesn't support video reproductions.
-              </video>
+                  Wenn Sie Unterstützung für Ihr Projekt benötigen oder
+                  jemanden suchen, der sich engagiert in neue Aufgaben einarbeitet, freue ich mich über eine
+                  Kontaktaufnahme.
+                  Gerne bespreche ich mit Ihnen, wie ich Ihr Team und Ihre Ziele bestmöglich unterstützen kann.
+                </p>
+                <video id="services-animation-mobile" autoplay loop muted playsinline preload="metadata" loading="lazy"
+                  poster="imagenes/videos/services_08.jpg" class="white-shadow">
+                  <source src="imagenes/videos/services_08_compressed.mp4" type="video/mp4" />
+                  Your browser doesn't support video reproductions.
+                </video>
+              </div>
             </div>
           </div>
         </div>
