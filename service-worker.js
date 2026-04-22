@@ -1,10 +1,10 @@
 // Service Worker para Wilmer Florez Portfolio
-// Versión 1.1.0 - Añadido soporte para WebP
+// Versión 1.2.0 - Estrategia de actualización mejorada para deploys
 
-const CACHE_VERSION = 'wilmer-portfolio-v1.1';
-const CACHE_STATIC = 'wilmer-static-v1';
-const CACHE_DYNAMIC = 'wilmer-dynamic-v1';
-const CACHE_IMAGES = 'wilmer-images-v1';
+const CACHE_VERSION = 'v1.2.0';
+const CACHE_STATIC = `wilmer-static-${CACHE_VERSION}`;
+const CACHE_DYNAMIC = `wilmer-dynamic-${CACHE_VERSION}`;
+const CACHE_IMAGES = `wilmer-images-${CACHE_VERSION}`;
 
 // Archivos críticos para cachear en la instalación
 const STATIC_ASSETS = [
@@ -91,8 +91,8 @@ self.addEventListener('fetch', (event) => {
   else if (request.destination === 'style' || 
            request.destination === 'script' || 
            request.destination === 'font') {
-    // CSS, JS, FUENTES: Cache First (caché primero, red como fallback)
-    event.respondWith(cacheFirst(request, CACHE_STATIC));
+    // CSS, JS, FUENTES: Network First (fuerza versión nueva tras deploy)
+    event.respondWith(networkFirst(request, CACHE_STATIC));
   } 
   else if (request.destination === 'video') {
     // VIDEOS: Network First (no cachear, son muy pesados)
@@ -170,6 +170,10 @@ async function staleWhileRevalidate(request, cacheName) {
 
 // Evento: Mensaje desde la página (para limpiar caché manualmente)
 self.addEventListener('message', (event) => {
+    if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+    return;
+  }
   if (event.data && event.data.type === 'CLEAR_CACHE') {
     event.waitUntil(
       caches.keys().then((cacheNames) => {
