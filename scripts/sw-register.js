@@ -9,6 +9,7 @@ if ('serviceWorker' in navigator) {
       .register('/service-worker.js')
       .then((registration) => {
         console.log('✅ Service Worker registrado correctamente:', registration.scope);
+        registration.update();
 
         // Detectar actualizaciones
         registration.addEventListener('updatefound', () => {
@@ -25,6 +26,10 @@ if ('serviceWorker' in navigator) {
         if (registration.waiting) {
           registration.waiting.postMessage({ type: 'SKIP_WAITING' });
         }
+
+        setInterval(() => {
+          registration.update();
+        }, 60 * 1000);
       })
       .catch((error) => {
         console.error('❌ Error al registrar Service Worker:', error);

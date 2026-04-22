@@ -1,7 +1,7 @@
 // Service Worker para Wilmer Florez Portfolio
-// Versión 1.2.0 - Estrategia de actualización mejorada para deploys
+// Versión 1.4.0 - Durante desarrollo priorizar archivos no minificados
 
-const CACHE_VERSION = 'v1.2.0';
+const CACHE_VERSION = 'v1.4.0';
 const CACHE_STATIC = `wilmer-static-${CACHE_VERSION}`;
 const CACHE_DYNAMIC = `wilmer-dynamic-${CACHE_VERSION}`;
 const CACHE_IMAGES = `wilmer-images-${CACHE_VERSION}`;
@@ -12,16 +12,15 @@ const STATIC_ASSETS = [
   '/index.html',
   '/projekte.html',
   '/kontakt.html',
-  '/styles/cards_intro.min.css',
-  '/styles/header_test.min.css',
-  '/styles/cards.min.css',
-  '/styles/images.min.css',
-  '/styles/global-text.min.css',
-  '/styles/languages_content.min.css',
-  '/scripts/p5.min.js',
-  '/scripts/sketch_12.min.js',
-  '/scripts/languages_content.min.js',
-  '/scripts/script.min.js',
+'/styles/cards_intro.css',
+  '/styles/header_test.css',
+  '/styles/cards.css',
+  '/styles/images.css',
+  '/styles/global-text.css',
+  '/scripts/p5.js',
+  '/scripts/sketch_12.js',
+  '/scripts/languages_content.js',
+  '/scripts/script.js',
   '/imagenes/Logo.png',
   '/imagenes/logo.webp',
   '/imagenes/loading.webp'
@@ -131,7 +130,8 @@ async function cacheFirst(request, cacheName) {
 // Estrategia: Network First
 async function networkFirst(request, cacheName) {
   try {
-    const networkResponse = await fetch(request);
+    const freshRequest = new Request(request, { cache: 'no-store' });
+    const networkResponse = await fetch(freshRequest);
     
     if (networkResponse && networkResponse.status === 200) {
       const cache = await caches.open(cacheName);
