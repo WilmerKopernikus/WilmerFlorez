@@ -22,6 +22,10 @@
     margin-top: 12px;
     width: 250px;
     transition: transform 0.7s ease;
+    filter:
+      drop-shadow(0 0 4px rgba(255, 220, 120, 0.45))
+      drop-shadow(0 0 10px rgba(255, 180, 0, 0.3))
+      drop-shadow(0 0 18px rgba(255, 140, 0, 0.2));
   }
   .header-logo:hover {
     transform: scale(1.1);

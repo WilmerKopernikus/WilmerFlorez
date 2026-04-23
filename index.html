@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="styles/global-text.css">
   <link rel="stylesheet" href="styles/languages_content.min.css">
   <link rel="stylesheet" href="styles/rotatingtext.css">
+  <link rel="stylesheet" href="styles/contact-form.css">
 
   <script src="scripts/languages_content.js" defer></script>
   <script src="scripts/sw-register.js" defer></script>
@@ -132,18 +133,19 @@
           <div class="card-body-intro with-arrow font-loading">
             <div class="intro-card">
               <h1 class="rotating-text">
-                <span data-i18n="digitalStrategy" data-i18n-mobile="digitalStrategyMobile">DIGITAL STRATEGY</span>
-                <span data-i18n="webTechnologies" data-i18n-mobile="webTechnologiesMobile">WEB TECHNOLOGIES</span>
-                <span data-i18n="coolAnimations" data-i18n-mobile="coolAnimationsMobile">COOL ANIMATIONS</span>
-                <span data-i18n="graphicDesign" data-i18n-mobile="graphicDesignMobile">GRAPHIC DESIGN</span>
-                <span data-i18n="seoReach" data-i18n-mobile="seoReachMobile">SEO REACH</span>
-                <span data-i18n="aiImplementation" data-i18n-mobile="aiImplementationMobile">AI IMPLEMENTATION</span>
-                <span data-i18n="onlineShops" data-i18n-mobile="onlineShopsMobile">ONLINE SHOPS</span>
+                <span id="let-there-be-light" data-i18n="digitalStrategy" data-i18n-mobile="digitalStrategyMobile">DIGITAL STRATEGY</span>
+                <span id="let-there-be-light" data-i18n="webTechnologies" data-i18n-mobile="webTechnologiesMobile">WEB TECHNOLOGIES</span>
+                <span id="let-there-be-light" data-i18n="coolAnimations" data-i18n-mobile="coolAnimationsMobile">COOL ANIMATIONS</span>
+                <span id="let-there-be-light" data-i18n="graphicDesign" data-i18n-mobile="graphicDesignMobile">GRAPHIC DESIGN</span>
+                <span id="let-there-be-light" data-i18n="seoReach" data-i18n-mobile="seoReachMobile">SEO REACH</span>
+                <span id="let-there-be-light" data-i18n="aiImplementation" data-i18n-mobile="aiImplementationMobile">AI IMPLEMENTATION</span>
+                <span id="let-there-be-light" data-i18n="onlineShops" data-i18n-mobile="onlineShopsMobile">ONLINE SHOPS</span>
               </h1>
-              <h2 class="subtitle" data-i18n="indexSubtitle"> WILLKOMMEN ZU MEINEM PORTFOLIO ALS WEBENTWICKLER UND
+              <h2 class="subtitle" id="low-light" data-i18n="indexSubtitle"> WILLKOMMEN ZU MEINEM PORTFOLIO ALS WEBENTWICKLER UND
                 DESIGNER</h2><br>
+
               <a href="kontakt.html#cases">
-                <button class="send-button" data-i18n="homeButton">Start a Project</button>
+                <button class="send-button" id="low-light" data-i18n="homeButton" >Start a Project</button>
               </a>
             </div>
             <div class="arrow">
@@ -155,8 +157,84 @@
         <div class="card card-shared" id="card2">
           <div class="card-body">
             <div class="left" id="center-services">
-              <h2 class="title" data-i18n="wilmerProfile">BERUFLICHES PROFIL</h2>
-              <p class="text-new justify" data-i18n="wilmerIntroduction">
+              <h2 class="title" id="let-there-be-light" data-i18n="">KUNDENPROJEKTE</h2>
+              <p class="text-new justify" id="low-light" data-i18n="">
+                In dieser Auswahl präsentiere ich reale Projekte für Kunden, bei denen ich Design und Entwicklung
+                kombiniert habe. Alle Projekte sind live verfügbar und mit einem direkten Link zugänglich. Zusätzlich
+                ist jedes Projekt von einer detaillierten Beschreibung begleitet, die Kontext, Herangehensweise sowie
+                die technisch und gestalterisch umgesetzten Ergebnisse transparent macht.
+              </p>
+              <br><br>
+              <a href="projekte.html">
+                <button class="send-button" id="low-light" data-i18n="">Zum Kundenprojekte</button>
+              </a>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
+                poster="imagenes/videos/services_07.jpg" class="white-shadow">
+                <source src="imagenes/videos/services_01_compressed.mp4" type="video/mp4" />
+                Your browser doesn't support video reproductions.
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div id="card3" class="card card-shared">
+          <div class="card-body">
+            <div class="left" id="responsive-sketch">
+              <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
+                poster="imagenes/videos/services_07.jpg" class="white-shadow">
+                <source src="imagenes/videos/services_07_compressed.mp4" type="video/mp4" />
+                Your browser doesn't support video reproductions.
+              </video>
+            </div>
+            <div class="right" id="center-services">
+              <h2 class="title" id="let-there-be-light" data-i18n="">EIGENE PROJEKTE</h2>
+              <p class="text-new justify" id="low-light" data-i18n="">
+                Diese Projekte entstanden eigenständig, um neue Technologien zu erforschen und kreative Ansätze
+                umzusetzen. Sie dienen als praktische Demonstration meiner Fähigkeiten in Konzeption, Design und
+                Entwicklung. Der Fokus liegt auf Experiment, Lernen und Innovation, oft mit interaktiven oder
+                AI-gestützten Funktionen und einem starken gestalterischen Anspruch.
+              </p><br><br>
+              <a href="projekte.html">
+                <button class="send-button" id="low-light" data-i18n="">Zum Creative Coding</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="card card-shared" id="card4">
+          <div class="card-body">
+            <div class="left" id="center-services">
+              <h2 class="title" id="let-there-be-light" data-i18n="">CREATIVE CODING</h2>
+              <p class="text-new justify" id="low-light" data-i18n="">
+                In diesem Bereich erkunde ich die Schnittstelle zwischen Programmierung und visueller Gestaltung. Der
+                Fokus liegt auf generativen Grafiken, interaktiven Animationen und experimentellen Interfaces. Diese
+                Arbeiten zeigen meinen künstlerischen Ansatz im Code sowie mein Verständnis für Bewegung, Form und
+                Nutzerinteraktion in digitalen Umgebungen.
+              </p>
+              <br><br>
+              <a href="projekte.html">
+                <button class="send-button" id="low-light" data-i18n="">Zum Creative Coding</button>
+              </a>
+            </div>
+            <div class="right" id="responsive-sketch">
+              <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
+                poster="imagenes/videos/services_08.jpg" class="white-shadow">
+                <source src="imagenes/videos/services_08_compressed.mp4" type="video/mp4" />
+                Your browser doesn't support video reproductions.
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-shared" id="card5">
+          <div class="card-body">
+            <div class="left" id="center-services">
+              <h2 class="title" id="let-there-be-light" data-i18n="wilmerProfile">BERUFLICHES PROFIL</h2>
+              <p class="text-new justify" id="low-light" data-i18n="wilmerIntroduction">
                 Webentwickler mit Schwerpunkt auf Frontend-Entwicklung und UI/UX-Design. Praxiserfahrung in der
                 Konzeption und Entwicklung responsiver, mehrsprachiger Websites und interaktiver Webprojekte mit HTML,
                 CSS, JavaScript sowie Frameworks wie React, Vue.js und Angular.
@@ -176,168 +254,184 @@
           </div>
         </div>
 
-        <div id="card3" class="card card-shared">
-          <div class="card-body">
-            <div class="left" id="center-services">
-              <h2 class="title" data-i18n="wilmerProfile">BERUFLICHES PROFIL</h2>
-              <p class="text-new justify" data-i18n="projectContent">
-                Durch meinen Hintergrund in Bildender Kunst
-                und Grafikdesign verbinde ich technisches Verständnis mit einem sicheren Gespür für visuelle
-                Kommunikation, Nutzerführung und digitale Ästhetik. Ich arbeite eigenverantwortlich, strukturiert und
-                international erfahren in deutsch-, englisch- und spanischsprachigen Kontexten.
-              </p>
-              <br><br>
-            </div>
-            <div class="right" id="responsive-sketch">
-              <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
-                poster="imagenes/videos/services_07.jpg" class="white-shadow">
-                <source src="imagenes/videos/services_01_compressed.mp4" type="video/mp4" />
-                Your browser doesn't support video reproductions.
-              </video>
-            </div>
-          </div>
-        </div>
-
-        
-
-        <div class="card card-shared" id="card4">
-          <div class="card-body" id="cases">
-            <div class="left" id="center-services">
-              <h2 class="title" data-i18n="banderasTitle">BANDERAS NILA LOPEZ</h2>
-              <p class="text" data-i18n="banderasKunde">
-                <strong>Kunde:</strong>
-                <br /> Banderas Nila Lopez
-              </p><br />
-              <p class="text" data-i18n="banderasLeistungen">
-                <strong>Leistungen:</strong>
-                <br /> Webentwicklung & Design - Markenentwicklung - WebsiteBetreuung
-              </p><br />
-              <p class="text justify" data-i18n="banderasUebersicht">
-                <strong>Übersicht:</strong>
-                <br />
-                Banderas Nila Lopez ist ein kolumbianisches Unternehmen, das sich auf die Herstellung und den Vertrieb
-                von hochwertigen Textilprodukten spezialisiert hat. Das Projekt umfasst die Entwicklung einer modernen
-                Website, die das Markenimage stärkt und die Online-Präsenz des Unternehmens verbessert.
-              </p><br />
-              <a href="banderas-nila-lopez.html">
-                <button class="send-button" data-i18n="mehrInformation">Mehr Informationen</button>
-              </a>
-            </div>
-            <div class="right">
-              <!-- Image containers -->
-              <a href="banderas-nila-lopez.html" rel="noopener noreferrer">
-                <div class="image-container image-transition">
-                  <img src="imagenes/projects/banderas-nila-grey.png" alt="Banderas Nila Logo" id="black-and-white" />
-                  <img src="imagenes/projects/banderas-nila-color.png" alt="Banderas Nila Logo" id="color"
-                    class="white-shadow" />
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card card-shared" id="card5">
-          <div class="card-body" id="cases">
-            <div class="left" id="center-services">
-              <h2 class="title">BLANCEC S.A.S.</h2>
-              <p class="text" data-i18n="blancecKunde">
-                <strong>Kunde:</strong> Laboratorios Blancec S.A.S.
-              </p><br />
-              <p class="text" data-i18n="blancecLeistungen">
-                <strong>Leistungen:</strong>
-                <br /> Webentwicklung & Design - Markenentwicklung - Datenbank - Prozessautomatisierung
-              </p><br />
-              <p class="text justify" data-i18n="blancecUebersicht">
-                <strong>Übersicht:</strong>
-                <br />
-                BLANCEC S.A.S. ist ein kolumbianisches Prüflabor, das sich auf die Zertifizierung von Produkten für die
-                nationale
-                Verteidigungsindustrie spezialisiert hat. Das Labor prüft Ausrüstung und Materialien, damit sie die vom
-                kolumbianischen Verteidigungsministerium geforderten technischen Normen und Sicherheitsvorschriften
-                (u. a. NTS- und MINDEN-Standards) erfüllen.
-              </p><br />
-              <a href="blancec-projekt.html">
-                <button class="send-button" data-i18n="mehrInformation">Mehr Informationen</button>
-              </a>
-            </div>
-            <div class="right">
-              <!-- Image containers -->
-              <a href="blancec-projekt.html" rel="noopener noreferrer">
-                <div class="image-container image-transition">
-                  <img src="imagenes/projects/Blancec-grey-2.png" alt="Blancec Logo" id="black-and-white" />
-                  <img src="imagenes/projects/Blancec-color-2.png" alt="Blancec Logo" id="color" class="white-shadow" />
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
         <div class="card card-shared" id="card6">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
-              <h2 class="title">JOB LAB</h2>
-              <p class="text" data-i18n="joblabKunde">
-                <strong>Kunde:</strong>
-                <br /> Deutscher Akademischer Austauschdienst (DAAD)
-              </p><br />
-              <p class="text" data-i18n="joblabLeistungen">
-                <strong>Leistungen:</strong>
-                <br /> Markenentwicklung <br /> Plakatgestaltung <br /> Webentwicklung <br /> Webdesign
-              </p><br />
-              <p class="text justify" data-i18n="joblabUebersicht">
-                <strong>Übersicht:</strong>
-                <br />
-                Im Mai und Juni 2024 führte der DAAD in China gemeinsam mit der Deutschen Botschaft, dem Goethe-Institut
-                und weiteren Partnern das Projekt Job Lab durch. Die Messe bot unter dem Motto „Mit Deutsch in die
-                Zukunft“
-                Karriereperspektiven für chinesische Germanistik-Studierende.
-              </p><br />
-              <!-- Button -->
-              <a href="joblab-projekt.html" rel="noopener noreferrer">
-                <button class="send-button" data-i18n="mehrInformation">Mehr Informationen</button>
-              </a>
-            </div>
-            <div class="right">
-              <!-- Image containers -->
-              <a href="joblab-projekt.html" rel="noopener noreferrer">
-                <div class="image-container image-transition">
-                  <img src="imagenes/projects/JobLab-grey-2.png" alt="JobLab Logo" id="black-and-white" />
-                  <img src="imagenes/projects/JobLab-color-2.png" alt="JobLab Logo" id="color" class="white-shadow" />
+              <h2 class="title" id="let-there-be-light">DIENSTLEISTUNGEN</h2>
+
+              <div class="service-item active">
+                <div class="service-trigger text-new justify">
+                  Webdesign & Webentwicklung
                 </div>
-              </a>
+                <div class="service-description text justify">
+                  Konzeption und Entwicklung individueller Websites mit Fokus auf Gestaltung, Responsivität, Performance
+                  und Benutzerfreundlichkeit.
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-trigger text-new justify">
+                  Frontend-Entwicklung
+                </div>
+                <div class="service-description text justify">
+                  Umsetzung moderner, interaktiver Benutzeroberflächen mit HTML, CSS, JavaScript sowie Frameworks wie
+                  React, Vue oder Next.js.
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-trigger text-new justify">
+                  UI/UX-Design
+                </div>
+                <div class="service-description text justify">
+                  Gestaltung klarer und nutzerorientierter digitaler Oberflächen mit Blick auf Struktur, visuelle
+                  Hierarchie und ein stimmiges Nutzungserlebnis.
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-trigger text-new justify">
+                  Mehrsprachige Websites
+                </div>
+                <div class="service-description text justify">
+                  Entwicklung mehrsprachiger Weblösungen für internationale Zielgruppen mit durchdachter Inhaltsstruktur
+                  und konsistenter Nutzerführung.
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-trigger text-new justify">
+                  KI-Integration
+                </div>
+                <div class="service-description text justify">
+                  Einbindung KI-gestützter Funktionen wie Chatbots, interaktive Assistenten oder dynamische Inhalte in
+                  digitale Produkte.
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-trigger text-new justify">
+                  Redesign & Optimierung bestehender Websites
+                </div>
+                <div class="service-description text justify">
+                  Überarbeitung vorhandener Websites zur Verbesserung von Gestaltung, technischer Qualität, Performance
+                  und professioneller Außenwirkung.
+                </div>
+              </div>
+
             </div>
+
+            <!-- Image containers -->
+            <div class="right" id="responsive-sketch">
+              <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
+                poster="imagenes/videos/services_08.jpg" class="white-shadow">
+                <source src="imagenes/videos/cube_compressed.mp4" type="video/mp4" />
+                Your browser doesn't support video reproductions.
+              </video>
+            </div>
+
           </div>
         </div>
 
-        <div class="card card-shared" id="card7">
+       <div class="card card-shared" id="card6">
+          <div class="card-body" id="cases">
+
+            <div class="left" id="responsive-sketch">
+              <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
+                poster="imagenes/videos/services_06.jpg" class="white-shadow">
+                <source src="imagenes/videos/services_06_compressed.mp4" type="video/mp4" />
+                Your browser doesn't support video reproductions.
+              </video>
+            </div>
+
+            <div class="right" id="center-services">
+              <h2 class="title" id="let-there-be-light">SKILLS / TECH STACK</h2>
+
+              <div class="service-item active">
+                <div class="service-trigger text-new justify">
+                  Frontend
+                </div>
+                <div class="service-description text justify">
+                  HTML5, CSS3 (Responsive Design), Bootstrap, JavaScript (ES6+), TypeScript, React, Vue.js, Next.js, Angular, p5.js, Three.js.
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-trigger text-new justify">
+                  Backend & APIs
+                </div>
+                <div class="service-description text justify">
+                  Node.js, Express, PHP, CodeIgniter, REST-APIs, JSON, Webhooks.
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-trigger text-new justify">
+                  Databases
+                </div>
+                <div class="service-description text justify">
+                  SQL, PostgreSQL. MySQL.
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-trigger text-new justify">
+                  Tools & Workflow
+                </div>
+                <div class="service-description text justify">
+                  Git, GitHub, Vercel, Netlify, cPanel.
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-trigger text-new justify">
+                  Design & UX
+                </div>
+                <div class="service-description text justify">
+                  Adobe Illustrator, Adobe Photoshop, Adobe After Effects, Figma, GIMP, UI/UX-Design, Wireframing, Prototyping.
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-trigger text-new justify">
+                  AI & Integrations
+                </div>
+                <div class="service-description text justify">
+                  GitHub Copilot, OpenAI API, Codex, Prompt Engineering, AI Integrations.
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div id="card7" class="card card-shared">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
-              <h2 class="title" data-i18n="tarotTitle">INTERAKTIVES TAROT</h2>
-              <p class="text" data-i18n="tarotKunde">
-                <strong>Projekt:</strong>
-                <br /> Persönliches Projekt in Entwicklung
-              </p><br />
-              <p class="text" data-i18n="tarotLeistungen">
-                <strong>Tech Stack:</strong>
-                <br /> JavaScript · OpenAI API · HTML/CSS · Vercel · Node.js
-              </p><br />
-              <p class="text justify" data-i18n="tarotUebersicht">
-                <strong>Übersicht:</strong>
-                <br />
-                Eine interaktive Tarot-Webanwendung, die die ChatGPT-API nutzt, um personalisierte
-                Karteninterpretationen zu generieren.
-              </p><br />
-              <a href="tarot_projekt.html">
-                <button class="send-button" data-i18n="mehrInformation">Mehr Informationen</button>
-              </a>
+              <h2 class="title" id="title-medium" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?</h2>
+              <p class="text-new" data-i18n="chooseUsText">
+                Sind Sie auf der Suche nach einem engagierten Webentwickler für
+                Ihr Team oder Ihr nächstes Projekt?<br><br>
+
+                Wenn Sie Unterstützung für Ihr Projekt benötigen oder
+                jemanden suchen, der sich engagiert in neue Aufgaben einarbeitet, freue ich mich über eine
+                Kontaktaufnahme.
+                Gerne bespreche ich mit Ihnen, wie ich Ihr Team und Ihre Ziele bestmöglich unterstützen kann.
+                <br><br>
+              </p>
             </div>
-            <div class="right">
-              <a href="tarot_projekt.html">
-                <div class="image-container image-transition">
-                  <img src="imagenes/projects/tarot/01_bw.png" alt="Tarot Logo" id="black-and-white" />
-                  <img src="imagenes/projects/tarot/01.png" alt="Tarot Logo" id="color" class="white-shadow" />
+            <div class="right" id="center-services">
+              <h2 class="title" id="title-medium" data-i18n="formTitle">KONTAKTIEREN SIE MICH!</h2>
+              <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
+                <p style="display:none;">
+                  <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                </p>
+                <div class="form-group">
+                  <label for="name" data-i18n="formNameLabel">Ihr Name:</label>
+                  <input type="text" id="name" name="name" required />
                 </div>
-              </a>
+                <div class="form-group">
+                  <label for="email" data-i18n="formEmailLabel">Ihre E-Mail:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="message" data-i18n="formMessageLabel">Ihre Nachricht:</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="send-button" data-i18n="formSubmit">Senden</button>
+              </form>
             </div>
           </div>
         </div>
@@ -345,35 +439,13 @@
         <div class="card card-shared" id="card8">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
-              <h2 class="title" data-i18n="stopdesertTitle">STOP THE DESERT</h2>
-              <p class="text" data-i18n="stopdesertKunde">
-                <strong>Projekt:</strong>
-                <br /> Ehrenamtliches Projekt
-              </p><br />
-              <p class="text" data-i18n="stopdesertLeistungen">
-                <strong>Tech Stack:</strong>
-                <br /> WordPress · Kadence · HTML/CSS · JavaScript · Spendensystem
-              </p><br />
-              <p class="text justify" data-i18n="stopdesertUebersicht">
-                <strong>Übersicht:</strong>
-                <br />
-                Stop the Desert ist eine NGO, die die Wüstenbildung weltweit bekämpft. Das Projekt umfasst die
-                Verwaltung der WordPress-Website mit Kadence und die Implementierung eines Spendensystems, das Landwirte
-                direkt unterstützt.
-              </p><br />
-              <!-- Button -->
-              <a href="stop_the_desert.html" rel="noopener noreferrer">
-                <button class="send-button" data-i18n="mehrInformation">Mehr Informationen</button>
-              </a>
+              <h2 class="title" data-i18n="">FOOTER</h2>
             </div>
             <div class="right">
-              <!-- Image containers -->
-              <a href="stop_the_desert.html" rel="noopener noreferrer">
+              <a href="tarot_projekt.html">
                 <div class="image-container image-transition">
-                  <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_01_bw.jpg" alt="Stop the Desert Logo"
-                    id="black-and-white" />
-                  <img src="imagenes/projects/Stop_The_Desert/stop_the_desert_01.jpg" alt="Stop the Desert Logo"
-                    id="color" class="white-shadow" />
+                  <img src="imagenes/projects/tarot/01_bw.png" alt="Tarot Logo" id="black-and-white" />
+                  <img src="imagenes/projects/tarot/01.png" alt="Tarot Logo" id="color" class="white-shadow" />
                 </div>
               </a>
             </div>

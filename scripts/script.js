@@ -288,3 +288,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   animatedTargets.forEach((target) => observer.observe(target));
 });
+
+
+  const serviceTriggers = document.querySelectorAll('.service-trigger');
+  const serviceItems = document.querySelectorAll('.service-item');
+
+  serviceTriggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const currentItem = trigger.parentElement;
+
+      serviceItems.forEach(item => {
+        item.classList.remove('active');
+      });
+
+      currentItem.classList.add('active');
+    });
+  });
+
