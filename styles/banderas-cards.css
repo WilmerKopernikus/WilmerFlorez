@@ -15,37 +15,37 @@
   justify-content: stretch;
 }
 
-#card1-test {
+#card1-banderas {
   --index: 1;
   background: linear-gradient(to bottom, rgb(27, 121, 161), rgb(0, 34, 108));
 }
 
-#card2-test {
+#card2-banderas {
   --index: 2;
   background: linear-gradient(to bottom, rgb(27, 121, 161), rgb(0, 34, 108));
 }
 
-#card3-test {
+#card3-banderas {
   --index: 3;
   background: linear-gradient(to bottom, rgb(27, 121, 161), rgb(0, 34, 108));
 }
 
-#card4-test {
+#card4-banderas {
   --index: 4;
   background: linear-gradient(to bottom, rgb(27, 121, 161), rgb(0, 34, 108));
 }
 
-#card5-test {
+#card5-banderas {
   --index: 5;
   background: linear-gradient(to bottom, rgb(27, 121, 161), rgb(0, 34, 108));
 }
 
-#card6-test {
+#card6-banderas {
   --index: 6;
   background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }
 
-#card7-test-mobile {
+#card7-banderas-mobile {
   --index: 7;
   background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }
