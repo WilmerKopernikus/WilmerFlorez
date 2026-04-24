@@ -5,7 +5,7 @@
 }
 
 #services-animation-mobile {
-  width: 65%;
+  width: 60%;
   display: block;
   max-width: 100%;
   height: auto;
@@ -425,3 +425,7 @@
     align-items: center;
   }
 }
+@media screen and (max-width: 380px) and (orientation: portrait) {
+#services-animation-mobile {
+  width: 50%;
+}}
