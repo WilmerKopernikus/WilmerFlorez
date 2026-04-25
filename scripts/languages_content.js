@@ -33,9 +33,54 @@ const languagesContent = {
     kundenProjekte: "KUNDENPROJEKTE",
     kundenProjekteText: "In dieser Auswahl präsentiere ich reale Projekte für Kunden, bei denen ich Design und Entwicklung kombiniert habe. Alle Projekte sind live verfügbar und mit einem direkten Link zugänglich. Zusätzlich ist jedes Projekt von einer detaillierten Beschreibung begleitet, die Kontext, Herangehensweise sowie die technisch und gestalterisch umgesetzten Ergebnisse transparent macht.",
     kundenProjekteButton: "Kundenprojekte erkunden",
-
+    meineProjekte: "MEINE PROJEKTE",
+    meineProjekteText: "Diese Projekte entstanden eigenständig, um neue Technologien zu erforschen und kreative Ansätze umzusetzen. Sie dienen als praktische Demonstration meiner Fähigkeiten in Konzeption, Design und Entwicklung. Der Fokus liegt auf Experiment, Lernen und Innovation, oft mit interaktiven oder AI-gestützten Funktionen und einem starken gestalterischen Anspruch.",
+    meineProjekteButton: "Meine Projekte",
+    creativeCoding: "CREATIVE CODING",
+    creativeCodingText: "In diesem Bereich erkunde ich die Schnittstelle zwischen Programmierung und visueller Gestaltung. Der Fokus liegt auf generativen Grafiken, interaktiven Animationen und experimentellen Interfaces. Diese Arbeiten zeigen meinen künstlerischen Ansatz im Code sowie mein Verständnis für Bewegung, Form und Nutzerinteraktion in digitalen Umgebungen.",
+    creativeCodingButton: "Creative Coding",
     wilmerProfile: "BERUFLICHES PROFIL",
     wilmerIntroduction: "Webentwickler mit Schwerpunkt auf Frontend-Entwicklung und UI/UX-Design. Praxiserfahrung in der Konzeption und Entwicklung responsiver, mehrsprachiger Websites und interaktiver Webprojekte mit HTML, CSS, JavaScript sowie Frameworks wie React, Vue.js und Angular.",
+    wilmerProfileButton: "Mehr über mich",
+
+    dienstleistungen: "DIENSTLEISTUNGEN",
+    dienstleistung1: "Webdesign & Webentwicklung",
+    dienstleistung1Text: "Konzeption und Entwicklung individueller Websites mit Fokus auf Gestaltung, Responsivität, Performance und Benutzerfreundlichkeit.",
+    dienstleistung2: "Frontend-Entwicklung",
+    dienstleistung2Text: "Umsetzung moderner, interaktiver Benutzeroberflächen mit HTML, CSS, JavaScript sowie Frameworks wie React, Vue oder Next.js.",
+    dienstleistung3: "UI/UX-Design",
+    dienstleistung3Text: "Gestaltung klarer und nutzerorientierter digitaler Oberflächen mit Blick auf Struktur, visuelle Hierarchie und ein stimmiges Nutzungserlebnis.",
+    dienstleistung4: "Mehrsprachige Websites",
+    dienstleistung4Text: "Entwicklung mehrsprachiger Weblösungen für internationale Zielgruppen mit durchdachter Inhaltsstruktur und konsistenter Nutzerführung.",
+    dienstleistung5: "KI-Integration",
+    dienstleistung5Text: "Einbindung KI-gestützter Funktionen wie Chatbots, interaktive Assistenten oder dynamische Inhalte in digitale Produkte.",
+    dienstleistung6: "Redesign & Optimierung bestehender Websites",
+    dienstleistung6Text: "Überarbeitung vorhandener Websites zur Verbesserung von Gestaltung, technischer Qualität, Performance und professioneller Außenwirkung.",
+
+    skill3: "Datenbanken",
+    skill4: "Tools & Workflow",
+    skill5: "Design & UX",
+    skill6: "KI & Integrationen",
+    skill6Text: "GitHub Copilot, OpenAI API, Codex, Prompt Engineering, KI-Integrationen.",
+
+
+    footerTitle: "KREATIV UND INNOVATIV",
+    footerDescription: `Webentwickler - UI/UX-Designer - Kreativer Programmierer<br>
+                        Entwicklung performanter, nutzerorientierter Web-Erlebnisse<br>
+                        Standort: Deutschland · Internationale Tätigkeit<br>
+                        wilmerkopernikus@gmail.com <br>
+                        (+49) 1771 827690 - (+86) 185 2006 0442`,
+    footerNavigation: "Sitemap",
+
+    impressumTitle: "Impressum",
+    impressumContent: `Wilmer Aderbert Florez López
+                      Am Stumpenhof 14 - 73207 Plochingen, Deutschland
+                      wilmerkopernikus@gmail.com - (+49)1771 827690 - (+86)185 2006 0442
+                      Inhaltlich Verantwortlicher gemäß §55 Abs. 2 RStV`,
+    derechos: "© 2026 Wilmer Florez. Alle Rechte vorbehalten.",
+
+
+
     projectTitle: "BERUFLICHES PROFIL",
     projectContent: "Durch meinen Hintergrund in Bildender Kunst und Grafikdesign verbinde ich technisches Verständnis mit einem sicheren Gespür für visuelle Kommunikation, Nutzerführung und digitale Ästhetik. Ich arbeite eigenverantwortlich, strukturiert und international erfahren in deutsch-, englisch- und spanischsprachigen Kontexten.",
     projectButton: "Zu meinen Projekten",
@@ -182,7 +227,7 @@ const languagesContent = {
   en: {
 
     //menu
-    menuIndex: `Startseite`,
+    menuIndex: `Homepage`,
     menuProjekte: `Projects for Clients`,
     menuEigeneProjekte: `My Projects`,
     menuCreativeCoding: `Creative Coding`,
@@ -212,9 +257,51 @@ const languagesContent = {
     kundenProjekte: "CLIENT PROJECTS",
     kundenProjekteText: "In this selection, I present real-world projects for clients where I combined design and development. All projects are available live and accessible via a direct link. Each project is also accompanied by a detailed description that transparently explains the context, approach, and the technically and aesthetically implemented results.",
     kundenProjekteButton: "Explore Client Projects",
-
+    meineProjekte: "MY PROJECTS",
+    meineProjekteText: "These projects were developed independently to explore new technologies and implement creative approaches. They serve as a practical demonstration of my skills in conception, design, and development. The focus is on experimentation, learning, and innovation, often incorporating interactive or AI-powered features and a strong design focus.",
+    meineProjekteButton: "My Projects",
+    creativeCoding: "CREATIVE CODING",
+    creativeCodingText: "In this area, I explore the intersection between programming and visual design. The focus is on generative graphics, interactive animations, and experimental interfaces. This work showcases my artistic approach to code as well as my understanding of movement, form, and user interaction in digital environments.",
+    creativeCodingButton: "Creative Coding",
     wilmerProfile: "PROFESSIONAL PROFILE",
     wilmerIntroduction: "Web developer specializing in frontend development and UI/UX design. Practical experience in the conception and development of responsive, multilingual websites and interactive web projects using HTML, CSS, JavaScript, and frameworks such as React, Vue.js, and Angular.",
+    wilmerProfileButton: "More about me",
+
+    dienstleistungen: "SERVICES",
+    dienstleistung1: "Web design & web development",
+    dienstleistung1Text: "Conceptualization and development of individual websites with a focus on design, responsiveness, performance and user-friendliness.",
+    dienstleistung2: "Frontend development",
+    dienstleistung2Text: "Implementation of modern, interactive user interfaces using HTML, CSS, JavaScript, and frameworks such as React, Vue, or Next.js.",
+    dienstleistung3: "UI/UX design",
+    dienstleistung3Text: "Design of clear and user-oriented digital interfaces with a focus on structure, visual hierarchy and a coherent user experience.",
+    dienstleistung4: "Multilingual websites",
+    dienstleistung4Text: "Development of multilingual web solutions for international target groups with a well-thought-out content structure and consistent user guidance.",
+    dienstleistung5: "AI integration",
+    dienstleistung5Text: "Integration of AI-powered features such as chatbots, interactive assistants, or dynamic content into digital products.",
+    dienstleistung6: "Redesign & optimization of existing websites",
+    dienstleistung6Text: "Revision of existing websites to improve design, technical quality, performance and professional public image.",
+
+    skill3: "Databases",
+    skill4: "Tools & Workflow",
+    skill5: "Design & UX",
+    skill6: "AI & Integrations",
+    skill6Text: "GitHub Copilot, OpenAI API, Codex, Prompt Engineering, AI integrations.",
+
+    footerTitle: "CREATIVE AND INNOVATIVE",
+    footerDescription: `Web Developer - UI/UX Designer - Creative Coder<br>
+                    Creating performant, user-focused web experiences<br>
+                    Based in Germany · Working internationally<br>
+                    wilmerkopernikus@gmail.com <br>
+                    (+49)1771 827690 - (+86)185 2006 0442`,
+    footerNavigation: "Sitemap",
+
+    impressumTitle: "Legal Notice",
+    impressumContent: `Wilmer Aderbert Florez López
+                      Am Stumpenhof 14 - 73207 Plochingen, Deutschland
+                      wilmerkopernikus@gmail.com - (+49)1771 827690 - (+86)185 2006 0442
+                      Responsible for content according to §55 Abs. 2 RStV`,
+    derechos: "© 2026 Wilmer Florez. All rights reserved.",
+
     projectTitle: `PROJECTS`,
     projectContent: `My background in fine arts and graphic design allows me to combine technical understanding with a keen sense of visual communication, user experience, and digital aesthetics. I work independently, in a structured manner, and have international experience in German, English, and Spanish-speaking contexts.`,
     projectButton: `View my projects`,
@@ -362,7 +449,7 @@ const languagesContent = {
 
   es: {
     //Menu
-    menuIndex: `Startseite`,
+    menuIndex: `Página principal`,
     menuProjekte: `Proyectos para Clientes`,
     menuEigeneProjekte: `Mis Proyectos`,
     menuCreativeCoding: `Programación Creativa`,
@@ -392,9 +479,53 @@ const languagesContent = {
     kundenProjekte: "PROYECTOS PARA CLIENTES",
     kundenProjekteText: "En esta selección, presento proyectos reales para clientes en los que combiné diseño y desarrollo. Todos los proyectos están disponibles y accesibles mediante un enlace directo. Cada proyecto incluye una descripción detallada que explica con claridad el contexto, el enfoque y los resultados técnicos y estéticos obtenidos.",
     kundenProjekteButton: "Explorar proyectos para clientes",
-
+    meineProjekte: "MIS PROYECTOS",
+    meineProjekteText: "Estos proyectos se desarrollaron de forma independiente para explorar nuevas tecnologías e implementar enfoques creativos. Sirven como demostración práctica de mis habilidades en concepción, diseño y desarrollo. Se centran en la experimentación, el aprendizaje y la innovación, incorporando a menudo funciones interactivas o basadas en inteligencia artificial y un fuerte enfoque en el diseño.",
+    meineProjekteButton: "Mis proyectos",
+    creativeCoding: "PROGRAMACIÓN CREATIVA",
+    creativeCodingText: "En esta área, exploro la intersección entre la programación y el diseño visual. Me centro en gráficos generativos, animaciones interactivas e interfaces experimentales. Este trabajo muestra mi enfoque artístico del código, así como mi comprensión del movimiento, la forma y la interacción del usuario en entornos digitales.",
+    creativeCodingButton: "Programación creativa",
     wilmerProfile: "PERFIL PROFESIONAL",
     wilmerIntroduction: "Desarrollador web especializado en desarrollo frontend y diseño UI/UX. Experiencia práctica en la concepción y desarrollo de sitios web responsivos y multilingües, así como en proyectos web interactivos utilizando HTML, CSS, JavaScript y frameworks como React, Vue.js y Angular.",
+    wilmerProfileButton: "Más sobre mí",
+
+    dienstleistungen: "SERVICIOS",
+    dienstleistung1: "Diseño y desarrollo web",
+    dienstleistung1Text: "Conceptualización y desarrollo de sitios web personalizados, con especial atención al diseño, la adaptabilidad, el rendimiento y la facilidad de uso.",
+    dienstleistung2: "Desarrollo frontend",
+    dienstleistung2Text: "Implementación de interfaces de usuario modernas e interactivas utilizando HTML, CSS, JavaScript y frameworks como React, Vue o Next.js.",
+    dienstleistung3: "Diseño UI/UX",
+    dienstleistung3Text: "Diseño de interfaces digitales claras y orientadas al usuario, con especial atención a la estructura, la jerarquía visual y una experiencia de usuario coherente.",
+    dienstleistung4: "Sitios web multilingües",
+    dienstleistung4Text: "Desarrollo de soluciones web multilingües para públicos internacionales, con una estructura de contenido bien planificada y una guía de usuario coherente.",
+    dienstleistung5: "Integración de IA",
+    dienstleistung5Text: "Integración de funciones basadas en inteligencia artificial, como chatbots, asistentes interactivos o contenido dinámico, en productos digitales.",
+    dienstleistung6: "Rediseño y optimización de sitios web existentes",
+    dienstleistung6Text: "Revisión de los sitios web existentes para mejorar el diseño, la calidad técnica, el rendimiento y la imagen pública profesional.",
+
+    skill3: "Bases de datos",
+    skill4: "Herramientas y flujo de trabajo",
+
+    skill5: "Diseño y experiencia de usuario",
+    skill6: "Inteligencia artificial e integraciones",
+    skill6Text: "GitHub Copilot, API de OpenAI, Codex, Prompt Engineering, integraciones de IA.",
+
+    footerTitle: "CREATIVO E INNOVADOR",
+    footerDescription: `Desarrollador web - Diseñador UI/UX - Programador creativo<br>
+                        Creación de experiencias web eficientes y centradas en el usuario<br>
+                        Con sede en Alemania · Trabajo internacional<br>
+                        wilmerkopernikus@gmail.com <br>
+                        (+49)1771 827690 - (+86)185 2006 0442`,
+    footerNavigation: "Mapa del sitio",
+
+    impressumTitle: "Aviso legal",
+    impressumContent: `Wilmer Aderbert Florez López
+Am Stumpenhof 14 - 73207 Plochingen, Alemania
+wilmerkopernikus@gmail.com - (+49)1771 827690 - (+86)185 2006 0442
+Responsable del contenido según §55 Abs. 2 RStV`,
+    derechos: "© 2026 Wilmer Florez. Todos los derechos reservados.",
+
+
     projectTitle: 'PROYECTOS',
     projectContent: 'Mi formación en bellas artes y diseño gráfico me permite combinar conocimientos técnicos con un agudo sentido de la comunicación visual, la experiencia del usuario y la estética digital. Trabajo de forma independiente y organizada, y cuento con experiencia internacional en entornos de habla alemana, inglesa y española.',
     projectButton: 'Ver mis proyectos',
