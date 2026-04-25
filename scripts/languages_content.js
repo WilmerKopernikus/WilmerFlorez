@@ -5,7 +5,7 @@ const languagesContent = {
     //Menu
     menuIndex: `Startseite`,
     menuProjekte: `Kundenprojekte`,
-    menuEigeneProjekte: `Eigene Projekte`,
+    menuEigeneProjekte: `Meine Projekte`,
     menuCreativeCoding: `Creative Coding`,
     menuUeberMich: `Über Mich`,
     menuKontakt: `Kontakt`,
@@ -29,6 +29,10 @@ const languagesContent = {
     indexSubtitle: `Willkommen zu meinem Portfolio`,
     clickToStart: `Klicken, um zu starten`,
     homeButton: `Projekt starten`,
+
+    kundenProjekte: "KUNDENPROJEKTE",
+    kundenProjekteText: "In dieser Auswahl präsentiere ich reale Projekte für Kunden, bei denen ich Design und Entwicklung kombiniert habe. Alle Projekte sind live verfügbar und mit einem direkten Link zugänglich. Zusätzlich ist jedes Projekt von einer detaillierten Beschreibung begleitet, die Kontext, Herangehensweise sowie die technisch und gestalterisch umgesetzten Ergebnisse transparent macht.",
+    kundenProjekteButton: "Kundenprojekte erkunden",
 
     wilmerProfile: "BERUFLICHES PROFIL",
     wilmerIntroduction: "Webentwickler mit Schwerpunkt auf Frontend-Entwicklung und UI/UX-Design. Praxiserfahrung in der Konzeption und Entwicklung responsiver, mehrsprachiger Websites und interaktiver Webprojekte mit HTML, CSS, JavaScript sowie Frameworks wie React, Vue.js und Angular.",
@@ -152,7 +156,7 @@ const languagesContent = {
     oraculo_error_hablar: "Es gab einen Fehler beim Sprechen mit dem Orakel.",
 
     //Stop the Desert
-    stopSubtitle:"NGO-Website <br>Laufendes ehrenamtliches Projekt <br>Eigenständige Entwicklung & Design",
+    stopSubtitle: "NGO-Website <br>Laufendes ehrenamtliches Projekt <br>Eigenständige Entwicklung & Design",
     stopTitle1: "PROJEKTÜBERBLICK",
     stopContent1: "Stop the Desert ist ein laufendes ehrenamtliches Projekt für eine NGO, die weltweit gegen Wüstenbildung arbeitet. Die Website dient als Informations- und Unterstützungsplattform, vermittelt die Mission der Organisation klar und leitet Besucher zu konkreten Möglichkeiten an, einen Beitrag zu leisten.",
     stopTitle2: "MEINE ROLLE",
@@ -204,6 +208,10 @@ const languagesContent = {
     indexSubtitle: `Welcome to my portfolio`,
     clickToStart: `Click me to start`,
     homeButton: `Start a Project`,
+
+    kundenProjekte: "CLIENT PROJECTS",
+    kundenProjekteText: "In this selection, I present real-world projects for clients where I combined design and development. All projects are available live and accessible via a direct link. Each project is also accompanied by a detailed description that transparently explains the context, approach, and the technically and aesthetically implemented results.",
+    kundenProjekteButton: "Explore Client Projects",
 
     wilmerProfile: "PROFESSIONAL PROFILE",
     wilmerIntroduction: "Web developer specializing in frontend development and UI/UX design. Practical experience in the conception and development of responsive, multilingual websites and interactive web projects using HTML, CSS, JavaScript, and frameworks such as React, Vue.js, and Angular.",
@@ -329,7 +337,7 @@ const languagesContent = {
 
     //Stop the Desert
 
-    stopSubtitle:"NGO Website <br>Ongoing Volunteer Project <br>Independent Development & Design",
+    stopSubtitle: "NGO Website <br>Ongoing Volunteer Project <br>Independent Development & Design",
     stopTitle1: "PROJECT OVERVIEW",
     stopContent1: "Stop the Desert is an ongoing volunteer project for an NGO that works against desertification worldwide. The website serves as an informational and support platform, clearly communicating the organization’s mission and guiding visitors toward concrete ways to contribute.",
     stopTitle2: "MY ROLE",
@@ -380,6 +388,11 @@ const languagesContent = {
     indexSubtitle: 'Bienvenido a mi portafolio',
     clickToStart: `Toca para comenzar`,
     homeButton: `Iniciar un proyecto`,
+
+    kundenProjekte: "PROYECTOS PARA CLIENTES",
+    kundenProjekteText: "En esta selección, presento proyectos reales para clientes en los que combiné diseño y desarrollo. Todos los proyectos están disponibles y accesibles mediante un enlace directo. Cada proyecto incluye una descripción detallada que explica con claridad el contexto, el enfoque y los resultados técnicos y estéticos obtenidos.",
+    kundenProjekteButton: "Explorar proyectos para clientes",
+
     wilmerProfile: "PERFIL PROFESIONAL",
     wilmerIntroduction: "Desarrollador web especializado en desarrollo frontend y diseño UI/UX. Experiencia práctica en la concepción y desarrollo de sitios web responsivos y multilingües, así como en proyectos web interactivos utilizando HTML, CSS, JavaScript y frameworks como React, Vue.js y Angular.",
     projectTitle: 'PROYECTOS',
@@ -503,7 +516,7 @@ const languagesContent = {
 
     //Stop the Desert
 
-    stopSubtitle:"Sitio web para una ONG <br>Proyecto voluntario en curso <br>Desarrollo y diseño independiente",
+    stopSubtitle: "Sitio web para una ONG <br>Proyecto voluntario en curso <br>Desarrollo y diseño independiente",
     stopTitle1: "VISIÓN GENERAL",
     stopContent1: "Stop the Desert es un proyecto voluntario en curso para una ONG que trabaja contra la desertificación a nivel mundial. El sitio web funciona como una plataforma informativa y de apoyo, ayudando a comunicar claramente la misión de la organización y guiando a los visitantes hacia formas concretas de contribuir.",
     stopTitle2: "MI ROL",
@@ -645,7 +658,7 @@ function applyLanguage(lang) {
       btn.style.display = 'block';
     }
   });
-    animateIndexSubtitleTypewriter();
+  animateIndexSubtitleTypewriter();
 }
 
 // Función para detectar el idioma del navegador
