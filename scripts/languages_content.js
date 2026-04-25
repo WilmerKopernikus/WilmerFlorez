@@ -4,8 +4,10 @@ const languagesContent = {
   de: {
     //Menu
     menuIndex: `Startseite`,
-    menuProjekte: `Projekte`,
-    menuCV: `Lebenslauf`,
+    menuProjekte: `Kundenprojekte`,
+    menuEigeneProjekte: `Eigene Projekte`,
+    menuCreativeCoding: `Creative Coding`,
+    menuUeberMich: `Über Mich`,
     menuKontakt: `Kontakt`,
 
     //Index
@@ -176,9 +178,11 @@ const languagesContent = {
   en: {
 
     //menu
-    menuIndex: `Home`,
-    menuProjekte: `Projects`,
-    menuCV: `Curriculum Vitae`,
+    menuIndex: `Startseite`,
+    menuProjekte: `Projects for Clients`,
+    menuEigeneProjekte: `My Projects`,
+    menuCreativeCoding: `Creative Coding`,
+    menuUeberMich: `About Me`,
     menuKontakt: `Contact`,
 
     //index
@@ -350,10 +354,12 @@ const languagesContent = {
 
   es: {
     //Menu
-    menuIndex: 'Inicio',
-    menuProjekte: 'Proyectos',
-    menuCV: 'Currículum Vitae',
-    menuKontakt: 'Contacto',
+    menuIndex: `Startseite`,
+    menuProjekte: `Proyectos para Clientes`,
+    menuEigeneProjekte: `Mis Proyectos`,
+    menuCreativeCoding: `Programación Creativa`,
+    menuUeberMich: `Sobre Mí`,
+    menuKontakt: `Contacto`,
 
     //Index
     digitalStrategy: "ESTRATEGIA DIGITAL",
