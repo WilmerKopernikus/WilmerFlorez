@@ -65,6 +65,27 @@ a {
     0 0 14px rgba(255, 200, 0, 0.5);
 }
 
+#card1 h1.let-there-be-light {
+  text-shadow:
+    0 0 4px rgba(255, 170, 0, 0.7),
+    0 0 8px rgba(255, 140, 0, 0.6),
+    0 0 14px rgba(255, 200, 0, 0.5);
+}
+
+#kunden-light {
+    text-shadow:
+    0 0 4px rgba(255, 255, 255, 0.7),
+    0 0 8px rgba(255, 255, 255, 0.6),
+    0 0 14px rgba(255, 255, 255, 0.5);
+}
+
+#low-kunden-light {
+  text-shadow:
+    0 0 6px rgba(255, 255, 255, 0.334),
+    0 0 12px rgba(255, 255, 255, 0.24),
+    0 0 20px rgba(255, 255, 255, 0.178);
+}
+
 #menu-index {
   color: rgb(255, 255, 255);
   text-decoration: none;

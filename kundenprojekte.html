@@ -29,7 +29,7 @@
   <script defer src="scripts/p5.min.js"></script>
   <script defer src="scripts/sketch_12.js"></script>
 
-  <link rel="stylesheet" href="styles/header_test.min.css">
+  <link rel="stylesheet" href="styles/header_test.css">
   <link rel="stylesheet" href="styles/cards.css">
   <link rel="stylesheet" href="styles/cases-cards.css">
   <link rel="stylesheet" href="styles/images.css">
@@ -143,7 +143,7 @@
           <h1 class="fade-in-text let-there-be-light" data-i18n="">KUNDENPROJEKTE</h1><br>
         </div>
         <div class="arrow">
-          <h1 class="text-shadow fade-in-text">↓</h1>
+          <h1 class="text-shadow fade-in-text let-there-be-light">↓</h1>
         </div>
       </div>
     </div>
@@ -153,16 +153,16 @@
         <div class="card card-shared" id="card1-cases">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
-              <h2 class="title" data-i18n="banderasTitle">BANDERAS NILA LOPEZ</h2>
-              <p class="text" data-i18n="banderasKunde">
+              <h2 class="title" id="kunden-light" data-i18n="banderasTitle">BANDERAS NILA LOPEZ</h2>
+              <p class="text" data-i18n="banderasKunde" id="low-kunden-light">
                 <strong>Kunde:</strong>
                 <br /> Banderas Nila Lopez
               </p><br />
-              <p class="text" data-i18n="banderasLeistungen">
+              <p class="text" data-i18n="banderasLeistungen" id="low-kunden-light">
                 <strong>Leistungen:</strong>
                 <br /> Webentwicklung & Design - Markenentwicklung - WebsiteBetreuung
               </p><br />
-              <p class="text justify" data-i18n="banderasUebersicht">
+              <p class="text justify" data-i18n="banderasUebersicht" id="low-kunden-light">
                 <strong>Übersicht:</strong>
                 <br />
                 Banderas Nila Lopez ist ein kolumbianisches Unternehmen, das sich auf die Herstellung und den Vertrieb
@@ -186,15 +186,15 @@
         <div class="card card-shared" id="card2-cases">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
-              <h2 class="title">BLANCEC S.A.S.</h2>
-              <p class="text" data-i18n="blancecKunde">
+              <h2 class="title" id="kunden-light">BLANCEC S.A.S.</h2>
+              <p class="text" data-i18n="blancecKunde" id="low-kunden-light">
                 <strong>Kunde:</strong> Laboratorios Blancec S.A.S.
               </p><br />
-              <p class="text" data-i18n="blancecLeistungen">
+              <p class="text" data-i18n="blancecLeistungen" id="low-kunden-light">
                 <strong>Leistungen:</strong>
                 <br /> Webentwicklung & Design - Markenentwicklung - Datenbank - Prozessautomatisierung
               </p><br />
-              <p class="text justify" data-i18n="blancecUebersicht">
+              <p class="text justify" data-i18n="blancecUebersicht" id="low-kunden-light">
                 <strong>Übersicht:</strong>
                 <br />
                 BLANCEC S.A.S. ist ein kolumbianisches Prüflabor, das sich auf die Zertifizierung von Produkten für die
@@ -220,16 +220,16 @@
         <div class="card card-shared" id="card3-cases">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
-              <h2 class="title">JOB LAB</h2>
-              <p class="text" data-i18n="joblabKunde">
+              <h2 class="title" id="kunden-light">JOB LAB</h2>
+              <p class="text" data-i18n="joblabKunde" id="low-kunden-light">
                 <strong>Kunde:</strong>
                 <br /> Deutscher Akademischer Austauschdienst (DAAD)
               </p><br />
-              <p class="text" data-i18n="joblabLeistungen">
+              <p class="text" data-i18n="joblabLeistungen" id="low-kunden-light">
                 <strong>Leistungen:</strong>
                 <br /> Markenentwicklung <br /> Plakatgestaltung <br /> Webentwicklung <br /> Webdesign
               </p><br />
-              <p class="text justify" data-i18n="joblabUebersicht">
+              <p class="text justify" data-i18n="joblabUebersicht" id="low-kunden-light">
                 <strong>Übersicht:</strong>
                 <br />
                 Im Mai und Juni 2024 führte der DAAD in China gemeinsam mit der Deutschen Botschaft, dem Goethe-Institut
@@ -254,16 +254,16 @@
         <div class="card card-shared" id="card4-cases">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
-              <h2 class="title" data-i18n="stopdesertTitle">STOP THE DESERT</h2>
-              <p class="text" data-i18n="stopdesertKunde">
+              <h2 class="title" data-i18n="stopdesertTitle" id="kunden-light">STOP THE DESERT</h2>
+              <p class="text" data-i18n="stopdesertKunde" id="low-kunden-light">
                 <strong>Projekt:</strong>
                 <br /> Ehrenamtliches Projekt
               </p><br />
-              <p class="text" data-i18n="stopdesertLeistungen">
+              <p class="text" data-i18n="stopdesertLeistungen" id="low-kunden-light">
                 <strong>Tech Stack:</strong>
                 <br /> WordPress · Kadence · HTML/CSS · JavaScript · Spendensystem
               </p><br />
-              <p class="text justify" data-i18n="stopdesertUebersicht">
+              <p class="text justify" data-i18n="stopdesertUebersicht" id="low-kunden-light">
                 <strong>Übersicht:</strong>
                 <br />
                 Stop the Desert ist eine NGO, die die Wüstenbildung weltweit bekämpft. Das Projekt umfasst die
@@ -289,8 +289,9 @@
         <div id="card5-cases" class="card card-shared">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
-              <h2 class="title" id="title-medium" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?</h2>
-              <p class="text-new" data-i18n="chooseUsText">
+              <h2 class="title let-there-be-light" id="title-medium" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?
+              </h2>
+              <p class="text-new" id="low-light" data-i18n="chooseUsText">
                 Sind Sie auf der Suche nach einem engagierten Webentwickler für
                 Ihr Team oder Ihr nächstes Projekt?<br><br>
 
@@ -302,25 +303,25 @@
               </p>
             </div>
             <div class="right" id="center-services">
-              <h2 class="title" id="title-medium" data-i18n="formTitle">KONTAKTIEREN SIE MICH!</h2>
+              <h2 class="title let-there-be-light" id="title-medium" data-i18n="formTitle">KONTAKTIEREN SIE MICH!</h2>
               <form class="contact-form" name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact">
                 <p style="display:none;">
                   <label>Don't fill this out if you're human: <input name="bot-field"></label>
                 </p>
                 <div class="form-group">
-                  <label for="name" data-i18n="formNameLabel">Ihr Name:</label>
+                  <label for="name" data-i18n="formNameLabel" id="low-light">Ihr Name:</label>
                   <input type="text" id="name" name="name" required />
                 </div>
                 <div class="form-group">
-                  <label for="email" data-i18n="formEmailLabel">Ihre E-Mail:</label>
+                  <label for="email" data-i18n="formEmailLabel" id="low-light">Ihre E-Mail:</label>
                   <input type="email" id="email" name="email" required />
                 </div>
                 <div class="form-group">
-                  <label for="message" data-i18n="formMessageLabel">Ihre Nachricht:</label>
+                  <label for="message" data-i18n="formMessageLabel" id="low-light">Ihre Nachricht:</label>
                   <textarea id="message" name="message" required></textarea>
                 </div>
-                <button type="submit" class="send-button" data-i18n="formSubmit">Senden</button>
+                <button type="submit" class="send-button" data-i18n="formSubmit" id="low-light">Senden</button>
               </form>
             </div>
           </div>
@@ -483,28 +484,29 @@
             </div>
             <div class="right" id="center-services">
               <div class="card-content-flex">
-                <h2 class="title" data-i18n="banderasTitle">BANDERAS NILA LOPEZ</h2>
-                <p class="text" data-i18n="banderasKunde">
-                  <strong>Kunde:</strong>
-                  <br /> Banderas Nila Lopez
-                </p>
-                <p class="text" data-i18n="banderasLeistungen">
-                  <strong>Leistungen:</strong>
-                  <br /> Webentwicklung & Design - Markenentwicklung - WebsiteBetreuung
-                </p>
-                <p class="text justify" data-i18n="banderasUebersicht">
-                  <strong>Übersicht:</strong>
-                  <br />
-                  Banderas Nila Lopez ist ein kolumbianisches Unternehmen, das sich auf die Herstellung und den Vertrieb
-                  von hochwertigen Textilprodukten spezialisiert hat. Das Projekt umfasst die Entwicklung einer modernen
-                  Website, die das Markenimage stärkt und die Online-Präsenz des Unternehmens verbessert.
-                </p>
-                <a href="banderas-nila-lopez.html">
-                  <button class="send-button" data-i18n="mehrInformation">Mehr Informationen</button>
-                </a>
+                <h2 class="title" data-i18n="banderasTitle">JOB LAB</h2>
+              <p class="text" data-i18n="joblabKunde" id="low-kunden-light">
+                <strong>Kunde:</strong>
+                <br /> Deutscher Akademischer Austauschdienst (DAAD)
+              </p><br />
+              <p class="text" data-i18n="joblabLeistungen" id="low-kunden-light">
+                <strong>Leistungen:</strong>
+                <br /> Markenentwicklung <br /> Plakatgestaltung <br /> Webentwicklung <br /> Webdesign
+              </p><br />
+              <p class="text justify" data-i18n="joblabUebersicht" id="low-kunden-light">
+                <strong>Übersicht:</strong>
+                <br />
+                Im Mai und Juni 2024 führte der DAAD in China gemeinsam mit der Deutschen Botschaft, dem Goethe-Institut
+                und weiteren Partnern das Projekt Job Lab durch. Die Messe bot unter dem Motto „Mit Deutsch in die
+                Zukunft“
+                Karriereperspektiven für chinesische Germanistik-Studierende.
+              </p><br />
+              <a href="joblab-projekt.html" rel="noopener noreferrer">
+                <button class="send-button" data-i18n="mehrInformation">Mehr Informationen</button>
+              </a>
                 <div class="image-mobile">
-                  <a href="banderas-nila-lopez.html">
-                    <img src="imagenes/projects/banderas-nila-color.png" alt="Banderas Nila Lopez" class="white-shadow">
+                  <a href="joblab-projekt.html">
+                    <img src="imagenes/projects/job_lab.jpg" alt="Job Lab" class="white-shadow">
                   </a>
                 </div>
               </div>
@@ -614,7 +616,7 @@
 
 
   </div>
-  <script src="scripts/script.min.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

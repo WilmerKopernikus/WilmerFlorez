@@ -6,51 +6,7 @@
   --index: 1;
 }
 
-.service-item.active .service-trigger {
-  text-shadow:
-    0 0 4px rgba(255, 170, 0, 0.7),
-    0 0 8px rgba(255, 140, 0, 0.6),
-    0 0 14px rgba(255, 200, 0, 0.5);
-}
 
-.service-item {
-  width: 100%;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.35);
-  padding: 0.5rem 0;
-}
-
-.service-trigger {
-  cursor: pointer;
-  user-select: none;
-}
-
-.service-description {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transform: translateY(-8px);
-  margin-top: 0;
-  transition:
-    max-height 0.45s ease,
-    opacity 0.3s ease,
-    transform 0.3s ease,
-    margin-top 0.3s ease;
-  text-shadow:
-    0 0 6px rgba(255, 200, 0, 0.252),
-    0 0 12px rgba(255, 170, 0, 0.163),
-    0 0 20px rgba(255, 140, 0, 0.107);
-}
-
-.service-item.active .service-description {
-  max-height: 220px;
-  opacity: 1;
-  transform: translateY(0);
-  margin-top: 1rem;
-}
-
-.service-item.active .service-description {
-  display: block;
-}
 
 .card-shared {
   margin-top: 66px;
