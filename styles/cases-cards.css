@@ -32,12 +32,12 @@
 
 #card4-cases {
     --index: 4;
-    background: linear-gradient(to bottom, rgb(192, 168, 98), rgb(25, 20, 12));
+    background: linear-gradient(to bottom, rgb(0, 129, 75), rgb(0, 0, 0));
   }
 
 #card5-cases {
     --index: 5;
-    background: linear-gradient(to bottom, rgb(0, 129, 75), rgb(0, 0, 0));
+    background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
   }
 
 #card6-cases {

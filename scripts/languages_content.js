@@ -73,9 +73,10 @@ const languagesContent = {
     footerNavigation: "Sitemap",
 
     impressumTitle: "Impressum",
-    impressumContent: `Wilmer Aderbert Florez López
-                      Am Stumpenhof 14 - 73207 Plochingen, Deutschland
-                      wilmerkopernikus@gmail.com - (+49)1771 827690 - (+86)185 2006 0442
+    impressumContent: `Wilmer Aderbert Florez López<br>
+                      Am Stumpenhof 14 - 73207 Plochingen, Deutschland<br>
+                      wilmerkopernikus@gmail.com<br>
+                      (+49)1771 827690 - (+86)185 2006 0442<br>
                       Inhaltlich Verantwortlicher gemäß §55 Abs. 2 RStV`,
     derechos: "© 2026 Wilmer Florez. Alle Rechte vorbehalten.",
 

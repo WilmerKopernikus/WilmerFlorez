@@ -6,34 +6,6 @@
   --index: 1;
 }
 
-#low-light {
-  text-shadow:
-    0 0 6px rgba(255, 200, 0, 0.334),
-    0 0 12px rgba(255, 170, 0, 0.24),
-    0 0 20px rgba(255, 140, 0, 0.178);
-}
-
-.low-light {
-  text-shadow:
-    0 0 6px rgba(255, 200, 0, 0.334),
-    0 0 12px rgba(255, 170, 0, 0.24),
-    0 0 20px rgba(255, 140, 0, 0.178);
-}
-
-#let-there-be-light {
-    text-shadow:
-    0 0 4px rgba(255, 170, 0, 0.7),
-    0 0 8px rgba(255, 140, 0, 0.6),
-    0 0 14px rgba(255, 200, 0, 0.5);
-}
-
-.let-there-be-light {
-    text-shadow:
-    0 0 4px rgba(255, 170, 0, 0.7),
-    0 0 8px rgba(255, 140, 0, 0.6),
-    0 0 14px rgba(255, 200, 0, 0.5);
-}
-
 .service-item.active .service-trigger {
   text-shadow:
     0 0 4px rgba(255, 170, 0, 0.7),
