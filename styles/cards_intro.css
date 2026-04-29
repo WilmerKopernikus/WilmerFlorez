@@ -57,23 +57,6 @@
   background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }
 
-.text-shadow {
-  font-size: 120px;
-  font-family: 'Handjet';
-  text-shadow:
-    -7px -7px 7px #000,
-    7px -7px 7px #000,
-    -7px 7px 7px #000,
-    7px 7px 7px #000;
-}
-
-.with-arrow .arrow {
-  position: absolute;
-  bottom: 0;
-  right: 20px;
-  margin: 0;
-  animation: bounce 1.5s ease-in-out infinite;
-}
 
 @keyframes bounce {
   0% {

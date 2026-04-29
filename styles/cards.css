@@ -76,6 +76,26 @@
   display: block;
 }
 
+@media (orientation: portrait) {
+  .cards-mobile {
+    display: block;
+  }
+
+  .cards-screens {
+    display: none;
+  }
+}
+
+@media (orientation: landscape) {
+  .cards-mobile {
+    display: none;
+  }
+
+  .cards-screens {
+    display: block;
+  }
+}
+
 #services-cards-container-mobile-landscape {
   --cards: 8;
 }
@@ -271,14 +291,6 @@
     padding: 0;
     padding-top: 0px;
     border-top: 1px solid rgb(0, 0, 0);
-  }
-
-  .cards-mobile {
-    display: block;
-  }
-
-  .cards-screens {
-    display: none;
   }
 
   #contact-proportion {
