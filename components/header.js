@@ -56,7 +56,7 @@ class SiteShell extends HTMLElement {
           </li>
 
           <li>
-            <a href="projekte.html">
+            <a href="about.html">
               <img class="menu-icon" src="imagenes/svg/mich.svg" alt="Projekte Icon">
               <span data-i18n="menuUeberMich" id="let-there-be-light">Über Mich</span>
             </a>
