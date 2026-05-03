@@ -44,6 +44,8 @@
   <script src="components/header.js" defer></script>
   <script src="components/contact-shell-desktop.js" defer></script>
   <script src="components/impressum-shell-desktop.js" defer></script>
+  <script src="components/contact-shell-mobile.js" defer></script>
+  <script src="components/impressum-shell-mobile.js" defer></script>
 </head>
 
 <body data-sketch-colors="#8255f9, #10037a, #73037f, #4e2fcd, #6264de, #6264de, #d906ed">
@@ -114,14 +116,14 @@
           </div>
         </div>
 
-                <div class="card card-shared" id="card1-creative">
+        <div class="card card-shared" id="card1-creative">
           <div class="card-body" id="cases">
 
             <div class="left" id="center-services">
               <h2 class="title" id="kunden-light" data-i18n="">TRIGONOMETRIC BOX FIELD</h2>
 
               <p class="text-new" id="kunden-light" data-i18n="">
-</p>
+              </p>
             </div>
 
             <div class="right">
@@ -305,108 +307,11 @@
         </div>
 -->
         <div class="card card-shared" id="card2-creative">
-          <div class="card-body" id="cases">
-            <div class="left" id="center-services">
-              <h2 class="title" id="title-medium" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?</h2>
-              <p class="text-new" data-i18n="chooseUsText">
-                Sind Sie auf der Suche nach einem engagierten Webentwickler für
-                Ihr Team oder Ihr nächstes Projekt?<br><br>
-
-                Wenn Sie Unterstützung für Ihr Projekt benötigen oder
-                jemanden suchen, der sich engagiert in neue Aufgaben einarbeitet, freue ich mich über eine
-                Kontaktaufnahme.
-                Gerne bespreche ich mit Ihnen, wie ich Ihr Team und Ihre Ziele bestmöglich unterstützen kann.
-                <br><br>
-              </p>
-            </div>
-            <div class="right" id="center-services">
-              <h2 class="title" id="title-medium" data-i18n="formTitle">KONTAKTIEREN SIE MICH!</h2>
-              <form class="contact-form" name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact">
-                <p style="display:none;">
-                  <label>Don't fill this out if you're human: <input name="bot-field"></label>
-                </p>
-                <div class="form-group">
-                  <label for="name" data-i18n="formNameLabel">Ihr Name:</label>
-                  <input type="text" id="name" name="name" required />
-                </div>
-                <div class="form-group">
-                  <label for="email" data-i18n="formEmailLabel">Ihre E-Mail:</label>
-                  <input type="email" id="email" name="email" required />
-                </div>
-                <div class="form-group">
-                  <label for="message" data-i18n="formMessageLabel">Ihre Nachricht:</label>
-                  <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="send-button" data-i18n="formSubmit">Senden</button>
-              </form>
-            </div>
-          </div>
+          <contact-shell-desktop></contact-shell-desktop>
         </div>
 
         <div class="card card-shared" id="card3-creative">
-          <div class="card-body" id="cases">
-            <div class="left" id="center-services">
-              <h2 class="title" id="let-there-be-light" data-i18n="footerTitle">KREATIV UND INNOVATIV</h2>
-              <div class="service-item active">
-                <div class="service-trigger text-new justify">
-                  Wilmer Aderbert Florez López
-                </div>
-                <div class="service-description text justify">
-                  <p class="service-description text justify" data-i18n="footerDescription">
-                    Web Developer - UI/UX Designer - Creative Coder<br>
-                    Creating performant, user-focused web experiences<br>
-                    Based in Germany · Working internationally<br>
-                    wilmerkopernikus@gmail.com <br>
-                    (+49)1771 827690 - (+86)185 2006 0442
-
-                </div>
-              </div>
-              <div class="service-item">
-                <div class="service-trigger text-new justify" data-i18n="footerNavigation">
-                  Navigation
-                </div>
-                <div class="service-description text justify">
-                  <a href="index.html" class="text-link" data-i18n="menuIndex">Startseite</a><br>
-                  <a href="kundenprojekte.html" class="text-link" data-i18n="menuProjekte">Kundenprojekte</a><br>
-                  <a href="meine_projekte.html" class="text-link" data-i18n="menuEigeneProjekte">Meine Projekte</a><br>
-                  <a href="creative_coding.html" class="text-link" data-i18n="menuCreativeCoding">Creative
-                    Coding</a><br>
-                  <a href="about.html" class="text-link" data-i18n="menuUeberMich">Über Mich</a><br>
-                  <a href="kontakt.html" class="text-link" data-i18n="menuKontakt">Kontakt</a><br>
-                </div>
-              </div>
-              <div class="service-item">
-                <div class="service-trigger text-new justify">
-                  Github
-                </div>
-                <div class="service-description text justify">
-                  <a href="https://github.com/wilmerkopernikus" class="text-link"
-                    target="_blank">https://github.com/wilmerkopernikus</a><br>
-                </div>
-              </div>
-              <div class="service-item">
-                <div class="service-trigger text-new justify" data-i18n="impressumTitle">
-                  Impressum
-                </div>
-                <div class="service-description text justify" data-i18n="impressumContent">
-                  Wilmer Aderbert Florez López<br>
-                  Am Stumpenhof 14 - 73207 Plochingen, Deutschland <br>
-                  wilmerkopernikus@gmail.com - (+49)1771 827690 - (+86)185 2006 0442<br>
-                  Responsible for content according to §55 Abs. 2 RStV
-                </div>
-              </div>
-
-              <p class="text-new" id="low-light" data-i18n="derechos">© 2026 Wilmer Florez. Alle Rechte vorbehalten.</p>
-            </div>
-            <div class="right" id="responsive-sketch">
-              <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
-                poster="imagenes/videos/services_04.jpg" class="white-shadow">
-                <source src="imagenes/videos/services_04_compressed.mp4" type="video/mp4" />
-                Your browser doesn't support video reproductions.
-              </video>
-            </div>
-          </div>
+          <impressum-shell-desktop></impressum-shell-desktop>
         </div>
 
       </div>
