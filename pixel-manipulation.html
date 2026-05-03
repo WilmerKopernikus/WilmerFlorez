@@ -27,15 +27,14 @@
   <title>Projekte | Wilmer Florez - Webentwickler & Designer</title>
 
   <script defer src="scripts/p5.min.js"></script>
-  <script defer src="scripts/sketch_12.js"></script>
+  <script defer src="scripts/pixel-manipulation.js"></script>
 
-  <link rel="stylesheet" href="styles/header_test.min.css">
+  <link rel="stylesheet" href="styles/header_test.css">
   <link rel="stylesheet" href="styles/cards.css">
-  <link rel="stylesheet" href="styles/creative-cards.css">
+  <link rel="stylesheet" href="styles/creative-coding-case-cards.css">
   <link rel="stylesheet" href="styles/images.css">
   <link rel="stylesheet" href="styles/global-text.css">
   <link rel="stylesheet" href="styles/contact-form.min.css">
-  <link rel="stylesheet" href="styles/cards_intro.css">
 
   <link rel="stylesheet" href="styles/languages_content.min.css">
   <script src="scripts/languages_content.js" defer></script>
@@ -43,7 +42,7 @@
 
 </head>
 
-<body data-sketch-colors="#8255f9, #10037a, #73037f, #4e2fcd, #6264de, #6264de, #d906ed">
+<body>
 
   <div id="loadingScreen" style="
       position: fixed;
@@ -142,8 +141,6 @@
     <div class="card" id="card1">
       <div class="card-body-intro with-arrow font-loading">
         <div class="intro-card">
-          <h1 class="fade-in-text let-there-be-light" data-i18n="">CREATIVE CODING</h1><br>
-          <h2 class="subtitle" id="low-light"> EIN TREFFPUNKT ZWISCHEN KUNST UND PROGRAMMIEREN</h2>
         </div>
         <div class="arrow">
           <h1 class="text-shadow fade-in-text let-there-be-light">↓</h1>
@@ -153,208 +150,30 @@
     <div id='creative-cards-container' class="cards-screens">
       <div id="cards" class="container">
 
-        <div class="card card-shared" id="card1-creative">
-          <div class="card-body" id="cases">
-
-            <div class="left" id="center-services">
-              <h2 class="title" id="kunden-light" data-i18n="">EXPANDING POLYGON FIELD</h2>
-              <p class="text-new" id="kunden-light" data-i18n="">
-                <strong>Instructions:</strong> Click to add shapes; up/down arrows change the number of sides space will
-                clear the canvas
-              </p><br>
-              <p class="text-new" id="kunden-light" data-i18n="">An interactive generative system where user clicks
-                spawn polygonal emitters
-                that expand radially over time. Each emitter produces continuously growing regular polygons with a
-                dynamic number of sides, while color oscillations are driven by trigonometric functions. The
-                semi-transparent background creates motion trails, resulting in a layered wave-like propagation of
-                geometric forms.</p>
-            </div>
-
-            <div class="right">
-              <a href="expanding-polygon-field.html" rel="noopener noreferrer">
-                <div class="image-container">
-                  <img src="imagenes/creative_coding/expanding_polygon_field.png" alt="Expanding Polygon Field"
-                    class="white-shadow" />
-                </div>
-              </a>
-            </div>
-
-          </div>
-        </div>
-
-        <!--
-        <div class="card card-shared" id="card1-creative">
+        <div class="card card-shared" id="card1-creative-case">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
-              <h2 class="title" id="kunden-light" data-i18n="">MINIMALIST PAINTING GENERATOR</h2>
+              <h2 class="title" id="kunden-light" data-i18n="">PIXEL MANIPULATION</h2>
+              
 
 
             </div>
             <div class="right">
-              <a href="minimalist-painting.html" rel="noopener noreferrer">
-                <div class="image-container">
-                  <img src="imagenes/creative_coding/Constructivist-painting.png" alt="Constructivist Painting"
-                    class="white-shadow" />
-                </div>
-              </a>
-
 
             </div>
           </div>
         </div>
 
 
-        <div class="card card-shared" id="card2-creative">
+
+
+
+        <div id="card2-creative-case" class="card card-shared">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
-              <h2 class="title" id="kunden-light" data-i18n="let-there-be-light">MOUSE SHADER</h2>
-
-            </div>
-            <div class="right">
-              <a href="mouse-shader.html" rel="noopener noreferrer">
-                <div class="image-container">
-                  <img src="imagenes/creative_coding/mouse_shader.png" alt="Mouse Shader Logo" class="white-shadow" />
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="card card-shared" id="card3-creative">
-          <div class="card-body" id="cases">
-            <div class="left" id="center-services">
-              <h2 class="title" id="kunden-light">VIDEO SCULPTURE</h2>
-
-            </div>
-            <div class="right">
-              <a href="video-sculpture.html" rel="noopener noreferrer">
-                <div class="image-container">
-                  <img src="imagenes/creative_coding/video_sculpture.png" alt="Video Sculpture" class="white-shadow" />
-                </div>
-              </a>
-
-
-            </div>
-          </div>
-        </div>
-
-        <div class="card card-shared" id="card4-creative">
-          <div class="card-body" id="cases">
-            <div class="left" id="center-services">
-              <h2 class="title" id="kunden-light">PIXEL MANIPULATION</h2>
-
-            </div>
-            <div class="right">
-              <a href="pixel-manipulation.html" rel="noopener noreferrer">
-                <div class="image-container">
-                  <img src="imagenes/creative_coding/pixel_manipulation.png" alt="Pixel Manipulation"
-                    class="white-shadow" />
-                </div>
-              </a>
-
-
-            </div>
-          </div>
-        </div>
-
-        <div class="card card-shared" id="card5-creative">
-          <div class="card-body" id="cases">
-            <div class="left" id="center-services">
-              <h2 class="title" id="kunden-light">disc() FUNCTION</h2>
-
-            </div>
-            <div class="right">
-              <a href="disc_function.html" rel="noopener noreferrer">
-                <div class="image-container">
-                  <img src="imagenes/creative_coding/disc_function.png" alt="disc() Function" class="white-shadow" />
-                </div>
-              </a>
-
-
-            </div>
-          </div>
-        </div>
-
-        <div class="card card-shared" id="card6-creative">
-          <div class="card-body" id="cases">
-            <div class="left" id="center-services">
-              <h2 class="title" id="kunden-light">SHAPE MAKER</h2>
-
-            </div>
-            <div class="right">
-              <a href="making-shapes.html" rel="noopener noreferrer">
-                <div class="image-container">
-                  <img src="imagenes/creative_coding/shape_maker.png" alt="Shape Maker" class="white-shadow" />
-                </div>
-              </a>
-
-
-            </div>
-          </div>
-        </div>
-
-        <div class="card card-shared" id="card7-creative">
-          <div class="card-body" id="cases">
-            <div class="left" id="center-services">
-              <h2 class="title" id="kunden-light">BOUNCING BALLS</h2>
-
-            </div>
-            <div class="right">
-              <a href="bouncing_balls.html" rel="noopener noreferrer">
-                <div class="image-container">
-                  <img src="imagenes/creative_coding/bouncing_balls.png" alt="Bouncing Balls" class="white-shadow" />
-                </div>
-              </a>
-
-
-            </div>
-          </div>
-        </div>
-
-        <div class="card card-shared" id="card8-creative">
-          <div class="card-body" id="cases">
-            <div class="left" id="center-services">
-              <h2 class="title" id="kunden-light">GENERATIVE PAINTING</h2>
-
-            </div>
-            <div class="right">
-              <a href="generative_painting.html" rel="noopener noreferrer">
-                <div class="image-container">
-                  <img src="imagenes/creative_coding/generative_painting.png" alt="Generative Painting"
-                    class="white-shadow" />
-                </div>
-              </a>
-
-
-            </div>
-          </div>
-        </div>
-
-        <div class="card card-shared" id="card9-creative">
-          <div class="card-body" id="cases">
-            <div class="left" id="center-services">
-              <h2 class="title" id="kunden-light">REACTIVE PARTICLE SYSTEM</h2>
-
-            </div>
-            <div class="right">
-              <a href="reactive_particle_system.html" rel="noopener noreferrer">
-                <div class="image-container">
-                  <img src="imagenes/creative_coding/reactive_particle_system.png" alt="Reactive Particle System"
-                    class="white-shadow" />
-                </div>
-              </a>
-
-
-            </div>
-          </div>
-        </div>
--->
-        <div class="card card-shared" id="card2-creative">
-          <div class="card-body" id="cases">
-            <div class="left" id="center-services">
-              <h2 class="title" id="title-medium" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?</h2>
-              <p class="text-new" data-i18n="chooseUsText">
+              <h2 class="title let-there-be-light" id="title-medium" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?
+              </h2>
+              <p class="text-new" id="low-light" data-i18n="chooseUsText">
                 Sind Sie auf der Suche nach einem engagierten Webentwickler für
                 Ihr Team oder Ihr nächstes Projekt?<br><br>
 
@@ -366,31 +185,31 @@
               </p>
             </div>
             <div class="right" id="center-services">
-              <h2 class="title" id="title-medium" data-i18n="formTitle">KONTAKTIEREN SIE MICH!</h2>
+              <h2 class="title let-there-be-light" id="title-medium" data-i18n="formTitle">KONTAKTIEREN SIE MICH!</h2>
               <form class="contact-form" name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact">
                 <p style="display:none;">
                   <label>Don't fill this out if you're human: <input name="bot-field"></label>
                 </p>
                 <div class="form-group">
-                  <label for="name" data-i18n="formNameLabel">Ihr Name:</label>
+                  <label for="name" data-i18n="formNameLabel" id="low-light">Ihr Name:</label>
                   <input type="text" id="name" name="name" required />
                 </div>
                 <div class="form-group">
-                  <label for="email" data-i18n="formEmailLabel">Ihre E-Mail:</label>
+                  <label for="email" data-i18n="formEmailLabel" id="low-light">Ihre E-Mail:</label>
                   <input type="email" id="email" name="email" required />
                 </div>
                 <div class="form-group">
-                  <label for="message" data-i18n="formMessageLabel">Ihre Nachricht:</label>
+                  <label for="message" data-i18n="formMessageLabel" id="low-light">Ihre Nachricht:</label>
                   <textarea id="message" name="message" required></textarea>
                 </div>
-                <button type="submit" class="send-button" data-i18n="formSubmit">Senden</button>
+                <button type="submit" class="send-button" data-i18n="formSubmit" id="low-light">Senden</button>
               </form>
             </div>
           </div>
         </div>
 
-        <div class="card card-shared" id="card3-creative">
+        <div class="card card-shared" id="card3-creative-case">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
               <h2 class="title" id="let-there-be-light" data-i18n="footerTitle">KREATIV UND INNOVATIV</h2>

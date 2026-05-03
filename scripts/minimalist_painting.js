@@ -1,3 +1,5 @@
+let canvas;
+
 function setup() {
 
 
@@ -6,20 +8,20 @@ function setup() {
   canvas.style('z-index', '-1'); // Ensures it stays behind content
   canvas.style('position', 'fixed');
 
-  //background(Math.floor(Math.random() * 256));
-  // Create two random blue colors
   let g1 = Math.floor(Math.random() * 20);
   let b1 = Math.floor(Math.random() * 256);
   let g2 = Math.floor(Math.random() * 20);
   let b2 = Math.floor(Math.random() * 256);
-  // Draw horizontal gradient
-  for (let x = 0; x < windowWidth; x++) {
-    let inter = x / windowWidth;
+
+  for (let x = 0; x < width; x++) {
+    let inter = x / width;
     let g = Math.floor(lerp(g1, g2, inter));
     let b = Math.floor(lerp(b1, b2, inter));
+
     stroke(0, g, b);
-    line(x, 0, x, windowWidth);
+    line(x, 0, x, height);
   }
+
   fill('red');
   noStroke();
   circle(Math.floor(Math.random() * (windowWidth)), Math.floor(Math.random() * (windowHeight)), Math.floor(Math.random() * 800));
