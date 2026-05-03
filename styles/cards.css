@@ -101,18 +101,30 @@
 }
 
 #contact-cards-container {
-  --cards: 1;
+  --cards: 2;
 }
 
 #contact-cards-container-mobile {
   --cards: 2;
 }
 
-
+.card-shared {
+  margin-top: 66px;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
 
 #card1-contact {
   --index: 1;
-  margin-top: 66px;
+  background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
+}
+
+#card2-contact {
+  --index: 2;
+  background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }
 
 #card1-contact-mobile {
