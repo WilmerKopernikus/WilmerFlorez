@@ -43,25 +43,25 @@ class SiteShell extends HTMLElement {
 
           <li>
             <a href="meine_projekte.html">
-              <img class="menu-icon" src="imagenes/svg/eigene.svg" alt="Projekte Icon">
+              <img class="menu-icon" src="imagenes/svg/eigene.svg" alt="Meine Projekte Icon">
               <span data-i18n="menuEigeneProjekte" id="let-there-be-light">Meine Projekte</span>
             </a>
           </li>
 
           <li>
             <a href="creative_coding.html">
-              <img class="menu-icon" src="imagenes/svg/creative.svg" alt="Projekte Icon">
+              <img class="menu-icon" src="imagenes/svg/creative.svg" alt="Creative Coding Icon">
               <span data-i18n="menuCreativeCoding" id="let-there-be-light">Creative Coding</span>
             </a>
           </li>
-
+          <!--
           <li>
             <a href="about.html">
-              <img class="menu-icon" src="imagenes/svg/mich.svg" alt="Projekte Icon">
+              <img class="menu-icon" src="imagenes/svg/mich.svg" alt="Über Mich Icon">
               <span data-i18n="menuUeberMich" id="let-there-be-light">Über Mich</span>
             </a>
           </li>
-
+          -->
           <li>
             <a href="kontakt.html">
               <img class="menu-icon" src="imagenes/svg/contact.svg" alt="Kontakt Icon">
