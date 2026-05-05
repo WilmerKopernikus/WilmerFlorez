@@ -34,10 +34,10 @@
   <link rel="stylesheet" href="styles/my-projects-cards.css">
   <link rel="stylesheet" href="styles/images.css">
   <link rel="stylesheet" href="styles/global-text.css">
-  <link rel="stylesheet" href="styles/contact-form.min.css">
+  <link rel="stylesheet" href="styles/contact-form.css">
   <link rel="stylesheet" href="styles/cards_intro.css">
 
-  <link rel="stylesheet" href="styles/languages_content.min.css">
+  <link rel="stylesheet" href="styles/languages_content.css">
   <script src="scripts/languages_content.min.js" defer></script>
   <script src="scripts/sw-register.js" defer></script>
 
@@ -48,7 +48,7 @@
   <script src="components/impressum-shell-mobile.js" defer></script>
 </head>
 
-<body data-sketch-colors="#0080FF, #00FF80, #FF0000">
+<body data-sketch-colors="#63AFFF, #0080FF, #00427A, #85FFBF, #00FF80, #00964C, #FF6666, #FF0000, #780000">
 
   <div id="loadingScreen" style="
       position: fixed;
@@ -76,10 +76,10 @@
     <div class="card" id="card1">
       <div class="card-body-intro with-arrow font-loading">
         <div class="intro-card">
-          <h1 class="fade-in-text" data-i18n="">EIGENE PROJEKTE</h1><br>
+          <h1 class="fade-in-text let-there-be-light" data-i18n="">MEINE PROJEKTE</h1><br>
         </div>
         <div class="arrow">
-          <h1 class="text-shadow fade-in-text">↓</h1>
+          <h1 class="text-shadow fade-in-text let-there-be-light">↓</h1>
         </div>
       </div>
     </div>
@@ -89,24 +89,23 @@
         <div class="card card-shared" id="card1-my-projects">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
-              <h2 class="title" data-i18n="tarotTitle">INTERAKTIVES TAROT</h2>
-              <p class="text" data-i18n="tarotKunde">
+              <h2 class="title" id="kunden-light" data-i18n="tarotTitle">INTERAKTIVES TAROT</h2>
+              <p class="text" id="low-kunden-light" data-i18n="tarotKunde">
                 <strong>Projekt:</strong>
                 <br /> Persönliches Projekt in Entwicklung
               </p><br />
-              <p class="text" data-i18n="tarotLeistungen">
+              <p class="text" id="low-kunden-light" data-i18n="tarotLeistungen">
                 <strong>Tech Stack:</strong>
                 <br /> JavaScript · OpenAI API · HTML/CSS · Vercel · Node.js
               </p><br />
-              <p class="text justify" data-i18n="tarotUebersicht">
+              <p class="text justify" id="low-kunden-light" data-i18n="tarotUebersicht">
                 <strong>Übersicht:</strong>
                 <br />
                 Eine interaktive Tarot-Webanwendung, die die ChatGPT-API nutzt, um personalisierte
                 Karteninterpretationen zu generieren.
               </p><br />
-              <!-- Button -->
               <a href="tarot_projekt.html">
-                <button class="send-button" data-i18n="mehrInformation">Mehr Informationen</button>
+                <button class="send-button" id="low-kunden-light" data-i18n="mehrInformation">Mehr Informationen</button>
               </a>
             </div>
             <div class="right">
@@ -118,7 +117,7 @@
             </div>
           </div>
         </div>
-
+<!--
         <div class="card card-shared" id="card2-my-projects">
           <div class="card-body" id="cases">
             <div class="left" id="center-services">
@@ -137,7 +136,7 @@
                 Eine interaktive Tarot-Webanwendung, die die ChatGPT-API nutzt, um personalisierte
                 Karteninterpretationen zu generieren.
               </p><br />
-              <!-- Button -->
+
               <a href="tarot_projekt.html">
                 <button class="send-button" data-i18n="mehrInformation">Mehr Informationen</button>
               </a>
@@ -170,7 +169,7 @@
                 Eine interaktive Tarot-Webanwendung, die die ChatGPT-API nutzt, um personalisierte
                 Karteninterpretationen zu generieren.
               </p><br />
-              <!-- Button -->
+
               <a href="tarot_projekt.html">
                 <button class="send-button" data-i18n="mehrInformation">Mehr Informationen</button>
               </a>
@@ -184,12 +183,12 @@
             </div>
           </div>
         </div>
-
-        <div class="card card-shared" id="card4-my-projects">
+-->
+        <div class="card card-shared" id="card2-my-projects">
           <contact-shell-desktop></contact-shell-desktop>
         </div>
 
-        <div class="card card-shared" id="card5-my-projects">
+        <div class="card card-shared" id="card3-my-projects">
           <impressum-shell-desktop></impressum-shell-desktop>
         </div>
 
@@ -209,23 +208,23 @@
             </div>
             <div class="right" id="center-services">
               <div class="card-content-flex">
-                <h2 class="title" data-i18n="tarotTitle">INTERAKTIVES TAROT</h2>
-                <p class="text" data-i18n="tarotKunde">
+                <h2 class="title" id="kunden-light" data-i18n="tarotTitle">INTERAKTIVES TAROT</h2>
+                <p class="text" id="low-kunden-light" data-i18n="tarotKunde">
                   <strong>Projekt:</strong>
                   <br /> Persönliches Projekt in Entwicklung
                 </p><br />
-                <p class="text" data-i18n="tarotLeistungen">
+                <p class="text" id="low-kunden-light" data-i18n="tarotLeistungen">
                   <strong>Tech Stack:</strong>
                   <br /> JavaScript · OpenAI API · HTML/CSS · Vercel · Node.js
                 </p><br />
-                <p class="text justify" data-i18n="tarotUebersicht">
+                <p class="text justify" id="low-kunden-light" data-i18n="tarotUebersicht">
                   <strong>Übersicht:</strong>
                   <br />
                   Eine interaktive Tarot-Webanwendung, die die ChatGPT-API nutzt, um personalisierte
                   Karteninterpretationen zu generieren.
                 </p><br />
                 <a href="tarot_projekt.html">
-                  <button class="send-button" data-i18n="mehrInformation">Mehr Informationen</button>
+                  <button class="send-button" id="low-kunden-light" data-i18n="mehrInformation">Mehr Informationen</button>
                 </a><br />
                 <div class="image-mobile">
                   <a href="tarot_projekt.html">
@@ -236,7 +235,7 @@
             </div>
           </div>
         </div>
-
+<!--
         <div id="card2-my-projects" class="card card-shared">
           <div class="card-body" id="contact-proportion-text">
             <div class="left" id="center-services-mobile">
@@ -306,12 +305,12 @@
             </div>
           </div>
         </div>
-
-        <div id="card4-my-projects" class="card card-shared">
+      -->
+        <div id="card2-my-projects" class="card card-shared">
           <contact-shell-mobile></contact-shell-mobile>
         </div>
 
-        <div id="card5-my-projects" class="card">
+        <div id="card3-my-projects" class="card">
           <impressum-shell-mobile></impressum-shell-mobile>
         </div>
       </div>

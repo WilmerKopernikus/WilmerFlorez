@@ -1,5 +1,5 @@
 #cases-cards-container {
-    --cards: 5;
+    --cards: 3;
   }
 
 .card-shared {
@@ -15,7 +15,7 @@
     --index: 1;
     background: linear-gradient(to bottom, rgb(192, 168, 98), rgb(25, 20, 12));
   }
-
+/*--
 #card2-my-projects {
     --index: 2;
     background: linear-gradient(to bottom, rgb(0, 129, 75), rgb(0, 0, 0));
@@ -25,13 +25,13 @@
     --index: 3;
     background: linear-gradient(to bottom, rgb(109, 0, 117), rgb(3, 13, 27));
   }
-
-#card4-my-projects {
+--*/
+#card2-my-projects {
     --index: 4;
     background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
   }
 
-#card5-my-projects {
+#card3-my-projects {
     --index: 5;
     background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
   }
