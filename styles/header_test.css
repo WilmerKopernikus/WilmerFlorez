@@ -189,7 +189,7 @@ li a {
   display: none;
   position: absolute;
   right: 0;
-  background: #000000;
+  background: #00000000;
   border-radius: 4px;
   list-style: none;
   z-index: 999;
