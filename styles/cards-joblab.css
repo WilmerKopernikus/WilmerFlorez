@@ -1,8 +1,4 @@
 #joblab-cards-container {
-  --cards: 7;
-}
-
-#joblab-cards-container-mobile {
   --cards: 8;
 }
 
@@ -50,8 +46,7 @@
   background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }
 
-#card8-joblab-mobile {
+#card8-joblab {
   --index: 8;
   background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }
-
