@@ -127,26 +127,6 @@
   background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }
 
-#card1-contact-mobile {
-  --index: 1;
-  margin-top: 66px;
-}
-
-#card2-contact-mobile {
-  --index: 2;
-  margin-top: 66px;
-}
-
-#card1-contact-mobile {
-  --index: 1;
-  margin-top: 66px;
-}
-
-#card2-contact-mobile {
-  --index: 2;
-  margin-top: 66px;
-}
-
 #card1 .card-body-intro {
   background-color: #00000000;
 }

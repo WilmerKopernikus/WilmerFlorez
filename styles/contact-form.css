@@ -28,7 +28,7 @@
     background-color: #444;
     color: #ffffff;
     font-size: 1.1rem;
-    
+    font-family: 'Roboto', sans-serif;
   }
   
   .form-group input:focus,
@@ -143,7 +143,7 @@
   }
 
   #message {
-    min-height: 150px;
+    min-height: 100px;
   }
 
   .contact-form {

@@ -1,0 +1,27 @@
+#cases-cards-container {
+    --cards: 3;
+  }
+
+.card-shared {
+  margin-top: 66px;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+#card1-about {
+    --index: 1;
+    background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
+  }
+
+#card2-about {
+    --index: 2;
+    background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
+  }
+
+#card3-about {
+    --index: 3;
+    background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
+  }

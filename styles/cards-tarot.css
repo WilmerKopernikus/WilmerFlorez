@@ -1,5 +1,5 @@
 #tarot-cards-container {
-  --cards: 7;
+  --cards: 8;
 }
 
 #tarot-cards-container-mobile {
@@ -51,8 +51,7 @@
   background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }
 
-#card8-tarot-mobile {
+#card8-tarot {
   --index: 8;
-
   background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }

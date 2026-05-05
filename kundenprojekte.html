@@ -34,7 +34,7 @@
   <link rel="stylesheet" href="styles/cases-cards.css">
   <link rel="stylesheet" href="styles/images.css">
   <link rel="stylesheet" href="styles/global-text.css">
-  <link rel="stylesheet" href="styles/contact-form.min.css">
+  <link rel="stylesheet" href="styles/contact-form.css">
   <link rel="stylesheet" href="styles/cards_intro.css">
 
   <link rel="stylesheet" href="styles/languages_content.min.css">
@@ -223,109 +223,11 @@
         </div>
 
         <div id="card5-cases" class="card card-shared">
-          <div class="card-body" id="cases">
-            <div class="left" id="center-services">
-              <h2 class="title let-there-be-light" id="title-medium" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?
-              </h2>
-              <p class="text-new" id="low-light" data-i18n="chooseUsText">
-                Sind Sie auf der Suche nach einem engagierten Webentwickler für
-                Ihr Team oder Ihr nächstes Projekt?<br><br>
-
-                Wenn Sie Unterstützung für Ihr Projekt benötigen oder
-                jemanden suchen, der sich engagiert in neue Aufgaben einarbeitet, freue ich mich über eine
-                Kontaktaufnahme.
-                Gerne bespreche ich mit Ihnen, wie ich Ihr Team und Ihre Ziele bestmöglich unterstützen kann.
-                <br><br>
-              </p>
-            </div>
-            <div class="right" id="center-services">
-              <h2 class="title let-there-be-light" id="title-medium" data-i18n="formTitle">KONTAKTIEREN SIE MICH!</h2>
-              <form class="contact-form" name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact">
-                <p style="display:none;">
-                  <label>Don't fill this out if you're human: <input name="bot-field"></label>
-                </p>
-                <div class="form-group">
-                  <label for="name" data-i18n="formNameLabel" id="low-light">Ihr Name:</label>
-                  <input type="text" id="name" name="name" required />
-                </div>
-                <div class="form-group">
-                  <label for="email" data-i18n="formEmailLabel" id="low-light">Ihre E-Mail:</label>
-                  <input type="email" id="email" name="email" required />
-                </div>
-                <div class="form-group">
-                  <label for="message" data-i18n="formMessageLabel" id="low-light">Ihre Nachricht:</label>
-                  <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="send-button" data-i18n="formSubmit" id="low-light">Senden</button>
-              </form>
-            </div>
-          </div>
+          <contact-shell-desktop></contact-shell-desktop>
         </div>
 
         <div class="card card-shared" id="card6-cases">
-          <div class="card-body" id="cases">
-            <div class="left" id="center-services">
-              <h2 class="title" id="let-there-be-light" data-i18n="footerTitle">KREATIV UND INNOVATIV</h2>
-              <div class="service-item active">
-                <div class="service-trigger text-new justify">
-                  Wilmer Aderbert Florez López
-                </div>
-                <div class="service-description text justify">
-                  <p class="service-description text justify" data-i18n="footerDescription">
-                    Web Developer - UI/UX Designer - Creative Coder<br>
-                    Creating performant, user-focused web experiences<br>
-                    Based in Germany · Working internationally<br>
-                    wilmerkopernikus@gmail.com <br>
-                    (+49)1771 827690 - (+86)185 2006 0442
-
-                </div>
-              </div>
-              <div class="service-item">
-                <div class="service-trigger text-new justify" data-i18n="footerNavigation">
-                  Navigation
-                </div>
-                <div class="service-description text justify">
-                  <a href="index.html" class="text-link" data-i18n="menuIndex">Startseite</a><br>
-                  <a href="kundenprojekte.html" class="text-link" data-i18n="menuProjekte">Kundenprojekte</a><br>
-                  <a href="meine_projekte.html" class="text-link" data-i18n="menuEigeneProjekte">Meine Projekte</a><br>
-                  <a href="creative_coding.html" class="text-link" data-i18n="menuCreativeCoding">Creative
-                    Coding</a><br>
-                  <a href="about.html" class="text-link" data-i18n="menuUeberMich">Über Mich</a><br>
-                  <a href="kontakt.html" class="text-link" data-i18n="menuKontakt">Kontakt</a><br>
-                </div>
-              </div>
-              <div class="service-item">
-                <div class="service-trigger text-new justify">
-                  Github
-                </div>
-                <div class="service-description text justify">
-                  <a href="https://github.com/wilmerkopernikus" class="text-link"
-                    target="_blank">https://github.com/wilmerkopernikus</a><br>
-                </div>
-              </div>
-              <div class="service-item">
-                <div class="service-trigger text-new justify" data-i18n="impressumTitle">
-                  Impressum
-                </div>
-                <div class="service-description text justify" data-i18n="impressumContent">
-                  Wilmer Aderbert Florez López<br>
-                  Am Stumpenhof 14 - 73207 Plochingen, Deutschland <br>
-                  wilmerkopernikus@gmail.com - (+49)1771 827690 - (+86)185 2006 0442<br>
-                  Responsible for content according to §55 Abs. 2 RStV
-                </div>
-              </div>
-
-              <p class="text-new" id="low-light" data-i18n="derechos">© 2026 Wilmer Florez. Alle Rechte vorbehalten.</p>
-            </div>
-            <div class="right" id="responsive-sketch">
-              <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
-                poster="imagenes/videos/services_04.jpg" class="white-shadow">
-                <source src="imagenes/videos/services_04_compressed.mp4" type="video/mp4" />
-                Your browser doesn't support video reproductions.
-              </video>
-            </div>
-          </div>
+          <impressum-shell-desktop></impressum-shell-desktop>
         </div>
 
       </div>
@@ -334,10 +236,10 @@
 
 
 
-    <div class="cards-mobile" id='cases-cards-container-mobile'>
+    <div class="cards-mobile" id='cases-cards-container'>
       <div class="container" id="cards">
 
-        <div class="card card-shared" id="card1-cases-mobile">
+        <div class="card card-shared" id="card1-cases">
           <div class="card-body" id="contact-proportion-text">
             <div class="left" id="center-services-mobile">
 
@@ -374,7 +276,7 @@
           </div>
         </div>
 
-        <div class="card card-shared" id="card2-cases-mobile">
+        <div class="card card-shared" id="card2-cases">
           <div class="card-body" id="contact-proportion-text">
 
             <div class="left" id="center-services-mobile"></div>
@@ -413,7 +315,7 @@
           </div>
         </div>
 
-        <div class="card card-shared" id="card3-cases-mobile">
+        <div class="card card-shared" id="card3-cases">
           <div class="card-body" id="contact-proportion-text">
             <div class="left" id="center-services-mobile">
 
@@ -421,25 +323,26 @@
             <div class="right" id="center-services">
               <div class="card-content-flex">
                 <h2 class="title" data-i18n="banderasTitle">JOB LAB</h2>
-              <p class="text" data-i18n="joblabKunde" id="low-kunden-light">
-                <strong>Kunde:</strong>
-                <br /> Deutscher Akademischer Austauschdienst (DAAD)
-              </p><br />
-              <p class="text" data-i18n="joblabLeistungen" id="low-kunden-light">
-                <strong>Leistungen:</strong>
-                <br /> Markenentwicklung <br /> Plakatgestaltung <br /> Webentwicklung <br /> Webdesign
-              </p><br />
-              <p class="text justify" data-i18n="joblabUebersicht" id="low-kunden-light">
-                <strong>Übersicht:</strong>
-                <br />
-                Im Mai und Juni 2024 führte der DAAD in China gemeinsam mit der Deutschen Botschaft, dem Goethe-Institut
-                und weiteren Partnern das Projekt Job Lab durch. Die Messe bot unter dem Motto „Mit Deutsch in die
-                Zukunft“
-                Karriereperspektiven für chinesische Germanistik-Studierende.
-              </p><br />
-              <a href="joblab-projekt.html" rel="noopener noreferrer">
-                <button class="send-button" data-i18n="mehrInformation">Mehr Informationen</button>
-              </a>
+                <p class="text" data-i18n="joblabKunde" id="low-kunden-light">
+                  <strong>Kunde:</strong>
+                  <br /> Deutscher Akademischer Austauschdienst (DAAD)
+                </p><br />
+                <p class="text" data-i18n="joblabLeistungen" id="low-kunden-light">
+                  <strong>Leistungen:</strong>
+                  <br /> Markenentwicklung <br /> Plakatgestaltung <br /> Webentwicklung <br /> Webdesign
+                </p><br />
+                <p class="text justify" data-i18n="joblabUebersicht" id="low-kunden-light">
+                  <strong>Übersicht:</strong>
+                  <br />
+                  Im Mai und Juni 2024 führte der DAAD in China gemeinsam mit der Deutschen Botschaft, dem
+                  Goethe-Institut
+                  und weiteren Partnern das Projekt Job Lab durch. Die Messe bot unter dem Motto „Mit Deutsch in die
+                  Zukunft“
+                  Karriereperspektiven für chinesische Germanistik-Studierende.
+                </p><br />
+                <a href="joblab-projekt.html" rel="noopener noreferrer">
+                  <button class="send-button" data-i18n="mehrInformation">Mehr Informationen</button>
+                </a>
                 <div class="image-mobile">
                   <a href="joblab-projekt.html">
                     <img src="imagenes/projects/job_lab.jpg" alt="Job Lab" class="white-shadow">
@@ -451,7 +354,7 @@
           </div>
         </div>
 
-        <div id="card5-cases-mobile" class="card card-shared">
+        <div id="card4-cases" class="card card-shared">
           <div class="card-body" id="contact-proportion-text">
             <div class="left" id="center-services-mobile">
 
@@ -491,62 +394,13 @@
         </div>
 
 
-        <div id="card6-cases-mobile" class="card card-shared">
-          <div class="card-body" id="contact-proportion-text">
-
-            <div class="left"></div>
-
-            <div class="right" id="center-services">
-              <div class="card-content-flex">
-                <h2 class="title" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?</h2>
-                <p class="text-new" data-i18n="chooseUsText">
-                  Sind Sie auf der Suche nach einem engagierten Webentwickler für
-                  Ihr Team oder Ihr nächstes Projekt?<br><br>
-
-                  Wenn Sie Unterstützung für Ihr Projekt benötigen oder
-                  jemanden suchen, der sich engagiert in neue Aufgaben einarbeitet, freue ich mich über eine
-                  Kontaktaufnahme.
-                  Gerne bespreche ich mit Ihnen, wie ich Ihr Team und Ihre Ziele bestmöglich unterstützen kann.
-                </p>
-                <video id="services-animation-mobile" autoplay loop muted playsinline preload="metadata" loading="lazy"
-                  poster="imagenes/videos/services_08.jpg" class="white-shadow">
-                  <source src="imagenes/videos/services_08_compressed.mp4" type="video/mp4" />
-                  Your browser doesn't support video reproductions.
-                </video>
-              </div>
-            </div>
-
-          </div>
+        <div id="card5-cases" class="card card-shared">
+          <contact-shell-mobile></contact-shell-mobile>
+        </div>
+        <div id="card6-cases" class="card">
+          <impressum-shell-mobile></impressum-shell-mobile>
         </div>
 
-        <div id="card7-cases-mobile" class="card">
-          <div class="card-body" id="contact-proportion">
-            <div class="left" id="center-services">
-              <h2 class="title">KONTAKTIEREN SIE MICH!</h2>
-              <form class="contact-form" name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact">
-                <p style="display:none;">
-                  <label>Don't fill this out if you're human: <input name="bot-field"></label>
-                </p>
-                <div class="form-group">
-                  <label for="name">Ihr Name:</label>
-                  <input type="text" id="name" name="name" required />
-                </div>
-                <div class="form-group">
-                  <label for="email">Ihre E-Mail:</label>
-                  <input type="email" id="email" name="email" required />
-                </div>
-                <div class="form-group">
-                  <label for="message">Ihre Nachricht:</label>
-                  <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="send-button">Senden</button>
-              </form>
-            </div>
-            <div class="right" id="center-services">
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 

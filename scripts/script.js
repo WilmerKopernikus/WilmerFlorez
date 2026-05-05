@@ -289,9 +289,10 @@ document.addEventListener("DOMContentLoaded", function () {
   animatedTargets.forEach((target) => observer.observe(target));
 });
 
-
-  const serviceTriggers = document.querySelectorAll('.service-trigger');
-  const serviceItems = document.querySelectorAll('.service-item');
+// Función reutilizable para setup de toggles de servicio
+function setupServiceToggle(container = document) {
+  const serviceTriggers = container.querySelectorAll('.service-trigger');
+  const serviceItems = container.querySelectorAll('.service-item');
 
   serviceTriggers.forEach(trigger => {
     trigger.addEventListener('click', () => {
@@ -304,4 +305,10 @@ document.addEventListener("DOMContentLoaded", function () {
       currentItem.classList.add('active');
     });
   });
+}
+
+// Inicializar para el documento completo
+document.addEventListener('DOMContentLoaded', function () {
+  setupServiceToggle();
+});
 

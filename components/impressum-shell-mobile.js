@@ -62,8 +62,8 @@ class ImpressumShellMobile extends HTMLElement {
                 <p class="text-new" id="low-light" data-i18n="derechos">© 2026 Wilmer Florez. Alle Rechte vorbehalten.
                 </p><br>
                 <video id="services-animation-mobile" autoplay loop muted playsinline preload="metadata" loading="lazy"
-                  poster="imagenes/videos/services_04.jpg" class="white-shadow">
-                  <source src="imagenes/videos/services_04_compressed.mp4" type="video/mp4" />
+                  poster="imagenes/videos/cube.jpg" class="white-shadow">
+                  <source src="imagenes/videos/cube_compressed.mp4" type="video/mp4" />
                   Your browser doesn't support video reproductions.
                 </video>
 
@@ -73,6 +73,11 @@ class ImpressumShellMobile extends HTMLElement {
 
           </div>
     `;
+
+    // Usar la función reutilizable de script.js
+    if (typeof setupServiceToggle === 'function') {
+      setupServiceToggle(this);
+    }
   }
 }
 

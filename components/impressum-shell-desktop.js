@@ -57,13 +57,18 @@ class ImpressumShellDesktop extends HTMLElement {
             </div>
             <div class="right" id="responsive-sketch">
               <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
-                poster="imagenes/videos/services_04.jpg" class="white-shadow">
-                <source src="imagenes/videos/services_04_compressed.mp4" type="video/mp4" />
+                poster="imagenes/videos/cube.jpg" class="white-shadow">
+                  <source src="imagenes/videos/cube_compressed.mp4" type="video/mp4" />
                 Your browser doesn't support video reproductions.
               </video>
             </div>
           </div>
     `;
+
+    // Usar la función reutilizable de script.js
+    if (typeof setupServiceToggle === 'function') {
+      setupServiceToggle(this);
+    }
   }
 }
 

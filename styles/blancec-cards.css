@@ -1,5 +1,5 @@
 #blancec-cards-container {
-  --cards: 7;
+  --cards: 8;
 }
 
 #blancec-cards-container-mobile {
@@ -48,6 +48,12 @@
 
 #card7-blancec {
   --index: 7;
+
+  background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
+}
+
+#card8-blancec {
+  --index: 8;
 
   background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }

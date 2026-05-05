@@ -31,10 +31,10 @@
 
   <link rel="stylesheet" href="styles/header_test.min.css">
   <link rel="stylesheet" href="styles/cards.css">
-  <link rel="stylesheet" href="styles/images.min.css">
+  <link rel="stylesheet" href="styles/images.css">
   <link rel="stylesheet" href="styles/global-text.css">
   <link rel="stylesheet" href="styles/contact-form.min.css">
-  <link rel="stylesheet" href="styles/cards_intro.min.css">
+  <link rel="stylesheet" href="styles/cards_intro.css">
 
   <link rel="stylesheet" href="styles/languages_content.min.css">
   <script src="scripts/languages_content.js" defer></script>
@@ -95,69 +95,17 @@
 
     <div id='contact-cards-container-mobile' class="cards-mobile">
       <div id="cards" class="container">
-
-        <div id="card1-contact-mobile" class="card">
-          <div class="card-body" id="contact-proportion-text">
-            <div class="left" id="center-services"></div>
-            <div class="right" id="center-services">
-              <h2 class="title" id="title-small" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?</h2>
-              <p class="text" data-i18n="chooseUsText">
-                Sind Sie auf der Suche nach einem engagierten Webentwickler für
-                Ihr Team oder Ihr nächstes Projekt?<br><br>
-
-                Wenn Sie Unterstützung für Ihr Projekt benötigen oder
-                jemanden suchen, der sich engagiert in neue Aufgaben einarbeitet, freue ich mich über eine
-                Kontaktaufnahme.
-                Gerne bespreche ich mit Ihnen, wie ich Ihr Team und Ihre Ziele bestmöglich unterstützen kann.
-                <br><br>
-              </p>
-              <h2 class="title impressum" data-i18n="impressumTitle">IMPRESSUM</h2>
-              <p class="text" data-i18n="impressumText">
-                Gesetzliche Vertretung: Wilmer Aderbert Florez Lopez <br>
-                Calle 75 # 58-51 - 111211 Bogota, Kolumbien <br>
-                waflorezl1987@gmail.com <br>Registriert und rechtlich vertreten in Bogotá, Kolumbien. <br>
-                Umsatzsteuer (MwSt) ist auf internationale Transaktionen nicht anwendbar.
-              </p>
-            </div>
-          </div>
+        <div id="card1-contact" class="card card-shared">
+          <contact-shell-mobile></contact-shell-mobile>
         </div>
-        <div id="card2-contact-mobile" class="card">
-          <div class="card-body" id="contact-proportion">
-            <div class="left" id="center-services">
-              <h2 class="title" data-i18n="formTitle">KONTAKTIEREN SIE MICH!</h2>
-              <form class="contact-form" name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact">
-                <p style="display:none;">
-                  <label>Don't fill this out if you're human: <input name="bot-field"></label>
-                </p>
-                <div class="form-group">
-                  <label for="name" data-i18n="formNameLabel">Ihr Name:</label>
-                  <input type="text" id="name" name="name" required />
-                </div>
-                <div class="form-group">
-                  <label for="email" data-i18n="formEmailLabel">Ihre E-Mail:</label>
-                  <input type="email" id="email" name="email" required />
-                </div>
-                <div class="form-group">
-                  <label for="message" data-i18n="formMessageLabel">Ihre Nachricht:</label>
-                  <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="send-button" data-i18n="formSubmit">Senden</button>
-              </form>
-            </div>
-          </div>
+        <div id="card2-contact" class="card card-shared">
+          <impressum-shell-mobile></impressum-shell-mobile>
         </div>
       </div>
     </div>
 
-
-
-
-
-
-
   </div>
-  <script src="scripts/script.min.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

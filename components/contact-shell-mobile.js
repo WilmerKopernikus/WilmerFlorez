@@ -6,12 +6,11 @@ class ContactShellMobile extends HTMLElement {
 
             <div class="left" id="center-services">
               <div class="card-content-flex">
-                <h2 class="title" id="let-there-be-light" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?</h2>
-                <p class="text-new low-light" id="center-text" data-i18n="">
+                <h2 class="title let-there-be-light" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?</h2>
+                <p class="text-new low-light" data-i18n="">
                   Sind Sie auf der Suche nach einem engagierten Webentwickler für
-                  Ihr Team oder Ihr nächstes Projekt?
+                  Ihr Team oder Ihr nächstes Projekt? Kontaktieren Sie mich gerne, um Ihre Anforderungen zu besprechen.
                 </p><br>
-                <h2 class="title" id="let-there-be-light" data-i18n="formTitle">KONTAKTIEREN SIE MICH!</h2>
                 <form class="contact-form" name="contact" method="POST" data-netlify="true">
                   <input type="hidden" name="form-name" value="contact">
                   <p style="display:none;">

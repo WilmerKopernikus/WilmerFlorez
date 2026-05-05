@@ -2,10 +2,6 @@
   --cards: 7;
 }
 
-#banderas-cards-container-mobile {
-  --cards: 7;
-}
-
 .card-shared {
   margin-top: 66px;
   min-height: 100%;
@@ -46,11 +42,6 @@
 }
 
 #card7-banderas {
-  --index: 7;
-  background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
-}
-
-#card7-banderas-mobile {
   --index: 7;
   background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }
