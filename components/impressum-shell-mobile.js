@@ -3,7 +3,7 @@ class ImpressumShellMobile extends HTMLElement {
     this.innerHTML = `  
           <div class="card-body" id="contact-proportion-text">
 
-            <div class="left" id="center-services-mobile"></div>
+            <div class="left"></div>
 
             <div class="right" id="center-services">
               <div class="card-content-flex">

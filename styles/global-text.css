@@ -333,6 +333,7 @@ a {
     margin: 0 auto;
     width: 70%;
     max-width: 260px;
+    min-width: 200px;
     padding: 10px 8px;
     font-size: 0.85rem;
   }

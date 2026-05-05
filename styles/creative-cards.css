@@ -3,7 +3,7 @@
 }
 
 #creative-cards-container-mobile {
-  --cards: 7;
+  --cards: 3;
 }
 
 .card-shared {
@@ -30,72 +30,3 @@
   background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(3, 13, 27));
 }
 
-#card4-creative {
-  --index: 4;
-  background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(3, 13, 27));
-}
-
-#card5-creative {
-  --index: 5;
-  background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(3, 13, 27));
-}
-
-#card6-creative {
-  --index: 6;
-  background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(3, 13, 27));
-}
-
-#card7-creative {
-  --index: 7;
-  background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(3, 13, 27));
-}
-
-#card8-creative {
-  --index: 8;
-  background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(3, 13, 27));
-}
-
-#card9-creative {
-  --index: 9;
-  background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(3, 13, 27));
-}
-
-#card10-creative {
-  --index: 10;
-  background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(3, 13, 27));
-}
-
-#card1-cases-mobile {
-  --index: 1;
-  background: linear-gradient(to bottom, rgb(0, 120, 206), rgb(3, 13, 27));
-}
-
-#card2-cases-mobile {
-  --index: 2;
-  background: linear-gradient(to bottom, rgb(88, 27, 51), rgb(0, 0, 0));
-}
-
-#card3-cases-mobile {
-  --index: 3;
-  background: linear-gradient(to bottom, rgb(0, 120, 206), rgb(3, 13, 27));
-}
-
-#card4-cases-mobile {
-  --index: 4;
-  background: linear-gradient(to bottom, rgb(192, 168, 98), rgb(25, 20, 12));
-}
-
-#card5-cases-mobile {
-  --index: 5;
-  background: linear-gradient(to bottom, rgb(0, 129, 75), rgb(0, 0, 0));
-}
-
-#card6-cases-mobile {
-  --index: 6;
-  background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
-}
-
-#card7-cases-mobile {
-  --index: 7;
-  background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
-}
