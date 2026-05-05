@@ -92,7 +92,7 @@ const languagesContent = {
     contactContent: "Möchten Sie mit mir zusammenarbeiten? Haben Sie bereits konkrete Vorstellungen oder möchten Sie gemeinsam erste Ideen entwickeln? Kontaktieren Sie mich gerne – und lassen Sie uns Ihre digitale Zukunft in Bewegung setzen.",
     contactButton: `Zum Kontakt`,
 
-    //Projekte
+    //Kundenprojekte
     projekteTitle: "PROJEKTE",
     joblabKunde: "<strong>Kunde:</strong><br /> Deutscher Akademischer Austauschdienst (DAAD)",
     joblabLeistungen: "<strong>Leistungen:</strong><br/> Webentwicklung - Webdesign - Markenentwicklung - Plakatgestaltung",
@@ -114,6 +114,13 @@ const languagesContent = {
     stopdesertLeistungen: "<strong>Tech Stack:</strong><br /> WordPress · Kadence · HTML/CSS · JavaScript · Spendensystem",
     stopdesertUebersicht: "<strong>Übersicht:</strong><br />Stop the Desert ist eine NGO, die die Wüstenbildung weltweit bekämpft. Das Projekt umfasst die Verwaltung der WordPress-Website mit Kadence und die Implementierung eines Spendensystems, das Landwirte direkt unterstützt.",
     mehrInformation: "Mehr Informationen",
+
+    //Creative Coding
+    creativeCodingTitle: "CREATIVE CODING",
+    creativeCodingSubtitle: "EIN TREFFPUNKT ZWISCHEN KUNST UND PROGRAMMIEREN",
+    polygonFieldTitle: "ERWEITERNDES POLYGONFELD",
+    polygonFieldText: "Ein interaktives, generatives System, in dem Benutzerklicks polygonale Emitter erzeugen, die sich mit der Zeit radial ausbreiten. Jeder Emitter erzeugt kontinuierlich wachsende, regelmäßige Polygone mit dynamischer Seitenzahl, während die Farboszillationen durch trigonometrische Funktionen gesteuert werden. Der halbtransparente Hintergrund erzeugt Bewegungsspuren, wodurch eine geschichtete, wellenartige Ausbreitung geometrischer Formen entsteht.",
+    polygonFieldInstructions: "Anleitung: Klicke, um Formen hinzuzufügen; mit den Pfeiltasten nach oben/unten änderst du die Anzahl der Seiten. Mit der Leertaste löschst du die Arbeitsfläche.",
 
     //Joblab
     joblabTitle1: "PROJEKTÜBERSICHT",
@@ -335,6 +342,13 @@ const languagesContent = {
     stopdesertUebersicht: "<strong>Overview:</strong><br />Stop the Desert is an NGO fighting desertification worldwide. The project involves managing the WordPress website with Kadence and implementing a donation system that directly supports farmers.",
     mehrInformation: "More Information",
     vollstaendigeFallstudie: "View Full Case Study",
+
+    //Creative Coding
+    creativeCodingTitle: "CREATIVE CODING",
+    creativeCodingSubtitle: "AN MEETING POINT BETWEEN ART AND PROGRAMMING",
+    polygonFieldTitle: "EXPANDING POLYGON FIELD",
+    polygonFieldText: "An interactive generative system where user clicks spawn polygonal emitters that expand radially over time. Each emitter produces continuously growing regular polygons with a dynamic number of sides, while color oscillations are driven by trigonometric functions. The semi-transparent background creates motion trails, resulting in a layered wave-like propagation of geometric forms.",
+    polygonFieldInstructions: "",
 
     //Joblab
     joblabTitle1: "PROJECT OVERVIEW",
@@ -559,6 +573,13 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     stopdesertUebersicht: '<strong>Resumen:</strong><br/>Stop the Desert es una ONG que combate la desertificación a nivel mundial. El proyecto incluye la gestión del sitio web WordPress con Kadence y la implementación de un sistema de donaciones que apoya directamente a los agricultores.',
     mehrInformation: 'Más Información',
     vollstaendigeFallstudie: 'Ver Caso de Estudio Completo',
+
+    //Creative Coding
+    creativeCodingTitle: "PROGRAMACIÓN CREATIVA",
+    creativeCodingSubtitle: "UN PUNTO DE ENCUENTRO ENTRE ARTE Y PROGRAMACIÓN",
+    polygonFieldTitle: "CAMPO POLIGONAL EN EXPANSIÓN",
+    polygonFieldText: "Un sistema generativo interactivo donde los clics del usuario crean emisores poligonales que se expanden radialmente con el tiempo. Cada emisor produce polígonos regulares de crecimiento continuo con un número dinámico de lados, mientras que las oscilaciones de color están determinadas por funciones trigonométricas. El fondo semitransparente crea estelas de movimiento, lo que da como resultado una propagación ondulatoria en capas de formas geométricas.",
+    polygonFieldInstructions: "Instrucciones: Haga clic para agregar formas; las flechas hacia arriba/abajo cambian el número de lados. La barra espaciadora borrará el lienzo.",
 
     //Joblab
     joblabTitle1: 'RESUMEN DEL PROYECTO',

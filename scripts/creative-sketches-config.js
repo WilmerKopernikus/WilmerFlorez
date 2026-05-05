@@ -10,10 +10,13 @@
  */
 const CREATIVE_SKETCHES = {
   'expanding-polygon-field': {
-    title: 'EXPANDING POLYGON FIELD',
+    titleKey: 'polygonFieldTitle',
     script: 'scripts/expanding-polygon-field.js',
+    
     instructions: 'Click to add shapes; up/down arrows change the number of sides. Space will clear the canvas.',
-    description: 'An interactive generative system where user clicks spawn polygonal emitters that expand radially over time. Each emitter produces continuously growing regular polygons with a dynamic number of sides, while color oscillations are driven by trigonometric functions. The semi-transparent background creates motion trails, resulting in a layered wave-like propagation of geometric forms.'
+    instructionsKey: 'polygonFieldInstructions',
+    description: 'An interactive generative system where user clicks spawn polygonal emitters that expand radially over time. Each emitter produces continuously growing regular polygons with a dynamic number of sides, while color oscillations are driven by trigonometric functions. The semi-transparent background creates motion trails, resulting in a layered wave-like propagation of geometric forms.',
+    descriptionKey: 'polygonFieldText'
   },
   'minimalist-painting': {
     title: 'MINIMALIST PAINTING GENERATOR',

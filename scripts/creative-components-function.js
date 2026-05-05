@@ -1,0 +1,60 @@
+(function () {
+      var params = new URLSearchParams(window.location.search);
+      var sketchId = params.get('sketch');
+      var sketch = CREATIVE_SKETCHES[sketchId];
+
+      if (!sketch) {
+        // Unknown or missing sketch id – redirect to the gallery
+        window.location.replace('creative_coding.html');
+        return;
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        // --- Inject sketch script ---
+        // p5.min.js (deferred) has run by now but p5 waits for window.load
+        // to call setup(), so the sketch script will be ready in time.
+        var sketchScript = document.createElement('script');
+        sketchScript.src = sketch.script;
+        document.head.appendChild(sketchScript);
+
+        // --- Populate card1-creative-case ---
+        var card = document.getElementById('card1-creative-case');
+        var leftDiv = card ? card.querySelector('.left') : null;
+        var rightDiv = card ? card.querySelector('.right') : null;
+        var mobileContentDiv = document.querySelector('.cards-mobile #card1-creative-case .card-content-flex');
+
+        var titleText = sketch.title || '';
+        var titleI18nAttr = sketch.titleKey ? ' data-i18n="' + sketch.titleKey + '"' : ' data-i18n=""';
+        var titleHtml = '<h2 class="title" id="kunden-light"' + titleI18nAttr + '>'
+          + titleText + '</h2>';
+
+        var detailsHtml = '';
+        if (sketch.instructions) {
+          var instructionsI18nAttr = sketch.instructionsKey ? ' data-i18n="' + sketch.instructionsKey + '"' : ' data-i18n=""';
+          detailsHtml += '<p class="text-new" id="kunden-light"' + instructionsI18nAttr + '>'
+            + '<strong>Instructions:</strong> ' + sketch.instructions
+            + '</p><br>';
+        }
+
+        if (sketch.description) {
+          var descriptionI18nAttr = sketch.descriptionKey ? ' data-i18n="' + sketch.descriptionKey + '"' : ' data-i18n=""';
+          detailsHtml += '<p class="text-new" id="kunden-light"' + descriptionI18nAttr + '>'
+            + sketch.description + '</p>';
+        }
+
+        if (leftDiv) {
+          leftDiv.innerHTML = titleHtml;
+        }
+
+        if (rightDiv) {
+          rightDiv.innerHTML = detailsHtml;
+        }
+
+        if (mobileContentDiv) {
+          mobileContentDiv.innerHTML = titleHtml + detailsHtml;
+        }
+
+        // --- Update page title ---
+        document.title = sketch.title + ' | Wilmer Florez - Webentwickler & Designer';
+      });
+    }());

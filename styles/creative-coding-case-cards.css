@@ -2,10 +2,6 @@
   --cards: 3;
 }
 
-#creative-cards-container-mobile {
-  --cards: 6;
-}
-
 .card-shared {
   margin-top: 66px;
   min-height: 100%;
@@ -26,47 +22,11 @@
 
 #card2-creative-case {
   --index: 2;
-  background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(3, 13, 27));
+  background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }
 
 #card3-creative-case {
   --index: 3;
-  background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(3, 13, 27));
-}
-
-
-#card1-cases-mobile {
-  --index: 1;
-  background: linear-gradient(to bottom, rgb(0, 120, 206), rgb(3, 13, 27));
-}
-
-#card2-cases-mobile {
-  --index: 2;
-  background: linear-gradient(to bottom, rgb(88, 27, 51), rgb(0, 0, 0));
-}
-
-#card3-cases-mobile {
-  --index: 3;
-  background: linear-gradient(to bottom, rgb(0, 120, 206), rgb(3, 13, 27));
-}
-
-#card4-cases-mobile {
-  --index: 4;
-  background: linear-gradient(to bottom, rgb(192, 168, 98), rgb(25, 20, 12));
-}
-
-#card5-cases-mobile {
-  --index: 5;
-  background: linear-gradient(to bottom, rgb(0, 129, 75), rgb(0, 0, 0));
-}
-
-#card6-cases-mobile {
-  --index: 6;
-  background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
-}
-
-#card7-cases-mobile {
-  --index: 7;
   background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }
 
