@@ -30,15 +30,14 @@
 
   <link rel="stylesheet" href="styles/global-text.css">
 
-  <link rel="stylesheet" href="styles/header_test.min.css">
+  <link rel="stylesheet" href="styles/header_test.css">
   <link rel="stylesheet" href="styles/cards.css">
   <link rel="stylesheet" href="styles/desert-cards.css">
-
-
   <link rel="stylesheet" href="styles/images.css">
-  <link rel="stylesheet" href="styles/contact-form.min.css">
-  <link rel="stylesheet" href="styles/cards_intro.min.css">
-  <link rel="stylesheet" href="styles/languages_content.min.css">
+  <link rel="stylesheet" href="styles/contact-form.css">
+  <link rel="stylesheet" href="styles/cards_intro.css">
+  <link rel="stylesheet" href="styles/languages_content.css">
+
   <script src="scripts/languages_content.js" defer></script>
   <script src="scripts/sw-register.js" defer></script>
 
@@ -77,8 +76,8 @@
     <div class="card" id="card1">
       <div class="card-body-intro with-arrow font-loading">
         <div class="intro-card">
-          <h1 class="fade-in-text">STOP THE DESERT</h1><br>
-          <h2 class="subtitle" data-i18n="stopSubtitle">NGO-Website <br>Laufendes ehrenamtliches Projekt
+          <h1 class="fade-in-text let-there-be-light">STOP THE DESERT</h1><br>
+          <h2 class="subtitle" id="let-there-be-light" data-i18n="stopSubtitle">NGO-Website <br>Laufendes ehrenamtliches Projekt
             <br>Webentwickler & Designer
           </h2>
         </div>
@@ -94,14 +93,14 @@
         <div id="card1-desert" class="card card-shared">
           <div class="card-body" id="blancec-services">
             <div class="left" id="center-services">
-              <h2 class="title" id="title-medium" data-i18n="stopTitle1">PROJEKTÜBERBLICK</h2><br>
-              <p class="text-new" data-i18n="stopContent1">
+              <h2 class="title" id="kunden-light" data-i18n="stopTitle1">PROJEKTÜBERBLICK</h2><br>
+              <p class="text-new" id="low-kunden-light" data-i18n="stopContent1">
                 Stop the Desert ist ein laufendes ehrenamtliches Projekt für eine NGO, die weltweit gegen Wüstenbildung
                 arbeitet. Die Website dient als Informations- und Unterstützungsplattform, vermittelt die Mission der
                 Organisation klar und leitet Besucher zu konkreten Möglichkeiten an, einen Beitrag zu leisten.
               </p><br>
               <a href="https://www.stopthedesert.com/new" target="_blank" rel="noopener noreferrer">
-                <button class="send-button" data-i18n="liveWebsite">Live-Website ansehen </button>
+                <button class="send-button" id="low-kunden-light" data-i18n="liveWebsite">Live-Website ansehen </button>
               </a>
             </div>
             <div class="right" id="responsive-sketch">
@@ -116,8 +115,8 @@
         <div id="card2-desert" class="card card-shared">
           <div class="card-body" id="blancec-services">
             <div class="left" id="center-services">
-              <h2 class="title" id="title-medium" data-i18n="stopTitle2">MEINE ROLLE</h2><br>
-              <p class="text-new" data-i18n="stopContent2">
+              <h2 class="title" id="kunden-light" data-i18n="stopTitle2">MEINE ROLLE</h2><br>
+              <p class="text-new" id="low-kunden-light" data-i18n="stopContent2">
                 Ich betreue und verbessere die WordPress-Website ehrenamtlich und unbezahlt und bringe dabei sowohl
                 Design- als auch Entwicklungsarbeit ein. Mein Fokus liegt darauf, die Website klarer, konsistenter und
                 einfacher zu navigieren zu machen und zugleich die Darstellung der Mission und Aktivitäten der NGO zu
@@ -136,8 +135,8 @@
         <div id="card3-desert" class="card card-shared">
           <div class="card-body" id="blancec-services">
             <div class="left" id="center-services">
-              <h2 class="title" id="title-medium" data-i18n="stopTitle3">TECHNISCHE UMSETZUNG</h2><br>
-              <p class="text-new" data-i18n="stopContent3">
+              <h2 class="title" id="kunden-light" data-i18n="stopTitle3">TECHNISCHE UMSETZUNG</h2><br>
+              <p class="text-new" id="low-kunden-light" data-i18n="stopContent3">
                 Das Projekt nutzt WordPress und Kadence sowie HTML, CSS und JavaScript für individuelle Anpassungen, wo
                 sie nötig sind. Diese Kombination ermöglicht eine flexible Inhaltsverwaltung und praktische
                 Frontend-Verbesserungen, darunter Layout-Optimierung, Navigation, responsives Design und eine bessere
@@ -156,8 +155,8 @@
         <div id="card4-desert" class="card card-shared">
           <div class="card-body" id="blancec-services">
             <div class="left" id="center-services">
-              <h2 class="title" id="title-medium" data-i18n="stopTitle4">SPENDENSYSTEM UND WIRKUNG</h2><br>
-              <p class="text-new" data-i18n="stopContent4">
+              <h2 class="title" id="kunden-light" data-i18n="stopTitle4">SPENDENSYSTEM UND WIRKUNG</h2><br>
+              <p class="text-new" id="low-kunden-light" data-i18n="stopContent4">
                 Ein wichtiger Bestandteil des Projekts ist das Spendensystem, das Unterstützung für Besucher
                 zugänglicher und verständlicher macht. Die Website hilft zu verdeutlichen, wie Beiträge mit realer
                 Wirkung verbunden sind, insbesondere im Hinblick auf Landwirte und Gemeinschaften, die von Wüstenbildung
@@ -185,18 +184,18 @@
 
 
 
-    <div id='desert-cards-container-mobile' class="cards-mobile">
+    <div id='desert-cards-container' class="cards-mobile">
       <div id="cards" class="container">
 
-        <div id="card1-desert-mobile" class="card card-shared ">
+        <div id="card1-desert" class="card card-shared ">
           <div class="card-body" id="contact-proportion-text">
 
             <div class="left"></div>
 
             <div class="right" id="center-services">
               <div class="card-content-flex">
-                <h2 class="title" data-i18n="stopTitle1">PROJEKTÜBERBLICK</h2>
-                <p class="text-new" data-i18n="stopContent1">
+                <h2 class="title" id="kunden-light" data-i18n="stopTitle1">PROJEKTÜBERBLICK</h2>
+                <p class="text-new" id="low-kunden-light" data-i18n="stopContent1">
                   Stop the Desert ist ein laufendes ehrenamtliches Projekt für eine NGO, die weltweit gegen
                   Wüstenbildung
                   arbeitet. Die Website dient als Informations- und Unterstützungsplattform, vermittelt die Mission der
@@ -215,15 +214,15 @@
           </div>
         </div>
 
-        <div id="card2-desert-mobile" class="card card-shared">
+        <div id="card2-desert" class="card card-shared">
           <div class="card-body" id="contact-proportion-text">
 
             <div class="left"></div>
 
             <div class="right" id="center-services">
               <div class="card-content-flex">
-                <h2 class="title" data-i18n="stopTitle2">MEINE ROLLE</h2>
-                <p class="text-new" data-i18n="stopContent2">
+                <h2 class="title" id="kunden-light" data-i18n="stopTitle2">MEINE ROLLE</h2>
+                <p class="text-new" id="low-kunden-light" data-i18n="stopContent2">
                   Ich betreue und verbessere die WordPress-Website ehrenamtlich und unbezahlt und bringe dabei sowohl
                   Design- als auch Entwicklungsarbeit ein. Mein Fokus liegt darauf, die Website klarer, konsistenter und
                   einfacher zu navigieren zu machen und zugleich die Darstellung der Mission und Aktivitäten der NGO zu
@@ -239,15 +238,15 @@
           </div>
         </div>
 
-        <div id="card3-desert-mobile" class="card card-shared">
+        <div id="card3-desert" class="card card-shared">
           <div class="card-body" id="contact-proportion-text">
 
             <div class="left"></div>
 
             <div class="right" id="center-services">
               <div class="card-content-flex">
-                <h2 class="title" data-i18n="stopTitle3">TECHNISCHE UMSETZUNG</h2>
-                <p class="text-new" data-i18n="stopContent3">
+                <h2 class="title" id="kunden-light" data-i18n="stopTitle3">TECHNISCHE UMSETZUNG</h2>
+                <p class="text-new" id="low-kunden-light" data-i18n="stopContent3">
                   Das Projekt nutzt WordPress und Kadence sowie HTML, CSS und JavaScript für individuelle Anpassungen,
                   wo
                   sie nötig sind. Diese Kombination ermöglicht eine flexible Inhaltsverwaltung und praktische
@@ -264,15 +263,15 @@
           </div>
         </div>
 
-        <div id="card4-desert-mobile" class="card card-shared">
+        <div id="card4-desert" class="card card-shared">
           <div class="card-body" id="contact-proportion-text">
 
             <div class="left"></div>
 
             <div class="right" id="center-services">
               <div class="card-content-flex">
-                <h2 class="title" data-i18n="stopTitle4">SPENDENSYSTEM UND WIRKUNG</h2>
-                <p class="text-new" data-i18n="stopContent4">
+                <h2 class="title" id="kunden-light" data-i18n="stopTitle4">SPENDENSYSTEM UND WIRKUNG</h2>
+                <p class="text-new" id="low-kunden-light" data-i18n="stopContent4">
                   Ein wichtiger Bestandteil des Projekts ist das Spendensystem, das Unterstützung für Besucher
                   zugänglicher und verständlicher macht. Die Website hilft zu verdeutlichen, wie Beiträge mit realer
                   Wirkung verbunden sind, insbesondere im Hinblick auf Landwirte und Gemeinschaften, die von
@@ -290,17 +289,17 @@
           </div>
         </div>
 
-        <div id="card5-desert-mobile" class="card card-shared">
+        <div id="card5-desert" class="card card-shared">
           <contact-shell-mobile></contact-shell-mobile>
         </div>
 
-        <div id="card6-desert-mobile" class="card">
+        <div id="card6-desert" class="card">
           <impressum-shell-mobile></impressum-shell-mobile>
         </div>
       </div>
     </div>
   </div>
-  <script src="scripts/script.min.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
