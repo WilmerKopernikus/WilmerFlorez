@@ -121,6 +121,9 @@ const languagesContent = {
     polygonFieldTitle: "ERWEITERNDES POLYGONFELD",
     polygonFieldText: "Ein interaktives, generatives System, in dem Benutzerklicks polygonale Emitter erzeugen, die sich mit der Zeit radial ausbreiten. Jeder Emitter erzeugt kontinuierlich wachsende, regelmäßige Polygone mit dynamischer Seitenzahl, während die Farboszillationen durch trigonometrische Funktionen gesteuert werden. Der halbtransparente Hintergrund erzeugt Bewegungsspuren, wodurch eine geschichtete, wellenartige Ausbreitung geometrischer Formen entsteht.",
     polygonFieldInstructions: "Anleitung: Klicke, um Formen hinzuzufügen; mit den Pfeiltasten nach oben/unten änderst du die Anzahl der Seiten. Mit der Leertaste löschst du die Arbeitsfläche.",
+    noiseFieldPaintingTitle: "NOISEFELDMALEREI",
+    noiseFieldPaintingText: "Ein generatives Partikelsystem erzeugt Kreise aus einer rauschgetriebenen radialen Quelle und formt so ein organisches Strömungsfeld um die Mitte der Zeichenfläche. Jedes Partikel folgt den Perlin-Rauschrichtungen und wird mit der Zeit kleiner und schwächer. Durch Mausinteraktion werden neue Partikel erzeugt, wodurch sich geschichtete, sich entwickelnde Muster mit sanften Farbvariationen und fließender, dynamischer Bewegung entstehen.",
+    noiseFieldPaintingInstructions: "Anleitung: Klicke, um Partikel zu erzeugen, oder halte die Maustaste gedrückt, um mit ihnen zu zeichnen.",
 
     //Joblab
     joblabTitle1: "PROJEKTÜBERSICHT",
@@ -349,6 +352,9 @@ const languagesContent = {
     polygonFieldTitle: "EXPANDING POLYGON FIELD",
     polygonFieldText: "An interactive generative system where user clicks spawn polygonal emitters that expand radially over time. Each emitter produces continuously growing regular polygons with a dynamic number of sides, while color oscillations are driven by trigonometric functions. The semi-transparent background creates motion trails, resulting in a layered wave-like propagation of geometric forms.",
     polygonFieldInstructions: "",
+    noiseFieldPaintingTitle: "NOISE FIELD PAINTING",
+    noiseFieldPaintingText: "A generative particle system emits circles from a noise-driven radial source, creating an organic flow field around the canvas center. Each particle follows Perlin-noise directions, gradually shrinking and fading over time. Mouse interaction introduces new emitters, producing layered, evolving patterns with soft color variations and fluid, dynamic motion.",
+    noiseFieldPaintingInstructions: "Instructions: Click to emit particles, or hold the mouse button to draw with them.",
 
     //Joblab
     joblabTitle1: "PROJECT OVERVIEW",
@@ -580,6 +586,9 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     polygonFieldTitle: "CAMPO POLIGONAL EN EXPANSIÓN",
     polygonFieldText: "Un sistema generativo interactivo donde los clics del usuario crean emisores poligonales que se expanden radialmente con el tiempo. Cada emisor produce polígonos regulares de crecimiento continuo con un número dinámico de lados, mientras que las oscilaciones de color están determinadas por funciones trigonométricas. El fondo semitransparente crea estelas de movimiento, lo que da como resultado una propagación ondulatoria en capas de formas geométricas.",
     polygonFieldInstructions: "Instrucciones: Haga clic para agregar formas; las flechas hacia arriba/abajo cambian el número de lados. La barra espaciadora borrará el lienzo.",
+    noiseFieldPaintingTitle: "PINTURA NOISE",
+    noiseFieldPaintingText: "Un sistema generativo de partículas emite círculos desde una fuente radial impulsada por ruido, creando un campo de flujo orgánico alrededor del centro del lienzo. Cada partícula sigue las direcciones del ruido Perlin, disminuyendo y desvaneciéndose gradualmente con el tiempo. La interacción con el ratón introduce nuevos emisores, produciendo patrones en capas, en evolución, con suaves variaciones de color y movimiento fluido y dinámico.",
+    noiseFieldPaintingInstructions: "Instrucciones: Haga clic para emitir partículas, o mantenga presionado el botón del mouse para dibujar con ellas.",
 
     //Joblab
     joblabTitle1: 'RESUMEN DEL PROYECTO',
@@ -696,8 +705,8 @@ Responsable del contenido según §55 Abs. 2 RStV`,
 let currentLang = 'de';
 let typewriterTimer = null;
 
-function animateIndexSubtitleTypewriter() {
-  const subtitleNodes = Array.from(document.querySelectorAll('[data-i18n="indexSubtitle"]'));
+function animateSubtitleTypewriter(selector, textKey) {
+  const subtitleNodes = Array.from(document.querySelectorAll(selector));
   if (!subtitleNodes.length) return;
 
   if (typewriterTimer) {
@@ -707,7 +716,7 @@ function animateIndexSubtitleTypewriter() {
 
   const prefersReducedMotion = window.matchMedia
     && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const targetHtml = languagesContent[currentLang]?.indexSubtitle || '';
+  const targetHtml = languagesContent[currentLang]?.[textKey] || '';
 
   if (prefersReducedMotion) {
     subtitleNodes.forEach((node) => {
@@ -762,6 +771,11 @@ function animateIndexSubtitleTypewriter() {
   };
 
   tick();
+}
+
+function animateIndexSubtitleTypewriter() {
+  animateSubtitleTypewriter('[data-i18n="indexSubtitle"]', 'indexSubtitle');
+  animateSubtitleTypewriter('[data-i18n="creativeCodingSubtitle"]', 'creativeCodingSubtitle');
 }
 
 function applyLanguage(lang) {

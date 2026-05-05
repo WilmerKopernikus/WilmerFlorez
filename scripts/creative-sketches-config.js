@@ -12,11 +12,18 @@ const CREATIVE_SKETCHES = {
   'expanding-polygon-field': {
     titleKey: 'polygonFieldTitle',
     script: 'scripts/expanding-polygon-field.js',
-    
     instructions: 'Click to add shapes; up/down arrows change the number of sides. Space will clear the canvas.',
     instructionsKey: 'polygonFieldInstructions',
     description: 'An interactive generative system where user clicks spawn polygonal emitters that expand radially over time. Each emitter produces continuously growing regular polygons with a dynamic number of sides, while color oscillations are driven by trigonometric functions. The semi-transparent background creates motion trails, resulting in a layered wave-like propagation of geometric forms.',
     descriptionKey: 'polygonFieldText'
+  },
+  'noise-field-painting': {
+    titleKey: 'noiseFieldPaintingTitle',
+    script: 'scripts/noise-field-painting.js',
+    instructions: 'Click to generate particles or hold to draw with them.',
+    instructionsKey: 'noiseFieldPaintingInstructions',
+    description: 'A generative particle system emits circles from a noise-driven radial source, creating an organic flow field around the canvas center. Each particle follows Perlin-noise directions, gradually shrinking and fading over time. Mouse interaction introduces new emitters, producing layered, evolving patterns with soft color variations and fluid, dynamic motion.',
+    descriptionKey: 'noiseFieldPaintingText'
   },
   'minimalist-painting': {
     title: 'MINIMALIST PAINTING GENERATOR',
