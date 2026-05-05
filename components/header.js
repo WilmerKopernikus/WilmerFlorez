@@ -54,14 +54,14 @@ class SiteShell extends HTMLElement {
               <span data-i18n="menuCreativeCoding" id="let-there-be-light">Creative Coding</span>
             </a>
           </li>
-          <!--
+
           <li>
             <a href="about.html">
               <img class="menu-icon" src="imagenes/svg/mich.svg" alt="Über Mich Icon">
               <span data-i18n="menuUeberMich" id="let-there-be-light">Über Mich</span>
             </a>
           </li>
-          -->
+
           <li>
             <a href="kontakt.html">
               <img class="menu-icon" src="imagenes/svg/contact.svg" alt="Kontakt Icon">
