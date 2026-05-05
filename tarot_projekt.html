@@ -73,12 +73,13 @@
     <div class="card" id="card1">
       <div class="card-body-intro with-arrow font-loading">
         <div class="intro-card">
-          <h1 class="fade-in-text" data-i18n="tarotTitle">INTERAKTIVES TAROT</h1><br>
-          <h2 class="subtitle" data-i18n="tarotSubtitle">Interaktive Tarot-Erfahrung<br>Einzelentwickler & Designer
+          <h1 class="fade-in-text let-there-be-light" data-i18n="tarotTitle">INTERAKTIVES TAROT</h1><br>
+          <h2 class="subtitle" id="let-there-be-light" data-i18n="tarotSubtitle">Interaktive
+            Tarot-Erfahrung<br>Einzelentwickler & Designer
           </h2>
         </div>
         <div class="arrow">
-          <h1 class="text-shadow fade-in-text">↓</h1>
+          <h1 class="text-shadow fade-in-text let-there-be-light">↓</h1>
         </div>
       </div>
     </div>
@@ -89,13 +90,16 @@
         <div id="card1-tarot" class="card card-shared">
           <div class="card-body" id="tarot-services">
             <div class="left" id="center-services">
-              <h2 class="title" id="title-medium" data-i18n="tarotTitle1">ÜBERBLICK</h2>
-              <p class="text-new" data-i18n="tarotContent1">
+              <h2 class="title" id="kunden-light" data-i18n="tarotTitle1">ÜBERBLICK</h2>
+              <p class="text-new" id="low-kunden-light" data-i18n="tarotContent1">
                 Eine vollständig individuell entwickelte interaktive Tarot-Web-App, die ich allein umgesetzt habe — vom
                 Konzept bis zum Deployment. Nutzer wählen aus sechs einzigartigen Decks mit jeweils eigener visueller
                 Identität, ziehen entweder eine einzelne Karte oder ein Dreier-Spread und konsultieren ein KI-Orakel,
                 das die Legung in drei Sprachen interpretiert: Spanisch, Englisch und Deutsch.
-              </p>
+              </p><br>
+              <a href="https://www.wilmerflorez.com/tarot_decks/" target="_blank" rel="noopener noreferrer">
+                <button class="send-button" id="low-kunden-light" data-i18n="liveWebsite">Live-Website ansehen </button>
+              </a>
             </div>
             <div class="right" id="responsive-sketch">
               <div class="carousel-container white-shadow">
@@ -112,8 +116,9 @@
         <div id="card2-tarot" class="card card-shared">
           <div class="card-body" id="tarot-services">
             <div class="left" id="center-services">
-              <h2 class="title" id="title-medium" data-i18n="tarotTitle2">TECH-STACK & ARCHITEKTUR</h2>
-              <p class="text-new" data-i18n="tarotContent2">Ich habe jede Ebene eigenständig konzipiert und entwickelt:
+              <h2 class="title" id="kunden-light" data-i18n="tarotTitle2">TECH-STACK & ARCHITEKTUR</h2>
+              <p class="text-new" id="low-kunden-light" data-i18n="tarotContent2">Ich habe jede Ebene eigenständig
+                konzipiert und entwickelt:
                 das Frontend in reinem HTML, CSS und JavaScript, mit einem serverlosen Backend, das auf Vercel deployt
                 ist. Die Internationalisierung wird über ein eigens entwickeltes Übersetzungssystem umgesetzt, und die
                 App ist als Progressive Web App installierbar, inklusive Offline-Unterstützung über einen registrierten
@@ -135,8 +140,8 @@
         <div id="card3-tarot" class="card card-shared">
           <div class="card-body" id="tarot-services">
             <div class="left" id="center-services">
-              <h2 class="title" id="title-medium" data-i18n="tarotTitle3">KI-INTEGRATION & SICHERHEIT</h2>
-              <p class="text-new" data-i18n="tarotContent3">
+              <h2 class="title" id="kunden-light" data-i18n="tarotTitle3">KI-INTEGRATION & SICHERHEIT</h2>
+              <p class="text-new" id="low-kunden-light" data-i18n="tarotContent3">
                 Die KI-Integration verbindet sich über eine geschützte serverlose Funktion mit OpenAIs GPT-4.1-mini. Zu
                 den Sicherheitsmaßnahmen gehören eine Allowlist für zulässige Origins, Rate Limiting pro IP sowie das
                 serverseitige Management des API-Schlüssels — der Schlüssel wird niemals an den Client weitergegeben.
@@ -158,9 +163,9 @@
         <div id="card4-tarot" class="card card-shared">
           <div class="card-body" id="tarot-services">
             <div class="left" id="center-services">
-              <h2 class="title" id="title-medium" data-i18n="tarotTitle4">ART DIRECTION & KARTENDESIGN
+              <h2 class="title" id="kunden-light" data-i18n="tarotTitle4">ART DIRECTION & KARTENDESIGN
               </h2>
-              <p class="text-new" data-i18n="tarotContent4">
+              <p class="text-new" id="low-kunden-light" data-i18n="tarotContent4">
                 Jedes der acht thematischen Decks — darunter Barock, Surrealismus, Dadaismus, Expressionismus,
                 biomechanischer Stil, Mittelalter und weitere — umfasst 22 KI-generierte Karten der Großen Arkana, die
                 mithilfe stilgesteuerter Prompts erstellt wurden. Ich habe die visuelle Richtung jedes Decks ausgewählt
@@ -183,9 +188,9 @@
         <div id="card5-tarot" class="card card-shared">
           <div class="card-body" id="tarot-services">
             <div class="left" id="center-services">
-              <h2 class="title" id="title-medium" data-i18n="tarotTitle5">UI- & INTERAKTIONSDESIGN
+              <h2 class="title" id="kunden-light" data-i18n="tarotTitle5">UI- & INTERAKTIONSDESIGN
               </h2>
-              <p class="text-new" data-i18n="tarotContent5">
+              <p class="text-new" id="low-kunden-light" data-i18n="tarotContent5">
                 Die Karteninteraktion nutzt eine CSS-3D-Flip-Animation, die mit perspective und transform-style:
                 preserve-3d umgesetzt wurde. Die Deck-Galerie enthält bildbasierte Karussells, die mit JavaScript
                 gesteuert werden. Jedes Deck besitzt ein eigenes CSS-Theme mit deckspezifischen Overrides, die
@@ -207,17 +212,14 @@
         <div id="card6-tarot" class="card card-shared">
           <div class="card-body" id="tarot-services">
             <div class="left" id="center-services">
-              <h2 class="title" id="title-medium" data-i18n="tarotTitle6">ROADMAP & PRODUKTVISION
+              <h2 class="title" id="kunden-light" data-i18n="tarotTitle6">ROADMAP & PRODUKTVISION
               </h2>
-              <p class="text-new" data-i18n="tarotContent6">
+              <p class="text-new" id="low-kunden-light" data-i18n="tarotContent6">
                 Das Projekt ist live, wird aktiv weiterentwickelt und ist aktuell auf Monetarisierung, Nutzerkonten und
                 eine eigene Domain ausgerichtet. Es zeigt Full-Stack-Verantwortung, UX-Gespür, KI-Integration und die
                 Fähigkeit, ein persönliches kreatives Konzept bis zu einem produktionsreifen und skalierbaren Produkt
                 umzusetzen.
               </p><br>
-              <a href="https://www.wilmerflorez.com/tarot_decks/" target="_blank" rel="noopener noreferrer">
-                <button class="send-button" data-i18n="liveWebsite">Live-Website ansehen </button>
-              </a>
             </div>
 
             <div class="right" id="responsive-sketch">
@@ -260,8 +262,8 @@
 
             <div class="right" id="center-services">
               <div class="card-content-flex">
-                <h2 class="title" data-i18n="tarotTitle1">PROJEKTÜBERBLICK</h2>
-                <p class="text-new" data-i18n="tarotContent1">
+                <h2 class="title" id="kunden-light" data-i18n="tarotTitle1">PROJEKTÜBERBLICK</h2>
+                <p class="text-new" id="low-kunden-light" data-i18n="tarotContent1">
                   Eine vollständig individuell entwickelte interaktive Tarot-Web-App, die ich allein umgesetzt habe —
                   vom
                   Konzept bis zum Deployment. Nutzer wählen aus sechs einzigartigen Decks mit jeweils eigener visueller
@@ -288,8 +290,8 @@
 
             <div class="right" id="center-services">
               <div class="card-content-flex">
-                <h2 class="title" data-i18n="tarotTitle2">TECH-STACK & ARCHITEKTUR</h2>
-                <p class="text-new" data-i18n="tarotContent2">
+                <h2 class="title" id="kunden-light" data-i18n="tarotTitle2">TECH-STACK & ARCHITEKTUR</h2>
+                <p class="text-new" id="low-kunden-light" data-i18n="tarotContent2">
                   Ich habe jede Ebene eigenständig konzipiert und entwickelt:
                   das Frontend in reinem HTML, CSS und JavaScript, mit einem serverlosen Backend, das auf Vercel deployt
                   ist. Die Internationalisierung wird über ein eigens entwickeltes Übersetzungssystem umgesetzt, und die
@@ -317,8 +319,8 @@
 
             <div class="right" id="center-services">
               <div class="card-content-flex">
-                <h2 class="title" data-i18n="tarotTitle3">KI-INTEGRATION & SICHERHEIT</h2>
-                <p class="text-new" data-i18n="tarotContent3">
+                <h2 class="title" id="kunden-light" data-i18n="tarotTitle3">KI-INTEGRATION & SICHERHEIT</h2>
+                <p class="text-new" id="low-kunden-light" data-i18n="tarotContent3">
                   Die KI-Integration verbindet sich über eine geschützte serverlose Funktion mit OpenAIs GPT-4.1-mini.
                   Zu
                   den Sicherheitsmaßnahmen gehören eine Allowlist für zulässige Origins, Rate Limiting pro IP sowie das
@@ -345,8 +347,8 @@
 
             <div class="right" id="center-services">
               <div class="card-content-flex">
-                <h2 class="title" data-i18n="tarotTitle4">ART DIRECTION & KARTENDESIGN</h2>
-                <p class="text-new" data-i18n="tarotContent4">
+                <h2 class="title" id="kunden-light" data-i18n="tarotTitle4">ART DIRECTION & KARTENDESIGN</h2>
+                <p class="text-new" id="low-kunden-light" data-i18n="tarotContent4">
                   Jedes der acht thematischen Decks — darunter Barock, Surrealismus, Dadaismus, Expressionismus,
                   biomechanischer Stil, Mittelalter und weitere — umfasst 22 KI-generierte Karten der Großen Arkana, die
                   mithilfe stilgesteuerter Prompts erstellt wurden. Ich habe die visuelle Richtung jedes Decks
@@ -375,8 +377,8 @@
 
             <div class="right" id="center-services">
               <div class="card-content-flex">
-                <h2 class="title" data-i18n="tarotTitle5">UI- & INTERAKTIONSDESIGN</h2>
-                <p class="text-new" data-i18n="tarotContent5">
+                <h2 class="title" id="kunden-light" data-i18n="tarotTitle5">UI- & INTERAKTIONSDESIGN</h2>
+                <p class="text-new" id="low-kunden-light" data-i18n="tarotContent5">
                   Die Karteninteraktion nutzt eine CSS-3D-Flip-Animation, die mit perspective und transform-style:
                   preserve-3d umgesetzt wurde. Die Deck-Galerie enthält bildbasierte Karussells, die mit JavaScript
                   gesteuert werden. Jedes Deck besitzt ein eigenes CSS-Theme mit deckspezifischen Overrides, die
@@ -402,8 +404,8 @@
 
             <div class="right" id="center-services">
               <div class="card-content-flex">
-                <h2 class="title" data-i18n="tarotTitle6">ROADMAP & PRODUKTVISION</h2>
-                <p class="text-new" data-i18n="tarotContent6">
+                <h2 class="title" id="kunden-light" data-i18n="tarotTitle6">ROADMAP & PRODUKTVISION</h2>
+                <p class="text-new" id="low-kunden-light" data-i18n="tarotContent6">
                   Das Projekt ist live, wird aktiv weiterentwickelt und ist aktuell auf Monetarisierung, Nutzerkonten
                   und
                   eine eigene Domain ausgerichtet. Es zeigt Full-Stack-Verantwortung, UX-Gespür, KI-Integration und die
