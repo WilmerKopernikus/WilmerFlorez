@@ -26,7 +26,7 @@ const languagesContent = {
     onlineShops: "ONLINE-SHOPS",
     onlineShopsMobile: "ONLINE<br>SHOPS",
 
-    indexSubtitle: `Willkommen zu meinem Portfolio`,
+    indexSubtitle: `Willkommen auf meiner Portfolio-Website`,
     clickToStart: `Klicken, um zu starten`,
     homeButton: `Projekt starten`,
 
