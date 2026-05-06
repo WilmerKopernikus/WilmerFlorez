@@ -117,7 +117,7 @@ const languagesContent = {
 
     //Creative Coding
     creativeCodingTitle: "CREATIVE CODING",
-    creativeCodingSubtitle: "EIN TREFFPUNKT ZWISCHEN KUNST UND PROGRAMMIEREN",
+    creativeCodingSubtitle: "EINE BEGEGNUNG ZWISCHEN KUNST UND PROGRAMMIEREN",
     polygonFieldTitle: "ERWEITERNDES POLYGONFELD",
     polygonFieldText: "Ein interaktives, generatives System, in dem Benutzerklicks polygonale Emitter erzeugen, die sich mit der Zeit radial ausbreiten. Jeder Emitter erzeugt kontinuierlich wachsende, regelmäßige Polygone mit dynamischer Seitenzahl, während die Farboszillationen durch trigonometrische Funktionen gesteuert werden. Der halbtransparente Hintergrund erzeugt Bewegungsspuren, wodurch eine geschichtete, wellenartige Ausbreitung geometrischer Formen entsteht.",
     polygonFieldInstructions: "Anleitung: Klicke, um Formen hinzuzufügen; mit den Pfeiltasten nach oben/unten änderst du die Anzahl der Seiten. Mit der Leertaste löschst du die Arbeitsfläche.",
