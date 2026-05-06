@@ -73,8 +73,9 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", () => {
   const imageContainers = document.querySelectorAll(".image-transition");
   const infoButtons = document.querySelectorAll(".card .send-button");
+  const animatedInfoButtons = Array.from(infoButtons).filter((button) => !button.closest(".contact-form"));
 
-  infoButtons.forEach((button) => button.classList.add("scroll-fade"));
+  animatedInfoButtons.forEach((button) => button.classList.add("scroll-fade"));
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -104,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   );
 
-  infoButtons.forEach((button) => buttonObserver.observe(button));
+  animatedInfoButtons.forEach((button) => buttonObserver.observe(button));
 });
 
 

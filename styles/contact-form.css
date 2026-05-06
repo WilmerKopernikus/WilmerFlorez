@@ -73,6 +73,12 @@ textarea {
   max-width: 100%;
 }
 
+.contact-form .send-button.scroll-fade {
+  opacity: 1;
+  transform: none;
+  transition: box-shadow 0.3s ease;
+}
+
 @media (max-width: 768px) {
   .contact-form {
     width: 100%;
@@ -94,8 +100,8 @@ textarea {
   }
 
   .send-button {
-    align-self: stretch;
-    width: 100%;
+    align-self: center;
+    width: 60%;
   }
 
   #button-cases {
