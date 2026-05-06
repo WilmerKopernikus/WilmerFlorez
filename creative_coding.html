@@ -27,7 +27,7 @@
   <title>Projekte | Wilmer Florez - Webentwickler & Designer</title>
 
   <script defer src="scripts/p5.min.js"></script>
-  <script defer src="scripts/sketch_12.js"></script>
+  <script defer src="scripts/sketch_12.min.js"></script>
 
   <link rel="stylesheet" href="styles/header_test.min.css">
   <link rel="stylesheet" href="styles/cards.css">
@@ -94,11 +94,9 @@
             <div class="left" id="center-services">
               <h2 class="title" id="kunden-light" data-i18n="polygonFieldTitle">ERWEITERNDES POLYGONFELD</h2>
               <p class="text-new" id="kunden-light" data-i18n="polygonFieldText">
-                Ein interaktives, generatives System, in dem Benutzerklicks polygonale Emitter erzeugen, die sich mit
-                der Zeit radial ausbreiten. Jeder Emitter erzeugt kontinuierlich wachsende, regelmäßige Polygone mit
-                dynamischer Seitenzahl, während die Farboszillationen durch trigonometrische Funktionen gesteuert
-                werden. Der halbtransparente Hintergrund erzeugt Bewegungsspuren, wodurch eine geschichtete,
-                wellenartige Ausbreitung geometrischer Formen entsteht.
+                Hier dokumentiere ich meine Lernerfahrungen, Projekte und Fragen, die ich auf meinem Weg als Entwickler
+                stelle - von UI-Entscheidungen bis hin zu Backend-Herausforderungen. Ein Raum für Experimente, Ideen und
+                Reflexionen - wo kreatives Programmieren auf praktische Webentwicklung trifft.
               </p>
             </div>
 
@@ -143,7 +141,7 @@
 
 
 
-    <!--
+        <!--
         <div class="card card-shared" id="card2-creative">
           <div class="card-body" id="cases">
 
@@ -334,70 +332,70 @@
           </div>
         </div>
 -->
-    <div class="card card-shared" id="card3-creative">
-      <contact-shell-desktop></contact-shell-desktop>
+        <div class="card card-shared" id="card3-creative">
+          <contact-shell-desktop></contact-shell-desktop>
+        </div>
+
+        <div class="card card-shared" id="card4-creative">
+          <impressum-shell-desktop></impressum-shell-desktop>
+        </div>
+
+      </div>
     </div>
 
-    <div class="card card-shared" id="card4-creative">
-      <impressum-shell-desktop></impressum-shell-desktop>
-    </div>
-
-  </div>
-  </div>
 
 
 
+    <div class="cards-mobile" id='creative-cards-container'>
+      <div class="container" id="cards">
 
-  <div class="cards-mobile" id='creative-cards-container'>
-    <div class="container" id="cards">
+        <div class="card card-shared" id="card1-creative">
+          <div class="card-body" id="contact-proportion-text">
 
-      <div class="card card-shared" id="card1-creative">
-        <div class="card-body" id="contact-proportion-text">
+            <div class="left" id="center-services-mobile"></div>
 
-          <div class="left" id="center-services-mobile"></div>
+            <div class="right" id="center-services">
+              <div class="card-content-flex">
 
-          <div class="right" id="center-services">
-            <div class="card-content-flex">
-
-              <h2 class="title" id="kunden-light" data-i18n="">EXPANDING POLYGON FIELD</h2>
-              <p class="text-new" id="kunden-light" data-i18n="">
-                <strong>Instructions:</strong> Click to add shapes; up/down arrows change the number of sides space
-                will
-                clear the canvas
-              </p><br>
-              <p class="text-new" id="kunden-light" data-i18n="">An interactive generative system where user clicks
-                spawn polygonal emitters
-                that expand radially over time. Each emitter produces continuously growing regular polygons with a
-                dynamic number of sides, while color oscillations are driven by trigonometric functions. The
-                semi-transparent background creates motion trails, resulting in a layered wave-like propagation of
-                geometric forms.</p>
-
+                <h2 class="title" id="kunden-light" data-i18n="">EXPANDING POLYGON FIELD</h2>
+                <p class="text-new" id="kunden-light" data-i18n="">
+                  <strong>Instructions:</strong> Click to add shapes; up/down arrows change the number of sides space
+                  will
+                  clear the canvas
+                </p><br>
+                <p class="text-new" id="kunden-light" data-i18n="">An interactive generative system where user clicks
+                  spawn polygonal emitters
+                  that expand radially over time. Each emitter produces continuously growing regular polygons with a
+                  dynamic number of sides, while color oscillations are driven by trigonometric functions. The
+                  semi-transparent background creates motion trails, resulting in a layered wave-like propagation of
+                  geometric forms.</p>
 
 
-              <a href="creative-sketch.html?sketch=expanding-polygon-field" rel="noopener noreferrer">
-                <div class="image-mobile">
-                  <img src="imagenes/creative_coding/expanding_polygon_field.png" alt="Banderas Nila Lopez Website"
-                    class="white-shadow">
-                </div>
-              </a>
+
+                <a href="creative-sketch.html?sketch=expanding-polygon-field" rel="noopener noreferrer">
+                  <div class="image-mobile">
+                    <img src="imagenes/creative_coding/expanding_polygon_field.png" alt="Banderas Nila Lopez Website"
+                      class="white-shadow">
+                  </div>
+                </a>
+
+              </div>
 
             </div>
-
           </div>
         </div>
+
+
+
+        <div id="card2-creative" class="card card-shared">
+          <contact-shell-mobile></contact-shell-mobile>
+        </div>
+        <div id="card3-creative" class="card card-shared">
+          <impressum-shell-mobile></impressum-shell-mobile>
+        </div>
+
       </div>
-
-
-
-      <div id="card2-creative" class="card card-shared">
-        <contact-shell-mobile></contact-shell-mobile>
-      </div>
-      <div id="card3-creative" class="card card-shared">
-        <impressum-shell-mobile></impressum-shell-mobile>
-      </div>
-
     </div>
-  </div>
 
 
   </div>

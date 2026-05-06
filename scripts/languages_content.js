@@ -222,12 +222,17 @@ const languagesContent = {
     stopTitle4: "SPENDENSYSTEM UND WIRKUNG",
     stopContent4: "Ein wichtiger Bestandteil des Projekts ist das Spendensystem, das Unterstützung für Besucher zugänglicher und verständlicher macht. Die Website hilft zu verdeutlichen, wie Beiträge mit realer Wirkung verbunden sind, insbesondere im Hinblick auf Landwirte und Gemeinschaften, die von Wüstenbildung betroffen sind.",
 
+    //About Me
+    UeberMich: "ÜBER MICH",
+    aboutSubtitle: "GEDANKEN UND EXPERIMENTE AUS DEM WEB-BAU",
+    blogText: "Hier dokumentiere ich meine Lernerfahrungen, Projekte und Fragen, die ich auf meinem Weg als Entwickler stelle - von UI-Entscheidungen bis hin zu Backend-Herausforderungen. Ein Raum für Experimente, Ideen und Reflexionen – wo kreatives Programmieren auf praktische Webentwicklung trifft.",
+
     //Kontakt
     heroTitle: 'KONTAKT',
     chooseUsTitle: "ARBEITEN WIR ZUSAMMEN?",
     chooseUsText: "Sind Sie auf der Suche nach einem engagierten Webentwickler für Ihr Team oder Ihr nächstes Projekt?<br><br>Wenn Sie Unterstützung für Ihr Projekt benötigen oder jemanden suchen, der sich engagiert in neue Aufgaben einarbeitet, freue ich mich über eine Kontaktaufnahme. Gerne bespreche ich mit Ihnen, wie ich Ihr Team und Ihre Ziele bestmöglich unterstützen kann.",
     impressumTitle: 'IMPRESSUM',
-    impressumText: "Gesetzliche Vertretung: Wilmer Aderbert Florez Lopez <br>Calle 75 # 58-51 – 111211 Bogotá, Kolumbien<br>wilmerkopernikus@gmail.com<br>Registriert und rechtlich vertreten in Bogotá, Kolumbien.<br>Umsatzsteuer (MwSt) ist auf internationale Transaktionen nicht anwendbar.",
+    impressumText: "Gesetzliche Vertretung: Wilmer Aderbert Florez Lopez <br>Calle 75 # 58-51 - 111211 Bogotá, Kolumbien<br>wilmerkopernikus@gmail.com<br>Registriert und rechtlich vertreten in Bogotá, Kolumbien.<br>Umsatzsteuer (MwSt) ist auf internationale Transaktionen nicht anwendbar.",
     formTitle: 'KONTAKTIEREN SIE MICH!',
     formNameLabel: 'Ihr Name:',
     formEmailLabel: 'Ihre E-Mail:',
@@ -454,6 +459,11 @@ const languagesContent = {
     stopContent3: "The project uses WordPress and Kadence, with HTML, CSS, and JavaScript for custom adjustments where needed. This combination allows flexible content management and practical front-end improvements, including layout refinement, navigation, responsive design, and better presentation of pages and blog posts.",
     stopTitle4: "DONATION SYSTEM AND IMPACT",
     stopContent4: "An important part of the project is the donation system, designed to make support more accessible and understandable for visitors. The website helps explain how contributions connect to real-world impact, especially for farmers and communities affected by desertification.",
+
+    //About Me
+    UeberMich: "ABOUT ME",
+    aboutSubtitle: "THOUGHTS AND EXPERIMENTS FROM BUILDING ON THE WEB",
+    blogText: "This is where I document what I’m learning, building, and questioning as I grow as a developer — from UI decisions to backend challenges. A space for experiments, ideas, and reflections — where creative coding meets practical web development.",
 
     //Kontakt
     heroTitle: 'CONTACT',
@@ -688,6 +698,11 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     stopTitle4: "SISTEMA DE DONACIONES E IMPACTO",
     stopContent4: "Una parte importante del proyecto es el sistema de donaciones, pensado para hacer el apoyo más accesible y comprensible para los visitantes. El sitio ayuda a explicar cómo las contribuciones se conectan con un impacto real, especialmente en relación con agricultores y comunidades afectadas por la desertificación.",
 
+    //About Me
+    UeberMich: "SOBRE MÍ",
+    aboutSubtitle: "REFLEXIONES Y EXPERIMENTOS SOBRE LA CREACIÓN DE PROYECTOS WEB",
+    blogText: "Aquí documento lo que aprendo, creo y cuestiono a medida que crezco como desarrollador, desde decisiones de interfaz de usuario hasta desafíos de backend. Un espacio para experimentos, ideas y reflexiones, donde la programación creativa se une al desarrollo web práctico.",
+
     //Kontakt
     heroTitle: "CONTACTO",
     chooseUsTitle: "¡TRABAJEMOS JUNTOS!",
@@ -776,6 +791,7 @@ function animateSubtitleTypewriter(selector, textKey) {
 function animateIndexSubtitleTypewriter() {
   animateSubtitleTypewriter('[data-i18n="indexSubtitle"]', 'indexSubtitle');
   animateSubtitleTypewriter('[data-i18n="creativeCodingSubtitle"]', 'creativeCodingSubtitle');
+  animateSubtitleTypewriter('[data-i18n="aboutSubtitle"]', 'aboutSubtitle');
 }
 
 function applyLanguage(lang) {
