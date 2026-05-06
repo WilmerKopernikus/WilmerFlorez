@@ -353,7 +353,7 @@ const languagesContent = {
 
     //Creative Coding
     creativeCodingTitle: "CREATIVE CODING",
-    creativeCodingSubtitle: "AN MEETING POINT BETWEEN ART AND PROGRAMMING",
+    creativeCodingSubtitle: "A MEETING POINT BETWEEN ART AND PROGRAMMING",
     polygonFieldTitle: "EXPANDING POLYGON FIELD",
     polygonFieldText: "An interactive generative system where user clicks spawn polygonal emitters that expand radially over time. Each emitter produces continuously growing regular polygons with a dynamic number of sides, while color oscillations are driven by trigonometric functions. The semi-transparent background creates motion trails, resulting in a layered wave-like propagation of geometric forms.",
     polygonFieldInstructions: "",

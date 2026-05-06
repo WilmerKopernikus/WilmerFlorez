@@ -12,7 +12,7 @@ const STATIC_ASSETS = [
   '/index.html',
   '/projekte.html',
   '/kontakt.html',
-'/styles/cards_intro.css',
+  '/styles/cards_intro.css',
   '/styles/header_test.min.css',
   '/styles/cards.css',
   '/styles/images.css',
