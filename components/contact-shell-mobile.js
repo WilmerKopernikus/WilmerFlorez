@@ -7,9 +7,8 @@ class ContactShellMobile extends HTMLElement {
             <div class="left" id="center-services">
               <div class="card-content-flex">
                 <h2 class="title let-there-be-light" data-i18n="chooseUsTitle">ARBEITEN WIR ZUSAMMEN?</h2>
-                <p class="text-new low-light" data-i18n="">
-                  Sind Sie auf der Suche nach einem engagierten Webentwickler für
-                  Ihr Team oder Ihr nächstes Projekt? Kontaktieren Sie mich gerne, um Ihre Anforderungen zu besprechen.
+                <p class="text-new low-light" data-i18n="chooseUsText">
+                  Wollen Sie sich von Ihre Konkurrenz abheben? Haben Sie bereits konkrete Vorstellungen oder wollen Sie zusammen mit uns erste Ideen entwickeln? Kontaktieren Sie uns noch heute um Ihre digitale Zukunft in Bewegung zu setzen.
                 </p><br>
                 <form class="contact-form" name="contact" method="POST" data-netlify="true">
                   <input type="hidden" name="form-name" value="contact">

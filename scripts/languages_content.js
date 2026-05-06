@@ -230,7 +230,7 @@ const languagesContent = {
     //Kontakt
     heroTitle: 'KONTAKT',
     chooseUsTitle: "ARBEITEN WIR ZUSAMMEN?",
-    chooseUsText: "Sind Sie auf der Suche nach einem engagierten Webentwickler für Ihr Team oder Ihr nächstes Projekt?<br><br>Wenn Sie Unterstützung für Ihr Projekt benötigen oder jemanden suchen, der sich engagiert in neue Aufgaben einarbeitet, freue ich mich über eine Kontaktaufnahme. Gerne bespreche ich mit Ihnen, wie ich Ihr Team und Ihre Ziele bestmöglich unterstützen kann.",
+    chooseUsText: "Wollen Sie sich von Ihre Konkurrenz abheben? Haben Sie bereits konkrete Vorstellungen oder wollen Sie zusammen mit uns erste Ideen entwickeln? Kontaktieren Sie uns noch heute um Ihre digitale Zukunft in Bewegung zu setzen.",
     impressumTitle: 'IMPRESSUM',
     impressumText: "Gesetzliche Vertretung: Wilmer Aderbert Florez Lopez <br>Calle 75 # 58-51 - 111211 Bogotá, Kolumbien<br>wilmerkopernikus@gmail.com<br>Registriert und rechtlich vertreten in Bogotá, Kolumbien.<br>Umsatzsteuer (MwSt) ist auf internationale Transaktionen nicht anwendbar.",
     formTitle: 'KONTAKTIEREN SIE MICH!',
@@ -468,7 +468,7 @@ const languagesContent = {
     //Kontakt
     heroTitle: 'CONTACT',
     chooseUsTitle: "LET'S WORK TOGETHER!",
-    chooseUsText: "Are you looking for a dedicated web developer for your team or your next project?<br><br>If you need support for your project or are looking for someone who quickly and proactively takes on new tasks, I would be happy to hear from you, and would gladly discuss how I can best support your team and help you achieve your goals.",
+    chooseUsText: "Do you want to stand out from your competition? Do you already have concrete ideas, or would you like to develop the first concepts together with us? Contact us today to set your digital future in motion.",
     impressumTitle: 'LEGAL NOTICE',
     impressumText: "Legal representative: Wilmer Aderbert Florez Lopez <br>Calle 75 # 58-51 – 111211 Bogotá, Colombia<br>wilmerkopernikus@gmail.com<br>Registered and legally represented in Bogotá, Colombia.<br>VAT is not applicable to international transactions.",
     formTitle: 'CONTACT ME',
@@ -706,7 +706,7 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     //Kontakt
     heroTitle: "CONTACTO",
     chooseUsTitle: "¡TRABAJEMOS JUNTOS!",
-    chooseUsText: "¿Buscas un desarrollador web dedicado para tu equipo o tu próximo proyecto?<br><br>Si necesitas apoyo para tu proyecto o estás buscando a alguien que asuma nuevas tareas de manera rápida y proactiva, estaré encantado de saber de ti y discutir cómo puedo apoyar mejor a tu equipo y ayudarte a alcanzar tus objetivos.",
+    chooseUsText: "¿Quieres destacar entre la competencia? ¿Ya tienes ideas concretas o te gustaría desarrollar los primeros conceptos con nosotros? Contáctanos hoy mismo para impulsar tu futuro digital.",
     impressumTitle: "AVISO LEGAL",
     impressumText: "Representante legal: Wilmer Aderbert Florez Lopez <br>Calle 75 # 58-51 – 111211 Bogotá, Colombia<br>wilmerkopernikus@gmail.com<br>Registrado y legalmente representado en Bogotá, Colombia.<br>El IVA no es aplicable a las transacciones internacionales.",
     formTitle: "CONTÁCTAME",
