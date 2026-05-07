@@ -26,6 +26,7 @@
   <link rel="manifest" href="/manifest.json">
   <title>Wilmer Florez | Webentwickler, Web Developer, Desarrollador Web</title>
   <script defer src="scripts/p5.min.js"></script>
+  <script defer src="scripts/noise-field-painting.js" data-loader-factory></script>
   <script defer src="scripts/sketch_12.min.js"></script>
 
   <link rel="stylesheet" href="styles/cards_intro.min.css">
@@ -78,8 +79,8 @@
             color: #fff;
             font-size: 20px;
         ">
-    <img src="imagenes/videos/cubo.gif" alt="Loading..." style="width: 250px; height: auto; margin-bottom: 20px;">
-    <img src="imagenes/loading.webp" style="width: 250px; height: auto; margin-bottom: 20px;">
+    <div id="loadingSketch" class="loading-sketch-canvas" aria-hidden="true"></div>
+    <p class="loading-word">Loading</p>
   </div>
 
   <div class="container">
@@ -680,6 +681,7 @@
   </div>
 
   <script src="scripts/script.min.js"></script>
+  <script src="scripts/index-noise-loader.js"></script>
   <script>
     (function () {
       const MOBILE_BREAKPOINT = 1024;
