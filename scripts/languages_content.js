@@ -115,6 +115,9 @@ const languagesContent = {
     stopdesertUebersicht: "<strong>Übersicht:</strong><br />Stop the Desert ist eine NGO, die die Wüstenbildung weltweit bekämpft. Das Projekt umfasst die Verwaltung der WordPress-Website mit Kadence und die Implementierung eines Spendensystems, das Landwirte direkt unterstützt.",
     mehrInformation: "Mehr Informationen",
 
+    //Meine Projekte
+    meineProjekte: "MEINE PROJEKTE",
+
     //Creative Coding
     creativeCodingTitle: "CREATIVE CODING",
     creativeCodingSubtitle: "EINE BEGEGNUNG ZWISCHEN KUNST UND PROGRAMMIEREN",
@@ -351,8 +354,11 @@ const languagesContent = {
     mehrInformation: "More Information",
     vollstaendigeFallstudie: "View Full Case Study",
 
-    //Creative Coding
-    creativeCodingTitle: "CREATIVE CODING",
+    //My Projects
+    meineProjekte: "MY PROJECTS",
+
+      //Creative Coding
+      creativeCodingTitle: "CREATIVE CODING",
     creativeCodingSubtitle: "A MEETING POINT BETWEEN ART AND PROGRAMMING",
     polygonFieldTitle: "EXPANDING POLYGON FIELD",
     polygonFieldText: "An interactive generative system where user clicks spawn polygonal emitters that expand radially over time. Each emitter produces continuously growing regular polygons with a dynamic number of sides, while color oscillations are driven by trigonometric functions. The semi-transparent background creates motion trails, resulting in a layered wave-like propagation of geometric forms.",
@@ -468,7 +474,7 @@ const languagesContent = {
     //Kontakt
     heroTitle: 'CONTACT',
     chooseUsTitle: "LET'S WORK TOGETHER!",
-    chooseUsText: "Do you want to stand out from your competition? Do you already have concrete ideas, or would you like to develop the first concepts together with us? Contact us today to set your digital future in motion.",
+    chooseUsText: "Do you want to stand out from your competition? Do you already have concrete ideas, or would you like to develop the first concepts together with me? Contact me today to set your digital future in motion.",
     impressumTitle: 'LEGAL NOTICE',
     impressumText: "Legal representative: Wilmer Aderbert Florez Lopez <br>Calle 75 # 58-51 – 111211 Bogotá, Colombia<br>wilmerkopernikus@gmail.com<br>Registered and legally represented in Bogotá, Colombia.<br>VAT is not applicable to international transactions.",
     formTitle: 'CONTACT ME',
@@ -590,6 +596,9 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     mehrInformation: 'Más Información',
     vollstaendigeFallstudie: 'Ver Caso de Estudio Completo',
 
+    //My Projects
+    meineProjekte: "MIS PROYECTOS",
+
     //Creative Coding
     creativeCodingTitle: "PROGRAMACIÓN CREATIVA",
     creativeCodingSubtitle: "UN PUNTO DE ENCUENTRO ENTRE ARTE Y PROGRAMACIÓN",
@@ -706,7 +715,7 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     //Kontakt
     heroTitle: "CONTACTO",
     chooseUsTitle: "¡TRABAJEMOS JUNTOS!",
-    chooseUsText: "¿Quieres destacar entre la competencia? ¿Ya tienes ideas concretas o te gustaría desarrollar los primeros conceptos con nosotros? Contáctanos hoy mismo para impulsar tu futuro digital.",
+    chooseUsText: "¿Quieres destacar entre la competencia? ¿Ya tienes ideas concretas o te gustaría desarrollar los primeros conceptos conmigo? Contáctame hoy mismo para impulsar tu futuro digital.",
     impressumTitle: "AVISO LEGAL",
     impressumText: "Representante legal: Wilmer Aderbert Florez Lopez <br>Calle 75 # 58-51 – 111211 Bogotá, Colombia<br>wilmerkopernikus@gmail.com<br>Registrado y legalmente representado en Bogotá, Colombia.<br>El IVA no es aplicable a las transacciones internacionales.",
     formTitle: "CONTÁCTAME",
