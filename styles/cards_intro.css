@@ -83,3 +83,15 @@
     grid-template-rows: 50% 50%;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .intro-card > a {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro-card > a > .send-button {
+    width: 100%;
+  }
+}
