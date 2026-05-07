@@ -14,7 +14,7 @@ const STATIC_ASSETS = [
   '/kontakt.html',
   '/styles/cards_intro.css',
   '/styles/header_test.min.css',
-  '/styles/cards.css',
+  '/styles/cards.min.css',
   '/styles/images.css',
   '/styles/global-text.css',
   '/scripts/p5.js',

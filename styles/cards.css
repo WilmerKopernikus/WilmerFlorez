@@ -269,10 +269,6 @@
   #contact-proportion-text {
     grid-template-rows: 0% 100%;
   }
-
-  #cases {
-    grid-template-rows: 30% 70%;
-  }
 }
 
 @media (max-width: 750px) {
@@ -286,14 +282,6 @@
 
   .card {
     top: 50px;
-  }
-
-  #joblab-services {
-    grid-template-rows: 40% 60%;
-  }
-
-  #blancec-services {
-    grid-template-rows: 50% 50%;
   }
 }
 
@@ -333,21 +321,5 @@
   .card-content-flex > a {
     display: flex;
     justify-content: center;
-  }
-}
-
-@media (max-width: 415px) and (orientation: portrait) {
-  #cases {
-    grid-template-rows: 35% 65%;
-  }
-}
-
-@media (max-width: 380px) {
-  #blancec-services {
-    grid-template-rows: 50% 50%;
-  }
-
-  #cases {
-    grid-template-rows: 30% 70%;
   }
 }
