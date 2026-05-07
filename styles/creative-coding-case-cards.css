@@ -14,9 +14,7 @@
 #card1-creative-case {
   --index: 1;
   background: rgba(0, 0, 0, 0.371);
-  /* blanco translúcido, ajusta el color y la opacidad */
   backdrop-filter: blur(10px);
-  /* aplica el desenfoque */
   -webkit-backdrop-filter: blur(10px);
 }
 
@@ -28,5 +26,44 @@
 #card3-creative-case {
   --index: 3;
   background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
+}
+
+/* Mobile-specific styles for compact content layout */
+@media screen and (max-width: 821px) and (min-width: 431px) and (orientation: portrait) {
+  .cards-mobile #card1-creative-case .card-content-flex {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .cards-mobile #card1-creative-case .card-content-flex .title {
+    margin: 0;
+  }
+
+  .cards-mobile #card1-creative-case .card-content-flex .text-new {
+    margin: 0.5rem 0;
+  }
+
+  .cards-mobile #card1-creative-case .card-content-flex br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 431px) and (orientation: portrait) {
+  .cards-mobile #card1-creative-case .card-content-flex {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .cards-mobile #card1-creative-case .card-content-flex .title {
+    margin: 0;
+  }
+
+  .cards-mobile #card1-creative-case .card-content-flex .text-new {
+    margin: 0.5rem 0;
+  }
+
+  .cards-mobile #card1-creative-case .card-content-flex br {
+    display: none;
+  }
 }
 
