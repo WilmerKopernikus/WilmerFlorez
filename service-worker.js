@@ -16,7 +16,7 @@ const STATIC_ASSETS = [
   '/styles/header_test.min.css',
   '/styles/cards.min.css',
   '/styles/images.css',
-  '/styles/global-text.css',
+  '/styles/global-text.min.css',
   '/scripts/p5.js',
   '/scripts/sketch_12.js',
   '/scripts/languages_content.js',
