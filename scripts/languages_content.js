@@ -130,6 +130,9 @@ const languagesContent = {
     exploreButton: "Dieses Projekt erkunden",
     blackHoleSunTitle: "BLACK HOLE SUN",
     blackHoleSunText: "Dieses Shader-Experiment erzeugt einen sich permanent wandelnden abstrakten Tunnel aus Raymarching, Polartransformationen und fraktalen Noise-Strukturen. Leuchtende violette und magentafarbene Formen entfalten sich wie ein organischer kosmischer Strudel. Durch rekursive Verzerrungen und zeitbasierte Animation entsteht ein hypnotischer Flow zwischen digitaler Architektur, generativer Kunst und audiovisueller Simulation.",
+    kaleidoscopeShaderTitle: "INTERAKTIVES KALEIDOSKOP",
+    kaleidoscopeShaderInstructions: "Anleitung: Klicke und ziehe, um die Symmetrie und Farben zu beeinflussen.",
+    kaleidoscopeShaderText: "Ein shaderbasiertes Experiment, das einen kaleidoskopischen visuellen Effekt mithilfe von Fragment-Shadern erzeugt. Das Sketch manipuliert Farben und Formen in Echtzeit und erzeugt symmetrische Muster, die sich dynamisch entwickeln. Benutzerinteraktionen können die Symmetrie und Farbpalette beeinflussen, was zu einer faszinierenden, sich ständig verändernden visuellen Erfahrung führt.",
 
     //Joblab
     joblabTitle1: "PROJEKTÜBERSICHT",
@@ -372,6 +375,10 @@ const languagesContent = {
     exploreButton: "Explore this project",
     blackHoleSunTitle: "BLACK HOLE SUN",
     blackHoleSunText: "This shader-based experiment generates a continuously evolving abstract tunnel formed through raymarching, polar coordinate distortion, and layered fractal noise. Vibrant magenta and violet structures emerge from recursive sine displacements, creating the sensation of traveling through an organic cosmic vortex. Temporal animation and procedural geometry produce fluid, hypnotic motion with glowing, high-contrast textures.",
+    kaleidoscopeShaderTitle: "INTERACTIVE KALEIDOSCOPE ",
+    kaleidoscopeShaderInstructions: "Instructions: Click and drag to influence the symmetry and colors.",
+    kaleidoscopeShaderText: "A shader-based experiment that creates a kaleidoscopic visual effect using fragment shaders. The sketch manipulates colors and shapes in real-time, producing symmetrical patterns that evolve dynamically. User interactions can influence the symmetry and color palette, resulting in a mesmerizing, ever-changing visual experience.",
+
 
     //Joblab
     joblabTitle1: "PROJECT OVERVIEW",
@@ -617,6 +624,10 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     exploreButton: "Explorar este proyecto",
     blackHoleSunTitle: "BLACK HOLE SUN",
     blackHoleSunText: "Este experimento visual basado en shaders genera un túnel abstracto en constante transformación mediante raymarching, coordenadas polares y capas de ruido fractal. Formas luminosas en tonos violetas y magentas emergen como una estructura orgánica y cósmica. Las distorsiones recursivas y la animación procedural crean una sensación hipnótica de movimiento entre arte generativo, simulación digital y paisaje audiovisual.",
+    kaleidoscopeShaderTitle: "KALEIDOSCOPIO INTERACTIVO",
+    kaleidoscopeShaderInstructions: "Instrucciones: Haga clic y arrastre para influir en la simetría y los colores.",
+    kaleidoscopeShaderText: "Un experimento basado en shaders que crea un efecto visual caleidoscópico utilizando fragment shaders. El sketch manipula colores y formas en tiempo real, produciendo patrones simétricos que evolucionan dinámicamente. Las interacciones del usuario pueden influir en la simetría y la paleta de colores, resultando en una experiencia visual hipnotizante y en constante cambio.",
+
 
       //Joblab
     joblabTitle1: 'RESUMEN DEL PROYECTO',

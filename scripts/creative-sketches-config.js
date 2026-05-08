@@ -31,48 +31,12 @@ const CREATIVE_SKETCHES = {
     description: 'This shader-based sketch generates a continuously evolving abstract tunnel formed through raymarching, polar coordinate distortion, and layered fractal noise. Vibrant magenta and violet structures emerge from recursive sine displacements, creating the sensation of traveling through an organic cosmic vortex. Temporal animation and procedural geometry produce fluid, hypnotic motion with glowing, high-contrast textures.',
     descriptionKey: 'blackHoleSunText'
   },
-  'minimalist-painting': {
-    title: 'MINIMALIST PAINTING GENERATOR',
-    script: 'scripts/minimalist_painting.js'
-  },
-  'mouse-shader': {
-    title: 'MOUSE SHADER',
-    script: 'scripts/mouse_shader.js'
-  },
-  'video-sculpture': {
-    title: 'VIDEO SCULPTURE',
-    script: 'scripts/video-sculpture.js'
-  },
-  'pixel-manipulation': {
-    title: 'PIXEL MANIPULATION',
-    script: 'scripts/pixel-manipulation.js'
-  },
-  'disc-function': {
-    title: 'disc() FUNCTION',
-    script: 'scripts/disc_function.js'
-  },
-  'making-shapes': {
-    title: 'SHAPE MAKER',
-    script: 'scripts/making-shapes.js'
-  },
-  'bouncing-balls': {
-    title: 'BOUNCING BALLS',
-    script: 'scripts/bouncing_balls.js'
-  },
-  'generative-painting': {
-    title: 'GENERATIVE PAINTING',
-    script: 'scripts/painting.js'
-  },
-  'reactive-particle-system': {
-    title: 'REACTIVE PARTICLE SYSTEM',
-    script: 'scripts/reactive.js'
-  },
-  'noise-driven-particle-field': {
-    title: 'NOISE DRIVEN PARTICLE FIELD',
-    script: 'scripts/reactive.js'
-  },
-  'trigonometric-box-field': {
-    title: 'TRIGONOMETRIC BOX FIELD',
-    script: 'scripts/trigonometric_box_field.js'
+  'kaleidoscope-shader': {
+    titleKey: 'kaleidoscopeShaderTitle',
+    script: 'scripts/kaleidoscopic_shader.js',
+    instructions: 'Click and drag to influence the symmetry and colors.',
+    instructionsKey: 'kaleidoscopeShaderInstructions',
+    description: 'A shader-based experiment that creates a kaleidoscopic visual effect using fragment shaders. The sketch manipulates colors and shapes in real-time, producing symmetrical patterns that evolve dynamically. User interactions can influence the symmetry and color palette, resulting in a mesmerizing, ever-changing visual experience.',
+    descriptionKey: 'kaleidoscopeShaderText'
   }
 };
