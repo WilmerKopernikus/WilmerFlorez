@@ -2,6 +2,7 @@ let myShader;
 let paletteIndex = 0;
 let shapeIndex = 0;
 let mouseStartX = 0;
+let mouseStartY = 0;
 let canvas;
 
 // Our vertex shader source as a string
@@ -394,10 +395,39 @@ void main() {
 function setup() {
   canvas = createCanvas(window.visualViewport.width, window.visualViewport.height, WEBGL);
   canvas.position(0, 0);
-  canvas.style('z-index', '-1'); // Ensures it stays behind content
+  canvas.style('z-index', '-1');
   canvas.style('position', 'fixed');
+  // pointer-events: none makes the canvas invisible to all touch/mouse events.
+  // p5.js registers touchmove listeners on the canvas that call preventDefault(),
+  // which blocks native scroll. By removing pointer-events, those listeners never fire.
+  canvas.style('pointer-events', 'none');
   myShader = createShader(vert, frag);
   noStroke();
+
+  // Handle swipe and tap on the document using passive listeners (never block scroll).
+  let touchStartX = 0;
+  let touchStartY = 0;
+
+  document.addEventListener('touchstart', function(e) {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+  }, { passive: true });
+
+  document.addEventListener('touchend', function(e) {
+    let dx = e.changedTouches[0].clientX - touchStartX;
+    let dy = e.changedTouches[0].clientY - touchStartY;
+    let isHorizontal = Math.abs(dx) > Math.abs(dy) + 20;
+
+    if (isHorizontal) {
+      if (dx > 30) {
+        shapeIndex = (shapeIndex + 1) % 9;
+      } else if (dx < -30) {
+        shapeIndex = (shapeIndex - 1 + 9) % 9;
+      }
+    } else if (Math.abs(dx) < 15 && Math.abs(dy) < 15) {
+      paletteIndex = (paletteIndex + 1) % 21;
+    }
+  }, { passive: true });
 }
 
 const shapeNames = ['Circle', 'Pentagon', 'Hexagon', 'Diamond', 'Triangle', 'Parallelogram', 'Octagon', 'Pentagram', 'Star'];
@@ -405,29 +435,23 @@ const paletteNames = ['Palette 1', 'Palette 2', 'Palette 3', 'Palette 4', 'Palet
 
 function mousePressed() {
   mouseStartX = mouseX;
-  return false;
+  mouseStartY = mouseY;
 }
 
 function mouseReleased() {
-  let dragDistance = mouseX - mouseStartX;
-  
-  // If dragged to the right by more than 30 pixels, it's a swipe
-  if (dragDistance > 30) {
-    shapeIndex = (shapeIndex + 1) % 9; // Switch to next shape
+  let dx = mouseX - mouseStartX;
+  let dy = mouseY - mouseStartY;
+  let isHorizontal = Math.abs(dx) > Math.abs(dy) + 20;
+
+  if (isHorizontal) {
+    if (dx > 30) {
+      shapeIndex = (shapeIndex + 1) % 9;
+    } else if (dx < -30) {
+      shapeIndex = (shapeIndex - 1 + 9) % 9;
+    }
+  } else if (Math.abs(dx) < 15 && Math.abs(dy) < 15) {
+    paletteIndex = (paletteIndex + 1) % 21;
   }
-  // If dragged to the left by more than 30 pixels, it's a swipe left
-  else if (dragDistance < -30) {
-    shapeIndex = (shapeIndex - 1 + 9) % 9; // Switch to previous shape
-  }
-  // If dragged to the left by more than 30 pixels, it's a swipe left
-  else if (dragDistance < -30) {
-    shapeIndex = (shapeIndex - 1 + 3) % 3; // Switch to previous shape
-  }
-  // If minimal movement (< 15 pixels), it's a click
-  else if (Math.abs(dragDistance) < 15) {
-    paletteIndex = (paletteIndex + 1) % 21; // Switch between 21 palettes
-  }
-  return false;
 }
 
 function draw() {
