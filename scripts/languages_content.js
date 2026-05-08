@@ -128,6 +128,8 @@ const languagesContent = {
     noiseFieldPaintingText: "Ein generatives Partikelsystem erzeugt Kreise aus einer rauschgetriebenen radialen Quelle und formt so ein organisches Strömungsfeld um die Mitte der Zeichenfläche. Jedes Partikel folgt den Perlin-Rauschrichtungen und wird mit der Zeit kleiner und schwächer. Durch Mausinteraktion werden neue Partikel erzeugt, wodurch sich geschichtete, sich entwickelnde Muster mit sanften Farbvariationen und fließender, dynamischer Bewegung entstehen.",
     noiseFieldPaintingInstructions: "Anleitung: Klicke, um Partikel zu erzeugen, oder halte die Maustaste gedrückt, um mit ihnen zu zeichnen.",
     exploreButton: "Dieses Projekt erkunden",
+    blackHoleSunTitle: "BLACK HOLE SUN",
+    blackHoleSunText: "Dieses Shader-Experiment erzeugt einen sich permanent wandelnden abstrakten Tunnel aus Raymarching, Polartransformationen und fraktalen Noise-Strukturen. Leuchtende violette und magentafarbene Formen entfalten sich wie ein organischer kosmischer Strudel. Durch rekursive Verzerrungen und zeitbasierte Animation entsteht ein hypnotischer Flow zwischen digitaler Architektur, generativer Kunst und audiovisueller Simulation.",
 
     //Joblab
     joblabTitle1: "PROJEKTÜBERSICHT",
@@ -368,6 +370,8 @@ const languagesContent = {
     noiseFieldPaintingText: "A generative particle system emits circles from a noise-driven radial source, creating an organic flow field around the canvas center. Each particle follows Perlin-noise directions, gradually shrinking and fading over time. Mouse interaction introduces new emitters, producing layered, evolving patterns with soft color variations and fluid, dynamic motion.",
     noiseFieldPaintingInstructions: "Instructions: Click to emit particles, or hold the mouse button to draw with them.",
     exploreButton: "Explore this project",
+    blackHoleSunTitle: "BLACK HOLE SUN",
+    blackHoleSunText: "This shader-based experiment generates a continuously evolving abstract tunnel formed through raymarching, polar coordinate distortion, and layered fractal noise. Vibrant magenta and violet structures emerge from recursive sine displacements, creating the sensation of traveling through an organic cosmic vortex. Temporal animation and procedural geometry produce fluid, hypnotic motion with glowing, high-contrast textures.",
 
     //Joblab
     joblabTitle1: "PROJECT OVERVIEW",
@@ -611,8 +615,10 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     noiseFieldPaintingText: "Un sistema generativo de partículas emite círculos desde una fuente radial impulsada por ruido, creando un campo de flujo orgánico alrededor del centro del lienzo. Cada partícula sigue las direcciones del ruido Perlin, disminuyendo y desvaneciéndose gradualmente con el tiempo. La interacción con el ratón introduce nuevos emisores, produciendo patrones en capas, en evolución, con suaves variaciones de color y movimiento fluido y dinámico.",
     noiseFieldPaintingInstructions: "Instrucciones: Haga clic para emitir partículas, o mantenga presionado el botón del mouse para dibujar con ellas.",
     exploreButton: "Explorar este proyecto",
+    blackHoleSunTitle: "BLACK HOLE SUN",
+    blackHoleSunText: "Este experimento visual basado en shaders genera un túnel abstracto en constante transformación mediante raymarching, coordenadas polares y capas de ruido fractal. Formas luminosas en tonos violetas y magentas emergen como una estructura orgánica y cósmica. Las distorsiones recursivas y la animación procedural crean una sensación hipnótica de movimiento entre arte generativo, simulación digital y paisaje audiovisual.",
 
-    //Joblab
+      //Joblab
     joblabTitle1: 'RESUMEN DEL PROYECTO',
     joblabContent1: 'Job Lab es un proyecto encargado por el DAAD (Servicio Alemán de Intercambio Académico), China, y desarrollado en estrecha colaboración con la Embajada de Alemania en Pekín y los Consulados Alemanes en Shanghái y Cantón. Su misión principal: informar a los estudiantes chinos del idioma alemán sobre las oportunidades del mercado laboral en Alemania, ofreciéndoles orientación práctica y recursos a través de una plataforma digital dedicada y eventos presenciales.',
     joblabTitle2: 'PARTES INTERESADAS CLAVE Y COLABORACIONES',

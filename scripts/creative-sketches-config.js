@@ -25,6 +25,12 @@ const CREATIVE_SKETCHES = {
     description: 'A generative particle system emits circles from a noise-driven radial source, creating an organic flow field around the canvas center. Each particle follows Perlin-noise directions, gradually shrinking and fading over time. Mouse interaction introduces new emitters, producing layered, evolving patterns with soft color variations and fluid, dynamic motion.',
     descriptionKey: 'noiseFieldPaintingText'
   },
+  'black-hole-sun': {
+    titleKey: 'blackHoleSunTitle',
+    script: 'scripts/black_hole_sun.js',
+    description: 'This shader-based sketch generates a continuously evolving abstract tunnel formed through raymarching, polar coordinate distortion, and layered fractal noise. Vibrant magenta and violet structures emerge from recursive sine displacements, creating the sensation of traveling through an organic cosmic vortex. Temporal animation and procedural geometry produce fluid, hypnotic motion with glowing, high-contrast textures.',
+    descriptionKey: 'blackHoleSunText'
+  },
   'minimalist-painting': {
     title: 'MINIMALIST PAINTING GENERATOR',
     script: 'scripts/minimalist_painting.js'
