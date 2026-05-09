@@ -19,6 +19,20 @@
       sketchScript.src = sketch.script;
       document.head.appendChild(sketchScript);
 
+      // --- Inject <link rel="preload"> hints for any declared images ---
+      if (sketch.preloadImages) {
+        sketch.preloadImages.forEach(function(src) {
+          var ext = src.split('.').pop().toLowerCase();
+          var typeMap = { jpg: 'image/jpeg', jpeg: 'image/jpeg', png: 'image/png', webp: 'image/webp' };
+          var link = document.createElement('link');
+          link.rel = 'preload';
+          link.as = 'image';
+          link.href = src;
+          if (typeMap[ext]) link.type = typeMap[ext];
+          document.head.appendChild(link);
+        });
+      }
+
       document.addEventListener('DOMContentLoaded', function () {
 
         // --- Populate card1-creative-case ---

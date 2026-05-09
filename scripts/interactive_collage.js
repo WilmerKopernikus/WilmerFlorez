@@ -7,13 +7,18 @@ let images = [];
 let currentImageIndex = 0;
 let canvas;
 
+const imageSrcs = [
+  "imagenes/collage/lips.jpg",
+  "imagenes/collage/statue.png",
+  "imagenes/collage/uroboros.png",
+  "imagenes/collage/Hercules.png",
+  "imagenes/collage/eclipse.jpg"
+];
+
 function preload() {
-  images.push(loadImage("imagenes/collage/lips.jpg"));
-  images.push(loadImage("imagenes/collage/statue.png"));
-  images.push(loadImage("imagenes/collage/uroboros.png"));
-  images.push(loadImage("imagenes/collage/Hercules.png"));
-  images.push(loadImage("imagenes/collage/eclipse.jpg"));
-  img = images[currentImageIndex];
+  // Only load the first image upfront — the rest load on demand
+  images[0] = loadImage(imageSrcs[0]);
+  img = images[0];
 }
 
 function setup() {
@@ -140,8 +145,15 @@ function toggleNoise() {
 }
 
 function changeImage() {
-  currentImageIndex = (currentImageIndex + 1) % images.length;
-  img = images[currentImageIndex];
+  currentImageIndex = (currentImageIndex + 1) % imageSrcs.length;
+  if (images[currentImageIndex]) {
+    img = images[currentImageIndex];
+  } else {
+    loadImage(imageSrcs[currentImageIndex], function(loaded) {
+      images[currentImageIndex] = loaded;
+      img = loaded;
+    });
+  }
 }
 
 function noiseDisplaceImage(sourceImg) {
