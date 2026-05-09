@@ -8,11 +8,11 @@ let currentImageIndex = 0;
 let canvas;
 
 const imageSrcs = [
-  "imagenes/collage/lips.jpg",
-  "imagenes/collage/statue.png",
-  "imagenes/collage/uroboros.png",
-  "imagenes/collage/Hercules.png",
-  "imagenes/collage/eclipse.jpg"
+  "imagenes/collage/lips.webp",
+  "imagenes/collage/statue.webp",
+  "imagenes/collage/uroboros.webp",
+  "imagenes/collage/Hercules.webp",
+  "imagenes/collage/eclipse.webp"
 ];
 
 function preload() {

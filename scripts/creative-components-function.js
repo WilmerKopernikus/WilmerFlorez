@@ -60,10 +60,16 @@
             + sketch.description + '</p>';
         }
 
-        var buttonsHtml = sketch.buttons ? '<div class="sketch-buttons">' + sketch.buttons + '</div>' : '';
+        var buttonsHtml = sketch.buttons || '';
 
         if (leftDiv) {
-          leftDiv.innerHTML = titleHtml + buttonsHtml;
+          leftDiv.innerHTML = titleHtml;
+        }
+
+        // Inject buttons into card1's dedicated container (bottom-left of the hero card)
+        var buttonsContainer = document.getElementById('sketch-buttons-container');
+        if (buttonsContainer && buttonsHtml) {
+          buttonsContainer.innerHTML = buttonsHtml;
         }
 
         if (rightDiv) {

@@ -1,4 +1,8 @@
 #creative-cards-container {
+  --cards: 6;
+}
+
+#creative-cards-container-desktop {
   --cards: 7;
 }
 
@@ -41,7 +45,7 @@
   background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(3, 13, 27));
 }
 
-#card7-creative {
+#card7-creative-desktop {
   --index: 7;
   background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(3, 13, 27));
 }
