@@ -9,13 +9,17 @@
         return;
       }
 
+      // --- Inject sketch script IMMEDIATELY ---
+      // Must happen here (not inside DOMContentLoaded) so the browser starts
+      // fetching it as early as possible. p5.min.js (deferred) registers a
+      // window.load listener; if the sketch script is only injected on
+      // DOMContentLoaded it may not finish loading before window.load fires,
+      // causing p5 to miss setup/draw/preload — especially on slow connections.
+      var sketchScript = document.createElement('script');
+      sketchScript.src = sketch.script;
+      document.head.appendChild(sketchScript);
+
       document.addEventListener('DOMContentLoaded', function () {
-        // --- Inject sketch script ---
-        // p5.min.js (deferred) has run by now but p5 waits for window.load
-        // to call setup(), so the sketch script will be ready in time.
-        var sketchScript = document.createElement('script');
-        sketchScript.src = sketch.script;
-        document.head.appendChild(sketchScript);
 
         // --- Populate card1-creative-case ---
         var card = document.getElementById('card1-creative-case');
