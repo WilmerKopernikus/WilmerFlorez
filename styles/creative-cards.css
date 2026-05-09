@@ -1,5 +1,5 @@
 #creative-cards-container {
-  --cards: 6;
+  --cards: 7;
 }
 
 .card-shared {
@@ -38,5 +38,10 @@
 
 #card6-creative {
   --index: 6;
+  background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(3, 13, 27));
+}
+
+#card7-creative {
+  --index: 7;
   background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(3, 13, 27));
 }

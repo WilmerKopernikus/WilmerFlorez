@@ -133,6 +133,9 @@ const languagesContent = {
     kaleidoscopeShaderTitle: "INTERAKTIVES KALEIDOSKOP",
     kaleidoscopeShaderInstructions: "Anleitung: Klicke und ziehe, um die Symmetrie und Farben zu beeinflussen.",
     kaleidoscopeShaderText: "Ein shaderbasiertes Experiment, das einen kaleidoskopischen visuellen Effekt mithilfe von Fragment-Shadern erzeugt. Das Sketch manipuliert Farben und Formen in Echtzeit und erzeugt symmetrische Muster, die sich dynamisch entwickeln. Benutzerinteraktionen können die Symmetrie und Farbpalette beeinflussen, was zu einer faszinierenden, sich ständig verändernden visuellen Erfahrung führt.",
+    interactiveCollageTitle: "INTERAKTIVE COLLAGE",
+    interactiveCollageInstructions: "Klicke, um neue Bilder zur Collage hinzuzufügen, nutze die Buttons, um Effekte anzuwenden, und kombiniere sie für einzigartige Ergebnisse.",
+    interactiveCollageText: "Eine interaktive Pixel-Manipulation-Skizze, mit der Bilder direkt auf die Canvas gestempelt werden können. Über den Button „Change Image“ lässt sich zwischen vier Bildern wechseln. Verschiedene visuelle Effekte können angewendet werden: „Glitch“ erzeugt horizontale Verzerrungen, während „Noise Displacement“ die Pixel dynamisch verformt. Die Mouse-Preview kann gesteuert und Effekte kombiniert werden, um kreative Resultate zu erzeugen. Jeder Stamp speichert seine eigenen Effekte und ermöglicht unbegrenztes künstlerisches Layering.",
 
     //Joblab
     joblabTitle1: "PROJEKTÜBERSICHT",
@@ -378,7 +381,9 @@ const languagesContent = {
     kaleidoscopeShaderTitle: "INTERACTIVE KALEIDOSCOPE ",
     kaleidoscopeShaderInstructions: "Instructions: Click and drag to influence the symmetry and colors.",
     kaleidoscopeShaderText: "A shader-based experiment that creates a kaleidoscopic visual effect using fragment shaders. The sketch manipulates colors and shapes in real-time, producing symmetrical patterns that evolve dynamically. User interactions can influence the symmetry and color palette, resulting in a mesmerizing, ever-changing visual experience.",
-
+    interactiveCollageTitle: "INTERACTIVE COLLAGE",
+    interactiveCollageInstructions: "Click to add new images to the collage, use the buttons to apply effects, and combine them for unique results.",
+    interactiveCollageText: "An interactive pixel manipulation sketch that lets you stamp images onto the canvas. Toggle between four images using the Change Image button. Apply visual effects: Glitch creates horizontal distortions, while Noise Displacement warps pixels. Control the mouse preview and combine effects for creative results. Each stamp remembers its effects, allowing unlimited artistic layering.",
 
     //Joblab
     joblabTitle1: "PROJECT OVERVIEW",
@@ -627,9 +632,11 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     kaleidoscopeShaderTitle: "KALEIDOSCOPIO INTERACTIVO",
     kaleidoscopeShaderInstructions: "Instrucciones: Haga clic y arrastre para influir en la simetría y los colores.",
     kaleidoscopeShaderText: "Un experimento basado en shaders que crea un efecto visual caleidoscópico utilizando fragment shaders. El sketch manipula colores y formas en tiempo real, produciendo patrones simétricos que evolucionan dinámicamente. Las interacciones del usuario pueden influir en la simetría y la paleta de colores, resultando en una experiencia visual hipnotizante y en constante cambio.",
+    interactiveCollageTitle: "COLLAGE INTERACTIVO",
+    interactiveCollageInstructions: "Haz clic para añadir nuevas imágenes al collage, usa los botones para aplicar efectos y combínalos para obtener resultados únicos.",
+    interactiveCollageText: "Un sketch interactivo de manipulación de píxeles que permite estampar imágenes sobre el canvas. Con el botón “Change Image” puedes alternar entre cuatro imágenes diferentes. Aplica efectos visuales: “Glitch” crea distorsiones horizontales, mientras que “Noise Displacement” deforma los píxeles dinámicamente. Controla la vista previa del mouse y combina efectos para obtener resultados creativos. Cada stamp conserva sus propios efectos, permitiendo un layering artístico ilimitado.",
 
-
-      //Joblab
+    //Joblab
     joblabTitle1: 'RESUMEN DEL PROYECTO',
     joblabContent1: 'Job Lab es un proyecto encargado por el DAAD (Servicio Alemán de Intercambio Académico), China, y desarrollado en estrecha colaboración con la Embajada de Alemania en Pekín y los Consulados Alemanes en Shanghái y Cantón. Su misión principal: informar a los estudiantes chinos del idioma alemán sobre las oportunidades del mercado laboral en Alemania, ofreciéndoles orientación práctica y recursos a través de una plataforma digital dedicada y eventos presenciales.',
     joblabTitle2: 'PARTES INTERESADAS CLAVE Y COLABORACIONES',

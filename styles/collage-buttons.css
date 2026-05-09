@@ -1,0 +1,56 @@
+
+.glitch-button {
+  background-color: black;
+  color: white;
+  border: white solid 2px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  z-index: 100;
+  font-weight: bold;
+}
+
+.preview-button {
+  background-color: black;
+  color: white;
+  border: white solid 2px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  position: fixed;
+  top: 140px;
+  left: 20px;
+  z-index: 100;
+  font-weight: bold;
+}
+
+.noise-button {
+  background-color: black;
+  color: white;
+  border: white solid 2px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  position: fixed;
+  top: 200px;
+  left: 20px;
+  z-index: 100;
+  font-weight: bold;
+}
+
+.change-image-button {
+  background-color: black;
+  color: white;
+  border: white solid 2px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  font-weight: bold;
+}

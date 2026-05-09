@@ -42,8 +42,10 @@
             + sketch.description + '</p>';
         }
 
+        var buttonsHtml = sketch.buttons ? '<div class="sketch-buttons">' + sketch.buttons + '</div>' : '';
+
         if (leftDiv) {
-          leftDiv.innerHTML = titleHtml;
+          leftDiv.innerHTML = titleHtml + buttonsHtml;
         }
 
         if (rightDiv) {
