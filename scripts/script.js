@@ -1,12 +1,18 @@
-﻿window.onload = function () {
+﻿// Block scroll while the loading screen is visible
+document.documentElement.style.overflow = 'hidden';
+document.body.style.overflow = 'hidden';
+
+window.onload = function () {
   try {
     preloadAndSwapImage();
   } catch (error) {
     console.error('Error in preloadAndSwapImage:', error);
   }
 
-  // Ocultar el loader
+  // Ocultar el loader y restaurar el scroll
   document.getElementById('loadingScreen').style.display = 'none';
+  document.documentElement.style.overflow = '';
+  document.body.style.overflow = '';
 };
 
 
