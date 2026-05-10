@@ -4,6 +4,7 @@ let glitchEnabled = false;
 let previewEnabled = true;
 let noiseEnabled = false;
 let images = [];
+let imagesMobile = [];
 let currentImageIndex = 0;
 let canvas;
 let isTouchDevice = false;
@@ -13,17 +14,29 @@ let lastTapTime = 0;
 const DOUBLE_TAP_THRESHOLD = 300; // ms between taps to count as a double-tap
 
 const imageSrcs = [
-  "imagenes/collage/lips.webp",
+  "imagenes/collage/vampire.webp",
   "imagenes/collage/statue.webp",
   "imagenes/collage/uroboros.webp",
   "imagenes/collage/Hercules.webp",
   "imagenes/collage/eclipse.webp"
 ];
 
+// Smaller images for touch devices, capped at MAX_MOBILE_WIDTH
+const imageSrcsMobile = [
+  "imagenes/collage/vampire_mobile.webp",
+  "imagenes/collage/statue.webp",
+  "imagenes/collage/uroboros.webp",
+  "imagenes/collage/Hercules.webp",
+  "imagenes/collage/eclipse.webp"
+];
+
+const MAX_MOBILE_WIDTH = 1300;
+
 function preload() {
   // Only load the first image upfront — the rest load on demand
   images[0] = loadImage(imageSrcs[0]);
-  img = images[0];
+  imagesMobile[0] = loadImage(imageSrcsMobile[0]);
+  img = images[0]; // updated in setup() once isTouchDevice is known
 }
 
 function setup() {
@@ -35,6 +48,9 @@ function setup() {
 
   // Detect touch/pointer device
   isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+
+  // Switch to the mobile image set if on a touch device
+  img = isTouchDevice ? imagesMobile[0] : images[0];
 
   // Set up button functionality
   const glitchButton = document.getElementById("glitchToggle");
@@ -57,17 +73,17 @@ function draw() {
     if (stamp.wasGlitched) {
       if (stamp.displacedImg) {
         // Both glitch and noise effects
-        drawGlitchImage(stamp.displacedImg, stamp.x, stamp.y, stamp.slices);
+        drawGlitchImage(stamp.displacedImg, stamp.x, stamp.y, stamp.slices, stamp.dw, stamp.dh);
       } else {
         // Only glitch effect
-        drawGlitchImage(stamp.sourceImg, stamp.x, stamp.y, stamp.slices);
+        drawGlitchImage(stamp.sourceImg, stamp.x, stamp.y, stamp.slices, stamp.dw, stamp.dh);
       }
     } else if (stamp.displacedImg) {
       // Only noise effect
-      image(stamp.displacedImg, stamp.x, stamp.y);
+      image(stamp.displacedImg, stamp.x, stamp.y, stamp.dw, stamp.dh);
     } else {
       // Normal image
-      image(stamp.sourceImg, stamp.x, stamp.y);
+      image(stamp.sourceImg, stamp.x, stamp.y, stamp.dw, stamp.dh);
     }
   }
 
@@ -75,7 +91,8 @@ function draw() {
   if (previewEnabled) {
     let px = isTouchDevice ? touchPosX : mouseX;
     let py = isTouchDevice ? touchPosY : mouseY;
-    image(img, px - img.width / 2, py - img.height / 2);
+    let { w, h } = getDisplaySize(img);
+    image(img, px - w / 2, py - h / 2, w, h);
   }
 }
 
@@ -96,14 +113,27 @@ function stampImage(x, y) {
     imgToStamp = noiseDisplaceImage(img);
   }
 
+  let { w: dw, h: dh } = getDisplaySize(img);
+
   stamps.push({
-    x: x - img.width / 2,
-    y: y - img.height / 2,
+    x: x - dw / 2,
+    y: y - dh / 2,
+    dw: dw,
+    dh: dh,
     slices: generateGlitchSlices(img),
     wasGlitched: glitchEnabled,
     displacedImg: noiseEnabled ? imgToStamp : null,
     sourceImg: img
   });
+}
+
+// Returns the display dimensions for an image, capping width at MAX_MOBILE_WIDTH on touch devices
+function getDisplaySize(srcImg) {
+  if (!isTouchDevice || srcImg.width <= MAX_MOBILE_WIDTH) {
+    return { w: srcImg.width, h: srcImg.height };
+  }
+  let scale = MAX_MOBILE_WIDTH / srcImg.width;
+  return { w: MAX_MOBILE_WIDTH, h: Math.floor(srcImg.height * scale) };
 }
 
 function touchStarted() {
@@ -113,9 +143,9 @@ function touchStarted() {
   touchPosX = touch.x;
   touchPosY = touch.y;
 
-  // Don't stamp if touching a UI button
+  // Don't stamp if touching a UI button — return true to allow the native click event
   let elementUnder = document.elementFromPoint(touch.x, touch.y);
-  if (elementUnder && elementUnder.tagName === 'BUTTON') return false;
+  if (elementUnder && elementUnder.tagName === 'BUTTON') return true;
 
   // Double-tap stamps the image; single tap only moves the preview
   let now = millis();
@@ -152,17 +182,18 @@ function generateGlitchSlices(img) {
   return slices;
 }
 
-function drawGlitchImage(img, x, y, slices) {
+function drawGlitchImage(srcImg, x, y, slices, dw, dh) {
+  let scaleY = dh / srcImg.height;
   for (let slice of slices) {
     image(
-      img,
+      srcImg,
       x + slice.dx,
-      y + slice.sy,
-      img.width,
-      slice.h,
+      y + slice.sy * scaleY,
+      dw,
+      slice.h * scaleY,
       0,
       slice.sy,
-      img.width,
+      srcImg.width,
       slice.h
     );
   }
@@ -188,11 +219,13 @@ function toggleNoise() {
 
 function changeImage() {
   currentImageIndex = (currentImageIndex + 1) % imageSrcs.length;
-  if (images[currentImageIndex]) {
-    img = images[currentImageIndex];
+  let srcs = isTouchDevice ? imageSrcsMobile : imageSrcs;
+  let imgArr = isTouchDevice ? imagesMobile : images;
+  if (imgArr[currentImageIndex]) {
+    img = imgArr[currentImageIndex];
   } else {
-    loadImage(imageSrcs[currentImageIndex], function(loaded) {
-      images[currentImageIndex] = loaded;
+    loadImage(srcs[currentImageIndex], function(loaded) {
+      imgArr[currentImageIndex] = loaded;
       img = loaded;
     });
   }
