@@ -3,6 +3,7 @@ let stamps = [];
 let glitchEnabled = false;
 let previewEnabled = true;
 let noiseEnabled = false;
+let negativeEnabled = false;
 let images = [];
 let imagesMobile = [];
 let currentImageIndex = 0;
@@ -64,26 +65,21 @@ function setup() {
 
   const changeImageButton = document.getElementById("changeImage");
   if (changeImageButton) changeImageButton.addEventListener("click", changeImage);
+
+  const negativeButton = document.getElementById("negativeToggle");
+  if (negativeButton) negativeButton.addEventListener("click", toggleNegative);
 }
 
 function draw() {
   background(255);
 
   for (let stamp of stamps) {
+    let displayImg = stamp.composedImg || stamp.sourceImg;
+    
     if (stamp.wasGlitched) {
-      if (stamp.displacedImg) {
-        // Both glitch and noise effects
-        drawGlitchImage(stamp.displacedImg, stamp.x, stamp.y, stamp.slices, stamp.dw, stamp.dh);
-      } else {
-        // Only glitch effect
-        drawGlitchImage(stamp.sourceImg, stamp.x, stamp.y, stamp.slices, stamp.dw, stamp.dh);
-      }
-    } else if (stamp.displacedImg) {
-      // Only noise effect
-      image(stamp.displacedImg, stamp.x, stamp.y, stamp.dw, stamp.dh);
+      drawGlitchImage(displayImg, stamp.x, stamp.y, stamp.slices, stamp.dw, stamp.dh);
     } else {
-      // Normal image
-      image(stamp.sourceImg, stamp.x, stamp.y, stamp.dw, stamp.dh);
+      image(displayImg, stamp.x, stamp.y, stamp.dw, stamp.dh);
     }
   }
 
@@ -109,10 +105,16 @@ function mousePressed() {
 }
 
 function stampImage(x, y) {
-  let imgToStamp = img;
+  // Build the final stamped image by composing effects:
+  // noise displaces pixels first, then negative inverts colors on top.
+  let baseImg = img;
 
   if (noiseEnabled) {
-    imgToStamp = noiseDisplaceImage(img);
+    baseImg = noiseDisplaceImage(baseImg);
+  }
+
+  if (negativeEnabled) {
+    baseImg = createNegativeImage(baseImg);
   }
 
   let { w: dw, h: dh } = getDisplaySize(img);
@@ -124,7 +126,7 @@ function stampImage(x, y) {
     dh: dh,
     slices: generateGlitchSlices(img),
     wasGlitched: glitchEnabled,
-    displacedImg: noiseEnabled ? imgToStamp : null,
+    composedImg: (noiseEnabled || negativeEnabled) ? baseImg : null,
     sourceImg: img
   });
 }
@@ -219,6 +221,12 @@ function toggleNoise() {
   button.textContent = noiseEnabled ? "Turn Off Noise" : "Turn On Noise";
 }
 
+function toggleNegative() {
+  negativeEnabled = !negativeEnabled;
+  const button = document.getElementById("negativeToggle");
+  button.textContent = negativeEnabled ? "Turn Off Negative" : "Turn On Negative";
+}
+
 function changeImage() {
   currentImageIndex = (currentImageIndex + 1) % imageSrcs.length;
   let srcs = isTouchDevice ? imageSrcsMobile : imageSrcs;
@@ -261,6 +269,29 @@ function noiseDisplaceImage(sourceImg) {
   }
 
   newImg.updatePixels();
+  return newImg;
+}
+
+function createNegativeImage(sourceImg) {
+  let newImg = sourceImg.get();
+
+  newImg.loadPixels();
+
+  for (let i = 0; i < newImg.pixels.length; i += 4) {
+    // RED
+    newImg.pixels[i] = 255 - newImg.pixels[i];
+
+    // GREEN
+    newImg.pixels[i + 1] = 255 - newImg.pixels[i + 1];
+
+    // BLUE
+    newImg.pixels[i + 2] = 255 - newImg.pixels[i + 2];
+
+    // Alpha stays the same
+  }
+
+  newImg.updatePixels();
+
   return newImg;
 }
 
