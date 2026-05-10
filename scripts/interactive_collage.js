@@ -212,34 +212,39 @@ function drawGlitchImage(srcImg, x, y, slices, dw, dh) {
   }
 }
 
+function getBtnText(key) {
+  const lang = (typeof currentLang !== 'undefined' && currentLang) || 'de';
+  return (typeof languagesContent !== 'undefined' && languagesContent[lang] && languagesContent[lang][key]) || key;
+}
+
 function toggleGlitch() {
   glitchEnabled = !glitchEnabled;
   const button = document.getElementById("glitchToggle");
-  button.textContent = glitchEnabled ? "Turn Off Glitch" : "Turn On Glitch";
+  button.textContent = getBtnText(glitchEnabled ? "btnGlitchOff" : "btnGlitchOn");
 }
 
 function togglePreview() {
   previewEnabled = !previewEnabled;
   const button = document.getElementById("previewToggle");
-  button.textContent = previewEnabled ? "Turn Off Preview" : "Turn On Preview";
+  button.textContent = getBtnText(previewEnabled ? "btnPreviewOff" : "btnPreviewOn");
 }
 
 function toggleNoise() {
   noiseEnabled = !noiseEnabled;
   const button = document.getElementById("noiseToggle");
-  button.textContent = noiseEnabled ? "Turn Off Noise" : "Turn On Noise";
+  button.textContent = getBtnText(noiseEnabled ? "btnNoiseOff" : "btnNoiseOn");
 }
 
 function toggleNegative() {
   negativeEnabled = !negativeEnabled;
   const button = document.getElementById("negativeToggle");
-  button.textContent = negativeEnabled ? "Turn Off Negative" : "Turn On Negative";
+  button.textContent = getBtnText(negativeEnabled ? "btnNegativeOff" : "btnNegativeOn");
 }
 
 function toggleNavigation() {
   navigationEnabled = !navigationEnabled;
   const button = document.getElementById("navigationToggle");
-  button.textContent = navigationEnabled ? "Turn Off Navigation" : "Turn On Navigation";
+  button.textContent = getBtnText(navigationEnabled ? "btnNavigationOff" : "btnNavigationOn");
 }
 
 function changeImage() {
