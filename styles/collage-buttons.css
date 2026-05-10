@@ -30,6 +30,18 @@
   display: none;
 }
 
+/* Navigation button — hidden on non-touch devices (desktop) */
+.navigation-button {
+  display: none;
+}
+
+/* Show navigation button only on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .navigation-button {
+    display: block;
+  }
+}
+
 /* Tablets portrait */
 @media (max-width: 1024px) and (orientation: portrait) {
   #sketch-buttons-container {
