@@ -46,12 +46,16 @@
         var titleHtml = '<h2 class="title" id="kunden-light"' + titleI18nAttr + '>'
           + titleText + '</h2>';
 
+        var instructionsParagraph = '';
         var detailsHtml = '';
         if (sketch.instructions) {
           var instructionsI18nAttr = sketch.instructionsKey ? ' data-i18n="' + sketch.instructionsKey + '"' : ' data-i18n=""';
-          detailsHtml += '<p class="text-new" id="kunden-light"' + instructionsI18nAttr + '>'
+          instructionsParagraph = '<p class="text-new" id="kunden-light"' + instructionsI18nAttr + '>'
             + '<strong>Instructions:</strong> ' + sketch.instructions
             + '</p><br>';
+          if (!sketch.instructionsInLeft) {
+            detailsHtml += instructionsParagraph;
+          }
         }
 
         if (sketch.description) {
@@ -63,7 +67,11 @@
         var buttonsHtml = sketch.buttons || '';
 
         if (leftDiv) {
-          leftDiv.innerHTML = titleHtml;
+          if (sketch.instructionsInLeft && instructionsParagraph) {
+            leftDiv.innerHTML = titleHtml + instructionsParagraph;
+          } else {
+            leftDiv.innerHTML = titleHtml;
+          }
         }
 
         // Inject buttons into card1's dedicated container (bottom-left of the hero card)
@@ -77,7 +85,7 @@
         }
 
         if (mobileContentDiv) {
-          mobileContentDiv.innerHTML = titleHtml + detailsHtml;
+          mobileContentDiv.innerHTML = titleHtml + instructionsParagraph + detailsHtml;
         }
 
         // --- Update page title ---
