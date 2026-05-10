@@ -24,10 +24,10 @@ const imageSrcs = [
 // Smaller images for touch devices, capped at MAX_MOBILE_WIDTH
 const imageSrcsMobile = [
   "imagenes/collage/vampire_mobile.webp",
-  "imagenes/collage/statue.webp",
-  "imagenes/collage/uroboros.webp",
-  "imagenes/collage/Hercules.webp",
-  "imagenes/collage/eclipse.webp"
+  "imagenes/collage/statue_mobile.webp",
+  "imagenes/collage/uroboros_mobile.webp",
+  "imagenes/collage/Hercules_mobile.webp",
+  "imagenes/collage/eclipse_mobile.webp"
 ];
 
 const MAX_MOBILE_WIDTH = 1300;
@@ -87,12 +87,14 @@ function draw() {
     }
   }
 
-  // Preview following the pointer (mouse or touch)
+  // Preview following the pointer (mouse or touch) — 60% transparent (40% opaque)
   if (previewEnabled) {
     let px = isTouchDevice ? touchPosX : mouseX;
     let py = isTouchDevice ? touchPosY : mouseY;
     let { w, h } = getDisplaySize(img);
+    tint(255, 102);
     image(img, px - w / 2, py - h / 2, w, h);
+    noTint();
   }
 }
 
