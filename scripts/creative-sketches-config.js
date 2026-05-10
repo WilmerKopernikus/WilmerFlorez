@@ -46,7 +46,7 @@ const CREATIVE_SKETCHES = {
     instructionsKey: 'interactiveCollageInstructions',
     description: 'Eine interaktive Pixel-Manipulation-Skizze, mit der Bilder direkt auf die Canvas gestempelt werden können. Über den Button „Change Image“ lässt sich zwischen vier Bildern wechseln. Verschiedene visuelle Effekte können angewendet werden: „Glitch“ erzeugt horizontale Verzerrungen, während „Noise Displacement“ die Pixel dynamisch verformt. Die Mouse-Preview kann gesteuert und Effekte kombiniert werden, um kreative Resultate zu erzeugen. Jeder Stamp speichert seine eigenen Effekte und ermöglicht unbegrenztes künstlerisches Layering.',
     descriptionKey: 'interactiveCollageText',
-    buttons: '<button id="changeImage" class="change-image-button">Change Image</button><button id="previewToggle" class="preview-button">Turn Off Preview</button><button id="glitchToggle" class="glitch-button">Turn On Glitch</button><button id="noiseToggle" class="noise-button">Turn On Noise</button><button id="negativeToggle" class="negative-button">Turn On Negative</button>',
+    buttons: '<button id="changeImage" class="change-image-button">Change Image</button><button id="previewToggle" class="preview-button">Turn Off Preview</button><button id="glitchToggle" class="glitch-button">Turn On Glitch</button><button id="noiseToggle" class="noise-button">Turn On Noise</button><button id="negativeToggle" class="negative-button">Turn On Negative</button><div class="buttons-row-break"></div><button id="navigationToggle" class="navigation-button">Turn On Navigation</button>',
     preloadImages: ['imagenes/collage/lips.jpg']
   },
 

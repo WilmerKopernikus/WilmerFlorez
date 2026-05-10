@@ -4,6 +4,7 @@ let glitchEnabled = false;
 let previewEnabled = true;
 let noiseEnabled = false;
 let negativeEnabled = false;
+let navigationEnabled = false;
 let images = [];
 let imagesMobile = [];
 let currentImageIndex = 0;
@@ -68,6 +69,9 @@ function setup() {
 
   const negativeButton = document.getElementById("negativeToggle");
   if (negativeButton) negativeButton.addEventListener("click", toggleNegative);
+
+  const navigationButton = document.getElementById("navigationToggle");
+  if (navigationButton) navigationButton.addEventListener("click", toggleNavigation);
 }
 
 function draw() {
@@ -151,6 +155,9 @@ function touchStarted() {
   let elementUnder = document.elementFromPoint(touch.x, touch.y);
   if (elementUnder && elementUnder.tagName === 'BUTTON') return true;
 
+  // When navigation is on, let the browser handle the touch freely
+  if (navigationEnabled) return true;
+
   // Double-tap stamps the image; single tap only moves the preview
   let now = millis();
   if (now - lastTapTime < DOUBLE_TAP_THRESHOLD) {
@@ -168,7 +175,8 @@ function touchMoved() {
     touchPosX = touches[0].x;
     touchPosY = touches[0].y;
   }
-  return false; // Prevent page scrolling while dragging the preview
+  // When navigation is on, return true so the browser handles scrolling
+  return !navigationEnabled;
 }
 
 function generateGlitchSlices(img) {
@@ -225,6 +233,12 @@ function toggleNegative() {
   negativeEnabled = !negativeEnabled;
   const button = document.getElementById("negativeToggle");
   button.textContent = negativeEnabled ? "Turn Off Negative" : "Turn On Negative";
+}
+
+function toggleNavigation() {
+  navigationEnabled = !navigationEnabled;
+  const button = document.getElementById("navigationToggle");
+  button.textContent = navigationEnabled ? "Turn Off Navigation" : "Turn On Navigation";
 }
 
 function changeImage() {
