@@ -175,8 +175,9 @@ function touchMoved() {
     touchPosX = touches[0].x;
     touchPosY = touches[0].y;
   }
-  // When navigation is on, return true so the browser handles scrolling
-  return !navigationEnabled;
+  // return true lets the browser scroll; return false blocks it
+  // Navigation ON → allow scroll; Navigation OFF → block scroll
+  return navigationEnabled;
 }
 
 function generateGlitchSlices(img) {
