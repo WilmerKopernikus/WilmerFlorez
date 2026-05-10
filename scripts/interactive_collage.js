@@ -6,6 +6,11 @@ let noiseEnabled = false;
 let images = [];
 let currentImageIndex = 0;
 let canvas;
+let isTouchDevice = false;
+let touchPosX = 0;
+let touchPosY = 0;
+let lastTapTime = 0;
+const DOUBLE_TAP_THRESHOLD = 300; // ms between taps to count as a double-tap
 
 const imageSrcs = [
   "imagenes/collage/lips.webp",
@@ -27,6 +32,9 @@ function setup() {
   canvas.style('z-index', '-1');
   canvas.style('position', 'fixed');
   background(255);
+
+  // Detect touch/pointer device
+  isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
 
   // Set up button functionality
   const glitchButton = document.getElementById("glitchToggle");
@@ -63,22 +71,25 @@ function draw() {
     }
   }
 
-  // Preview following the mouse (only show if previewEnabled)
+  // Preview following the pointer (mouse or touch)
   if (previewEnabled) {
-    if (glitchEnabled) {
-      image(img, mouseX - img.width / 2, mouseY - img.height / 2);
-    } else {
-      image(img, mouseX - img.width / 2, mouseY - img.height / 2);
-    }
+    let px = isTouchDevice ? touchPosX : mouseX;
+    let py = isTouchDevice ? touchPosY : mouseY;
+    image(img, px - img.width / 2, py - img.height / 2);
   }
 }
 
 function mousePressed() {
-  // Don't stamp if clicking on a button
-  if (event.target.tagName === 'BUTTON') {
-    return false;
-  }
+  // On touch devices, stamping is handled by double-tap in touchStarted()
+  if (isTouchDevice) return false;
 
+  // Don't stamp if clicking on a button
+  if (event.target.tagName === 'BUTTON') return false;
+
+  stampImage(mouseX, mouseY);
+}
+
+function stampImage(x, y) {
   let imgToStamp = img;
 
   if (noiseEnabled) {
@@ -86,13 +97,44 @@ function mousePressed() {
   }
 
   stamps.push({
-    x: mouseX - img.width / 2,
-    y: mouseY - img.height / 2,
+    x: x - img.width / 2,
+    y: y - img.height / 2,
     slices: generateGlitchSlices(img),
     wasGlitched: glitchEnabled,
     displacedImg: noiseEnabled ? imgToStamp : null,
     sourceImg: img
   });
+}
+
+function touchStarted() {
+  if (touches.length === 0) return false;
+
+  let touch = touches[0];
+  touchPosX = touch.x;
+  touchPosY = touch.y;
+
+  // Don't stamp if touching a UI button
+  let elementUnder = document.elementFromPoint(touch.x, touch.y);
+  if (elementUnder && elementUnder.tagName === 'BUTTON') return false;
+
+  // Double-tap stamps the image; single tap only moves the preview
+  let now = millis();
+  if (now - lastTapTime < DOUBLE_TAP_THRESHOLD) {
+    stampImage(touchPosX, touchPosY);
+    lastTapTime = 0; // Reset so a third tap starts a fresh sequence
+  } else {
+    lastTapTime = now;
+  }
+
+  return false; // Prevent default browser behavior (scroll, zoom)
+}
+
+function touchMoved() {
+  if (touches.length > 0) {
+    touchPosX = touches[0].x;
+    touchPosY = touches[0].y;
+  }
+  return false; // Prevent page scrolling while dragging the preview
 }
 
 function generateGlitchSlices(img) {
