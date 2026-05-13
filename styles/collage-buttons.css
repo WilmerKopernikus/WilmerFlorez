@@ -14,7 +14,8 @@
 .noise-button,
 .change-image-button,
 .negative-button,
-.navigation-button {
+.navigation-button,
+.download-image-button {
   background-color: black;
   color: white;
   border: white solid 2px;
@@ -82,7 +83,8 @@
   .preview-button,
   .noise-button,
   .change-image-button,
-  .negative-button {
+  .negative-button,
+  .download-image-button {
     flex: 1;
     min-width: 0;
     padding: 5px 6px;
@@ -118,7 +120,8 @@
   .noise-button,
   .change-image-button,
   .negative-button,
-  .navigation-button {
+  .navigation-button,
+  .download-image-button {
     padding: 5px 10px;
     font-size: 11px;
   }
