@@ -59,7 +59,8 @@ const CREATIVE_SKETCHES = {
       'https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/addons/p5.sound.min.js',
       'https://unpkg.com/ml5@1/dist/ml5.min.js'
     ],
-    instructions: 'Positioniere dein Gesicht in der Mitte des Bildschirms und beobachte, wie die Dreiecke auf deinem Gesicht wachsen und sich überlagern.',
+    instructions: 'Positioniere dein Gesicht in der Mitte des Bildschirms. Öffne den Mund, um die Farben zu wechseln.',
+
     instructionsKey: 'faceMeshInstructions',
     description: 'Diese Skizze nutzt die ml5.js FaceMesh-Bibliothek, um die Gesichtserkennung in Echtzeit zu implementieren. Sobald ein Gesicht erkannt wird, werden Dreiecke über die Gesichtspunkte gezeichnet, die sich dynamisch ausbreiten und überlagern, um eine organische, sich ständig verändernde Maske zu erzeugen. Die Dreiecke wachsen mit der Zeit und schaffen ein hypnotisches visuelles Muster, das die Konturen des Gesichts betont.',
     descriptionKey: 'faceMeshText'
