@@ -21,7 +21,9 @@ const imageSrcs = [
   "imagenes/collage/uroboros.webp",
   "imagenes/collage/Hercules.webp",
   "imagenes/collage/eclipse.webp",
-  "imagenes/collage/angel.webp"
+  "imagenes/collage/angel.webp",
+  "imagenes/collage/eye.webp",
+  "imagenes/collage/stars.webp",
 ];
 
 // Smaller images for touch devices, capped at MAX_MOBILE_WIDTH
@@ -31,7 +33,9 @@ const imageSrcsMobile = [
   "imagenes/collage/uroboros_mobile.webp",
   "imagenes/collage/Hercules_mobile.webp",
   "imagenes/collage/eclipse_mobile.webp",
-  "imagenes/collage/angel_mobile.webp"
+  "imagenes/collage/angel_mobile.webp",
+  "imagenes/collage/eye.webp",
+  "imagenes/collage/stars_mobile.webp"
 ];
 
 const MAX_MOBILE_WIDTH = 1300;
