@@ -15,9 +15,28 @@
       // window.load listener; if the sketch script is only injected on
       // DOMContentLoaded it may not finish loading before window.load fires,
       // causing p5 to miss setup/draw/preload — especially on slow connections.
-      var sketchScript = document.createElement('script');
-      sketchScript.src = sketch.script;
-      document.head.appendChild(sketchScript);
+      //
+      // Sketches with cdnScripts load their dependencies sequentially first,
+      // then append the sketch script so all globals (p5, ml5, etc.) are ready.
+      if (sketch.cdnScripts && sketch.cdnScripts.length > 0) {
+        (function loadSequentially(urls, index) {
+          if (index >= urls.length) {
+            var sketchScript = document.createElement('script');
+            sketchScript.src = sketch.script;
+            document.head.appendChild(sketchScript);
+            return;
+          }
+          var s = document.createElement('script');
+          s.src = urls[index];
+          s.onload = function () { loadSequentially(urls, index + 1); };
+          s.onerror = function () { loadSequentially(urls, index + 1); };
+          document.head.appendChild(s);
+        })(sketch.cdnScripts, 0);
+      } else {
+        var sketchScript = document.createElement('script');
+        sketchScript.src = sketch.script;
+        document.head.appendChild(sketchScript);
+      }
 
       // --- Inject <link rel="preload"> hints for any declared images ---
       if (sketch.preloadImages) {

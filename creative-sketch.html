@@ -32,7 +32,15 @@
   <link rel="manifest" href="/manifest.json">
   <title>Creative Coding | Wilmer Florez - Webentwickler & Designer</title>
 
-  <script defer src="scripts/p5.min.js"></script>
+  <script>
+    // face-mesh loads its own p5 + ml5 via cdnScripts in the config.
+    // All other sketches use the local minified build.
+    if (new URLSearchParams(window.location.search).get('sketch') !== 'face-mesh') {
+      var _s = document.createElement('script');
+      _s.src = 'scripts/p5.min.js';
+      document.head.appendChild(_s);
+    }
+  </script>
   
   <script src="scripts/creative-sketches-config.js"></script>
   <script src="scripts/creative-components-function.js"></script>

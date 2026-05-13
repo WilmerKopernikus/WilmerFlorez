@@ -135,7 +135,7 @@ const languagesContent = {
     kaleidoscopeShaderText: "Ein shaderbasiertes Experiment, das einen kaleidoskopischen visuellen Effekt mithilfe von Fragment-Shadern erzeugt. Das Sketch manipuliert Farben und Formen in Echtzeit und erzeugt symmetrische Muster, die sich dynamisch entwickeln. Benutzerinteraktionen können die Symmetrie und Farbpalette beeinflussen, was zu einer faszinierenden, sich ständig verändernden visuellen Erfahrung führt.",
     interactiveCollageTitle: "INTERAKTIVE COLLAGE",
     interactiveCollageInstructions: "Anleitung: Klicke, um neue Bilder zur Collage hinzuzufügen. Auf mobilen Geräten kannst du mit einem Doppeltipp ein Bild hinzufügen und es über die Leinwand ziehen, um es zu positionieren. Verwende die Buttons, um Effekte anzuwenden und sie für einzigartige Ergebnisse zu kombinieren.",
-    interactiveCollageText: "Ein interaktives Pixel-Manipulationsprojekt, mit dem Bilder direkt auf die Canvas gestempelt werden können. Über den Button „Bild wechseln“ lässt sich zwischen mehreren Bildern wählen. Verschiedene visuelle Effekte können angewendet werden: „Glitch“ erzeugt horizontale Verzerrungen, während „Noise“ die Pixel dynamisch verformt. Die Mouse-Preview kann gesteuert und Effekte kombiniert werden, um kreative Resultate zu erzeugen. Jeder Stamp speichert seine eigenen Effekte und ermöglicht unbegrenztes künstlerisches Layering.",    btnChangeImage: "Bild wechseln",
+    interactiveCollageText: "Ein interaktives Pixel-Manipulationsprojekt, mit dem Bilder direkt auf die Canvas gestempelt werden können. Über den Button „Bild wechseln“ lässt sich zwischen mehreren Bildern wählen. Verschiedene visuelle Effekte können angewendet werden: „Glitch“ erzeugt horizontale Verzerrungen, während „Noise“ die Pixel dynamisch verformt. Die Mouse-Preview kann gesteuert und Effekte kombiniert werden, um kreative Resultate zu erzeugen. Jeder Stamp speichert seine eigenen Effekte und ermöglicht unbegrenztes künstlerisches Layering.", btnChangeImage: "Bild wechseln",
     btnPreviewOff: "Vorschau aus",
     btnPreviewOn: "Vorschau an",
     btnGlitchOn: "Glitch an",
@@ -146,6 +146,10 @@ const languagesContent = {
     btnNegativeOff: "Negativ aus",
     btnNavigationOn: "Navigation an",
     btnNavigationOff: "Navigation aus",
+    faceMeshTitle: "FACE MESH",
+    faceMeshText: "Diese Skizze nutzt die ml5.js FaceMesh-Bibliothek, um die Gesichtserkennung in Echtzeit zu implementieren. Sobald ein Gesicht erkannt wird, werden Dreiecke über die Gesichtspunkte gezeichnet, die sich dynamisch ausbreiten und überlagern, um eine organische, sich ständig verändernde Maske zu erzeugen. Die Dreiecke wachsen mit der Zeit und schaffen ein hypnotisches visuelles Muster, das die Konturen des Gesichts betont.",
+    faceMeshInstructions: "Anleitung: Positioniere dein Gesicht in der Mitte des Bildschirms und beobachte, wie die Dreiecke auf deinem Gesicht wachsen und sich überlagern.",
+
     //Joblab
     joblabTitle1: "PROJEKTÜBERSICHT",
     joblabContent1: "Das Job Lab ist ein Projekt, das vom DAAD (Deutscher Akademischer Austauschdienst) China in Auftrag gegeben und in enger Zusammenarbeit mit der Deutschen Botschaft in Peking sowie den Deutschen Generalkonsulaten in Shanghai und Guangzhou entwickelt wurde. Sein zentrales Ziel: Chinesische Studierende der deutschen Sprache über Karrierechancen auf dem deutschen Arbeitsmarkt zu informieren - durch eine speziell entwickelte digitale Plattform sowie praxisorientierte Vor-Ort-Veranstaltungen.",
@@ -404,6 +408,9 @@ const languagesContent = {
     btnNegativeOff: "Turn Off Negative",
     btnNavigationOn: "Turn On Navigation",
     btnNavigationOff: "Turn Off Navigation",
+    faceMeshTitle: "FACE MESH",
+    faceMeshText: "This sketch uses the ml5.js FaceMesh library to implement real-time face tracking. Once a face is detected, triangles are drawn across the facial landmarks, dynamically expanding and overlapping to create an organic, constantly shifting mask. The triangles grow over time, generating a hypnotic visual pattern that emphasizes the contours of the face.",
+    faceMeshInstructions: "Position your face in the center of the screen and watch the triangles grow and overlap across your face.",
 
     //Joblab
     joblabTitle1: "PROJECT OVERVIEW",
@@ -654,7 +661,7 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     kaleidoscopeShaderText: "Un experimento basado en shaders que crea un efecto visual caleidoscópico utilizando fragment shaders. El sketch manipula colores y formas en tiempo real, produciendo patrones simétricos que evolucionan dinámicamente. Las interacciones del usuario pueden influir en la simetría y la paleta de colores, resultando en una experiencia visual hipnotizante y en constante cambio.",
     interactiveCollageTitle: "COLLAGE INTERACTIVO",
     interactiveCollageInstructions: "Instrucciones: Haz clic para añadir nuevas imágenes al collage. En dispositivos móviles, toca dos veces para añadir una imagen y arrástrala para posicionarla sobre el lienzo. Usa los botones para aplicar efectos y combinalos para obtener resultados únicos.",
-    interactiveCollageText: "Un proyecto interactivo de manipulación de píxeles que permite estampar imágenes sobre el canvas. Con el botón “Cambiar Imagen” puedes alternar entre varias imágenes. Aplica efectos visuales: “Glitch” crea distorsiones horizontales, mientras que “Noise” deforma los píxeles dinámicamente. Controla la vista previa del mouse y combina efectos para obtener resultados creativos. Cada stamp conserva sus propios efectos, permitiendo un layering artístico ilimitado.",    
+    interactiveCollageText: "Un proyecto interactivo de manipulación de píxeles que permite estampar imágenes sobre el canvas. Con el botón “Cambiar Imagen” puedes alternar entre varias imágenes. Aplica efectos visuales: “Glitch” crea distorsiones horizontales, mientras que “Noise” deforma los píxeles dinámicamente. Controla la vista previa del mouse y combina efectos para obtener resultados creativos. Cada stamp conserva sus propios efectos, permitiendo un layering artístico ilimitado.",
     btnChangeImage: "Cambiar imagen",
     btnPreviewOff: "Ocultar vista previa",
     btnPreviewOn: "Mostrar vista previa",
@@ -666,9 +673,12 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     btnNegativeOff: "Desactivar negativo",
     btnNavigationOn: "Activar navegación",
     btnNavigationOff: "Desactivar navegación",
+    faceMeshTitle: "FACE MESH",
+    faceMeshText: "Este sketch utiliza la biblioteca FaceMesh de ml5.js para implementar reconocimiento facial en tiempo real. Una vez que se detecta un rostro, se dibujan triángulos sobre los puntos faciales que se expanden y superponen dinámicamente para crear una máscara orgánica y en constante transformación. Los triángulos crecen con el tiempo, generando un patrón visual hipnótico que resalta los contornos del rostro.",
+    faceMeshInstructions: "Instrucciones: Coloca tu rostro en el centro de la pantalla y observa cómo los triángulos crecen y se superponen sobre tu cara.",
 
-    //Joblab
-    joblabTitle1: 'RESUMEN DEL PROYECTO',
+      //Joblab
+      joblabTitle1: 'RESUMEN DEL PROYECTO',
     joblabContent1: 'Job Lab es un proyecto encargado por el DAAD (Servicio Alemán de Intercambio Académico), China, y desarrollado en estrecha colaboración con la Embajada de Alemania en Pekín y los Consulados Alemanes en Shanghái y Cantón. Su misión principal: informar a los estudiantes chinos del idioma alemán sobre las oportunidades del mercado laboral en Alemania, ofreciéndoles orientación práctica y recursos a través de una plataforma digital dedicada y eventos presenciales.',
     joblabTitle2: 'PARTES INTERESADAS CLAVE Y COLABORACIONES',
     joblabContent2: 'El Job Lab reunió a actores clave en educación internacional e intercambio cultural. Trabajando junto al DAAD, las representaciones extranjeras alemanas en Cantón, Shanghái y Pekín, el German Centre Shanghai, el German Centre Beijing, la AHK Greater China, Advantage Austria, el OeAD y el Goethe-Institut Beijing, creamos un entorno verdaderamente colaborativo. Los profesores del DAAD de toda China apoyaron los talleres, asegurando un programa integral y dirigido por expertos.',

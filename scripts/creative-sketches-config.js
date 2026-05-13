@@ -50,5 +50,18 @@ const CREATIVE_SKETCHES = {
     buttons: '<button id="changeImage" class="change-image-button" data-i18n="btnChangeImage">Change Image</button><button id="previewToggle" class="preview-button" data-i18n="btnPreviewOff">Turn Off Preview</button><button id="glitchToggle" class="glitch-button" data-i18n="btnGlitchOn">Turn On Glitch</button><button id="noiseToggle" class="noise-button" data-i18n="btnNoiseOn">Turn On Noise</button><button id="negativeToggle" class="negative-button" data-i18n="btnNegativeOn">Turn On Negative</button><div class="buttons-row-break"></div><button id="navigationToggle" class="navigation-button" data-i18n="btnNavigationOn">Turn On Navigation</button>',
     preloadImages: ['imagenes/collage/lips.jpg']
   },
+  'face-mesh': {
+    titleKey: 'faceMeshTitle',
+    script: 'scripts/face-mesh.js',
+    cdnScripts: [
+      'https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/p5.js',
+      'https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/addons/p5.sound.min.js',
+      'https://unpkg.com/ml5@1/dist/ml5.min.js'
+    ],
+    instructions: 'Positioniere dein Gesicht in der Mitte des Bildschirms und beobachte, wie die Dreiecke auf deinem Gesicht wachsen und sich überlagern.',
+    instructionsKey: 'faceMeshInstructions',
+    description: 'Diese Skizze nutzt die ml5.js FaceMesh-Bibliothek, um die Gesichtserkennung in Echtzeit zu implementieren. Sobald ein Gesicht erkannt wird, werden Dreiecke über die Gesichtspunkte gezeichnet, die sich dynamisch ausbreiten und überlagern, um eine organische, sich ständig verändernde Maske zu erzeugen. Die Dreiecke wachsen mit der Zeit und schaffen ein hypnotisches visuelles Muster, das die Konturen des Gesichts betont.',
+    descriptionKey: 'faceMeshText'
+  }
 
 };
