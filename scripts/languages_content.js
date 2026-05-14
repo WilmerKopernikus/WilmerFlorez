@@ -4,7 +4,7 @@ const languagesContent = {
   de: {
     //Menu
     menuIndex: `Startseite`,
-    menuProjekte: `Kundenprojekte`,
+    menuProjekte: `Arbeiten`,
     menuEigeneProjekte: `Meine Projekte`,
     menuCreativeCoding: `Creative Coding`,
     menuUeberMich: `Über Mich`,
@@ -30,7 +30,7 @@ const languagesContent = {
     clickToStart: `Klicken, um zu starten`,
     homeButton: `Projekt starten`,
 
-    kundenProjekte: "KUNDENPROJEKTE",
+    kundenProjekte: "ARBEITEN",
     kundenProjekteText: "In dieser Auswahl präsentiere ich reale Projekte für Kunden, bei denen ich Design und Entwicklung kombiniert habe. Alle Projekte sind live verfügbar und mit einem direkten Link zugänglich. Zusätzlich ist jedes Projekt von einer detaillierten Beschreibung begleitet, die Kontext, Herangehensweise sowie die technisch und gestalterisch umgesetzten Ergebnisse transparent macht.",
     kundenProjekteButton: "Kundenprojekte erkunden",
     meineProjekte: "MEINE PROJEKTE",
@@ -269,7 +269,7 @@ const languagesContent = {
 
     //menu
     menuIndex: `Homepage`,
-    menuProjekte: `Projects for Clients`,
+    menuProjekte: `Case Studies`,
     menuEigeneProjekte: `My Projects`,
     menuCreativeCoding: `Creative Coding`,
     menuUeberMich: `About Me`,
@@ -295,9 +295,9 @@ const languagesContent = {
     clickToStart: `Click me to start`,
     homeButton: `Start a Project`,
 
-    kundenProjekte: "CLIENT PROJECTS",
+    kundenProjekte: "CASE STUDIES",
     kundenProjekteText: "In this selection, I present real-world projects for clients where I combined design and development. All projects are available live and accessible via a direct link. Each project is also accompanied by a detailed description that transparently explains the context, approach, and the technically and aesthetically implemented results.",
-    kundenProjekteButton: "Explore Client Projects",
+    kundenProjekteButton: "Explore Commissions",
     meineProjekte: "MY PROJECTS",
     meineProjekteText: "These projects were developed independently to explore new technologies and implement creative approaches. They serve as a practical demonstration of my skills in conception, design, and development. The focus is on experimentation, learning, and innovation, often incorporating interactive or AI-powered features and a strong design focus.",
     meineProjekteButton: "My Projects",
