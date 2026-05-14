@@ -104,7 +104,8 @@
         }
 
         if (mobileContentDiv) {
-          mobileContentDiv.innerHTML = titleHtml + instructionsParagraph + detailsHtml;
+          var mobileInstructions = sketch.instructionsInLeft ? instructionsParagraph : '';
+          mobileContentDiv.innerHTML = titleHtml + mobileInstructions + detailsHtml;
         }
 
         // --- Update page title ---
