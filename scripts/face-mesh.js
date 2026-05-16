@@ -11,7 +11,9 @@ let colors = [
   [255, 255, 0],
   [0, 255, 255],
   [255, 255, 255],
-  null
+  null,
+  'randomFill',
+  [0, 0, 0]  
 ];
 
 let currentColorIndex = 0;
@@ -77,8 +79,10 @@ function setup() {
 }
 
 function draw() {
-  let randomMode = (currentColor === null);
-  if (randomMode) {
+  let randomMode     = (currentColor === null);
+  let randomFillMode = (currentColor === 'randomFill');
+
+  if (randomMode || randomFillMode) {
     background(0);
   } else {
     background(currentColor[0], currentColor[1], currentColor[2]);
@@ -89,8 +93,13 @@ function draw() {
   if (faces.length > 0) {
     let face = faces[0];
 
+    // Remove the loading message on first successful detection
+    var ol = document.getElementById('sketch-loading-overlay');
+    if (ol) ol.parentNode.removeChild(ol);
+
     updateColorWithMouth(face);
-    randomMode = (currentColor === null);
+    randomMode     = (currentColor === null);
+    randomFillMode = (currentColor === 'randomFill');
 
     let minX = Infinity, maxX = -Infinity;
     let minY = Infinity, maxY = -Infinity;
@@ -110,7 +119,7 @@ function draw() {
     scale(2);
     translate(-faceCX, -faceCY);
 
-    if (!randomMode) randomSeed(5);
+    if (!randomMode && !randomFillMode) randomSeed(5);
     beginShape(TRIANGLES);
 
     for (let i = 0; i < triangles.length; i++) {
@@ -133,6 +142,10 @@ function draw() {
       if (randomMode) {
         let rc = [random(255), random(255), random(255)];
         stroke(rc[0], rc[1], rc[2]);
+        fill(rr, gg, bb);
+      } else if (randomFillMode) {
+        let rc = [random(255), random(255), random(255)];
+        stroke(0);
         fill(rc[0], rc[1], rc[2]);
       } else {
         stroke(currentColor[0], currentColor[1], currentColor[2]);

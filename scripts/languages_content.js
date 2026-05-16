@@ -149,6 +149,9 @@ const languagesContent = {
     faceMeshTitle: "FACE MESH",
     faceMeshText: "Diese Skizze nutzt die ml5.js FaceMesh-Bibliothek, um die Gesichtserkennung in Echtzeit zu implementieren. Sobald ein Gesicht erkannt wird, werden Dreiecke über die Gesichtspunkte gezeichnet, die sich dynamisch ausbreiten und überlagern, um eine organische, sich ständig verändernde Maske zu erzeugen. Die Dreiecke wachsen mit der Zeit und schaffen ein hypnotisches visuelles Muster, das die Konturen des Gesichts betont.",
     faceMeshInstructions: "Anleitung: Positioniere dein Gesicht in der Mitte des Bildschirms. Öffne den Mund, um die Farben zu wechseln.",
+    faceMeshLoading: "Gesichtsmodell &amp; Kamera werden geladen\u2026",
+    faceMeshLoadingCamera: "Bitte erlaube den Kamerazugriff, wenn du dazu aufgefordert wirst.",
+    btnDownloadImage: "Bild herunterladen",
 
     //Joblab
     joblabTitle1: "PROJEKTÜBERSICHT",
@@ -411,6 +414,9 @@ const languagesContent = {
     faceMeshTitle: "FACE MESH",
     faceMeshText: "This sketch uses the ml5.js FaceMesh library to implement real-time face tracking. Once a face is detected, triangles are drawn across the facial landmarks, dynamically expanding and overlapping to create an organic, constantly shifting mask. The triangles grow over time, generating a hypnotic visual pattern that emphasizes the contours of the face.",
     faceMeshInstructions: "Position your face in the center of the screen. Open your mouth to change colors.",
+    faceMeshLoading: "Loading face model &amp; camera\u2026",
+    faceMeshLoadingCamera: "Please allow camera access when prompted.",
+    btnDownloadImage: "Download Image",
 
     //Joblab
     joblabTitle1: "PROJECT OVERVIEW",
@@ -676,6 +682,9 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     faceMeshTitle: "FACE MESH",
     faceMeshText: "Este sketch utiliza la biblioteca FaceMesh de ml5.js para implementar reconocimiento facial en tiempo real. Una vez que se detecta un rostro, se dibujan triángulos sobre los puntos faciales que se expanden y superponen dinámicamente para crear una máscara orgánica y en constante transformación. Los triángulos crecen con el tiempo, generando un patrón visual hipnótico que resalta los contornos del rostro.",
     faceMeshInstructions: "Instrucciones: Coloca tu rostro en el centro de la pantalla. Abre la boca para cambiar los colores.",
+    faceMeshLoading: "Cargando modelo facial &amp; c\u00e1mara\u2026",
+    faceMeshLoadingCamera: "Por favor, permite el acceso a la c\u00e1mara cuando se solicite.",
+    btnDownloadImage: "Descargar imagen",
 
       //Joblab
       joblabTitle1: 'RESUMEN DEL PROYECTO',

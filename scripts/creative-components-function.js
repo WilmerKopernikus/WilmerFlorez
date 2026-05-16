@@ -19,6 +19,33 @@
       // Sketches with cdnScripts load their dependencies sequentially first,
       // then append the sketch script so all globals (p5, ml5, etc.) are ready.
       if (sketch.cdnScripts && sketch.cdnScripts.length > 0) {
+        // Show a plain-JS overlay immediately — appears as soon as the loading
+        // screen hides, long before any CDN script finishes downloading.
+        document.addEventListener('DOMContentLoaded', function () {
+          var ol = document.createElement('div');
+          ol.id = 'sketch-loading-overlay';
+          ol.style.cssText = [
+            'position:fixed',
+            'top:50%',
+            'left:50%',
+            'transform:translate(-50%,-50%)',
+            'z-index:100',
+            'color:#fff',
+            'font-family:Arial,Helvetica,sans-serif',
+            'font-size:1rem',
+            'letter-spacing:0.08em',
+            'text-align:center',
+            'pointer-events:none',
+            'text-shadow:0 0 8px rgba(0,0,0,0.8)'
+          ].join(';');
+          ol.innerHTML =
+            '<span data-i18n="faceMeshLoading">Loading face model &amp; camera&hellip;</span><br>' +
+            '<span data-i18n="faceMeshLoadingCamera" style="font-size:0.8rem;opacity:0.7;">' +
+            'Please allow camera access when prompted.' +
+            '</span>';
+          document.body.appendChild(ol);
+        });
+
         (function loadSequentially(urls, index) {
           if (index >= urls.length) {
             var sketchScript = document.createElement('script');

@@ -53,7 +53,7 @@ const CREATIVE_SKETCHES = {
   'face-mesh': {
     titleKey: 'faceMeshTitle',
     script: 'scripts/face-mesh.js',
-    buttons: '<button id="downloadImage" class="download-image-button" onclick="downloadImage()">Download Image</button>',
+    buttons: '<button id="downloadImage" class="download-image-button" onclick="downloadImage()" data-i18n="btnDownloadImage">Download Image</button>',
     cdnScripts: [
       'https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/p5.js',
       'https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/addons/p5.sound.min.js',
