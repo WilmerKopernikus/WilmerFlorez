@@ -252,7 +252,7 @@ const languagesContent = {
 
     //About Me
     UeberMich: "ÜBER MICH",
-    aboutSubtitle: "GEDANKEN UND EXPERIMENTE AUS DEM WEB-BAU",
+    aboutSubtitle: "GEDANKEN UND EXPERIMENTE ZUM WEBENTWICKLUNG",
     blogText: "Hier dokumentiere ich meine Lernerfahrungen, Projekte und Fragen, die ich auf meinem Weg als Entwickler stelle - von UI-Entscheidungen bis hin zu Backend-Herausforderungen. Ein Raum für Experimente, Ideen und Reflexionen – wo kreatives Programmieren auf praktische Webentwicklung trifft.",
 
     //Kontakt
