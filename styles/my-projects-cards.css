@@ -11,6 +11,12 @@
   justify-content: stretch;
 }
 
+@media screen and (max-height: 415px) and (orientation: landscape) {
+  .card-shared {
+    margin-top: 38px;
+  }
+}
+
 #card1-my-projects {
     --index: 1;
     background: linear-gradient(to bottom, rgb(192, 168, 98), rgb(25, 20, 12));
