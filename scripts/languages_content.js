@@ -4,7 +4,7 @@ const languagesContent = {
   de: {
     //Menu
     menuIndex: `Startseite`,
-    menuProjekte: `Arbeiten`,
+    menuProjekte: `Case Studies`,
     menuEigeneProjekte: `Meine Projekte`,
     menuCreativeCoding: `Creative Coding`,
     menuUeberMich: `Über Mich`,
@@ -30,7 +30,7 @@ const languagesContent = {
     clickToStart: `Klicken, um zu starten`,
     homeButton: `Projekt starten`,
 
-    kundenProjekte: "ARBEITEN",
+    kundenProjekte: "CASE STUDIES",
     kundenProjekteText: "In dieser Auswahl präsentiere ich reale Projekte für Kunden, bei denen ich Design und Entwicklung kombiniert habe. Alle Projekte sind live verfügbar und mit einem direkten Link zugänglich. Zusätzlich ist jedes Projekt von einer detaillierten Beschreibung begleitet, die Kontext, Herangehensweise sowie die technisch und gestalterisch umgesetzten Ergebnisse transparent macht.",
     kundenProjekteButton: "Kundenprojekte erkunden",
     meineProjekte: "MEINE PROJEKTE",
@@ -93,7 +93,7 @@ const languagesContent = {
     contactButton: `Zum Kontakt`,
 
     //Kundenprojekte
-    projekteTitle: "PROJEKTE",
+    projekteTitle: "CASE STUDIES",
     joblabKunde: "<strong>Kunde:</strong><br /> Deutscher Akademischer Austauschdienst (DAAD)",
     joblabLeistungen: "<strong>Leistungen:</strong><br/> Webentwicklung - Webdesign - Markenentwicklung - Plakatgestaltung",
     joblabUebersicht: "<strong>Übersicht:</strong><br/>Im Mai und Juni 2024 führte der DAAD in China gemeinsam mit der Deutschen Botschaft, dem Goethe-Institut und weiteren Partnern das Projekt Job Lab durch. Die Messe bot unter dem Motto „Mit Deutsch in die Zukunft“ Karriereperspektiven für chinesische Germanistik-Studierende.",
