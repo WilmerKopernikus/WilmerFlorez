@@ -32,7 +32,7 @@ const languagesContent = {
 
     kundenProjekte: "CASE STUDIES",
     kundenProjekteText: "In dieser Auswahl präsentiere ich reale Projekte für Kunden, bei denen ich Design und Entwicklung kombiniert habe. Alle Projekte sind live verfügbar und mit einem direkten Link zugänglich. Zusätzlich ist jedes Projekt von einer detaillierten Beschreibung begleitet, die Kontext, Herangehensweise sowie die technisch und gestalterisch umgesetzten Ergebnisse transparent macht.",
-    kundenProjekteButton: "Kundenprojekte erkunden",
+    kundenProjekteButton: "Case Studies erkunden",
     meineProjekte: "MEINE PROJEKTE",
     meineProjekteText: "Diese Projekte entstanden eigenständig, um neue Technologien zu erforschen und kreative Ansätze umzusetzen. Sie dienen als praktische Demonstration meiner Fähigkeiten in Konzeption, Design und Entwicklung. Der Fokus liegt auf Experiment, Lernen und Innovation, oft mit interaktiven oder AI-gestützten Funktionen und einem starken gestalterischen Anspruch.",
     meineProjekteButton: "Meine Projekte",
@@ -300,7 +300,7 @@ const languagesContent = {
 
     kundenProjekte: "CASE STUDIES",
     kundenProjekteText: "In this selection, I present real-world projects for clients where I combined design and development. All projects are available live and accessible via a direct link. Each project is also accompanied by a detailed description that transparently explains the context, approach, and the technically and aesthetically implemented results.",
-    kundenProjekteButton: "Explore Commissions",
+    kundenProjekteButton: "Explore Case Studies",
     meineProjekte: "MY PROJECTS",
     meineProjekteText: "These projects were developed independently to explore new technologies and implement creative approaches. They serve as a practical demonstration of my skills in conception, design, and development. The focus is on experimentation, learning, and innovation, often incorporating interactive or AI-powered features and a strong design focus.",
     meineProjekteButton: "My Projects",
