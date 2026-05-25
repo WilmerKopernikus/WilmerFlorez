@@ -71,27 +71,27 @@ function initCard2SketchObserver() {
 		return;
 	}
 
-	const card2Elements = document.querySelectorAll("#card2");
+	// Works on all pages: .card-shared is the class of every card after the intro (#card1)
+	const sharedCards = document.querySelectorAll(".card-shared");
 
-	if (!card2Elements.length) {
+	if (!sharedCards.length) {
 		return;
 	}
 
-	const visibleCard2 = new Set();
+	const visibleShared = new Set();
 
 	const observer = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting && entry.intersectionRatio >= 0.35) {
-				visibleCard2.add(entry.target);
+				visibleShared.add(entry.target);
 			} else {
-				visibleCard2.delete(entry.target);
+				visibleShared.delete(entry.target);
 			}
 		});
-
-		setSketchPausedByCard2(visibleCard2.size > 0);
+		setSketchPausedByCard2(visibleShared.size > 0);
 	}, { threshold: [0, 0.35, 0.6] });
 
-	card2Elements.forEach((card) => observer.observe(card));
+	sharedCards.forEach((card) => observer.observe(card));
 }
 
 if (document.readyState === "loading") {
