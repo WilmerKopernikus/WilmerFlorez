@@ -433,7 +433,7 @@
                 <a href="kundenprojekte.html">
                   <button class="send-button" id="low-light" data-i18n="kundenProjekteButton">Kundenprojekte</button>
                 </a><br>
-                <video id="services-animation-mobile" autoplay loop muted playsinline preload="metadata" loading="lazy"
+                <video id="video-mobile-card2" loop muted playsinline preload="metadata" loading="lazy"
                   poster="imagenes/videos/services_01.jpg" class="white-shadow">
                   <source src="imagenes/videos/services_01_compressed.mp4" type="video/mp4">
                   Your browser does not support the video tag.
@@ -776,6 +776,40 @@
           hideOverlay();
         }
       });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      const video = document.getElementById('video-mobile-card2');
+      const card3Mobile = document.querySelector('.cards-mobile #card3');
+      if (!video || !card3Mobile) return;
+
+      let coveredByCard3 = false;
+
+      // Pause video when card3 stacks over card2
+      const card3Observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          coveredByCard3 = entry.isIntersecting;
+          if (entry.isIntersecting) {
+            video.pause();
+          }
+        });
+      }, { threshold: 0.1 });
+
+      // Play video when it enters view, pause when it leaves
+      const videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !coveredByCard3) {
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+          }
+        });
+      }, { threshold: 0.5 });
+
+      card3Observer.observe(card3Mobile);
+      videoObserver.observe(video);
     })();
   </script>
 </body>
