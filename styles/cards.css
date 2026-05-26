@@ -22,12 +22,31 @@
 }
 
 @media (orientation: portrait) {
+    :root {
+    --cardHeight: var(--viewportHeight);
+  }
+
   .cards-mobile {
     display: block;
   }
 
   .cards-screens {
     display: none;
+  }
+
+  .card {
+    top: 66px;
+    scroll-margin-top: 66px;
+    transition: top 0.35s ease;
+  }
+
+  body.header-hidden .card {
+    top: 0;
+    scroll-margin-top: 0;
+  }
+
+  .card-body-intro {
+    height: var(--viewportHeight);
   }
 }
 
@@ -282,6 +301,21 @@
 
   .card {
     top: 50px;
+  }
+}
+
+@media (max-width: 750px) and (orientation: portrait) {
+  :root {
+    --cardHeight: var(--viewportHeight);
+  }
+
+  #cases-cards-container {
+    --cardHeight: var(--viewportHeight);
+  }
+
+  .card {
+    top: 55px;
+    scroll-margin-top: 55px;
   }
 }
 

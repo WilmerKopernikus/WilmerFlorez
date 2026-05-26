@@ -462,6 +462,10 @@ li a {
   }
 }
 @media (orientation: portrait) {
+    :root {
+    --header-hide-translate: -72px;
+  }
+  
   .header,
   .hamburger-menu,
   .language-selector {
@@ -472,7 +476,7 @@ li a {
   body.header-hidden .header,
   body.header-hidden .hamburger-menu,
   body.header-hidden .language-selector {
-    transform: translateY(-120%);
+    transform: translateY(var(--header-hide-translate));
   }
 
   body.header-hidden .menu-overlay.show {
