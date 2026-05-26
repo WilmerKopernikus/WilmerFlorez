@@ -336,7 +336,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const visibleHeight = Math.max(0, visibleBottom - visibleTop);
     const visibleRatio = rect.height > 0 ? visibleHeight / rect.height : 0;
 
-    if (visibleRatio < 0.25) return false;
+    if (visibleRatio < 0.2) return false;
 
     const nextCard = card.nextElementSibling;
     if (nextCard && nextCard.classList.contains('card')) {
