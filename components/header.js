@@ -71,6 +71,52 @@ class SiteShell extends HTMLElement {
         </ul>
       </div>
     `;
+    
+    this.setupAutoHideHeader();
+  }
+
+  setupAutoHideHeader() {
+    if (!window.matchMedia('(orientation: portrait)').matches) {
+      return;
+    }
+
+    const body = document.body;
+    const menuOverlay = document.getElementById('menuOverlay');
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+    const delta = 8;
+
+    const onScroll = () => {
+      const currentScrollY = window.scrollY;
+      const scrollingDown = currentScrollY > lastScrollY;
+      const passedHeaderZone = currentScrollY > 80;
+
+      if (scrollingDown && passedHeaderZone && !menuOverlay.classList.contains('show')) {
+        body.classList.add('header-hidden');
+      } else if (!scrollingDown || currentScrollY <= 0) {
+        body.classList.remove('header-hidden');
+      }
+
+      lastScrollY = Math.max(currentScrollY, 0);
+      ticking = false;
+    };
+
+    window.addEventListener('scroll', () => {
+      if (Math.abs(window.scrollY - lastScrollY) < delta) {
+        return;
+      }
+
+      if (!ticking) {
+        window.requestAnimationFrame(onScroll);
+        ticking = true;
+      }
+    }, { passive: true });
+
+    window.addEventListener('resize', () => {
+      if (!window.matchMedia('(orientation: portrait)').matches) {
+        body.classList.remove('header-hidden');
+      }
+    });
   }
 }
 

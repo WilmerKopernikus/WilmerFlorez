@@ -461,3 +461,21 @@ li a {
     margin: 30px 0;
   }
 }
+@media (orientation: portrait) {
+  .header,
+  .hamburger-menu,
+  .language-selector {
+    transition: transform 0.35s ease;
+    will-change: transform;
+  }
+
+  body.header-hidden .header,
+  body.header-hidden .hamburger-menu,
+  body.header-hidden .language-selector {
+    transform: translateY(-120%);
+  }
+
+  body.header-hidden .menu-overlay.show {
+    transform: scaleY(1) translateY(-66px);
+  }
+}
