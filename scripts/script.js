@@ -319,3 +319,62 @@ document.addEventListener('DOMContentLoaded', function () {
   setupServiceToggle();
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+  const videos = Array.from(document.querySelectorAll('.cards-screens video, .cards-mobile video'));
+  if (!videos.length) return;
+
+  const isVideoActive = (video) => {
+    const card = video.closest('.card');
+    if (!card) return false;
+
+    const rect = video.getBoundingClientRect();
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+
+    const visibleTop = Math.max(rect.top, 0);
+    const visibleBottom = Math.min(rect.bottom, vh);
+    const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+    const visibleRatio = rect.height > 0 ? visibleHeight / rect.height : 0;
+
+    if (visibleRatio < 0.25) return false;
+
+    const nextCard = card.nextElementSibling;
+    if (nextCard && nextCard.classList.contains('card')) {
+      const nextRect = nextCard.getBoundingClientRect();
+      const videoMidY = rect.top + rect.height / 2;
+      const nextCardIsCovering = nextRect.top <= videoMidY;
+
+      if (nextCardIsCovering) {
+        return false;
+      }
+    }
+
+    return true;
+  };
+
+  const pauseVideo = (video) => {
+    video.pause();
+    video.currentTime = video.currentTime;
+  };
+
+  const syncVideosWithViewport = () => {
+    videos.forEach((video) => {
+      if (isVideoActive(video)) {
+        video.play().catch(() => {});
+      } else {
+        pauseVideo(video);
+      }
+    });
+  };
+
+  videos.forEach((video) => {
+    video.removeAttribute('autoplay');
+    pauseVideo(video);
+  });
+
+  ['load', 'scroll', 'resize', 'orientationchange'].forEach((eventName) => {
+    window.addEventListener(eventName, syncVideosWithViewport, { passive: true });
+  });
+
+  requestAnimationFrame(syncVideosWithViewport);
+});
