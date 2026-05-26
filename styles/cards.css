@@ -22,8 +22,9 @@
 }
 
 @media (orientation: portrait) {
-    :root {
-    --cardHeight: var(--viewportHeight);
+  :root {
+    --cardHeight: calc(var(--viewportHeight) - 66px);
+    --cardMargin: 0px;
   }
 
   .cards-mobile {
@@ -46,7 +47,7 @@
   }
 
   .card-body-intro {
-    height: var(--viewportHeight);
+    height: calc(var(--viewportHeight) - 66px);
   }
 }
 
@@ -306,11 +307,11 @@
 
 @media (max-width: 750px) and (orientation: portrait) {
   :root {
-    --cardHeight: var(--viewportHeight);
+    --cardHeight: calc(var(--viewportHeight) - 55px);
   }
 
   #cases-cards-container {
-    --cardHeight: var(--viewportHeight);
+    --cardHeight: calc(var(--viewportHeight) - 55px);
   }
 
   .card {
