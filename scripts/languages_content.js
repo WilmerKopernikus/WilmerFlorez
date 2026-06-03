@@ -182,7 +182,7 @@ const languagesContent = {
     blancecContent6: "Ich war der alleinige Entwickler und Designer und verantwortlich für Architektur, UI/UX, Backend-Logik, SEO-Metadaten (Open Graph, strukturierte JSON-LD-Daten) und Deployment. Das Projekt ist live und abgeschlossen. Ich übernehme weiterhin laufende Wartung, Inhaltsaktualisierungen und technischen Support im Rahmen eines Servicevertrags mit dem Kunden.",
 
     // Banderas Nila López
-    banderasSubtitle: "Unternehmenswebsite <br>Live-Projekt (in Entwicklung) <br>Einzelentwickler & Designer",
+    banderasSubtitle: "Unternehmenswebsite",
     banderasTitle1: "PROJEKTÜBERSICHT",
     banderasContent1: "Entwicklung einer modernen, leistungsoptimierten Website für ein kolumbianisches Flaggenunternehmen, das sich auf die Produktion von nationalen, Firmen-, internationalen und institutionellen Flaggen spezialisiert hat. Die Plattform dient sowohl als digitaler Showroom als auch als Kanal zur Kundengewinnung.",
     banderasTitle2: "TECHNISCHE UMSETZUNG",
@@ -202,7 +202,6 @@ const languagesContent = {
     liveWebsite: "Live-Website ansehen",
 
     // Tarot Presentation
-    tarotSubtitle: "Interaktive Tarot-Erfahrung<br>Einzelentwickler & Designer",
     tarotTitle1: "ÜBERBLICK",
     tarotContent1: "Eine vollständig individuell entwickelte interaktive Tarot-Web-App, die ich allein umgesetzt habe — vom Konzept bis zum Deployment. Nutzer wählen aus sechs einzigartigen Decks mit jeweils eigener visueller Identität, ziehen entweder eine einzelne Karte oder ein Dreier-Spread und konsultieren ein KI-Orakel, das die Legung in drei Sprachen interpretiert: Spanisch, Englisch und Deutsch.",
     tarotTitle2: "TECH-STACK & ARCHITEKTUR",
@@ -240,7 +239,7 @@ const languagesContent = {
     oraculo_error_hablar: "Es gab einen Fehler beim Sprechen mit dem Orakel.",
 
     //Stop the Desert
-    stopSubtitle: "NGO-Website <br>Laufendes ehrenamtliches Projekt <br>Eigenständige Entwicklung & Design",
+    stopSubtitle: "NGO-Website",
     stopTitle1: "PROJEKTÜBERBLICK",
     stopContent1: "Stop the Desert ist ein laufendes ehrenamtliches Projekt für eine NGO, die weltweit gegen Wüstenbildung arbeitet. Die Website dient als Informations- und Unterstützungsplattform, vermittelt die Mission der Organisation klar und leitet Besucher zu konkreten Möglichkeiten an, einen Beitrag zu leisten.",
     stopTitle2: "MEINE ROLLE",
@@ -448,7 +447,7 @@ const languagesContent = {
 
 
     // Banderas Nila López
-    banderasSubtitle: "Company Website <br>Live Project (in Development) <br>Solo Developer & Designer",
+    banderasSubtitle: "Company Website",
     banderasTitle1: "PROJECT OVERVIEW",
     banderasContent1: "Development of a modern, high-performance website for a Colombian flag company specializing in the production of national, corporate, international, and institutional flags. The platform serves as both a digital showroom and a customer acquisition channel.",
     banderasTitle2: "TECHNICAL IMPLEMENTATION",
@@ -468,7 +467,7 @@ const languagesContent = {
     liveWebsite: "Visit the Website",
 
     // Tarot Presentation
-    tarotSubtitle: "Interactive Tarot Experience<br>Solo Developer & Designer",
+    tarotSubtitle: "Interactive Tarot Experience",
     tarotTitle1: "OVERVIEW",
     tarotContent1: "A fully custom interactive tarot web app built solo — from concept to deployment. Users pick from six unique decks, each visually distinct, draw a single card or a three-card spread, and consult an AI oracle that interprets the reading in three languages: Spanish, English, and German.",
     tarotTitle2: "TECH STACK & ARCHITECTURE",
@@ -507,7 +506,7 @@ const languagesContent = {
 
     //Stop the Desert
 
-    stopSubtitle: "NGO Website <br>Ongoing Volunteer Project <br>Independent Development & Design",
+    stopSubtitle: "NGO Website",
     stopTitle1: "PROJECT OVERVIEW",
     stopContent1: "Stop the Desert is an ongoing volunteer project for an NGO that works against desertification worldwide. The website serves as an informational and support platform, clearly communicating the organization’s mission and guiding visitors toward concrete ways to contribute.",
     stopTitle2: "MY ROLE",
@@ -715,7 +714,7 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     blancecContent6: "Fui el único desarrollador y diseñador, responsable de la arquitectura, UI/UX, lógica backend, metadatos SEO (Open Graph, datos estructurados JSON-LD) y despliegue. El proyecto está en línea y terminado. Continúo ofreciendo mantenimiento continuo, actualizaciones de contenido y soporte técnico bajo un acuerdo de servicio con el cliente.",
 
     // Banderas Nila López
-    banderasSubtitle: "Sitio Web Empresarial <br>Proyecto en Vivo (en Desarrollo) <br>Desarrollador y Diseñador Único",
+    banderasSubtitle: "Sitio Web Empresarial",
     banderasTitle1: "DESCRIPCIÓN DEL PROYECTO",
     banderasContent1: "Desarrollo de un sitio web moderno y de alto rendimiento para una empresa colombiana de banderas especializada en la producción de banderas nacionales, corporativas, internacionales e institucionales. La plataforma funciona tanto como catálogo digital como canal de adquisición de clientes.",
     banderasTitle2: "IMPLEMENTACIÓN TÉCNICA",
@@ -735,7 +734,6 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     liveWebsite: "Sitio web en vivo",
 
     // Tarot Presentation
-    tarotSubtitle: "Experiencia de Tarot Interactiva<br>Desarrollador y Diseñador en Solitario",
     tarotTitle1: "VISIÓN GENERAL",
     tarotContent1: "Una aplicación web interactiva de tarot completamente personalizada, desarrollada en solitario de principio a fin: desde el concepto hasta el despliegue. Los usuarios pueden elegir entre seis barajas únicas, cada una con una identidad visual distinta, sacar una sola carta o una tirada de tres cartas y consultar un oráculo de IA que interpreta la lectura en tres idiomas: español, inglés y alemán.",
     tarotTitle2: "STACK TECNOLÓGICO Y ARQUITECTURA",
@@ -774,7 +772,7 @@ Responsable del contenido según §55 Abs. 2 RStV`,
 
     //Stop the Desert
 
-    stopSubtitle: "Sitio web para una ONG <br>Proyecto voluntario en curso <br>Desarrollo y diseño independiente",
+    stopSubtitle: "Sitio web para una ONG",
     stopTitle1: "VISIÓN GENERAL",
     stopContent1: "Stop the Desert es un proyecto voluntario en curso para una ONG que trabaja contra la desertificación a nivel mundial. El sitio web funciona como una plataforma informativa y de apoyo, ayudando a comunicar claramente la misión de la organización y guiando a los visitantes hacia formas concretas de contribuir.",
     stopTitle2: "MI ROL",
