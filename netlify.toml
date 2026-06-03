@@ -1,5 +1,6 @@
 [build]
   publish = "."
-  
+  command = "node -e \"const fs=require('fs'); const sw=fs.readFileSync('service-worker.js','utf8'); fs.writeFileSync('service-worker.js', sw.replace('__DEPLOY_TIME__', Date.now()));\""
+
 [build.environment]
   NODE_VERSION = "22"

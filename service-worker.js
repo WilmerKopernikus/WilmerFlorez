@@ -1,17 +1,13 @@
 // Service Worker para Wilmer Florez Portfolio
-// Versión 1.4.0 - Durante desarrollo priorizar archivos no minificados
+// La versión se genera automáticamente con cada deploy — no editar manualmente
 
-const CACHE_VERSION = 'v1.4.0';
+const CACHE_VERSION = 'v__DEPLOY_TIME__';
 const CACHE_STATIC = `wilmer-static-${CACHE_VERSION}`;
 const CACHE_DYNAMIC = `wilmer-dynamic-${CACHE_VERSION}`;
 const CACHE_IMAGES = `wilmer-images-${CACHE_VERSION}`;
 
-// Archivos críticos para cachear en la instalación
+// Archivos críticos para cachear en la instalación (solo assets, nunca HTML)
 const STATIC_ASSETS = [
-  '/',
-  '/index.html',
-  '/projekte.html',
-  '/kontakt.html',
   '/styles/cards_intro.css',
   '/styles/header_test.min.css',
   '/styles/cards.min.css',
@@ -94,11 +90,15 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(networkFirst(request, CACHE_STATIC));
   } 
   else if (request.destination === 'video') {
-    // VIDEOS: Network First (no cachear, son muy pesados)
+    // VIDEOS: Network Only (no cachear, son muy pesados)
     event.respondWith(fetch(request));
   }
+  else if (request.destination === 'document') {
+    // HTML: Network Only — nunca cachear páginas, siempre versión fresca
+    event.respondWith(fetch(new Request(request, { cache: 'no-store' })));
+  }
   else {
-    // HTML y otros: Network First (red primero, caché como fallback)
+    // Otros recursos: Network First
     event.respondWith(networkFirst(request, CACHE_DYNAMIC));
   }
 });
