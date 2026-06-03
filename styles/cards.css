@@ -150,6 +150,28 @@
   padding: 1.5rem 0;
 }
 
+/* <br> inside flex containers collapses to 0px in Firefox.
+   Replace spacing with CSS margins. */
+#center-services > br,
+.card-content-flex > br {
+  display: none;
+}
+
+#center-services > p,
+.card-content-flex > p {
+  margin-bottom: 0.9rem;
+}
+
+#center-services > a,
+.card-content-flex > a {
+  margin-top: 0.6rem;
+}
+
+.card-content-flex > video,
+.card-content-flex > .image-mobile {
+  margin-top: 1.5rem;
+}
+
 .left {
   grid-area: left;
   padding-left: 50px;
