@@ -252,7 +252,7 @@ const languagesContent = {
     stopTitle1: "PROJEKTÜBERBLICK",
     stopContent1: "Stop the Desert ist ein laufendes ehrenamtliches Projekt für eine NGO, die weltweit gegen Wüstenbildung arbeitet. Die Website dient als Informations- und Unterstützungsplattform, vermittelt die Mission der Organisation klar und leitet Besucher zu konkreten Möglichkeiten an, einen Beitrag zu leisten.",
     stopTitle2: "MEINE ROLLE",
-    stopContent2: "Ich betreue und verbessere die WordPress-Website ehrenamtlich und unbezahlt und bringe dabei sowohl Design- als auch Entwicklungsarbeit ein. Mein Fokus liegt darauf, die Website klarer, konsistenter und einfacher zu navigieren zu machen und zugleich die Darstellung der Mission und Aktivitäten der NGO zu stärken.",
+    stopContent2: "Ich betreue und verbessere die WordPress-Website ehrenamtlich und unbezahlt und bringe dabei sowohl Design- als auch Entwicklungsarbeit ein. Mein Fokus liegt darauf, die Website klarer, konsistenter und einfacher navigierbar zu machen und zugleich die Darstellung der Mission und Aktivitäten der NGO zu stärken. ",
     stopTitle3: "TECHNISCHE UMSETZUNG",
     stopContent3: "Das Projekt nutzt WordPress und Kadence sowie HTML, CSS und JavaScript für individuelle Anpassungen, wo sie nötig sind. Diese Kombination ermöglicht eine flexible Inhaltsverwaltung und praktische Frontend-Verbesserungen, darunter Layout-Optimierung, Navigation, responsives Design und eine bessere Darstellung von Seiten und Blogbeiträgen.",
     stopTitle4: "SPENDENSYSTEM UND WIRKUNG",
@@ -260,8 +260,13 @@ const languagesContent = {
 
     //About Me
     UeberMich: "ÜBER MICH",
-    aboutSubtitle: "GEDANKEN UND EXPERIMENTE ZUM WEBENTWICKLUNG",
-    blogText: "Hier dokumentiere ich meine Lernerfahrungen, Projekte und Fragen, die ich auf meinem Weg als Entwickler stelle - von UI-Entscheidungen bis hin zu Backend-Herausforderungen. Ein Raum für Experimente, Ideen und Reflexionen – wo kreatives Programmieren auf praktische Webentwicklung trifft.",
+    aboutSubtitle: "BERUFLICHES PROFIL",
+    blogText: "In Bogotá, Kolumbien, geborener Frontend- und Creative Developer mit Wohnsitz in Bonn und fundierter Erfahrung in der Entwicklung moderner Webanwendungen, interaktiver Benutzeroberflächen und digitaler Erlebniswelten. Fundierte Kenntnisse in HTML, CSS, JavaScript, TypeScript, React, Angular, Vue.js und Next.js sowie in visuellen Webtechnologien wie Three.js, WebGL, Shader-Programmierung, Creative Coding und 3D-Workflows mit Blender. Erfahrung in der Umsetzung performanter, responsiver und nutzerzentrierter Anwendungen an der Schnittstelle von Technologie, Design und visueller Kommunikation.",
+    blogText2: "Meine ergänzende Kenntnisse in Backend-Technologien, Datenbanken, API-Integration und KI-gestützten Weblösungen ermöglichen die Entwicklung ganzheitlicher digitaler Produkte. Durch meinen Hintergrund als bildender Künstler verbinde ich analytisches Denken und technisches Know-how mit kreativer Problemlösung sowie einem ausgeprägten Gespür für Ästhetik, User Experience und digitale Kommunikation.",
+    blogText3: "Meine langjährige Berufserfahrung in Europa, Asien und Lateinamerika haben meine interkulturellen Kompetenzen sowie meine Fähigkeit zur Zusammenarbeit in internationalen Teams geprägt. Verhandlungssichere Sprachkenntnisse in Deutsch, Englisch und Spanisch ermöglichen eine professionelle Kommunikation in internationalen und transkontinentalen Arbeitsumfeldern.",
+    blogTitle3: "TRANSKONTINENTAL",
+    blogTitle4: "VON DER KUNST ZUR WEBENTWICKLUNG",
+    blogText4: "Meine ersten Berührungspunkte mit der Programmierung entstanden während meines Studiums der Bildenden Kunst an der Nationaluniversität von Kolumbien. Im Kurs „Programmierung für Künstler“ erlernte ich die Grundlagen der Softwareentwicklung. Parallel dazu arbeitete ich intensiv mit Software für Fotografie, Grafikdesign, Video und Audio, darunter die Adobe Creative Suite. Diese Verbindung von Technologie und Gestaltung bildet bis heute die Grundlage meiner Arbeit als Webentwickler.",
 
     //Kontakt
     heroTitle: 'KONTAKT',
@@ -523,7 +528,6 @@ const languagesContent = {
     oraculo_error_hablar: "There was an error communicating with the oracle.",
 
     //Stop the Desert
-
     stopSubtitle: "NGO Website",
     stopTitle1: "PROJECT OVERVIEW",
     stopContent1: "Stop the Desert is an ongoing volunteer project for an NGO that works against desertification worldwide. The website serves as an informational and support platform, clearly communicating the organization’s mission and guiding visitors toward concrete ways to contribute.",
@@ -536,8 +540,13 @@ const languagesContent = {
 
     //About Me
     UeberMich: "ABOUT ME",
-    aboutSubtitle: "THOUGHTS AND EXPERIMENTS FROM BUILDING ON THE WEB",
-    blogText: "This is where I document what I’m learning, building, and questioning as I grow as a developer — from UI decisions to backend challenges. A space for experiments, ideas, and reflections — where creative coding meets practical web development.",
+    aboutSubtitle: "PROFESSIONAL PROFILE",
+    blogText: "Frontend and Creative Developer born in Bogotá, Colombia, and based in Bonn, Germany, with solid experience in developing modern web applications, interactive user interfaces, and digital experiences. Strong knowledge of HTML, CSS, JavaScript, TypeScript, React, Angular, Vue.js, and Next.js, as well as visual web technologies such as Three.js, WebGL, shader programming, creative coding, and 3D workflows with Blender. Experienced in building high-performance, responsive, and user-centered applications at the intersection of technology, design, and visual communication.",
+    blogText2: "My additional knowledge of backend technologies, databases, API integration, and AI-powered web solutions enables me to develop complete digital products. Thanks to my background as a visual artist, I combine analytical thinking and technical expertise with creative problem-solving and a strong sense of aesthetics, user experience, and digital communication.",
+    blogText3: "My years of professional experience living across Europe, Asia, and Latin America have shaped my intercultural competencies and my ability to collaborate effectively within international teams. Professional proficiency in German, English, and Spanish enables me to communicate successfully in international and transcontinental working environments.",
+    blogText4: "My first experiences with programming began during my Visual Arts studies at the National University of Colombia. In the course 'Programming for Artists,' I learned the fundamentals of software development. At the same time, I worked extensively with software for photography, graphic design, video, and audio production, including the Adobe Creative Suite. This combination of technology and design continues to form the foundation of my work as a web developer.",
+    blogTitle3: "TRANSCONTINENTAL",
+    blogTitle4: "FROM ART TO WEB DEVELOPMENT",
 
     //Kontakt
     heroTitle: 'CONTACT',
@@ -703,7 +712,7 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     faceMeshLoadingCamera: "Por favor, permite el acceso a la c\u00e1mara cuando se solicite.",
     btnDownloadImage: "Descargar imagen",
 
-      //Joblab
+    //Joblab
     joblabTitle1: 'RESUMEN DEL PROYECTO',
     joblabContent1: 'Job Lab es un proyecto encargado por el DAAD (Servicio Alemán de Intercambio Académico) en China, y desarrollado en estrecha colaboración con la Embajada de Alemania en Pekín y los Consulados Alemanes en Shanghái y Cantón. Su misión principal: informar a los estudiantes chinos de germanística sobre las oportunidades del mercado laboral en Alemania, ofreciéndoles orientación práctica y recursos a través de una plataforma digital dedicada y eventos presenciales.',
     joblabTitle2: 'PARTES INTERESADAS CLAVE Y COLABORACIONES',
@@ -711,7 +720,7 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     joblabTitle3: 'DESARROLLO WEB Y ENFOQUE MULTILINGÜE',
     joblabContent3: 'Diseñé y desarrollé un sitio web completamente bilingüe en alemán y chino. Esta plataforma sirvió como un centro de información, alojando detalles del mercado laboral, actualizaciones de eventos y recursos relevantes. Desde la gestión del alojamiento web y los dominios hasta la actualización continua del contenido del sitio, nos aseguramos de que la plataforma se mantuviera actualizada y valiosa para su diversa audiencia.',
     joblabTitle4: 'OPTIMIZACIÓN MÓVIL Y WECHAT',
-    joblabContent4: 'Nuestra audiencia objetivo dependía en gran medida de los dispositivos móviles y WeChat. Construimos el sitio para que funcionara sin problemas en navegadores móviles, incluida una detección especial de JavaScript para WeChat. Este enfoque aseguró que los usuarios pudieran acceder cómodamente a la información justo donde pasan la mayor parte de su tiempo, lo que resulta en una experiencia de usuario personalizada y atractiva.',
+    joblabContent4: 'Nuestra audiencia objetivo dependía en gran medida de los dispositivos móviles y WeChat. Construí el sitio para que funcionara sin problemas en navegadores móviles, incluida una detección especial de JavaScript para WeChat. Este enfoque aseguró que los usuarios pudieran acceder cómodamente a la información justo donde pasan la mayor parte de su tiempo, lo que resulta en una experiencia de usuario personalizada y atractiva.',
     joblabTitle5: 'BRANDING Y MATERIALES IMPRESOS',
     joblabContent5: 'Más allá del ámbito digital, desarrollé una fuerte identidad de marca. Esto incluyó el diseño del logotipo del proyecto, la creación de gráficos web llamativos y la producción de más de 20 carteles informativos para eventos de exhibición. Estos carteles, exhibidos en los eventos de Job Lab, proporcionaron a los visitantes información clara y estructurada sobre los mercados laborales, mejorando en última instancia el impacto educativo del proyecto.',
     joblabTitle6: 'ÉXITO Y RECEPCIÓN DEL EVENTO',
@@ -811,8 +820,13 @@ Responsable del contenido según §55 Abs. 2 RStV`,
 
     //About Me
     UeberMich: "SOBRE MÍ",
-    aboutSubtitle: "REFLEXIONES Y EXPERIMENTOS SOBRE LA CREACIÓN DE PROYECTOS WEB",
-    blogText: "Aquí documento lo que aprendo, creo y cuestiono a medida que crezco como desarrollador, desde decisiones de interfaz de usuario hasta desafíos de backend. Un espacio para experimentos, ideas y reflexiones, donde la programación creativa se une al desarrollo web práctico.",
+    aboutSubtitle: "PERFIL PROFESIONAL",
+    blogText: "Desarrollador Frontend y Creative Developer nacido en Bogotá, Colombia, y radicado en Bonn, Alemania, con sólida experiencia en el desarrollo de aplicaciones web modernas, interfaces de usuario interactivas y experiencias digitales. Amplios conocimientos en HTML, CSS, JavaScript, TypeScript, React, Angular, Vue.js y Next.js, así como en tecnologías visuales para la web como Three.js, WebGL, programación de shaders, creative coding y flujos de trabajo 3D con Blender. Experiencia en la creación de aplicaciones de alto rendimiento, responsivas y centradas en el usuario, en la intersección entre tecnología, diseño y comunicación visual.",
+    blogText2: "Mis conocimientos complementarios en tecnologías backend, bases de datos, integración de APIs y soluciones web impulsadas por inteligencia artificial me permiten desarrollar productos digitales de forma integral. Gracias a mi formación como artista visual, combino el pensamiento analítico y los conocimientos técnicos con la resolución creativa de problemas y una sólida sensibilidad hacia la estética, la experiencia de usuario y la comunicación digital.",
+    blogText3: "Mis años de experiencia profesional viviendo en Europa, Asia y América Latina han fortalecido mis competencias interculturales y mi capacidad para colaborar eficazmente en equipos internacionales. El dominio profesional del alemán, inglés y español me permite comunicarme con éxito en entornos de trabajo internacionales y transcontinentales.",
+    blogText4: "Mis primeros contactos con la programación surgieron durante mis estudios de Artes Visuales en la Universidad Nacional de Colombia. En el curso 'Programación para Artistas' aprendí los fundamentos del desarrollo de software. Paralelamente, trabajé intensamente con software para fotografía, diseño gráfico, video y audio, incluyendo Adobe Creative Suite. Esta combinación de tecnología y diseño sigue siendo hasta hoy la base de mi trabajo como desarrollador web.",
+    blogTitle3: "TRANSCONTINENTAL",
+    blogTitle4: "DEL ARTE AL DESARROLLO WEB",
 
     //Kontakt
     heroTitle: "CONTACTO",

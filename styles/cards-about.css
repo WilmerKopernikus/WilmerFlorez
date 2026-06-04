@@ -1,5 +1,5 @@
 #cases-cards-container {
-    --cards: 3;
+    --cards: 8;
   }
 
 .card-shared {
@@ -23,5 +23,30 @@
 
 #card3-about {
     --index: 3;
+    background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
+  }
+
+#card4-about {
+    --index: 4;
+    background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
+  }
+
+#card5-about {
+    --index: 5;
+    background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
+  }
+
+#card6-about {
+    --index: 6;
+    background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
+  }
+
+#card7-about {
+    --index: 7;
+    background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
+  }
+
+#card8-about {
+    --index: 8;
     background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
   }
