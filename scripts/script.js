@@ -368,6 +368,9 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   videos.forEach((video) => {
+    video.setAttribute('playsinline', '');
+    video.setAttribute('webkit-playsinline', '');
+    video.muted = true;
     video.removeAttribute('autoplay');
     pauseVideo(video);
   });

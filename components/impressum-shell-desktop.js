@@ -1,4 +1,4 @@
-class ImpressumShellDesktop extends HTMLElement {
+﻿class ImpressumShellDesktop extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `  
           <div class="card-body" id="cases">
@@ -56,7 +56,7 @@ class ImpressumShellDesktop extends HTMLElement {
               <p class="text-new" id="low-light" data-i18n="derechos">© 2026 Wilmer Florez. Alle Rechte vorbehalten.</p>
             </div>
             <div class="right" id="responsive-sketch">
-              <video id="services-animation" autoplay loop muted playsinline preload="metadata" loading="lazy"
+              <video id="services-animation" autoplay loop muted playsinline webkit-playsinline preload="metadata" loading="lazy"
                 poster="imagenes/videos/cube.jpg" class="white-shadow">
                   <source src="imagenes/videos/cube_compressed.mp4" type="video/mp4" />
                 Your browser doesn't support video reproductions.
