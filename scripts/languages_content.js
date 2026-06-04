@@ -178,7 +178,7 @@ const languagesContent = {
     blancecContent4: "Die Website präsentiert die fünf Dienstleistungsbereiche des Labors, Qualitätspolitiken, Akkreditierungsinformationen und ein Beschwerdeverfahren. Ein Kontaktformular verarbeitet verschiedene Anfragearten mit serverseitiger Validierung, CSRF-Schutz und E-Mail-Versand über SMTP. Eine eingebettete Google Map und direkte Kontaktdaten vervollständigen den Kommunikationsbereich.",
     blancecTitle5: "DESIGN & UX",
     blancecContent5: "Jedes UI-Element wurde von Grund auf gestaltet: Sticky-Navigation, Hero-Bereiche pro Seite, mobiles Hamburger-Menü, Smooth-Scroll-Anker und eine Preloader-Animation. Alle Layouts sind vollständig responsiv. Die visuelle Identität nutzt eine konsistente Typografie, strukturierte Kartenraster und eine professionelle Farbpalette, die zu einem industriellen Prüflabor passt.",
-    blancecTitle6: "ROLLE & WARTUNG",
+    blancecTitle6: "MEINE ROLLE",
     blancecContent6: "Ich war der alleinige Entwickler und Designer und verantwortlich für Architektur, UI/UX, Backend-Logik, SEO-Metadaten (Open Graph, strukturierte JSON-LD-Daten) und Deployment. Das Projekt ist live und abgeschlossen. Ich übernehme weiterhin laufende Wartung, Inhaltsaktualisierungen und technischen Support im Rahmen eines Servicevertrags mit dem Kunden.",
 
     // Banderas Nila López
@@ -442,7 +442,7 @@ const languagesContent = {
     blancecContent4: "The site presents the company's five laboratory service areas, quality policies, accreditation information, and a complaints process. A contact form handles multiple request types with server-side validation, CSRF protection, and SMTP email delivery. An embedded Google Map and direct contact details complete the communication section.",
     blancecTitle5: "DESIGN & UX",
     blancecContent5: "Designed every UI element from scratch: sticky navigation, hero sections per page, mobile hamburger menu, smooth-scroll anchors, and a preloader animation. All layouts are fully responsive. The visual identity uses consistent typography, structured card grids, and a professional color palette appropriate for an industrial laboratory.",
-    blancecTitle6: "ROLE & MAINTENANCE",
+    blancecTitle6: "MY ROLE",
     blancecContent6: "I was the sole developer and designer — responsible for architecture, UI/UX, backend logic, SEO metadata (Open Graph, JSON-LD structured data), and deployment. The project is live and complete. I continue providing ongoing maintenance, content updates, and technical support under a service agreement with the client.",
 
 
@@ -710,7 +710,7 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     blancecContent4: "El sitio presenta las cinco áreas de servicio del laboratorio, las políticas de calidad, la información de acreditación y el proceso de quejas. Un formulario de contacto gestiona múltiples tipos de solicitudes con validación del lado del servidor, protección CSRF y envío de correos mediante SMTP. Un mapa de Google incrustado y los datos de contacto directos completan la sección de comunicación.",
     blancecTitle5: "DISEÑO Y UX",
     blancecContent5: "Diseñé cada elemento de la interfaz desde cero: navegación sticky, secciones hero por página, menú hamburguesa para móvil, anclas con smooth scroll y una animación de precarga. Todos los layouts son completamente responsivos. La identidad visual utiliza una tipografía consistente, rejillas de tarjetas estructuradas y una paleta de colores profesional apropiada para un laboratorio industrial.",
-    blancecTitle6: "ROL Y MANTENIMIENTO",
+    blancecTitle6: "MI ROL",
     blancecContent6: "Fui el único desarrollador y diseñador, responsable de la arquitectura, UI/UX, lógica backend, metadatos SEO (Open Graph, datos estructurados JSON-LD) y despliegue. El proyecto está en línea y terminado. Continúo ofreciendo mantenimiento continuo, actualizaciones de contenido y soporte técnico bajo un acuerdo de servicio con el cliente.",
 
     // Banderas Nila López
