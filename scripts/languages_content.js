@@ -267,6 +267,7 @@ const languagesContent = {
     blogTitle3: "TRANSKONTINENTAL",
     blogTitle4: "VON DER KUNST ZUR WEBENTWICKLUNG",
     blogText4: "Meine ersten Berührungspunkte mit der Programmierung entstanden während meines Studiums der Bildenden Kunst an der Nationaluniversität von Kolumbien. Im Kurs „Programmierung für Künstler“ erlernte ich die Grundlagen der Softwareentwicklung. Parallel dazu arbeitete ich intensiv mit Software für Fotografie, Grafikdesign, Video und Audio, darunter die Adobe Creative Suite. Diese Verbindung von Technologie und Gestaltung bildet bis heute die Grundlage meiner Arbeit als Webentwickler.",
+    lebenslaufDownload: "Lebenslauf herunterladen",
 
     //Kontakt
     heroTitle: 'KONTAKT',
@@ -547,6 +548,7 @@ const languagesContent = {
     blogText4: "My first experiences with programming began during my Visual Arts studies at the National University of Colombia. In the course 'Programming for Artists,' I learned the fundamentals of software development. At the same time, I worked extensively with software for photography, graphic design, video, and audio production, including the Adobe Creative Suite. This combination of technology and design continues to form the foundation of my work as a web developer.",
     blogTitle3: "TRANSCONTINENTAL",
     blogTitle4: "FROM ART TO WEB DEVELOPMENT",
+    lebenslaufDownload: "Download CV",
 
     //Kontakt
     heroTitle: 'CONTACT',
@@ -827,6 +829,7 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     blogText4: "Mis primeros contactos con la programación surgieron durante mis estudios de Artes Visuales en la Universidad Nacional de Colombia. En el curso 'Programación para Artistas' aprendí los fundamentos del desarrollo de software. Paralelamente, trabajé intensamente con software para fotografía, diseño gráfico, video y audio, incluyendo Adobe Creative Suite. Esta combinación de tecnología y diseño sigue siendo hasta hoy la base de mi trabajo como desarrollador web.",
     blogTitle3: "TRANSCONTINENTAL",
     blogTitle4: "DEL ARTE AL DESARROLLO WEB",
+    lebenslaufDownload: "Descargar mi CV",
 
     //Kontakt
     heroTitle: "CONTACTO",
