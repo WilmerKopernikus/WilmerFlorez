@@ -31,7 +31,7 @@ const languagesContent = {
     homeButton: `Projekt starten`,
 
     kundenProjekte: "CASE STUDIES",
-    kundenProjekteText: "In dieser Auswahl präsentiere ich reale Projekte für Kunden, bei denen ich Design und Entwicklung kombiniert habe. Alle Projekte sind live verfügbar und mit einem direkten Link zugänglich. Zusätzlich ist jedes Projekt von einer detaillierten Beschreibung begleitet, die Kontext, Herangehensweise sowie die technisch und gestalterisch umgesetzten Ergebnisse transparent macht.",
+    kundenProjekteText: "Hier präsentiere ich Kundenaufträge, bei denen ich Webdesign und -entwicklung kombiniert habe, um ganz unterschiedliche Kundenanforderungen umzusetzen. Jedes Projekt steigerte dabei signifikant den Unternehmenswert, indem es die Webpräsenz verbesserte, den Kundenzustrom erhöhte und die Geschäftsabwicklung erleichterte. Erfahren Sie nachfolgend mehr über Kontext, Herangehensweise sowie die technisch und gestalterisch umgesetzten Ergebnisse des jeweiligen Projekts.",
     kundenProjekteButton: "Case Studies erkunden",
     meineProjekte: "MEINE PROJEKTE",
     meineProjekteText: "Diese Projekte entstanden eigenständig, um neue Technologien zu erforschen und kreative Ansätze umzusetzen. Sie dienen als praktische Demonstration meiner Fähigkeiten in Konzeption, Design und Entwicklung. Der Fokus liegt auf Experiment, Lernen und Innovation, oft mit interaktiven oder AI-gestützten Funktionen und einem starken gestalterischen Anspruch.",
@@ -193,7 +193,7 @@ const languagesContent = {
     // Banderas Nila López
     banderasSubtitle: "Unternehmenswebsite",
     banderasTitle1: "PROJEKTÜBERSICHT",
-    banderasContent1: "Entwicklung einer modernen, leistungsoptimierten Website für ein kolumbianisches Flaggenunternehmen, das sich auf die Produktion von nationalen, Firmen-, internationalen und institutionellen Flaggen spezialisiert hat. Die Plattform dient sowohl als digitaler Showroom als auch als Kanal zur Kundengewinnung.",
+    banderasContent1: "Entwicklung einer modernen, leistungsoptimierten Website für ein kolumbianisches Fahnenunternehmen, das sich auf die Produktion von nationalen, Firmen-, internationalen und institutionellen Flaggen spezialisiert hat. Die Website dient als digitaler Katalog und der Kundengewinnung.",
     banderasTitle2: "TECHNISCHE UMSETZUNG",
     banderasContentBullet1: "Entwicklung einer Vue.js 3-Website mit komponentenbasierter Architektur, Lazy Loading und Performance-Optimierung.",
     banderasContentBullet2: "Implementierung einer dynamischen Produktgalerie mit über 450 Bildern mithilfe von Masonry.js-Layout, Intersection Observer API und Batch-Rendering für optimale Performance.",
@@ -307,7 +307,7 @@ const languagesContent = {
     homeButton: `Start a Project`,
 
     kundenProjekte: "CASE STUDIES",
-    kundenProjekteText: "In this selection, I present real-world projects for clients where I combined design and development. All projects are available live and accessible via a direct link. Each project is also accompanied by a detailed description that transparently explains the context, approach, and the technically and aesthetically implemented results.",
+    kundenProjekteText: "Here I present client projects where I combined web design and development to meet a wide range of client requirements. Each project significantly increased the company's value by improving its online presence, driving customer traffic, and streamlining business processes. Learn more below about the context, approach, and the technical and design results of each project.",
     kundenProjekteButton: "Explore Case Studies",
     meineProjekte: "MY PROJECTS",
     meineProjekteText: "These projects were developed independently to explore new technologies and implement creative approaches. They serve as a practical demonstration of my skills in conception, design, and development. The focus is on experimentation, learning, and innovation, often incorporating interactive or AI-powered features and a strong design focus.",
@@ -467,7 +467,7 @@ const languagesContent = {
     // Banderas Nila López
     banderasSubtitle: "Company Website",
     banderasTitle1: "PROJECT OVERVIEW",
-    banderasContent1: "Development of a modern, high-performance website for a Colombian flag company specializing in the production of national, corporate, international, and institutional flags. The platform serves as both a digital showroom and a customer acquisition channel.",
+    banderasContent1: "Development of a modern, performance-optimized website for a Colombian flag company specializing in the production of national, corporate, international, and institutional flags. The website serves as a digital catalog and for customer acquisition.",
     banderasTitle2: "TECHNICAL IMPLEMENTATION",
     banderasContentBullet1: "Development of a Vue.js 3 website with component-based architecture, lazy loading, and performance optimization.",
     banderasContentBullet2: "Implementation of a dynamic product gallery with more than 450 images using a Masonry.js layout, the Intersection Observer API, and batch rendering for optimal performance.",
@@ -582,7 +582,7 @@ const languagesContent = {
     homeButton: `Iniciar un proyecto`,
 
     kundenProjekte: "PROYECTOS PARA CLIENTES",
-    kundenProjekteText: "En esta selección, presento proyectos reales para clientes en los que combiné diseño y desarrollo. Todos los proyectos están disponibles y accesibles mediante un enlace directo. Cada proyecto incluye una descripción detallada que explica con claridad el contexto, el enfoque y los resultados técnicos y estéticos obtenidos.",
+    kundenProjekteText: "Aquí presento proyectos para clientes en los que combiné diseño y desarrollo web para satisfacer una amplia gama de necesidades. Cada proyecto incrementó significativamente el valor de la empresa al mejorar su presencia online, aumentar el tráfico de clientes y optimizar los procesos de negocio. A continuación, encontrará más información sobre el contexto, el enfoque y los resultados técnicos y de diseño de cada proyecto.",
     kundenProjekteButton: "Explorar proyectos para clientes",
     meineProjekte: "MIS PROYECTOS",
     meineProjekteText: "Estos proyectos se desarrollaron de forma independiente para explorar nuevas tecnologías e implementar enfoques creativos. Sirven como demostración práctica de mis habilidades en concepción, diseño y desarrollo. Se centran en la experimentación, el aprendizaje y la innovación, incorporando a menudo funciones interactivas o basadas en inteligencia artificial y un fuerte enfoque en el diseño.",
@@ -743,7 +743,7 @@ Responsable del contenido según §55 Abs. 2 RStV`,
     // Banderas Nila López
     banderasSubtitle: "Sitio Web Empresarial",
     banderasTitle1: "DESCRIPCIÓN DEL PROYECTO",
-    banderasContent1: "Desarrollo de un sitio web moderno y de alto rendimiento para una empresa colombiana de banderas especializada en la producción de banderas nacionales, corporativas, internacionales e institucionales. La plataforma funciona tanto como catálogo digital como canal de adquisición de clientes.",
+    banderasContent1: "Desarrollo de un sitio web moderno y optimizado para una empresa colombiana especializada en la producción de banderas nacionales, corporativas, internacionales e institucionales. El sitio web funciona como catálogo digital y para la captación de clientes.",
     banderasTitle2: "IMPLEMENTACIÓN TÉCNICA",
     banderasContentBullet1: "Desarrollo de un sitio web en Vue.js 3 con arquitectura basada en componentes, lazy loading y optimización del rendimiento.",
     banderasContentBullet2: "Implementación de una galería dinámica de productos con más de 450 imágenes mediante un diseño con Masonry.js, la API Intersection Observer y renderizado por lotes para un rendimiento óptimo.",
