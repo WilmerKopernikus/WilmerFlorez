@@ -104,7 +104,7 @@ const languagesContent = {
     banderasKunde: "<strong>Kunde:</strong><br /> Banderas Nila Lopez",
     banderasLeistungen: "<strong>Leistungen:</strong><br /> Webentwicklung & Design - Markenentwicklung - Websitebetreuung",
     banderasUebersicht: "<strong>Übersicht:</strong><br />Banderas Nila Lopez ist ein kolumbianisches Unternehmen, das sich auf die Herstellung und den Vertrieb von hochwertigen Textilprodukten spezialisiert hat. Das Projekt umfasst die Entwicklung einer modernen Website, die das Markenimage stärkt und die Online-Präsenz des Unternehmens verbessert.",
-    tarotTitle: "INTERACTIVES TAROT",
+    tarotTitle: "INTERAKTIVES TAROT",
     tarotKunde: "<strong>Projekt:</strong><br /> Persönliches Projekt in Entwicklung",
     tarotLeistungen: "<strong>Tech Stack:</strong><br /> JavaScript · OpenAI API · HTML/CSS · Vercel · Node.js",
     tarotUebersicht: "<strong>Übersicht:</strong><br />Ein persönliches Projekt in Entwicklung: Eine interaktive Tarot-Webanwendung, die die ChatGPT-API nutzt, um personalisierte Karteninterpretationen zu generieren. Das Projekt kombiniert modernes Frontend-Design mit serverloser Backend-Architektur und demonstriert den Einsatz von KI zur Erstellung dynamischer, mehrsprachiger Inhalte.",
