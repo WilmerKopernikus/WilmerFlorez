@@ -1,5 +1,5 @@
 #joblab-cards-container {
-  --cards: 8;
+  --cards: 9;
 }
 
 .card-shared {
@@ -48,5 +48,10 @@
 
 #card8-joblab {
   --index: 8;
+  background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
+}
+
+#card9-joblab {
+  --index: 9;
   background: linear-gradient(to bottom, rgb(47, 52, 54), rgb(0, 0, 0));
 }
